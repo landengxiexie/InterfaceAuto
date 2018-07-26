@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" verbose="1" parallel="false" thread-count="1">
+    <test name="Test0" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+
+            <class name="com.cases.Test001">
+                <methods>
+                    <include name="d1"/>
+                    <include name="t2"/>
+                    <include name="t3"/>
+                    <include name="d2"/>
+                    <include name="t1"/>
+                </methods>
+            </class>
+            <class name="com.cases.test">
+                <methods>
+                    <include name="d1"/>
+                    <include name="t2"/>
+                    <include name="t3"/>
+                    <include name="d2"/>
+                    <include name="t1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
+
