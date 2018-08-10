@@ -1,6 +1,7 @@
 package com.utils;
 
 import com.config.BaseConfig;
+import com.config.VicubeCasesConfig;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;

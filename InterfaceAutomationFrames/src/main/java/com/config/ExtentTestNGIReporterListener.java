@@ -9,6 +9,7 @@ import com.aventstack.extentreports.model.TestAttribute;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.utils.TimeString;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
@@ -18,7 +19,7 @@ import java.util.*;
 public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";
-    private static final String FILE_NAME = "ExtentReport.html";
+    private static final String FILE_NAME = new TimeString().getTimeString()+"_TestReport"+".html";
 
     private ExtentReports extent;
 
@@ -102,6 +103,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
     }
 
     private void init() {
+
         //文件夹不存在的话进行创建
         File reportDir= new File(OUTPUT_FOLDER);
         if(!reportDir.exists()&& !reportDir .isDirectory()){

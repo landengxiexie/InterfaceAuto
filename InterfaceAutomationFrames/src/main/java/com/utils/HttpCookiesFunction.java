@@ -1,14 +1,11 @@
 package com.utils;
 
-
 import org.apache.http.Consts;
-import org.apache.http.client.CookieStore;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -78,7 +75,7 @@ public class HttpCookiesFunction {
         } else if (flag1FormsOR2Json == 2) {
             this.setRequestJsonParamsOfPost(params, post);
         } else {
-            LogFunction.logError("flag输入错误，只能输入1,2");
+            com.utils.LogFunction.logError("flag输入错误，只能输入1,2");
         }
         JSONObject resultOfPost = this.getResultOfPost(httpClient,post);
         return resultOfPost;

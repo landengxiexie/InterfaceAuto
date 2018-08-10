@@ -2,7 +2,8 @@ package com.utils;
 
 
 import org.apache.http.Consts;
-import org.apache.http.client.CookieStore;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -12,32 +13,25 @@ import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by andywu on 2018/3/19.
  */
 @SuppressWarnings("ALL")
 public class HttpFunction {
-    private static CloseableHttpClient httpClient;
-    private static CloseableHttpResponse response;
+    private static CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+    private static CloseableHttpResponse response = null;
     private static BasicCookieStore cookieStore;
+    private static RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(100000).setConnectTimeout(100000).build();//设置请求和传输超时时间
 
-    static {
-        cookieStore = new BasicCookieStore();
-        //将CookieStore设置到httpClient中
-        httpClient = HttpClients.custom().setDefaultCookieStore(cookieStore).build();
-    }
 
     public static HttpFunction getInstance() {
         return new HttpFunction();
@@ -45,39 +39,86 @@ public class HttpFunction {
 
 
     //处理无参get请求，得到response内容
-    public JSONObject get(String url) {
+    public Object get(String url) {
         HttpGet get = new HttpGet(url);
-        JSONObject resultOfGet = this.getResultOfGet(get);
-        return resultOfGet;
+        get.setConfig(requestConfig);
+        if (this.getJsonResultOfGet(get) != null) {
+            JSONObject resultOfPost = this.getJsonResultOfGet(get);
+            return resultOfPost;
+        } else {
+            String stringResultOfPost = this.getStringResultOfGet(get);
+            return stringResultOfPost;
+        }
     }
 
     //处理有参get请求，得到response内容
-    public JSONObject get(String url, Map<String, String> params) {
+    public Object get(String url, Map<String, String> params) {
         HttpGet get = this.getRequestParamsOfGet(params, url);
-        JSONObject resultOfGet = this.getResultOfGet(get);
-        return resultOfGet;
+        get.setConfig(requestConfig);
+        if (this.getJsonResultOfGet(get) != null) {
+            JSONObject resultOfPost = this.getJsonResultOfGet(get);
+            return resultOfPost;
+        } else {
+            String stringResultOfPost = this.getStringResultOfGet(get);
+            return stringResultOfPost;
+        }
     }
 
     //处理有参get请求，得到response内容
-    public JSONObject get(String url, String headerBeanName, Map<String, String> params) {
+    public Object get(String url, String headerBeanName, Map<String, String> params) {
         HttpGet get = this.getRequestParamsOfGet(params, url);
-        this.setHeaderParamOfPost(headerBeanName, get);
-        JSONObject resultOfGet = this.getResultOfGet(get);
-        return resultOfGet;
+        get.setConfig(requestConfig);
+        this.setHeaderParamOfGet(headerBeanName, get);
+        if (this.getJsonResultOfGet(get) != null) {
+            JSONObject resultOfPost = this.getJsonResultOfGet(get);
+            return resultOfPost;
+        } else {
+            String stringResultOfPost = this.getStringResultOfGet(get);
+            return stringResultOfPost;
+        }
     }
 
     //处理无参post请求，得到response内容
-    public JSONObject post(String url) {
+    public Object post(String url) {
         HttpPost post = new HttpPost(url);
-        LogFunction.logInfo("Post请求URL:"+url);
-        JSONObject resultOfPost = this.getResultOfPost(post);
-        return resultOfPost;
+        post.setConfig(requestConfig);
+        LogFunction.logInfo("Post请求URL:" + url);
+        String stringResultOfPost = this.getStringResultOfPost(post);
+        return stringResultOfPost;
     }
 
-    //处理有参post请求，得到response内容
-    public JSONObject post(String url, Map<String, String> params, int flag1FormsOR2Json) {
+    //处理String[]有参post请求，得到response内容
+    public Object post(String url, String params) {
+        JSONObject resultOfPost = null;
+        String stringResultOfPost = null;
         HttpPost post = new HttpPost(url);
-        LogFunction.logInfo("Post请求URL:"+url);
+        post.setConfig(requestConfig);
+        LogFunction.logInfo("Post请求URL:" + url);
+        this.setRequestListParamsOfPost(params, post);
+        return this.getStringResultOfPost(post);
+    }
+
+//    将String[]转换成String字符串
+/*    private String listToString(String[] params){
+        StringBuffer str  = new StringBuffer("{\"");
+        int count = 0;
+        for(String param:params){
+            if (count>0){
+                str.append("\",\"");
+            }
+            str.append(param);
+            count++;
+        }
+        str.append("\"}");
+        return  str.toString();
+    }*/
+
+    //处理有参post请求，得到response内容
+
+    public Object post(String url, Map<String, String> params, int flag1FormsOR2Json) {
+        HttpPost post = new HttpPost(url);
+        post.setConfig(requestConfig);
+        LogFunction.logInfo("Post请求URL:" + url);
         //调用“参数进行封装方法”,flag=1,forms请求参数，flag=2，json请求参数
         if (flag1FormsOR2Json == 1) {
             this.setRequestFormsParamsOfPost(params, post);
@@ -86,14 +127,16 @@ public class HttpFunction {
         } else {
             LogFunction.logError("flag输入错误，只能输入1,2");
         }
-        JSONObject resultOfPost = this.getResultOfPost(post);
-        return resultOfPost;
+        String stringResultOfPost = this.getStringResultOfPost(post);
+        return stringResultOfPost;
     }
 
+
     //      处理有参,有header的post请求，得到response内容
-    public JSONObject post(String url, String headerBeanName, Map<String, String> params, int flag1FormsOR2Json) {
-        LogFunction.logInfo("Post请求URL:"+url);
+    public Object post(String url, String headerBeanName, Map<String, String> params, int flag1FormsOR2Json) {
+        LogFunction.logInfo("Post请求URL:" + url);
         HttpPost post = new HttpPost(url);
+        post.setConfig(requestConfig);
         if (flag1FormsOR2Json == 1) {
             this.setRequestFormsParamsOfPost(params, post);
         } else if (flag1FormsOR2Json == 2) {
@@ -102,8 +145,8 @@ public class HttpFunction {
             LogFunction.logError("flag输入错误，只能输入1,2");
         }
         this.setHeaderParamOfPost(headerBeanName, post);
-        JSONObject resultOfPost = this.getResultOfPost(post);
-        return resultOfPost;
+        return this.getStringResultOfPost(post);
+
     }
 
     //    设置JSON参数的post请求
@@ -126,6 +169,22 @@ public class HttpFunction {
         }
         UrlEncodedFormEntity entitys = new UrlEncodedFormEntity(formparams, Consts.UTF_8);
         post.setEntity(entitys);
+    }
+
+//    //    设置String参数的post请求
+/*    public void setRequestListParamsOfPost(String[] formsParams, HttpPost post) {
+        List<BasicNameValuePair> formparams = new ArrayList<>();
+        String s = this.listToString(formsParams);
+        LogFunction.logInfo("value:" + formparams.toString());
+        StringEntity entity = new StringEntity(s,"utf-8");
+        System.out.println(entity.toString()+"213123");
+        post.setEntity(entity);
+    }*/
+
+    public void setRequestListParamsOfPost(String formsParams, HttpPost post) {
+        HttpEntity entity = new StringEntity(formsParams, "utf-8");
+        LogFunction.logInfo("entity:" + entity);
+        post.setEntity(entity);
     }
 
     //    设置参数的get请求
@@ -170,7 +229,7 @@ public class HttpFunction {
     }
 
     //    设置请求头的post请求
-    public void setHeaderParamOfPost(String beanName, HttpGet get) {
+    public void setHeaderParamOfGet(String beanName, HttpGet get) {
         HashMap<String, String> params = ParseXML.readXMLDocument(beanName);
         List<BasicNameValuePair> headerparams = new ArrayList<>();
         for (Map.Entry<String, String> entry : params.entrySet()) {
@@ -180,7 +239,8 @@ public class HttpFunction {
     }
 
     //    获取post请求的result
-    private JSONObject getResultOfPost(HttpPost post) {
+    private String getStringResultOfPost(HttpPost post) {
+        String result = null;
         try {
             response = httpClient.execute(post);
         } catch (IOException e) {
@@ -188,23 +248,28 @@ public class HttpFunction {
         }
         //获取响应的状态码
         int statusCode = response.getStatusLine().getStatusCode();
-        LogFunction.logInfo("statusCode = " + statusCode);
-        String result = null;
         if (statusCode == 200) {
+            LogFunction.logInfo("请求成功statusCode = " + statusCode);
             try {
                 result = EntityUtils.toString(response.getEntity(), "utf-8");
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            if (result.length() > 500) {
+                LogFunction.logInfo("resultEntity获取成功:" + result.toString().substring(0, 500));
+            } else {
+                LogFunction.logInfo("resultEntity获取成功:" + result.toString());
+            }
         } else {
-            LogFunction.logInfo("请求失败" + "statusCode = " + statusCode);
+            LogFunction.logInfo("请求失败:" + "statusCode = " + statusCode);
+            throw new RuntimeException("请求失败");
         }
-        JSONObject resultJson = new JSONObject(result);
-        return resultJson;
+        return result;
     }
 
+
     //    获取get请求的result
-    private JSONObject getResultOfGet(HttpGet get) {
+    private JSONObject getJsonResultOfGet(HttpGet get) {
         try {
             response = httpClient.execute(get);
         } catch (IOException e) {
@@ -216,6 +281,7 @@ public class HttpFunction {
         if (statusCode == 200) {
             try {
                 result = EntityUtils.toString(response.getEntity(), "utf-8");
+                LogFunction.logInfo("resultEntity获取成功:" + result.toString());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -224,26 +290,29 @@ public class HttpFunction {
         }
         JSONObject resultJson = new JSONObject(result);
         return resultJson;
-//        //获取到结果值
-//        String success = (String) resultJson.get("huhansan");
-//        String status = (String) resultJson.get("status");
-//        //具体的判断返回结果的值
-//        Assert.assertEquals("success",success);
-//        Assert.assertEquals("1",status);
     }
 
-//    public List<Cookie> getCookies() {
-//        List<Cookie> cookies = cookieStore.getCookies();
-//        return cookies;
-//
-////         cookies获取name及值    cookies.get(0).getValue();  cookies.get(0).getName();
-////        for (Cookie cookie : cookieList) {
-////            String name = cookie.getName();
-////            String value = cookie.getValue();
-////            System.out.println("cookie name = " + name
-////                    + ";  cookie value = " + value);
-////        }
-//    }
+    private String getStringResultOfGet(HttpGet get) {
+        try {
+            response = httpClient.execute(get);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        int statusCode = response.getStatusLine().getStatusCode();
+        LogFunction.logInfo("statusCode = " + statusCode);
+        String result = null;
+        if (statusCode == 200) {
+            try {
+                result = EntityUtils.toString(response.getEntity(), "utf-8");
+                LogFunction.logInfo("resultEntity获取成功:" + result.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            LogFunction.logInfo("请求失败" + "statusCode = " + statusCode);
+        }
+        return result;
+    }
 
     //获取cookies信息
     public List<Cookie> getCookiestore() {

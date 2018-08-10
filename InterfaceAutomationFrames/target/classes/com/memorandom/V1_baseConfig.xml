@@ -1,0 +1,456 @@
+
+<!--<config>-->
+
+   <!--<caseDataPath>src/config/caseData.xml</caseDataPath>-->
+
+   <!--<queryUserInfoURL>http://192.168.20.143:48080/rest/userService/queryUserInfo</queryUserInfoURL>-->
+
+   <!--<DoLoginURL>http://192.168.20.143:48080/rest/DoLogin/DoLogin</DoLoginURL>-->
+   <!--<DoLoginParams>["administrator","@Vic_2017_Rg"]</DoLoginParams>-->
+
+   <!--<getFunctionsByUserIdURL>http://192.168.20.143:48080/rest/functionService/getFunctionsByUserId</getFunctionsByUserIdURL>-->
+   <!--<getFunctionsByUserIdParams>administrator</getFunctionsByUserIdParams>-->
+
+   <!--<queryAllObjectsByUserIdURL>http://192.168.20.143:48080/rest/authorizeService/queryAllObjectsByUserId</queryAllObjectsByUserIdURL>-->
+   <!--<queryAllObjectsByUserIdParams>administrator</queryAllObjectsByUserIdParams>-->
+
+   <!--<getUserViewsByTypeURL>http://192.168.20.143:48080/rest/viewService/getUserViewsByType</getUserViewsByTypeURL>-->
+   <!--<getUserViewsByTypeParams>["administrator","desktop"]</getUserViewsByTypeParams>-->
+
+   <!--<getMyViewEntriesNoContentURL>http://192.168.20.143:48080/rest/viewFlexService/getMyViewEntriesNoContent</getMyViewEntriesNoContentURL>-->
+   <!--<getMyViewEntriesNoContentParams>[8910]</getMyViewEntriesNoContentParams>-->
+
+   <!--<queryGroupInfoLikeURL>http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfoLike</queryGroupInfoLikeURL>-->
+   <!--<queryGroupInfoLikeParams>{flag: ""}</queryGroupInfoLikeParams>-->
+
+   <!--<getAllDomainsURL>http://192.168.20.143:48080/rest/cmdbFlexService/getAllDomains</getAllDomainsURL>-->
+
+   <!--<createGroupURL>http://192.168.20.143:48080/rest/groupFlexService/createGroup</createGroupURL>-->
+   <!--<createGroupParams>{groupName: "收集接口使用123456", flag: "1", note: "用来收集接口"}</createGroupParams>-->
+
+   <!--<addViewURL>http://192.168.20.143:48080/rest/viewFlexService/addView</addViewURL>-->
+   <!--<addViewParams>{-->
+      <!--"content":"<desktop></desktop>",-->
+      <!--"creator": "345174431410000",-->
+      <!--"protectLevel": "1",-->
+      <!--"viewName": "345174431410000",-->
+      <!--"viewTitle": "345174431410000桌面",-->
+      <!--"viewType": "desktop"-->
+      <!--}-->
+   <!--</addViewParams>-->
+
+   <!--<grantObjects2GroupURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantObjects2Group</grantObjects2GroupURL>-->
+   <!--<grantObjects2GroupParams>[["8931"], "6", "345174431410000"]</grantObjects2GroupParams>-->
+
+   <!--<queryGroupInfoURL>http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfo</queryGroupInfoURL>-->
+
+   <!--<queryUsersByGroupIdURL>http://192.168.20.143:48080/rest/userFlexService/queryUsersByGroupId</queryUsersByGroupIdURL>-->
+   <!--<queryUsersByGroupIdParams>["345174431410000", "1"]</queryUsersByGroupIdParams>-->
+
+   <!--<grantUsers2GroupURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantUsers2Group</grantUsers2GroupURL>-->
+   <!--<grantUsers2GroupParams>["345174431410000", ["xuhuiT1"], "1"]</grantUsers2GroupParams>-->
+
+   <!--<disableGroupURL>http://192.168.20.143:48080/rest/groupFlexService/disableGroup</disableGroupURL>-->
+   <!--<disableGroupParams>["345174431410000"]</disableGroupParams>-->
+
+   <!--<getViewsExcludeKpiAndDeskTopURL>http://192.168.20.143:48080/rest/viewFlexService/getViewsExcludeKpiAndDeskTop</getViewsExcludeKpiAndDeskTopURL>-->
+
+   <!--<deleteGroupURL>http://192.168.20.143:48080/rest/groupFlexService/deleteGroup</deleteGroupURL>-->
+   <!--<deleteGroupParams>["346548284580000"]</deleteGroupParams>-->
+
+   <!--<getAllFunctionsURL>http://192.168.20.143:48080/rest/functionFlexService/getAllFunctions</getAllFunctionsURL>-->
+
+   <!--<findByModelNameURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findByModelName</findByModelNameURL>-->
+   <!--<findByModelNameParams>Domain</findByModelNameParams>-->
+
+   <!--<queryObjectsByGroupIdURL>http://192.168.20.143:48080/rest/authorizeFlexService/queryObjectsByGroupId</queryObjectsByGroupIdURL>-->
+   <!--<queryObjectsByGroupIdParams>["345174431410000", "8"]</queryObjectsByGroupIdParams>-->
+
+   <!--<grantMenuAmoduleAview2UserURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantMenuAmoduleAview2User</grantMenuAmoduleAview2UserURL>-->
+   <!--<grantMenuAmoduleAview2UserParams>[[], [], ["8881"], [], "345174431410000", "2"]</grantMenuAmoduleAview2UserParams>-->
+
+   <!--<grantObjectsDomainURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantObjectsDomain</grantObjectsDomainURL>-->
+   <!--<grantObjectsDomainParams>["345174431410000", "2", "rootDomain:D803,D804,D801,D802,D806,D805:"]</grantObjectsDomainParams>-->
+
+   <!--<queryUserInfo2URL>http://192.168.20.143:48080/rest/userFlexService/queryUserInfo</queryUserInfo2URL>-->
+
+   <!--<queryAuditInfoURL>http://192.168.20.143:48080/rest/auditService/queryAuditInfo/?length=1000</queryAuditInfoURL>-->
+   <!--<queryAuditInfoParams>{"userId":"administrator"}</queryAuditInfoParams>-->
+
+   <!--<insertBaseLinePolicyURL>http://192.168.20.143:48080/rest/baselineOperatoinService/insertBaseLinePolicy</insertBaseLinePolicyURL>-->
+   <!--<insertBaseLinePolicyParams>parameters：{-->
+      <!--calInterval:"10",-->
+      <!--cronExpression:"0 */12 * * * ？",-->
+      <!--cycleCount:"27",-->
+      <!--sampleRadio:"0.90",-->
+      <!--sigma:3,-->
+      <!--title:"接口统计"-->
+      <!--}-->
+   <!--</insertBaseLinePolicyParams>-->
+
+   <!--<getBaseLinePolicyListURL>http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLinePolicyList</getBaseLinePolicyListURL>-->
+   <!--<getBaseLinePolicyListParams>{}</getBaseLinePolicyListParams>-->
+
+   <!--<updateBaseLinePolicyURL>http://192.168.20.143:48080/rest/baselineOperatoinService/updateBaseLinePolicy</updateBaseLinePolicyURL>-->
+   <!--<updateBaseLinePolicyParams>[-->
+      <!--{-->
+      <!--"bottomLineDataProvider": "common",-->
+      <!--"bottomLineDataRangeFrom": 0,-->
+      <!--"bottomLineDataRangeTo": 0,-->
+      <!--"calInterval": 10,-->
+      <!--"cronExpression": "0 */12 * * * ?",-->
+      <!--"cycleCount": 27,-->
+      <!--"middleLineDataProvider": "common",-->
+      <!--"middleLineDataRangeFrom": 0,-->
+      <!--"middleLineDataRangeTo": 0,-->
+      <!--"sampleRadio": 0.9,-->
+      <!--"sigma": "3",-->
+      <!--"status": 1,-->
+      <!--"title": "动态基线计算策略",-->
+      <!--"topLineDataProvider": "common",-->
+      <!--"topLineDataRangeFrom": 0,-->
+      <!--"topLineDataRangeTo": 0,-->
+      <!--"updateTime": "2018-07-30T09:28:21.934",-->
+      <!--"uuid": "1e62ea26a50e48dcbbe7cb57712f64e4"-->
+      <!--}-->
+      <!--]-->
+   <!--</updateBaseLinePolicyParams>-->
+
+   <!--<cleanBaseLinePolicyURL>http://192.168.20.143:48080/rest/baselineOperatoinService/cleanBaseLinePolicy</cleanBaseLinePolicyURL>-->
+   <!--<cleanBaseLinePolicyParams>{uuid: "89836b3ddda7489cb11ecd8a9f09adbc"}</cleanBaseLinePolicyParams>-->
+
+   <!--<queryWarningRuleListURL>http://192.168.20.143:48080/rest/dynaWarningManageService/queryWarningRuleList</queryWarningRuleListURL>-->
+   <!--<queryWarningRuleListParams>{}</queryWarningRuleListParams>-->
+
+   <!--<getAllTypeNodesURL>http://192.168.20.143:48080/rest/cmdbFlexService/getAllTypeNodes</getAllTypeNodesURL>-->
+   <!--<getAllTypeNodesParams>{}</getAllTypeNodesParams>-->
+
+   <!--<getAllMyNodesByTypeNameURL>http://192.168.20.143:48080/rest/cmdbFlexService/getAllMyNodesByTypeName</getAllMyNodesByTypeNameURL>-->
+   <!--<getAllMyNodesByTypeNameParams>数据请求中...请稍后.</getAllMyNodesByTypeNameParams>-->
+
+   <!--<getBaseLineDefListURL>http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLineDefList</getBaseLineDefListURL>-->
+   <!--<getBaseLineDefListParams>{}</getBaseLineDefListParams>-->
+
+   <!--<getKpiItemListURL>http://192.168.20.143:48080/rest/kpiDataFlexService/getKpiItemList</getKpiItemListURL>-->
+   <!--<getKpiItemListParams>349823489617441</getKpiItemListParams>-->
+
+   <!--<getOneWarningRuleURL>http://192.168.20.143:48080/rest/dynaWarningManageService/getOneWarningRule</getOneWarningRuleURL>-->
+   <!--<getOneWarningRuleParams>{ruleId: "b98be4e651004cc3bbac79885ffc78b1"}</getOneWarningRuleParams>-->
+
+   <!--<checkBaseLineDefURL>http://192.168.20.143:48080/rest/baselineOperatoinService/checkBaseLineDef</checkBaseLineDefURL>-->
+   <!--<checkBaseLineDefParams>{-->
+      <!--genType: "converged",-->
+      <!--ciTypeName: "CommonCi",-->
+      <!--ciIdValidate: "557768655516250",-->
+      <!--kpiCodeValidate:"2003,"-->
+      <!--}-->
+   <!--</checkBaseLineDefParams>-->
+
+   <!--<insertBaseLineDefURL>http://192.168.20.143:48080/rest/baselineOperatoinService/insertBaseLineDef</insertBaseLineDefURL>-->
+   <!--<insertBaseLineDefParams>{-->
+      <!--ciId:"557768655516250",-->
+      <!--ciLabel:"银企直联10.1.2.132",-->
+      <!--ciTyepLabel:"监控对象",-->
+      <!--ciTypeName:"CommonCi",-->
+      <!--count:0,-->
+      <!--cycleDayNum:20,-->
+      <!--cycleDefaultType:"Day",-->
+      <!--cycleMonthNum:20,-->
+      <!--cycleWeekNum:20,-->
+      <!--cycleYearNum:20,-->
+      <!--gentype:"converged",-->
+      <!--kpiCode:"2003",-->
+      <!--kpiLabel:"infoAlertCount",-->
+      <!--roundNum:"10",-->
+      <!--ruleId:"b98be4e651004cc3bbac79885ffc78b1",-->
+      <!--ruleStatus:1,-->
+      <!--status:1,-->
+      <!--title:"动态基线分析任务-20180802143508",-->
+      <!--uuidPolicy:"1e62ea26a50e48dcbbe7cb57712f64e4"-->
+      <!--}-->
+   <!--</insertBaseLineDefParams>-->
+
+   <!--<updateBaseLineCalendarByBatchURL>http://192.168.20.143:48080/rest/baselineOperatoinService/updateBaseLineCalendarByBatch</updateBaseLineCalendarByBatchURL>-->
+   <!--<updateBaseLineCalendarByBatchParams>["3a0561269b2944aeb5774e45e3a696e1",{-->
+      <!--2016-10-11:"Year",-->
+      <!--2016-10-12:"Week",-->
+      <!--2016-10-13:"Year",-->
+      <!--2016-10-14:"Month",-->
+      <!--2018-08-01:"Day",-->
+      <!--2018-08-02:"Day",-->
+      <!--2018-08-03:"Day",-->
+      <!--2018-08-04:"Day",-->
+      <!--2018-08-05:"Day"-->
+      <!--}-->
+      <!--]-->
+   <!--</updateBaseLineCalendarByBatchParams>-->
+
+   <!--<getBaseLineCalendarListURL>http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLineCalendarList</getBaseLineCalendarListURL>-->
+   <!--<getBaseLineCalendarListParams>{-->
+      <!--month:7,-->
+      <!--queryCalender:1,-->
+      <!--uuidDef:"3a0561269b2944aeb5774e45e3a696e1",-->
+      <!--year:119-->
+      <!--}-->
+   <!--</getBaseLineCalendarListParams>-->
+
+   <!--<cleanBaseLineDefURL>http://192.168.20.143:48080/rest/baselineOperatoinService/cleanBaseLineDef</cleanBaseLineDefURL>-->
+   <!--<cleanBaseLineDefParams>{uuid:"3a0561269b2944aeb5774e45e3a696e1"}</cleanBaseLineDefParams>-->
+
+   <!--<findModelTreeURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/findModelTree</findModelTreeURL>-->
+   <!--<findModelTreeParams>["Ci","model"]</findModelTreeParams>-->
+
+   <!--<getEnumsURL>http://192.168.20.143:48080/urmp/api/rest/post/enumUtilService/getEnums</getEnumsURL>-->
+   <!--<getEnumsParams>MatchType</getEnumsParams>-->
+
+   <!--<findInstanceByModelSortOrderURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findInstanceByModelSortOrder</findInstanceByModelSortOrderURL>-->
+   <!--<findInstanceByModelSortOrderParams>["Tab","ASC"]</findInstanceByModelSortOrderParams>-->
+
+   <!--<getAllDictsURL>http://192.168.20.143:48080/urmp/api/rest/post/dictService/getAllDicts</getAllDictsURL>-->
+
+   <!--<queryByFilterURL>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/queryByFilter</queryByFilterURL>-->
+   <!--<queryByFilterParams>[{source:"DefaultNode",},0,1000]</queryByFilterParams>-->
+
+   <!--<findAllURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/findAll</findAllURL>-->
+
+   <!--<findSelectTreeURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/findSelectTree</findSelectTreeURL>-->
+   <!--<findSelectTreeParams>Root</findSelectTreeParams>-->
+
+   <!--<findByOperationTypeAndModelNameURL>http://192.168.20.143:48080/urmp/api/rest/page/post/operationLogService/findByOperationTypeAndModelName/?length=1000</findByOperationTypeAndModelNameURL>-->
+   <!--<findByOperationTypeAndModelNameParams>{"userId":"administrator"}</findByOperationTypeAndModelNameParams>-->
+
+   <!--<findURL>http://192.168.20.143:48080/urmp/api/rest/page/post/modelHistoryService/find/?length=1000</findURL>-->
+   <!--<findParams>{"userId":"administrator"}</findParams>-->
+
+   <!--<queryByFilter2URL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/queryByFilter</queryByFilter2URL>-->
+   <!--<queryByFilter2Params>[{limit:1000,offset:0},"ceshi11"]</queryByFilter2Params>-->
+
+
+
+   <!--<addURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/add</addURL>-->
+   <!--<addParams>[{edit:true,batch:true,parentName:"Kpi",label:"新增测试00017",name:"新增收集接口00017"}, "Kpi", "", []]</addParams>-->
+
+   <!--<findByNameNotBuiltInAttrURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/findByNameNotBuiltInAttr</findByNameNotBuiltInAttrURL>-->
+   <!--<findByNameNotBuiltInAttrParams>新增收集接口00017</findByNameNotBuiltInAttrParams>-->
+
+   <!--<updateURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/update</updateURL>-->
+   <!--<updateParams>[{-->
+      <!--batch:true,-->
+      <!--createTime:"2018-08-03T15:10:22.580",-->
+      <!--creator:"",-->
+      <!--edit:true,-->
+      <!--encrypt:"",-->
+      <!--exchangedId:"",-->
+      <!--icon:"",-->
+      <!--&lt;!&ndash;(id、label、name)3个元素根据"findByNameNotBuiltInAttr"接口修改&ndash;&gt;-->
+      <!--id:"355515598600039",-->
+      <!--label:"新增测试00017",-->
+      <!--name:"新增收集接口00017",-->
+      <!--order:0,-->
+      <!--parentName:"Kpi",-->
+      <!--parentTree:"Root/Ci/Performance/Kpi/",-->
+      <!--permissionAllowExtend:false,-->
+      <!--permissions:null,-->
+      <!--updateTime:"2018-08-03T15:10:22.580",-->
+      <!--updator:"",-->
+      <!--version:0,-->
+      <!--},"",[]-->
+      <!--]</updateParams>-->
+
+   <!--<removeURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/remove</removeURL>-->
+   <!--<removeParams>["新增收集接口00017", "administrator", [""]]</removeParams>-->
+
+
+
+   <!--<relationAttributeServiceAddURL>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/add</relationAttributeServiceAddURL>-->
+   <!--<relationAttributeServiceAddParams>[{"source":"DictManager",-->
+      <!--"name":"BelongsTo新增收集接口00001",-->
+      <!--"label":"可修改001",-->
+      <!--"target":"新增收集接口00001",-->
+      <!--"mappingType":"one",-->
+      <!--"relationType":"BelongsTo",-->
+      <!--"tabGroup":"relation"},-->
+      <!--"administrator"]-->
+   <!--</relationAttributeServiceAddParams>-->
+
+   <!--&lt;!&ndash;findByIdParams是relationAttributeServiceAdd中response的id&ndash;&gt;-->
+   <!--<findByIdURL>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findById</findByIdURL>-->
+   <!--<findByIdParams>353676547290005</findByIdParams>-->
+
+   <!--&lt;!&ndash;removeBatchParams与findByIdParams中id一致&ndash;&gt;-->
+   <!--<removeBatchURL>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/removeBatch</removeBatchURL>-->
+   <!--<removeBatchParams>["353676547290003", "administrator"]</removeBatchParams>-->
+
+
+
+   <!--<findListURL>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findList</findListURL>-->
+   <!--<findListParams>CommonCi</findListParams>-->
+
+   <!--<instanceHistoryServiceFindURL>http://192.168.20.143:48080/urmp/api/rest/page/post/instanceHistoryService/find/?length=1000</instanceHistoryServiceFindURL>-->
+   <!--<instanceHistoryServiceFindParams>{"userId":"administrator"}</instanceHistoryServiceFindParams>-->
+
+   <!--<queryFilterByColorAdminURL>http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/queryFilterByColorAdmin/?length=1000</queryFilterByColorAdminURL>-->
+   <!--<queryFilterByColorAdminParams>{"userId":"administrator"}</queryFilterByColorAdminParams>-->
+
+   <!--<getDefulateValueURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/getDefulateValue</getDefulateValueURL>-->
+   <!--<getDefulateValueParams>Alert</getDefulateValueParams>-->
+
+
+   <!--<queryInstanceByRelationPageURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/queryInstanceByRelationPage</queryInstanceByRelationPageURL>-->
+   <!--<queryInstanceByRelationPageParams>[{sourceName: ""}, 0, 25]</queryInstanceByRelationPageParams>-->
+
+   <!---->
+   <!--<validationURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/validation</validationURL>-->
+   <!--<validationParams>[{},"Alert","",{-->
+      <!--alertCode:"123",-->
+      <!--description:"测试收集",-->
+      <!--domain:"rootDomain",-->
+      <!--enable:true,-->
+      <!--icon:"AlertType",-->
+      <!--isPageAdd:"1",-->
+      <!--label:"测试接口名称",-->
+      <!--name:"测试接口",-->
+      <!--nodeType:"CommonCi"-->
+      <!--}]-->
+   <!--</validationParams>-->
+
+   <!--&lt;!&ndash;通过修改alertCode字段&ndash;&gt;-->
+   <!--<instanceServiceAddURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/add</instanceServiceAddURL>-->
+   <!--<instanceServiceAddParams>["Alert",{-->
+      <!--alertCode:"345",-->
+      <!--description:"测试收集",-->
+      <!--domain:"rootDomain",-->
+      <!--enable:true,-->
+      <!--icon:"AlertType",-->
+      <!--isPageAdd:"1",-->
+      <!--label:"测试接口名称",-->
+      <!--name:"测试接口",-->
+      <!--nodeType:"CommonCi"-->
+      <!--},"administrator",[]]-->
+   <!--</instanceServiceAddParams>-->
+
+   <!--&lt;!&ndash;instanceServiceFindByIdParams参数从instanceServiceAddParams中id取&ndash;&gt;-->
+   <!--<instanceServiceFindByIdURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findById</instanceServiceFindByIdURL>-->
+   <!--<instanceServiceFindByIdParams>12107797650000</instanceServiceFindByIdParams>-->
+
+   <!--<findByNameURL>http://192.168.20.143:48080/urmp/api/rest/post/modelService/findByName</findByNameURL>-->
+   <!--<findByNameParams>CommonCi</findByNameParams>-->
+
+   <!--<findBySourceOrTarget_LabelURL>http://192.168.20.143:48080/urmp/api/rest/post/relationInstanceService/findBySourceOrTarget_Label</findBySourceOrTarget_LabelURL>-->
+   <!--<findBySourceOrTarget_LabelParams>测试接口</findBySourceOrTarget_LabelParams>-->
+
+   <!--<findBySourceOrTargetURL>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findBySourceOrTarget</findBySourceOrTargetURL>-->
+   <!--<findBySourceOrTargetParams>Alert</findBySourceOrTargetParams>-->
+
+   <!--<instanceServiceUpdateURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/update</instanceServiceUpdateURL>-->
+   <!--<instanceServiceUpdateParams>[{-->
+      <!--id:"349461485690000",-->
+      <!--values:{-->
+      <!--alertCode:"123",-->
+      <!--description:"",-->
+      <!--domain:"rootDomain",-->
+      <!--enable:true,-->
+      <!--icon:"AlertType",-->
+      <!--id:"",-->
+      <!--isPageAdd:"1",-->
+      <!--label:"",-->
+      <!--name:"",-->
+      <!--nodeType:"CommonCi",-->
+      <!--parentName:"Alert"-->
+      <!--}-->
+      <!--},"administrator", []]</instanceServiceUpdateParams>-->
+
+   <!--<checkRelationURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/checkRelation</checkRelationURL>-->
+   <!--<checkRelationParams>["Alert", ""]</checkRelationParams>-->
+
+   <!--<checkInstanceHasRelationURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/checkInstanceHasRelation</checkInstanceHasRelationURL>-->
+   <!--<checkInstanceHasRelationParams>""</checkInstanceHasRelationParams>-->
+
+   <!--<instanceServiceRemoveURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/remove</instanceServiceRemoveURL>-->
+   <!--<instanceServiceRemoveParams>["", "administrator", []]</instanceServiceRemoveParams>-->
+
+   <!--<waitForConfirmationCountURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/waitForConfirmationCount</waitForConfirmationCountURL>-->
+
+   <!--<confirmationedCountURL>http://192.168.20.143:48080/urmp/api/rest/post/instanceService/confirmationedCount</confirmationedCountURL>-->
+
+   <!--<getWaitForConfirmationListURL>http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/getWaitForConfirmationList/?length=1000</getWaitForConfirmationListURL>-->
+   <!--<getWaitForConfirmationListParams>{"userId":"administrator"}</getWaitForConfirmationListParams>-->
+
+   <!--<getConfirmationedListURL>http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/getConfirmationedList/?length=1000</getConfirmationedListURL>-->
+   <!--<getConfirmationedListParams>{"userId":"administrator"}</getConfirmationedListParams>-->
+
+   <!--<getUrmpTreeByKeyFilterURL>http://192.168.20.143:48080/rest/cmdbFlexService/getUrmpTreeByKeyFilter</getUrmpTreeByKeyFilterURL>-->
+   <!--<getUrmpTreeByKeyFilterParams>["MachineRoom,OS", "", "label", "", false]</getUrmpTreeByKeyFilterParams>-->
+
+   <!--<statisticAlertCountByStateCacheURL>http://192.168.20.143:48080/rest/alertHtmlDataService/statisticAlertCountByStateCache</statisticAlertCountByStateCacheURL>-->
+   <!--<statisticAlertCountByStateCacheParams>{statisticKey: "state"}</statisticAlertCountByStateCacheParams>-->
+
+   <!--<queryIncidentTypeURL>http://192.168.20.143:48080/rest/incidentTypeFlexService/queryIncidentType</queryIncidentTypeURL>-->
+
+   <!--<queryFullUserInfoURL>http://192.168.20.143:48080/rest/userFlexService/queryFullUserInfo</queryFullUserInfoURL>-->
+
+   <!--<getForwardTypeMapURL>http://192.168.20.143:48080/rest/alertRuleManageFlexService/getForwardTypeMap</getForwardTypeMapURL>-->
+
+   <!--<getGlobalModuleURL>http://192.168.20.143:48080/rest/personalizedService/getGlobalModule</getGlobalModuleURL>-->
+   <!--<getGlobalModuleParams>{moduleId:"alertmonito_col_set"}</getGlobalModuleParams>-->
+
+   <!--<countAlertFromCacheForHtmlDataURL>http://192.168.20.143:48080/rest/alertHtmlDataService/countAlertFromCacheForHtmlData</countAlertFromCacheForHtmlDataURL>-->
+   <!--<countAlertFromCacheForHtmlDataParams>{-->
+      <!--causeAlertId:0,-->
+      <!--jobNumber:"",-->
+      <!--messageFilter:"",-->
+      <!--msgClientId:"",-->
+      <!--orderId:"",-->
+      <!--pageSize:1000,-->
+      <!--relationDeepth:-1,-->
+      <!--relationReverse:true,-->
+      <!--severities:"0,1,2,3,4",-->
+      <!--states:"",-->
+      <!--statisticKey:"severity"-->
+      <!--}-->
+   <!--</countAlertFromCacheForHtmlDataParams>-->
+
+   <!--<queryAlertFromCacheForHtmlDataURL>http://192.168.20.143:48080/rest/alertHtmlDataService/queryAlertFromCacheForHtmlData/?length=1000</queryAlertFromCacheForHtmlDataURL>-->
+   <!--<queryAlertFromCacheForHtmlDataParams>{"userId":"administrator"}</queryAlertFromCacheForHtmlDataParams>-->
+
+   <!--<sendAlertClaimActionURL>http://192.168.20.143:48080/rest/alertHtmlDataService/sendAlertClaimAction</sendAlertClaimActionURL>-->
+   <!--<sendAlertClaimActionParams>{actionType: "", comment: "", alertIds: []}</sendAlertClaimActionParams>-->
+
+
+   <!--<sendForwordActionURL>http://192.168.20.143:48080/rest/alertManageFlexService/sendForwordAction</sendForwordActionURL>-->
+   <!--<sendForwordActionParams>{-->
+      <!--alertIds:[],-->
+      <!--comment:"[]",-->
+      <!--content:"",-->
+      <!--forwordType:"",-->
+      <!--forwordTypeTmp:"",-->
+      <!--incidentType:"",-->
+      <!--severity:"",-->
+      <!--title:"[]"-->
+      <!--}</sendForwordActionParams>-->
+
+   <!--<sendAlertRecoverActionURL>http://192.168.20.143:48080/rest/alertHtmlDataService/sendAlertRecoverAction</sendAlertRecoverActionURL>-->
+   <!--<sendAlertRecoverActionParams>{-->
+      <!--actionType:"",-->
+      <!--alertIds:[],-->
+      <!--clearOut:false,-->
+      <!--comment:"",-->
+      <!--recoverAll:true,-->
+      <!--resolved:true-->
+      <!--}-->
+   <!--</sendAlertRecoverActionParams>-->
+
+   <!--<getNodeByNameURL>http://192.168.20.143:48080/rest/cmdbFlexService/getNodeByName</getNodeByNameURL>-->
+   <!--<getNodeByNameParams>Switch</getNodeByNameParams>-->
+
+   <!--<queryEventURL>http://192.168.20.143:48080/rest/alertQueryFlexService/queryEvent</queryEventURL>-->
+   <!--<queryEventParams>177141275620513</queryEventParams>-->
+
+   <!--<queryActionLogURL>http://192.168.20.143:48080/rest/alertManageFlexService/queryActionLog</queryActionLogURL>-->
+   <!--<queryActionLogParams>["", null, 10000]</queryActionLogParams>-->
+
+   <!--<getRelatedAlertsURL>http://192.168.20.143:48080/rest/alertQueryService/getRelatedAlerts</getRelatedAlertsURL>-->
+   <!--<getRelatedAlertsParams>""</getRelatedAlertsParams>-->
+   <!---->
+
+<!--</config>-->

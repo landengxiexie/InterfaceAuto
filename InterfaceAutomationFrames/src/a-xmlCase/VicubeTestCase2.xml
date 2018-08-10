@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" verbose="1" parallel="false" thread-count="1">
+    <test name="VicubeInterfaceTestCase" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.cases.VicubeInterfaceCase">
+                <methods>
+
+                    <!--<include name="add"></include>-->
+                    <!--<include name="findByNameNotBuiltInAttr"></include>-->
+                    <!--<include name="update"></include>-->
+                    <!--<include name="remove"></include>-->
+
+
+                    <include name="relationAttributeServiceAdd"></include>
+                    <include name="findById"></include>
+                    <include name="removeBatch"></include>
+
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
+
+
+

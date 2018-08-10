@@ -1,0 +1,42 @@
+<data>
+    <bean beanName="params">
+        <!--Locator lists -->
+        <locator name="name" value="abc"></locator>
+        <locator name="age" value="17"></locator>
+    </bean>
+    <bean beanName="params2">
+        <!--Locator lists -->
+        <locator name="name" value="abc"></locator>
+        <locator name="age" value="17"></locator>
+    </bean>
+
+    <bean beanName="params3">
+        <!--Locator lists -->
+        <locator name="name" value="abd"></locator>
+        <locator name="age" value="19"></locator>
+    </bean>
+    <bean beanName="header3">
+        <locator name="content-type" value="application/json"></locator>
+    </bean>
+    <bean beanName="params4">
+        <!--Locator lists -->
+        <locator name="a" value="b"></locator>
+        <locator name="c" value="d"></locator>
+    </bean>
+    <bean beanName="params5">
+    <!--Locator lists -->
+    <locator name="aa" value="bb"></locator>
+    <locator name="cc" value="dd"></locator>
+    </bean>
+    <bean beanName="params6">
+        <!--Locator lists -->
+        <locator name="name" value="张霸天"></locator>
+        <locator name="clazz" value="霸天班"></locator>
+    </bean>
+    <bean beanName="params66">
+        <locator name="content-type" value="application/json"></locator>
+    </bean>
+    <bean beanName="param77">
+        <locator name=""></locator>
+    </bean>
+</data>

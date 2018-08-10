@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" verbose="1" parallel="false" thread-count="1">
+    <test name="VicubeInterfaceTestCase" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.cases.VicubeInterfaceCase">
+                <methods>
+                    <include name="queryUserInfo"></include>
+                    <include name="DoLogin"></include>
+                    <include name="getFunctionsByUserId"></include>
+                    <include name="queryAllObjectsByUserId"></include>
+                    <include name="getUserViewsByType"></include>
+                    <include name="getMyViewEntriesNoContent"></include>
+                    <include name="queryGroupInfoLike"></include>
+                    <include name="getAllDomains"></include>
+                    <include name="createGroup"></include>
+                    <include name="addView"></include>
+                    <!--<include name="grantObjects2Group"></include>-->
+                    <include name="queryGroupInfo"></include>
+                    <include name="queryUsersByGroupId"></include>
+                    <include name="grantUsers2Group"></include>
+                    <include name="disableGroup"></include>
+                    <include name="getViewsExcludeKpiAndDeskTop"></include>
+                    <include name="deleteGroup"></include>
+                    <include name="getAllFunctions"></include>
+                    <include name="findByModelName"></include>
+                    <include name="queryObjectsByGroupId"></include>
+                    <!--<include name="grantMenuAmoduleAview2User"></include>-->
+                    <include name="grantObjectsDomain"></include>
+                    <include name="queryUserInfo2"></include>
+                    <include name="queryAuditInfo"></include>
+                    <include name="insertBaseLinePolicy"></include>
+                    <include name="getBaseLinePolicyList"></include>
+                    <include name="updateBaseLinePolicy"></include>
+                    <include name="cleanBaseLinePolicy"></include>
+                    <include name="queryWarningRuleList"></include>
+                    <include name="getAllTypeNodes"></include>
+
+                    <include name="getAllMyNodesByTypeName"></include>
+                    <include name="getBaseLineDefList"></include>
+                    <include name="getKpiItemList"></include>
+                    <include name="getOneWarningRule"></include>
+                    <include name="checkBaseLineDef"></include>
+                    <include name="insertBaseLineDef"></include>
+                    <include name="updateBaseLineCalendarByBatch"></include>
+                    <include name="getBaseLineCalendarList"></include>
+                    <include name="cleanBaseLineDef"></include>
+                    <include name="findModelTree"></include>
+                    <include name="getEnums"></include>
+                    <include name="findInstanceByModelSortOrder"></include>
+                    <include name="find"></include>
+                    <include name="getAllDicts"></include>
+                    <include name="queryByFilter"></include>
+                    <include name="findAll"></include>
+                    <include name="findSelectTree"></include>
+                    <include name="queryByFilter2"></include>
+                    <include name="findByOperationTypeAndModelName"></include>
+                    <include name="findList"></include>
+
+                    <include name="add"></include>
+                    <include name="findByNameNotBuiltInAttr"></include>
+                    <include name="update"></include>
+                    <include name="remove"></include>
+                    <include name="relationAttributeServiceAdd"></include>
+                    <include name="findById"></include>
+                    <include name="removeBatch"></include>
+                    <include name="instanceHistoryServiceFind"></include>
+                    <include name="queryFilterByColorAdmin"></include>
+                    <include name="getDefulateValue"></include>
+                    <include name="queryInstanceByRelationPage"></include>
+                    <include name="validation"></include>
+                    <include name="instanceServiceAdd"></include>
+                    <include name="instanceServiceFindById"></include>
+                    <include name="findByName"></include>
+                    <include name="findBySourceOrTarget_Label"></include>
+                    <include name="findBySourceOrTarget"></include>
+                    <include name="checkInstanceHasRelation"></include>
+                    <include name="instanceServiceUpdate"></include>
+                    <include name="checkRelation"></include>
+                    <include name="instanceServiceRemove"></include>
+                    <include name="waitForConfirmationCount"></include>
+                    <include name="confirmationedCount"></include>
+                    <include name="getWaitForConfirmationList"></include>
+                    <include name="getConfirmationedList"></include>
+                    <include name="getUrmpTreeByKeyFilter"></include>
+                    <include name="statisticAlertCountByStateCache"></include>
+                    <include name="queryIncidentType"></include>
+                    <include name="queryFullUserInfo"></include>
+                    <include name="getForwardTypeMap"></include>
+
+
+                    <include name="getGlobalModule"></include>
+                    <include name="countAlertFromCacheForHtmlData"></include>
+                    <include name="queryAlertFromCacheForHtmlData"></include>
+                    <include name="sendAlertClaimAction"></include>
+                    <include name="sendAlertClaimAction"></include>
+                    <include name="sendForwordAction"></include>
+                    <include name="sendAlertRecoverAction"></include>
+                    <include name="getNodeByName"></include>
+                    <include name="queryEvent"></include>
+                    <include name="queryActionLog"></include>
+                    <include name="getRelatedAlerts"></include>
+
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
+
+
+

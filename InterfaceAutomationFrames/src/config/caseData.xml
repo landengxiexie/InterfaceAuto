@@ -36,5 +36,7 @@
     <bean beanName="params66">
         <locator name="content-type" value="application/json"></locator>
     </bean>
-
+    <bean beanName="param77">
+        <locator name=""></locator>
+    </bean>
 </data>
