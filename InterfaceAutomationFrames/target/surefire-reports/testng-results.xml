@@ -1,0 +1,3025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="89" passed="89">
+  <reporter-output>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:resultEntity获取成功:sorry,this api without the mock data.]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:Post请求URL:http://192.168.20.143:48080/rest/userService/queryUserInfo]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"zhangchao@ridgess.com","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"","lastLoginTime":null,"logintimes":0,"mobilephone":"","name":"444433","note":"","objectLis":[],"password":"","phone":"","staffName":"444433","token":"","updateDate":null,"updator":"","userId":"444433","userType":0},{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","department]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:期望值为："name":"wgf"    ---实际值为："name":"wgf"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:Post请求URL:http://192.168.20.143:48080/rest/DoLogin/DoLogin]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 32,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:{"authMethod":"DB","clientIP":"192.168.20.35","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"@Vic_2017_Rg","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组。\n仅限运维本监控平台的超级管理员使用。","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.35","lastLoginTime":"2018-08-13T09:21:02.036","logintimes":6384,"mobilephone":]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为："encryptedpwd":"@Vic_2017_Rg"    ---实际值为："encryptedpwd":"@Vic_2017_Rg"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/functionService/getFunctionsByUserId]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[{"childs":[],"code":"F","createDate":null,"creator":"","functionType":"5","icon":"","module":"","name":"开始","note":"","order":1,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"M","createDate":null,"creator":"","functionType":"1","icon":"","module":"","name":"根模块","note":"","order":0,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"F002","createDate":null,"creator":"","functionType":"5","icon":"","module":"vic.viewCtrl","name":"视图中心","note":"","order":1,"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/authorizeService/queryAllObjectsByUserId]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[{"domainName":"","groupId":"","objectId":"9034","objectType":"4","userId":"administrator"},{"domainName":"","groupId":"administrator","objectId":"1","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"2","objectType":"6","userId":""},{"domainName":"","groupId":"","objectId":"8981","objectType":"4","userId":"administrator"},{"domainName":"","groupId":"","objectId":"8912","objectType":"4","userId":"administrator"},{"domainName":"","groupId":"","objectId":"8811","o]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为：domainName    ---实际值为：domainName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/viewService/getUserViewsByType]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 27,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[{"content":"8882,8860,8635,8857,8844,8820,8818,8815,8841,8822,8819,8896,8876,8927,8926,8825","createTime":null,"creator":"administrator","protectLevel":1,"updateTime":null,"updator":"administrator","viewId":1,"viewImg":"","viewName":"超级管理员桌面","viewTitle":"超级管理员桌面","viewType":"desktop"},{"content":"8786,8854,8855","createTime":null,"creator":"administrator","protectLevel":0,"updateTime":null,"updator":"administrator","viewId":2,"viewImg":"","viewName":"超级管理员个人桌面","viewTitle":"自定义桌面","viewType":"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为："updator":"administrator"    ---实际值为："updator":"administrator"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/viewFlexService/getMyViewEntriesNoContent]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfoLike]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:08:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:08:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组。\n仅限运维本监控平台的超级管理员使用。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"59978400870000","groupName":"管理员组","groupType":"","note":"IT运维主管领导专用，可同时跨数据中心访问多地监控视图及告警情况。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"xmDomain","flag":1,"groupId":"xiamenjiankongzu","groupName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:08:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:08:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:08:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getAllDomains]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:[{"domain":"","isType":false,"label":"Domain","name":"rootDomain","nodeId":223278076110000,"parentId":349823489617406,"parentName":"Domain","properties":{"icon":"ci","isPageAdd":"1","description":"跟域","name":"rootDomain","label":"Domain"},"propertyLabels":{"icon":"Icon","description":"描述","name":"唯一标识","domain":"所属父域","label":"显示名称"}},{"domain":"rootDomain","isType":false,"label":"北京运维组","name":"bjDomain","nodeId":51597229890138,"parentId":349823489617406,"parentName":"Domain","properties":{"id"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:期望值为："domain":"rootDomain"    ---实际值为："domain":"rootDomain"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:期望值为："label":"北京运维组"    ---实际值为："label":"北京运维组"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/createGroup]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:期望值为：null    ---实际值为：null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/viewFlexService/addView]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 154,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:{"content":"","createTime":null,"creator":"","protectLevel":1,"updateTime":null,"updator":"","viewId":9035,"viewImg":"","viewName":"","viewTitle":"","viewType":"desktop"}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:期望值为："content":""    ---实际值为："content":""]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfo]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组。\n仅限运维本监控平台的超级管理员使用。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"59978400870000","groupName":"管理员组","groupType":"","note":"IT运维主管领导专用，可同时跨数据中心访问多地监控视图及告警情况。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"xmDomain","flag":1,"groupId":"xiamenjiankongzu","groupName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/userFlexService/queryUsersByGroupId]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:Post请求URL:http://192.168.20.143:48080/rest/authorizeFlexService/grantUsers2Group]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:resultEntity获取成功:1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:期望值为：1    ---实际值为：1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/disableGroup]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:resultEntity获取成功:1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:期望值为：1    ---实际值为：1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:12:Post请求URL:http://192.168.20.143:48080/rest/viewFlexService/getViewsExcludeKpiAndDeskTop]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:17:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"content":"","createTime":"2017-12-12T14:48:01.881","creator":"administrator","protectLevel":1,"updateTime":null,"updator":"","viewId":8733,"viewImg":"","viewName":"1","viewTitle":"1","viewType":"h5"},{"content":"","createTime":"2017-12-19T18:48:07.595","creator":"administrator","protectLevel":1,"updateTime":null,"updator":"","viewId":8751,"viewImg":"","viewName":"1","viewTitle":"1","viewType":"h5"},{"content":"{\"viewId\":8766,\"viewTitle\":\"1\",\"bgColor\":\"rgb(255, 255, 255)\",\"charts\":]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："protectLevel":1    ---实际值为："protectLevel":1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/deleteGroup]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为：1    ---实际值为：1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/functionFlexService/getAllFunctions]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"childs":[],"code":"D801","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"新增","note":"","order":1,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D802","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"修改","note":"","order":2,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D803","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"删除","note":"","order":3,"parentC]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："name":"新增"    ---实际值为："name":"新增"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："updateDate":null    ---实际值为："updateDate":null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findByModelName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-25T14:55:38.586","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"223278076110000","label":"","name":"","order":0,"orderColumn":"","parentName":"Domain","parentTree":"Root/Ci/PortalCi/Domain/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-05-25T14:55:38.586","updator":"administrator","values":{"icon":"ci","description":"跟域","isPageAdd":"1","name":"rootDomain","label":"Domain"},"version":0},{"batch":f]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/authorizeFlexService/queryObjectsByGroupId]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"domainName":"","groupId":"","objectId":"9021","objectType":"6","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M02","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M04","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M06","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M08","objectType":"1","userId":"hangan]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为：domainName    ---实际值为：domainName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/authorizeFlexService/grantObjectsDomain]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 28,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为：1    ---实际值为：1]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/userFlexService/queryUserInfo]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"zhangchao@ridgess.com","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"","lastLoginTime":null,"logintimes":0,"mobilephone":"","name":"444433","note":"","objectLis":[],"password":"","phone":"","staffName":"444433","token":"","updateDate":null,"updator":"","userId":"444433","userType":0},{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","department]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："createDate":null    ---实际值为："createDate":null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/auditService/queryAuditInfo/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"actionName":"删除工作组","auditId":15935,"clientIP":"192.168.20.35","content":"删除了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-13T09:21:18.500","recordsFiltered":7295,"recordsTotal":7295,"start":0,"startTime":null,"userId":"administrator"},{"actionName":"锁定工作组","auditId":15934,"clientIP":"192.168.20.35","content":"锁定了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-13T09:21:07.358","]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："actionName":"删除工作组"    ---实际值为："actionName":"删除工作组"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为："auditId":15589    ---实际值为："auditId":15589]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/insertBaseLinePolicy]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 148,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:期望值为：null    ---实际值为：null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLinePolicyList]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:[{"bottomLineDataProvider":"common","bottomLineDataRangeFrom":0,"bottomLineDataRangeTo":0.4,"calInterval":5,"cronExpression":"0 */10 * * * ?","cycleCount":20,"middleLineDataProvider":"common","middleLineDataRangeFrom":0.4,"middleLineDataRangeTo":0.8,"sampleRadio":0.95,"sigma":"3","status":1,"title":"动态基线计算策略","topLineDataProvider":"common","topLineDataRangeFrom":0.8,"topLineDataRangeTo":1,"updateTime":"2018-07-30T09:28:21.934","uuid":"1e62ea26a50e48dcbbe7cb57712f64e4"}]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:期望值为："bottomLineDataProvider":"common"    ---实际值为："bottomLineDataProvider":"common"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:期望值为："bottomLineDataRangeFrom":0    ---实际值为："bottomLineDataRangeFrom":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/updateBaseLinePolicy]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 526,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:期望值为：null    ---实际值为：null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/cleanBaseLinePolicy]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:期望值为：null    ---实际值为：null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/dynaWarningManageService/queryWarningRuleList]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:{"status":"success","data":[{"createTime":"2018-07-03T13:59:04.375","dynamicList":[],"dynamicTrendNum":9,"enabled":true,"priority":10,"projectName":"","ruleId":"36dafcb232454e30aecfba21bba90d12","ruleMode":0,"updateTime":"2018-07-03T13:59:04.375","warningName":"123","warningType":2,"warningTypeName":"warnint_hg_type"},{"createTime":"2018-05-31T00:00:00.000","dynamicList":[],"dynamicTrendNum":6,"enabled":true,"priority":20,"projectName":"hgtestproqweqe","ruleId":"b98be4e651004cc3bbac79885ffc78b1"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:期望值为："status":"success"    ---实际值为："status":"success"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getAllTypeNodes]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:33:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:33:resultEntity获取成功:[{"domain":"","isType":true,"label":"统一资源","name":"Ci","nodeId":349823489617403,"parentId":0,"parentName":"Root","properties":{"icon":""},"propertyLabels":{"icon":"Icon"}},{"domain":"","isType":true,"label":"统一资源","name":"Ci","nodeId":349823489617403,"parentId":0,"parentName":"Root","properties":{"icon":""},"propertyLabels":{"icon":"Icon"}},{"domain":"","isType":true,"label":"管理","name":"Manager","nodeId":349823489617425,"parentId":349823489617403,"parentName":"Ci","properties":{},"propertyLabel]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:33:期望值为："label":"统一资源    ---实际值为："label":"统一资源]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:33:期望值为："name":"Ci"    ---实际值为："name":"Ci"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:33:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getAllMyNodesByTypeName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:24:33:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLineDefList]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[{"calendarType":"auto","ciId":"557768655516250","ciLabel":"银企直联10.1.2.132","ciTypeLabel":"监控对象","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"Day","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"converged","kpiCode":"2003","kpiLabel":"infoAlertCount","roundNum":10,"ruleId":"b98be4e651004cc3bbac79885ffc78b1","ruleStatus":1,"status":1,"title":"动态基线分析任务-20180802143508","updateTime":"2018-08-06T15:34:18.591","uuid":"cfbb8ad1a64e4c5aba00dccb0924ef]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/kpiDataFlexService/getKpiItemList]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/dynaWarningManageService/getOneWarningRule]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 12,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:{"status":"failed","data":null,"code":500,"msg":"getOneWarningRule:{ ruleId is not null}"}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为："status":"failed"    ---实际值为："status":"failed"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/checkBaseLineDef]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 104,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为：true    ---实际值为：true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/insertBaseLineDef]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 394,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"监控对象","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-13T09:22:00.753","uuid":"0f293f5a528741a78d5fce39ab3bf6ad","uuidPolicy":""}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/updateBaseLineCalendarByBatch]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:"success"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为：success    ---实际值为：success]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLineCalendarList]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 84,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/cleanBaseLineDef]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:期望值为：null    ---实际值为：null]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findModelTree]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/enumUtilService/getEnums]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:期望值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]    ---实际值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findInstanceByModelSortOrder]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:[{"batch":false,"createTime":"2017-12-01T17:58:39.948","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"495472211237380","label":"基本信息","name":"base","order":0,"orderColumn":"","parentName":"Tab","parentTree":"Root/Ci/PortalCi/Tab/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2017-12-01T17:58:39.948","updator":"administrator","values":{"id":"495472211237380","order":1,"name":"base","domain":"rootDomain","label":"基本信息"},"version":0},{"batch"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/modelHistoryService/find/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/dictService/getAllDicts]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:[{"code":"YesorNo","createTime":null,"creator":"","description":"","label":"是否","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"Inspection_inputtype","createTime":null,"creator":"","description":"","label":"巡检填写类型","systemDefault":false,"type":"global","updateTime":null,"updator":""}]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:期望值为："code":"YesorNo"    ---实际值为："code":"YesorNo"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/queryByFilter]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 21,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:{"data":[],"size":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:期望值为：{"data":[],"size":0}    ---实际值为：{"data":[],"size":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findAll]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findSelectTree]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/queryByFilter]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/operationLogService/findByOperationTypeAndModelName/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findList]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/add]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 113,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findByNameNotBuiltInAttr]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/update]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:08:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 489,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:11:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:11:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:11:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:11:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/remove]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 50,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:13:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:13:resultEntity获取成功:]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:13:期望值为：    ---实际值为：]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:13:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/add]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:13:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 264,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"alertMessage":"","allowInheritance":false,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"","hidden":false,"id":"358210156740001","label":"可修改001","mappingType":"one","matchType":null,"name":"BelongsTo新增收集接口00017","operationValue":"","order":0,"pattern":"","relationType":"BelongsTo","relationTypeLabel":"","searchField":false,"source":"DictManager","sourceLabel":"","sourceType":null,"sourceValue":"","tabGroup":"relation",]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为："allowInheritance":false    ---实际值为："allowInheritance":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findById]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 15,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"alertMessage":"","allowInheritance":false,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"","hidden":false,"id":"358210156740001","label":"可修改001","mappingType":"one","matchType":null,"name":"BelongsTo新增收集接口00017","operationValue":"","order":0,"pattern":"","relationType":"BelongsTo","relationTypeLabel":"","searchField":false,"source":"DictManager","sourceLabel":"","sourceType":null,"sourceValue":"","tabGroup":"relation",]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为："alertMessage":""    ---实际值为："alertMessage":""]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/removeBatch]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为：    ---实际值为：]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceHistoryService/find/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/queryFilterByColorAdmin/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/getDefulateValue]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"icon":"AlertType","enable":true,"domain":"rootDomain","nodeType":"CommonCi"},"version":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/queryInstanceByRelationPage]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"data":[],"size":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为："data":[],"size":0    ---实际值为："data":[],"size":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/validation]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 222,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:期望值为：true    ---实际值为：true]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/add]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 277,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"batch":false,"createTime":"2018-08-13T09:22:11.322","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"12107797650000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-13T09:22:11.322","updator":"administrator","values":{"domain":"rootDomain"},"version":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findById]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"batch":false,"createTime":"2018-08-13T09:22:11.322","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"12107797650000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-13T09:22:11.322","updator":"administrator","values":{"domain":"rootDomain"},"version":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findByName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"attributes":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true,"allowNull":false,"assets]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:期望值为："alertMessage":""    ---实际值为："alertMessage":""]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationInstanceService/findBySourceOrTarget_Label]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findBySourceOrTarget]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/checkInstanceHasRelation]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"success":false}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:期望值为：{"success":false}    ---实际值为：{"success":false}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/update]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 296,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"icon":"AlertType","isPageAdd":"1","domain":"rootDomain","enable":true,"exception_message":"_name_exist_","nodeType":"CommonCi","parentName":"Alert"},"version":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/checkRelation]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:resultEntity获取成功:""]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:期望值为：""    ---实际值为：""]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/remove]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:20:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:期望值为：    ---实际值为：]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/waitForConfirmationCount]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"data":4,"msg":"SUCCESSFUL","size":0,"status":"success"}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:期望值为："status":"success"    ---实际值为："status":"success"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/confirmationedCount]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"data":3,"msg":"SUCCESSFUL","size":0,"status":"success"}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:期望值为："data":3    ---实际值为："data":3]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/getWaitForConfirmationList/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/getConfirmationedList/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getUrmpTreeByKeyFilter]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:21:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 42,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:23:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:23:resultEntity获取成功:[{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"349823489617410","instance":false,"label":"机房","name":"MachineRoom","order":1,"parentName":"Facility","parentTree":"","permissionAllowExtend":false,"permissions":null,"updateTime":null,"updator":"","version":0},{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"MachineRoom","id":"351162445667698","instance":true,"label":"北京德胜机房","name":"BJDSA","order":63224906,"parentName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:23:期望值为："batch":false    ---实际值为："batch":false]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:23:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/statisticAlertCountByStateCache]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:resultEntity获取成功:{"20":0,"10":14,"0":697,"30":0,"5":1}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:期望值为：20    ---实际值为：20]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:Post请求URL:http://192.168.20.143:48080/rest/incidentTypeFlexService/queryIncidentType]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:resultEntity获取成功:[{"comments":"","parentTypeId":0,"parentTypeTitle":"/","subCount":0,"typeId":246780241600005,"typeTitle":"bj_leiixng","typeTitleList":["","bj_leiixng"]},{"comments":"","parentTypeId":0,"parentTypeTitle":"/","subCount":0,"typeId":24790083600000,"typeTitle":"ee","typeTitleList":["","ee"]}]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:期望值为："comments":""    ---实际值为："comments":""]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:24:Post请求URL:http://192.168.20.143:48080/rest/userFlexService/queryFullUserInfo]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"zhangchao@ridgess.com","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"","lastLoginTime":null,"logintimes":0,"mobilephone":"","name":"444433","note":"","objectLis":[],"password":"","phone":"","staffName":"444433","token":"","updateDate":null,"updator":"","userId":"444433","userType":0},{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","department]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:Post请求URL:http://192.168.20.143:48080/rest/alertRuleManageFlexService/getForwardTypeMap]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:resultEntity获取成功:[{"value":"EOMS","label":"运维系统"},{"value":"Email","label":"邮件"},{"value":"SMS","label":"短信"}]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:期望值为："label":"运维系统"    ---实际值为："label":"运维系统"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:Post请求URL:http://192.168.20.143:48080/rest/personalizedService/getGlobalModule]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:25:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:resultEntity获取成功:{"status":"failed","code":"500","msg":"DB is not found request data"}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:期望值为："status"    ---实际值为："status"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/countAlertFromCacheForHtmlData]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 253,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:resultEntity获取成功:{"3":2,"2":667,"1":30,"0":0,"4":13}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:期望值为："3":2    ---实际值为："3":2]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/queryAlertFromCacheForHtmlData/?length=1000]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:26:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:40:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:40:resultEntity获取成功:{"draw":1,"recordsFiltered":712,"data":[{"activeState":0,"agentId":"PIGOSS","agentName":"PIGOSS - 网利接口","alertCode":0,"alertId":177141275620511,"alertTypeLabel":"CPU使用率过高","appName":"中交项目管理系统-厦门db","arisingTime":"2018-04-03T17:11:05.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"null: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: \n","count":1,"defaultCiType":"","devN]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:40:期望值为：recordsFiltered    ---实际值为：recordsFiltered]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:40:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/sendAlertClaimAction]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:40:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 43,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:resultEntity获取成功:{"actTime":"2018-08-13T09:22:35.757","actionId":361132172540000,"actionType":"","alertIds":[],"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{}}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:期望值为：actTime    ---实际值为：actTime]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:Post请求URL:http://192.168.20.143:48080/rest/alertManageFlexService/sendForwordAction]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 172,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:resultEntity获取成功:{"actTime":"2018-08-13T09:22:36.501","actionId":361132172540001,"actionType":"forward","alertIds":[],"comment":"[]","content":"","done":false,"incidentType":"","logs":[],"nodeId":0,"operator":"administrator","params":{"content":"","incidentType":"","severity":0,"title":"[]"},"severity":0,"tags":"","target":"","title":"[]"}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:期望值为：actTime    ---实际值为：actTime]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/sendAlertRecoverAction]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 136,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:resultEntity获取成功:{"actTime":"2018-08-13T09:22:36.618","actionId":361132172540002,"actionType":"","alertIds":[],"clearOut":false,"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{},"recoverAll":true,"resolved":true}]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:期望值为：actTime    ---实际值为：actTime]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getNodeByName]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:43:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:43:resultEntity获取成功:{"domain":"","isType":true,"label":"网络交换机","name":"Switch","nodeId":349823489617383,"parentId":349823489617415,"parentName":"Network","properties":{"ITOwner":"","icon":"","model":"","serviceStartDate":"","OSVersion":"","IP":"","state":"","serialNumber":"","label":"","vendorContact":"","StartslotNo":"","warrantyExpiration":"","description":"","name":"","domain":"","OccupiedUnits":"","brand":"","nodeNameInMonitoringTool":""},"propertyLabels":{"ITOwner":"系统管理员","icon":"Icon","model":"型号","serviceSt]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:43:期望值为："name":"Switch"    ---实际值为："name":"Switch"]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:43:Post请求URL:http://192.168.20.143:48080/rest/alertQueryFlexService/queryEvent]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:resultEntity获取成功:[{"agentId":"XM_XBROTHER","agentName":"","alertCode":0,"alertId":0,"alertTypeLabel":"","appName":"1#空调","arisingTime":"2016-10-18T16:09:53.000","changeId":"","ciName":"","classified":false,"defaultCiType":"","devName":"XMEM_S0-E65","domainList":["rootDomain"],"domains":"/rootDomain/","eventId":519634128485785,"filtered":false,"instance":"","instance2":"S0-E65-D72","kpiCode":3000000222,"kpiUnit":"","kpiValue":null,"length":0,"message":"风机1运行状态：运行","nodeId":401132488797450,"nodeTypeList":["XM-AirC]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:期望值为：[]    ---实际值为：[]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:Post请求URL:http://192.168.20.143:48080/rest/alertManageFlexService/queryActionLog]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:resultEntity获取成功:[{"actTime":"2018-08-08T16:53:47.246","actionId":351892793670017,"actionType":"forward","alertId":177141275620511,"comments":"[]","operator":"","paramStr":"{content=, incidentType=, severity=1, title=[]}","result":0},{"actTime":"2018-08-08T16:53:42.747","actionId":351892793670016,"actionType":"forward","alertId":177141275620511,"comments":"[]","operator":"","paramStr":"{content=测试收集接口, incidentType=, severity=1, title=[]}","result":0},{"actTime":"2018-08-08T16:53:34.968","actionId":3518927936700]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:期望值为：actTime    ---实际值为：actTime]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:Post请求URL:http://192.168.20.143:48080/rest/alertQueryService/getRelatedAlerts]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:52:请求成功statusCode = 200]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:52:resultEntity获取成功:[{"activeState":0,"agentId":"PIGOSS","agentName":"PIGOSS - 网利接口","alertCode":0,"alertId":177141275620511,"alertTypeLabel":"CPU使用率过高","appName":"中交项目管理系统-厦门db","arisingTime":"2018-04-03T17:11:05.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"null: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: \n","count":1,"defaultCiType":"","devName":"BJ-XM-ZJXM-db","domainList":["bjD]]>
+    </line>
+    <line>
+      <![CDATA[2018-08-13 10:25:52:期望值为："activeState":0    ---实际值为："activeState":0]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="109264" started-at="2018-08-13T02:24:03Z" finished-at="2018-08-13T02:25:52Z">
+    <groups>
+    </groups>
+    <test name="VicubeInterfaceTestCase" duration-ms="109264" started-at="2018-08-13T02:24:03Z" finished-at="2018-08-13T02:25:52Z">
+      <class name="com.cases.VicubeInterfaceCase">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="init" is-config="true" duration-ms="128" started-at="2018-08-13T02:24:03Z" finished-at="2018-08-13T02:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="weather()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="weather" duration-ms="2848" started-at="2018-08-13T02:24:03Z" finished-at="2018-08-13T02:24:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:resultEntity获取成功:sorry,this api without the mock data.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- weather -->
+        <test-method status="PASS" signature="queryUserInfo()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryUserInfo" duration-ms="462" started-at="2018-08-13T02:24:06Z" finished-at="2018-08-13T02:24:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:Post请求URL:http://192.168.20.143:48080/rest/userService/queryUserInfo]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"zhangchao@ridgess.com","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"","lastLoginTime":null,"logintimes":0,"mobilephone":"","name":"444433","note":"","objectLis":[],"password":"","phone":"","staffName":"444433","token":"","updateDate":null,"updator":"","userId":"444433","userType":0},{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","department]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:期望值为："name":"wgf"    ---实际值为："name":"wgf"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryUserInfo -->
+        <test-method status="PASS" signature="DoLogin()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="DoLogin" duration-ms="513" started-at="2018-08-13T02:24:06Z" finished-at="2018-08-13T02:24:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:Post请求URL:http://192.168.20.143:48080/rest/DoLogin/DoLogin]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 32,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:{"authMethod":"DB","clientIP":"192.168.20.35","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"@Vic_2017_Rg","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组。\n仅限运维本监控平台的超级管理员使用。","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.35","lastLoginTime":"2018-08-13T09:21:02.036","logintimes":6384,"mobilephone":]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为："encryptedpwd":"@Vic_2017_Rg"    ---实际值为："encryptedpwd":"@Vic_2017_Rg"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DoLogin -->
+        <test-method status="PASS" signature="getFunctionsByUserId()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getFunctionsByUserId" duration-ms="157" started-at="2018-08-13T02:24:07Z" finished-at="2018-08-13T02:24:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/functionService/getFunctionsByUserId]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[{"childs":[],"code":"F","createDate":null,"creator":"","functionType":"5","icon":"","module":"","name":"开始","note":"","order":1,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"M","createDate":null,"creator":"","functionType":"1","icon":"","module":"","name":"根模块","note":"","order":0,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"F002","createDate":null,"creator":"","functionType":"5","icon":"","module":"vic.viewCtrl","name":"视图中心","note":"","order":1,"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getFunctionsByUserId -->
+        <test-method status="PASS" signature="queryAllObjectsByUserId()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryAllObjectsByUserId" duration-ms="279" started-at="2018-08-13T02:24:07Z" finished-at="2018-08-13T02:24:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/authorizeService/queryAllObjectsByUserId]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[{"domainName":"","groupId":"","objectId":"9034","objectType":"4","userId":"administrator"},{"domainName":"","groupId":"administrator","objectId":"1","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"2","objectType":"6","userId":""},{"domainName":"","groupId":"","objectId":"8981","objectType":"4","userId":"administrator"},{"domainName":"","groupId":"","objectId":"8912","objectType":"4","userId":"administrator"},{"domainName":"","groupId":"","objectId":"8811","o]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为：domainName    ---实际值为：domainName]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryAllObjectsByUserId -->
+        <test-method status="PASS" signature="getUserViewsByType()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getUserViewsByType" duration-ms="128" started-at="2018-08-13T02:24:07Z" finished-at="2018-08-13T02:24:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/viewService/getUserViewsByType]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 27,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[{"content":"8882,8860,8635,8857,8844,8820,8818,8815,8841,8822,8819,8896,8876,8927,8926,8825","createTime":null,"creator":"administrator","protectLevel":1,"updateTime":null,"updator":"administrator","viewId":1,"viewImg":"","viewName":"超级管理员桌面","viewTitle":"超级管理员桌面","viewType":"desktop"},{"content":"8786,8854,8855","createTime":null,"creator":"administrator","protectLevel":0,"updateTime":null,"updator":"administrator","viewId":2,"viewImg":"","viewName":"超级管理员个人桌面","viewTitle":"自定义桌面","viewType":"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为："updator":"administrator"    ---实际值为："updator":"administrator"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getUserViewsByType -->
+        <test-method status="PASS" signature="getMyViewEntriesNoContent()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getMyViewEntriesNoContent" duration-ms="70" started-at="2018-08-13T02:24:07Z" finished-at="2018-08-13T02:24:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/viewFlexService/getMyViewEntriesNoContent]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getMyViewEntriesNoContent -->
+        <test-method status="PASS" signature="queryGroupInfoLike()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryGroupInfoLike" duration-ms="136" started-at="2018-08-13T02:24:07Z" finished-at="2018-08-13T02:24:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfoLike]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:08:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:08:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组。\n仅限运维本监控平台的超级管理员使用。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"59978400870000","groupName":"管理员组","groupType":"","note":"IT运维主管领导专用，可同时跨数据中心访问多地监控视图及告警情况。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"xmDomain","flag":1,"groupId":"xiamenjiankongzu","groupName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:08:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:08:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryGroupInfoLike -->
+        <test-method status="PASS" signature="getAllDomains()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getAllDomains" duration-ms="2976" started-at="2018-08-13T02:24:08Z" finished-at="2018-08-13T02:24:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:08:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getAllDomains]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:[{"domain":"","isType":false,"label":"Domain","name":"rootDomain","nodeId":223278076110000,"parentId":349823489617406,"parentName":"Domain","properties":{"icon":"ci","isPageAdd":"1","description":"跟域","name":"rootDomain","label":"Domain"},"propertyLabels":{"icon":"Icon","description":"描述","name":"唯一标识","domain":"所属父域","label":"显示名称"}},{"domain":"rootDomain","isType":false,"label":"北京运维组","name":"bjDomain","nodeId":51597229890138,"parentId":349823489617406,"parentName":"Domain","properties":{"id"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:期望值为："domain":"rootDomain"    ---实际值为："domain":"rootDomain"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:期望值为："label":"北京运维组"    ---实际值为："label":"北京运维组"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllDomains -->
+        <test-method status="PASS" signature="createGroup()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="createGroup" duration-ms="287" started-at="2018-08-13T02:24:11Z" finished-at="2018-08-13T02:24:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/createGroup]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:null]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:期望值为：null    ---实际值为：null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createGroup -->
+        <test-method status="PASS" signature="addView()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="addView" duration-ms="437" started-at="2018-08-13T02:24:11Z" finished-at="2018-08-13T02:24:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/viewFlexService/addView]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 154,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:{"content":"","createTime":null,"creator":"","protectLevel":1,"updateTime":null,"updator":"","viewId":9035,"viewImg":"","viewName":"","viewTitle":"","viewType":"desktop"}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:期望值为："content":""    ---实际值为："content":""]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addView -->
+        <test-method status="PASS" signature="queryGroupInfo()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryGroupInfo" duration-ms="206" started-at="2018-08-13T02:24:11Z" finished-at="2018-08-13T02:24:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfo]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组。\n仅限运维本监控平台的超级管理员使用。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"59978400870000","groupName":"管理员组","groupType":"","note":"IT运维主管领导专用，可同时跨数据中心访问多地监控视图及告警情况。","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"xmDomain","flag":1,"groupId":"xiamenjiankongzu","groupName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryGroupInfo -->
+        <test-method status="PASS" signature="queryUsersByGroupId()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryUsersByGroupId" duration-ms="59" started-at="2018-08-13T02:24:11Z" finished-at="2018-08-13T02:24:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:Post请求URL:http://192.168.20.143:48080/rest/userFlexService/queryUsersByGroupId]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryUsersByGroupId -->
+        <test-method status="PASS" signature="grantUsers2Group()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="grantUsers2Group" duration-ms="90" started-at="2018-08-13T02:24:12Z" finished-at="2018-08-13T02:24:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:Post请求URL:http://192.168.20.143:48080/rest/authorizeFlexService/grantUsers2Group]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:resultEntity获取成功:1]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:期望值为：1    ---实际值为：1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- grantUsers2Group -->
+        <test-method status="PASS" signature="disableGroup()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="disableGroup" duration-ms="91" started-at="2018-08-13T02:24:12Z" finished-at="2018-08-13T02:24:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/disableGroup]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:resultEntity获取成功:1]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:期望值为：1    ---实际值为：1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- disableGroup -->
+        <test-method status="PASS" signature="getViewsExcludeKpiAndDeskTop()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getViewsExcludeKpiAndDeskTop" duration-ms="11011" started-at="2018-08-13T02:24:12Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:12:Post请求URL:http://192.168.20.143:48080/rest/viewFlexService/getViewsExcludeKpiAndDeskTop]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:17:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"content":"","createTime":"2017-12-12T14:48:01.881","creator":"administrator","protectLevel":1,"updateTime":null,"updator":"","viewId":8733,"viewImg":"","viewName":"1","viewTitle":"1","viewType":"h5"},{"content":"","createTime":"2017-12-19T18:48:07.595","creator":"administrator","protectLevel":1,"updateTime":null,"updator":"","viewId":8751,"viewImg":"","viewName":"1","viewTitle":"1","viewType":"h5"},{"content":"{\"viewId\":8766,\"viewTitle\":\"1\",\"bgColor\":\"rgb(255, 255, 255)\",\"charts\":]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："protectLevel":1    ---实际值为："protectLevel":1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getViewsExcludeKpiAndDeskTop -->
+        <test-method status="PASS" signature="deleteGroup()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="deleteGroup" duration-ms="97" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/groupFlexService/deleteGroup]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:1]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为：1    ---实际值为：1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteGroup -->
+        <test-method status="PASS" signature="getAllFunctions()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getAllFunctions" duration-ms="66" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/functionFlexService/getAllFunctions]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"childs":[],"code":"D801","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"新增","note":"","order":1,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D802","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"修改","note":"","order":2,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D803","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"删除","note":"","order":3,"parentC]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："name":"新增"    ---实际值为："name":"新增"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："updateDate":null    ---实际值为："updateDate":null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllFunctions -->
+        <test-method status="PASS" signature="findByModelName()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findByModelName" duration-ms="19" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findByModelName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-25T14:55:38.586","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"223278076110000","label":"","name":"","order":0,"orderColumn":"","parentName":"Domain","parentTree":"Root/Ci/PortalCi/Domain/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-05-25T14:55:38.586","updator":"administrator","values":{"icon":"ci","description":"跟域","isPageAdd":"1","name":"rootDomain","label":"Domain"},"version":0},{"batch":f]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findByModelName -->
+        <test-method status="PASS" signature="queryObjectsByGroupId()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryObjectsByGroupId" duration-ms="199" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/authorizeFlexService/queryObjectsByGroupId]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"domainName":"","groupId":"","objectId":"9021","objectType":"6","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M02","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M04","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M06","objectType":"1","userId":"hangang"},{"domainName":"","groupId":"","objectId":"M08","objectType":"1","userId":"hangan]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为：domainName    ---实际值为：domainName]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryObjectsByGroupId -->
+        <test-method status="PASS" signature="grantObjectsDomain()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="grantObjectsDomain" duration-ms="143" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/authorizeFlexService/grantObjectsDomain]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 28,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:1]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为：1    ---实际值为：1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- grantObjectsDomain -->
+        <test-method status="PASS" signature="queryUserInfo2()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryUserInfo2" duration-ms="41" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/userFlexService/queryUserInfo]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"zhangchao@ridgess.com","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"","lastLoginTime":null,"logintimes":0,"mobilephone":"","name":"444433","note":"","objectLis":[],"password":"","phone":"","staffName":"444433","token":"","updateDate":null,"updator":"","userId":"444433","userType":0},{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","department]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："createDate":null    ---实际值为："createDate":null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryUserInfo2 -->
+        <test-method status="PASS" signature="queryAuditInfo()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryAuditInfo" duration-ms="187" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/auditService/queryAuditInfo/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:[{"actionName":"删除工作组","auditId":15935,"clientIP":"192.168.20.35","content":"删除了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-13T09:21:18.500","recordsFiltered":7295,"recordsTotal":7295,"start":0,"startTime":null,"userId":"administrator"},{"actionName":"锁定工作组","auditId":15934,"clientIP":"192.168.20.35","content":"锁定了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-13T09:21:07.358","]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："actionName":"删除工作组"    ---实际值为："actionName":"删除工作组"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为："auditId":15589    ---实际值为："auditId":15589]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryAuditInfo -->
+        <test-method status="PASS" signature="insertBaseLinePolicy()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="insertBaseLinePolicy" duration-ms="24" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/insertBaseLinePolicy]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 148,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:resultEntity获取成功:null]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:期望值为：null    ---实际值为：null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- insertBaseLinePolicy -->
+        <test-method status="PASS" signature="getBaseLinePolicyList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getBaseLinePolicyList" duration-ms="48" started-at="2018-08-13T02:24:23Z" finished-at="2018-08-13T02:24:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLinePolicyList]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:[{"bottomLineDataProvider":"common","bottomLineDataRangeFrom":0,"bottomLineDataRangeTo":0.4,"calInterval":5,"cronExpression":"0 */10 * * * ?","cycleCount":20,"middleLineDataProvider":"common","middleLineDataRangeFrom":0.4,"middleLineDataRangeTo":0.8,"sampleRadio":0.95,"sigma":"3","status":1,"title":"动态基线计算策略","topLineDataProvider":"common","topLineDataRangeFrom":0.8,"topLineDataRangeTo":1,"updateTime":"2018-07-30T09:28:21.934","uuid":"1e62ea26a50e48dcbbe7cb57712f64e4"}]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:期望值为："bottomLineDataProvider":"common"    ---实际值为："bottomLineDataProvider":"common"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:期望值为："bottomLineDataRangeFrom":0    ---实际值为："bottomLineDataRangeFrom":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBaseLinePolicyList -->
+        <test-method status="PASS" signature="updateBaseLinePolicy()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="updateBaseLinePolicy" duration-ms="88" started-at="2018-08-13T02:24:24Z" finished-at="2018-08-13T02:24:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/updateBaseLinePolicy]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 526,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:null]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:期望值为：null    ---实际值为：null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateBaseLinePolicy -->
+        <test-method status="PASS" signature="cleanBaseLinePolicy()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="cleanBaseLinePolicy" duration-ms="57" started-at="2018-08-13T02:24:24Z" finished-at="2018-08-13T02:24:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/cleanBaseLinePolicy]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:null]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:期望值为：null    ---实际值为：null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanBaseLinePolicy -->
+        <test-method status="PASS" signature="queryWarningRuleList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryWarningRuleList" duration-ms="37" started-at="2018-08-13T02:24:24Z" finished-at="2018-08-13T02:24:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/dynaWarningManageService/queryWarningRuleList]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:resultEntity获取成功:{"status":"success","data":[{"createTime":"2018-07-03T13:59:04.375","dynamicList":[],"dynamicTrendNum":9,"enabled":true,"priority":10,"projectName":"","ruleId":"36dafcb232454e30aecfba21bba90d12","ruleMode":0,"updateTime":"2018-07-03T13:59:04.375","warningName":"123","warningType":2,"warningTypeName":"warnint_hg_type"},{"createTime":"2018-05-31T00:00:00.000","dynamicList":[],"dynamicTrendNum":6,"enabled":true,"priority":20,"projectName":"hgtestproqweqe","ruleId":"b98be4e651004cc3bbac79885ffc78b1"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:期望值为："status":"success"    ---实际值为："status":"success"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryWarningRuleList -->
+        <test-method status="PASS" signature="getAllTypeNodes()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getAllTypeNodes" duration-ms="9371" started-at="2018-08-13T02:24:24Z" finished-at="2018-08-13T02:24:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getAllTypeNodes]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:24:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:33:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:33:resultEntity获取成功:[{"domain":"","isType":true,"label":"统一资源","name":"Ci","nodeId":349823489617403,"parentId":0,"parentName":"Root","properties":{"icon":""},"propertyLabels":{"icon":"Icon"}},{"domain":"","isType":true,"label":"统一资源","name":"Ci","nodeId":349823489617403,"parentId":0,"parentName":"Root","properties":{"icon":""},"propertyLabels":{"icon":"Icon"}},{"domain":"","isType":true,"label":"管理","name":"Manager","nodeId":349823489617425,"parentId":349823489617403,"parentName":"Ci","properties":{},"propertyLabel]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:33:期望值为："label":"统一资源    ---实际值为："label":"统一资源]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:33:期望值为："name":"Ci"    ---实际值为："name":"Ci"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllTypeNodes -->
+        <test-method status="PASS" signature="getAllMyNodesByTypeName()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getAllMyNodesByTypeName" duration-ms="31715" started-at="2018-08-13T02:24:33Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:24:33:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getAllMyNodesByTypeName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:24:33:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllMyNodesByTypeName -->
+        <test-method status="PASS" signature="getBaseLineDefList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getBaseLineDefList" duration-ms="91" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLineDefList]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[{"calendarType":"auto","ciId":"557768655516250","ciLabel":"银企直联10.1.2.132","ciTypeLabel":"监控对象","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"Day","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"converged","kpiCode":"2003","kpiLabel":"infoAlertCount","roundNum":10,"ruleId":"b98be4e651004cc3bbac79885ffc78b1","ruleStatus":1,"status":1,"title":"动态基线分析任务-20180802143508","updateTime":"2018-08-06T15:34:18.591","uuid":"cfbb8ad1a64e4c5aba00dccb0924ef]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBaseLineDefList -->
+        <test-method status="PASS" signature="getKpiItemList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getKpiItemList" duration-ms="43" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/kpiDataFlexService/getKpiItemList]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getKpiItemList -->
+        <test-method status="PASS" signature="getOneWarningRule()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getOneWarningRule" duration-ms="41" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/dynaWarningManageService/getOneWarningRule]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 12,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:{"status":"failed","data":null,"code":500,"msg":"getOneWarningRule:{ ruleId is not null}"}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为："status":"failed"    ---实际值为："status":"failed"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getOneWarningRule -->
+        <test-method status="PASS" signature="checkBaseLineDef()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="checkBaseLineDef" duration-ms="12" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/checkBaseLineDef]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 104,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:true]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为：true    ---实际值为：true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkBaseLineDef -->
+        <test-method status="PASS" signature="insertBaseLineDef()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="insertBaseLineDef" duration-ms="59" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/insertBaseLineDef]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 394,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"监控对象","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-13T09:22:00.753","uuid":"0f293f5a528741a78d5fce39ab3bf6ad","uuidPolicy":""}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- insertBaseLineDef -->
+        <test-method status="PASS" signature="updateBaseLineCalendarByBatch()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="updateBaseLineCalendarByBatch" duration-ms="20" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/updateBaseLineCalendarByBatch]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:"success"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为：success    ---实际值为：success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateBaseLineCalendarByBatch -->
+        <test-method status="PASS" signature="getBaseLineCalendarList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getBaseLineCalendarList" duration-ms="62" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/getBaseLineCalendarList]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 84,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBaseLineCalendarList -->
+        <test-method status="PASS" signature="cleanBaseLineDef()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="cleanBaseLineDef" duration-ms="50" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/rest/baselineOperatoinService/cleanBaseLineDef]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:resultEntity获取成功:null]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:期望值为：null    ---实际值为：null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanBaseLineDef -->
+        <test-method status="PASS" signature="findModelTree()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findModelTree" duration-ms="391" started-at="2018-08-13T02:25:05Z" finished-at="2018-08-13T02:25:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findModelTree]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findModelTree -->
+        <test-method status="PASS" signature="getEnums()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getEnums" duration-ms="15" started-at="2018-08-13T02:25:06Z" finished-at="2018-08-13T02:25:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/enumUtilService/getEnums]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:期望值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]    ---实际值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getEnums -->
+        <test-method status="PASS" signature="findInstanceByModelSortOrder()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findInstanceByModelSortOrder" duration-ms="16" started-at="2018-08-13T02:25:06Z" finished-at="2018-08-13T02:25:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findInstanceByModelSortOrder]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:[{"batch":false,"createTime":"2017-12-01T17:58:39.948","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"495472211237380","label":"基本信息","name":"base","order":0,"orderColumn":"","parentName":"Tab","parentTree":"Root/Ci/PortalCi/Tab/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2017-12-01T17:58:39.948","updator":"administrator","values":{"id":"495472211237380","order":1,"name":"base","domain":"rootDomain","label":"基本信息"},"version":0},{"batch"]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findInstanceByModelSortOrder -->
+        <test-method status="PASS" signature="find()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="find" duration-ms="44" started-at="2018-08-13T02:25:06Z" finished-at="2018-08-13T02:25:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/modelHistoryService/find/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- find -->
+        <test-method status="PASS" signature="getAllDicts()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getAllDicts" duration-ms="13" started-at="2018-08-13T02:25:06Z" finished-at="2018-08-13T02:25:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/dictService/getAllDicts]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:[{"code":"YesorNo","createTime":null,"creator":"","description":"","label":"是否","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"Inspection_inputtype","createTime":null,"creator":"","description":"","label":"巡检填写类型","systemDefault":false,"type":"global","updateTime":null,"updator":""}]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:期望值为："code":"YesorNo"    ---实际值为："code":"YesorNo"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllDicts -->
+        <test-method status="PASS" signature="queryByFilter()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryByFilter" duration-ms="13" started-at="2018-08-13T02:25:06Z" finished-at="2018-08-13T02:25:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/queryByFilter]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 21,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:resultEntity获取成功:{"data":[],"size":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:期望值为：{"data":[],"size":0}    ---实际值为：{"data":[],"size":0}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryByFilter -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findAll" duration-ms="939" started-at="2018-08-13T02:25:06Z" finished-at="2018-08-13T02:25:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:06:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findAll]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findSelectTree()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findSelectTree" duration-ms="229" started-at="2018-08-13T02:25:07Z" finished-at="2018-08-13T02:25:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findSelectTree]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findSelectTree -->
+        <test-method status="PASS" signature="queryByFilter2()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryByFilter2" duration-ms="23" started-at="2018-08-13T02:25:07Z" finished-at="2018-08-13T02:25:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/queryByFilter]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryByFilter2 -->
+        <test-method status="PASS" signature="findByOperationTypeAndModelName()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findByOperationTypeAndModelName" duration-ms="9" started-at="2018-08-13T02:25:07Z" finished-at="2018-08-13T02:25:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/operationLogService/findByOperationTypeAndModelName/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findByOperationTypeAndModelName -->
+        <test-method status="PASS" signature="findList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findList" duration-ms="13" started-at="2018-08-13T02:25:07Z" finished-at="2018-08-13T02:25:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findList]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findList -->
+        <test-method status="PASS" signature="add()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="add" duration-ms="1554" started-at="2018-08-13T02:25:07Z" finished-at="2018-08-13T02:25:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/add]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:07:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 113,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="findByNameNotBuiltInAttr()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findByNameNotBuiltInAttr" duration-ms="27" started-at="2018-08-13T02:25:08Z" finished-at="2018-08-13T02:25:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findByNameNotBuiltInAttr]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findByNameNotBuiltInAttr -->
+        <test-method status="PASS" signature="update()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="update" duration-ms="2652" started-at="2018-08-13T02:25:08Z" finished-at="2018-08-13T02:25:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/update]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:08:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 489,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:11:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:11:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:11:期望值为："attributes":[]    ---实际值为："attributes":[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="remove" duration-ms="2129" started-at="2018-08-13T02:25:11Z" finished-at="2018-08-13T02:25:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:11:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/remove]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:11:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 50,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:13:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:13:resultEntity获取成功:]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:13:期望值为：    ---实际值为：]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="relationAttributeServiceAdd()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="relationAttributeServiceAdd" duration-ms="1784" started-at="2018-08-13T02:25:13Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:13:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/add]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:13:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 264,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"alertMessage":"","allowInheritance":false,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"","hidden":false,"id":"358210156740001","label":"可修改001","mappingType":"one","matchType":null,"name":"BelongsTo新增收集接口00017","operationValue":"","order":0,"pattern":"","relationType":"BelongsTo","relationTypeLabel":"","searchField":false,"source":"DictManager","sourceLabel":"","sourceType":null,"sourceValue":"","tabGroup":"relation",]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为："allowInheritance":false    ---实际值为："allowInheritance":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- relationAttributeServiceAdd -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findById" duration-ms="45" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findById]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 15,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"alertMessage":"","allowInheritance":false,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"","hidden":false,"id":"358210156740001","label":"可修改001","mappingType":"one","matchType":null,"name":"BelongsTo新增收集接口00017","operationValue":"","order":0,"pattern":"","relationType":"BelongsTo","relationTypeLabel":"","searchField":false,"source":"DictManager","sourceLabel":"","sourceType":null,"sourceValue":"","tabGroup":"relation",]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为："alertMessage":""    ---实际值为："alertMessage":""]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="removeBatch()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="removeBatch" duration-ms="23" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/removeBatch]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为：    ---实际值为：]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- removeBatch -->
+        <test-method status="PASS" signature="instanceHistoryServiceFind()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="instanceHistoryServiceFind" duration-ms="13" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceHistoryService/find/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- instanceHistoryServiceFind -->
+        <test-method status="PASS" signature="queryFilterByColorAdmin()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryFilterByColorAdmin" duration-ms="23" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/queryFilterByColorAdmin/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryFilterByColorAdmin -->
+        <test-method status="PASS" signature="getDefulateValue()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getDefulateValue" duration-ms="68" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/getDefulateValue]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"icon":"AlertType","enable":true,"domain":"rootDomain","nodeType":"CommonCi"},"version":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getDefulateValue -->
+        <test-method status="PASS" signature="queryInstanceByRelationPage()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryInstanceByRelationPage" duration-ms="24" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/queryInstanceByRelationPage]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:{"data":[],"size":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为："data":[],"size":0    ---实际值为："data":[],"size":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryInstanceByRelationPage -->
+        <test-method status="PASS" signature="validation()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="validation" duration-ms="30" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/validation]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 222,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:resultEntity获取成功:true]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:期望值为：true    ---实际值为：true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validation -->
+        <test-method status="PASS" signature="instanceServiceAdd()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="instanceServiceAdd" duration-ms="2294" started-at="2018-08-13T02:25:15Z" finished-at="2018-08-13T02:25:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/add]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:15:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 277,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"batch":false,"createTime":"2018-08-13T09:22:11.322","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"12107797650000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-13T09:22:11.322","updator":"administrator","values":{"domain":"rootDomain"},"version":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- instanceServiceAdd -->
+        <test-method status="PASS" signature="instanceServiceFindById()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="instanceServiceFindById" duration-ms="15" started-at="2018-08-13T02:25:18Z" finished-at="2018-08-13T02:25:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/findById]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"batch":false,"createTime":"2018-08-13T09:22:11.322","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"12107797650000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-13T09:22:11.322","updator":"administrator","values":{"domain":"rootDomain"},"version":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- instanceServiceFindById -->
+        <test-method status="PASS" signature="findByName()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findByName" duration-ms="40" started-at="2018-08-13T02:25:18Z" finished-at="2018-08-13T02:25:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/modelService/findByName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"attributes":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true,"allowNull":false,"assets]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:期望值为："alertMessage":""    ---实际值为："alertMessage":""]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findByName -->
+        <test-method status="PASS" signature="findBySourceOrTarget_Label()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findBySourceOrTarget_Label" duration-ms="114" started-at="2018-08-13T02:25:18Z" finished-at="2018-08-13T02:25:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationInstanceService/findBySourceOrTarget_Label]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findBySourceOrTarget_Label -->
+        <test-method status="PASS" signature="findBySourceOrTarget()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="findBySourceOrTarget" duration-ms="59" started-at="2018-08-13T02:25:18Z" finished-at="2018-08-13T02:25:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/findBySourceOrTarget]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:[]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- findBySourceOrTarget -->
+        <test-method status="PASS" signature="checkInstanceHasRelation()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="checkInstanceHasRelation" duration-ms="34" started-at="2018-08-13T02:25:18Z" finished-at="2018-08-13T02:25:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/checkInstanceHasRelation]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:resultEntity获取成功:{"success":false}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:期望值为：{"success":false}    ---实际值为：{"success":false}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkInstanceHasRelation -->
+        <test-method status="PASS" signature="instanceServiceUpdate()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="instanceServiceUpdate" duration-ms="2028" started-at="2018-08-13T02:25:18Z" finished-at="2018-08-13T02:25:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/update]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:18:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 296,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"icon":"AlertType","isPageAdd":"1","domain":"rootDomain","enable":true,"exception_message":"_name_exist_","nodeType":"CommonCi","parentName":"Alert"},"version":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- instanceServiceUpdate -->
+        <test-method status="PASS" signature="checkRelation()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="checkRelation" duration-ms="81" started-at="2018-08-13T02:25:20Z" finished-at="2018-08-13T02:25:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/checkRelation]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:resultEntity获取成功:""]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:期望值为：""    ---实际值为：""]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkRelation -->
+        <test-method status="PASS" signature="instanceServiceRemove()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="instanceServiceRemove" duration-ms="1228" started-at="2018-08-13T02:25:20Z" finished-at="2018-08-13T02:25:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/remove]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:20:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:期望值为：    ---实际值为：]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- instanceServiceRemove -->
+        <test-method status="PASS" signature="waitForConfirmationCount()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="waitForConfirmationCount" duration-ms="54" started-at="2018-08-13T02:25:21Z" finished-at="2018-08-13T02:25:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/waitForConfirmationCount]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"data":4,"msg":"SUCCESSFUL","size":0,"status":"success"}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:期望值为："status":"success"    ---实际值为："status":"success"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- waitForConfirmationCount -->
+        <test-method status="PASS" signature="confirmationedCount()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="confirmationedCount" duration-ms="19" started-at="2018-08-13T02:25:21Z" finished-at="2018-08-13T02:25:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/post/instanceService/confirmationedCount]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"data":3,"msg":"SUCCESSFUL","size":0,"status":"success"}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:期望值为："data":3    ---实际值为："data":3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- confirmationedCount -->
+        <test-method status="PASS" signature="getWaitForConfirmationList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getWaitForConfirmationList" duration-ms="6" started-at="2018-08-13T02:25:21Z" finished-at="2018-08-13T02:25:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/getWaitForConfirmationList/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getWaitForConfirmationList -->
+        <test-method status="PASS" signature="getConfirmationedList()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getConfirmationedList" duration-ms="13" started-at="2018-08-13T02:25:21Z" finished-at="2018-08-13T02:25:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/urmp/api/rest/page/post/instanceService/getConfirmationedList/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getConfirmationedList -->
+        <test-method status="PASS" signature="getUrmpTreeByKeyFilter()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getUrmpTreeByKeyFilter" duration-ms="2131" started-at="2018-08-13T02:25:21Z" finished-at="2018-08-13T02:25:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getUrmpTreeByKeyFilter]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:21:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 42,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:23:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:23:resultEntity获取成功:[{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"349823489617410","instance":false,"label":"机房","name":"MachineRoom","order":1,"parentName":"Facility","parentTree":"","permissionAllowExtend":false,"permissions":null,"updateTime":null,"updator":"","version":0},{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"MachineRoom","id":"351162445667698","instance":true,"label":"北京德胜机房","name":"BJDSA","order":63224906,"parentName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:23:期望值为："batch":false    ---实际值为："batch":false]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getUrmpTreeByKeyFilter -->
+        <test-method status="PASS" signature="statisticAlertCountByStateCache()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="statisticAlertCountByStateCache" duration-ms="199" started-at="2018-08-13T02:25:23Z" finished-at="2018-08-13T02:25:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:23:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/statisticAlertCountByStateCache]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:23:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:resultEntity获取成功:{"20":0,"10":14,"0":697,"30":0,"5":1}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:期望值为：20    ---实际值为：20]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- statisticAlertCountByStateCache -->
+        <test-method status="PASS" signature="queryIncidentType()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryIncidentType" duration-ms="53" started-at="2018-08-13T02:25:24Z" finished-at="2018-08-13T02:25:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:Post请求URL:http://192.168.20.143:48080/rest/incidentTypeFlexService/queryIncidentType]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:resultEntity获取成功:[{"comments":"","parentTypeId":0,"parentTypeTitle":"/","subCount":0,"typeId":246780241600005,"typeTitle":"bj_leiixng","typeTitleList":["","bj_leiixng"]},{"comments":"","parentTypeId":0,"parentTypeTitle":"/","subCount":0,"typeId":24790083600000,"typeTitle":"ee","typeTitleList":["","ee"]}]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:期望值为："comments":""    ---实际值为："comments":""]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryIncidentType -->
+        <test-method status="PASS" signature="queryFullUserInfo()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryFullUserInfo" duration-ms="1766" started-at="2018-08-13T02:25:24Z" finished-at="2018-08-13T02:25:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:24:Post请求URL:http://192.168.20.143:48080/rest/userFlexService/queryFullUserInfo]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"zhangchao@ridgess.com","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"","lastLoginTime":null,"logintimes":0,"mobilephone":"","name":"444433","note":"","objectLis":[],"password":"","phone":"","staffName":"444433","token":"","updateDate":null,"updator":"","userId":"444433","userType":0},{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","department]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryFullUserInfo -->
+        <test-method status="PASS" signature="getForwardTypeMap()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getForwardTypeMap" duration-ms="59" started-at="2018-08-13T02:25:25Z" finished-at="2018-08-13T02:25:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:Post请求URL:http://192.168.20.143:48080/rest/alertRuleManageFlexService/getForwardTypeMap]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:resultEntity获取成功:[{"value":"EOMS","label":"运维系统"},{"value":"Email","label":"邮件"},{"value":"SMS","label":"短信"}]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:期望值为："label":"运维系统"    ---实际值为："label":"运维系统"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getForwardTypeMap -->
+        <test-method status="PASS" signature="getGlobalModule()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getGlobalModule" duration-ms="658" started-at="2018-08-13T02:25:25Z" finished-at="2018-08-13T02:25:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:Post请求URL:http://192.168.20.143:48080/rest/personalizedService/getGlobalModule]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:25:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:resultEntity获取成功:{"status":"failed","code":"500","msg":"DB is not found request data"}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:期望值为："status"    ---实际值为："status"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getGlobalModule -->
+        <test-method status="PASS" signature="countAlertFromCacheForHtmlData()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="countAlertFromCacheForHtmlData" duration-ms="171" started-at="2018-08-13T02:25:26Z" finished-at="2018-08-13T02:25:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/countAlertFromCacheForHtmlData]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 253,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:resultEntity获取成功:{"3":2,"2":667,"1":30,"0":0,"4":13}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:期望值为："3":2    ---实际值为："3":2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- countAlertFromCacheForHtmlData -->
+        <test-method status="PASS" signature="queryAlertFromCacheForHtmlData()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryAlertFromCacheForHtmlData" duration-ms="13736" started-at="2018-08-13T02:25:26Z" finished-at="2018-08-13T02:25:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/queryAlertFromCacheForHtmlData/?length=1000]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:26:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:40:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:40:resultEntity获取成功:{"draw":1,"recordsFiltered":712,"data":[{"activeState":0,"agentId":"PIGOSS","agentName":"PIGOSS - 网利接口","alertCode":0,"alertId":177141275620511,"alertTypeLabel":"CPU使用率过高","appName":"中交项目管理系统-厦门db","arisingTime":"2018-04-03T17:11:05.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"null: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: \n","count":1,"defaultCiType":"","devN]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:40:期望值为：recordsFiltered    ---实际值为：recordsFiltered]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryAlertFromCacheForHtmlData -->
+        <test-method status="PASS" signature="sendAlertClaimAction()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="sendAlertClaimAction" duration-ms="742" started-at="2018-08-13T02:25:40Z" finished-at="2018-08-13T02:25:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:40:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/sendAlertClaimAction]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:40:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 43,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:resultEntity获取成功:{"actTime":"2018-08-13T09:22:35.757","actionId":361132172540000,"actionType":"","alertIds":[],"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{}}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:期望值为：actTime    ---实际值为：actTime]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sendAlertClaimAction -->
+        <test-method status="PASS" signature="sendForwordAction()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="sendForwordAction" duration-ms="107" started-at="2018-08-13T02:25:41Z" finished-at="2018-08-13T02:25:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:Post请求URL:http://192.168.20.143:48080/rest/alertManageFlexService/sendForwordAction]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 172,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:resultEntity获取成功:{"actTime":"2018-08-13T09:22:36.501","actionId":361132172540001,"actionType":"forward","alertIds":[],"comment":"[]","content":"","done":false,"incidentType":"","logs":[],"nodeId":0,"operator":"administrator","params":{"content":"","incidentType":"","severity":0,"title":"[]"},"severity":0,"tags":"","target":"","title":"[]"}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:期望值为：actTime    ---实际值为：actTime]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sendForwordAction -->
+        <test-method status="PASS" signature="sendAlertRecoverAction()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="sendAlertRecoverAction" duration-ms="183" started-at="2018-08-13T02:25:41Z" finished-at="2018-08-13T02:25:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:Post请求URL:http://192.168.20.143:48080/rest/alertHtmlDataService/sendAlertRecoverAction]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 136,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:resultEntity获取成功:{"actTime":"2018-08-13T09:22:36.618","actionId":361132172540002,"actionType":"","alertIds":[],"clearOut":false,"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{},"recoverAll":true,"resolved":true}]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:期望值为：actTime    ---实际值为：actTime]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sendAlertRecoverAction -->
+        <test-method status="PASS" signature="getNodeByName()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getNodeByName" duration-ms="1452" started-at="2018-08-13T02:25:41Z" finished-at="2018-08-13T02:25:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:Post请求URL:http://192.168.20.143:48080/rest/cmdbFlexService/getNodeByName]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:43:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:43:resultEntity获取成功:{"domain":"","isType":true,"label":"网络交换机","name":"Switch","nodeId":349823489617383,"parentId":349823489617415,"parentName":"Network","properties":{"ITOwner":"","icon":"","model":"","serviceStartDate":"","OSVersion":"","IP":"","state":"","serialNumber":"","label":"","vendorContact":"","StartslotNo":"","warrantyExpiration":"","description":"","name":"","domain":"","OccupiedUnits":"","brand":"","nodeNameInMonitoringTool":""},"propertyLabels":{"ITOwner":"系统管理员","icon":"Icon","model":"型号","serviceSt]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:43:期望值为："name":"Switch"    ---实际值为："name":"Switch"]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getNodeByName -->
+        <test-method status="PASS" signature="queryEvent()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryEvent" duration-ms="8686" started-at="2018-08-13T02:25:43Z" finished-at="2018-08-13T02:25:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:43:Post请求URL:http://192.168.20.143:48080/rest/alertQueryFlexService/queryEvent]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:resultEntity获取成功:[{"agentId":"XM_XBROTHER","agentName":"","alertCode":0,"alertId":0,"alertTypeLabel":"","appName":"1#空调","arisingTime":"2016-10-18T16:09:53.000","changeId":"","ciName":"","classified":false,"defaultCiType":"","devName":"XMEM_S0-E65","domainList":["rootDomain"],"domains":"/rootDomain/","eventId":519634128485785,"filtered":false,"instance":"","instance2":"S0-E65-D72","kpiCode":3000000222,"kpiUnit":"","kpiValue":null,"length":0,"message":"风机1运行状态：运行","nodeId":401132488797450,"nodeTypeList":["XM-AirC]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:期望值为：[]    ---实际值为：[]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryEvent -->
+        <test-method status="PASS" signature="queryActionLog()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="queryActionLog" duration-ms="91" started-at="2018-08-13T02:25:51Z" finished-at="2018-08-13T02:25:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:Post请求URL:http://192.168.20.143:48080/rest/alertManageFlexService/queryActionLog]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:resultEntity获取成功:[{"actTime":"2018-08-08T16:53:47.246","actionId":351892793670017,"actionType":"forward","alertId":177141275620511,"comments":"[]","operator":"","paramStr":"{content=, incidentType=, severity=1, title=[]}","result":0},{"actTime":"2018-08-08T16:53:42.747","actionId":351892793670016,"actionType":"forward","alertId":177141275620511,"comments":"[]","operator":"","paramStr":"{content=测试收集接口, incidentType=, severity=1, title=[]}","result":0},{"actTime":"2018-08-08T16:53:34.968","actionId":3518927936700]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:期望值为：actTime    ---实际值为：actTime]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- queryActionLog -->
+        <test-method status="PASS" signature="getRelatedAlerts()[pri:0, instance:com.cases.VicubeInterfaceCase@6a472554]" name="getRelatedAlerts" duration-ms="777" started-at="2018-08-13T02:25:51Z" finished-at="2018-08-13T02:25:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:Post请求URL:http://192.168.20.143:48080/rest/alertQueryService/getRelatedAlerts]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:52:请求成功statusCode = 200]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:52:resultEntity获取成功:[{"activeState":0,"agentId":"PIGOSS","agentName":"PIGOSS - 网利接口","alertCode":0,"alertId":177141275620511,"alertTypeLabel":"CPU使用率过高","appName":"中交项目管理系统-厦门db","arisingTime":"2018-04-03T17:11:05.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"null: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: 测试收集接口\nnull: \n","count":1,"defaultCiType":"","devName":"BJ-XM-ZJXM-db","domainList":["bjD]]>
+            </line>
+            <line>
+              <![CDATA[2018-08-13 10:25:52:期望值为："activeState":0    ---实际值为："activeState":0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getRelatedAlerts -->
+      </class> <!-- com.cases.VicubeInterfaceCase -->
+    </test> <!-- VicubeInterfaceTestCase -->
+  </suite> <!-- Suite -->
+</testng-results>

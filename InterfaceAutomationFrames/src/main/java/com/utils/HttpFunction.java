@@ -42,13 +42,10 @@ public class HttpFunction {
     public Object get(String url) {
         HttpGet get = new HttpGet(url);
         get.setConfig(requestConfig);
-        if (this.getJsonResultOfGet(get) != null) {
-            JSONObject resultOfPost = this.getJsonResultOfGet(get);
-            return resultOfPost;
-        } else {
+
             String stringResultOfPost = this.getStringResultOfGet(get);
             return stringResultOfPost;
-        }
+
     }
 
     //处理有参get请求，得到response内容

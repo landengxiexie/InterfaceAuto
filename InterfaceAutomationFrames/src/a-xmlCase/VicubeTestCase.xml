@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="1" parallel="false" thread-count="1">
-    <test name="VicubeInterfaceTestCase" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+    <test name="VicubeInterfaceTestCase" preserve-order="true">
         <classes>
             <class name="com.cases.VicubeInterfaceCase">
                 <methods>
+
+                    <include name="weather"></include>
+
+
                     <include name="queryUserInfo"></include>
                     <include name="DoLogin"></include>
                     <include name="getFunctionsByUserId"></include>
@@ -106,7 +111,6 @@
             </class>
         </classes>
     </test>
-
     <listeners>
         <listener class-name="com.config.ExtentTestNGIReporterListener"/>
     </listeners>

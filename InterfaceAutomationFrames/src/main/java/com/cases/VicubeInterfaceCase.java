@@ -24,7 +24,6 @@ public class VicubeInterfaceCase {
 
     @Test
     public void queryUserInfo() {
-
         Object post = httpFunction.post(VicubeCasesConfig.queryUserInfoURL);
         String result = String.valueOf(post);
         String name = InterceptFunction.intercept(result, "\"name\":\"wgf\"");
@@ -117,13 +116,13 @@ public class VicubeInterfaceCase {
         AssertFunction.assertEquals(creator, "\"content\":\"\"");
     }
 
-    @Test
+  /*  @Test
     public void grantObjects2Group() {
         Object post = httpFunction.post(VicubeCasesConfig.grantObjects2GroupURL, VicubeCasesConfig.grantObjects2GroupParams);
         String result = String.valueOf(post);
         String number = InterceptFunction.intercept(result, "1");
         AssertFunction.assertEquals(number, "1");
-    }
+    }*/
 
     @Test
     public void queryGroupInfo() {
@@ -205,13 +204,13 @@ public class VicubeInterfaceCase {
         AssertFunction.assertEquals(creator, "domainName");
     }
 
-    @Test
+/*    @Test
     public void grantMenuAmoduleAview2User() {
         Object post = httpFunction.post(VicubeCasesConfig.grantMenuAmoduleAview2UserURL, VicubeCasesConfig.grantMenuAmoduleAview2UserParams);
         String result = String.valueOf(post);
         String creator = InterceptFunction.intercept(result, "0");
         AssertFunction.assertEquals(creator, "0");
-    }
+    }*/
 
     @Test
     public void grantObjectsDomain() {
@@ -778,5 +777,11 @@ public class VicubeInterfaceCase {
         AssertFunction.assertEquals(success, "\"activeState\":0");
     }
 
+
+    @Test
+    public void weather() {
+        Object get = httpFunction.get("https://api.ruiji.in/server/index.php?g=Web&c=Mock&o=simple&projectID=2&uri=www.apiopen.top/weatherApi?city='成都'");
+        String result = String.valueOf(get);
+    }
 
 }
