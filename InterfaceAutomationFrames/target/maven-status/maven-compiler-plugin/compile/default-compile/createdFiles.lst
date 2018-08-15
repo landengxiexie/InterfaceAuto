@@ -4,11 +4,13 @@ com\utils\LogFunction.class
 com\memorandom\Test0002.class
 com\utils\InterceptFunction.class
 com\utils\AssertFunction.class
+com\cases\VicubeInterfaceCase175.class
 com\utils\TimeString.class
 com\config\ExtentTestNGIReporterListener.class
 com\cases\VicubeInterfaceCase.class
 com\config\VicubeCasesConfig.class
 com\utils\HttpCookiesFunction.class
 com\config\ExtentTestNGIReporterListener$1.class
+com\cases\VicubeInterfaceCase143.class
 com\config\BaseConfig.class
 com\utils\getCookiesFunc.class

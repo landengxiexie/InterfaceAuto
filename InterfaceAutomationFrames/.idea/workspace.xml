@@ -37,72 +37,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="VicubeInterfaceCase143.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase143.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testData175.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="242" column="28" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testData143.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VicubeTestCase175.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VicubeInterfaceCase175.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+              <folding>
+                <element signature="e#721#1053#0" />
+                <element signature="e#1059#1416#0" />
+                <element signature="e#1422#1764#0" />
+                <element signature="e#2155#2725#0" />
+                <element signature="e#2732#3111#0" />
+                <element signature="e#3117#3681#0" />
+                <element signature="e#3687#4001#0" />
+                <element signature="e#4007#4346#0" />
+                <element signature="e#4352#4689#0" />
+                <element signature="e#4695#5033#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="VicubeInterfaceCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21588">
-              <caret line="782" column="35" selection-start-line="782" selection-start-column="35" selection-end-line="782" selection-end-column="35" />
-              <folding>
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20180810141628375_TestReport.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-output/20180810141628375_TestReport.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testData.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/testData.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpFunction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/HttpFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VicubeTestCase.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VicubeTestCase2.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="88">
+              <caret line="467" selection-start-line="467" selection-end-line="467" />
             </state>
           </provider>
         </entry>
@@ -110,26 +106,35 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="216" column="12" lean-forward="true" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
+            <state relative-caret-position="194">
+              <caret line="198" column="31" lean-forward="true" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caseData.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/caseData.xml">
+      <file leaf-file-name="VicubeTestCase143..xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtentTestNGIReporterListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/config/ExtentTestNGIReporterListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maven-4.0.0.xsd" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <file leaf-file-name="VicubeCasesConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="5096">
+              <caret line="182" column="19" selection-start-line="182" selection-start-column="19" selection-end-line="182" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -145,36 +150,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>findByOperationTypeAndModelNameURL</find>
-      <find>findURL</find>
-      <find>queryByFilter2URL</find>
-      <find>addURL</find>
-      <find>updateURL</find>
-      <find>update</find>
-      <find>getFunctionsByUserId</find>
-      <find>353676547290005</find>
-      <find>validationURL</find>
-      <find>findBySourceOrTarget_LabelURL</find>
-      <find>instanceServiceUpdateURL</find>
-      <find>findById</find>
-      <find>findByIdURL</find>
-      <find>http://192.168.20.143:48080/urmp/api/rest/post/relationAttributeService/add</find>
       <find>statisticAlertCountByStateCacheURL</find>
       <find>statisticAlertCountByStateCache</find>
       <find>grantMenuAmoduleAview2UserURL</find>
       <find>[[], [], [&quot;8881&quot;], [], &quot;345174431410000&quot;, &quot;2&quot;]grantMenuAmoduleAview2User</find>
       <find>grantObjects2User</find>
       <find>relationAttributeServiceAddParams</find>
-      <find>findByNameNotBuiltInAttr</find>
       <find>353123447290006</find>
       <find>httpclient</find>
       <find>queryObjectsByGroupIdURL</find>
-      <find>relationAttributeServiceAdd</find>
       <find>findByNameNotBuiltInAttrURL</find>
       <find>static</find>
       <find>queryUserInfoURL</find>
+      <find>192.168.20.143</find>
+      <find>192.168.20.175</find>
+      <find>getBaseLineDefList</find>
+      <find>instanceServiceFindById</find>
+      <find>jsonobject</find>
+      <find>findById</find>
+      <find>jsonobjec</find>
+      <find>测试接口名称</find>
+      <find>getGlobalModule</find>
+      <find>queryByFilter2</find>
+      <find>w</find>
+      <find>queryIncidentType</find>
+      <find>grantObjects2GroupURL</find>
       <find>grantMenuAmoduleAview2User</find>
+      <find>relationAttributeServiceAdd</find>
+      <find>getFunctionsByUserId</find>
       <find>grantObjects2Group</find>
+      <find>findByNameNotBuiltInAttr</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -185,6 +190,8 @@
       <replace>,</replace>
       <replace>&quot;</replace>
       <replace>baseConfig</replace>
+      <replace>192.168.20.175</replace>
+      <replace>192.168.20.143</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -206,15 +213,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cases/V1_VicubeInterfaceCase.java" />
         <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml" />
         <option value="$PROJECT_DIR$/src/config/baseConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/config/BaseConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/config/VicubeCasesParams.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cases/Test0002.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/ParseXML.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/memorandom/Test0002.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java" />
         <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/utils/HttpFunction.java" />
+        <option value="$PROJECT_DIR$/src/config/testData.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/config/BaseConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase143.java" />
+        <option value="$PROJECT_DIR$/src/config/testData143.xml" />
+        <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
+        <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java" />
+        <option value="$PROJECT_DIR$/src/config/testData175.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -261,7 +275,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="250" />
     <option name="y" value="220" />
     <option name="width" value="610" />
@@ -278,11 +292,6 @@
             <path>
               <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
               <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
@@ -343,36 +352,22 @@
             <path>
               <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
               <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="LogFunction.logInfo(&quot;statusCode = &quot; + statusCode); &#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="G:/chatRecord/WeChat Files/qyda88888888/Files/InterfaceAutomationFrames" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -389,12 +384,15 @@
       <recent name="D:\GitHubProject\InterfaceAutomationFrames\src" />
       <recent name="D:\GitHubProject\InterfaceAutomationFrames\src\main\java\com\memorandom" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cases" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHubProject\InterfaceAutomationFrames" />
+      <recent name="D:\GitHubProject\InterfaceAutomationFrames\src\a-xmlCase" />
       <recent name="D:\GitHubProject\InterfaceAutomationFrames\src\config" />
+      <recent name="D:\GitHubProject\InterfaceAutomationFrames" />
       <recent name="D:\GitHubProject\InterfaceAutomationFrames\target" />
       <recent name="D:\PersonProject\InterfaceAutoFrames\src" />
-      <recent name="D:\PersonProject\InterfaceAutoFrames\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -409,7 +407,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml">
+  <component name="RunManager" selected="TestNG.VicubeInterfaceCase">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -429,11 +427,11 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase2.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -452,16 +450,22 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -475,7 +479,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase.queryUserInfo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase175.grantMenuAmoduleAview2User" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <extension name="coverage">
         <pattern>
@@ -487,8 +491,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase" />
-      <option name="METHOD_NAME" value="queryUserInfo" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
+      <option name="METHOD_NAME" value="grantMenuAmoduleAview2User" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -504,7 +508,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase.relationAttributeServiceAdd" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase175.grantObjects2Group" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <extension name="coverage">
         <pattern>
@@ -516,8 +520,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase" />
-      <option name="METHOD_NAME" value="relationAttributeServiceAdd" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
+      <option name="METHOD_NAME" value="grantObjects2Group" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -533,7 +537,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase.weather" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase175.queryIncidentType" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <extension name="coverage">
         <pattern>
@@ -543,14 +547,14 @@
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
       <option name="PACKAGE_NAME" value="com.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase" />
-      <option name="METHOD_NAME" value="weather" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
+      <option name="METHOD_NAME" value="queryIncidentType" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+      <option name="PARAMETERS" value="0" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -585,19 +589,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" />
-      <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase2.xml" />
-      <item itemvalue="TestNG.VicubeInterfaceCase.relationAttributeServiceAdd" />
-      <item itemvalue="TestNG.VicubeInterfaceCase.queryUserInfo" />
-      <item itemvalue="TestNG.VicubeInterfaceCase.weather" />
+      <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.queryIncidentType" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.grantMenuAmoduleAview2User" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.grantObjects2Group" />
+      <item itemvalue="TestNG.VicubeInterfaceCase" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" />
-        <item itemvalue="TestNG.VicubeInterfaceCase.weather" />
-        <item itemvalue="TestNG.VicubeInterfaceCase.queryUserInfo" />
-        <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase2.xml" />
-        <item itemvalue="TestNG.VicubeInterfaceCase.relationAttributeServiceAdd" />
+        <item itemvalue="TestNG.VicubeInterfaceCase" />
+        <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.grantObjects2Group" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.grantMenuAmoduleAview2User" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.queryIncidentType" />
       </list>
     </recent_temporary>
   </component>
@@ -639,44 +643,47 @@
       <workItem from="1533779921853" duration="3949000" />
       <workItem from="1533784100870" duration="15970000" />
       <workItem from="1533866747684" duration="17826000" />
-      <workItem from="1534125356402" duration="2095000" />
+      <workItem from="1534125356402" duration="5036000" />
+      <workItem from="1534155968512" duration="859000" />
+      <workItem from="1534211890208" duration="13867000" />
+      <workItem from="1534323671308" duration="382000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 14h 16m 47s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 08m 41s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 14h 29m 42s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 10m 51s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 14h 30m 56s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_grantMenuAmoduleAview2User - 2018.08.14 at 14h 25m 30s.xml">
+      <configuration name="VicubeInterfaceCase175.grantMenuAmoduleAview2User" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 15h 39m 32s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_grantMenuAmoduleAview2User - 2018.08.14 at 14h 26m 07s.xml">
+      <configuration name="VicubeInterfaceCase175.grantMenuAmoduleAview2User" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 16h 30m 05s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_grantMenuAmoduleAview2User - 2018.08.14 at 14h 29m 33s.xml">
+      <configuration name="VicubeInterfaceCase175.grantMenuAmoduleAview2User" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 16h 35m 25s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_grantObjects2Group - 2018.08.14 at 14h 32m 16s.xml">
+      <configuration name="VicubeInterfaceCase175.grantObjects2Group" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase_weather - 2018.08.10 at 16h 50m 43s.xml">
-      <configuration name="VicubeInterfaceCase.weather" configurationId="TestNG" />
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 49m 33s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase_weather - 2018.08.10 at 16h 51m 37s.xml">
-      <configuration name="VicubeInterfaceCase.weather" configurationId="TestNG" />
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 51m 08s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 16h 53m 24s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 17h 44m 53s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase_xml - 2018.08.10 at 17h 11m 25s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase.xml" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase - 2018.08.15 at 17h 02m 58s.xml">
+      <configuration name="VicubeInterfaceCase" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196648000" />
+    <option name="totallyTimeSpent" value="214697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,22 +696,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1452" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3328841" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.28167117" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143474" side_tool="true" weight="0.37601078" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.24748924" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.24748924" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" weight="0.44204852" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" weight="0.4272237" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" visible="true" weight="0.35040432" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.205165" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.35150644" />
       <window_info anchor="right" id="Database" order="7" weight="0.30487806" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32614556" />
       <window_info id="Structure" order="1" sideWeight="0.35303265" side_tool="true" weight="0.22812052" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.19942611" />
       <window_info id="UI Designer" order="4" />
@@ -717,8 +727,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32614556" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.28167117" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -742,8 +750,14 @@
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java</url>
+          <line>301</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="58" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -751,144 +765,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/getCookiesFunc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar!/org/apache/http/client/methods/HttpRequestBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestResult.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar!/org/apache/http/impl/client/CloseableHttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar!/org/apache/http/impl/client/HttpClients.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar!/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="455" selection-start-line="455" selection-end-line="455" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/HttpFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="326" column="52" lean-forward="true" selection-start-line="326" selection-start-column="52" selection-end-line="326" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/AssertFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK1.8/jre/lib/rt.jar!/sun/misc/Launcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK1.8/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="361" column="23" selection-start-line="361" selection-start-column="23" selection-end-line="361" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK1.8/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="1597" selection-start-line="1597" selection-end-line="1597" />
-          <folding>
-            <element signature="e#62557#62558#0" expanded="true" />
-            <element signature="e#117534#117535#0" expanded="true" />
-            <element signature="e#117596#117597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK1.8/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/LogFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="39" selection-start-line="39" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/IReporter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/ExtentReport.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/HttpCookiesFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="49" selection-start-line="49" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/baseConfigSource.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/InterceptFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/JDK1.8/src.zip!/java/net/SocketInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="117" column="53" lean-forward="true" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/20180809111035399_TestReport.html" />
-    <entry file="file://$PROJECT_DIR$/test-output/20180809152805710_TestReport.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/memorandom/V1_VicubeInterfaceCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -920,24 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/ExtentTestNGIReporterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/memorandom/V1_baseConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1988">
           <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/TimeString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1624">
-          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -970,27 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/BaseConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8060">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/ParseXML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -1007,13 +848,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/testData.xml" />
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -1021,10 +855,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/20180810141628375_TestReport.html">
+    <entry file="file://$PROJECT_DIR$/test-output/20180810141628375_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/src/config/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/20180810141522129_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/test-output/20180810141637149_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/test-output/20180813183332256_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1035,52 +880,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/ParseXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        <state relative-caret-position="121">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/testData.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/BaseConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="218">
+          <caret line="214" column="41" selection-start-line="214" selection-start-column="41" selection-end-line="214" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="165">
+          <caret line="454" selection-start-line="454" selection-end-line="454" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/InterceptFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21588">
-          <caret line="782" column="35" selection-start-line="782" selection-start-column="35" selection-end-line="782" selection-end-column="35" />
-          <folding>
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="280">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/TimeString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/LogFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Hierarchy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="355" selection-start-line="355" selection-end-line="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Priority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/helpers/AppenderAttachableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/spi/LoggingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/20180814110025961_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/test-output/20180814110207663_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/test-output/20180814111040524_TestReport.html" />
+    <entry file="file://$PROJECT_DIR$/test-output/20180814113536148_TestReport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/WriterAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/AppenderSkeleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/HttpFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        <state relative-caret-position="6160">
+          <caret line="241" column="14" selection-start-line="241" selection-start-column="14" selection-end-line="241" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/20180814141019771_TestReport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/ExtentTestNGIReporterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5096">
+          <caret line="182" column="19" selection-start-line="182" selection-start-column="19" selection-end-line="182" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase143.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#721#1053#0" />
+            <element signature="e#1059#1416#0" />
+            <element signature="e#1422#1764#0" />
+            <element signature="e#2155#2725#0" />
+            <element signature="e#2732#3111#0" />
+            <element signature="e#3117#3681#0" />
+            <element signature="e#3687#4001#0" />
+            <element signature="e#4007#4346#0" />
+            <element signature="e#4352#4689#0" />
+            <element signature="e#4695#5033#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="242" column="28" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="467" selection-start-line="467" selection-end-line="467" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="216" column="12" lean-forward="true" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
+        <state relative-caret-position="194">
+          <caret line="198" column="31" lean-forward="true" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
         </state>
       </provider>
     </entry>

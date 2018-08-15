@@ -1,5 +1,6 @@
 package com.cases;
 
+import com.config.BaseConfig;
 import com.config.VicubeCasesConfig;
 import com.utils.AssertFunction;
 import com.utils.HttpFunction;
@@ -11,13 +12,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 @SuppressWarnings("ALL")
-public class VicubeInterfaceCase {
+public class VicubeInterfaceCase143 {
     private HttpFunction httpFunction = HttpFunction.getInstance();
     private VicubeCasesConfig casesConfig = new VicubeCasesConfig();
 
     @BeforeTest
     public void init() {
-        casesConfig.read("src/config/testData175.xml");
+        casesConfig.read("src/config/testData143.xml");
     }
 
 
@@ -25,15 +26,20 @@ public class VicubeInterfaceCase {
     public void queryUserInfo() {
         Object post = httpFunction.post(VicubeCasesConfig.queryUserInfoURL);
         String result = String.valueOf(post);
+        String name = InterceptFunction.intercept(result, "\"name\":\"wgf\"");
         String authMethod = InterceptFunction.intercept(result, "\"authMethod\":\"DB\"");
+        AssertFunction.assertEquals(name, "\"name\":\"wgf\"");
         AssertFunction.assertEquals(authMethod, "\"authMethod\":\"DB\"");
+
     }
 
     @Test
     public void DoLogin() {
         Object post = httpFunction.post(VicubeCasesConfig.DoLoginURL, VicubeCasesConfig.DoLoginParams);
         String result = String.valueOf(post);
+        String encryptedpwd = InterceptFunction.intercept(result, "\"encryptedpwd\":\"@Vic_2017_Rg\"");
         String groupName = InterceptFunction.intercept(result, "\"groupName\":\"超级管理员组\"");
+        AssertFunction.assertEquals(encryptedpwd, "\"encryptedpwd\":\"@Vic_2017_Rg\"");
         AssertFunction.assertEquals(groupName, "\"groupName\":\"超级管理员组\"");
     }
 
@@ -87,8 +93,10 @@ public class VicubeInterfaceCase {
     public void getAllDomains() {
         Object post = httpFunction.post(VicubeCasesConfig.getAllDomainsURL);
         String result = String.valueOf(post);
-        String domain = InterceptFunction.intercept(result, "\"isType\":false");
-        AssertFunction.assertEquals(domain, "\"isType\":false");
+        String domain = InterceptFunction.intercept(result, "\"domain\":\"rootDomain\"");
+        String label = InterceptFunction.intercept(result, "\"label\":\"北京运维组\"");
+        AssertFunction.assertEquals(domain, "\"domain\":\"rootDomain\"");
+        AssertFunction.assertEquals(label, "\"label\":\"北京运维组\"");
     }
 
     //      接口不通过
@@ -108,13 +116,13 @@ public class VicubeInterfaceCase {
         AssertFunction.assertEquals(creator, "\"content\":\"\"");
     }
 
-    @Test
+  /*  @Test
     public void grantObjects2Group() {
         Object post = httpFunction.post(VicubeCasesConfig.grantObjects2GroupURL, VicubeCasesConfig.grantObjects2GroupParams);
         String result = String.valueOf(post);
         String number = InterceptFunction.intercept(result, "1");
         AssertFunction.assertEquals(number, "1");
-    }
+    }*/
 
     @Test
     public void queryGroupInfo() {
@@ -196,13 +204,13 @@ public class VicubeInterfaceCase {
         AssertFunction.assertEquals(creator, "domainName");
     }
 
-    @Test
+/*    @Test
     public void grantMenuAmoduleAview2User() {
         Object post = httpFunction.post(VicubeCasesConfig.grantMenuAmoduleAview2UserURL, VicubeCasesConfig.grantMenuAmoduleAview2UserParams);
         String result = String.valueOf(post);
-        String creator = InterceptFunction.intercept(result, "4");
-        AssertFunction.assertEquals(creator, "4");
-    }
+        String creator = InterceptFunction.intercept(result, "0");
+        AssertFunction.assertEquals(creator, "0");
+    }*/
 
     @Test
     public void grantObjectsDomain() {
@@ -228,6 +236,8 @@ public class VicubeInterfaceCase {
         String result = String.valueOf(post);
         String authMethod = InterceptFunction.intercept(result, "\"actionName\":\"删除工作组\"");
         AssertFunction.assertEquals(authMethod, "\"actionName\":\"删除工作组\"");
+        String createDate = InterceptFunction.intercept(result, "\"auditId\":15589");
+        AssertFunction.assertEquals(createDate, "\"auditId\":15589");
     }
 
     @Test
@@ -242,16 +252,10 @@ public class VicubeInterfaceCase {
     public void getBaseLinePolicyList() {
         Object post = httpFunction.post(VicubeCasesConfig.getBaseLinePolicyListURL, VicubeCasesConfig.getBaseLinePolicyListParams);
         String result = String.valueOf(post);
-        try {
-            String bottomLineDataProvider = InterceptFunction.intercept(result, "[]");
-            AssertFunction.assertEquals(bottomLineDataProvider, "[]");
-        }catch (Exception e){
-            String bottomLineDataProvider = InterceptFunction.intercept(result, "\"bottomLineDataProvider\":\"common\"");
-            AssertFunction.assertEquals(bottomLineDataProvider, "\"bottomLineDataProvider\":\"common\"");
-            String bottomLineDataRangeFrom = InterceptFunction.intercept(result, "\"bottomLineDataRangeFrom\":0");
-            AssertFunction.assertEquals(bottomLineDataRangeFrom, "\"bottomLineDataRangeFrom\":0");
-        }
-
+        String bottomLineDataProvider = InterceptFunction.intercept(result, "\"bottomLineDataProvider\":\"common\"");
+        AssertFunction.assertEquals(bottomLineDataProvider, "\"bottomLineDataProvider\":\"common\"");
+        String bottomLineDataRangeFrom = InterceptFunction.intercept(result, "\"bottomLineDataRangeFrom\":0");
+        AssertFunction.assertEquals(bottomLineDataRangeFrom, "\"bottomLineDataRangeFrom\":0");
     }
 
     @Test
@@ -282,6 +286,8 @@ public class VicubeInterfaceCase {
     public void getAllTypeNodes() {
         Object post = httpFunction.post(VicubeCasesConfig.getAllTypeNodesURL, VicubeCasesConfig.getAllTypeNodesParams);
         String result = String.valueOf(post);
+        String label = InterceptFunction.intercept(result, "\"label\":\"统一资源");
+        AssertFunction.assertEquals(label, "\"label\":\"统一资源");
         String name = InterceptFunction.intercept(result, "\"name\":\"Ci\"");
         AssertFunction.assertEquals(name, "\"name\":\"Ci\"");
     }
@@ -298,13 +304,8 @@ public class VicubeInterfaceCase {
     public void getBaseLineDefList() {
         Object post = httpFunction.post(VicubeCasesConfig.getBaseLineDefListURL, VicubeCasesConfig.getBaseLineDefListParams);
         String result = String.valueOf(post);
-        try {
-            String calendarType = InterceptFunction.intercept(result, "[]");
-            AssertFunction.assertEquals(calendarType, "[]");
-        }catch (Exception e){
-            String calendarType = InterceptFunction.intercept(result, "\"calendarType\":\"auto\"");
-            AssertFunction.assertEquals(calendarType, "\"calendarType\":\"auto\"");
-        }
+        String calendarType = InterceptFunction.intercept(result, "\"calendarType\":\"auto\"");
+        AssertFunction.assertEquals(calendarType, "\"calendarType\":\"auto\"");
     }
 
     @Test
@@ -440,8 +441,8 @@ public class VicubeInterfaceCase {
     public void queryByFilter2() {
         Object post = httpFunction.post(VicubeCasesConfig.queryByFilter2URL, VicubeCasesConfig.queryByFilter2Params);
         String result = String.valueOf(post);
-        String attributes = InterceptFunction.intercept(result, "\"attributes\"");
-        AssertFunction.assertEquals(attributes, "\"attributes\"");
+        String attributes = InterceptFunction.intercept(result, "\"attributes\":[]");
+        AssertFunction.assertEquals(attributes, "\"attributes\":[]");
     }
 
     private static CloseableHttpClient httpClient;
@@ -541,8 +542,8 @@ public class VicubeInterfaceCase {
     public void queryInstanceByRelationPage() {
         Object post = httpFunction.post(VicubeCasesConfig.queryInstanceByRelationPageURL, VicubeCasesConfig.queryInstanceByRelationPageParams);
         String result = String.valueOf(post);
-        String data = InterceptFunction.intercept(result, "\"data\":");
-        AssertFunction.assertEquals(data, "\"data\":");
+        String data = InterceptFunction.intercept(result, "\"data\":[],\"size\":0");
+        AssertFunction.assertEquals(data, "\"data\":[],\"size\":0");
     }
 
     @Test
@@ -553,21 +554,17 @@ public class VicubeInterfaceCase {
         AssertFunction.assertEquals(data, "true");
     }
 
-    String instanceServiceAddID =null;
-
     @Test
     public void instanceServiceAdd() {
         Object post = httpFunction.post(VicubeCasesConfig.instanceServiceAddURL, VicubeCasesConfig.instanceServiceAddParams);
         String result = String.valueOf(post);
-        JSONObject resultJson = new JSONObject(result);
-        instanceServiceAddID = resultJson.get("id").toString();
         String batch = InterceptFunction.intercept(result, "\"batch\":false");
         AssertFunction.assertEquals(batch, "\"batch\":false");
     }
 
-    @Test(dependsOnMethods = "instanceServiceAdd")
+    @Test
     public void instanceServiceFindById() {
-        Object post = httpFunction.post(VicubeCasesConfig.instanceServiceFindByIdURL,instanceServiceAddID);
+        Object post = httpFunction.post(VicubeCasesConfig.instanceServiceFindByIdURL, VicubeCasesConfig.instanceServiceFindByIdParams);
         String result = String.valueOf(post);
         String batch = InterceptFunction.intercept(result, "\"batch\":false");
         AssertFunction.assertEquals(batch, "\"batch\":false");
@@ -640,8 +637,8 @@ public class VicubeInterfaceCase {
     public void confirmationedCount() {
         Object post = httpFunction.post(VicubeCasesConfig.confirmationedCountURL);
         String result = String.valueOf(post);
-        String success = InterceptFunction.intercept(result, "\"data\":");
-        AssertFunction.assertEquals(success, "\"data\":");
+        String success = InterceptFunction.intercept(result, "\"data\":3");
+        AssertFunction.assertEquals(success, "\"data\":3");
     }
 
     @Test
@@ -680,13 +677,8 @@ public class VicubeInterfaceCase {
     public void queryIncidentType() {
         Object post = httpFunction.post(VicubeCasesConfig.queryIncidentTypeURL);
         String result = String.valueOf(post);
-        try {
-            String success = InterceptFunction.intercept(result, "[]");
-            AssertFunction.assertEquals(success, "[]");
-        }catch (Exception e) {
-            String success = InterceptFunction.intercept(result, "\"comments\":\"\"");
-            AssertFunction.assertEquals(success, "\"comments\":\"\"");
-        }
+        String success = InterceptFunction.intercept(result, "\"comments\":\"\"");
+        AssertFunction.assertEquals(success, "\"comments\":\"\"");
     }
 
     @Test
@@ -709,21 +701,16 @@ public class VicubeInterfaceCase {
     public void getGlobalModule() {
         Object post = httpFunction.post(VicubeCasesConfig.getGlobalModuleURL, VicubeCasesConfig.getGlobalModuleParams);
         String result = String.valueOf(post);
-        try {
-            String success = InterceptFunction.intercept(result, "null");
-            AssertFunction.assertEquals(success, "null");
-        }catch (Exception e) {
-            String success = InterceptFunction.intercept(result, "\"status\"");
-            AssertFunction.assertEquals(success, "\"status\"");
-        }
+        String success = InterceptFunction.intercept(result, "\"status\"");
+        AssertFunction.assertEquals(success, "\"status\"");
     }
 
     @Test
     public void countAlertFromCacheForHtmlData() {
         Object post = httpFunction.post(VicubeCasesConfig.countAlertFromCacheForHtmlDataURL, VicubeCasesConfig.countAlertFromCacheForHtmlDataParams);
         String result = String.valueOf(post);
-        String success = InterceptFunction.intercept(result, "\"3\":");
-        AssertFunction.assertEquals(success, "\"3\":");
+        String success = InterceptFunction.intercept(result, "\"3\":2");
+        AssertFunction.assertEquals(success, "\"3\":2");
     }
 
     @Test
@@ -789,7 +776,6 @@ public class VicubeInterfaceCase {
         String success = InterceptFunction.intercept(result, "\"activeState\":0");
         AssertFunction.assertEquals(success, "\"activeState\":0");
     }
-
 
 
 }

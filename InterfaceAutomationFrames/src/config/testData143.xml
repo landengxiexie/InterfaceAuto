@@ -58,7 +58,7 @@
    </addViewParams>
 
    <grantObjects2GroupURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantObjects2Group</grantObjects2GroupURL>
-   <grantObjects2GroupParams>[[""], "", ""]</grantObjects2GroupParams>
+   <grantObjects2GroupParams>[["8931"], "6", "345174431410000"]</grantObjects2GroupParams>
 
    <queryGroupInfoURL>http://192.168.20.143:48080/rest/groupFlexService/queryGroupInfo</queryGroupInfoURL>
 
@@ -85,7 +85,7 @@
    <queryObjectsByGroupIdParams>["", ""]</queryObjectsByGroupIdParams>
 
    <grantMenuAmoduleAview2UserURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantMenuAmoduleAview2User</grantMenuAmoduleAview2UserURL>
-   <grantMenuAmoduleAview2UserParams>[[], [], [""], [], "", ""]</grantMenuAmoduleAview2UserParams>
+   <grantMenuAmoduleAview2UserParams>[[], [], ["8881"], [], "345174431410000", "2"]</grantMenuAmoduleAview2UserParams>
 
    <grantObjectsDomainURL>http://192.168.20.143:48080/rest/authorizeFlexService/grantObjectsDomain</grantObjectsDomainURL>
    <grantObjectsDomainParams>["", "", "rootDomain:D803:"]</grantObjectsDomainParams>

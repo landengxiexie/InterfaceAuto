@@ -191,10 +191,8 @@ public class BaseConfig {
     public static String queryActionLogParams;
     public static String getRelatedAlertsURL;
     public static String getRelatedAlertsParams;
-
-
-
-
+    public static String casePath175;
+    public static String casePath143;
 
 
 
@@ -214,7 +212,10 @@ public class BaseConfig {
 
     static {
         ParseXML p = new ParseXML();
-        p.readXML("src/config/baseConfig.xml");
+        p.readXML("src/config/testData143.xml");
+
+        casePath143="src/config/testData143.xml";
+        casePath175="src/config/testData175.xml";
 
 //        path = p.getElementText("*/caseDataPath");
 //        url=p.getElementText("*/url");
@@ -491,6 +492,10 @@ public class BaseConfig {
 
         getRelatedAlertsURL = p.getElementText("*/getRelatedAlertsURL");
         getRelatedAlertsParams = p.getElementText("*/getRelatedAlertsParams");
+
+
+
+
 
 
 

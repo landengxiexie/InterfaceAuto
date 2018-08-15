@@ -3,10 +3,9 @@
 <suite name="Suite" verbose="1" parallel="false" thread-count="1">
     <test name="VicubeInterfaceTestCase" preserve-order="true">
         <classes>
-            <class name="com.cases.VicubeInterfaceCase">
+            <class name="com.cases.VicubeInterfaceCase175">
                 <methods>
 
-                    <include name="weather"></include>
 
 
                     <include name="queryUserInfo"></include>
@@ -19,7 +18,7 @@
                     <include name="getAllDomains"></include>
                     <include name="createGroup"></include>
                     <include name="addView"></include>
-                    <!--<include name="grantObjects2Group"></include>-->
+                    <include name="grantObjects2Group"></include>
                     <include name="queryGroupInfo"></include>
                     <include name="queryUsersByGroupId"></include>
                     <include name="grantUsers2Group"></include>
@@ -29,7 +28,7 @@
                     <include name="getAllFunctions"></include>
                     <include name="findByModelName"></include>
                     <include name="queryObjectsByGroupId"></include>
-                    <!--<include name="grantMenuAmoduleAview2User"></include>-->
+                    <include name="grantMenuAmoduleAview2User"></include>
                     <include name="grantObjectsDomain"></include>
                     <include name="queryUserInfo2"></include>
                     <include name="queryAuditInfo"></include>

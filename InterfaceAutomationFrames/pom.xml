@@ -196,11 +196,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.21.0</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            ./src/a-xmlCase/VicubeTestCase.xml
+                            ./src/a-xmlCase/VicubeTestCase175.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
@@ -225,7 +224,7 @@
                 <!--<configuration>-->
                     <!--<archive>-->
                         <!--<manifest>-->
-                            <!--<mainClass>src.main.java.com.cases.VicubeInterfaceCase</mainClass>  （所要打包的类名）-->
+                            <!--<mainClass>src.main.java.com.cases.VicubeInterfaceCase143143</mainClass>  （所要打包的类名）-->
                         <!--</manifest>-->
                     <!--</archive>-->
                     <!--<descriptorRefs>-->

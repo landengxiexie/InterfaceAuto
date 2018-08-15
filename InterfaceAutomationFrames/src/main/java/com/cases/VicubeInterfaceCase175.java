@@ -1,5 +1,6 @@
 package com.cases;
 
+import com.config.BaseConfig;
 import com.config.VicubeCasesConfig;
 import com.utils.AssertFunction;
 import com.utils.HttpFunction;
@@ -11,7 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 @SuppressWarnings("ALL")
-public class VicubeInterfaceCase {
+public class VicubeInterfaceCase175 {
     private HttpFunction httpFunction = HttpFunction.getInstance();
     private VicubeCasesConfig casesConfig = new VicubeCasesConfig();
 
