@@ -273,7 +273,8 @@
 
 
    <relationAttributeServiceAddURL>http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/add</relationAttributeServiceAddURL>
-   <relationAttributeServiceAddParams>[{"source":"DictManager",
+   <relationAttributeServiceAddParams>
+      [{"source":"DictManager",
       "name":"BelongsTo新增收集接口00017",
       "label":"可修改001",
       "target":"新增收集接口00017",

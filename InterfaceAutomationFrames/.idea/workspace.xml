@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="286" column="55" selection-start-line="286" selection-start-column="55" selection-end-line="286" selection-end-column="55" />
+              <caret line="277" column="23" lean-forward="true" selection-start-line="277" selection-start-column="23" selection-end-line="277" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -67,8 +67,8 @@
       <file leaf-file-name="VicubeInterfaceCase175.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="484" column="43" selection-start-line="484" selection-start-column="16" selection-end-line="484" selection-end-column="43" />
+            <state relative-caret-position="81">
+              <caret line="485" column="30" selection-start-line="485" selection-start-column="30" selection-end-line="485" selection-end-column="30" />
               <folding>
                 <element signature="e#721#1053#0" />
                 <element signature="e#1059#1416#0" />
@@ -165,11 +165,11 @@
       <find>queryIncidentType</find>
       <find>grantObjects2GroupURL</find>
       <find>grantMenuAmoduleAview2User</find>
-      <find>relationAttributeServiceAdd</find>
       <find>getFunctionsByUserId</find>
       <find>grantObjects2Group</find>
       <find>findByNameNotBuiltInAttr</find>
       <find>maven-surefire-plugin</find>
+      <find>relationAttributeServiceAdd</find>
       <find>relationAttributeService</find>
     </findStrings>
     <replaceStrings>
@@ -393,7 +393,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.VicubeInterfaceCase175.relationAttributeServiceAdd">
+  <component name="RunManager" selected="TestNG.VicubeInterfaceCase175.relationAttributeServiceAdd (1)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -482,7 +482,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase175.relationAttributeServiceAdd (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <extension name="coverage">
         <pattern>
@@ -494,10 +494,10 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase" />
-      <option name="METHOD_NAME" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
+      <option name="METHOD_NAME" value="relationAttributeServiceAdd" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -564,18 +564,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
-      <item itemvalue="TestNG.VicubeInterfaceCase" />
       <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" />
       <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/test.xml" />
       <item itemvalue="TestNG.VicubeInterfaceCase175.relationAttributeServiceAdd" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.relationAttributeServiceAdd (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.VicubeInterfaceCase175.relationAttributeServiceAdd (1)" />
         <item itemvalue="TestNG.VicubeInterfaceCase175.relationAttributeServiceAdd" />
         <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
         <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/test.xml" />
         <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" />
-        <item itemvalue="TestNG.VicubeInterfaceCase" />
       </list>
     </recent_temporary>
   </component>
@@ -621,17 +621,11 @@
       <workItem from="1534155968512" duration="859000" />
       <workItem from="1534211890208" duration="13867000" />
       <workItem from="1534323671308" duration="717000" />
-      <workItem from="1534385388685" duration="6972000" />
+      <workItem from="1534385388685" duration="7626000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 49m 33s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 51m 08s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 17h 44m 53s.xml">
       <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
@@ -656,9 +650,15 @@
     <history-entry file="VicubeInterfaceCase175_relationAttributeServiceAdd - 2018.08.16 at 14h 56m 40s.xml">
       <configuration name="VicubeInterfaceCase175.relationAttributeServiceAdd" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="VicubeInterfaceCase175_relationAttributeServiceAdd_(1) - 2018.08.16 at 15h 10m 50s.xml">
+      <configuration name="VicubeInterfaceCase175.relationAttributeServiceAdd (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="VicubeInterfaceCase175_relationAttributeServiceAdd_(1) - 2018.08.16 at 15h 11m 12s.xml">
+      <configuration name="VicubeInterfaceCase175.relationAttributeServiceAdd (1)" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222004000" />
+    <option name="totallyTimeSpent" value="222658000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -683,11 +683,11 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.24748924" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.4245283" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.4245283" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" weight="0.3773585" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.2647059" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.2647059" />
       <window_info anchor="right" id="Database" order="7" weight="0.30487806" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32614556" />
       <window_info id="Structure" order="1" sideWeight="0.35303265" side_tool="true" weight="0.22812052" />
@@ -1031,8 +1031,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="484" column="43" selection-start-line="484" selection-start-column="16" selection-end-line="484" selection-end-column="43" />
+        <state relative-caret-position="81">
+          <caret line="485" column="30" selection-start-line="485" selection-start-column="30" selection-end-line="485" selection-end-column="30" />
           <folding>
             <element signature="e#721#1053#0" />
             <element signature="e#1059#1416#0" />
@@ -1051,7 +1051,7 @@
     <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="286" column="55" selection-start-line="286" selection-start-column="55" selection-end-line="286" selection-end-column="55" />
+          <caret line="277" column="23" lean-forward="true" selection-start-line="277" selection-start-column="23" selection-end-line="277" selection-end-column="23" />
         </state>
       </provider>
     </entry>
