@@ -106,8 +106,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="219" column="12" lean-forward="true" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+            <state relative-caret-position="174">
+              <caret line="201" selection-start-line="201" selection-end-line="201" />
             </state>
           </provider>
         </entry>
@@ -647,7 +647,7 @@
       <workItem from="1534155968512" duration="859000" />
       <workItem from="1534211890208" duration="13867000" />
       <workItem from="1534323671308" duration="717000" />
-      <workItem from="1534385388685" duration="517000" />
+      <workItem from="1534385388685" duration="1749000" />
     </task>
     <servers />
   </component>
@@ -684,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215549000" />
+    <option name="totallyTimeSpent" value="216781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,7 +697,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1452" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3328841" />
@@ -709,7 +708,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" weight="0.4272237" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" weight="0.3773585" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" visible="true" weight="0.3773585" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.2647059" />
@@ -1076,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="219" column="12" lean-forward="true" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+        <state relative-caret-position="174">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
         </state>
       </provider>
     </entry>
