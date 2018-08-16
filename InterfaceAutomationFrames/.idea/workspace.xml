@@ -67,8 +67,8 @@
       <file leaf-file-name="VicubeTestCase175.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-728">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state relative-caret-position="196">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -106,8 +106,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="201" selection-start-line="201" selection-end-line="201" />
+            <state relative-caret-position="256">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -150,7 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>statisticAlertCountByStateCacheURL</find>
       <find>statisticAlertCountByStateCache</find>
       <find>grantMenuAmoduleAview2UserURL</find>
       <find>[[], [], [&quot;8881&quot;], [], &quot;345174431410000&quot;, &quot;2&quot;]grantMenuAmoduleAview2User</find>
@@ -180,6 +179,7 @@
       <find>getFunctionsByUserId</find>
       <find>grantObjects2Group</find>
       <find>findByNameNotBuiltInAttr</find>
+      <find>maven-surefire-plugin</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -224,11 +224,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/config/BaseConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase143.java" />
         <option value="$PROJECT_DIR$/src/config/testData143.xml" />
-        <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
         <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java" />
         <option value="$PROJECT_DIR$/src/config/testData175.xml" />
+        <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -407,7 +407,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.VicubeInterfaceCase">
+  <component name="RunManager" selected="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -426,6 +426,29 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="auto" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
     </configuration>
     <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
@@ -537,35 +560,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase175.queryIncidentType" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="auto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
-      <option name="PACKAGE_NAME" value="com.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
-      <option name="METHOD_NAME" value="queryIncidentType" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="0" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -590,18 +584,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
-      <item itemvalue="TestNG.VicubeInterfaceCase175.queryIncidentType" />
       <item itemvalue="TestNG.VicubeInterfaceCase175.grantMenuAmoduleAview2User" />
       <item itemvalue="TestNG.VicubeInterfaceCase175.grantObjects2Group" />
       <item itemvalue="TestNG.VicubeInterfaceCase" />
+      <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.VicubeInterfaceCase" />
+        <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" />
         <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
+        <item itemvalue="TestNG.VicubeInterfaceCase" />
         <item itemvalue="TestNG.VicubeInterfaceCase175.grantObjects2Group" />
         <item itemvalue="TestNG.VicubeInterfaceCase175.grantMenuAmoduleAview2User" />
-        <item itemvalue="TestNG.VicubeInterfaceCase175.queryIncidentType" />
       </list>
     </recent_temporary>
   </component>
@@ -647,20 +641,11 @@
       <workItem from="1534155968512" duration="859000" />
       <workItem from="1534211890208" duration="13867000" />
       <workItem from="1534323671308" duration="717000" />
-      <workItem from="1534385388685" duration="1749000" />
+      <workItem from="1534385388685" duration="2373000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 08m 41s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.14 at 14h 10m 51s.xml">
-      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="VicubeInterfaceCase175_grantMenuAmoduleAview2User - 2018.08.14 at 14h 25m 30s.xml">
-      <configuration name="VicubeInterfaceCase175.grantMenuAmoduleAview2User" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="VicubeInterfaceCase175_grantMenuAmoduleAview2User - 2018.08.14 at 14h 26m 07s.xml">
       <configuration name="VicubeInterfaceCase175.grantMenuAmoduleAview2User" configurationId="TestNG" />
     </history-entry>
@@ -682,9 +667,18 @@
     <history-entry file="VicubeInterfaceCase - 2018.08.15 at 17h 02m 58s.xml">
       <configuration name="VicubeInterfaceCase" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.16 at 10h 57m 20s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase143__xml - 2018.08.16 at 10h 57m 49s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase143__xml - 2018.08.16 at 10h 58m 06s.xml">
+      <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase143..xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216781000" />
+    <option name="totallyTimeSpent" value="217405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,9 +691,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1452" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3328841" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.28167117" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -707,8 +703,8 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.24748924" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" weight="0.4272237" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" visible="true" weight="0.3773585" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.114555255" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" weight="0.3773585" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.2647059" />
@@ -726,7 +722,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32614556" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.28167117" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1047,13 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1073,10 +1061,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        <state relative-caret-position="256">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>

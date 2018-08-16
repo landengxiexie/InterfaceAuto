@@ -7,7 +7,6 @@
                 <methods>
 
 
-
                     <include name="queryUserInfo"></include>
                     <include name="DoLogin"></include>
                     <include name="getFunctionsByUserId"></include>

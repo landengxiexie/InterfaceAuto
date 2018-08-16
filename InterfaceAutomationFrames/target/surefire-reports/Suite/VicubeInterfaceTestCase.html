@@ -1,0 +1,1598 @@
+<html>
+<head>
+<title>TestNG:  VicubeInterfaceTestCase</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>VicubeInterfaceTestCase</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>88/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 16 10:59:40 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20036 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findById()'><b>findById</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1550261631" onClick='toggleBox("Output-1550261631", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1550261631" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1550261631">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findById<br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Source string may not be null
+	at org.apache.http.util.Args.notNull(Args.java:54)
+	at org.apache.http.entity.StringEntity.&lt;init&gt;(StringEntity.java:65)
+	at org.apache.http.entity.StringEntity.&lt;init&gt;(StringEntity.java:116)
+	at com.utils.HttpFunction.setRequestListParamsOfPost(HttpFunction.java:182)
+	at com.utils.HttpFunction.post(HttpFunction.java:94)
+	at com.cases.VicubeInterfaceCase175.findById(VicubeInterfaceCase175.java:496)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1550261631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1550261631'><pre>java.lang.IllegalArgumentException: Source string may not be null
+	at org.apache.http.util.Args.notNull(Args.java:54)
+	at org.apache.http.entity.StringEntity.&lt;init&gt;(StringEntity.java:65)
+	at org.apache.http.entity.StringEntity.&lt;init&gt;(StringEntity.java:116)
+	at com.utils.HttpFunction.setRequestListParamsOfPost(HttpFunction.java:182)
+	at com.utils.HttpFunction.post(HttpFunction.java:94)
+	at com.cases.VicubeInterfaceCase175.findById(VicubeInterfaceCase175.java:496)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.relationAttributeServiceAdd()'><b>relationAttributeServiceAdd</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1781493632" onClick='toggleBox("Output-1781493632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1781493632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1781493632">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/add<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 288,Chunked: false]<br/>
+2018-08-16 10:59:52:请求失败:statusCode = 400<br/>
+</div>
+</td>
+<td><div><pre>java.lang.RuntimeException: 请求失败
+	at com.utils.HttpFunction.getStringResultOfPost(HttpFunction.java:262)
+	at com.utils.HttpFunction.post(HttpFunction.java:95)
+	at com.cases.VicubeInterfaceCase175.relationAttributeServiceAdd(VicubeInterfaceCase175.java:486)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781493632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781493632'><pre>java.lang.RuntimeException: 请求失败
+	at com.utils.HttpFunction.getStringResultOfPost(HttpFunction.java:262)
+	at com.utils.HttpFunction.post(HttpFunction.java:95)
+	at com.cases.VicubeInterfaceCase175.relationAttributeServiceAdd(VicubeInterfaceCase175.java:486)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.DoLogin()'><b>DoLogin</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1630678941" onClick='toggleBox("Output-1630678941", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1630678941" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630678941">
+2018-08-16 10:59:40:Post请求URL:http://192.168.20.175:48080/rest/DoLogin/DoLogin<br/>
+2018-08-16 10:59:40:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 30,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:{"authMethod":"DB","clientIP":"192.168.20.26","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"vicube2017","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:59:59.515","logintimes":4278,"mobilephone":"","name":"administrato<br/>
+2018-08-16 10:59:41:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.add()'><b>add</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-868815265" onClick='toggleBox("Output-868815265", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-868815265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-868815265">
+2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/add<br/>
+2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 113,Chunked: false]<br/>
+2018-08-16 10:59:51:请求成功statusCode = 200<br/>
+2018-08-16 10:59:51:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true<br/>
+2018-08-16 10:59:51:期望值为："attributes":[]    ---实际值为："attributes":[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.addView()'><b>addView</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-951050903" onClick='toggleBox("Output-951050903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-951050903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-951050903">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/addView<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 154,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:{"content":"","createTime":null,"creator":"","protectLevel":1,"updateTime":null,"updator":"","viewId":9440,"viewImg":"","viewName":"","viewTitle":"","viewType":"desktop"}<br/>
+2018-08-16 10:59:41:期望值为："content":""    ---实际值为："content":""<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.checkBaseLineDef()'><b>checkBaseLineDef</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-402115881" onClick='toggleBox("Output-402115881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-402115881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-402115881">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/checkBaseLineDef<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 104,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:true<br/>
+2018-08-16 10:59:43:期望值为：true    ---实际值为：true<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.checkInstanceHasRelation()'><b>checkInstanceHasRelation</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1112414583" onClick='toggleBox("Output-1112414583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1112414583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1112414583">
+2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/checkInstanceHasRelation<br/>
+2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:53:请求成功statusCode = 200<br/>
+2018-08-16 10:59:53:resultEntity获取成功:{"success":false}<br/>
+2018-08-16 10:59:53:期望值为：{"success":false}    ---实际值为：{"success":false}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.checkRelation()'><b>checkRelation</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-293508253" onClick='toggleBox("Output-293508253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-293508253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293508253">
+2018-08-16 10:59:54:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/checkRelation<br/>
+2018-08-16 10:59:54:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:56:请求成功statusCode = 200<br/>
+2018-08-16 10:59:56:resultEntity获取成功:""<br/>
+2018-08-16 10:59:56:期望值为：""    ---实际值为：""<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.cleanBaseLineDef()'><b>cleanBaseLineDef</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1010670443" onClick='toggleBox("Output-1010670443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1010670443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1010670443">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/cleanBaseLineDef<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:null<br/>
+2018-08-16 10:59:43:期望值为：null    ---实际值为：null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.cleanBaseLinePolicy()'><b>cleanBaseLinePolicy</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1233705144" onClick='toggleBox("Output-1233705144", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1233705144" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1233705144">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/cleanBaseLinePolicy<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:null<br/>
+2018-08-16 10:59:42:期望值为：null    ---实际值为：null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.confirmationedCount()'><b>confirmationedCount</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2063763486" onClick='toggleBox("Output-2063763486", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2063763486" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2063763486">
+2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/confirmationedCount<br/>
+2018-08-16 10:59:56:请求成功statusCode = 200<br/>
+2018-08-16 10:59:56:resultEntity获取成功:{"data":0,"msg":"SUCCESSFUL","size":0,"status":"success"}<br/>
+2018-08-16 10:59:56:期望值为："data":    ---实际值为："data":<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.countAlertFromCacheForHtmlData()'><b>countAlertFromCacheForHtmlData</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1747352992" onClick='toggleBox("Output-1747352992", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1747352992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1747352992">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/countAlertFromCacheForHtmlData<br/>
+2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 253,Chunked: false]<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:{"0":0,"1":0,"2":0,"3":1,"4":1}<br/>
+2018-08-16 10:59:58:期望值为："3":    ---实际值为："3":<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.createGroup()'><b>createGroup</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1437654187" onClick='toggleBox("Output-1437654187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1437654187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1437654187">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/createGroup<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:null<br/>
+2018-08-16 10:59:41:期望值为：null    ---实际值为：null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.deleteGroup()'><b>deleteGroup</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1644231115" onClick='toggleBox("Output-1644231115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1644231115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644231115">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/deleteGroup<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:1<br/>
+2018-08-16 10:59:42:期望值为：1    ---实际值为：1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.disableGroup()'><b>disableGroup</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-130668770" onClick='toggleBox("Output-130668770", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-130668770" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-130668770">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/disableGroup<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:1<br/>
+2018-08-16 10:59:41:期望值为：1    ---实际值为：1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.find()'><b>find</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1313916817" onClick='toggleBox("Output-1313916817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1313916817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1313916817">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/modelHistoryService/find/?length=1000<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}<br/>
+2018-08-16 10:59:43:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findAll()'><b>findAll</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1911152052" onClick='toggleBox("Output-1911152052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1911152052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1911152052">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findAll<br/>
+2018-08-16 10:59:50:请求成功statusCode = 200<br/>
+2018-08-16 10:59:50:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru<br/>
+2018-08-16 10:59:50:期望值为："attributes":[]    ---实际值为："attributes":[]<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findByModelName()'><b>findByModelName</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1766145591" onClick='toggleBox("Output-1766145591", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1766145591" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1766145591">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findByModelName<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-23T16:57:20.937","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"250478291430000","label":"rootDomain","name":"rootDomain","order":0,"orderColumn":"","parentName":"Domain","parentTree":"Root/Ci/PortalCi/Domain/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:43:22.677","updator":"administrator","values":{"parentName":"Domain","icon":"Domain","name":"rootDomain","id":"250478291430000","label"<br/>
+2018-08-16 10:59:42:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"<br/>
+2018-08-16 10:59:42:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findByName()'><b>findByName</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-758119607" onClick='toggleBox("Output-758119607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-758119607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-758119607">
+2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findByName<br/>
+2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]<br/>
+2018-08-16 10:59:53:请求成功statusCode = 200<br/>
+2018-08-16 10:59:53:resultEntity获取成功:{"attributes":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"采集发现的来源系统","allowInheritance":true,"allowNull":fals<br/>
+2018-08-16 10:59:53:期望值为："alertMessage":""    ---实际值为："alertMessage":""<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findByNameNotBuiltInAttr()'><b>findByNameNotBuiltInAttr</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1977310713" onClick='toggleBox("Output-1977310713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1977310713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1977310713">
+2018-08-16 10:59:51:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findByNameNotBuiltInAttr<br/>
+2018-08-16 10:59:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]<br/>
+2018-08-16 10:59:51:请求成功statusCode = 200<br/>
+2018-08-16 10:59:51:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true<br/>
+2018-08-16 10:59:51:期望值为："attributes":[]    ---实际值为："attributes":[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findByOperationTypeAndModelName()'><b>findByOperationTypeAndModelName</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1525409936" onClick='toggleBox("Output-1525409936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1525409936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1525409936">
+2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/operationLogService/findByOperationTypeAndModelName/?length=1000<br/>
+2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:50:请求成功statusCode = 200<br/>
+2018-08-16 10:59:50:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}<br/>
+2018-08-16 10:59:50:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findBySourceOrTarget()'><b>findBySourceOrTarget</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-838449246" onClick='toggleBox("Output-838449246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-838449246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838449246">
+2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findBySourceOrTarget<br/>
+2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]<br/>
+2018-08-16 10:59:53:请求成功statusCode = 200<br/>
+2018-08-16 10:59:53:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:53:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findBySourceOrTarget_Label()'><b>findBySourceOrTarget_Label</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1982787818" onClick='toggleBox("Output-1982787818", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1982787818" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1982787818">
+2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationInstanceService/findBySourceOrTarget_Label<br/>
+2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:53:请求成功statusCode = 200<br/>
+2018-08-16 10:59:53:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:53:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findInstanceByModelSortOrder()'><b>findInstanceByModelSortOrder</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-510063093" onClick='toggleBox("Output-510063093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510063093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510063093">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findInstanceByModelSortOrder<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-24T11:06:46.369","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"248866639050042","label":"基本信息","name":"base","order":0,"orderColumn":"","parentName":"Tab","parentTree":"Root/Ci/PortalCi/Tab/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:43:22.356","updator":"administrator","values":{"parentName":"Tab","domain":"rootDomain","name":"base","id":"248866639050042","label":"基本信息","order":1},"v<br/>
+2018-08-16 10:59:43:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findList()'><b>findList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1708169732" onClick='toggleBox("Output-1708169732", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1708169732" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1708169732">
+2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findList<br/>
+2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]<br/>
+2018-08-16 10:59:50:请求成功statusCode = 200<br/>
+2018-08-16 10:59:50:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:50:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findModelTree()'><b>findModelTree</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2044215423" onClick='toggleBox("Output-2044215423", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044215423" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044215423">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findModelTree<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru<br/>
+2018-08-16 10:59:43:期望值为："attributes":[]    ---实际值为："attributes":[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.findSelectTree()'><b>findSelectTree</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-961409111" onClick='toggleBox("Output-961409111", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-961409111" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-961409111">
+2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findSelectTree<br/>
+2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]<br/>
+2018-08-16 10:59:50:请求成功statusCode = 200<br/>
+2018-08-16 10:59:50:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru<br/>
+2018-08-16 10:59:50:期望值为："attributes":[]    ---实际值为："attributes":[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getAllDicts()'><b>getAllDicts</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1966124444" onClick='toggleBox("Output-1966124444", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1966124444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1966124444">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/dictService/getAllDicts<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[{"code":"environment","createTime":null,"creator":"","description":"","label":"所在环境","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"os","createTime":null,"creator":"","description":"","label":"操作系统","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"importance","createTime":null,"creator":"","description":"","label":"关键程度","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"YesorNo","createTime":null,"creator<br/>
+2018-08-16 10:59:43:期望值为："code":"YesorNo"    ---实际值为："code":"YesorNo"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getAllDomains()'><b>getAllDomains</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-20049680" onClick='toggleBox("Output-20049680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20049680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20049680">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllDomains<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[{"domain":"","isType":false,"label":"rootDomain","name":"rootDomain","nodeId":250478291430000,"parentId":414046005487378,"parentName":"Domain","properties":{"parentName":"Domain","icon":"Domain","name":"rootDomain","id":"250478291430000","label":"rootDomain"},"propertyLabels":{"name":"名称","label":"显示名称","icon":"图标","description":"描述","domain":"所属父域"}}]<br/>
+2018-08-16 10:59:41:期望值为："isType":false    ---实际值为："isType":false<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getAllFunctions()'><b>getAllFunctions</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-537066525" onClick='toggleBox("Output-537066525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-537066525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-537066525">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/functionFlexService/getAllFunctions<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"childs":[],"code":"D801","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"新增","note":"","order":1,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D802","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"修改","note":"","order":2,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D803","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"删除","note":"","order":3,"parentC<br/>
+2018-08-16 10:59:42:期望值为："name":"新增"    ---实际值为："name":"新增"<br/>
+2018-08-16 10:59:42:期望值为："updateDate":null    ---实际值为："updateDate":null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getAllMyNodesByTypeName()'><b>getAllMyNodesByTypeName</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1762902523" onClick='toggleBox("Output-1762902523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1762902523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1762902523">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllMyNodesByTypeName<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:43:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getAllTypeNodes()'><b>getAllTypeNodes</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-811301908" onClick='toggleBox("Output-811301908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-811301908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-811301908">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllTypeNodes<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"domain":"","isType":true,"label":"URMP","name":"Ci","nodeId":234493901400000,"parentId":0,"parentName":"Root","properties":{},"propertyLabels":{}},{"domain":"","isType":true,"label":"URMP","name":"Ci","nodeId":234493901400000,"parentId":0,"parentName":"Root","properties":{},"propertyLabels":{}},{"domain":"","isType":true,"label":"资源","name":"CommonCi","nodeId":247889802420063,"parentId":234493901400000,"parentName":"Ci","properties":{"owner":"","vendorOwner":"","icon":"","nodeNameInMonitoring<br/>
+2018-08-16 10:59:42:期望值为："name":"Ci"    ---实际值为："name":"Ci"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getBaseLineCalendarList()'><b>getBaseLineCalendarList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-361398902" onClick='toggleBox("Output-361398902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-361398902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-361398902">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLineCalendarList<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 84,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:43:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getBaseLineDefList()'><b>getBaseLineDefList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1725008249" onClick='toggleBox("Output-1725008249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725008249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725008249">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLineDefList<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-14T14:49:36.094","uuid":"08588f47db604945a278cc5a0b1b90c3","uuidPolicy":""},{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycl<br/>
+2018-08-16 10:59:43:字符串截取失败--"[]"--不存在<br/>
+2018-08-16 10:59:43:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getBaseLinePolicyList()'><b>getBaseLinePolicyList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-769798433" onClick='toggleBox("Output-769798433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769798433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769798433">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLinePolicyList<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:42:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getConfirmationedList()'><b>getConfirmationedList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1007412025" onClick='toggleBox("Output-1007412025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1007412025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1007412025">
+2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/getConfirmationedList/?length=1000<br/>
+2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]<br/>
+2018-08-16 10:59:56:请求成功statusCode = 200<br/>
+2018-08-16 10:59:56:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}<br/>
+2018-08-16 10:59:56:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getDefulateValue()'><b>getDefulateValue</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-210156003" onClick='toggleBox("Output-210156003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-210156003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-210156003">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/getDefulateValue<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"enable":true,"domain":"rootDomain","icon":"AlertType","nodeType":"CommonCi"},"version":0}<br/>
+2018-08-16 10:59:52:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getEnums()'><b>getEnums</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1606304070" onClick='toggleBox("Output-1606304070", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1606304070" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1606304070">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/enumUtilService/getEnums<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]<br/>
+2018-08-16 10:59:43:期望值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]    ---实际值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getForwardTypeMap()'><b>getForwardTypeMap</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-681094281" onClick='toggleBox("Output-681094281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-681094281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-681094281">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageFlexService/getForwardTypeMap<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:[{"label":"运维系统","value":"EOMS"},{"label":"邮件","value":"Email"},{"label":"短信","value":"SMS"}]<br/>
+2018-08-16 10:59:58:期望值为："label":"运维系统"    ---实际值为："label":"运维系统"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getFunctionsByUserId()'><b>getFunctionsByUserId</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-131206411" onClick='toggleBox("Output-131206411", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-131206411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-131206411">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/functionService/getFunctionsByUserId<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[{"childs":[],"code":"F","createDate":null,"creator":"","functionType":"5","icon":"","module":"","name":"开始","note":"","order":1,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"M","createDate":null,"creator":"","functionType":"1","icon":"","module":"","name":"根模块","note":"","order":0,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"F002","createDate":null,"creator":"","functionType":"5","icon":"","module":"vic.viewCtrl","name":"视图中心","note":"","order":1,"<br/>
+2018-08-16 10:59:41:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getGlobalModule()'><b>getGlobalModule</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1748876332" onClick='toggleBox("Output-1748876332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1748876332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1748876332">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/personalizedService/getGlobalModule<br/>
+2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:null<br/>
+2018-08-16 10:59:58:期望值为：null    ---实际值为：null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getKpiItemList()'><b>getKpiItemList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-197964393" onClick='toggleBox("Output-197964393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-197964393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-197964393">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/kpiDataFlexService/getKpiItemList<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:43:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getMyViewEntriesNoContent()'><b>getMyViewEntriesNoContent</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1816147548" onClick='toggleBox("Output-1816147548", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1816147548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1816147548">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/getMyViewEntriesNoContent<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:41:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getNodeByName()'><b>getNodeByName</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-793138072" onClick='toggleBox("Output-793138072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-793138072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-793138072">
+2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getNodeByName<br/>
+2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]<br/>
+2018-08-16 11:00:00:请求成功statusCode = 200<br/>
+2018-08-16 11:00:00:resultEntity获取成功:{"domain":"","isType":true,"label":"交换机","name":"Switch","nodeId":247889802420073,"parentId":247889802420053,"parentName":"Network","properties":{"importance":"","icon":"","description":"","source":"","creatDate":"","discoveredMethod":"","warrantyStartDate":"","model":"","maintenanceExpireTime":"","OccupiedUnits":"","state":"","brand":"","owner":"","serialNumber":"","vendorOwner":"","nodeNameInMonitoringTool":"","vendorContact":"","updateTime":"","label":"","serviceLevel":"","discoveredState":""<br/>
+2018-08-16 11:00:00:期望值为："name":"Switch"    ---实际值为："name":"Switch"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getOneWarningRule()'><b>getOneWarningRule</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1620890840" onClick='toggleBox("Output-1620890840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1620890840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1620890840">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/dynaWarningManageService/getOneWarningRule<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 12,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:{"msg":"getOneWarningRule:{ ruleId is not null}","code":500,"data":null,"status":"failed"}<br/>
+2018-08-16 10:59:43:期望值为："status":"failed"    ---实际值为："status":"failed"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getRelatedAlerts()'><b>getRelatedAlerts</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-169663597" onClick='toggleBox("Output-169663597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-169663597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-169663597">
+2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/rest/alertQueryService/getRelatedAlerts<br/>
+2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 11:00:00:请求成功statusCode = 200<br/>
+2018-08-16 11:00:00:resultEntity获取成功:[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDomain/","eventId":3396839634200<br/>
+2018-08-16 11:00:00:期望值为："activeState":0    ---实际值为："activeState":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getUrmpTreeByKeyFilter()'><b>getUrmpTreeByKeyFilter</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-365590665" onClick='toggleBox("Output-365590665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-365590665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-365590665">
+2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getUrmpTreeByKeyFilter<br/>
+2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 42,Chunked: false]<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:[{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"CITypeNodeIcon","id":"247889802420015","instance":false,"label":"机房","name":"MachineRoom","order":1,"parentName":"Facility","parentTree":"","permissionAllowExtend":false,"permissions":null,"updateTime":null,"updator":"","version":0},{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":null,"id":"251943945610018","instance":true,"label":"数据中心A","name":"610 Server room","order":289136<br/>
+2018-08-16 10:59:58:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getUserViewsByType()'><b>getUserViewsByType</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1101184763" onClick='toggleBox("Output-1101184763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1101184763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101184763">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewService/getUserViewsByType<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 27,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[{"content":"9144,9027,9182,9183,9177,9185","createTime":null,"creator":"administrator","protectLevel":0,"updateTime":null,"updator":"administrator","viewId":2,"viewImg":"","viewName":"超级管理员个人桌面","viewTitle":"自定义桌面","viewType":"desktop"},{"content":"9144,9183,9182,9027,9185,9177","createTime":null,"creator":"administrator","protectLevel":1,"updateTime":null,"updator":"administrator","viewId":1,"viewImg":"","viewName":"超级管理员桌面","viewTitle":"超级管理员桌面","viewType":"desktop"}]<br/>
+2018-08-16 10:59:41:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"<br/>
+2018-08-16 10:59:41:期望值为："updator":"administrator"    ---实际值为："updator":"administrator"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getViewsExcludeKpiAndDeskTop()'><b>getViewsExcludeKpiAndDeskTop</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2151717" onClick='toggleBox("Output-2151717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2151717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2151717">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/getViewsExcludeKpiAndDeskTop<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"content":"{\"viewId\":9185,\"viewTitle\":\"3D可视化\",\"bgColor\":\"rgb(255, 255, 255)\",\"charts\":[{\"id\":\"15E3645C30674BC88661CBD37E5D1138\",\"parentID\":\"\",\"type\":\"ThreeChart\",\"properties\":[{\"name\":\"showTitle\",\"value\":false},{\"name\":\"name\",\"value\":\"\"},{\"name\":\"openUrl\",\"value\":\"\"},{\"name\":\"z-index\",\"value\":0},{\"name\":\"borderStyle\",\"value\":\"solid\"},{\"name\":\"borderWidth\",\"value\":\"1\"},{\"name\":\"borderColor\",\"value\":\"rgba(212,212,212,1)<br/>
+2018-08-16 10:59:42:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"<br/>
+2018-08-16 10:59:42:期望值为："protectLevel":1    ---实际值为："protectLevel":1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.getWaitForConfirmationList()'><b>getWaitForConfirmationList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-515715487" onClick='toggleBox("Output-515715487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515715487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515715487">
+2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/getWaitForConfirmationList/?length=1000<br/>
+2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]<br/>
+2018-08-16 10:59:56:请求成功statusCode = 200<br/>
+2018-08-16 10:59:56:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}<br/>
+2018-08-16 10:59:56:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.grantMenuAmoduleAview2User()'><b>grantMenuAmoduleAview2User</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-182531396" onClick='toggleBox("Output-182531396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-182531396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-182531396">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantMenuAmoduleAview2User<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 46,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:4<br/>
+2018-08-16 10:59:42:期望值为：4    ---实际值为：4<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.grantObjects2Group()'><b>grantObjects2Group</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-770947228" onClick='toggleBox("Output-770947228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-770947228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-770947228">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantObjects2Group<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 34,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:1<br/>
+2018-08-16 10:59:41:期望值为：1    ---实际值为：1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.grantObjectsDomain()'><b>grantObjectsDomain</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1026871825" onClick='toggleBox("Output-1026871825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1026871825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1026871825">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantObjectsDomain<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 28,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:1<br/>
+2018-08-16 10:59:42:期望值为：1    ---实际值为：1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.grantUsers2Group()'><b>grantUsers2Group</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-936292831" onClick='toggleBox("Output-936292831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-936292831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-936292831">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantUsers2Group<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:1<br/>
+2018-08-16 10:59:41:期望值为：1    ---实际值为：1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.insertBaseLineDef()'><b>insertBaseLineDef</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2106000623" onClick='toggleBox("Output-2106000623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2106000623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2106000623">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/insertBaseLineDef<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 394,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-16T11:00:02.268","uuid":"b91049b1bcda42c7b16a571f2d68fd57","uuidPolicy":""}<br/>
+2018-08-16 10:59:43:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.insertBaseLinePolicy()'><b>insertBaseLinePolicy</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-587003819" onClick='toggleBox("Output-587003819", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-587003819" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-587003819">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/insertBaseLinePolicy<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 148,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:null<br/>
+2018-08-16 10:59:42:期望值为：null    ---实际值为：null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.instanceHistoryServiceFind()'><b>instanceHistoryServiceFind</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-239372207" onClick='toggleBox("Output-239372207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-239372207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-239372207">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceHistoryService/find/?length=1000<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}<br/>
+2018-08-16 10:59:52:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.instanceServiceAdd()'><b>instanceServiceAdd</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-925308434" onClick='toggleBox("Output-925308434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-925308434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-925308434">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/add<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 277,Chunked: false]<br/>
+2018-08-16 10:59:53:请求成功statusCode = 200<br/>
+2018-08-16 10:59:53:resultEntity获取成功:{"batch":false,"createTime":"2018-08-16T11:00:11.155","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"366374446840000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-16T11:00:11.155","updator":"administrator","values":{"domain":"rootDomain"},"version":0}<br/>
+2018-08-16 10:59:53:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.instanceServiceFindById()'><b>instanceServiceFindById</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-565372776" onClick='toggleBox("Output-565372776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-565372776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-565372776">
+2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findById<br/>
+2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 15,Chunked: false]<br/>
+2018-08-16 11:00:00:请求成功statusCode = 200<br/>
+2018-08-16 11:00:00:resultEntity获取成功:{"batch":false,"createTime":"2018-08-16T11:00:11.155","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"366374446840000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-16T11:00:11.155","updator":"administrator","values":{"domain":"rootDomain"},"version":0}<br/>
+2018-08-16 11:00:00:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.instanceServiceRemove()'><b>instanceServiceRemove</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1840903588" onClick='toggleBox("Output-1840903588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1840903588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1840903588">
+2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/remove<br/>
+2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]<br/>
+2018-08-16 10:59:56:请求成功statusCode = 200<br/>
+2018-08-16 10:59:56:resultEntity获取成功:<br/>
+2018-08-16 10:59:56:期望值为：    ---实际值为：<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.instanceServiceUpdate()'><b>instanceServiceUpdate</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-282496973" onClick='toggleBox("Output-282496973", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-282496973" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-282496973">
+2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/update<br/>
+2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 296,Chunked: false]<br/>
+2018-08-16 10:59:54:请求成功statusCode = 200<br/>
+2018-08-16 10:59:54:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"parentName":"Alert","isPageAdd":"1","enable":true,"domain":"rootDomain","icon":"AlertType","nodeType":"CommonCi","exception_message":"_name_exist_"},"version":0}<br/>
+2018-08-16 10:59:54:期望值为："batch":false    ---实际值为："batch":false<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryActionLog()'><b>queryActionLog</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1648001170" onClick='toggleBox("Output-1648001170", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1648001170" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1648001170">
+2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/rest/alertManageFlexService/queryActionLog<br/>
+2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]<br/>
+2018-08-16 11:00:00:请求成功statusCode = 200<br/>
+2018-08-16 11:00:00:resultEntity获取成功:[]<br/>
+2018-08-16 11:00:00:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryAlertFromCacheForHtmlData()'><b>queryAlertFromCacheForHtmlData</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-40075281" onClick='toggleBox("Output-40075281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-40075281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-40075281">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/queryAlertFromCacheForHtmlData/?length=1000<br/>
+2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:59:请求成功statusCode = 200<br/>
+2018-08-16 10:59:59:resultEntity获取成功:{"recordsFiltered":2,"data":[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDoma<br/>
+2018-08-16 10:59:59:期望值为：recordsFiltered    ---实际值为：recordsFiltered<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryAllObjectsByUserId()'><b>queryAllObjectsByUserId</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2012330741" onClick='toggleBox("Output-2012330741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2012330741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2012330741">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/authorizeService/queryAllObjectsByUserId<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[{"domainName":"","groupId":"administrator","objectId":"1","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"2","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"M","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"M03","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"M06","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"<br/>
+2018-08-16 10:59:41:期望值为：domainName    ---实际值为：domainName<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryAuditInfo()'><b>queryAuditInfo</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1074389766" onClick='toggleBox("Output-1074389766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1074389766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1074389766">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/auditService/queryAuditInfo/?length=1000<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"actionName":"删除工作组","auditId":16728,"clientIP":"192.168.20.26","content":"删除了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-16T11:00:00.850","recordsFiltered":8088,"recordsTotal":8088,"start":0,"startTime":null,"userId":"administrator"},{"actionName":"锁定工作组","auditId":16727,"clientIP":"192.168.20.26","content":"锁定了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-16T10:59:59.873","<br/>
+2018-08-16 10:59:42:期望值为："actionName":"删除工作组"    ---实际值为："actionName":"删除工作组"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryByFilter()'><b>queryByFilter</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1487500813" onClick='toggleBox("Output-1487500813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487500813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487500813">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/queryByFilter<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 21,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:{"data":[],"size":0}<br/>
+2018-08-16 10:59:43:期望值为：{"data":[],"size":0}    ---实际值为：{"data":[],"size":0}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryByFilter2()'><b>queryByFilter2</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1231156911" onClick='toggleBox("Output-1231156911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1231156911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1231156911">
+2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/queryByFilter<br/>
+2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 41,Chunked: false]<br/>
+2018-08-16 10:59:50:请求成功statusCode = 200<br/>
+2018-08-16 10:59:50:resultEntity获取成功:{"attributes":[{"alertMessage":"采集发现的来源系统","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"STRING","defaultValue":null,"displayType":"TEXT","edit":false,"extendModelName":"CommonCi","hidden":true,"id":"298823609330003","label":"来源系统","matchType":null,"name":"source","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":0},{"alertMessage":"","allowInh<br/>
+2018-08-16 10:59:50:期望值为："attributes"    ---实际值为："attributes"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryEvent()'><b>queryEvent</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1418620248" onClick='toggleBox("Output-1418620248", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1418620248" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1418620248">
+2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/rest/alertQueryFlexService/queryEvent<br/>
+2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 11:00:00:请求成功statusCode = 200<br/>
+2018-08-16 11:00:00:resultEntity获取成功:[]<br/>
+2018-08-16 11:00:00:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryFilterByColorAdmin()'><b>queryFilterByColorAdmin</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1789718525" onClick='toggleBox("Output-1789718525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1789718525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1789718525">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/queryFilterByColorAdmin/?length=1000<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}<br/>
+2018-08-16 10:59:52:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryFullUserInfo()'><b>queryFullUserInfo</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1850777594" onClick='toggleBox("Output-1850777594", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1850777594" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1850777594">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryFullUserInfo<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:59:59.515","logintimes":4278,"mobilephone":"","name":"administrator","note":"系统内置超级管理员",<br/>
+2018-08-16 10:59:58:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryGroupInfo()'><b>queryGroupInfo</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-590646109" onClick='toggleBox("Output-590646109", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-590646109" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-590646109">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/queryGroupInfo<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"","flag":1,"groupId":"365912275430000","groupName":"","groupType":"","note":"","updateDate":null,"updator":""}]<br/>
+2018-08-16 10:59:41:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"<br/>
+2018-08-16 10:59:41:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryGroupInfoLike()'><b>queryGroupInfoLike</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2079179914" onClick='toggleBox("Output-2079179914", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2079179914" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2079179914">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/queryGroupInfoLike<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"","flag":1,"groupId":"365912275430000","groupName":"","groupType":"","note":"","updateDate":null,"updator":""}]<br/>
+2018-08-16 10:59:41:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"<br/>
+2018-08-16 10:59:41:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryIncidentType()'><b>queryIncidentType</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-220309324" onClick='toggleBox("Output-220309324", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-220309324" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-220309324">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/incidentTypeFlexService/queryIncidentType<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:58:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryInstanceByRelationPage()'><b>queryInstanceByRelationPage</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-279593458" onClick='toggleBox("Output-279593458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-279593458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-279593458">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/queryInstanceByRelationPage<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:{"data":[{"batch":false,"createTime":"2018-05-23T18:06:21.959","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"248866639050016","label":"全部存储设备","name":"TotalInfra_StorageNode","order":0,"orderColumn":"","parentName":"InfraGroup","parentTree":"Root/Ci/CommonCi/StatsNode/CustomNode/InfraGroup/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:44:17.532","updator":"administrator","values":{"parentName":"InfraGroup","domain":"rootDom<br/>
+2018-08-16 10:59:52:期望值为："data":    ---实际值为："data":<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryObjectsByGroupId()'><b>queryObjectsByGroupId</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1867139015" onClick='toggleBox("Output-1867139015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1867139015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1867139015">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/queryObjectsByGroupId<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"domainName":"","groupId":"北京监控组","objectId":"8488","objectType":"6","userId":""},{"domainName":"","groupId":"厦门监控组","objectId":"8489","objectType":"6","userId":""},{"domainName":"","groupId":"","objectId":"8979","objectType":"6","userId":"zhang"},{"domainName":"","groupId":"","objectId":"M","objectType":"1","userId":"wangjunlan"},{"domainName":"","groupId":"","objectId":"M0102","objectType":"2","userId":"wangjunlan"},{"domainName":"","groupId":"","objectId":"M0104","objectType":"2","userId":"<br/>
+2018-08-16 10:59:42:期望值为：domainName    ---实际值为：domainName<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryUserInfo()'><b>queryUserInfo</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-283318938" onClick='toggleBox("Output-283318938", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-283318938" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-283318938">
+2018-08-16 10:59:40:Post请求URL:http://192.168.20.175:48080/rest/userService/queryUserInfo<br/>
+2018-08-16 10:59:40:请求成功statusCode = 200<br/>
+2018-08-16 10:59:40:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:41:09.272","logintimes":4277,"mobilephone":"","name":"administrator","note":"系统内置超级管理员","objectLis":[],"password":"","phone":"","staffName":"超级管理员","token":"","updateDate":null,"updator":"","userId":"administrator","userType":1}]<br/>
+2018-08-16 10:59:40:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryUserInfo2()'><b>queryUserInfo2</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2109798150" onClick='toggleBox("Output-2109798150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2109798150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2109798150">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryUserInfo<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:59:59.515","logintimes":4278,"mobilephone":"","name":"administrator","note":"系统内置超级管理员","objectLis":[],"password":"","phone":"","staffName":"超级管理员","token":"","updateDate":null,"updator":"","userId":"administrator","userType":1}]<br/>
+2018-08-16 10:59:42:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"<br/>
+2018-08-16 10:59:42:期望值为："createDate":null    ---实际值为："createDate":null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryUsersByGroupId()'><b>queryUsersByGroupId</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1882349076" onClick='toggleBox("Output-1882349076", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1882349076" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1882349076">
+2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryUsersByGroupId<br/>
+2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]<br/>
+2018-08-16 10:59:41:请求成功statusCode = 200<br/>
+2018-08-16 10:59:41:resultEntity获取成功:[]<br/>
+2018-08-16 10:59:41:期望值为：[]    ---实际值为：[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.queryWarningRuleList()'><b>queryWarningRuleList</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-202125197" onClick='toggleBox("Output-202125197", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-202125197" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-202125197">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/dynaWarningManageService/queryWarningRuleList<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:{"msg":"","code":200,"data":[],"status":"success"}<br/>
+2018-08-16 10:59:42:期望值为："status":"success"    ---实际值为："status":"success"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.remove()'><b>remove</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-294658058" onClick='toggleBox("Output-294658058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-294658058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-294658058">
+2018-08-16 10:59:51:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/remove<br/>
+2018-08-16 10:59:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 50,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:<br/>
+2018-08-16 10:59:52:期望值为：    ---实际值为：<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.removeBatch()'><b>removeBatch</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1970436060" onClick='toggleBox("Output-1970436060", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1970436060" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1970436060">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/removeBatch<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:<br/>
+2018-08-16 10:59:52:期望值为：    ---实际值为：<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.sendAlertClaimAction()'><b>sendAlertClaimAction</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1878169648" onClick='toggleBox("Output-1878169648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1878169648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1878169648">
+2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/sendAlertClaimAction<br/>
+2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 43,Chunked: false]<br/>
+2018-08-16 10:59:59:请求成功statusCode = 200<br/>
+2018-08-16 10:59:59:resultEntity获取成功:{"actTime":"2018-08-16T11:00:18.242","actionId":365410393570012,"actionType":"","alertIds":[],"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{}}<br/>
+2018-08-16 10:59:59:期望值为：actTime    ---实际值为：actTime<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.sendAlertRecoverAction()'><b>sendAlertRecoverAction</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-825962150" onClick='toggleBox("Output-825962150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-825962150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-825962150">
+2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/sendAlertRecoverAction<br/>
+2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 136,Chunked: false]<br/>
+2018-08-16 10:59:59:请求成功statusCode = 200<br/>
+2018-08-16 10:59:59:resultEntity获取成功:{"actTime":"2018-08-16T11:00:18.307","actionId":365410393570014,"actionType":"","alertIds":[],"clearOut":false,"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{},"recoverAll":true,"resolved":true}<br/>
+2018-08-16 10:59:59:期望值为：actTime    ---实际值为：actTime<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.sendForwordAction()'><b>sendForwordAction</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1781241150" onClick='toggleBox("Output-1781241150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1781241150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1781241150">
+2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/alertManageFlexService/sendForwordAction<br/>
+2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 172,Chunked: false]<br/>
+2018-08-16 10:59:59:请求成功statusCode = 200<br/>
+2018-08-16 10:59:59:resultEntity获取成功:{"actTime":"2018-08-16T11:00:18.287","actionId":365410393570013,"actionType":"forward","alertIds":[],"comment":"[]","content":"","done":false,"incidentType":"","logs":[],"nodeId":0,"operator":"administrator","params":{"content":"","incidentType":"","severity":0,"title":"[]"},"severity":0,"tags":"","target":"","title":"[]"}<br/>
+2018-08-16 10:59:59:期望值为：actTime    ---实际值为：actTime<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.statisticAlertCountByStateCache()'><b>statisticAlertCountByStateCache</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-2053591126" onClick='toggleBox("Output-2053591126", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2053591126" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2053591126">
+2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/statisticAlertCountByStateCache<br/>
+2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]<br/>
+2018-08-16 10:59:58:请求成功statusCode = 200<br/>
+2018-08-16 10:59:58:resultEntity获取成功:{"0":2,"5":0,"30":0,"20":0,"10":0}<br/>
+2018-08-16 10:59:58:期望值为：20    ---实际值为：20<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.update()'><b>update</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1886491834" onClick='toggleBox("Output-1886491834", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1886491834" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1886491834">
+2018-08-16 10:59:51:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/update<br/>
+2018-08-16 10:59:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 489,Chunked: false]<br/>
+2018-08-16 10:59:51:请求成功statusCode = 200<br/>
+2018-08-16 10:59:51:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true<br/>
+2018-08-16 10:59:51:期望值为："attributes":[]    ---实际值为："attributes":[]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.updateBaseLineCalendarByBatch()'><b>updateBaseLineCalendarByBatch</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-330739404" onClick='toggleBox("Output-330739404", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-330739404" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-330739404">
+2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/updateBaseLineCalendarByBatch<br/>
+2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]<br/>
+2018-08-16 10:59:43:请求成功statusCode = 200<br/>
+2018-08-16 10:59:43:resultEntity获取成功:"success"<br/>
+2018-08-16 10:59:43:期望值为：success    ---实际值为：success<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.updateBaseLinePolicy()'><b>updateBaseLinePolicy</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1665620686" onClick='toggleBox("Output-1665620686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1665620686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1665620686">
+2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/updateBaseLinePolicy<br/>
+2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 526,Chunked: false]<br/>
+2018-08-16 10:59:42:请求成功statusCode = 200<br/>
+2018-08-16 10:59:42:resultEntity获取成功:null<br/>
+2018-08-16 10:59:42:期望值为：null    ---实际值为：null<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.validation()'><b>validation</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-989447607" onClick='toggleBox("Output-989447607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-989447607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-989447607">
+2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/validation<br/>
+2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 222,Chunked: false]<br/>
+2018-08-16 10:59:52:请求成功statusCode = 200<br/>
+2018-08-16 10:59:52:resultEntity获取成功:true<br/>
+2018-08-16 10:59:52:期望值为：true    ---实际值为：true<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+<tr>
+<td title='com.cases.VicubeInterfaceCase175.waitForConfirmationCount()'><b>waitForConfirmationCount</b><br>Test class: com.cases.VicubeInterfaceCase175<br/>
+<a href="#Output-1603198149" onClick='toggleBox("Output-1603198149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1603198149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1603198149">
+2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/waitForConfirmationCount<br/>
+2018-08-16 10:59:56:请求成功statusCode = 200<br/>
+2018-08-16 10:59:56:resultEntity获取成功:{"data":0,"msg":"SUCCESSFUL","size":0,"status":"success"}<br/>
+2018-08-16 10:59:56:期望值为："status":"success"    ---实际值为："status":"success"<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.cases.VicubeInterfaceCase175@1dd92fe2</td></tr>
+</table><p>
+</body>
+</html>
