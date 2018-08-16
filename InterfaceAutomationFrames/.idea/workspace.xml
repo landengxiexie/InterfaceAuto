@@ -49,7 +49,7 @@
       <file leaf-file-name="testData175.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="6776">
               <caret line="242" column="28" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="28" />
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file leaf-file-name="testData143.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="2660">
               <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
             </state>
           </provider>
@@ -67,7 +67,7 @@
       <file leaf-file-name="VicubeTestCase175.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="-728">
               <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
             </state>
           </provider>
@@ -97,7 +97,7 @@
       <file leaf-file-name="VicubeInterfaceCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="12796">
               <caret line="467" selection-start-line="467" selection-end-line="467" />
             </state>
           </provider>
@@ -106,8 +106,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="198" column="31" lean-forward="true" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
+            <state relative-caret-position="532">
+              <caret line="219" column="12" lean-forward="true" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -286,6 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,7 +360,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -646,7 +646,8 @@
       <workItem from="1534125356402" duration="5036000" />
       <workItem from="1534155968512" duration="859000" />
       <workItem from="1534211890208" duration="13867000" />
-      <workItem from="1534323671308" duration="382000" />
+      <workItem from="1534323671308" duration="717000" />
+      <workItem from="1534385388685" duration="517000" />
     </task>
     <servers />
   </component>
@@ -683,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214697000" />
+    <option name="totallyTimeSpent" value="215549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,7 +701,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3328841" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.28167117" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -709,12 +709,11 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" weight="0.4272237" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" visible="true" weight="0.35040432" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" weight="0.3773585" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.35150644" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.2647059" />
       <window_info anchor="right" id="Database" order="7" weight="0.30487806" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32614556" />
       <window_info id="Structure" order="1" sideWeight="0.35303265" side_tool="true" weight="0.22812052" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.19942611" />
       <window_info id="UI Designer" order="4" />
@@ -727,6 +726,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32614556" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.28167117" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1026,6 +1027,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2660">
+          <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6776">
+          <caret line="242" column="28" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12796">
+          <caret line="467" selection-start-line="467" selection-end-line="467" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1045,38 +1074,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="242" column="28" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="467" selection-start-line="467" selection-end-line="467" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="198" column="31" lean-forward="true" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
+        <state relative-caret-position="532">
+          <caret line="219" column="12" lean-forward="true" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
         </state>
       </provider>
     </entry>
