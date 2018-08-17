@@ -11,7 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AutomationFrameworks" target="1.8" />
-      <module name="test" target="1.8" />
+      <module name="test" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

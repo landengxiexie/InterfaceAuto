@@ -30,12 +30,8 @@
       <file leaf-file-name="LocatorFunction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/utill/LocatorFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="57" column="23" lean-forward="true" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-              <folding>
-                <element signature="e#4313#4314#0" expanded="true" />
-                <element signature="e#4373#4374#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1344">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -43,17 +39,8 @@
       <file leaf-file-name="Vicube.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/locator/Vicube.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="448">
               <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/utill/OpenFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -70,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1846">
-              <caret line="166" column="68" selection-start-line="166" selection-start-column="65" selection-end-line="166" selection-end-column="68" />
+            <state relative-caret-position="224">
+              <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -109,23 +96,17 @@
       <file leaf-file-name="VicubeSystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com.test.testcases/VicubeSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="107" column="21" lean-forward="true" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#42319#42417#0" />
-                <element signature="method#denoiseStrategy#0;class#VicubeSystem#0" />
-                <element signature="method#denoiseStrategySelect#0;class#VicubeSystem#0" />
-              </folding>
+            <state relative-caret-position="2996">
+              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Global.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Global.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-data/Global.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -227,12 +208,12 @@
         <option value="$PROJECT_DIR$/src/com.test.testcases/VicubeSystem.java" />
         <option value="$PROJECT_DIR$/src/com/test/utill/ExtentTestNGIReporterListener.java" />
         <option value="$PROJECT_DIR$/src/com.test.page/VicubeSystemSetup.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/com.test.testcases/VicubeConcentratedAlarm.java" />
         <option value="$PROJECT_DIR$/src/com/test/utill/ParseFunction.java" />
         <option value="$PROJECT_DIR$/src/com/test/utill/LocatorFunction.java" />
         <option value="$PROJECT_DIR$/src/locator/Vicube.yaml" />
         <option value="$PROJECT_DIR$/test-data/Global.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -281,6 +262,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,18 +298,6 @@
               <item name="AutomationFrameworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutomationFrameworks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com.test.testcases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationFrameworks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationFrameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutomationFrameworks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationFrameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -338,15 +309,18 @@
             <path>
               <item name="AutomationFrameworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutomationFrameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutomationFrameworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationFrameworks" type="462c0819:PsiDirectoryNode" />
               <item name="test-data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -696,6 +670,8 @@
       <workItem from="1533023419004" duration="127000" />
       <workItem from="1533803815669" duration="826000" />
       <workItem from="1534475093850" duration="1396000" />
+      <workItem from="1534486768974" duration="333000" />
+      <workItem from="1534487508390" duration="579000" />
     </task>
     <servers />
   </component>
@@ -732,7 +708,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="506412000" />
+    <option name="totallyTimeSpent" value="507324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -749,29 +725,29 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49930555" weight="0.32884097" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32614556" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.36103153" side_tool="true" weight="0.27897575" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32879657" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63896847" weight="0.31940702" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49861112" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63896847" weight="0.31940702" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49861112" visible="true" weight="0.32884097" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49438202" visible="true" weight="0.18220946" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49438202" visible="true" weight="0.18794835" />
       <window_info anchor="right" id="Database" order="5" weight="0.32962757" />
       <window_info id="Structure" order="1" sideWeight="0.505618" side_tool="true" weight="0.38541666" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24928367" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49930555" weight="0.42991912" />
       <window_info id="Favorites" order="5" sideWeight="0.505618" side_tool="true" weight="0.38541666" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49930555" weight="0.42991912" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Problems" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32614556" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -910,13 +886,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/testPractice/Test000056.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/testPractice/allure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1051,12 +1020,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/config.xml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test-data/VicubeConcentratedAlarm.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1149,11 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1316">
           <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3668#3669#0" expanded="true" />
-            <element signature="e#3724#3725#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,9 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1568">
           <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,23 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com.test.base/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1846">
-          <caret line="166" column="68" selection-start-line="166" selection-start-column="65" selection-end-line="166" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1242,12 +1186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/utill/LocatorFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="57" column="23" lean-forward="true" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding>
-            <element signature="e#4313#4314#0" expanded="true" />
-            <element signature="e#4373#4374#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1344">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1267,28 +1207,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/locator/Vicube.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="448">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com.test.testcases/VicubeSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="107" column="21" lean-forward="true" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#42319#42417#0" />
-            <element signature="method#denoiseStrategy#0;class#VicubeSystem#0" />
-            <element signature="method#denoiseStrategySelect#0;class#VicubeSystem#0" />
-          </folding>
+        <state relative-caret-position="2996">
+          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test-data/Global.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.base/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="1568" column="79" lean-forward="true" selection-start-line="1568" selection-start-column="79" selection-end-line="1568" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
         </state>
       </provider>
     </entry>
