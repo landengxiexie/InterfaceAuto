@@ -14,4 +14,7 @@
             </class>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="com.test.utill.ExtentTestNGIReporterListener"/>
+    </listeners>
 </suite>
