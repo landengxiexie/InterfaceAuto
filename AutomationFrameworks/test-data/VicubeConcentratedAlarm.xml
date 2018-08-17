@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <common>
+
+
+        <commonCreate>create</commonCreate>
+
+
+    </common>
+
+    <concentratedAlarm>
+        <concentratedAlarm>concentratedalarm</concentratedAlarm>
+    </concentratedAlarm>
+
+    <alarmConfig>
+        <alarmConfig>alarmconfig</alarmConfig>
+    </alarmConfig>
+
+    <denoiseStrategy>
+        <denoiseStrategy>denoisestrategy</denoiseStrategy>
+    </denoiseStrategy>
+
+    <alarmClassifyRulesCreate>
+        <alarmClassifyRules>alarmclassifyrules</alarmClassifyRules>
+
+    </alarmClassifyRulesCreate>
+
+
+
+</data>

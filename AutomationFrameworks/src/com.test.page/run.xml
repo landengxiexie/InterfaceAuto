@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" verbose="1" parallel="false" thread-count="1">
+    <test name="Test" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.test.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="alarmClassifyRulesCreate"/>
+                    <include name="denoiseStrategySelect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

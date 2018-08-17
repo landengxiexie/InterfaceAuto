@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <common>
+        <!--菜单-系统设置-->
+        <commonCreate>create</commonCreate>
+        <commonCraeteFlag>flag</commonCraeteFlag>
+        <commonValid>valid</commonValid>
+        <commonInvalid>invalid</commonInvalid>
+        <commonSelect>select</commonSelect>
+        <commonChangeState>changestate</commonChangeState>
+        <commonSelectFlag>selectflag</commonSelectFlag>
+        <commonSelectValid>selctvalid</commonSelectValid>
+        <commonSelectInvalid>selctinvalid</commonSelectInvalid>
+        <commonSelectAffirm>selectaffirm</commonSelectAffirm>
+        <commonSelectChoose>selectchooseuser</commonSelectChoose>
+        <commonAllocationPrivilege>allocationprivilege</commonAllocationPrivilege>
+        <commonHint>commonhint</commonHint>
+        <commonAffirm>commonaffirm</commonAffirm>
+
+        <!--菜单-集中告警-->
+        <commonConcentratedAlarm>concentratedalarm</commonConcentratedAlarm>
+        <commonAlarmConfig>alarmconfig</commonAlarmConfig>
+        <commonDenoiseStrategy>denoisestrategy</commonDenoiseStrategy>
+        <commonAllRules>allrules</commonAllRules>
+
+
+        <!--菜单-系统设置-数据-->
+        <createSave>save</createSave>
+        <userNameValue>user0015</userNameValue>
+        <nameValue>edit0015</nameValue>
+        <emailValue>edit0015@edit.com</emailValue>
+        <responsibilityValue>岗位职责0015</responsibilityValue>
+        <phoneValue>15000000015</phoneValue>
+        <mobilephoneValue>16000000015</mobilephoneValue>
+        <noteValue>我是备注015</noteValue>
+
+        <editNameValue>edit016</editNameValue>
+        <editResponsibilityValue>edit岗位职责016</editResponsibilityValue>
+        <editPhoneValue>15000000016</editPhoneValue>
+        <editMobilePhoneValue>16000000016</editMobilePhoneValue>
+        <editEmailValue>edit016@edit.com</editEmailValue>
+        <editNoteValue>我是编辑备注016</editNoteValue>
+
+        <createWorkingGroupNameValue>AutoTestGroup</createWorkingGroupNameValue>
+
+        <!--菜单-集中告警-数据-->
+        <alarmClassifyRulesNameValue>test规则名称001</alarmClassifyRulesNameValue>
+        <contentKeywordValue>test内容关键词001</contentKeywordValue>
+
+    </common>
+    <!--菜单-系统设置-->
+    <vicubeLogin>
+        <user>vicube_user</user>
+        <userValue>administrator</userValue>
+        <password>vicube_password</password>
+        <passwordValue>vicube2017</passwordValue>
+        <button>vicube_loginButton</button>
+        <userLoginID>vicube_userloginid</userLoginID>
+    </vicubeLogin>
+
+    <userLogin>
+        <user>vicube_user</user>
+        <password>vicube_password</password>
+        <button>vicube_loginButton</button>
+        <userLoginID>vicube_userloginid</userLoginID>
+    </userLogin>
+
+    <systemSetting>
+        <systemSetting>systemsetting</systemSetting>
+    </systemSetting>
+
+    <userManagement>
+        <userManagement>usermanagement</userManagement>
+    </userManagement>
+
+    <userManagementCreate>
+        <userName>username</userName>
+        <name>name</name>
+        <email>email</email>
+        <responsibility>responsibility</responsibility>
+        <phone>phone</phone>
+        <mobilephone>mobilephone</mobilephone>
+        <note>note</note>
+        <valid>valid</valid>
+    </userManagementCreate>
+
+    <userCreateSave>
+        <saveHint>savehint</saveHint>
+        <saveAffirm>saveaffirm</saveAffirm>
+    </userCreateSave>
+
+    <userCreateCancel>
+        <cancel>cancel</cancel>
+        <cancelHint>cancelhint</cancelHint>
+        <cancelAffirm>cancelaffirm</cancelAffirm>
+    </userCreateCancel>
+
+    <userSelect>
+        <select>select</select>
+        <selectUserName>selectusername</selectUserName>
+        <selectName>selectname</selectName>
+        <selectEmail>selectemail</selectEmail>
+        <selectUsernameValue>selectusernamevalue</selectUsernameValue>
+        <selectNameValue>selectnamevalue</selectNameValue>
+        <selecteMailValue>selectemailvalue</selecteMailValue>
+        <selectResponsibilityValue>selectresponsibilityvalue</selectResponsibilityValue>
+        <selectPhoneValue>selectphonevalue</selectPhoneValue>
+        <selectMobilephoneValue>selectmobilephonevalue</selectMobilephoneValue>
+        <selectNoteValue>selectnotevalue</selectNoteValue>
+        <selectValidValue>selectvalidvalue</selectValidValue>
+    </userSelect>
+
+    <userEdit>
+        <edit>edit</edit>
+        <editUserName>editusername</editUserName>
+        <editnName>editname</editnName>
+        <editResponsibility>editresponsibility</editResponsibility>
+        <editPhone>editphone</editPhone>
+        <editMobilePhone>editmobilephone</editMobilePhone>
+        <editEmail>editemail</editEmail>
+        <editNote>editnote</editNote>
+        <editFlag>editflag</editFlag>
+        <editInvalid>editinvalid</editInvalid>
+    </userEdit>
+
+    <commonSave>
+        <edit>edit</edit>
+        <editSave>editsave</editSave>
+        <editSaveHint>editsavehint</editSaveHint>
+        <editSaveAffirm>editsaveaffirm</editSaveAffirm>
+    </commonSave>
+
+    <userEditSaveSelect>
+        <select>select</select>
+        <selectUserName>selectusername</selectUserName>
+        <selectName>selectname</selectName>
+        <selectEmail>selectemail</selectEmail>
+        <selectFlag>selectflag</selectFlag>
+        <selectValid>selctvalid</selectValid>
+        <selectInvalid>selctinvalid</selectInvalid>
+        <selectAffirm>selectaffirm</selectAffirm>
+        <selectUsernameValue>selectusernamevalue</selectUsernameValue>
+        <selectNameValue>selectnamevalue</selectNameValue>
+        <selecteMailValue>selectemailvalue</selecteMailValue>
+        <selectResponsibilityValue>selectresponsibilityvalue</selectResponsibilityValue>
+        <selectPhoneValue>selectphonevalue</selectPhoneValue>
+        <selectMobilephoneValue>selectmobilephonevalue</selectMobilephoneValue>
+        <selectNoteValue>selectnotevalue</selectNoteValue>
+        <selectValidValue>selectvalidvalue</selectValidValue>
+        <selectChooseUser>selectchooseuser</selectChooseUser>
+    </userEditSaveSelect>
+
+    <userEditCancel>
+        <edit>edit</edit>
+        <editCancel>editcancel</editCancel>
+        <editCancelHint>editcancelhint</editCancelHint>
+        <editCancelAffirm>editcancelaffirm</editCancelAffirm>
+    </userEditCancel>
+
+    <userDelete>
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <deleteCancel>deletecancel</deleteCancel>
+    </userDelete>
+
+    <userResetPassword>
+        <resetPassword>resetpassword</resetPassword>
+        <resetPasswordHint>resetpasswordhint</resetPasswordHint>
+        <resetPasswordAffirm>resetpasswordaffirm</resetPasswordAffirm>
+        <resetPasswordCancel>resetpasswordcancel</resetPasswordCancel>
+    </userResetPassword>
+
+    <userAssignmentGroup>
+        <assignmentGroup>assignmentgroup</assignmentGroup>
+        <selectGroup>selectgroup</selectGroup>
+        <selectGroupRightMove>selectgrouprightmove</selectGroupRightMove>
+        <assignmentGroupSave>commonsave</assignmentGroupSave>
+    </userAssignmentGroup>
+
+    <workingGroupManagement>
+        <workingGroupManagement>workinggroupmanagent</workingGroupManagement>
+    </workingGroupManagement>
+
+    <workingGroupManagementGreate>
+        <createWorkingGroupName>createworkinggroupname</createWorkingGroupName>
+    </workingGroupManagementGreate>
+
+    <workingGroupManagementSelect>
+        <inputSelectWorkingGroupname>inputselectworkinggroupname</inputSelectWorkingGroupname>
+        <selectworkinggroupnameValue>selectworkinggroupname</selectworkinggroupnameValue>
+        <selectWorkingGroupFlagValue>selectworkinggroupvalidflag</selectWorkingGroupFlagValue>
+    </workingGroupManagementSelect>
+
+    <userAllocationPrivilege>
+        <choosePrivilegeBJ-UPS1>chooseprivilegebj-ups1</choosePrivilegeBJ-UPS1>
+        <choosePrivilegeBJ-UPS2>chooseprivilegebj-ups2</choosePrivilegeBJ-UPS2>
+        <choosePrivilegeBJ-UPS3>chooseprivilegebj-ups3</choosePrivilegeBJ-UPS3>
+        <choosePrivilegeBJ-UPS4>chooseprivilegebj-ups4</choosePrivilegeBJ-UPS4>
+        <choosePrivilegeMoveAllRight>chooseprivilegemoveallright</choosePrivilegeMoveAllRight>
+        <choosePrivilegeMoveRight>chooseprivilegemoveright</choosePrivilegeMoveRight>
+        <choosePrivilegeMoveLeft>chooseprivilegemoveleft</choosePrivilegeMoveLeft>
+        <choosePrivilegeMoveAllLeft>chooseprivilegemoveallleft</choosePrivilegeMoveAllLeft>
+    </userAllocationPrivilege>
+
+    <userAllocationPrivilegeSave>
+        <allocationSave>allocationprivilegesave</allocationSave>
+        <allocationSaveHint>editsavehint</allocationSaveHint>
+        <allocationSaveAffirm>editsaveaffirm</allocationSaveAffirm>
+    </userAllocationPrivilegeSave>
+
+    <userLogoutSystem>
+        <userLogoutHead>userlogouthead</userLogoutHead>
+        <userLogoutSystem>userlogoutsystem</userLogoutSystem>
+    </userLogoutSystem>
+
+    <userChangeState></userChangeState>
+
+    <chooseUserButton></chooseUserButton>
+
+    <clickSelectButton></clickSelectButton>
+
+    <userInvalidLogin>
+        <user>vicube_user</user>
+        <user>vicube_user</user>
+        <password>vicube_password</password>
+        <button>vicube_loginButton</button>
+        <userLoginID>vicube_userloginid</userLoginID>
+    </userInvalidLogin>
+
+    <userViewConfig>
+        <userViewConfigPlus>userviewconfigplus</userViewConfigPlus>
+        <userViewConfigViewOne>userviewconfigviewone</userViewConfigViewOne>
+        <userViewConfigViewTwo>userviewconfigviewtwo</userViewConfigViewTwo>
+        <userViewConfigViewThree>userviewconfigviewthree</userViewConfigViewThree>
+        <userViewConfigViewFour>userviewconfigviewfour</userViewConfigViewFour>
+        <userViewConfigMoveRight>userviewconfigmoveright</userViewConfigMoveRight>
+        <userViewConfigSave>userviewconfigsave</userViewConfigSave>
+        <userViewConfig8586BJUPS1>userviewconfig8586bjups1</userViewConfig8586BJUPS1>
+    </userViewConfig>
+
+    <!--菜单-集中告警-->
+    <concentratedAlarm>
+        <concentratedAlarm>concentratedalarm</concentratedAlarm>
+    </concentratedAlarm>
+
+    <alarmConfig>
+        <alarmConfig>alarmconfig</alarmConfig>
+    </alarmConfig>
+
+    <denoiseStrategy>
+        <denoiseStrategy>denoisestrategy</denoiseStrategy>
+    </denoiseStrategy>
+
+    <alarmClassifyRulesCreate>
+        <allRules>allrules</allRules>
+        <alarmClassifyRules>alarmclassifyrules</alarmClassifyRules>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <newAlarmType>newalarmtype</newAlarmType>
+        <chooseNewAlarmType>choosenewalarmtype</chooseNewAlarmType>
+        <newAlarmRank>newalarmrank</newAlarmRank>
+        <deselectAll>deselectall</deselectAll>
+        <chooseNewAlarmRank>choosenewalarmrank</chooseNewAlarmRank>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmClassifyRulesCreate>
+
+    <denoiseStrategySelect>
+        <selectRulesName>selectrulesname</selectRulesName>
+    </denoiseStrategySelect>
+
+
+</data>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" verbose="1" parallel="false" thread-count="1">
+    <test name="Test" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.test.testcases.VicubeSystemSetup">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="systemSetting"/>
+                    <include name="userManagement"/>
+                    <include name="userSelect"/>
+                    <include name="userAssignmentGroup"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test name="Test1" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）-->
+    <!--<classes>-->
+    <!--<class name="com.test.testcases.SendTestReport">-->
+    <!--<methods>-->
+    <!--<include name="sendReport"/>-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>
