@@ -1,4 +1,4 @@
-package com.test.utill;
+﻿package com.test.utill;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -19,7 +19,7 @@ import java.util.*;
 public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";
-    private static final String FILE_NAME = "IndexUI.html";
+    private static final String FILE_NAME = "index.html";
 
     private ExtentReports extent;
 
