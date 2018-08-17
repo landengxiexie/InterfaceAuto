@@ -1,4 +1,4 @@
-﻿package com.test.utill;
+package com.test.utill;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -112,8 +112,8 @@ public class ExtentTestNGIReporterListener implements IReporter {
 
 
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
-        htmlReporter.config().setDocumentTitle("api自动化测试报告");
-        htmlReporter.config().setReportName("api自动化测试报告");
+        htmlReporter.config().setDocumentTitle("UI自动化测试报告");
+        htmlReporter.config().setReportName("UI自动化测试报告");
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         // htmlReporter.config().setTheme(Theme.STANDARD);

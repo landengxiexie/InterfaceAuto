@@ -17,7 +17,7 @@
                             <testFailureIgnore>true</testFailureIgnore>
                             <suiteXmlFiles>
                                 <suiteXmlFile>
-                                    .src/com.test.page/run.xml         <!--testNG.xml文件路径-->
+                                    .src/com.test.page/run.xml
                                 </suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
