@@ -1,18 +1,14 @@
 package com.cases;
 
-import com.config.BaseConfig;
 import com.config.VicubeCasesConfig;
 import com.utils.AssertFunction;
 import com.utils.HttpFunction;
 import com.utils.InterceptFunction;
-import jdk.internal.org.objectweb.asm.TypeReference;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.atomic.AtomicBoolean;
 
 @SuppressWarnings("ALL")
 public class VicubeInterfaceCase175 {

@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 90, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 21.799 s <<< FAILURE! - in TestSuite
-relationAttributeServiceAdd(com.cases.VicubeInterfaceCase175)  Time elapsed: 0.046 s  <<< FAILURE!
-java.lang.RuntimeException: 请求失败
-	at com.cases.VicubeInterfaceCase175.relationAttributeServiceAdd(VicubeInterfaceCase175.java:486)
-
-findById(com.cases.VicubeInterfaceCase175)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Source string may not be null
-	at com.cases.VicubeInterfaceCase175.findById(VicubeInterfaceCase175.java:496)
-
+Tests run: 105, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.972 s - in TestSuite

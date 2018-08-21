@@ -1,440 +1,522 @@
-<h2>Reporter output</h2><table><tr><td>2018-08-16 10:59:40:Post请求URL:http://192.168.20.175:48080/rest/userService/queryUserInfo</td></tr>
-<tr><td>2018-08-16 10:59:40:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:40:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:41:09.272","logintimes":4277,"mobilephone":"","name":"administrator","note":"系统内置超级管理员","objectLis":[],"password":"","phone":"","staffName":"超级管理员","token":"","updateDate":null,"updator":"","userId":"administrator","userType":1}]</td></tr>
-<tr><td>2018-08-16 10:59:40:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"</td></tr>
-<tr><td>2018-08-16 10:59:40:Post请求URL:http://192.168.20.175:48080/rest/DoLogin/DoLogin</td></tr>
-<tr><td>2018-08-16 10:59:40:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 30,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:{"authMethod":"DB","clientIP":"192.168.20.26","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"vicube2017","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:59:59.515","logintimes":4278,"mobilephone":"","name":"administrato</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/functionService/getFunctionsByUserId</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[{"childs":[],"code":"F","createDate":null,"creator":"","functionType":"5","icon":"","module":"","name":"开始","note":"","order":1,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"M","createDate":null,"creator":"","functionType":"1","icon":"","module":"","name":"根模块","note":"","order":0,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"F002","createDate":null,"creator":"","functionType":"5","icon":"","module":"vic.viewCtrl","name":"视图中心","note":"","order":1,"</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/authorizeService/queryAllObjectsByUserId</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[{"domainName":"","groupId":"administrator","objectId":"1","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"2","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"M","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"M03","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"M06","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：domainName    ---实际值为：domainName</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewService/getUserViewsByType</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 27,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[{"content":"9144,9027,9182,9183,9177,9185","createTime":null,"creator":"administrator","protectLevel":0,"updateTime":null,"updator":"administrator","viewId":2,"viewImg":"","viewName":"超级管理员个人桌面","viewTitle":"自定义桌面","viewType":"desktop"},{"content":"9144,9183,9182,9027,9185,9177","createTime":null,"creator":"administrator","protectLevel":1,"updateTime":null,"updator":"administrator","viewId":1,"viewImg":"","viewName":"超级管理员桌面","viewTitle":"超级管理员桌面","viewType":"desktop"}]</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："updator":"administrator"    ---实际值为："updator":"administrator"</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/getMyViewEntriesNoContent</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/queryGroupInfoLike</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"","flag":1,"groupId":"365912275430000","groupName":"","groupType":"","note":"","updateDate":null,"updator":""}]</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllDomains</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[{"domain":"","isType":false,"label":"rootDomain","name":"rootDomain","nodeId":250478291430000,"parentId":414046005487378,"parentName":"Domain","properties":{"parentName":"Domain","icon":"Domain","name":"rootDomain","id":"250478291430000","label":"rootDomain"},"propertyLabels":{"name":"名称","label":"显示名称","icon":"图标","description":"描述","domain":"所属父域"}}]</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："isType":false    ---实际值为："isType":false</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/createGroup</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:null</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：null    ---实际值为：null</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/addView</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 154,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:{"content":"","createTime":null,"creator":"","protectLevel":1,"updateTime":null,"updator":"","viewId":9440,"viewImg":"","viewName":"","viewTitle":"","viewType":"desktop"}</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："content":""    ---实际值为："content":""</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantObjects2Group</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 34,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:1</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：1    ---实际值为：1</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/queryGroupInfo</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"","flag":1,"groupId":"365912275430000","groupName":"","groupType":"","note":"","updateDate":null,"updator":""}]</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryUsersByGroupId</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantUsers2Group</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:1</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：1    ---实际值为：1</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/disableGroup</td></tr>
-<tr><td>2018-08-16 10:59:41:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:41:resultEntity获取成功:1</td></tr>
-<tr><td>2018-08-16 10:59:41:期望值为：1    ---实际值为：1</td></tr>
-<tr><td>2018-08-16 10:59:41:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/getViewsExcludeKpiAndDeskTop</td></tr>
-<tr><td>2018-08-16 10:59:41:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"content":"{\"viewId\":9185,\"viewTitle\":\"3D可视化\",\"bgColor\":\"rgb(255, 255, 255)\",\"charts\":[{\"id\":\"15E3645C30674BC88661CBD37E5D1138\",\"parentID\":\"\",\"type\":\"ThreeChart\",\"properties\":[{\"name\":\"showTitle\",\"value\":false},{\"name\":\"name\",\"value\":\"\"},{\"name\":\"openUrl\",\"value\":\"\"},{\"name\":\"z-index\",\"value\":0},{\"name\":\"borderStyle\",\"value\":\"solid\"},{\"name\":\"borderWidth\",\"value\":\"1\"},{\"name\":\"borderColor\",\"value\":\"rgba(212,212,212,1)</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："protectLevel":1    ---实际值为："protectLevel":1</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/deleteGroup</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:1</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：1    ---实际值为：1</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/functionFlexService/getAllFunctions</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"childs":[],"code":"D801","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"新增","note":"","order":1,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D802","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"修改","note":"","order":2,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D803","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"删除","note":"","order":3,"parentC</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："name":"新增"    ---实际值为："name":"新增"</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："updateDate":null    ---实际值为："updateDate":null</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findByModelName</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-23T16:57:20.937","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"250478291430000","label":"rootDomain","name":"rootDomain","order":0,"orderColumn":"","parentName":"Domain","parentTree":"Root/Ci/PortalCi/Domain/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:43:22.677","updator":"administrator","values":{"parentName":"Domain","icon":"Domain","name":"rootDomain","id":"250478291430000","label"</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："batch":false    ---实际值为："batch":false</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/queryObjectsByGroupId</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"domainName":"","groupId":"北京监控组","objectId":"8488","objectType":"6","userId":""},{"domainName":"","groupId":"厦门监控组","objectId":"8489","objectType":"6","userId":""},{"domainName":"","groupId":"","objectId":"8979","objectType":"6","userId":"zhang"},{"domainName":"","groupId":"","objectId":"M","objectType":"1","userId":"wangjunlan"},{"domainName":"","groupId":"","objectId":"M0102","objectType":"2","userId":"wangjunlan"},{"domainName":"","groupId":"","objectId":"M0104","objectType":"2","userId":"</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：domainName    ---实际值为：domainName</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantMenuAmoduleAview2User</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 46,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:4</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：4    ---实际值为：4</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantObjectsDomain</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 28,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:1</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：1    ---实际值为：1</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryUserInfo</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:59:59.515","logintimes":4278,"mobilephone":"","name":"administrator","note":"系统内置超级管理员","objectLis":[],"password":"","phone":"","staffName":"超级管理员","token":"","updateDate":null,"updator":"","userId":"administrator","userType":1}]</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："createDate":null    ---实际值为："createDate":null</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/auditService/queryAuditInfo/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"actionName":"删除工作组","auditId":16728,"clientIP":"192.168.20.26","content":"删除了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-16T11:00:00.850","recordsFiltered":8088,"recordsTotal":8088,"start":0,"startTime":null,"userId":"administrator"},{"actionName":"锁定工作组","auditId":16727,"clientIP":"192.168.20.26","content":"锁定了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-16T10:59:59.873","</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："actionName":"删除工作组"    ---实际值为："actionName":"删除工作组"</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/insertBaseLinePolicy</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 148,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:null</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：null    ---实际值为：null</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLinePolicyList</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/updateBaseLinePolicy</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 526,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:null</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：null    ---实际值为：null</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/cleanBaseLinePolicy</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:null</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为：null    ---实际值为：null</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/dynaWarningManageService/queryWarningRuleList</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:{"msg":"","code":200,"data":[],"status":"success"}</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："status":"success"    ---实际值为："status":"success"</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllTypeNodes</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:42:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:42:resultEntity获取成功:[{"domain":"","isType":true,"label":"URMP","name":"Ci","nodeId":234493901400000,"parentId":0,"parentName":"Root","properties":{},"propertyLabels":{}},{"domain":"","isType":true,"label":"URMP","name":"Ci","nodeId":234493901400000,"parentId":0,"parentName":"Root","properties":{},"propertyLabels":{}},{"domain":"","isType":true,"label":"资源","name":"CommonCi","nodeId":247889802420063,"parentId":234493901400000,"parentName":"Ci","properties":{"owner":"","vendorOwner":"","icon":"","nodeNameInMonitoring</td></tr>
-<tr><td>2018-08-16 10:59:42:期望值为："name":"Ci"    ---实际值为："name":"Ci"</td></tr>
-<tr><td>2018-08-16 10:59:42:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllMyNodesByTypeName</td></tr>
-<tr><td>2018-08-16 10:59:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLineDefList</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-14T14:49:36.094","uuid":"08588f47db604945a278cc5a0b1b90c3","uuidPolicy":""},{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycl</td></tr>
-<tr><td>2018-08-16 10:59:43:字符串截取失败--"[]"--不存在</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/kpiDataFlexService/getKpiItemList</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/dynaWarningManageService/getOneWarningRule</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 12,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:{"msg":"getOneWarningRule:{ ruleId is not null}","code":500,"data":null,"status":"failed"}</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："status":"failed"    ---实际值为："status":"failed"</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/checkBaseLineDef</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 104,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:true</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：true    ---实际值为：true</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/insertBaseLineDef</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 394,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-16T11:00:02.268","uuid":"b91049b1bcda42c7b16a571f2d68fd57","uuidPolicy":""}</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/updateBaseLineCalendarByBatch</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:"success"</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：success    ---实际值为：success</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLineCalendarList</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 84,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/cleanBaseLineDef</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:null</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：null    ---实际值为：null</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findModelTree</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/enumUtilService/getEnums</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]    ---实际值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findInstanceByModelSortOrder</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-24T11:06:46.369","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"248866639050042","label":"基本信息","name":"base","order":0,"orderColumn":"","parentName":"Tab","parentTree":"Root/Ci/PortalCi/Tab/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:43:22.356","updator":"administrator","values":{"parentName":"Tab","domain":"rootDomain","name":"base","id":"248866639050042","label":"基本信息","order":1},"v</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："batch":false    ---实际值为："batch":false</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/modelHistoryService/find/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/dictService/getAllDicts</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:[{"code":"environment","createTime":null,"creator":"","description":"","label":"所在环境","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"os","createTime":null,"creator":"","description":"","label":"操作系统","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"importance","createTime":null,"creator":"","description":"","label":"关键程度","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"YesorNo","createTime":null,"creator</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为："code":"YesorNo"    ---实际值为："code":"YesorNo"</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/queryByFilter</td></tr>
-<tr><td>2018-08-16 10:59:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 21,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:43:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:43:resultEntity获取成功:{"data":[],"size":0}</td></tr>
-<tr><td>2018-08-16 10:59:43:期望值为：{"data":[],"size":0}    ---实际值为：{"data":[],"size":0}</td></tr>
-<tr><td>2018-08-16 10:59:43:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findAll</td></tr>
-<tr><td>2018-08-16 10:59:50:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:50:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru</td></tr>
-<tr><td>2018-08-16 10:59:50:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
-<tr><td>2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findSelectTree</td></tr>
-<tr><td>2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:50:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:50:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru</td></tr>
-<tr><td>2018-08-16 10:59:50:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
-<tr><td>2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/queryByFilter</td></tr>
-<tr><td>2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 41,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:50:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:50:resultEntity获取成功:{"attributes":[{"alertMessage":"采集发现的来源系统","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"STRING","defaultValue":null,"displayType":"TEXT","edit":false,"extendModelName":"CommonCi","hidden":true,"id":"298823609330003","label":"来源系统","matchType":null,"name":"source","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":0},{"alertMessage":"","allowInh</td></tr>
-<tr><td>2018-08-16 10:59:50:期望值为："attributes"    ---实际值为："attributes"</td></tr>
-<tr><td>2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/operationLogService/findByOperationTypeAndModelName/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:50:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:50:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
-<tr><td>2018-08-16 10:59:50:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0</td></tr>
-<tr><td>2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findList</td></tr>
-<tr><td>2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:50:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:50:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:50:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:50:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/add</td></tr>
-<tr><td>2018-08-16 10:59:50:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 113,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:51:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:51:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true</td></tr>
-<tr><td>2018-08-16 10:59:51:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
-<tr><td>2018-08-16 10:59:51:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findByNameNotBuiltInAttr</td></tr>
-<tr><td>2018-08-16 10:59:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:51:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:51:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true</td></tr>
-<tr><td>2018-08-16 10:59:51:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
-<tr><td>2018-08-16 10:59:51:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/update</td></tr>
-<tr><td>2018-08-16 10:59:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 489,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:51:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:51:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true</td></tr>
-<tr><td>2018-08-16 10:59:51:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
-<tr><td>2018-08-16 10:59:51:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/remove</td></tr>
-<tr><td>2018-08-16 10:59:51:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 50,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为：    ---实际值为：</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/add</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 288,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求失败:statusCode = 400</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findById</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/removeBatch</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为：    ---实际值为：</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceHistoryService/find/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/queryFilterByColorAdmin/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/getDefulateValue</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"enable":true,"domain":"rootDomain","icon":"AlertType","nodeType":"CommonCi"},"version":0}</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为："batch":false    ---实际值为："batch":false</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/queryInstanceByRelationPage</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:{"data":[{"batch":false,"createTime":"2018-05-23T18:06:21.959","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"248866639050016","label":"全部存储设备","name":"TotalInfra_StorageNode","order":0,"orderColumn":"","parentName":"InfraGroup","parentTree":"Root/Ci/CommonCi/StatsNode/CustomNode/InfraGroup/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:44:17.532","updator":"administrator","values":{"parentName":"InfraGroup","domain":"rootDom</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为："data":    ---实际值为："data":</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/validation</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 222,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:52:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:52:resultEntity获取成功:true</td></tr>
-<tr><td>2018-08-16 10:59:52:期望值为：true    ---实际值为：true</td></tr>
-<tr><td>2018-08-16 10:59:52:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/add</td></tr>
-<tr><td>2018-08-16 10:59:52:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 277,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:53:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:53:resultEntity获取成功:{"batch":false,"createTime":"2018-08-16T11:00:11.155","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"366374446840000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-16T11:00:11.155","updator":"administrator","values":{"domain":"rootDomain"},"version":0}</td></tr>
-<tr><td>2018-08-16 10:59:53:期望值为："batch":false    ---实际值为："batch":false</td></tr>
-<tr><td>2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findByName</td></tr>
-<tr><td>2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:53:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:53:resultEntity获取成功:{"attributes":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"采集发现的来源系统","allowInheritance":true,"allowNull":fals</td></tr>
-<tr><td>2018-08-16 10:59:53:期望值为："alertMessage":""    ---实际值为："alertMessage":""</td></tr>
-<tr><td>2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationInstanceService/findBySourceOrTarget_Label</td></tr>
-<tr><td>2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:53:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:53:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:53:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findBySourceOrTarget</td></tr>
-<tr><td>2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:53:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:53:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:53:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/checkInstanceHasRelation</td></tr>
-<tr><td>2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:53:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:53:resultEntity获取成功:{"success":false}</td></tr>
-<tr><td>2018-08-16 10:59:53:期望值为：{"success":false}    ---实际值为：{"success":false}</td></tr>
-<tr><td>2018-08-16 10:59:53:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/update</td></tr>
-<tr><td>2018-08-16 10:59:53:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 296,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:54:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:54:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"parentName":"Alert","isPageAdd":"1","enable":true,"domain":"rootDomain","icon":"AlertType","nodeType":"CommonCi","exception_message":"_name_exist_"},"version":0}</td></tr>
-<tr><td>2018-08-16 10:59:54:期望值为："batch":false    ---实际值为："batch":false</td></tr>
-<tr><td>2018-08-16 10:59:54:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/checkRelation</td></tr>
-<tr><td>2018-08-16 10:59:54:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:56:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:56:resultEntity获取成功:""</td></tr>
-<tr><td>2018-08-16 10:59:56:期望值为：""    ---实际值为：""</td></tr>
-<tr><td>2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/remove</td></tr>
-<tr><td>2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:56:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:56:resultEntity获取成功:</td></tr>
-<tr><td>2018-08-16 10:59:56:期望值为：    ---实际值为：</td></tr>
-<tr><td>2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/waitForConfirmationCount</td></tr>
-<tr><td>2018-08-16 10:59:56:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:56:resultEntity获取成功:{"data":0,"msg":"SUCCESSFUL","size":0,"status":"success"}</td></tr>
-<tr><td>2018-08-16 10:59:56:期望值为："status":"success"    ---实际值为："status":"success"</td></tr>
-<tr><td>2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/confirmationedCount</td></tr>
-<tr><td>2018-08-16 10:59:56:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:56:resultEntity获取成功:{"data":0,"msg":"SUCCESSFUL","size":0,"status":"success"}</td></tr>
-<tr><td>2018-08-16 10:59:56:期望值为："data":    ---实际值为："data":</td></tr>
-<tr><td>2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/getWaitForConfirmationList/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:56:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:56:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
-<tr><td>2018-08-16 10:59:56:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
-<tr><td>2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/getConfirmationedList/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:56:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:56:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
-<tr><td>2018-08-16 10:59:56:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
-<tr><td>2018-08-16 10:59:56:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getUrmpTreeByKeyFilter</td></tr>
-<tr><td>2018-08-16 10:59:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 42,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:[{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"CITypeNodeIcon","id":"247889802420015","instance":false,"label":"机房","name":"MachineRoom","order":1,"parentName":"Facility","parentTree":"","permissionAllowExtend":false,"permissions":null,"updateTime":null,"updator":"","version":0},{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":null,"id":"251943945610018","instance":true,"label":"数据中心A","name":"610 Server room","order":289136</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为："batch":false    ---实际值为："batch":false</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/statisticAlertCountByStateCache</td></tr>
-<tr><td>2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:{"0":2,"5":0,"30":0,"20":0,"10":0}</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为：20    ---实际值为：20</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/incidentTypeFlexService/queryIncidentType</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryFullUserInfo</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.26","lastLoginTime":"2018-08-16T10:59:59.515","logintimes":4278,"mobilephone":"","name":"administrator","note":"系统内置超级管理员",</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageFlexService/getForwardTypeMap</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:[{"label":"运维系统","value":"EOMS"},{"label":"邮件","value":"Email"},{"label":"短信","value":"SMS"}]</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为："label":"运维系统"    ---实际值为："label":"运维系统"</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/personalizedService/getGlobalModule</td></tr>
-<tr><td>2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:null</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为：null    ---实际值为：null</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/countAlertFromCacheForHtmlData</td></tr>
-<tr><td>2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 253,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:58:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:58:resultEntity获取成功:{"0":0,"1":0,"2":0,"3":1,"4":1}</td></tr>
-<tr><td>2018-08-16 10:59:58:期望值为："3":    ---实际值为："3":</td></tr>
-<tr><td>2018-08-16 10:59:58:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/queryAlertFromCacheForHtmlData/?length=1000</td></tr>
-<tr><td>2018-08-16 10:59:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:59:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:59:resultEntity获取成功:{"recordsFiltered":2,"data":[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDoma</td></tr>
-<tr><td>2018-08-16 10:59:59:期望值为：recordsFiltered    ---实际值为：recordsFiltered</td></tr>
-<tr><td>2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/sendAlertClaimAction</td></tr>
-<tr><td>2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 43,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:59:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:59:resultEntity获取成功:{"actTime":"2018-08-16T11:00:18.242","actionId":365410393570012,"actionType":"","alertIds":[],"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{}}</td></tr>
-<tr><td>2018-08-16 10:59:59:期望值为：actTime    ---实际值为：actTime</td></tr>
-<tr><td>2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/alertManageFlexService/sendForwordAction</td></tr>
-<tr><td>2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 172,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:59:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:59:resultEntity获取成功:{"actTime":"2018-08-16T11:00:18.287","actionId":365410393570013,"actionType":"forward","alertIds":[],"comment":"[]","content":"","done":false,"incidentType":"","logs":[],"nodeId":0,"operator":"administrator","params":{"content":"","incidentType":"","severity":0,"title":"[]"},"severity":0,"tags":"","target":"","title":"[]"}</td></tr>
-<tr><td>2018-08-16 10:59:59:期望值为：actTime    ---实际值为：actTime</td></tr>
-<tr><td>2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/sendAlertRecoverAction</td></tr>
-<tr><td>2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 136,Chunked: false]</td></tr>
-<tr><td>2018-08-16 10:59:59:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 10:59:59:resultEntity获取成功:{"actTime":"2018-08-16T11:00:18.307","actionId":365410393570014,"actionType":"","alertIds":[],"clearOut":false,"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{},"recoverAll":true,"resolved":true}</td></tr>
-<tr><td>2018-08-16 10:59:59:期望值为：actTime    ---实际值为：actTime</td></tr>
-<tr><td>2018-08-16 10:59:59:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getNodeByName</td></tr>
-<tr><td>2018-08-16 10:59:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]</td></tr>
-<tr><td>2018-08-16 11:00:00:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 11:00:00:resultEntity获取成功:{"domain":"","isType":true,"label":"交换机","name":"Switch","nodeId":247889802420073,"parentId":247889802420053,"parentName":"Network","properties":{"importance":"","icon":"","description":"","source":"","creatDate":"","discoveredMethod":"","warrantyStartDate":"","model":"","maintenanceExpireTime":"","OccupiedUnits":"","state":"","brand":"","owner":"","serialNumber":"","vendorOwner":"","nodeNameInMonitoringTool":"","vendorContact":"","updateTime":"","label":"","serviceLevel":"","discoveredState":""</td></tr>
-<tr><td>2018-08-16 11:00:00:期望值为："name":"Switch"    ---实际值为："name":"Switch"</td></tr>
-<tr><td>2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/rest/alertQueryFlexService/queryEvent</td></tr>
-<tr><td>2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 11:00:00:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 11:00:00:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 11:00:00:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/rest/alertManageFlexService/queryActionLog</td></tr>
-<tr><td>2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]</td></tr>
-<tr><td>2018-08-16 11:00:00:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 11:00:00:resultEntity获取成功:[]</td></tr>
-<tr><td>2018-08-16 11:00:00:期望值为：[]    ---实际值为：[]</td></tr>
-<tr><td>2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/rest/alertQueryService/getRelatedAlerts</td></tr>
-<tr><td>2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
-<tr><td>2018-08-16 11:00:00:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 11:00:00:resultEntity获取成功:[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDomain/","eventId":3396839634200</td></tr>
-<tr><td>2018-08-16 11:00:00:期望值为："activeState":0    ---实际值为："activeState":0</td></tr>
-<tr><td>2018-08-16 11:00:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findById</td></tr>
-<tr><td>2018-08-16 11:00:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 15,Chunked: false]</td></tr>
-<tr><td>2018-08-16 11:00:00:请求成功statusCode = 200</td></tr>
-<tr><td>2018-08-16 11:00:00:resultEntity获取成功:{"batch":false,"createTime":"2018-08-16T11:00:11.155","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"366374446840000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-16T11:00:11.155","updator":"administrator","values":{"domain":"rootDomain"},"version":0}</td></tr>
-<tr><td>2018-08-16 11:00:00:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<h2>Reporter output</h2><table><tr><td>2018-08-21 15:48:42:Post请求URL:http://192.168.20.175:48080/rest/userService/queryUserInfo</td></tr>
+<tr><td>2018-08-21 15:48:42:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:42:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.82","lastLoginTime":"2018-08-21T15:26:03.513","logintimes":4325,"mobilephone":"","name":"administrator","note":"系统内置超级管理员","objectLis":[],"password":"","phone":"","staffName":"超级管理员","token":"","updateDate":null,"updator":"","userId":"administrator","userType":1}]</td></tr>
+<tr><td>2018-08-21 15:48:42:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"</td></tr>
+<tr><td>2018-08-21 15:48:42:Post请求URL:http://192.168.20.175:48080/rest/DoLogin/DoLogin</td></tr>
+<tr><td>2018-08-21 15:48:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 30,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:42:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:42:resultEntity获取成功:{"authMethod":"DB","clientIP":"192.168.20.82","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"vicube2017","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.82","lastLoginTime":"2018-08-21T15:49:07.952","logintimes":4326,"mobilephone":"","name":"administrato</td></tr>
+<tr><td>2018-08-21 15:48:42:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"</td></tr>
+<tr><td>2018-08-21 15:48:42:Post请求URL:http://192.168.20.175:48080/rest/functionService/getFunctionsByUserId</td></tr>
+<tr><td>2018-08-21 15:48:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:42:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:42:resultEntity获取成功:[{"childs":[],"code":"F","createDate":null,"creator":"","functionType":"5","icon":"","module":"","name":"开始","note":"","order":1,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"M","createDate":null,"creator":"","functionType":"1","icon":"","module":"","name":"根模块","note":"","order":0,"parentCode":"","updateDate":null,"updator":""},{"childs":[],"code":"F002","createDate":null,"creator":"","functionType":"5","icon":"","module":"vic.viewCtrl","name":"视图中心","note":"","order":1,"</td></tr>
+<tr><td>2018-08-21 15:48:42:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:42:Post请求URL:http://192.168.20.175:48080/rest/authorizeService/queryAllObjectsByUserId</td></tr>
+<tr><td>2018-08-21 15:48:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:42:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:42:resultEntity获取成功:[{"domainName":"","groupId":"administrator","objectId":"1","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"2","objectType":"6","userId":""},{"domainName":"","groupId":"administrator","objectId":"M","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"M03","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"M06","objectType":"1","userId":""},{"domainName":"","groupId":"administrator","objectId":"</td></tr>
+<tr><td>2018-08-21 15:48:42:期望值为：domainName    ---实际值为：domainName</td></tr>
+<tr><td>2018-08-21 15:48:42:Post请求URL:http://192.168.20.175:48080/rest/viewService/getUserViewsByType</td></tr>
+<tr><td>2018-08-21 15:48:42:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 27,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:[{"content":"9144,9027,9182,9183,9177,9185","createTime":null,"creator":"administrator","protectLevel":0,"updateTime":null,"updator":"administrator","viewId":2,"viewImg":"","viewName":"超级管理员个人桌面","viewTitle":"自定义桌面","viewType":"desktop"},{"content":"9144,9183,9182,9027,9185,9177","createTime":null,"creator":"administrator","protectLevel":1,"updateTime":null,"updator":"administrator","viewId":1,"viewImg":"","viewName":"超级管理员桌面","viewTitle":"超级管理员桌面","viewType":"desktop"}]</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："updator":"administrator"    ---实际值为："updator":"administrator"</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/getMyViewEntriesNoContent</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/queryGroupInfoLike</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"","flag":1,"groupId":"373688223020000","groupName":"","groupType":"","note":"","updateDate":null,"updator":""}]</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllDomains</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:[{"domain":"","isType":false,"label":"rootDomain","name":"rootDomain","nodeId":250478291430000,"parentId":414046005487378,"parentName":"Domain","properties":{"parentName":"Domain","icon":"Domain","name":"rootDomain","id":"250478291430000","label":"rootDomain"},"propertyLabels":{"name":"名称","label":"显示名称","icon":"图标","description":"描述","domain":"所属父域"}}]</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："isType":false    ---实际值为："isType":false</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/createGroup</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/addView</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 154,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:{"content":"","createTime":null,"creator":"","protectLevel":1,"updateTime":null,"updator":"","viewId":9486,"viewImg":"","viewName":"","viewTitle":"","viewType":"desktop"}</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："content":""    ---实际值为："content":""</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantObjects2Group</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 34,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:1</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为：1    ---实际值为：1</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/queryGroupInfo</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""},{"createDate":null,"creator":"","domain":"","flag":1,"groupId":"373688223020000","groupName":"","groupType":"","note":"","updateDate":null,"updator":""}]</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："groupName":"超级管理员组"    ---实际值为："groupName":"超级管理员组"</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为："groupId":"administrator"    ---实际值为："groupId":"administrator"</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryUsersByGroupId</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantUsers2Group</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 14,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:1</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为：1    ---实际值为：1</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/disableGroup</td></tr>
+<tr><td>2018-08-21 15:48:43:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:43:resultEntity获取成功:1</td></tr>
+<tr><td>2018-08-21 15:48:43:期望值为：1    ---实际值为：1</td></tr>
+<tr><td>2018-08-21 15:48:43:Post请求URL:http://192.168.20.175:48080/rest/viewFlexService/getViewsExcludeKpiAndDeskTop</td></tr>
+<tr><td>2018-08-21 15:48:43:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"content":"{\"viewId\":9185,\"viewTitle\":\"3D可视化\",\"bgColor\":\"rgb(255, 255, 255)\",\"charts\":[{\"id\":\"15E3645C30674BC88661CBD37E5D1138\",\"parentID\":\"\",\"type\":\"ThreeChart\",\"properties\":[{\"name\":\"showTitle\",\"value\":false},{\"name\":\"name\",\"value\":\"\"},{\"name\":\"openUrl\",\"value\":\"\"},{\"name\":\"z-index\",\"value\":0},{\"name\":\"borderStyle\",\"value\":\"solid\"},{\"name\":\"borderWidth\",\"value\":\"1\"},{\"name\":\"borderColor\",\"value\":\"rgba(212,212,212,1)</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："protectLevel":1    ---实际值为："protectLevel":1</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/groupFlexService/deleteGroup</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:1</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：1    ---实际值为：1</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/functionFlexService/getAllFunctions</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"childs":[],"code":"D801","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"新增","note":"","order":1,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D802","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"修改","note":"","order":2,"parentCode":"D","updateDate":null,"updator":""},{"childs":[],"code":"D803","createDate":null,"creator":"","functionType":"7","icon":"","module":"","name":"删除","note":"","order":3,"parentC</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："name":"新增"    ---实际值为："name":"新增"</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："updateDate":null    ---实际值为："updateDate":null</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findByModelName</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-23T16:57:20.937","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"250478291430000","label":"rootDomain","name":"rootDomain","order":0,"orderColumn":"","parentName":"Domain","parentTree":"Root/Ci/PortalCi/Domain/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:43:22.677","updator":"administrator","values":{"parentName":"Domain","icon":"Domain","name":"rootDomain","id":"250478291430000","label"</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："creator":"administrator"    ---实际值为："creator":"administrator"</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/queryObjectsByGroupId</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"domainName":"","groupId":"北京监控组","objectId":"8488","objectType":"6","userId":""},{"domainName":"","groupId":"厦门监控组","objectId":"8489","objectType":"6","userId":""},{"domainName":"","groupId":"","objectId":"8979","objectType":"6","userId":"zhang"},{"domainName":"","groupId":"","objectId":"M","objectType":"1","userId":"wangjunlan"},{"domainName":"","groupId":"","objectId":"M0102","objectType":"2","userId":"wangjunlan"},{"domainName":"","groupId":"","objectId":"M0104","objectType":"2","userId":"</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：domainName    ---实际值为：domainName</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantMenuAmoduleAview2User</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 46,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:4</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：4    ---实际值为：4</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/authorizeFlexService/grantObjectsDomain</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 28,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:1</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：1    ---实际值为：1</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryUserInfo</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.82","lastLoginTime":"2018-08-21T15:49:07.952","logintimes":4326,"mobilephone":"","name":"administrator","note":"系统内置超级管理员","objectLis":[],"password":"","phone":"","staffName":"超级管理员","token":"","updateDate":null,"updator":"","userId":"administrator","userType":1}]</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："createDate":null    ---实际值为："createDate":null</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/auditService/queryAuditInfo/?length=1000</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"actionName":"删除工作组","auditId":17049,"clientIP":"192.168.20.82","content":"删除了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-21T15:49:09.411","recordsFiltered":8409,"recordsTotal":8409,"start":0,"startTime":null,"userId":"administrator"},{"actionName":"锁定工作组","auditId":17048,"clientIP":"192.168.20.82","content":"锁定了工作组[]","endTime":null,"length":0,"moduleId":"userManager","moduleName":"统一用户管理","operationTime":"2018-08-21T15:49:08.269","</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："actionName":"删除工作组"    ---实际值为："actionName":"删除工作组"</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/insertBaseLinePolicy</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 148,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLinePolicyList</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/updateBaseLinePolicy</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 526,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/cleanBaseLinePolicy</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 10,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/dynaWarningManageService/queryWarningRuleList</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:{"msg":"","code":200,"data":[],"status":"success"}</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："status":"success"    ---实际值为："status":"success"</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllTypeNodes</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:44:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:44:resultEntity获取成功:[{"domain":"","isType":true,"label":"URMP","name":"Ci","nodeId":234493901400000,"parentId":0,"parentName":"Root","properties":{},"propertyLabels":{}},{"domain":"","isType":true,"label":"URMP","name":"Ci","nodeId":234493901400000,"parentId":0,"parentName":"Root","properties":{},"propertyLabels":{}},{"domain":"","isType":true,"label":"资源","name":"CommonCi","nodeId":247889802420063,"parentId":234493901400000,"parentName":"Ci","properties":{"owner":"","vendorOwner":"","icon":"","nodeNameInMonitoring</td></tr>
+<tr><td>2018-08-21 15:48:44:期望值为："name":"Ci"    ---实际值为："name":"Ci"</td></tr>
+<tr><td>2018-08-21 15:48:44:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getAllMyNodesByTypeName</td></tr>
+<tr><td>2018-08-21 15:48:44:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLineDefList</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:[{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-16T16:11:55.306","uuid":"86ab1f9f44694b6e9767311cfbe24ffa","uuidPolicy":""},{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycl</td></tr>
+<tr><td>2018-08-21 15:48:56:字符串截取失败--"[]"--不存在</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/kpiDataFlexService/getKpiItemList</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/dynaWarningManageService/getOneWarningRule</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 12,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:{"msg":"getOneWarningRule:{ ruleId is not null}","code":500,"data":null,"status":"failed"}</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为："status":"failed"    ---实际值为："status":"failed"</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/checkBaseLineDef</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 104,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:true</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为：true    ---实际值为：true</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/insertBaseLineDef</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 394,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:{"calendarType":"auto","ciId":"0","ciLabel":"","ciTypeLabel":"资源","ciTypeName":"CommonCi","cycleDayNum":20,"cycleDefaultType":"","cycleMonthNum":20,"cycleQuarterNum":0,"cycleWeekNum":20,"cycleYearNum":20,"gentype":"","kpiCode":"","kpiLabel":"","roundNum":0,"ruleId":"","ruleStatus":1,"status":1,"title":"","updateTime":"2018-08-21T15:49:21.971","uuid":"ac262d2d8b2a42cca0de3801e65994a2","uuidPolicy":""}</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为："calendarType":"auto"    ---实际值为："calendarType":"auto"</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/updateBaseLineCalendarByBatch</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:"success"</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为：success    ---实际值为：success</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/getBaseLineCalendarList</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 84,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/rest/baselineOperatoinService/cleanBaseLineDef</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:56:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:56:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:48:56:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:48:56:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findModelTree</td></tr>
+<tr><td>2018-08-21 15:48:56:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/enumUtilService/getEnums</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 9,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]    ---实际值为：["EQ","NE","LIKE","LT","GT","LE","GE","IN","NOT_IN"]</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findInstanceByModelSortOrder</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:[{"batch":false,"createTime":"2018-05-24T11:06:46.369","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"248866639050042","label":"基本信息","name":"base","order":0,"orderColumn":"","parentName":"Tab","parentTree":"Root/Ci/PortalCi/Tab/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:43:22.356","updator":"administrator","values":{"parentName":"Tab","domain":"rootDomain","name":"base","id":"248866639050042","label":"基本信息","order":1},"v</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/modelHistoryService/find/?length=1000</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/dictService/getAllDicts</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:[{"code":"environment","createTime":null,"creator":"","description":"","label":"所在环境","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"os","createTime":null,"creator":"","description":"","label":"操作系统","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"importance","createTime":null,"creator":"","description":"","label":"关键程度","systemDefault":false,"type":"global","updateTime":null,"updator":""},{"code":"YesorNo","createTime":null,"creator</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："code":"YesorNo"    ---实际值为："code":"YesorNo"</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/queryByFilter</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 21,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:{"data":[],"size":0}</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为：{"data":[],"size":0}    ---实际值为：{"data":[],"size":0}</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findAll</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findSelectTree</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 4,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:[{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":tru</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/queryByFilter</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 41,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:{"attributes":[{"alertMessage":"采集发现的来源系统","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"STRING","defaultValue":null,"displayType":"TEXT","edit":false,"extendModelName":"CommonCi","hidden":true,"id":"298823609330003","label":"来源系统","matchType":null,"name":"source","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":0},{"alertMessage":"","allowInh</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："attributes"    ---实际值为："attributes"</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/operationLogService/findByOperationTypeAndModelName/?length=1000</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为："recordsTotal":0    ---实际值为："recordsTotal":0</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findList</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:57:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:57:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:48:57:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:48:57:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/add</td></tr>
+<tr><td>2018-08-21 15:48:57:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 113,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:58:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:58:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true</td></tr>
+<tr><td>2018-08-21 15:48:58:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
+<tr><td>2018-08-21 15:48:58:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findByNameNotBuiltInAttr</td></tr>
+<tr><td>2018-08-21 15:48:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:58:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:58:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true</td></tr>
+<tr><td>2018-08-21 15:48:58:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
+<tr><td>2018-08-21 15:48:58:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/update</td></tr>
+<tr><td>2018-08-21 15:48:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 489,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:58:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:58:resultEntity获取成功:{"attributes":[],"attributesAndPubAttr":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"","allowInheritance":true</td></tr>
+<tr><td>2018-08-21 15:48:58:期望值为："attributes":[]    ---实际值为："attributes":[]</td></tr>
+<tr><td>2018-08-21 15:48:58:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/remove</td></tr>
+<tr><td>2018-08-21 15:48:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 50,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:58:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:58:resultEntity获取成功:</td></tr>
+<tr><td>2018-08-21 15:48:58:期望值为：    ---实际值为：</td></tr>
+<tr><td>2018-08-21 15:48:58:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/add</td></tr>
+<tr><td>2018-08-21 15:48:58:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 264,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:{"alertMessage":"","allowInheritance":false,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"","hidden":false,"id":"366520475720000","label":"可修改001","mappingType":"one","matchType":null,"name":"BelongsTo新增收集接口00017","operationValue":"","order":0,"pattern":"","relationType":"BelongsTo","relationTypeLabel":"","searchField":false,"source":"DictManager","sourceLabel":"","sourceType":null,"sourceValue":"","tabGroup":"relation",</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为："allowInheritance":false    ---实际值为："allowInheritance":false</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findById</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 15,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:{"alertMessage":"","allowInheritance":false,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"","hidden":false,"id":"366520475720000","label":"可修改001","mappingType":"one","matchType":null,"name":"BelongsTo新增收集接口00017","operationValue":"","order":0,"pattern":"","relationType":"BelongsTo","relationTypeLabel":"","searchField":false,"source":"DictManager","sourceLabel":"","sourceType":null,"sourceValue":"","tabGroup":"relation",</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为："alertMessage":""    ---实际值为："alertMessage":""</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/removeBatch</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为：    ---实际值为：</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceHistoryService/find/?length=1000</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/queryFilterByColorAdmin/?length=1000</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/getDefulateValue</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"enable":true,"domain":"rootDomain","icon":"AlertType","nodeType":"CommonCi"},"version":0}</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/queryInstanceByRelationPage</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:{"data":[{"batch":false,"createTime":"2018-05-23T18:06:21.959","creator":"administrator","edit":false,"exchangedId":"","icon":"","id":"248866639050016","label":"全部存储设备","name":"TotalInfra_StorageNode","order":0,"orderColumn":"","parentName":"InfraGroup","parentTree":"Root/Ci/CommonCi/StatsNode/CustomNode/InfraGroup/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-06-13T14:44:17.532","updator":"administrator","values":{"parentName":"InfraGroup","domain":"rootDom</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为："data":    ---实际值为："data":</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/validation</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 222,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:48:59:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:48:59:resultEntity获取成功:true</td></tr>
+<tr><td>2018-08-21 15:48:59:期望值为：true    ---实际值为：true</td></tr>
+<tr><td>2018-08-21 15:48:59:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/add</td></tr>
+<tr><td>2018-08-21 15:48:59:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 277,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:00:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:00:resultEntity获取成功:{"batch":false,"createTime":"2018-08-21T15:49:24.786","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"366374446840000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-21T15:49:24.786","updator":"administrator","values":{"domain":"rootDomain"},"version":0}</td></tr>
+<tr><td>2018-08-21 15:49:00:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<tr><td>2018-08-21 15:49:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/modelService/findByName</td></tr>
+<tr><td>2018-08-21 15:49:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 8,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:00:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:00:resultEntity获取成功:{"attributes":[{"alertMessage":"","allowInheritance":true,"allowNull":false,"assetsAttr":false,"dataType":"","defaultValue":null,"displayType":null,"edit":false,"extendModelName":"Ci","hidden":false,"id":"1","label":"ID","matchType":null,"name":"id","operationValue":"","order":0,"pattern":"","searchField":false,"sourceType":null,"sourceValue":"","tabGroup":"base","uniqueness":false,"uniquenessScope":"","value":null,"width":120},{"alertMessage":"采集发现的来源系统","allowInheritance":true,"allowNull":fals</td></tr>
+<tr><td>2018-08-21 15:49:00:期望值为："alertMessage":""    ---实际值为："alertMessage":""</td></tr>
+<tr><td>2018-08-21 15:49:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationInstanceService/findBySourceOrTarget_Label</td></tr>
+<tr><td>2018-08-21 15:49:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:00:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:00:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:00:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/findBySourceOrTarget</td></tr>
+<tr><td>2018-08-21 15:49:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 5,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:00:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:00:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:00:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/checkInstanceHasRelation</td></tr>
+<tr><td>2018-08-21 15:49:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:00:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:00:resultEntity获取成功:{"success":false}</td></tr>
+<tr><td>2018-08-21 15:49:00:期望值为：{"success":false}    ---实际值为：{"success":false}</td></tr>
+<tr><td>2018-08-21 15:49:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/update</td></tr>
+<tr><td>2018-08-21 15:49:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 296,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:00:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:00:resultEntity获取成功:{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"","id":"","label":"","name":"","order":0,"orderColumn":"","parentName":"","parentTree":"","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":null,"updator":"","values":{"parentName":"Alert","isPageAdd":"1","enable":true,"domain":"rootDomain","icon":"AlertType","nodeType":"CommonCi","exception_message":"_name_exist_"},"version":0}</td></tr>
+<tr><td>2018-08-21 15:49:00:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<tr><td>2018-08-21 15:49:00:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/checkRelation</td></tr>
+<tr><td>2018-08-21 15:49:00:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:01:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:01:resultEntity获取成功:""</td></tr>
+<tr><td>2018-08-21 15:49:01:期望值为：""    ---实际值为：""</td></tr>
+<tr><td>2018-08-21 15:49:01:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/remove</td></tr>
+<tr><td>2018-08-21 15:49:01:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 25,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:01:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:01:resultEntity获取成功:</td></tr>
+<tr><td>2018-08-21 15:49:01:期望值为：    ---实际值为：</td></tr>
+<tr><td>2018-08-21 15:49:01:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/waitForConfirmationCount</td></tr>
+<tr><td>2018-08-21 15:49:01:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:01:resultEntity获取成功:{"data":0,"msg":"SUCCESSFUL","size":0,"status":"success"}</td></tr>
+<tr><td>2018-08-21 15:49:01:期望值为："status":"success"    ---实际值为："status":"success"</td></tr>
+<tr><td>2018-08-21 15:49:01:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/confirmationedCount</td></tr>
+<tr><td>2018-08-21 15:49:01:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:01:resultEntity获取成功:{"data":0,"msg":"SUCCESSFUL","size":0,"status":"success"}</td></tr>
+<tr><td>2018-08-21 15:49:01:期望值为："data":    ---实际值为："data":</td></tr>
+<tr><td>2018-08-21 15:49:01:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/getWaitForConfirmationList/?length=1000</td></tr>
+<tr><td>2018-08-21 15:49:01:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:01:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:01:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
+<tr><td>2018-08-21 15:49:01:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
+<tr><td>2018-08-21 15:49:01:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/page/post/instanceService/getConfirmationedList/?length=1000</td></tr>
+<tr><td>2018-08-21 15:49:01:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 26,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:01:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:01:resultEntity获取成功:{"recordsTotal":0,"recordsFiltered":0}</td></tr>
+<tr><td>2018-08-21 15:49:01:期望值为："recordsTotal":0,"recordsFiltered":0    ---实际值为："recordsTotal":0,"recordsFiltered":0</td></tr>
+<tr><td>2018-08-21 15:49:01:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getUrmpTreeByKeyFilter</td></tr>
+<tr><td>2018-08-21 15:49:01:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 42,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:[{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":"CITypeNodeIcon","id":"247889802420015","instance":false,"label":"机房","name":"MachineRoom","order":1,"parentName":"Facility","parentTree":"","permissionAllowExtend":false,"permissions":null,"updateTime":null,"updator":"","version":0},{"batch":false,"createTime":null,"creator":"","edit":false,"exchangedId":"","icon":null,"id":"251943945610018","instance":true,"label":"数据中心A","name":"610 Server room","order":289136</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为："batch":false    ---实际值为："batch":false</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/statisticAlertCountByStateCache</td></tr>
+<tr><td>2018-08-21 15:49:03:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 23,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:{"0":2,"5":0,"30":0,"20":0,"10":0}</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为：20    ---实际值为：20</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/incidentTypeFlexService/queryIncidentType</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/userFlexService/queryFullUserInfo</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:[{"authMethod":"DB","clientIP":"","createDate":null,"creator":"","departmentCode":"","email":"","encryptedpwd":"","flag":1,"groupInfoList":[{"createDate":null,"creator":"","domain":"rootDomain","flag":1,"groupId":"administrator","groupName":"超级管理员组","groupType":"0","note":"系统默认的超级管理员组","updateDate":null,"updator":""}],"jobTitle":"","lastDesktop":"","lastLoginIp":"192.168.20.82","lastLoginTime":"2018-08-21T15:49:07.952","logintimes":4326,"mobilephone":"","name":"administrator","note":"系统内置超级管理员",</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为："authMethod":"DB"    ---实际值为："authMethod":"DB"</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageFlexService/getForwardTypeMap</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:[{"label":"运维系统","value":"EOMS"},{"label":"邮件","value":"Email"},{"label":"短信","value":"SMS"}]</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为："label":"运维系统"    ---实际值为："label":"运维系统"</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/personalizedService/getGlobalModule</td></tr>
+<tr><td>2018-08-21 15:49:03:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/countAlertFromCacheForHtmlData</td></tr>
+<tr><td>2018-08-21 15:49:03:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 253,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:03:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:03:resultEntity获取成功:{"0":0,"1":0,"2":0,"3":1,"4":1}</td></tr>
+<tr><td>2018-08-21 15:49:03:期望值为："3":    ---实际值为："3":</td></tr>
+<tr><td>2018-08-21 15:49:03:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/queryAlertFromCacheForHtmlData/?length=1000</td></tr>
+<tr><td>2018-08-21 15:49:03:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:{"recordsFiltered":2,"data":[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDoma</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：recordsFiltered    ---实际值为：recordsFiltered</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/sendAlertClaimAction</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 43,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:{"actTime":"2018-08-21T15:49:29.315","actionId":365410393570144,"actionType":"","alertIds":[],"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{}}</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：actTime    ---实际值为：actTime</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertManageFlexService/sendForwordAction</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 172,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:{"actTime":"2018-08-21T15:49:29.363","actionId":365410393570145,"actionType":"forward","alertIds":[],"comment":"[]","content":"","done":false,"incidentType":"","logs":[],"nodeId":0,"operator":"administrator","params":{"content":"","incidentType":"","severity":0,"title":"[]"},"severity":0,"tags":"","target":"","title":"[]"}</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：actTime    ---实际值为：actTime</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/sendAlertRecoverAction</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 136,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:{"actTime":"2018-08-21T15:49:29.378","actionId":365410393570146,"actionType":"","alertIds":[],"clearOut":false,"comment":"","done":false,"logs":[],"nodeId":0,"operator":"administrator","params":{},"recoverAll":true,"resolved":true}</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：actTime    ---实际值为：actTime</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/cmdbFlexService/getNodeByName</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 6,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:{"domain":"","isType":true,"label":"交换机","name":"Switch","nodeId":247889802420073,"parentId":247889802420053,"parentName":"Network","properties":{"importance":"","icon":"","description":"","source":"","creatDate":"","discoveredMethod":"","warrantyStartDate":"","model":"","maintenanceExpireTime":"","OccupiedUnits":"","state":"","brand":"","owner":"","serialNumber":"","vendorOwner":"","nodeNameInMonitoringTool":"","vendorContact":"","updateTime":"","label":"","serviceLevel":"","discoveredState":""</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为："name":"Switch"    ---实际值为："name":"Switch"</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertQueryFlexService/queryEvent</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertManageFlexService/queryActionLog</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertQueryService/getRelatedAlerts</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDomain/","eventId":3396839634200</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为："activeState":0    ---实际值为："activeState":0</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/viewQueryFlexService/queryDataByCustomSql</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 19,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertQueryFlexService/queryFromDbPage?length=1000</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[{"activeState":0,"agentId":"huasu","agentName":"424877189127402","alertCode":13018011,"alertId":339760198840581,"alertTypeLabel":"UPS_Output_Frequency_Alert","appName":"StandardTest-UPS1","arisingTime":"2018-07-26T17:51:14.000","causeAlertId":0,"changeId":"","ciName":"","claimBy":"","claimTime":null,"classified":false,"closeBy":"","closeTime":null,"comments":"","count":1,"defaultCiType":"","devName":"StandardTest-UPS1","domainList":["rootDomain"],"domains":"/rootDomain/","eventId":3396839634200</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为："activeState":0    ---实际值为："activeState":0</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/incidentFlexService/getPagesize</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:20</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：20    ---实际值为：20</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageFlexService/queryForwardRecord</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 36,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[{"comments":"","forwardDestination":"阿拉龙/alalong & null","forwardPathId":327697530610004,"forwardType":"Email","incidentId":328139375320184,"incidentTitle":"wyy","incidentType":"/wyy-ceshi","recordId":325967464520788,"sendBy":"auto","sendTime":"2018-07-17T16:06:05.709","severity":-2},{"comments":"","forwardDestination":"MonitorGroupBJ/bjzhang, & ","forwardPathId":-1,"forwardType":"Email","incidentId":318903435240177,"incidentTitle":"[解决<md>[图1](http://img.xunjian.ccccltd.cn:48083/201807/1531709</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为："comments"    ---实际值为："comments"</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageFlexService/getAllRules</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:04:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:04:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:04:字符串截取失败--""accept""--不存在</td></tr>
+<tr><td>2018-08-21 15:49:04:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:04:Post请求URL:http://192.168.20.175:48080/rest/incidentFlexService/queryIncident</td></tr>
+<tr><td>2018-08-21 15:49:04:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 35,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:[{"activeBy":"auto","activeTime":"2018-07-17T16:04:06.720","alertCount":1,"forwardDestination":"","forwardPathIds":[327697530610004],"forwardRecords":"327697530610004","forwardRuleId":326185165500017,"forwardRuleTitle":"wyy","forwardType":"","incidentAlertSize":10,"incidentDescription":"","incidentId":328139375320184,"incidentSeverity":-2,"incidentState":20,"incidentType":"/wyy-ceshi","incidentTypeList":["","wyy-ceshi"],"lifeCycle":60000,"mandatoryAlertIdSet":[325858747721030],"mandatoryAlertIds</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："activeBy"    ---实际值为："activeBy"</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertService/getAlerts</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:[]</td></tr>
+<tr><td>2018-08-21 15:49:05:字符串截取失败--""activeBy""--不存在</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为：[]    ---实际值为：[]</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/getAllRulesByString</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:[{"accept":true,"agentIdFilter":"","alertCode":"","createTime":"2018-08-21T00:00:00.000","domain":"rootDomain","enabled":true,"exclusive":true,"messageFilter":"","newAlertCode":0,"newAppName":"","newDevName":"","newMessage":"","newSeverity":-2,"newTags":"","nodeFilter":"","nodeIds":[],"nodeType":"CommonCi","priority":10,"ruleId":375400459350006,"ruleMode":0,"ruleTitle":"123123","ruleType":"alert-classify","severityFilter":"0,1,2,3,4","tagFilter":"","tagOp":0,"timeFrom":0,"timeRangeType":-1,"time</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："accept"    ---实际值为："accept"</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/dictHtmlDataService/getDictValues</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 13,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:[{"dictCode":"AlertSeverity","label":"INFO","param":"","parentCode":"Root_AlertSeverity","valueCode":"0"},{"dictCode":"AlertSeverity","label":"WARNING","param":"","parentCode":"Root_AlertSeverity","valueCode":"1"},{"dictCode":"AlertSeverity","label":"NORMAL","param":"","parentCode":"Root_AlertSeverity","valueCode":"-1"},{"dictCode":"AlertSeverity","label":"MINOR","param":"","parentCode":"Root_AlertSeverity","valueCode":"2"},{"dictCode":"AlertSeverity","label":"UNKONWN","param":"","parentCode":"R</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："dictCode"    ---实际值为："dictCode"</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/getAllTags</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 2,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:[{"description":"","domain":"","name":"AlertClosed"},{"description":"","domain":"","name":"AlertStatus=Closed;"}]</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："description"    ---实际值为："description"</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/addAlertClassifyRule</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 454,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:"sucess"</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："sucess"    ---实际值为："sucess"</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertHtmlDataService/updateAlertClassifyRule</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 612,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:"sucess"</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："sucess"    ---实际值为："sucess"</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageService/removeRules</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/rest/alertRuleManageService/enableRules</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.143:48080/rest/alertRuleManageService/disableRules</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 17,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:null</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为：null    ---实际值为：null</td></tr>
+<tr><td>2018-08-21 15:49:05:Post请求URL:http://192.168.20.175:48080/urmp/api/rest/post/instanceService/findById</td></tr>
+<tr><td>2018-08-21 15:49:05:entity:[Content-Type: text/plain; charset=UTF-8,Content-Length: 15,Chunked: false]</td></tr>
+<tr><td>2018-08-21 15:49:05:请求成功statusCode = 200</td></tr>
+<tr><td>2018-08-21 15:49:05:resultEntity获取成功:{"batch":false,"createTime":"2018-08-21T15:49:24.786","creator":"administrator","edit":false,"exchangedId":"","icon":"AlertType","id":"366374446840000","label":"测试接口名称","name":"测试接口","order":0,"orderColumn":"","parentName":"Alert","parentTree":"Root/Ci/AlertConfig/Alert/","permissionAllowExtend":false,"permissions":null,"sortType":"","updateTime":"2018-08-21T15:49:24.786","updator":"administrator","values":{"domain":"rootDomain"},"version":0}</td></tr>
+<tr><td>2018-08-21 15:49:05:期望值为："batch":false    ---实际值为："batch":false</td></tr>
 </table>
