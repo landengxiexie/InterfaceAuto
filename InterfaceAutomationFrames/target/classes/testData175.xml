@@ -273,8 +273,7 @@
 
 
    <relationAttributeServiceAddURL>http://192.168.20.175:48080/urmp/api/rest/post/relationAttributeService/add</relationAttributeServiceAddURL>
-   <relationAttributeServiceAddParams>
-      [{"source":"DictManager",
+   <relationAttributeServiceAddParams>[{"source":"DictManager",
       "name":"BelongsTo新增收集接口00017",
       "label":"可修改001",
       "target":"新增收集接口00017",
@@ -463,6 +462,61 @@
    <getRelatedAlertsURL>http://192.168.20.175:48080/rest/alertQueryService/getRelatedAlerts</getRelatedAlertsURL>
    <getRelatedAlertsParams>""</getRelatedAlertsParams>
 
+   <queryDataByCustomSqlURL>http://192.168.20.175:48080/rest/viewQueryFlexService/queryDataByCustomSql</queryDataByCustomSqlURL>
+   <queryDataByCustomSqlParams>{dic_type:"branch"}</queryDataByCustomSqlParams>
+
+   <queryFromDbPageURL>http://192.168.20.175:48080/rest/alertQueryFlexService/queryFromDbPage?length=1000</queryFromDbPageURL>
+   <queryFromDbPageParams>{"userId":""}</queryFromDbPageParams>
+
+   <getPagesizeURL>http://192.168.20.175:48080/rest/incidentFlexService/getPagesize</getPagesizeURL>
+   <getPagesizeParams>{}</getPagesizeParams>
+
+   <queryForwardRecordURL>http://192.168.20.175:48080/rest/alertRuleManageFlexService/queryForwardRecord</queryForwardRecordURL>
+   <queryForwardRecordParams>{pageSize:999999999,pageDirection:0}</queryForwardRecordParams>
+
+   <getAllRulesURL>http://192.168.20.175:48080/rest/alertRuleManageFlexService/getAllRules</getAllRulesURL>
+   <getAllRulesParams>alert-forward</getAllRulesParams>
+
+   <queryIncidentURL>http://192.168.20.175:48080/rest/incidentFlexService/queryIncident</queryIncidentURL>
+   <queryIncidentParams>{pageSize: 10000, pageDirection: 0}</queryIncidentParams>
+
+   <getAlertsURL>http://192.168.20.175:48080/rest/alertService/getAlerts</getAlertsURL>
+   <getAlertsParams>[520940156102662]</getAlertsParams>
+
+   <getAllRulesByStringURL>http://192.168.20.175:48080/rest/alertHtmlDataService/getAllRulesByString</getAllRulesByStringURL>
+   <getAllRulesByStringParams></getAllRulesByStringParams>
+
+   <getDictValuesURL>http://192.168.20.175:48080/rest/dictHtmlDataService/getDictValues</getDictValuesURL>
+   <getDictValuesParams>AlertSeverity</getDictValuesParams>
+
+   <getAllTagsURL>http://192.168.20.175:48080/rest/alertHtmlDataService/getAllTags</getAllTagsURL>
+   <getAllTagsParams>{}</getAllTagsParams>
+
+   <addAlertClassifyRuleURL>http://192.168.20.175:48080/rest/alertHtmlDataService/addAlertClassifyRule</addAlertClassifyRuleURL>
+   <addAlertClassifyRuleParams>{"priority":10,"exclusive":true,"accept":true,"severityFilter":"0,1,2,3,4",
+      "timeRangeType":-1,"enabled":true,"createTime":"2018-08-21T13:47:19.488Z","updateTime":"2018-08-21T13:47:19.488Z",
+      "ruleMode":0,"newAlertCode":0,"newSeverity":"-2","tagOp":0,"ruleType":"alert-classify","timeFrom":0,"timeTo":0,"tagFilter":"",
+      "agentIdFilter":"","newTags":"","ruleTitle":"降噪策略","domain":"rootDomain","nodeType":"BusinessApplication"}
+   </addAlertClassifyRuleParams>
+
+   <updateAlertClassifyRuleURL>http://192.168.20.175:48080/rest/alertHtmlDataService/updateAlertClassifyRule</updateAlertClassifyRuleURL>
+   <updateAlertClassifyRuleParams>{"accept":true,"agentIdFilter":"","alertCode":"","createTime":"2018-08-21T13:47:19.488",
+      "domain":"rootDomain","enabled":true,"exclusive":true,"messageFilter":"","newAlertCode":0,"newAppName":"","newDevName":"",
+      "newMessage":"","newSeverity":"-2","newTags":"","nodeFilter":"","nodeIds":[],"nodeType":"BusinessApplication","priority":10,
+      "ruleId":375400459350000,"ruleMode":0,"ruleTitle":"降噪策略","ruleType":"alert-classify","severityFilter":"0,1,2,3,4","tagFilter":"",
+      "tagOp":0,"timeFrom":0,"timeRangeType":-1,"timeTo":0,"titleFilter":"","updateTime":"2018-08-21T13:47:19.488"}
+   </updateAlertClassifyRuleParams>
+
+   <removeRulesURL>http://192.168.20.175:48080/rest/alertRuleManageService/removeRules</removeRulesURL>
+   <removeRulesParams>[375400459350000]</removeRulesParams>
+
+   <enableRulesURL>http://192.168.20.175:48080/rest/alertRuleManageService/enableRules</enableRulesURL>
+   <enableRulesParams>[375400459350000]</enableRulesParams>
+
+   <disableRulesURL>http://192.168.20.143:48080/rest/alertRuleManageService/disableRules</disableRulesURL>
+   <disableRulesParams>[375400459350000]</disableRulesParams>
 
 
 </config>
+
+

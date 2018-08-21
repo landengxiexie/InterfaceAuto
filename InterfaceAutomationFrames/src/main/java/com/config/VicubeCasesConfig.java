@@ -176,7 +176,36 @@ public class VicubeCasesConfig {
     public static String queryActionLogParams;
     public static String getRelatedAlertsURL;
     public static String getRelatedAlertsParams;
-
+    public static String queryDataByCustomSqlURL;
+    public static String queryDataByCustomSqlParams;
+    public static String queryFromDbPageURL;
+    public static String queryFromDbPageParams;
+    public static String getPagesizeURL;
+    public static String getPagesizeParams;
+    public static String queryForwardRecordURL;
+    public static String queryForwardRecordParams;
+    public static String getAllRulesURL;
+    public static String getAllRulesParams;
+    public static String queryIncidentURL;
+    public static String queryIncidentParams;
+    public static String getAlertsURL;
+    public static String getAlertsParams;
+    public static String getAllRulesByStringURL;
+    public static String getAllRulesByStringParams;
+    public static String getDictValuesURL;
+    public static String getDictValuesParams;
+    public static String getAllTagsURL;
+    public static String getAllTagsParams;
+    public static String addAlertClassifyRuleURL;
+    public static String addAlertClassifyRuleParams;
+    public static String updateAlertClassifyRuleURL;
+    public static String updateAlertClassifyRuleParams;
+    public static String removeRulesURL;
+    public static String removeRulesParams;
+    public static String enableRulesURL;
+    public static String enableRulesParams;
+    public static String disableRulesURL;
+    public static String disableRulesParams;
 
 
 
@@ -441,6 +470,54 @@ public class VicubeCasesConfig {
 
         getRelatedAlertsURL = p.getElementText("*/getRelatedAlertsURL");
         getRelatedAlertsParams = p.getElementText("*/getRelatedAlertsParams");
+
+        queryDataByCustomSqlURL = p.getElementText("*/queryDataByCustomSqlURL");
+        queryDataByCustomSqlParams = p.getElementText("*/queryDataByCustomSqlParams");
+
+        queryFromDbPageURL = p.getElementText("*/queryFromDbPageURL");
+        queryFromDbPageParams = p.getElementText("*/queryFromDbPageParams");
+
+        getPagesizeURL = p.getElementText("*/getPagesizeURL");
+        getPagesizeParams = p.getElementText("*/getPagesizeParams");
+
+        queryForwardRecordURL = p.getElementText("*/queryForwardRecordURL");
+        queryForwardRecordParams = p.getElementText("*/queryForwardRecordParams");
+
+        getAllRulesURL = p.getElementText("*/getAllRulesURL");
+        getAllRulesParams = p.getElementText("*/getAllRulesParams");
+
+
+        queryIncidentURL = p.getElementText("*/queryIncidentURL");
+        queryIncidentParams = p.getElementText("*/queryIncidentParams");
+
+        getAlertsURL = p.getElementText("*/getAlertsURL");
+        getAlertsParams = p.getElementText("*/getAlertsParams");
+
+        getAllRulesByStringURL = p.getElementText("*/getAllRulesByStringURL");
+        getAllRulesByStringParams = p.getElementText("*/getAllRulesByStringParams");
+
+        getDictValuesURL = p.getElementText("*/getDictValuesURL");
+        getDictValuesParams = p.getElementText("*/getDictValuesParams");
+
+        getAllTagsURL = p.getElementText("*/getAllTagsURL");
+        getAllTagsParams = p.getElementText("*/getAllTagsParams");
+
+        addAlertClassifyRuleURL = p.getElementText("*/addAlertClassifyRuleURL");
+        addAlertClassifyRuleParams = p.getElementText("*/addAlertClassifyRuleParams");
+
+        updateAlertClassifyRuleURL = p.getElementText("*/updateAlertClassifyRuleURL");
+        updateAlertClassifyRuleParams = p.getElementText("*/updateAlertClassifyRuleParams");
+
+        removeRulesURL = p.getElementText("*/removeRulesURL");
+        removeRulesParams = p.getElementText("*/removeRulesParams");
+
+        enableRulesURL = p.getElementText("*/enableRulesURL");
+        enableRulesParams = p.getElementText("*/enableRulesParams");
+
+        disableRulesURL = p.getElementText("*/disableRulesURL");
+        disableRulesParams = p.getElementText("*/disableRulesParams");
+
+
 
 
     }

@@ -103,6 +103,24 @@
                     <include name="queryActionLog"></include>
                     <include name="getRelatedAlerts"></include>
 
+                    <include name="queryDataByCustomSql"></include>
+                    <include name="queryFromDbPage"></include>
+                    <include name="getPagesize"></include>
+                    <include name="queryForwardRecord"></include>
+                    <include name="getAllRules"></include>
+                    <include name="queryIncident"></include>
+                    <include name="getAlerts"></include>
+                    <include name="getAllRulesByString"></include>
+                    <include name="getDictValues"></include>
+                    <include name="getAllTags"></include>
+                    <include name="addAlertClassifyRule"></include>
+                    <include name="updateAlertClassifyRule"></include>
+                    <include name="removeRules"></include>
+                    <include name="enableRules"></include>
+                    <include name="disableRules"></include>
+
+
+
 
 
                 </methods>

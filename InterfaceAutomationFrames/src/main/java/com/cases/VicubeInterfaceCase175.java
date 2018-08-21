@@ -5,11 +5,14 @@ import com.config.VicubeCasesConfig;
 import com.utils.AssertFunction;
 import com.utils.HttpFunction;
 import com.utils.InterceptFunction;
+import jdk.internal.org.objectweb.asm.TypeReference;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @SuppressWarnings("ALL")
 public class VicubeInterfaceCase175 {
@@ -246,7 +249,7 @@ public class VicubeInterfaceCase175 {
         try {
             String bottomLineDataProvider = InterceptFunction.intercept(result, "[]");
             AssertFunction.assertEquals(bottomLineDataProvider, "[]");
-        }catch (Exception e){
+        } catch (Exception e) {
             String bottomLineDataProvider = InterceptFunction.intercept(result, "\"bottomLineDataProvider\":\"common\"");
             AssertFunction.assertEquals(bottomLineDataProvider, "\"bottomLineDataProvider\":\"common\"");
             String bottomLineDataRangeFrom = InterceptFunction.intercept(result, "\"bottomLineDataRangeFrom\":0");
@@ -302,7 +305,7 @@ public class VicubeInterfaceCase175 {
         try {
             String calendarType = InterceptFunction.intercept(result, "[]");
             AssertFunction.assertEquals(calendarType, "[]");
-        }catch (Exception e){
+        } catch (Exception e) {
             String calendarType = InterceptFunction.intercept(result, "\"calendarType\":\"auto\"");
             AssertFunction.assertEquals(calendarType, "\"calendarType\":\"auto\"");
         }
@@ -554,7 +557,7 @@ public class VicubeInterfaceCase175 {
         AssertFunction.assertEquals(data, "true");
     }
 
-    String instanceServiceAddID =null;
+    String instanceServiceAddID = null;
 
     @Test
     public void instanceServiceAdd() {
@@ -568,7 +571,7 @@ public class VicubeInterfaceCase175 {
 
     @Test(dependsOnMethods = "instanceServiceAdd")
     public void instanceServiceFindById() {
-        Object post = httpFunction.post(VicubeCasesConfig.instanceServiceFindByIdURL,instanceServiceAddID);
+        Object post = httpFunction.post(VicubeCasesConfig.instanceServiceFindByIdURL, instanceServiceAddID);
         String result = String.valueOf(post);
         String batch = InterceptFunction.intercept(result, "\"batch\":false");
         AssertFunction.assertEquals(batch, "\"batch\":false");
@@ -684,7 +687,7 @@ public class VicubeInterfaceCase175 {
         try {
             String success = InterceptFunction.intercept(result, "[]");
             AssertFunction.assertEquals(success, "[]");
-        }catch (Exception e) {
+        } catch (Exception e) {
             String success = InterceptFunction.intercept(result, "\"comments\":\"\"");
             AssertFunction.assertEquals(success, "\"comments\":\"\"");
         }
@@ -713,7 +716,7 @@ public class VicubeInterfaceCase175 {
         try {
             String success = InterceptFunction.intercept(result, "null");
             AssertFunction.assertEquals(success, "null");
-        }catch (Exception e) {
+        } catch (Exception e) {
             String success = InterceptFunction.intercept(result, "\"status\"");
             AssertFunction.assertEquals(success, "\"status\"");
         }
@@ -790,6 +793,143 @@ public class VicubeInterfaceCase175 {
         String success = InterceptFunction.intercept(result, "\"activeState\":0");
         AssertFunction.assertEquals(success, "\"activeState\":0");
     }
+
+    @Test
+    public void queryDataByCustomSql() {
+        Object post = httpFunction.post(VicubeCasesConfig.queryDataByCustomSqlURL, VicubeCasesConfig.queryDataByCustomSqlParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "[]");
+        AssertFunction.assertEquals(success, "[]");
+    }
+
+    @Test
+    public void queryFromDbPage() {
+        Object post = httpFunction.post(VicubeCasesConfig.queryFromDbPageURL, VicubeCasesConfig.queryFromDbPageParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"activeState\":0");
+        AssertFunction.assertEquals(success, "\"activeState\":0");
+    }
+
+    @Test
+    public void getPagesize() {
+        Object post = httpFunction.post(VicubeCasesConfig.getPagesizeURL, VicubeCasesConfig.getPagesizeParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "20");
+        AssertFunction.assertEquals(success, "20");
+    }
+
+    @Test
+    public void queryForwardRecord() {
+        Object post = httpFunction.post(VicubeCasesConfig.queryForwardRecordURL, VicubeCasesConfig.queryForwardRecordParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"comments\"");
+        AssertFunction.assertEquals(success, "\"comments\"");
+    }
+
+    @Test
+    public void getAllRules() {
+        Object post = httpFunction.post(VicubeCasesConfig.getAllRulesURL, VicubeCasesConfig.getAllRulesParams);
+        String result = String.valueOf(post);
+        try {
+            String success = InterceptFunction.intercept(result, "\"accept\"");
+            AssertFunction.assertEquals(success, "\"accept\"");
+        } catch (Exception e) {
+            String success = InterceptFunction.intercept(result, "[]");
+            AssertFunction.assertEquals(success, "[]");
+        }
+    }
+
+    @Test
+    public void queryIncident() {
+        Object post = httpFunction.post(VicubeCasesConfig.queryIncidentURL, VicubeCasesConfig.queryIncidentParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"activeBy\"");
+        AssertFunction.assertEquals(success, "\"activeBy\"");
+    }
+
+    @Test
+    public void getAlerts() {
+        Object post = httpFunction.post(VicubeCasesConfig.getAlertsURL, VicubeCasesConfig.getAlertsParams);
+        String result = String.valueOf(post);
+        try {
+            String success = InterceptFunction.intercept(result, "\"activeBy\"");
+            AssertFunction.assertEquals(success, "\"activeBy\"");
+        } catch (Exception e) {
+            String success = InterceptFunction.intercept(result, "[]");
+            AssertFunction.assertEquals(success, "[]");
+        }
+    }
+
+    @Test
+    public void getAllRulesByString() {
+        Object post = httpFunction.post(VicubeCasesConfig.getAllRulesByStringURL);
+        String result = String.valueOf(post);
+        try {
+            String success = InterceptFunction.intercept(result, "\"accept\"");
+            AssertFunction.assertEquals(success, "\"accept\"");
+        } catch (Exception e) {
+            String success = InterceptFunction.intercept(result, "[]");
+            AssertFunction.assertEquals(success, "[]");
+        }
+    }
+
+    @Test
+    public void getDictValues() {
+        Object post = httpFunction.post(VicubeCasesConfig.getDictValuesURL, VicubeCasesConfig.getDictValuesParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"dictCode\"");
+        AssertFunction.assertEquals(success, "\"dictCode\"");
+    }
+
+    @Test
+    public void getAllTags() {
+        Object post = httpFunction.post(VicubeCasesConfig.getAllTagsURL, VicubeCasesConfig.getAllTagsParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"description\"");
+        AssertFunction.assertEquals(success, "\"description\"");
+    }
+
+
+    @Test
+    public void addAlertClassifyRule() {
+        Object post = httpFunction.post(VicubeCasesConfig.addAlertClassifyRuleURL, VicubeCasesConfig.addAlertClassifyRuleParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"sucess\"");
+        AssertFunction.assertEquals(success, "\"sucess\"");
+    }
+
+    @Test
+    public void updateAlertClassifyRule() {
+        Object post = httpFunction.post(VicubeCasesConfig.updateAlertClassifyRuleURL, VicubeCasesConfig.updateAlertClassifyRuleParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "\"sucess\"");
+        AssertFunction.assertEquals(success, "\"sucess\"");
+    }
+
+    @Test
+    public void removeRules() {
+        Object post = httpFunction.post(VicubeCasesConfig.removeRulesURL, VicubeCasesConfig.removeRulesParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "null");
+        AssertFunction.assertEquals(success, "null");
+    }
+
+    @Test
+    public void enableRules() {
+        Object post = httpFunction.post(VicubeCasesConfig.enableRulesURL, VicubeCasesConfig.enableRulesParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "null");
+        AssertFunction.assertEquals(success, "null");
+    }
+
+    @Test
+    public void disableRules() {
+        Object post = httpFunction.post(VicubeCasesConfig.disableRulesURL, VicubeCasesConfig.disableRulesParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "null");
+        AssertFunction.assertEquals(success, "null");
+    }
+
 
 
 
