@@ -118,8 +118,11 @@
                     <include name="removeRules"></include>
                     <include name="enableRules"></include>
                     <include name="disableRules"></include>
-
-
+                    <include name="getWarningTypeList"></include>
+                    <include name="insertWarningRule"></include>
+                    <include name="checkRuleInUse"></include>
+                    <include name="updateWarningRuleWithDynamic"></include>
+                    <include name="deleteWarningRule"></include>
 
 
 

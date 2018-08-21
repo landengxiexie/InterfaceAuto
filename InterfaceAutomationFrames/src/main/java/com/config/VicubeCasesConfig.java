@@ -208,6 +208,17 @@ public class VicubeCasesConfig {
     public static String enableRulesParams;
     public static String disableRulesURL;
     public static String disableRulesParams;
+    public static String getWarningTypeListURL;
+    public static String getWarningTypeListParams;
+    public static String insertWarningRuleURL;
+    public static String insertWarningRuleParams;
+    public static String checkRuleInUseURL;
+    public static String checkRuleInUseParams;
+    public static String updateWarningRuleWithDynamicURL;
+    public static String updateWarningRuleWithDynamicParams;
+    public static String deleteWarningRuleURL;
+    public static String deleteWarningRuleParams;
+
 
 
 
@@ -518,6 +529,24 @@ public class VicubeCasesConfig {
 
         disableRulesURL = URL175+p.getElementText("*/disableRulesURL");
         disableRulesParams = p.getElementText("*/disableRulesParams");
+
+        getWarningTypeListURL = URL175+p.getElementText("*/getWarningTypeListURL");
+        getWarningTypeListParams = p.getElementText("*/getWarningTypeListParams");
+
+        insertWarningRuleURL = URL175+p.getElementText("*/insertWarningRuleURL");
+        insertWarningRuleParams = p.getElementText("*/insertWarningRuleParams");
+
+        checkRuleInUseURL = URL175+p.getElementText("*/checkRuleInUseURL");
+        checkRuleInUseParams = p.getElementText("*/checkRuleInUseParams");
+
+        updateWarningRuleWithDynamicURL = URL175+p.getElementText("*/updateWarningRuleWithDynamicURL");
+        updateWarningRuleWithDynamicParams = p.getElementText("*/updateWarningRuleWithDynamicParams");
+
+        deleteWarningRuleURL = URL175+p.getElementText("*/deleteWarningRuleURL");
+        deleteWarningRuleParams = p.getElementText("*/deleteWarningRuleParams");
+
+
+
 
 
 

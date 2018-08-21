@@ -926,6 +926,47 @@ public class VicubeInterfaceCase175 {
         AssertFunction.assertEquals(success, "null");
     }
 
+    @Test
+    public void getWarningTypeList() {
+        Object post = httpFunction.post(VicubeCasesConfig.getWarningTypeListURL, VicubeCasesConfig.getWarningTypeListParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "msg");
+        AssertFunction.assertEquals(success, "msg");
+    }
+
+    @Test
+    public void insertWarningRule() {
+        Object post = httpFunction.post(VicubeCasesConfig.insertWarningRuleURL, VicubeCasesConfig.insertWarningRuleParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "msg");
+        AssertFunction.assertEquals(success, "msg");
+    }
+
+    @Test
+    public void checkRuleInUse() {
+        Object post = httpFunction.post(VicubeCasesConfig.checkRuleInUseURL, VicubeCasesConfig.checkRuleInUseParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "msg");
+        AssertFunction.assertEquals(success, "msg");
+    }
+
+    @Test
+    public void updateWarningRuleWithDynamic() {
+        Object post = httpFunction.post(VicubeCasesConfig.updateWarningRuleWithDynamicURL, VicubeCasesConfig.updateWarningRuleWithDynamicParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "msg");
+        AssertFunction.assertEquals(success, "msg");
+    }
+
+    @Test
+    public void deleteWarningRule() {
+        Object post = httpFunction.post(VicubeCasesConfig.deleteWarningRuleURL, VicubeCasesConfig.deleteWarningRuleParams);
+        String result = String.valueOf(post);
+        String success = InterceptFunction.intercept(result, "msg");
+        AssertFunction.assertEquals(success, "msg");
+    }
+
+
 
 
 

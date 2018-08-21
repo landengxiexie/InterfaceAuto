@@ -40,26 +40,17 @@
       <file leaf-file-name="testData175.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13272">
-              <caret line="516" column="44" selection-start-line="516" selection-start-column="44" selection-end-line="516" selection-end-column="44" />
+            <state relative-caret-position="248">
+              <caret line="529" lean-forward="true" selection-start-line="529" selection-end-line="529" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VicubeCasesConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VicubeCasesConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VicubeInterfaceCase143.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase143.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            <state relative-caret-position="213">
+              <caret line="546" lean-forward="true" selection-start-line="546" selection-end-line="546" />
             </state>
           </provider>
         </entry>
@@ -67,17 +58,53 @@
       <file leaf-file-name="testData143.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2576">
+            <state relative-caret-position="307">
               <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="95" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VicubeTestCase175.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VicubeTestCase175.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="195">
+              <caret line="121" column="64" lean-forward="true" selection-start-line="121" selection-start-column="64" selection-end-line="121" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VicubeTestCase143..xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VicubeTestCase2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="caseData.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/caseData.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a-xmlCase/test.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -85,11 +112,11 @@
       <file leaf-file-name="VicubeInterfaceCase175.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="921" column="25" selection-start-line="921" selection-start-column="25" selection-end-line="921" selection-end-column="25" />
+            <state relative-caret-position="208">
+              <caret line="929" column="34" selection-start-line="929" selection-start-column="16" selection-end-line="929" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#515#539#0" expanded="true" />
+                <element signature="e#381#405#0" expanded="true" />
                 <element signature="e#755#756#0" expanded="true" />
                 <element signature="e#817#818#0" expanded="true" />
               </folding>
@@ -106,33 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtentTestNGIReporterListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/config/ExtentTestNGIReporterListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/config/BaseConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -144,15 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jsonobjec</find>
-      <find>测试接口名称</find>
-      <find>getGlobalModule</find>
-      <find>queryByFilter2</find>
-      <find>w</find>
-      <find>queryIncidentType</find>
-      <find>grantObjects2GroupURL</find>
-      <find>grantMenuAmoduleAview2User</find>
-      <find>getFunctionsByUserId</find>
       <find>grantObjects2Group</find>
       <find>maven-surefire-plugin</find>
       <find>relationAttributeService</find>
@@ -174,6 +165,15 @@
       <find>ruleId</find>
       <find>update</find>
       <find>getAllTags</find>
+      <find>http://192.168.20.175:48080</find>
+      <find>http:/</find>
+      <find>”</find>
+      <find>updateAlertClassifyRule</find>
+      <find>addAlertClassifyRule</find>
+      <find>“</find>
+      <find>disableRules</find>
+      <find>URL = p.</find>
+      <find>getWarningTypeList</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -182,10 +182,11 @@
       <replace>77</replace>
       <replace>30000</replace>
       <replace>,</replace>
-      <replace>&quot;</replace>
       <replace>baseConfig</replace>
       <replace>192.168.20.175</replace>
       <replace>192.168.20.143</replace>
+      <replace>URL = URL175+p.</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -220,10 +221,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/config/ExtentTestNGIReporterListener.java" />
-        <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java" />
         <option value="$PROJECT_DIR$/src/config/testData175.xml" />
+        <option value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
       </list>
     </option>
   </component>
@@ -321,12 +322,6 @@
               <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
               <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InterfaceAutomationFrames" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InterfaceAutomationFrames" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,17 +414,6 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml">
-    <configuration name="VicubeCasesConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.config.VicubeCasesConfig" />
-      <module name="auto" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -454,40 +438,11 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="VicubeInterfaceCase175" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="auto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
-      <option name="METHOD_NAME" value="disableRules" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -501,7 +456,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase175.disableRules" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase175.addAlertClassifyRule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <extension name="coverage">
         <pattern>
@@ -514,7 +469,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.cases" />
       <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
-      <option name="METHOD_NAME" value="disableRules" />
+      <option name="METHOD_NAME" value="addAlertClassifyRule" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -530,7 +485,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="VicubeInterfaceCase175.findByNameNotBuiltInAttr" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VicubeInterfaceCase175.deleteWarningRule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto" />
       <extension name="coverage">
         <pattern>
@@ -543,7 +498,65 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.cases" />
       <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
-      <option name="METHOD_NAME" value="findByNameNotBuiltInAttr" />
+      <option name="METHOD_NAME" value="deleteWarningRule" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="VicubeInterfaceCase175.updateAlertClassifyRule" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
+      <option name="METHOD_NAME" value="updateAlertClassifyRule" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="VicubeInterfaceCase175.updateWarningRuleWithDynamic" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.cases.VicubeInterfaceCase175" />
+      <option name="METHOD_NAME" value="updateWarningRuleWithDynamic" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -582,19 +595,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.VicubeInterfaceCase175.disableRules" />
-      <item itemvalue="TestNG.VicubeInterfaceCase175" />
-      <item itemvalue="TestNG.VicubeInterfaceCase175.findByNameNotBuiltInAttr" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.updateWarningRuleWithDynamic" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.updateAlertClassifyRule" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.addAlertClassifyRule" />
+      <item itemvalue="TestNG.VicubeInterfaceCase175.deleteWarningRule" />
       <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
-      <item itemvalue="Application.VicubeCasesConfig" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" />
-        <item itemvalue="TestNG.VicubeInterfaceCase175.disableRules" />
-        <item itemvalue="Application.VicubeCasesConfig" />
-        <item itemvalue="TestNG.VicubeInterfaceCase175" />
-        <item itemvalue="TestNG.VicubeInterfaceCase175.findByNameNotBuiltInAttr" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.deleteWarningRule" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.updateWarningRuleWithDynamic" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.addAlertClassifyRule" />
+        <item itemvalue="TestNG.VicubeInterfaceCase175.updateAlertClassifyRule" />
       </list>
     </recent_temporary>
   </component>
@@ -650,39 +663,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VicubeInterfaceCase175_enableRules - 2018.08.21 at 14h 32m 42s.xml">
-      <configuration name="VicubeInterfaceCase175.enableRules" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_updateAlertClassifyRule - 2018.08.21 at 17h 05m 37s.xml">
+      <configuration name="VicubeInterfaceCase175.updateAlertClassifyRule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase175_disableRules - 2018.08.21 at 14h 32m 49s.xml">
-      <configuration name="VicubeInterfaceCase175.disableRules" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_updateAlertClassifyRule - 2018.08.21 at 17h 05m 49s.xml">
+      <configuration name="VicubeInterfaceCase175.updateAlertClassifyRule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase175 - 2018.08.21 at 14h 38m 35s.xml">
-      <configuration name="VicubeInterfaceCase175" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_updateAlertClassifyRule - 2018.08.21 at 17h 07m 31s.xml">
+      <configuration name="VicubeInterfaceCase175.updateAlertClassifyRule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase175 - 2018.08.21 at 14h 41m 14s.xml">
-      <configuration name="VicubeInterfaceCase175" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_updateAlertClassifyRule - 2018.08.21 at 17h 07m 36s.xml">
+      <configuration name="VicubeInterfaceCase175.updateAlertClassifyRule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase175_findByNameNotBuiltInAttr - 2018.08.21 at 14h 41m 55s.xml">
-      <configuration name="VicubeInterfaceCase175.findByNameNotBuiltInAttr" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_addAlertClassifyRule - 2018.08.21 at 17h 08m 04s.xml">
+      <configuration name="VicubeInterfaceCase175.addAlertClassifyRule" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase175 - 2018.08.21 at 14h 43m 08s.xml">
-      <configuration name="VicubeInterfaceCase175" configurationId="TestNG" />
+    <history-entry file="VicubeInterfaceCase175_updateWarningRuleWithDynamic - 2018.08.21 at 17h 08m 41s.xml">
+      <configuration name="VicubeInterfaceCase175.updateWarningRuleWithDynamic" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.21 at 14h 49m 32s.xml">
+    <history-entry file="VicubeInterfaceCase175_updateWarningRuleWithDynamic - 2018.08.21 at 17h 09m 06s.xml">
+      <configuration name="VicubeInterfaceCase175.updateWarningRuleWithDynamic" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="VicubeInterfaceCase175_deleteWarningRule - 2018.08.21 at 17h 16m 20s.xml">
+      <configuration name="VicubeInterfaceCase175.deleteWarningRule" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.21 at 17h 21m 52s.xml">
       <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VicubeInterfaceCase175_disableRules - 2018.08.21 at 16h 01m 10s.xml">
-      <configuration name="VicubeInterfaceCase175.disableRules" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="VicubeInterfaceCase175_disableRules - 2018.08.21 at 16h 01m 35s.xml">
-      <configuration name="VicubeInterfaceCase175.disableRules" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.21 at 16h 03m 56s.xml">
+    <history-entry file="D__GitHubProject_InterfaceAutomationFrames_src_a-xmlCase_VicubeTestCase175_xml - 2018.08.21 at 17h 23m 58s.xml">
       <configuration name="D:/GitHubProject/InterfaceAutomationFrames/src/a-xmlCase/VicubeTestCase175.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244442000" />
+    <option name="totallyTimeSpent" value="249200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,11 +720,11 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.24713467" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.4245283" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.44339624" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985653" weight="0.3773585" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.26862463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64696735" visible="true" weight="0.26862463" />
       <window_info anchor="right" id="Database" order="7" weight="0.30487806" />
       <window_info id="Structure" order="1" sideWeight="0.35303265" side_tool="true" weight="0.22812052" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.19942611" />
@@ -865,13 +878,6 @@
     <entry file="file://$PROJECT_DIR$/test-output/20180810141522129_TestReport.html" />
     <entry file="file://$PROJECT_DIR$/test-output/20180810141637149_TestReport.html" />
     <entry file="file://$PROJECT_DIR$/test-output/20180813183332256_TestReport.html" />
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/utils/ParseXML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -961,20 +967,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test-output/20180814141019771_TestReport.html" />
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/index.html" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/xml/XmlClass.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -983,38 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/caseData.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase143.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2576">
-          <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="95" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="467" selection-start-line="467" selection-end-line="467" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1049,30 +1013,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/caseData.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/testData143.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="95" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="467" selection-start-line="467" selection-end-line="467" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="529" lean-forward="true" selection-start-line="529" selection-end-line="529" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="546" lean-forward="true" selection-start-line="546" selection-end-line="546" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase143..xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cases/VicubeInterfaceCase175.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="921" column="25" selection-start-line="921" selection-start-column="25" selection-end-line="921" selection-end-column="25" />
+        <state relative-caret-position="208">
+          <caret line="929" column="34" selection-start-line="929" selection-start-column="16" selection-end-line="929" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#515#539#0" expanded="true" />
+            <element signature="e#381#405#0" expanded="true" />
             <element signature="e#755#756#0" expanded="true" />
             <element signature="e#817#818#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/testData175.xml">
+    <entry file="file://$PROJECT_DIR$/src/a-xmlCase/VicubeTestCase175.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13272">
-          <caret line="516" column="44" selection-start-line="516" selection-start-column="44" selection-end-line="516" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/config/VicubeCasesConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="195">
+          <caret line="121" column="64" lean-forward="true" selection-start-line="121" selection-start-column="64" selection-end-line="121" selection-end-column="64" />
         </state>
       </provider>
     </entry>
