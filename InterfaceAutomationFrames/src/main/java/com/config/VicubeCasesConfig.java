@@ -8,6 +8,8 @@ import com.utils.ParseXML;
  */
 @SuppressWarnings("ALL")
 public class VicubeCasesConfig {
+    public static String URL175="http://192.168.20.175:48080";
+
 
     public static String queryUserInfoURL;
     public static String DoLoginURL;
@@ -213,308 +215,308 @@ public class VicubeCasesConfig {
         ParseXML p = new ParseXML();
         p.readXML(XMLFilePath);
 
-        queryUserInfoURL = p.getElementText("*/queryUserInfoURL");
+        queryUserInfoURL = URL175+p.getElementText("*/queryUserInfoURL");
 
-        DoLoginURL = p.getElementText("*/DoLoginURL");
+        DoLoginURL = URL175+p.getElementText("*/DoLoginURL");
         DoLoginParams = p.getElementText("*/DoLoginParams");
 
-        getFunctionsByUserIdURL = p.getElementText("*/getFunctionsByUserIdURL");
+        getFunctionsByUserIdURL = URL175+p.getElementText("*/getFunctionsByUserIdURL");
         getFunctionsByUserIdParams = p.getElementText("*/getFunctionsByUserIdParams");
 
-        queryAllObjectsByUserIdURL = p.getElementText("*/queryAllObjectsByUserIdURL");
+        queryAllObjectsByUserIdURL = URL175+p.getElementText("*/queryAllObjectsByUserIdURL");
         queryAllObjectsByUserIdParams = p.getElementText("*/queryAllObjectsByUserIdParams");
 
-        getUserViewsByTypeURL = p.getElementText("*/getUserViewsByTypeURL");
+        getUserViewsByTypeURL = URL175+p.getElementText("*/getUserViewsByTypeURL");
         getUserViewsByTypeParams = p.getElementText("*/getUserViewsByTypeParams");
 
-        getMyViewEntriesNoContentURL = p.getElementText("*/getMyViewEntriesNoContentURL");
+        getMyViewEntriesNoContentURL = URL175+p.getElementText("*/getMyViewEntriesNoContentURL");
         getMyViewEntriesNoContentParams = p.getElementText("*/getMyViewEntriesNoContentParams");
 
-        queryGroupInfoLikeURL = p.getElementText("*/queryGroupInfoLikeURL");
+        queryGroupInfoLikeURL = URL175+p.getElementText("*/queryGroupInfoLikeURL");
         queryGroupInfoLikeParams = p.getElementText("*/queryGroupInfoLikeParams");
 
-        getAllDomainsURL = p.getElementText("*/getAllDomainsURL");
+        getAllDomainsURL = URL175+p.getElementText("*/getAllDomainsURL");
 
-        createGroupURL = p.getElementText("*/createGroupURL");
+        createGroupURL = URL175+p.getElementText("*/createGroupURL");
         createGroupParams = p.getElementText("*/createGroupParams");
 
-        addViewURL = p.getElementText("*/addViewURL");
+        addViewURL = URL175+p.getElementText("*/addViewURL");
         addViewParams = p.getElementText("*/addViewParams");
 
-        grantObjects2GroupURL = p.getElementText("*/grantObjects2GroupURL");
+        grantObjects2GroupURL = URL175+p.getElementText("*/grantObjects2GroupURL");
         grantObjects2GroupParams = p.getElementText("*/grantObjects2GroupParams");
 
-        queryGroupInfoURL = p.getElementText("*/queryGroupInfoURL");
+        queryGroupInfoURL = URL175+p.getElementText("*/queryGroupInfoURL");
 
-        queryUsersByGroupIdURL = p.getElementText("*/queryUsersByGroupIdURL");
+        queryUsersByGroupIdURL = URL175+p.getElementText("*/queryUsersByGroupIdURL");
         queryUsersByGroupIdParams = p.getElementText("*/queryUsersByGroupIdParams");
 
-        grantUsers2GroupURL = p.getElementText("*/grantUsers2GroupURL");
+        grantUsers2GroupURL = URL175+p.getElementText("*/grantUsers2GroupURL");
         grantUsers2GroupParams = p.getElementText("*/grantUsers2GroupParams");
 
-        disableGroupURL = p.getElementText("*/disableGroupURL");
+        disableGroupURL = URL175+p.getElementText("*/disableGroupURL");
         disableGroupParams = p.getElementText("*/disableGroupParams");
 
-        getViewsExcludeKpiAndDeskTopURL = p.getElementText("*/getViewsExcludeKpiAndDeskTopURL");
+        getViewsExcludeKpiAndDeskTopURL = URL175+p.getElementText("*/getViewsExcludeKpiAndDeskTopURL");
 
-        deleteGroupURL = p.getElementText("*/deleteGroupURL");
+        deleteGroupURL = URL175+p.getElementText("*/deleteGroupURL");
         deleteGroupParams = p.getElementText("*/deleteGroupParams");
 
-        getAllFunctionsURL = p.getElementText("*/getAllFunctionsURL");
+        getAllFunctionsURL = URL175+p.getElementText("*/getAllFunctionsURL");
 
-        findByModelNameURL = p.getElementText("*/findByModelNameURL");
+        findByModelNameURL = URL175+p.getElementText("*/findByModelNameURL");
         findByModelNameParams = p.getElementText("*/findByModelNameParams");
 
-        queryObjectsByGroupIdURL = p.getElementText("*/queryObjectsByGroupIdURL");
+        queryObjectsByGroupIdURL = URL175+p.getElementText("*/queryObjectsByGroupIdURL");
         queryObjectsByGroupIdParams = p.getElementText("*/queryObjectsByGroupIdParams");
 
-        grantMenuAmoduleAview2UserURL = p.getElementText("*/grantMenuAmoduleAview2UserURL");
+        grantMenuAmoduleAview2UserURL = URL175+p.getElementText("*/grantMenuAmoduleAview2UserURL");
         grantMenuAmoduleAview2UserParams = p.getElementText("*/grantMenuAmoduleAview2UserParams");
 
-        grantObjectsDomainURL = p.getElementText("*/grantObjectsDomainURL");
+        grantObjectsDomainURL = URL175+p.getElementText("*/grantObjectsDomainURL");
         grantObjectsDomainParams = p.getElementText("*/grantObjectsDomainParams");
 
-        queryUserInfo2URL = p.getElementText("*/queryUserInfo2URL");
+        queryUserInfo2URL = URL175+p.getElementText("*/queryUserInfo2URL");
 
-        queryAuditInfoURL = p.getElementText("*/queryAuditInfoURL");
+        queryAuditInfoURL = URL175+p.getElementText("*/queryAuditInfoURL");
         queryAuditInfoParams = p.getElementText("*/queryAuditInfoParams");
 
-        insertBaseLinePolicyURL = p.getElementText("*/insertBaseLinePolicyURL");
+        insertBaseLinePolicyURL = URL175+p.getElementText("*/insertBaseLinePolicyURL");
         insertBaseLinePolicyParams = p.getElementText("*/insertBaseLinePolicyParams");
 
 
-        getBaseLinePolicyListURL = p.getElementText("*/getBaseLinePolicyListURL");
+        getBaseLinePolicyListURL = URL175+p.getElementText("*/getBaseLinePolicyListURL");
         getBaseLinePolicyListParams = p.getElementText("*/getBaseLinePolicyListParams");
 
-        updateBaseLinePolicyURL = p.getElementText("*/updateBaseLinePolicyURL");
+        updateBaseLinePolicyURL = URL175+p.getElementText("*/updateBaseLinePolicyURL");
         updateBaseLinePolicyParams = p.getElementText("*/updateBaseLinePolicyParams");
 
-        cleanBaseLinePolicyURL = p.getElementText("*/cleanBaseLinePolicyURL");
+        cleanBaseLinePolicyURL = URL175+p.getElementText("*/cleanBaseLinePolicyURL");
         cleanBaseLinePolicyParams = p.getElementText("*/cleanBaseLinePolicyParams");
 
-        queryWarningRuleListURL = p.getElementText("*/queryWarningRuleListURL");
+        queryWarningRuleListURL = URL175+p.getElementText("*/queryWarningRuleListURL");
         queryWarningRuleListParams = p.getElementText("*/queryWarningRuleListParams");
 
-        getAllTypeNodesURL = p.getElementText("*/getAllTypeNodesURL");
+        getAllTypeNodesURL = URL175+p.getElementText("*/getAllTypeNodesURL");
         getAllTypeNodesParams = p.getElementText("*/getAllTypeNodesParams");
 
-        getAllMyNodesByTypeNameURL = p.getElementText("*/getAllMyNodesByTypeNameURL");
+        getAllMyNodesByTypeNameURL = URL175+p.getElementText("*/getAllMyNodesByTypeNameURL");
         getAllMyNodesByTypeNameParams = p.getElementText("*/getAllMyNodesByTypeNameParams");
 
-        getBaseLineDefListURL = p.getElementText("*/getBaseLineDefListURL");
+        getBaseLineDefListURL = URL175+p.getElementText("*/getBaseLineDefListURL");
         getBaseLineDefListParams = p.getElementText("*/getBaseLineDefListParams");
 
-        getKpiItemListURL = p.getElementText("*/getKpiItemListURL");
+        getKpiItemListURL = URL175+p.getElementText("*/getKpiItemListURL");
         getKpiItemListParams = p.getElementText("*/getKpiItemListParams");
 
-        getOneWarningRuleURL = p.getElementText("*/getOneWarningRuleURL");
+        getOneWarningRuleURL = URL175+p.getElementText("*/getOneWarningRuleURL");
         getOneWarningRuleParams = p.getElementText("*/getOneWarningRuleParams");
 
-        checkBaseLineDefURL = p.getElementText("*/checkBaseLineDefURL");
+        checkBaseLineDefURL = URL175+p.getElementText("*/checkBaseLineDefURL");
         checkBaseLineDefParams = p.getElementText("*/checkBaseLineDefParams");
 
-        insertBaseLineDefURL = p.getElementText("*/insertBaseLineDefURL");
+        insertBaseLineDefURL = URL175+p.getElementText("*/insertBaseLineDefURL");
         insertBaseLineDefParams = p.getElementText("*/insertBaseLineDefParams");
 
-        updateBaseLineCalendarByBatchURL = p.getElementText("*/updateBaseLineCalendarByBatchURL");
+        updateBaseLineCalendarByBatchURL = URL175+p.getElementText("*/updateBaseLineCalendarByBatchURL");
         updateBaseLineCalendarByBatchParams = p.getElementText("*/updateBaseLineCalendarByBatchParams");
 
-        getBaseLineCalendarListURL = p.getElementText("*/getBaseLineCalendarListURL");
+        getBaseLineCalendarListURL = URL175+p.getElementText("*/getBaseLineCalendarListURL");
         getBaseLineCalendarListParams = p.getElementText("*/getBaseLineCalendarListParams");
 
-        cleanBaseLineDefURL = p.getElementText("*/cleanBaseLineDefURL");
+        cleanBaseLineDefURL = URL175+p.getElementText("*/cleanBaseLineDefURL");
         cleanBaseLineDefParams = p.getElementText("*/cleanBaseLineDefParams");
 
-        findModelTreeURL = p.getElementText("*/findModelTreeURL");
+        findModelTreeURL = URL175+p.getElementText("*/findModelTreeURL");
         findModelTreeParams = p.getElementText("*/findModelTreeParams");
 
-        getEnumsURL = p.getElementText("*/getEnumsURL");
+        getEnumsURL = URL175+p.getElementText("*/getEnumsURL");
         getEnumsParams = p.getElementText("*/getEnumsParams");
 
-        findInstanceByModelSortOrderURL = p.getElementText("*/findInstanceByModelSortOrderURL");
+        findInstanceByModelSortOrderURL = URL175+p.getElementText("*/findInstanceByModelSortOrderURL");
         findInstanceByModelSortOrderParams = p.getElementText("*/findInstanceByModelSortOrderParams");
 
-        getAllDictsURL = p.getElementText("*/getAllDictsURL");
+        getAllDictsURL = URL175+p.getElementText("*/getAllDictsURL");
 
-        queryByFilterURL = p.getElementText("*/queryByFilterURL");
+        queryByFilterURL = URL175+p.getElementText("*/queryByFilterURL");
         queryByFilterParams = p.getElementText("*/queryByFilterParams");
 
-        findAllURL = p.getElementText("*/findAllURL");
+        findAllURL = URL175+p.getElementText("*/findAllURL");
 
-        findSelectTreeURL = p.getElementText("*/findSelectTreeURL");
+        findSelectTreeURL = URL175+p.getElementText("*/findSelectTreeURL");
         findSelectTreeParams = p.getElementText("*/findSelectTreeParams");
 
-        findByOperationTypeAndModelNameURL = p.getElementText("*/findByOperationTypeAndModelNameURL");
+        findByOperationTypeAndModelNameURL = URL175+p.getElementText("*/findByOperationTypeAndModelNameURL");
         findByOperationTypeAndModelNameParams = p.getElementText("*/findByOperationTypeAndModelNameParams");
 
-        findURL = p.getElementText("*/findURL");
+        findURL = URL175+p.getElementText("*/findURL");
         findParams = p.getElementText("*/findParams");
 
-        queryByFilter2URL = p.getElementText("*/queryByFilter2URL");
+        queryByFilter2URL = URL175+p.getElementText("*/queryByFilter2URL");
         queryByFilter2Params = p.getElementText("*/queryByFilter2Params");
 
-        addURL = p.getElementText("*/addURL");
+        addURL = URL175+p.getElementText("*/addURL");
         addParams = p.getElementText("*/addParams");
 
-        findByNameNotBuiltInAttrURL = p.getElementText("*/findByNameNotBuiltInAttrURL");
+        findByNameNotBuiltInAttrURL = URL175+p.getElementText("*/findByNameNotBuiltInAttrURL");
         findByNameNotBuiltInAttrParams = p.getElementText("*/findByNameNotBuiltInAttrParams");
 
-        updateURL = p.getElementText("*/updateURL");
+        updateURL = URL175+p.getElementText("*/updateURL");
         updateParams = p.getElementText("*/updateParams");
 
-        removeURL = p.getElementText("*/removeURL");
+        removeURL = URL175+p.getElementText("*/removeURL");
         removeParams = p.getElementText("*/removeParams");
 
-        relationAttributeServiceAddURL = p.getElementText("*/relationAttributeServiceAddURL");
+        relationAttributeServiceAddURL = URL175+p.getElementText("*/relationAttributeServiceAddURL");
         relationAttributeServiceAddParams = p.getElementText("*/relationAttributeServiceAddParams");
 
-        findByIdURL = p.getElementText("*/findByIdURL");
+        findByIdURL = URL175+p.getElementText("*/findByIdURL");
         findByIdParams = p.getElementText("*/findByIdParams");
 
-        removeBatchURL = p.getElementText("*/removeBatchURL");
+        removeBatchURL = URL175+p.getElementText("*/removeBatchURL");
         removeBatchParams = p.getElementText("*/removeBatchParams");
 
-        findListURL = p.getElementText("*/findListURL");
+        findListURL = URL175+p.getElementText("*/findListURL");
         findListParams = p.getElementText("*/findListParams");
 
-        instanceHistoryServiceFindURL = p.getElementText("*/instanceHistoryServiceFindURL");
+        instanceHistoryServiceFindURL = URL175+p.getElementText("*/instanceHistoryServiceFindURL");
         instanceHistoryServiceFindParams = p.getElementText("*/instanceHistoryServiceFindParams");
 
-        queryFilterByColorAdminURL = p.getElementText("*/queryFilterByColorAdminURL");
+        queryFilterByColorAdminURL = URL175+p.getElementText("*/queryFilterByColorAdminURL");
         queryFilterByColorAdminParams = p.getElementText("*/queryFilterByColorAdminParams");
 
-        getDefulateValueURL = p.getElementText("*/getDefulateValueURL");
+        getDefulateValueURL = URL175+p.getElementText("*/getDefulateValueURL");
         getDefulateValueParams = p.getElementText("*/getDefulateValueParams");
 
-        queryInstanceByRelationPageURL = p.getElementText("*/queryInstanceByRelationPageURL");
+        queryInstanceByRelationPageURL = URL175+p.getElementText("*/queryInstanceByRelationPageURL");
         queryInstanceByRelationPageParams = p.getElementText("*/queryInstanceByRelationPageParams");
 
-        validationURL = p.getElementText("*/validationURL");
+        validationURL = URL175+p.getElementText("*/validationURL");
         validationParams = p.getElementText("*/validationParams");
 
-        instanceServiceAddURL = p.getElementText("*/instanceServiceAddURL");
+        instanceServiceAddURL = URL175+p.getElementText("*/instanceServiceAddURL");
         instanceServiceAddParams = p.getElementText("*/instanceServiceAddParams");
 
-        instanceServiceFindByIdURL = p.getElementText("*/instanceServiceFindByIdURL");
+        instanceServiceFindByIdURL = URL175+p.getElementText("*/instanceServiceFindByIdURL");
         instanceServiceFindByIdParams = p.getElementText("*/instanceServiceFindByIdParams");
 
-        findByNameURL = p.getElementText("*/findByNameURL");
+        findByNameURL = URL175+p.getElementText("*/findByNameURL");
         findByNameParams = p.getElementText("*/findByNameParams");
 
-        findBySourceOrTarget_LabelURL = p.getElementText("*/findBySourceOrTarget_LabelURL");
+        findBySourceOrTarget_LabelURL = URL175+p.getElementText("*/findBySourceOrTarget_LabelURL");
         findBySourceOrTarget_LabelParams = p.getElementText("*/findBySourceOrTarget_LabelParams");
 
-        findBySourceOrTargetURL = p.getElementText("*/findBySourceOrTargetURL");
+        findBySourceOrTargetURL = URL175+p.getElementText("*/findBySourceOrTargetURL");
         findBySourceOrTargetParams = p.getElementText("*/findBySourceOrTargetParams");
 
-        instanceServiceUpdateURL = p.getElementText("*/instanceServiceUpdateURL");
+        instanceServiceUpdateURL = URL175+p.getElementText("*/instanceServiceUpdateURL");
         instanceServiceUpdateParams = p.getElementText("*/instanceServiceUpdateParams");
 
-        checkRelationURL = p.getElementText("*/checkRelationURL");
+        checkRelationURL = URL175+p.getElementText("*/checkRelationURL");
         checkRelationParams = p.getElementText("*/checkRelationParams");
 
-        checkInstanceHasRelationURL = p.getElementText("*/checkInstanceHasRelationURL");
+        checkInstanceHasRelationURL = URL175+p.getElementText("*/checkInstanceHasRelationURL");
         checkInstanceHasRelationParams = p.getElementText("*/checkInstanceHasRelationParams");
 
-        instanceServiceRemoveURL = p.getElementText("*/instanceServiceRemoveURL");
+        instanceServiceRemoveURL = URL175+p.getElementText("*/instanceServiceRemoveURL");
         instanceServiceRemoveParams = p.getElementText("*/instanceServiceRemoveParams");
 
-        waitForConfirmationCountURL = p.getElementText("*/waitForConfirmationCountURL");
+        waitForConfirmationCountURL = URL175+p.getElementText("*/waitForConfirmationCountURL");
 
-        confirmationedCountURL = p.getElementText("*/confirmationedCountURL");
+        confirmationedCountURL = URL175+p.getElementText("*/confirmationedCountURL");
 
-        getWaitForConfirmationListURL = p.getElementText("*/getWaitForConfirmationListURL");
+        getWaitForConfirmationListURL = URL175+p.getElementText("*/getWaitForConfirmationListURL");
         getWaitForConfirmationListParams = p.getElementText("*/getWaitForConfirmationListParams");
 
-        getConfirmationedListURL = p.getElementText("*/getConfirmationedListURL");
+        getConfirmationedListURL = URL175+p.getElementText("*/getConfirmationedListURL");
         getConfirmationedListParams = p.getElementText("*/getConfirmationedListParams");
 
-        getUrmpTreeByKeyFilterURL = p.getElementText("*/getUrmpTreeByKeyFilterURL");
+        getUrmpTreeByKeyFilterURL = URL175+p.getElementText("*/getUrmpTreeByKeyFilterURL");
         getUrmpTreeByKeyFilterParams = p.getElementText("*/getUrmpTreeByKeyFilterParams");
 
-        statisticAlertCountByStateCacheURL = p.getElementText("*/statisticAlertCountByStateCacheURL");
+        statisticAlertCountByStateCacheURL = URL175+p.getElementText("*/statisticAlertCountByStateCacheURL");
         statisticAlertCountByStateCacheParams = p.getElementText("*/statisticAlertCountByStateCacheParams");
 
-        queryIncidentTypeURL = p.getElementText("*/queryIncidentTypeURL");
+        queryIncidentTypeURL = URL175+p.getElementText("*/queryIncidentTypeURL");
 
-        queryFullUserInfoURL = p.getElementText("*/queryFullUserInfoURL");
+        queryFullUserInfoURL = URL175+p.getElementText("*/queryFullUserInfoURL");
 
-        getForwardTypeMapURL = p.getElementText("*/getForwardTypeMapURL");
+        getForwardTypeMapURL = URL175+p.getElementText("*/getForwardTypeMapURL");
 
-        getGlobalModuleURL = p.getElementText("*/getGlobalModuleURL");
+        getGlobalModuleURL = URL175+p.getElementText("*/getGlobalModuleURL");
         getGlobalModuleParams = p.getElementText("*/getGlobalModuleParams");
 
-        countAlertFromCacheForHtmlDataURL = p.getElementText("*/countAlertFromCacheForHtmlDataURL");
+        countAlertFromCacheForHtmlDataURL = URL175+p.getElementText("*/countAlertFromCacheForHtmlDataURL");
         countAlertFromCacheForHtmlDataParams = p.getElementText("*/countAlertFromCacheForHtmlDataParams");
 
-        queryAlertFromCacheForHtmlDataURL = p.getElementText("*/queryAlertFromCacheForHtmlDataURL");
+        queryAlertFromCacheForHtmlDataURL = URL175+p.getElementText("*/queryAlertFromCacheForHtmlDataURL");
         queryAlertFromCacheForHtmlDataParams = p.getElementText("*/queryAlertFromCacheForHtmlDataParams");
 
-        sendAlertClaimActionURL = p.getElementText("*/sendAlertClaimActionURL");
+        sendAlertClaimActionURL = URL175+p.getElementText("*/sendAlertClaimActionURL");
         sendAlertClaimActionParams = p.getElementText("*/sendAlertClaimActionParams");
 
-        sendForwordActionURL = p.getElementText("*/sendForwordActionURL");
+        sendForwordActionURL = URL175+p.getElementText("*/sendForwordActionURL");
         sendForwordActionParams = p.getElementText("*/sendForwordActionParams");
 
-        sendAlertRecoverActionURL = p.getElementText("*/sendAlertRecoverActionURL");
+        sendAlertRecoverActionURL = URL175+p.getElementText("*/sendAlertRecoverActionURL");
         sendAlertRecoverActionParams = p.getElementText("*/sendAlertRecoverActionParams");
 
-        getNodeByNameURL = p.getElementText("*/getNodeByNameURL");
+        getNodeByNameURL = URL175+p.getElementText("*/getNodeByNameURL");
         getNodeByNameParams = p.getElementText("*/getNodeByNameParams");
 
-        queryEventURL = p.getElementText("*/queryEventURL");
+        queryEventURL = URL175+p.getElementText("*/queryEventURL");
         queryEventParams = p.getElementText("*/queryEventParams");
 
-        queryActionLogURL = p.getElementText("*/queryActionLogURL");
+        queryActionLogURL = URL175+p.getElementText("*/queryActionLogURL");
         queryActionLogParams = p.getElementText("*/queryActionLogParams");
 
-        getRelatedAlertsURL = p.getElementText("*/getRelatedAlertsURL");
+        getRelatedAlertsURL = URL175+p.getElementText("*/getRelatedAlertsURL");
         getRelatedAlertsParams = p.getElementText("*/getRelatedAlertsParams");
 
-        queryDataByCustomSqlURL = p.getElementText("*/queryDataByCustomSqlURL");
+        queryDataByCustomSqlURL = URL175+p.getElementText("*/queryDataByCustomSqlURL");
         queryDataByCustomSqlParams = p.getElementText("*/queryDataByCustomSqlParams");
 
-        queryFromDbPageURL = p.getElementText("*/queryFromDbPageURL");
+        queryFromDbPageURL = URL175+p.getElementText("*/queryFromDbPageURL");
         queryFromDbPageParams = p.getElementText("*/queryFromDbPageParams");
 
-        getPagesizeURL = p.getElementText("*/getPagesizeURL");
+        getPagesizeURL = URL175+p.getElementText("*/getPagesizeURL");
         getPagesizeParams = p.getElementText("*/getPagesizeParams");
 
-        queryForwardRecordURL = p.getElementText("*/queryForwardRecordURL");
+        queryForwardRecordURL = URL175+p.getElementText("*/queryForwardRecordURL");
         queryForwardRecordParams = p.getElementText("*/queryForwardRecordParams");
 
-        getAllRulesURL = p.getElementText("*/getAllRulesURL");
+        getAllRulesURL = URL175+p.getElementText("*/getAllRulesURL");
         getAllRulesParams = p.getElementText("*/getAllRulesParams");
 
 
-        queryIncidentURL = p.getElementText("*/queryIncidentURL");
+        queryIncidentURL = URL175+p.getElementText("*/queryIncidentURL");
         queryIncidentParams = p.getElementText("*/queryIncidentParams");
 
-        getAlertsURL = p.getElementText("*/getAlertsURL");
+        getAlertsURL = URL175+p.getElementText("*/getAlertsURL");
         getAlertsParams = p.getElementText("*/getAlertsParams");
 
-        getAllRulesByStringURL = p.getElementText("*/getAllRulesByStringURL");
+        getAllRulesByStringURL = URL175+p.getElementText("*/getAllRulesByStringURL");
         getAllRulesByStringParams = p.getElementText("*/getAllRulesByStringParams");
 
-        getDictValuesURL = p.getElementText("*/getDictValuesURL");
+        getDictValuesURL = URL175+p.getElementText("*/getDictValuesURL");
         getDictValuesParams = p.getElementText("*/getDictValuesParams");
 
-        getAllTagsURL = p.getElementText("*/getAllTagsURL");
+        getAllTagsURL = URL175+p.getElementText("*/getAllTagsURL");
         getAllTagsParams = p.getElementText("*/getAllTagsParams");
 
-        addAlertClassifyRuleURL = p.getElementText("*/addAlertClassifyRuleURL");
+        addAlertClassifyRuleURL = URL175+p.getElementText("*/addAlertClassifyRuleURL");
         addAlertClassifyRuleParams = p.getElementText("*/addAlertClassifyRuleParams");
 
-        updateAlertClassifyRuleURL = p.getElementText("*/updateAlertClassifyRuleURL");
+        updateAlertClassifyRuleURL = URL175+p.getElementText("*/updateAlertClassifyRuleURL");
         updateAlertClassifyRuleParams = p.getElementText("*/updateAlertClassifyRuleParams");
 
-        removeRulesURL = p.getElementText("*/removeRulesURL");
+        removeRulesURL = URL175+p.getElementText("*/removeRulesURL");
         removeRulesParams = p.getElementText("*/removeRulesParams");
 
-        enableRulesURL = p.getElementText("*/enableRulesURL");
+        enableRulesURL = URL175+p.getElementText("*/enableRulesURL");
         enableRulesParams = p.getElementText("*/enableRulesParams");
 
-        disableRulesURL = p.getElementText("*/disableRulesURL");
+        disableRulesURL = URL175+p.getElementText("*/disableRulesURL");
         disableRulesParams = p.getElementText("*/disableRulesParams");
 
 
@@ -523,6 +525,8 @@ public class VicubeCasesConfig {
     }
 
 /*    public static void main(String[] args) {
-        System.out.println(browser + waitTime+mysqlhost+mysqlusername+mysqlpassword+mysqlsql);
+        VicubeCasesConfig vicubeCasesConfig=   new VicubeCasesConfig();
+        vicubeCasesConfig.read("src/config/testData175.xml");
+        System.out.println(disableRulesURL);
     }*/
 }
