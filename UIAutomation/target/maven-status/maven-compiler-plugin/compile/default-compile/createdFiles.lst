@@ -1,0 +1,16 @@
+utill\LocatorFunction$1.class
+utill\LocatorFunction$2.class
+utill\LocatorFunction.class
+com\bean\BaseConfig.class
+utill\AssertFunction.class
+com\testcases\VicubeConcentratedAlarm.class
+com\base\TestBase.class
+utill\LogFunction.class
+utill\SeleniumDriver.class
+utill\TimeString.class
+com\testcases\VicubeSystem.class
+utill\ParseFunction.class
+utill\ConnectPostgreSQL.class
+com\testcases\test.class
+utill\ScreenshotFunction.class
+com\bean\Global.class

@@ -1,0 +1,2429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="157" total="215" passed="58">
+  <reporter-output>
+    <line>
+      <![CDATA[2018-09-07 13:53:27:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:27:用户名：administrator]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:28:密码：vicube2017]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:28:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:29:用户登陆标识为：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:29:------------------超级管理员登陆成功-------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:31:提示信息个数：2]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:31:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:33:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:36:点击：系统设置]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:36:-----------------打开系统设置菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:38:点击：用户管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:38:-----------------打开用户管理菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:39:点击：新建]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:39:保存：按钮的状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:40:期望值为：false    ---实际值为：false]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:40:在用户名中填入：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:40:保存：按钮的状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:40:期望值为：false    ---实际值为：false]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:40:在姓名中填入：edit0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:41:保存：按钮的状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:41:期望值为：false    ---实际值为：false]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:41:在邮箱中填入：edit0015@edit.com]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:41:保存：按钮的状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:41:期望值为：false    ---实际值为：false]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:42:点击有效标志输入框]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:42:选择：有效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:42:保存：按钮的状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:42:期望值为：ture    ---实际值为：true]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:42:在岗位职责中填入：岗位职责0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:42:在办公电话中填入：15000000015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:43:在移动电话中填入：16000000015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:43:在备注中填入：我是备注015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:43:-----------------用户信息创建填写通过---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:43:保存：按钮的状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:43:期望值为：ture    ---实际值为：true]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:44:点击:保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:45:点击:确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:45:-----------------用户信息创建保存成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:46:点击：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:47:输入用户名：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:47:输入用户名：edit0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:47:输入用户名：edit0015@edit.com]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:47:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:49:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:49:-----------------用户信息筛选查询完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:51:点击：编辑]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:52:姓名修改为：edit016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:52:岗位职责修改为：edit岗位职责016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:52:办公电话修改为：15000000016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:52:移动电话修改为：16000000016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:53:email修改为：edit016@edit.com]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:53:备注修改为：我是编辑备注016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:53:点击:有效标志]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:53:选择：无效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:53:-----------------用户信息编辑填写完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:54:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:55:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:55:----------------------保存成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:57:输入用户名：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:57:输入用户名：edit016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:57:输入用户名：edit016@edit.com]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:53:57:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:00:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:00:-----------------用户信息编辑后筛选查询验证完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:01:点击：分配权限]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:02:选择：123]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:02:点击：右移按钮]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:02:-------------------分配权限完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:03:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:04:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:04:---------------------分配权限保存成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:13:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:14:用户名：administrator]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:14:密码：vicube2017]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:15:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:15:用户登陆标识为：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:15:------------------超级管理员登陆成功-------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:17:提示信息个数：2]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:17:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:19:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:23:点击：系统设置]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:23:-----------------打开系统设置菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:24:点击；工作组管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:24:-----------------打开工作组管理菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:25:点击：新建]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:26:录入工作组名称:AutoTestGroup]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:26:点击有效标志输入框]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:26:选择：无效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:26:点击域名选择框]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:26:选择：XMDomain]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:27:期望值为：BJDomain    ---实际值为：XMDomain]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:27:------------------工作组保存填写完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:27:录入工作组备注:我是工作组新增备注]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:28:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:29:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:29:----------------------保存成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:30:点击：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:31:录入工作组名称：AutoTestGroup]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:31:点击：有效标志]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:31:选择：无效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:31:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:33:勾选筛选结果]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:33:-------------------筛选查询完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:36:点击：编辑]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:36:录入工作组名称:AutoTestGroupEdit]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:点击有效标志输入框]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:选择：有效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:点击域名选择框]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:选择：CNDomain]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:期望值为：XMDomain    ---实际值为：CNDomain]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:------------------工作组编辑完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:37:录入工作组备注:我是工作组编辑备注]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:38:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:39:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:39:----------------------保存成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:42:提示信息个数：2]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:42:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:44:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:47:点击：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:48:录入工作组名称：AutoTestGroupEdit]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:48:点击：有效标志]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:48:选择：有效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:48:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:51:期望值为：我是工作组新增备注    ---实际值为：我是工作组编辑备注]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:51:勾选筛选结果]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:51:-------------------筛选查询完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:52:点击：分配用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:52:选择：123123]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:53:期望值为：edit016    ---实际值为：123123]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:53:点击：右移按钮]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:53:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:54:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:54:------------------工作组管理：分配用户成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:55:点击：分配管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:55:选择：123123]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:56:期望值为：edit016    ---实际值为：123123]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:56:点击：右移按钮]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:56:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:56:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:56:------------------工作组管理：分配用户成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:57:点击：分配权限]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:58:选择：123]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:58:点击：右移按钮]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:58:-------------------分配权限完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:54:59:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:00:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:00:---------------------分配权限保存成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:01:点击：更改状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:01:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:02:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:04:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:04:----------------------状态更改成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:10:点击用户：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:10:点击：退出系统]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:10:期望值为：退出系统    ---实际值为：退出系统]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:10:---------------------退出系统成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:22:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:23:用户名：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:23:密码：9fe41c]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:23:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:24:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:24:----------------------用户无效登陆结束------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:24:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:25:用户名：administrator]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:25:密码：vicube2017]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:25:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:26:用户登陆标识为：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:26:------------------超级管理员登陆成功-------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:28:提示信息个数：2]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:28:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:30:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:33:点击：系统设置]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:33:-----------------打开系统设置菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:35:点击：用户管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:35:-----------------打开用户管理菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:36:点击：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:38:输入用户名：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:38:输入用户名：edit016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:38:输入用户名：edit016@edit.com]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:39:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:41:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:41:-----------------用户信息编辑后筛选查询验证完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:42:点击：分配工作组]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:43:选择：testgr]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:43:期望值为：AutoTestGroupEdit    ---实际值为：testgr]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:43:点击：右移按钮]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:43:点击：保存]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:44:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:44:------------------用户分配工作组成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:46:点击：重置密码]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:46:点击：是否重置当前用户密码？]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:46:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:46:------------------用户信息重置密码成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:47:点击：重置密码成功,已经向用户发送邮件！]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:47:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:47:------------------用户信息重置密码成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:49:点击：更改状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:49:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:50:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:52:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:52:----------------------状态更改成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:57:点击用户：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:57:点击：退出系统]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:58:期望值为：退出系统    ---实际值为：退出系统]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:58:---------------------退出系统成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:58:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:58:用户名：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:59:密码：665228]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:59:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:55:59:用户登陆标识为：edit016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:00:期望值为：edit0015    ---实际值为：edit016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:00:------------------edit016登陆成功-------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:09:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:10:用户名：administrator]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:10:密码：vicube2017]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:10:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:11:用户登陆标识为：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:11:------------------超级管理员登陆成功-------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:13:提示信息个数：2]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:13:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:15:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:18:点击：系统设置]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:18:-----------------打开系统设置菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:20:点击：审计管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:20:-----------------打开审计管理菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:21:成功勾选：日志]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:21:成功点击：查看]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:22:成功打开：审计详情]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:22:成功点击：关闭关闭审计详情页]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:22:-----------------审计管理展示日志查看成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:23:成功打开：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:24:模块名称录入：统一用户管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:24:操作账号录入：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:24:模块名称录入：用户登陆]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:24:成功点击：确定按钮]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:24:筛选后的,操作账号为：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:24:-----------------审计管理查询功能验证完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:34:网址成功打开：http://vicube.test.com:48080/h5]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:35:用户名：administrator]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:35:密码：vicube2017]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:35:点击按钮:登录]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:36:用户登陆标识为：超级管理员]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:36:------------------超级管理员登陆成功-------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:38:提示信息个数：2]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:38:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:40:关闭提示信息：Close Notification]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:43:点击：系统设置]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:43:-----------------打开系统设置菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:45:点击：用户管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:45:-----------------打开用户管理菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:46:点击：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:48:输入用户名：user0015]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:48:输入用户名：edit016]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:48:输入用户名：edit016@edit.com]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:48:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:51:期望值为：无效    ---实际值为：有效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:51:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:51:-----------------用户信息编辑后筛选查询验证完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:52:点击：更改状态]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:53:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:54:点击：确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:56:勾选筛选结果用户]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:56:----------------------状态更改成功------------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:58:点击:删除]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:58:删除提示信息：是否删除当前用户？]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:58:点击:确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:59:删除提示信息：删除用户成功！]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:59:点击:确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:56:59:------------------用户信息删除成功---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:00:点击；工作组管理]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:00:-----------------打开工作组管理菜单---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:02:点击：筛选]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:02:录入工作组名称：AutoTestGroupEdit]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:03:点击：有效标志]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:03:选择：无效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:03:点击：确定]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:05:期望值为：有效    ---实际值为：无效]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:06:期望值为：我是工作组新增备注    ---实际值为：我是工作组编辑备注]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:06:勾选筛选结果]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:06:-------------------筛选查询完成---------------------]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:08:点击:删除]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:08:删除提示信息：是否删除当前组？]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:08:点击:确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:09:删除提示信息：删除组成功！]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:09:点击:确认]]>
+    </line>
+    <line>
+      <![CDATA[2018-09-07 13:57:09:------------------用户组删除成功---------------------]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="232707" started-at="2018-09-07T05:53:20Z" finished-at="2018-09-07T05:57:13Z">
+    <groups>
+    </groups>
+    <test name="用户管理：创建、筛选、编辑、分配权限" duration-ms="47565" started-at="2018-09-07T05:53:20Z" finished-at="2018-09-07T05:54:08Z">
+      <class name="com.testcases.VicubeSystem">
+        <test-method status="PASS" signature="aa()[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="aa" is-config="true" duration-ms="4983" started-at="2018-09-07T05:53:20Z" finished-at="2018-09-07T05:53:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aa -->
+        <test-method status="PASS" signature="vicubeLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="vicubeLogin" duration-ms="3484" started-at="2018-09-07T05:53:25Z" data-provider="xmldata" finished-at="2018-09-07T05:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, userValue=administrator, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:27:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:27:用户名：administrator]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:28:密码：vicube2017]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:28:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:29:用户登陆标识为：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:29:------------------超级管理员登陆成功-------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- vicubeLogin -->
+        <test-method status="PASS" signature="promptMessage(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="promptMessage" duration-ms="6258" started-at="2018-09-07T05:53:29Z" data-provider="xmldata" finished-at="2018-09-07T05:53:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, userNotificationNumber=userNotificationNumber, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:31:提示信息个数：2]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:31:关闭提示信息：Close Notification]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:33:关闭提示信息：Close Notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptMessage -->
+        <test-method status="PASS" signature="systemSetting(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="systemSetting" duration-ms="1640" started-at="2018-09-07T05:53:35Z" data-provider="xmldata" finished-at="2018-09-07T05:53:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, systemSetting=systemsetting, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:36:点击：系统设置]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:36:-----------------打开系统设置菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- systemSetting -->
+        <test-method status="PASS" signature="userManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userManagement" duration-ms="1105" started-at="2018-09-07T05:53:37Z" data-provider="xmldata" finished-at="2018-09-07T05:53:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, userManagement=usermanagement, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:38:点击：用户管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:38:-----------------打开用户管理菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userManagement -->
+        <test-method status="PASS" signature="userManagementCreate(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userManagementCreate" duration-ms="5341" started-at="2018-09-07T05:53:38Z" data-provider="xmldata" finished-at="2018-09-07T05:53:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, note=note, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, valid=valid, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, responsibility=responsibility, mobilephone=mobilephone, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, email=email, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, userName=username, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, phone=phone, commonSelectChoose=selectchooseuser, name=name, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:39:点击：新建]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:39:保存：按钮的状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:40:期望值为：false    ---实际值为：false]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:40:在用户名中填入：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:40:保存：按钮的状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:40:期望值为：false    ---实际值为：false]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:40:在姓名中填入：edit0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:41:保存：按钮的状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:41:期望值为：false    ---实际值为：false]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:41:在邮箱中填入：edit0015@edit.com]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:41:保存：按钮的状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:41:期望值为：false    ---实际值为：false]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:42:点击有效标志输入框]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:42:选择：有效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:42:保存：按钮的状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:42:期望值为：ture    ---实际值为：true]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:42:在岗位职责中填入：岗位职责0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:42:在办公电话中填入：15000000015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:43:在移动电话中填入：16000000015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:43:在备注中填入：我是备注015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:43:-----------------用户信息创建填写通过---------------------]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:43:保存：按钮的状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:43:期望值为：ture    ---实际值为：true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userManagementCreate -->
+        <test-method status="PASS" signature="userCreateSave(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userCreateSave" duration-ms="1775" started-at="2018-09-07T05:53:43Z" data-provider="xmldata" finished-at="2018-09-07T05:53:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, saveAffirm=saveaffirm, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, saveHint=savehint, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:44:点击:保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:45:点击:确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:45:-----------------用户信息创建保存成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userCreateSave -->
+        <test-method status="PASS" signature="userSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userSelect" duration-ms="3894" started-at="2018-09-07T05:53:45Z" data-provider="xmldata" finished-at="2018-09-07T05:53:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{selectMobilephoneValue=selectmobilephonevalue, createSave=save, select=select, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, editPhoneValue=15000000016, userNameValue=user0015, editMobilePhoneValue=16000000016, mobilephoneValue=16000000015, selectNameValue=selectnamevalue, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, selecteMailValue=selectemailvalue, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, editWorkingGroupeNoteValue=我是工作组编辑备注, selectValidValue=selectvalidvalue, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, selectNoteValue=selectnotevalue, noteValue=我是备注015, commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, commonChangeState=changestate, commonAllRules=allrules, selectUserName=selectusername, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, commonAlarmConfig=alarmconfig, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, phoneValue=15000000015, selectEmail=selectemail, selectResponsibilityValue=selectresponsibilityvalue, selectName=selectname, commonValid=valid, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, selectUsernameValue=selectusernamevalue, creatWorkingGroupeNoteValue=我是工作组新增备注, selectPhoneValue=selectphonevalue, commonSelect=select, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:46:点击：筛选]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:47:输入用户名：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:47:输入用户名：edit0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:47:输入用户名：edit0015@edit.com]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:47:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:49:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:49:-----------------用户信息筛选查询完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userSelect -->
+        <test-method status="PASS" signature="userEdit(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userEdit" duration-ms="4389" started-at="2018-09-07T05:53:49Z" data-provider="xmldata" finished-at="2018-09-07T05:53:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{editInvalid=editinvalid, createSave=save, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, editPhoneValue=15000000016, userNameValue=user0015, editMobilePhoneValue=16000000016, mobilephoneValue=16000000015, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, editUserName=editusername, commonAffirm=commonaffirm, edit=edit, emailValue=edit0015@edit.com, editMobilePhone=editmobilephone, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, noteValue=我是备注015, commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, commonChangeState=changestate, editnName=editname, commonAllRules=allrules, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, commonAlarmConfig=alarmconfig, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editFlag=editflag, phoneValue=15000000015, editNote=editnote, editEmail=editemail, editPhone=editphone, commonValid=valid, editResponsibility=editresponsibility, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, creatWorkingGroupeNoteValue=我是工作组新增备注, commonSelect=select, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:51:点击：编辑]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:52:姓名修改为：edit016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:52:岗位职责修改为：edit岗位职责016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:52:办公电话修改为：15000000016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:52:移动电话修改为：16000000016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:53:email修改为：edit016@edit.com]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:53:备注修改为：我是编辑备注016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:53:点击:有效标志]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:53:选择：无效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:53:-----------------用户信息编辑填写完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userEdit -->
+        <test-method status="PASS" signature="commonSave(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="commonSave" duration-ms="1768" started-at="2018-09-07T05:53:53Z" data-provider="xmldata" finished-at="2018-09-07T05:53:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, editSaveHint=editsavehint, commonCraeteFlag=flag, commonCreate=create, editSave=editsave, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, edit=edit, emailValue=edit0015@edit.com, editSaveAffirm=editsaveaffirm, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:54:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:55:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:55:----------------------保存成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- commonSave -->
+        <test-method status="PASS" signature="userEditSaveSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userEditSaveSelect" duration-ms="5037" started-at="2018-09-07T05:53:55Z" data-provider="xmldata" finished-at="2018-09-07T05:54:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{selectChooseUser=selectchooseuser, selectMobilephoneValue=selectmobilephonevalue, createSave=save, select=select, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, editPhoneValue=15000000016, userNameValue=user0015, editMobilePhoneValue=16000000016, mobilephoneValue=16000000015, selectNameValue=selectnamevalue, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, selecteMailValue=selectemailvalue, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectValid=selctvalid, editWorkingGroupeNoteValue=我是工作组编辑备注, selectValidValue=selectvalidvalue, editWorkingGroupNameValue=AutoTestGroupEdit, selectInvalid=selctinvalid, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, selectNoteValue=selectnotevalue, noteValue=我是备注015, commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, commonChangeState=changestate, commonAllRules=allrules, selectFlag=selectflag, selectUserName=selectusername, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, commonAlarmConfig=alarmconfig, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, selectAffirm=selectaffirm, phoneValue=15000000015, selectEmail=selectemail, selectResponsibilityValue=selectresponsibilityvalue, selectName=selectname, commonValid=valid, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, selectUsernameValue=selectusernamevalue, creatWorkingGroupeNoteValue=我是工作组新增备注, selectPhoneValue=selectphonevalue, commonSelect=select, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:53:57:输入用户名：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:57:输入用户名：edit016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:57:输入用户名：edit016@edit.com]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:53:57:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:00:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:00:-----------------用户信息编辑后筛选查询验证完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userEditSaveSelect -->
+        <test-method status="PASS" signature="userAllocationPrivilege(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userAllocationPrivilege" duration-ms="1900" started-at="2018-09-07T05:54:00Z" data-provider="xmldata" finished-at="2018-09-07T05:54:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, choosePrivilegeMoveAllRight=chooseprivilegemoveallright, commonCreate=create, choosePrivilegeMoveAllLeft=chooseprivilegemoveallleft, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, choosePrivilegeMoveLeft=chooseprivilegemoveleft, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, choosePrivilegeMoveRight=chooseprivilegemoveright, commonSelectChoose=selectchooseuser, choosePrivilege=choosePrivilege, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:01:点击：分配权限]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:02:选择：123]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:02:点击：右移按钮]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:02:-------------------分配权限完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userAllocationPrivilege -->
+        <test-method status="PASS" signature="userAllocationPrivilegeSave(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="userAllocationPrivilegeSave" duration-ms="1781" started-at="2018-09-07T05:54:02Z" data-provider="xmldata" finished-at="2018-09-07T05:54:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, allocationSaveAffirm=editsaveaffirm, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, allocationSave=allocationprivilegesave, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, allocationSaveHint=editsavehint, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:03:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:04:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:04:---------------------分配权限保存成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userAllocationPrivilegeSave -->
+        <test-method status="PASS" signature="bb()[pri:0, instance:com.testcases.VicubeSystem@7d9d1a19]" name="bb" is-config="true" duration-ms="4171" started-at="2018-09-07T05:54:04Z" finished-at="2018-09-07T05:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bb -->
+      </class> <!-- com.testcases.VicubeSystem -->
+    </test> <!-- 用户管理：创建、筛选、编辑、分配权限 -->
+    <test name="工作组管理：工作组创建、编辑、分配用户、分配管理员、分配权限、查询" duration-ms="67787" started-at="2018-09-07T05:54:08Z" finished-at="2018-09-07T05:55:16Z">
+      <class name="com.testcases.VicubeSystem">
+        <test-method status="PASS" signature="aa()[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="aa" is-config="true" duration-ms="4207" started-at="2018-09-07T05:54:08Z" finished-at="2018-09-07T05:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aa -->
+        <test-method status="PASS" signature="vicubeLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="vicubeLogin" duration-ms="3001" started-at="2018-09-07T05:54:12Z" data-provider="xmldata" finished-at="2018-09-07T05:54:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, userValue=administrator, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:13:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:14:用户名：administrator]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:14:密码：vicube2017]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:15:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:15:用户登陆标识为：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:15:------------------超级管理员登陆成功-------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- vicubeLogin -->
+        <test-method status="PASS" signature="promptMessage(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="promptMessage" duration-ms="6260" started-at="2018-09-07T05:54:15Z" data-provider="xmldata" finished-at="2018-09-07T05:54:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, userNotificationNumber=userNotificationNumber, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:17:提示信息个数：2]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:17:关闭提示信息：Close Notification]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:19:关闭提示信息：Close Notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptMessage -->
+        <test-method status="PASS" signature="systemSetting(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="systemSetting" duration-ms="1446" started-at="2018-09-07T05:54:21Z" data-provider="xmldata" finished-at="2018-09-07T05:54:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, systemSetting=systemsetting, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:23:点击：系统设置]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:23:-----------------打开系统设置菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- systemSetting -->
+        <test-method status="PASS" signature="workingGroupManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupManagement" duration-ms="1095" started-at="2018-09-07T05:54:23Z" data-provider="xmldata" finished-at="2018-09-07T05:54:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, workingGroupManagement=workinggroupmanagent, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:24:点击；工作组管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:24:-----------------打开工作组管理菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagement -->
+        <test-method status="PASS" signature="workingGroupManagementGreate(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupManagementGreate" duration-ms="3103" started-at="2018-09-07T05:54:24Z" data-provider="xmldata" finished-at="2018-09-07T05:54:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, createWorkingGroupName=workingGroupName, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, createDomainNameSelectBox=domainNameSelectBox, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, createDomainName=createDomainName, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, creatWorkingGroupeNote=creatWorkingGroupeNote, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:25:点击：新建]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:26:录入工作组名称:AutoTestGroup]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:26:点击有效标志输入框]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:26:选择：无效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:26:点击域名选择框]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:26:选择：XMDomain]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:27:期望值为：BJDomain    ---实际值为：XMDomain]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:27:------------------工作组保存填写完成---------------------]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:27:录入工作组备注:我是工作组新增备注]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagementGreate -->
+        <test-method status="PASS" signature="commonSave(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="commonSave" duration-ms="1803" started-at="2018-09-07T05:54:27Z" data-provider="xmldata" finished-at="2018-09-07T05:54:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, editSaveHint=editsavehint, commonCraeteFlag=flag, commonCreate=create, editSave=editsave, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, edit=edit, emailValue=edit0015@edit.com, editSaveAffirm=editsaveaffirm, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:28:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:29:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:29:----------------------保存成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- commonSave -->
+        <test-method status="PASS" signature="workingGroupManagementSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupManagementSelect" duration-ms="4598" started-at="2018-09-07T05:54:29Z" data-provider="xmldata" finished-at="2018-09-07T05:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, selectworkinggroupnameValue=selectworkinggroupname, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, inputSelectWorkingGroupname=inputselectworkinggroupname, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectWorkingGroupFlagValue=selectworkinggroupvalidflag, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, selectWorkingGroupNoteValue=selectWorkingGroupNoteValue, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:30:点击：筛选]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:31:录入工作组名称：AutoTestGroup]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:31:点击：有效标志]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:31:选择：无效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:31:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:33:勾选筛选结果]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:33:-------------------筛选查询完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagementSelect -->
+        <test-method status="PASS" signature="workingGroupManagementEdit(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupManagementEdit" duration-ms="3898" started-at="2018-09-07T05:54:33Z" data-provider="xmldata" finished-at="2018-09-07T05:54:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editWorkingGroupName=workingGroupName, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, editDomainName=editDomainName, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, editWorkingGroup=edit, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, domainNameSelectBox=domainNameSelectBox, editWorkingGroupNameValue=AutoTestGroupEdit, editWorkingGroupeNote=creatWorkingGroupeNote, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:36:点击：编辑]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:36:录入工作组名称:AutoTestGroupEdit]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:点击有效标志输入框]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:选择：有效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:点击域名选择框]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:选择：CNDomain]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:期望值为：XMDomain    ---实际值为：CNDomain]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:------------------工作组编辑完成---------------------]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:37:录入工作组备注:我是工作组编辑备注]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagementEdit -->
+        <test-method status="PASS" signature="editSave(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="editSave" duration-ms="1705" started-at="2018-09-07T05:54:37Z" data-provider="xmldata" finished-at="2018-09-07T05:54:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, editSaveHint=editsavehint, commonCraeteFlag=flag, commonCreate=create, editSave=editsave, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, edit=edit, emailValue=edit0015@edit.com, editSaveAffirm=editsaveaffirm, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:38:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:39:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:39:----------------------保存成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editSave -->
+        <test-method status="PASS" signature="refresh(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="refresh" duration-ms="6678" started-at="2018-09-07T05:54:39Z" data-provider="xmldata" finished-at="2018-09-07T05:54:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, userNotificationNumber=userNotificationNumber, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:42:提示信息个数：2]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:42:关闭提示信息：Close Notification]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:44:关闭提示信息：Close Notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- refresh -->
+        <test-method status="PASS" signature="workingGroupManagementEditSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupManagementEditSelect" duration-ms="4948" started-at="2018-09-07T05:54:46Z" data-provider="xmldata" finished-at="2018-09-07T05:54:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, selectworkinggroupnameValue=selectworkinggroupname, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, inputSelectWorkingGroupname=inputselectworkinggroupname, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectWorkingGroupFlagValue=selectworkinggroupvalidflag, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, selectWorkingGroupNoteValue=selectWorkingGroupNoteValue, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:47:点击：筛选]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:48:录入工作组名称：AutoTestGroupEdit]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:48:点击：有效标志]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:48:选择：有效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:48:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:51:期望值为：我是工作组新增备注    ---实际值为：我是工作组编辑备注]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:51:勾选筛选结果]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:51:-------------------筛选查询完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagementEditSelect -->
+        <test-method status="PASS" signature="workingGroupAssignmentUser(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupAssignmentUser" duration-ms="2914" started-at="2018-09-07T05:54:51Z" data-provider="xmldata" finished-at="2018-09-07T05:54:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, assignmentUser=assignmentUser, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, chooseUser=chooseUser, commonSelectValid=selctvalid, editNameValue=edit016, assignmentUserSave=commonsave, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectUserRightMove=selectUserRightMove, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:52:点击：分配用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:52:选择：123123]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:53:期望值为：edit016    ---实际值为：123123]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:53:点击：右移按钮]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:53:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:54:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:54:------------------工作组管理：分配用户成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupAssignmentUser -->
+        <test-method status="PASS" signature="workingGroupAssignmentManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="workingGroupAssignmentManagement" duration-ms="2567" started-at="2018-09-07T05:54:54Z" data-provider="xmldata" finished-at="2018-09-07T05:54:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, assignmentManagement=assignmentManagement, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, chooseUser=chooseUser, commonSelectValid=selctvalid, editNameValue=edit016, assignmentUserSave=commonsave, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectUserRightMove=selectUserRightMove, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:55:点击：分配管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:55:选择：123123]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:56:期望值为：edit016    ---实际值为：123123]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:56:点击：右移按钮]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:56:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:56:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:56:------------------工作组管理：分配用户成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupAssignmentManagement -->
+        <test-method status="PASS" signature="userAllocationPrivilege(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="userAllocationPrivilege" duration-ms="1880" started-at="2018-09-07T05:54:56Z" data-provider="xmldata" finished-at="2018-09-07T05:54:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, choosePrivilegeMoveAllRight=chooseprivilegemoveallright, commonCreate=create, choosePrivilegeMoveAllLeft=chooseprivilegemoveallleft, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, choosePrivilegeMoveLeft=chooseprivilegemoveleft, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, choosePrivilegeMoveRight=chooseprivilegemoveright, commonSelectChoose=selectchooseuser, choosePrivilege=choosePrivilege, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:57:点击：分配权限]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:58:选择：123]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:58:点击：右移按钮]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:54:58:-------------------分配权限完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userAllocationPrivilege -->
+        <test-method status="PASS" signature="userAllocationPrivilegeSave(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="userAllocationPrivilegeSave" duration-ms="1782" started-at="2018-09-07T05:54:58Z" data-provider="xmldata" finished-at="2018-09-07T05:55:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, allocationSaveAffirm=editsaveaffirm, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, allocationSave=allocationprivilegesave, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, allocationSaveHint=editsavehint, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:54:59:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:00:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:00:---------------------分配权限保存成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userAllocationPrivilegeSave -->
+        <test-method status="PASS" signature="userChangeState(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="userChangeState" duration-ms="4562" started-at="2018-09-07T05:55:00Z" data-provider="xmldata" finished-at="2018-09-07T05:55:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:01:点击：更改状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:01:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:02:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:04:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:04:----------------------状态更改成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userChangeState -->
+        <test-method status="PASS" signature="userLogoutSystem(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="userLogoutSystem" duration-ms="5522" started-at="2018-09-07T05:55:04Z" data-provider="xmldata" finished-at="2018-09-07T05:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userLogoutHead=userlogouthead, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, userLogoutSystem=userlogoutsystem, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:10:点击用户：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:10:点击：退出系统]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:10:期望值为：退出系统    ---实际值为：退出系统]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:10:---------------------退出系统成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLogoutSystem -->
+        <test-method status="PASS" signature="bb()[pri:0, instance:com.testcases.VicubeSystem@4cf777e8]" name="bb" is-config="true" duration-ms="5798" started-at="2018-09-07T05:55:10Z" finished-at="2018-09-07T05:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bb -->
+      </class> <!-- com.testcases.VicubeSystem -->
+    </test> <!-- 工作组管理：工作组创建、编辑、分配用户、分配管理员、分配权限、查询 -->
+    <test name="用户管理：无效登陆、分配工作组、更改状态、重置密码" duration-ms="47912" started-at="2018-09-07T05:55:16Z" finished-at="2018-09-07T05:56:04Z">
+      <class name="com.testcases.VicubeSystem">
+        <test-method status="PASS" signature="aa()[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="aa" is-config="true" duration-ms="4060" started-at="2018-09-07T05:55:16Z" finished-at="2018-09-07T05:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aa -->
+        <test-method status="PASS" signature="userInvalidLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userInvalidLogin" duration-ms="4061" started-at="2018-09-07T05:55:20Z" data-provider="xmldata" finished-at="2018-09-07T05:55:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:22:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:23:用户名：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:23:密码：9fe41c]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:23:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:24:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:24:----------------------用户无效登陆结束------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userInvalidLogin -->
+        <test-method status="PASS" signature="vicubeLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="vicubeLogin" duration-ms="1770" started-at="2018-09-07T05:55:24Z" data-provider="xmldata" finished-at="2018-09-07T05:55:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, userValue=administrator, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:24:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:25:用户名：administrator]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:25:密码：vicube2017]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:25:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:26:用户登陆标识为：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:26:------------------超级管理员登陆成功-------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- vicubeLogin -->
+        <test-method status="PASS" signature="promptMessage(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="promptMessage" duration-ms="6287" started-at="2018-09-07T05:55:26Z" data-provider="xmldata" finished-at="2018-09-07T05:55:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, userNotificationNumber=userNotificationNumber, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:28:提示信息个数：2]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:28:关闭提示信息：Close Notification]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:30:关闭提示信息：Close Notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptMessage -->
+        <test-method status="PASS" signature="systemSetting(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="systemSetting" duration-ms="1632" started-at="2018-09-07T05:55:32Z" data-provider="xmldata" finished-at="2018-09-07T05:55:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, systemSetting=systemsetting, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:33:点击：系统设置]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:33:-----------------打开系统设置菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- systemSetting -->
+        <test-method status="PASS" signature="userManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userManagement" duration-ms="1097" started-at="2018-09-07T05:55:34Z" data-provider="xmldata" finished-at="2018-09-07T05:55:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, userManagement=usermanagement, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:35:点击：用户管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:35:-----------------打开用户管理菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userManagement -->
+        <test-method status="PASS" signature="clickSelectButton(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="clickSelectButton" duration-ms="1153" started-at="2018-09-07T05:55:35Z" data-provider="xmldata" finished-at="2018-09-07T05:55:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:36:点击：筛选]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickSelectButton -->
+        <test-method status="PASS" signature="userEditSaveSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userEditSaveSelect" duration-ms="5213" started-at="2018-09-07T05:55:36Z" data-provider="xmldata" finished-at="2018-09-07T05:55:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{selectChooseUser=selectchooseuser, selectMobilephoneValue=selectmobilephonevalue, createSave=save, select=select, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, editPhoneValue=15000000016, userNameValue=user0015, editMobilePhoneValue=16000000016, mobilephoneValue=16000000015, selectNameValue=selectnamevalue, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, selecteMailValue=selectemailvalue, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectValid=selctvalid, editWorkingGroupeNoteValue=我是工作组编辑备注, selectValidValue=selectvalidvalue, editWorkingGroupNameValue=AutoTestGroupEdit, selectInvalid=selctinvalid, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, selectNoteValue=selectnotevalue, noteValue=我是备注015, commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, commonChangeState=changestate, commonAllRules=allrules, selectFlag=selectflag, selectUserName=selectusername, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, commonAlarmConfig=alarmconfig, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, selectAffirm=selectaffirm, phoneValue=15000000015, selectEmail=selectemail, selectResponsibilityValue=selectresponsibilityvalue, selectName=selectname, commonValid=valid, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, selectUsernameValue=selectusernamevalue, creatWorkingGroupeNoteValue=我是工作组新增备注, selectPhoneValue=selectphonevalue, commonSelect=select, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:38:输入用户名：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:38:输入用户名：edit016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:38:输入用户名：edit016@edit.com]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:39:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:41:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:41:-----------------用户信息编辑后筛选查询验证完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userEditSaveSelect -->
+        <test-method status="PASS" signature="userAssignmentGroup(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userAssignmentGroup" duration-ms="2941" started-at="2018-09-07T05:55:41Z" data-provider="xmldata" finished-at="2018-09-07T05:55:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, assignmentGroupSave=commonsave, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, chooseWorkingGroup=chooseWorkingGroup, emailValue=edit0015@edit.com, selectGroupRightMove=selectgrouprightmove, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, assignmentGroup=assignmentgroup, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:42:点击：分配工作组]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:43:选择：testgr]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:43:期望值为：AutoTestGroupEdit    ---实际值为：testgr]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:43:点击：右移按钮]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:43:点击：保存]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:44:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:44:------------------用户分配工作组成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userAssignmentGroup -->
+        <test-method status="PASS" signature="userResetPassword(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userResetPassword" duration-ms="3532" started-at="2018-09-07T05:55:44Z" data-provider="xmldata" finished-at="2018-09-07T05:55:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, resetPassword=resetpassword, commonInvalid=invalid, createSave=save, resetPasswordHint=resetpasswordhint, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, resetPasswordCancel=resetpasswordcancel, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, resetPasswordAffirm=resetpasswordaffirm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:46:点击：重置密码]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:46:点击：是否重置当前用户密码？]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:46:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:46:------------------用户信息重置密码成功---------------------]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:47:点击：重置密码成功,已经向用户发送邮件！]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:47:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:47:------------------用户信息重置密码成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userResetPassword -->
+        <test-method status="PASS" signature="userChangeState(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userChangeState" duration-ms="4530" started-at="2018-09-07T05:55:47Z" data-provider="xmldata" finished-at="2018-09-07T05:55:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:49:点击：更改状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:49:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:50:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:52:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:52:----------------------状态更改成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userChangeState -->
+        <test-method status="PASS" signature="userLogoutSystem(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userLogoutSystem" duration-ms="5571" started-at="2018-09-07T05:55:52Z" data-provider="xmldata" finished-at="2018-09-07T05:55:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userLogoutHead=userlogouthead, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, userLogoutSystem=userlogoutsystem, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:57:点击用户：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:57:点击：退出系统]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:58:期望值为：退出系统    ---实际值为：退出系统]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:58:---------------------退出系统成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLogoutSystem -->
+        <test-method status="PASS" signature="userLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="userLogin" duration-ms="2100" started-at="2018-09-07T05:55:58Z" data-provider="xmldata" finished-at="2018-09-07T05:56:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:55:58:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:58:用户名：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:59:密码：665228]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:59:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:55:59:用户登陆标识为：edit016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:00:期望值为：edit0015    ---实际值为：edit016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:00:------------------edit016登陆成功-------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="bb()[pri:0, instance:com.testcases.VicubeSystem@5700d6b1]" name="bb" is-config="true" duration-ms="3951" started-at="2018-09-07T05:56:00Z" finished-at="2018-09-07T05:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bb -->
+      </class> <!-- com.testcases.VicubeSystem -->
+    </test> <!-- 用户管理：无效登陆、分配工作组、更改状态、重置密码 -->
+    <test name="审计管理：查看、筛选" duration-ms="24706" started-at="2018-09-07T05:56:04Z" finished-at="2018-09-07T05:56:28Z">
+      <class name="com.testcases.VicubeSystem">
+        <test-method status="PASS" signature="aa()[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="aa" is-config="true" duration-ms="4235" started-at="2018-09-07T05:56:04Z" finished-at="2018-09-07T05:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aa -->
+        <test-method status="PASS" signature="vicubeLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="vicubeLogin" duration-ms="3088" started-at="2018-09-07T05:56:08Z" data-provider="xmldata" finished-at="2018-09-07T05:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, userValue=administrator, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:09:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:10:用户名：administrator]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:10:密码：vicube2017]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:10:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:11:用户登陆标识为：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:11:------------------超级管理员登陆成功-------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- vicubeLogin -->
+        <test-method status="PASS" signature="promptMessage(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="promptMessage" duration-ms="6237" started-at="2018-09-07T05:56:11Z" data-provider="xmldata" finished-at="2018-09-07T05:56:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, userNotificationNumber=userNotificationNumber, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:13:提示信息个数：2]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:13:关闭提示信息：Close Notification]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:15:关闭提示信息：Close Notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptMessage -->
+        <test-method status="PASS" signature="systemSetting(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="systemSetting" duration-ms="1442" started-at="2018-09-07T05:56:17Z" data-provider="xmldata" finished-at="2018-09-07T05:56:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, systemSetting=systemsetting, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:18:点击：系统设置]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:18:-----------------打开系统设置菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- systemSetting -->
+        <test-method status="PASS" signature="auditManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="auditManagement" duration-ms="1093" started-at="2018-09-07T05:56:19Z" data-provider="xmldata" finished-at="2018-09-07T05:56:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, auditManagement=auditmanagement, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:20:点击：审计管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:20:-----------------打开审计管理菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- auditManagement -->
+        <test-method status="PASS" signature="auditManagementViewLog(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="auditManagementViewLog" duration-ms="1980" started-at="2018-09-07T05:56:20Z" data-provider="xmldata" finished-at="2018-09-07T05:56:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, closeAuditDetail=closeAuditDetail, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, selectLog=selectLog, responsibilityValue=岗位职责0015, view=view, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, auditDetail=auditDetail, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:21:成功勾选：日志]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:21:成功点击：查看]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:22:成功打开：审计详情]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:22:成功点击：关闭关闭审计详情页]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:22:-----------------审计管理展示日志查看成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- auditManagementViewLog -->
+        <test-method status="PASS" signature="auditManagementSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="auditManagementSelect" duration-ms="2750" started-at="2018-09-07T05:56:22Z" data-provider="xmldata" finished-at="2018-09-07T05:56:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, selectOperationID=selectOperationID, operationIDValue=user0015, functionNameValue=用户登陆, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, functionName=functionName, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, modelName=modelName, modelNameValue=统一用户管理, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, operationID=operationID, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, selectButton=selectButton, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:23:成功打开：筛选]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:24:模块名称录入：统一用户管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:24:操作账号录入：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:24:模块名称录入：用户登陆]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:24:成功点击：确定按钮]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:24:筛选后的,操作账号为：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:24:-----------------审计管理查询功能验证完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- auditManagementSelect -->
+        <test-method status="PASS" signature="bb()[pri:0, instance:com.testcases.VicubeSystem@3f49dace]" name="bb" is-config="true" duration-ms="3874" started-at="2018-09-07T05:56:24Z" finished-at="2018-09-07T05:56:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bb -->
+      </class> <!-- com.testcases.VicubeSystem -->
+    </test> <!-- 审计管理：查看、筛选 -->
+    <test name="用户管理：更改状态、删除；工作组管理：删除" duration-ms="44515" started-at="2018-09-07T05:56:28Z" finished-at="2018-09-07T05:57:13Z">
+      <class name="com.testcases.VicubeSystem">
+        <test-method status="PASS" signature="aa()[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="aa" is-config="true" duration-ms="4376" started-at="2018-09-07T05:56:28Z" finished-at="2018-09-07T05:56:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aa -->
+        <test-method status="PASS" signature="vicubeLogin(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="vicubeLogin" duration-ms="2902" started-at="2018-09-07T05:56:33Z" data-provider="xmldata" finished-at="2018-09-07T05:56:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, userValue=administrator, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:34:网址成功打开：http://vicube.test.com:48080/h5]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:35:用户名：administrator]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:35:密码：vicube2017]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:35:点击按钮:登录]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:36:用户登陆标识为：超级管理员]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:36:------------------超级管理员登陆成功-------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- vicubeLogin -->
+        <test-method status="PASS" signature="promptMessage(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="promptMessage" duration-ms="6257" started-at="2018-09-07T05:56:36Z" data-provider="xmldata" finished-at="2018-09-07T05:56:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, userNotificationNumber=userNotificationNumber, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:38:提示信息个数：2]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:38:关闭提示信息：Close Notification]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:40:关闭提示信息：Close Notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptMessage -->
+        <test-method status="PASS" signature="systemSetting(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="systemSetting" duration-ms="1483" started-at="2018-09-07T05:56:42Z" data-provider="xmldata" finished-at="2018-09-07T05:56:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, systemSetting=systemsetting, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:43:点击：系统设置]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:43:-----------------打开系统设置菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- systemSetting -->
+        <test-method status="PASS" signature="userManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="userManagement" duration-ms="1129" started-at="2018-09-07T05:56:43Z" data-provider="xmldata" finished-at="2018-09-07T05:56:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, userManagement=usermanagement, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:45:点击：用户管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:45:-----------------打开用户管理菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userManagement -->
+        <test-method status="PASS" signature="clickSelectButton(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="clickSelectButton" duration-ms="1169" started-at="2018-09-07T05:56:45Z" data-provider="xmldata" finished-at="2018-09-07T05:56:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:46:点击：筛选]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- clickSelectButton -->
+        <test-method status="PASS" signature="userEditSaveSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="userEditSaveSelect" duration-ms="5550" started-at="2018-09-07T05:56:46Z" data-provider="xmldata" finished-at="2018-09-07T05:56:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{selectChooseUser=selectchooseuser, selectMobilephoneValue=selectmobilephonevalue, createSave=save, select=select, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, editPhoneValue=15000000016, userNameValue=user0015, editMobilePhoneValue=16000000016, mobilephoneValue=16000000015, selectNameValue=selectnamevalue, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, selecteMailValue=selectemailvalue, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectValid=selctvalid, editWorkingGroupeNoteValue=我是工作组编辑备注, selectValidValue=selectvalidvalue, editWorkingGroupNameValue=AutoTestGroupEdit, selectInvalid=selctinvalid, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, selectNoteValue=selectnotevalue, noteValue=我是备注015, commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, commonChangeState=changestate, commonAllRules=allrules, selectFlag=selectflag, selectUserName=selectusername, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, commonAlarmConfig=alarmconfig, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, selectAffirm=selectaffirm, phoneValue=15000000015, selectEmail=selectemail, selectResponsibilityValue=selectresponsibilityvalue, selectName=selectname, commonValid=valid, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, selectUsernameValue=selectusernamevalue, creatWorkingGroupeNoteValue=我是工作组新增备注, selectPhoneValue=selectphonevalue, commonSelect=select, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:48:输入用户名：user0015]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:48:输入用户名：edit016]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:48:输入用户名：edit016@edit.com]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:48:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:51:期望值为：无效    ---实际值为：有效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:51:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:51:-----------------用户信息编辑后筛选查询验证完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userEditSaveSelect -->
+        <test-method status="PASS" signature="userChangeState(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="userChangeState" duration-ms="4561" started-at="2018-09-07T05:56:51Z" data-provider="xmldata" finished-at="2018-09-07T05:56:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:52:点击：更改状态]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:53:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:54:点击：确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:56:勾选筛选结果用户]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:56:----------------------状态更改成功------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userChangeState -->
+        <test-method status="PASS" signature="userDelete(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="userDelete" duration-ms="3493" started-at="2018-09-07T05:56:56Z" data-provider="xmldata" finished-at="2018-09-07T05:56:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, delete=delete, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, deleteCancel=deletecancel, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, deleteAffirm=deleteaffirm, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, deleteHint=deletehint, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:56:58:点击:删除]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:58:删除提示信息：是否删除当前用户？]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:58:点击:确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:59:删除提示信息：删除用户成功！]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:59:点击:确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:56:59:------------------用户信息删除成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userDelete -->
+        <test-method status="PASS" signature="workingGroupManagement(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="workingGroupManagement" duration-ms="1126" started-at="2018-09-07T05:56:59Z" data-provider="xmldata" finished-at="2018-09-07T05:57:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, workingGroupManagement=workinggroupmanagent, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:57:00:点击；工作组管理]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:00:-----------------打开工作组管理菜单---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagement -->
+        <test-method status="PASS" signature="workingGroupManagementInvalidSelect(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="workingGroupManagementInvalidSelect" duration-ms="5207" started-at="2018-09-07T05:57:00Z" data-provider="xmldata" finished-at="2018-09-07T05:57:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, selectworkinggroupnameValue=selectworkinggroupname, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, inputSelectWorkingGroupname=inputselectworkinggroupname, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectWorkingGroupFlagValue=selectworkinggroupvalidflag, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, commonConcentratedAlarm=concentratedalarm, selectWorkingGroupNoteValue=selectWorkingGroupNoteValue, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:57:02:点击：筛选]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:02:录入工作组名称：AutoTestGroupEdit]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:03:点击：有效标志]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:03:选择：无效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:03:点击：确定]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:05:期望值为：有效    ---实际值为：无效]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:06:期望值为：我是工作组新增备注    ---实际值为：我是工作组编辑备注]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:06:勾选筛选结果]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:06:-------------------筛选查询完成---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- workingGroupManagementInvalidSelect -->
+        <test-method status="PASS" signature="userGroupDelete(java.util.Map)[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="userGroupDelete" duration-ms="3439" started-at="2018-09-07T05:57:06Z" data-provider="xmldata" finished-at="2018-09-07T05:57:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, delete=delete, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, deleteCancel=deletecancel, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, deleteAffirm=deleteaffirm, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupeNoteValue=我是工作组编辑备注, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, creatWorkingGroupeNoteValue=我是工作组新增备注, deleteHint=deletehint, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[2018-09-07 13:57:08:点击:删除]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:08:删除提示信息：是否删除当前组？]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:08:点击:确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:09:删除提示信息：删除组成功！]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:09:点击:确认]]>
+            </line>
+            <line>
+              <![CDATA[2018-09-07 13:57:09:------------------用户组删除成功---------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userGroupDelete -->
+        <test-method status="PASS" signature="bb()[pri:0, instance:com.testcases.VicubeSystem@6e06451e]" name="bb" is-config="true" duration-ms="3811" started-at="2018-09-07T05:57:09Z" finished-at="2018-09-07T05:57:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bb -->
+      </class> <!-- com.testcases.VicubeSystem -->
+    </test> <!-- 用户管理：更改状态、删除；工作组管理：删除 -->
+  </suite> <!-- Suite -->
+</testng-results>

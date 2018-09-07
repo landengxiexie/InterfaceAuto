@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <browser>chrome</browser>
+    <waitTime>5</waitTime>
+
+    <mysqlhost>127.0.0.1/</mysqlhost>
+    <mysqlusername>root</mysqlusername>
+    <mysqlpassword></mysqlpassword>
+    <mysqlsql>SELECT * from user</mysqlsql>
+
+    <!--<postgresqlhost>jdbc:postgresql://192.168.20.122:5432/h5_standard_20180626_main</postgresqlhost>-->
+    <!--<postgresqlusername>postgres</postgresqlusername>-->
+    <!--<postgresqlpassword>postgres</postgresqlpassword>-->
+    <!--<postgresqlsql>select d from t_user  where email='edit0015@edit.com'</postgresqlsql>-->
+
+    <postgresqlhost>jdbc:postgresql://192.168.20.122:5432/v4.3test_main</postgresqlhost>
+    <postgresqlusername>postgres</postgresqlusername>
+    <postgresqlpassword>postgres</postgresqlpassword>
+    <postgresqlsql>select encrypted_pwd from t_user  where email='edit0015@edit.com'</postgresqlsql>
+
+
+    <filePath>e:/abcdef.xlsx</filePath>
+    <yamlfile>Vicube</yamlfile>
+    <global>Global</global>
+    <emailSender>652444917</emailSender>
+    <emailAuthorizationCode>zndvjnnczdunbfha</emailAuthorizationCode>
+    <emailRecipient>1766149901</emailRecipient>
+</config>
+

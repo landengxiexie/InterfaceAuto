@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  工作组管理：工作组创建、分配权限、查询</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>工作组管理：工作组创建、分配权限、查询</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 04 17:40:07 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>39 seconds (39636 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.VicubeSystem.commonSave()'><b>commonSave</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, editSaveHint=editsavehint, commonCraeteFlag=flag, commonCreate=create, editSave=editsave, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, edit=edit, emailValue=edit0015@edit.com, editSaveAffirm=editsaveaffirm, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-292138977" onClick='toggleBox("Output-292138977", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-292138977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-292138977">
+2018-09-04 17:40:25:点击：保存<br/>
+2018-09-04 17:40:25:点击：确认<br/>
+2018-09-04 17:40:25:----------------------保存成功------------------------<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.systemSetting()'><b>systemSetting</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, systemSetting=systemsetting, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-896982466" onClick='toggleBox("Output-896982466", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-896982466" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-896982466">
+2018-09-04 17:40:20:点击：系统设置<br/>
+2018-09-04 17:40:20:-----------------打开系统设置菜单---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.userAllocationPrivilege()'><b>userAllocationPrivilege</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, choosePrivilegeMoveAllRight=chooseprivilegemoveallright, commonCreate=create, choosePrivilegeMoveAllLeft=chooseprivilegemoveallleft, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, choosePrivilegeMoveLeft=chooseprivilegemoveleft, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, choosePrivilegeBJ-UPS1=chooseprivilegebj-ups1, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, choosePrivilegeBJ-UPS2=chooseprivilegebj-ups2, choosePrivilegeMoveRight=chooseprivilegemoveright, choosePrivilegeBJ-UPS3=chooseprivilegebj-ups3, commonSelectChoose=selectchooseuser, choosePrivilegeBJ-UPS4=chooseprivilegebj-ups4, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-749282235" onClick='toggleBox("Output-749282235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-749282235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-749282235">
+2018-09-04 17:40:31:点击：分配权限<br/>
+2018-09-04 17:40:32:选择：123<br/>
+2018-09-04 17:40:32:点击：右移按钮<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.userAllocationPrivilegeSave()'><b>userAllocationPrivilegeSave</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, allocationSaveAffirm=editsaveaffirm, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, allocationSave=allocationprivilegesave, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, allocationSaveHint=editsavehint, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-515809288" onClick='toggleBox("Output-515809288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515809288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515809288">
+2018-09-04 17:40:33:点击：保存<br/>
+2018-09-04 17:40:34:期望值为：保存成功    ---实际值为：授权成功！<br/>
+2018-09-04 17:40:34:点击：确认<br/>
+2018-09-04 17:40:34:---------------------保存成功------------------------<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.userLogoutSystem()'><b>userLogoutSystem</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, userLogoutHead=userlogouthead, userNotification=usernotification, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, userLogoutSystem=userlogoutsystem, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-394785440" onClick='toggleBox("Output-394785440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-394785440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-394785440">
+2018-09-04 17:40:39:关闭提示信息：Close Notification<br/>
+2018-09-04 17:40:42:点击用户：超级管理员<br/>
+2018-09-04 17:40:42:点击：退出系统<br/>
+2018-09-04 17:40:42:期望值为：退出系统    ---实际值为：退出系统<br/>
+2018-09-04 17:40:42:---------------------退出系统成功------------------------<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.vicubeLogin()'><b>vicubeLogin</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, button=vicube_loginButton, userLoginID=vicube_userloginid, responsibilityValue=岗位职责0015, password=vicube_password, editMobilePhoneValue=16000000016, userValue=administrator, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, user=vicube_user, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-771418758" onClick='toggleBox("Output-771418758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-771418758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-771418758">
+2018-09-04 17:40:13:网址成功打开：http://vicube.test.com:48080/h5<br/>
+2018-09-04 17:40:14:用户名：administrator<br/>
+2018-09-04 17:40:14:密码：vicube2017<br/>
+2018-09-04 17:40:14:点击按钮:登录<br/>
+2018-09-04 17:40:14:期望值为：登陆    ---实际值为：登录<br/>
+2018-09-04 17:40:14:用户登陆标识为：超级管理员<br/>
+2018-09-04 17:40:14:------------------超级管理员登陆成功-------------------<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.workingGroupManagement()'><b>workingGroupManagement</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, workingGroupManagement=workinggroupmanagent, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-777457133" onClick='toggleBox("Output-777457133", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-777457133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-777457133">
+2018-09-04 17:40:21:点击；工作组管理<br/>
+2018-09-04 17:40:21:-----------------打开工作组管理菜单---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.workingGroupManagementGreate()'><b>workingGroupManagementGreate</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, createWorkingGroupName=workingGroupName, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, createDomainNameSelectBox=domainNameSelectBox, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, createDomainName=createDomainName, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-136157810" onClick='toggleBox("Output-136157810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-136157810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-136157810">
+2018-09-04 17:40:22:点击：新建<br/>
+2018-09-04 17:40:23:录入工作组名称:AutoTestGroup<br/>
+2018-09-04 17:40:23:点击有效标志输入框<br/>
+2018-09-04 17:40:23:选择：有效<br/>
+2018-09-04 17:40:23:点击域名选择框<br/>
+2018-09-04 17:40:23:选择：rootDomain<br/>
+2018-09-04 17:40:24:期望值为：BJDomain    ---实际值为：rootDomain<br/>
+2018-09-04 17:40:24:------------------工作组保存填写完成---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.workingGroupManagementSelect()'><b>workingGroupManagementSelect</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategy=denoisestrategy, commonInvalid=invalid, createSave=save, commonChangeState=changestate, commonHint=commonhint, commonAllocationPrivilege=allocationprivilege, selectworkinggroupnameValue=selectworkinggroupname, editNoteValue=我是编辑备注016, commonAllRules=allrules, editPhoneValue=15000000016, userNameValue=user0015, editEmailValue=edit016@edit.com, responsibilityValue=岗位职责0015, inputSelectWorkingGroupname=inputselectworkinggroupname, editMobilePhoneValue=16000000016, commonAlarmConfig=alarmconfig, mobilephoneValue=16000000015, commonCraeteFlag=flag, commonCreate=create, contentKeywordValue=test内容关键词001, VicubeUrl=http://vicube.test.com:48080/h5, commonSelectValid=selctvalid, editNameValue=edit016, commonSelectInvalid=selctinvalid, nameValue=edit0015, phoneValue=15000000015, commonAffirm=commonaffirm, emailValue=edit0015@edit.com, selectWorkingGroupFlagValue=selectworkinggroupvalidflag, commonValid=valid, editWorkingGroupNameValue=AutoTestGroupEdit, commonSelectFlag=selectflag, commonSelectAffirm=selectaffirm, commonSelectChoose=selectchooseuser, alarmClassifyRulesNameValue=test规则名称001, commonConcentratedAlarm=concentratedalarm, commonSelect=select, noteValue=我是备注015, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup}<br/>
+<a href="#Output-1208532123" onClick='toggleBox("Output-1208532123", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208532123" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208532123">
+2018-09-04 17:40:27:点击：筛选<br/>
+2018-09-04 17:40:27:录入工作组名称：AutoTestGroup<br/>
+2018-09-04 17:40:27:点击：有效标志<br/>
+2018-09-04 17:40:28:选择：有效<br/>
+2018-09-04 17:40:28:点击：确定<br/>
+2018-09-04 17:40:30:勾选筛选结果<br/>
+2018-09-04 17:40:30:-------------------筛选查询完成---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.testcases.VicubeSystem@66d2e7d9</td></tr>
+</table><p>
+</body>
+</html>
