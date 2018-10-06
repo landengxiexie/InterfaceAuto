@@ -1,19 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" verbose="1" parallel="false" thread-count="1">
-    <test name="Test3" preserve-order="true">
+<suite name="集中告警-告警展示" verbose="1" parallel="false" thread-count="1">
+    <test name="查看(详情)" preserve-order="true" >
         <classes>
             <class name="com.testcases.VicubeSystem">
                 <methods>
                     <include name="vicubeLogin"/>
                     <include name="promptMessage"/>
-                    <include name="systemSetting"/>
-                    <include name="workingGroupManagement"/>
-                    <include name="workingGroupManagementSelect"/>
-                    <include name="userGroupDelete"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayColumnSettingAllChoose"/>
+                    <include name="alarmDisplayPendingAlarm"/>
+                    <include name="alarmDisplayViewMultitermHint"/>
+                    <include name="alarmDisplayChooseTwoFunction"/>
+                    <include name="alarmDisplayAutoRefresh"/>
+                    <include name="alarmDisplaySelect"/>
+                    <include name="alarmDisplayView"/>
+                    <include name="alarmDisplayViewForwardShifting"/>
+                    <include name="alarmDisplayForwardShiftingMode2"/>
+                    <include name="alarmDisplayViewForwardShiftingHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction"/>
+                    <include name="alarmDisplayView2"/>
+                    <include name="alarmDisplayViewResolved"/>
+                    <include name="alarmDisplayResolvedOfResolved"/>
+                    <include name="alarmDisplayViewResolvedOfResolvedHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction2"/>
+                    <include name="alarmDisplayView3"/>
+                    <include name="alarmDisplayViewOtherInformation"/>
+                    <include name="alarmDisplayViewResolved2"/>
+                    <include name="alarmDisplayResolvedOfIgnore"/>
+                    <include name="alarmDisplayViewResolvedOfIgnoreHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction3"/>
+                    <include name="alarmDisplayView4"/>
+                    <include name="alarmDisplayViewResolved"/>
+                    <include name="alarmDisplayViewEventQuery"/>
+                    <include name="alarmDisplayViewOperationLogs"/>
+                    <include name="alarmDisplayRelevanceAlarm"/>
+                    <include name="alarmDisplayViewCancel"/>
                 </methods>
             </class>
         </classes>
     </test>
+    <test name="告警数量，确认、前转、解决、查看、筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayAlarmsNumber"/>
+                    <include name="alarmDisplayPendingAlarm"/>
+                    <include name="alarmDisplaySearch"/>
+                    <include name="alarmDisplayConfirmationClick"/>
+                    <include name="alarmDisplayConfirmation"/>
+                    <include name="alarmDisplayChooseFunction"/>
+                    <include name="alarmDisplayResolvedButton3"/>
+                    <include name="alarmDisplayResolvedOfClearMemory"/>
+                    <include name="alarmDisplayResolvedOfClearMemoryHintConfirm"/>
+                    <include name="alarmDisplayConfirmedAlarm"/>
+                    <include name="alarmDisplayForwardShiftingClick"/>
+                    <include name="alarmDisplayForwardShifting"/>
+                    <include name="alarmDisplayForwardShiftingHintConfirm"/>
+                    <include name="alarmDisplaySelectClear"/>
+                    <include name="alarmDisplayForwardShiftingAlarm"/>
+                    <include name="alarmDisplayResolvedButton"/>
+                    <include name="alarmDisplayResolvedOfResolved"/>
+                    <include name="alarmDisplayResolvedOfResolvedHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction2"/>
+                    <include name="alarmDisplayResolvedButton2"/>
+                    <include name="alarmDisplayResolvedOfIgnore"/>
+                    <include name="alarmDisplayResolvedOfIgnoreHintConfirm"/>
+                    <include name="alarmDisplayResolvedAlarm"/>
+                    <include name="alarmDisplayIgnoreAlarm"/>
+                    <include name="alarmDisplayAlarmsNumberVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="告警等级、筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayForwardShiftingAlarm"/>
+                    <include name="alarmDisplayAlarmRank"/>
+                    <include name="alarmDisplaySelect"/>
+                    <include name="alarmDisplayColumnSettingAllCancle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test name="集中告警-告警配置-降噪策略-告警分类规则" preserve-order="true">-->
+    <!--<classes>-->
+    <!--<class name="com.testcases.VicubeSystem">-->
+    <!--<methods>-->
+    <!--<include name="vicubeLogin"/>-->
+    <!--<include name="promptMessage"/>-->
+    <!--<include name="concentratedAlarm"/>-->
+    <!--<include name="alarmConfig"/>-->
+    <!--<include name="denoiseStrategy"/>-->
+    <!--<include name="denoiseStrategyChooseAlarmClassifyRules"/>-->
+    <!--<include name="alarmClassifyRulesCreateBasicSetting"/>-->
+    <!--<include name="alarmClassifyRulesCreateRulesConditionSetting"/>-->
+    <!--<include name="alarmClassifyRulesCreateRulesConditionAdvancedSetting"/>-->
+    <!--<include name="alarmClassifyRulesCreateAlarmClassifySetting"/>-->
+    <!--<include name="denoiseStrategyAlarmClassifyRulesSelect"/>-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+    </listeners>
 </suite>
-

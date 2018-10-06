@@ -7,9 +7,12 @@
     <groupId>autotest</groupId>
     <artifactId>test</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--设置Maven的编码格式-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -184,7 +187,23 @@
             <version>3.1.5</version>
             <!--<scope>provided</scope>-->
         </dependency>
+        <dependency>
+            <groupId>de.openkeyword</groupId>
+            <artifactId>autoit</artifactId>
+            <version>0.1.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sf.jacob-project/jacob -->
+        <!--<dependency>-->
+            <!--<groupId>net.sf.jacob-project</groupId>-->
+            <!--<artifactId>jacob</artifactId>-->
+            <!--<version>1.14.3</version>-->
+        <!--</dependency>-->
+
+
+
     </dependencies>
+    <!-- https://mvnrepository.com/artifact/de.openkeyword/autoit -->
+
 
 
     <build>
@@ -199,6 +218,12 @@
                         <suiteXmlFile>
                             ./src/com.test.page/VicubeSystemSetup.xml
                         </suiteXmlFile>
+                        <suiteXmlFile>
+                            ./src/com.test.page/VicubeConcentratedAlarmTwo.xml
+                        </suiteXmlFile>
+                        <suiteXmlFile>
+                            ./src/com.test.page/VicubeConcentratedAlarm.xml
+                        </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -212,4 +237,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

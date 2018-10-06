@@ -166,11 +166,14 @@ selectnotevalue:
 selectvalidvalue:
   type: xpath
   value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[9]"
-#用户管理-筛选结果勾选用户
+#用户管理-筛选结果勾选用户-第一行
 selectchooseuser:
   type: xpath
-  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[1]"
-
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[1]/center/input"
+#用户管理-筛选结果勾选用户-第二行
+selectchooseuser2:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[2]/td[1]/center/input"
 #用户管理-编辑
 edit:
   type: link
@@ -246,9 +249,6 @@ delete:
 deletehint:
   type: xpath
   value: "//*/span[@id='content']"
-deletehint:
-  type: xpath
-  value: "//*/span[@id='content']"
 #用户管理-删除-确认
 deleteaffirm:
   type: xpath
@@ -290,8 +290,10 @@ domainNameSelectBox:
   value: "//*[@compile='formHtml']/ol/button"
 #工作组管理-新增-域名
 createDomainName:
-  type: xpath
-  value: "//*[@compile='formHtml']/ol/div/ul/li[1]/a"
+  type: link
+  value: rootDomain
+#  type: xpath
+#  value: "//*[@compile='formHtml']/ol/div/ul/li[1]/a"
 #工作组管理-新增-备注
 creatWorkingGroupeNote:
   type: xpath
@@ -300,8 +302,10 @@ creatWorkingGroupeNote:
 
 #工作组管理-编辑-域名
 editDomainName:
-  type: xpath
-  value: "//*[@compile='formHtml']/ol/div/ul/li[2]/a"
+  type: link
+  value: rootDomain
+#  type: xpath
+#  value: "//*[@compile='formHtml']/ol/div/ul/li[2]/a"
 
 #工作组管理-分配用户
 assignmentUser:
@@ -356,6 +360,9 @@ chooseprivilegebj-ups1:
 chooseWorkingGroup:
   type: xpath
   value: "//*[@class='col-sm-5']/select[@name='from[]']/option[1]"
+chooseWorkingGroupSelect:
+  type: xpath
+  value: "//*/div[@class='col-md-12']/div[1]/div[1]/select[@class='form-control']"
 #用户管理、工作组管理-分配权限-选择权限：
 choosePrivilege:
   type: xpath
@@ -447,6 +454,10 @@ selectgrouprightmove:
 commonsave:
   type: link
   value: 保存
+#系统管理
+systemManagement:
+  type: link
+  value: 系统设置
 
 #新用户-视图配置-“+”
 userviewconfigplus:
@@ -523,7 +534,14 @@ functionName:
 selectOperationID:
   type: xpath
   value: "//*/div[2]/table/tbody/tr[1]/td[4]"
-
+#用户管理、工作组管理-分配权限-菜单模块
+menuModle:
+  type: xpath
+  value: "//*[@class='nav nav-tabs']/li[2]"
+#用户管理、工作组管理-分配权限-菜单模块-系统管理
+menuModleSystemManagement:
+  type: xpath
+  value: "//*[@class='level0 line']/li[1]/span[2]"
 
 
 
@@ -554,23 +572,39 @@ denoisestrategy:
 #降噪策略-全部规则
 allrules:
   type: xpath
-  value: "//*[@id=\"cbAlertRuleType\"]/button[@class='btn btn-default dropdown-toggle']"
+  value: "//*[@id='cbAlertRuleType']/button[@class='btn btn-default dropdown-toggle']"
 #降噪策略-告警分类规则:
 alarmclassifyrules:
   type: link
   value: 告警分类规则
+#降噪策略-告警合并规则:
+alarmMergeRules:
+  type: link
+  value: 告警合并规则
 #降噪策略-告警分类规则-新建-基础设置-规则名称（值）
 rulesname:
   type: id
   value: alertRuleRuleTitle
+#降噪策略-告警分类规则-新建-基础设置-优先级-高
+priority:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[1]/form/div[3]/div/label[3]"
+#降噪策略-告警分类规则-新建-基础设置-优先级-低
+priorityLow:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[1]/form/div[3]/div/label[1]"
+#降噪策略-告警分类规则-新建-基础设置-启用
+startOrClose:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[1]/form/div[4]/div/label/input"
 #降噪策略-告警分类规则-新建-基础设置-下一步
 basicsnextstep:
   type: xpath
-  value: "//*[@id=\"alertRuleMadal\"]/div/div/div[2]/div/div[2]/button[1]"
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[1]"
 #降噪策略-告警分类规则-新建-规则条件设置-域
 domain:
   type: xpath
-  value: "//*[@id=\"alertRuleMadal\"]/div/div/div[2]/div/div[1]/section[2]/form/div[1]/div/div/div"
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[1]/div/div/div"
 #降噪策略-告警分类规则-新建-规则条件设置-选择域（值）
 choosedomain:
   type: link
@@ -578,15 +612,15 @@ choosedomain:
 #降噪策略-告警分类规则-新建-规则条件设置-类型
 type:
   type: xpath
-  value: "//*[@id=\"alertRuleMadal\"]/div/div/div[2]/div/div[1]/section[2]/form/div[2]/div/div/div"
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[2]/div/div/div"
 #降噪策略-告警分类规则-新建-规则条件设置-选择类型（值）
 choosetype:
   type: link
-  value: Oracle
+  value: 操作系统
 #降噪策略-告警分类规则-新建-规则条件设置-告警类型选择
 alarmtype:
   type: xpath
-  value: "//*[@id=\"alertRuleMadal\"]/div/div/div[2]/div/div[1]/section[2]/form/div[3]/div/div/div"
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[3]/div/div/div"
 #降噪策略-告警分类规则-新建-规则条件设置-选择告警类型选择（值）
 choosealarmtype:
   type: link
@@ -646,12 +680,453 @@ choosenewalarmrank:
 #降噪策略-告警分类规则-新建-告警分类设置-保存
 alarmclassifyconfigsave:
   type: xpath
-  value: "//*[@id=\"alertRuleMadal\"]/div/div/div[2]/div/div[2]/button[2]"
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
 
 
-##降噪策略-筛选-规则名称
+#降噪策略-筛选-规则名称
 selectrulesname:
+  type: xpath
+  value: "//*/div[@class='col-md-4']/div/input"
+#降噪策略-筛选-状态
+selectChooseStatus:
+  type: xpath
+  value: "//*[@id='ruleQueryDiv']/div[1]/form/div/div[2]/div/ol/button"
+#降噪策略-筛选-状态-启用
+selectChooseStatusStartUsing:
+  type: xpath
+  value: "//*[@id='ruleQueryDiv']/div[1]/form/div/div[2]/div/ol/div/ul/li[1]/a"
+#降噪策略-筛选-状态-停用
+selectChooseStatusBlockUp:
+  type: xpath
+  value: "//*[@id='ruleQueryDiv']/div[1]/form/div/div[2]/div/ol/div/ul/li[2]/a"
+
+
+
+#降噪策略-筛选-筛选结果-勾选规则
+selectChooseRules:
+  type: xpath
+  value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input"
+#降噪策略-筛选-筛选结果-规则名称
+selectRulesName:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[2]"
+#降噪策略-筛选-筛选结果-规则类型
+selectRulesType:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[3]"
+#降噪策略-筛选-筛选结果-节点类型
+selectNodeType:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[4]"
+#降噪策略-筛选-筛选结果-域
+selectDomain:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[5]"
+#降噪策略-筛选-筛选结果-优先级
+selectPriority:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[6]"
+#降噪策略-筛选-筛选结果-例外
+selectException:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[7]"
+#降噪策略-筛选-筛选结果-编辑时间
+selectEditTime:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[8]"
+#降噪策略-筛选-筛选结果-状态
+selectStatus:
+    type: xpath
+    value: "//*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td[9]/center/img"
+
+#菜单-集中告警-告警展示
+alarmDisplay:
+  type: xpath
+  value: "//*[@id='sidebar']/div/div[1]/ul/li[2]/ul/li[1]/a"
+#菜单-集中告警-告警展示-待处理告警
+alarmDisplayPendingAlarm:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[1]"
+#菜单-集中告警-告警展示-待处理告警-数量
+alarmDisplayPendingAlarmNumber:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[1]/b"
+#菜单-集中告警-告警展示-已确认告警
+alarmDisplayConfirmedAlarm:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[2]"
+#菜单-集中告警-告警展示-已确认告警-数量
+alarmDisplayConfirmedAlarmNumber:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[2]/b"
+#菜单-集中告警-告警展示-已前转告警
+alarmDisplayForwardShiftingAlarm:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[3]"
+#菜单-集中告警-告警展示-已前转告警-数量
+alarmDisplayForwardShiftingAlarmNumber:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[3]/b"
+#菜单-集中告警-告警展示-已解决告警
+alarmDisplayResolvedAlarm:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[4]"
+#菜单-集中告警-告警展示-已解决告警-数量
+alarmDisplayResolvedAlarmNumber:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[4]/b"
+#菜单-集中告警-告警展示-已忽略告警
+alarmDisplayIgnoreAlarm:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[5]"
+#菜单-集中告警-告警展示-已忽略告警-数量
+alarmDisplayIgnoreAlarmNumber:
+  type: xpath
+  value: "//*[@id='content']/div[2]/div/div[1]/div/table/tbody/tr/td[5]/b"
+#菜单-集中告警-告警展示-列表告警数量
+alarmDisplayListNumber:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr"
+#菜单-集中告警-告警展示-列表告警数量-值
+alarmDisplayListNumberValue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[1]"
+
+#菜单-集中告警-告警展示-确认
+CentralizedAlarmConfirmation:
+  type: link
+  value: 确认
+#菜单-集中告警-告警展示-前转
+CentralizedAlarmForwardShifting:
+  type: link
+  value: 前转
+#菜单-集中告警-告警展示-解决
+CentralizedAlarmResolved:
+  type: link
+  value: 解决
+#菜单-集中告警-告警展示-查看
+CentralizedAlarmView:
+  type: link
+  value: 查看
+#菜单-集中告警-告警展示-筛选
+CentralizedAlarmSelect:
+  type: link
+  value: 筛选
+#菜单-集中告警-告警展示-筛选条件-CI域选择框
+CentralizedAlarmSelectCIDomain:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[1]/div[1]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-CI类型选择框
+CentralizedAlarmSelectCIType:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[1]/div[2]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-CI实例选择框
+CentralizedAlarmSelectCICase:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[1]/div[3]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-告警类型选择框
+CentralizedAlarmSelectAlarmType:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[2]/div[1]/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-采集系统选择框
+CentralizedAlarmSelectCollectSystem:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[2]/div[2]/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-选择CI域值
+CentralizedAlarmSelectCIDomainValue:
+  type: link
+  value: rootDomain
+#菜单-集中告警-告警展示-筛选条件-选择CI类型
+CentralizedAlarmSelectCITypeValue:
+  type: link
+  value: 操作系统
+#菜单-集中告警-告警展示-筛选条件-选择CI实例
+CentralizedAlarmSelectCICaseValue:
+  type: link
+  value: StandardLinux_Test1
+#菜单-集中告警-告警展示-筛选条件-选择告警类型
+CentralizedAlarmSelectAlarmTypeValue:
+  type: link
+  value: rootDomain
+#菜单-集中告警-告警展示-筛选条件-选择采集系统
+CentralizedAlarmSelectCollectSystemValue:
+  type: link
+  value: Zabbix
+#菜单-集中告警-告警展示-筛选条件-收起
+CentralizedAlarmSelectCollectPutAway:
+  type: link
+  value: 收起
+#菜单-集中告警-告警展示-筛选条件-清空
+CentralizedAlarmSelectCollectClear:
+  type: link
+  value: 清空
+#菜单-集中告警-告警展示-确认-备注
+alarmDisplayConfirmationRemark:
   type: id
-  value: ruleTitle
+  value: claimRemark
+#菜单-集中告警-告警展示-确认-备注提示信息
+alarmDisplayConfirmationRemarkHintMessage:
+  type: xpath
+  value: "//*/div/span[@id='content']"
+#菜单-集中告警-告警展示-解决-处理意见
+alarmDisplayResovledOpinion:
+  type: id
+  value: closeRemark
+#菜单-集中告警-告警展示-解决-处理意见-设置为忽略按钮
+alarmDisplayResovledOpinionIgnoreButton:
+  type: xpath
+  value: "//*[@id='closeOption']/label[3]/input"
+#菜单-集中告警-告警展示-解决-处理意见-解决确定
+alarmDisplayResovledOpinionConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog4']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-解决-处理意见-忽略确定
+alarmDisplayResovledOpinionIgnoreConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog5']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-解决-处理意见-清楚内存确定
+alarmDisplayResolvedOfClearMemoryConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog2']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-解决-处理意见-清出内存
+alarmDisplayResovledClearMemoryButton:
+  type: xpath
+  value: "//*[@id='closeOption']/label[4]/input"
+#菜单-集中告警-告警展示-告警确认-备注-确定
+alarmDisplayConfirm:
+  type: xpath
+  value: "//*[@id='claimModal']/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-告警确认提示-确认
+alarmDisplayHintMessageConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog1']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-告警解决-处理意见-确定
+alarmDisplayOpinionConfirm:
+  type: xpath
+  value: "//*[@id='closeModal']/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-告警前转-级别选择
+alarmDisplayAlarmForwardShiftingLevelChoose:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[3]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-级别选择-值
+alarmDisplayAlarmForwardShiftingLevelChooseValue:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[3]/div/ol/div/ul/li[1]"
+#菜单-集中告警-告警展示-告警前转-故障分类
+alarmDisplayAlarmForwardShiftingFaultClassify:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[4]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-级别选择-值
+alarmDisplayAlarmForwardShiftingFaultClassifyValue:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[4]/div/ol/div/ul/li[1]"
 
 
+#菜单-集中告警-告警展示-告警前转-直接转给用户(单选按钮）
+alarmDisplayAlarmForwardShiftingDirectToUser:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[2]/div/label[3]/input"
+#菜单-集中告警-告警展示-告警前转-前转类型
+alarmDisplayAlarmForwardShiftingForwardShiftingClassify:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[5]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-前转类型-值
+alarmDisplayAlarmForwardShiftingForwardShiftingClassifyValue:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[5]/div/ol/div/ul/li[1]/a"
+#菜单-集中告警-告警展示-告警前转-前转用户
+alarmDisplayAlarmForwardShiftingForwardShiftingUser:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[6]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-前转用户-值
+alarmDisplayAlarmForwardShiftingForwardShiftingUserValue:
+  type: xpath
+  value: "//*/div[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div/div[6]/div/ol/div/ul/li[1]/a"
+
+
+
+
+#菜单-集中告警-告警展示-告警前转-确定
+alarmDisplayForwardShiftingConfirm:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div[2]/input[1]"
+#菜单-集中告警-告警展示-告警前转-取消
+alarmDisplayForwardShiftingCancel:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div[2]/input[2]"
+#菜单-集中告警-告警展示-告警前转提示-确认
+alarmDisplayForwardShiftingHintMessageConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog3']/div[2]/div/div/div/div[3]/button"
+
+#菜单-集中告警-告警展示-查看-其他信息
+alarmDisplayViewOtherInformation:
+  type: xpath
+  value: "//*/div/div/ul[@class='nav nav-tabs underline ng-scope']/li[2]/a"
+#菜单-集中告警-告警展示-查看-前转
+alarmDisplayViewForwardShifting:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-查看-解决
+alarmDisplayViewResolved:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[2]"
+#菜单-集中告警-告警展示-查看-事件查询
+alarmDisplayViewEventQuery:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[3]"
+#菜单-集中告警-告警展示-查看-事件查询-告警事件查询
+alarmDisplayViewEventQueryTitle:
+  type: xpath
+  value: "//*[@id='eventModal']/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警展示-查看-事件查询-事件信息
+alarmDisplayViewEventQueryEventMessage:
+  type: xpath
+  value: "//*/div[3]/div/div/div[2]/table/tbody/tr[1]/td[3]"
+#菜单-集中告警-告警展示-查看-事件查询-关闭
+alarmDisplayViewEventQueryClose:
+  type: xpath
+  value: "//*[@id='eventModal']/div/div/div[3]/a"
+#菜单-集中告警-告警展示-查看-操作日志
+alarmDisplayViewOperationLogs:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[4]"
+#菜单-集中告警-告警展示-查看-操作日志-告警操作日志查看
+alarmDisplayViewOperationLogsTitle:
+  type: xpath
+  value: "//*[@id='operlogModal']/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警展示-查看-操作日志-关闭
+alarmDisplayViewOperationLogsClose:
+  type: xpath
+  value: "//*[@id='operlogModal']/div/div/div[3]/a"
+
+#菜单-集中告警-告警展示-查看-关联告警
+alarmDisplayRelevanceAlarm:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[5]"
+#菜单-集中告警-告警展示-查看-关联告警-关联告警查看
+alarmDisplayRelevanceAlarmTitle:
+  type: xpath
+  value: "//*[@id='relationModal']/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警展示-查看-关联告警-关闭
+alarmDisplayRelevanceAlarmClose:
+  type: xpath
+  value: "//*[@id='relationModal']/div/div/div[3]/a"
+#菜单-集中告警-告警展示-查看-取消
+alarmDisplayViewCancel:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[6]"
+#菜单-集中告警-告警展示-查看-前转-提示信息确定按钮
+alarmDisplayViewForwardShiftingHintConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog2']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-查看-解决-解决-提示信息确定按钮
+alarmDisplayViewResolvedOfResolvedHintConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog3']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-查看-解决-忽视-提示信息确定按钮
+alarmDisplayViewResolvedOfIgnoreHintConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog4']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-自动刷新-打开
+alarmDisplayAutoRefreshOpen:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[2]/i"
+#菜单-集中告警-告警展示-自动刷新-打开
+alarmDisplayAutoRefreshClose:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[2]/i"
+#系统-标题-空白处
+systemTitleblank:
+  type: xpath
+  value: "//*[@id='header']/div"
+#菜单-集中告警-告警展示-查看-确认（多条选择提示）
+alarmDisplayViewMultitermHintConfirm:
+  type: xpath
+  value: "//*[@id='ngdialog1']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-搜索框
+alarmDisplaySearchBox:
+  type: id
+  value: optionsKeyWords
+#菜单-集中告警-告警展示-搜索按钮
+alarmDisplaySearchButton:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/form/div/button"
+#菜单-集中告警-告警展示-列设置
+alarmDisplayColumnSetting:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[1]"
+#菜单-集中告警-告警展示-列设置-是否显示框
+alarmDisplayColumnSettingisDisplay:
+  type: xpath
+  value: "//*[@id='myHtml']/div[6]/div/div/div[2]/div/ol/li/div[2]/div/label/input"
+#菜单-集中告警-告警展示-列设置-确认
+alarmDisplayColumnSettingConfirm:
+  type: xpath
+  value: "//*[@id='myHtml']/div/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-列-是否显示
+alarmDisplayColumnDisplay:
+  type: xpath
+  value: "//*/div[2]/div/div/div[1]/div/table/thead/tr/th"
+#菜单-集中告警-告警展示-列-消息内容
+alarmDisplayColumnDisplayMessageContent:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[8]"
+
+#菜单-集中告警-告警展示-告警级别-L5
+alarmDisplayAlarmRankL5:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[4]/span"
+#菜单-集中告警-告警展示-告警级别-L4
+alarmDisplayAlarmRankL4:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[5]/span"
+#菜单-集中告警-告警展示-告警级别-L3
+alarmDisplayAlarmRankL3:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[6]/span"
+#菜单-集中告警-告警展示-告警级别-L2
+alarmDisplayAlarmRankL2:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[7]/span"
+#菜单-集中告警-告警展示-告警级别-L1
+alarmDisplayAlarmRankL1:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[8]/span"
+
+#降噪策略-告警合并规则-新建-告警合并设置-告警内容
+alarmContent:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label[7]/input"
+#降噪策略-告警合并规则-新建-告警合并设置-最大合并数量
+maxMergeNumber:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[2]/input"
+#降噪策略-告警合并规则-新建-告警合并设置-合并时间窗口
+mergeTimeWindows:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[3]/div/input"
+#降噪策略-告警合并规则-新建-告警合并设置-保存
+alarmMergeConfigSave:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[5]/button[2]"
+#启用
+startUsing:
+  type: link
+  value: 启用
+#停用
+blockUp:
+  type: link
+  value: 停用
+#菜单-集中告警-告警配置-降噪策略-列表告警数量
+alarmRulesListNumber:
+  type: xpath
+  value: "//*/div[@id='alertRuleManage']/div/div[2]/div/div[3]/div/table/tbody/tr"
+#菜单-集中告警-告警配置-降噪策略-列表告警数量-值
+alarmRulesListNumberValue:
+  type: xpath
+  value: "//*/div[@id='alertRuleManage']/div/div[2]/div/div[3]/div/table/tbody/tr/td[1]"
+#菜单-集中告警-告警配置-降噪策略-筛选区域
+denoiseStrategySelectArea:
+  type: id
+  value: ruleQueryDiv

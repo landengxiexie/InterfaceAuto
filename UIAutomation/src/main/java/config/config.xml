@@ -13,11 +13,16 @@
     <!--<postgresqlpassword>postgres</postgresqlpassword>-->
     <!--<postgresqlsql>select d from t_user  where email='edit0015@edit.com'</postgresqlsql>-->
 
+    <!--121-->
     <postgresqlhost>jdbc:postgresql://192.168.20.122:5432/v4.3test_main</postgresqlhost>
+    <!--175-->
+    <!--<postgresqlhost>jdbc:postgresql://192.168.20.122:5432/vicube_autotest_main</postgresqlhost>-->
+    <!--143-->
+    <!--<postgresqlhost>jdbc:postgresql://192.168.20.142:5432/devdb_main</postgresqlhost>-->
     <postgresqlusername>postgres</postgresqlusername>
     <postgresqlpassword>postgres</postgresqlpassword>
+    <!--<postgresqlpassword>Ngecc_2016#_postgres</postgresqlpassword>-->
     <postgresqlsql>select encrypted_pwd from t_user  where email='edit0015@edit.com'</postgresqlsql>
-
 
     <filePath>e:/abcdef.xlsx</filePath>
     <yamlfile>Vicube</yamlfile>

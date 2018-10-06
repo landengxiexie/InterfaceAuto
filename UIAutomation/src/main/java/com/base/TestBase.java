@@ -16,7 +16,7 @@ import java.util.Map;
  * @date 2018/5/16 001615:03
  */
 @SuppressWarnings("ALL")
-public class TestBase {
+public class TestBase  {
     private ParseFunction pf;
     public Map<String, String> commonMap;
     private WebDriver driver;
@@ -48,7 +48,7 @@ public class TestBase {
         return query;
     }
 
-    @DataProvider(name = "xmldata")
+    @DataProvider(name = "xmldata",parallel = true)
     public Object[][] providerMethod(Method method) {
         this.initialPF();
         this.getCommonMap();

@@ -19,7 +19,7 @@ public class test extends TestBase {
     @Test
     public void xx() throws InterruptedException {
 //        打开，url
-        driver.get("http://192.168.20.121:48080/h5/");
+        driver.get("http://192.168.20.143:48080/h5/");
         Thread.sleep(4000);
 //        登陆
         WebElement element = driver.findElement(By.xpath("//*[@id='page-container']/div/div/div/div/div[2]/div[2]/form/div[1]/input"));
@@ -27,44 +27,56 @@ public class test extends TestBase {
         element.sendKeys("administrator");
         WebElement element1 = driver.findElement(By.xpath("//*[@id='page-container']/div/div/div/div/div[2]/div[2]/form/div[2]/input"));
         element1.clear();
-        element1.sendKeys("vicube2017");
+        element1.sendKeys("@Vic_2017_Rg");
         driver.findElement(By.xpath("//*[@id='page-container']/div/div/div/div/div[2]/div[2]/form/div[3]/button")).click();
 //点击，系统设置
         Thread.sleep(5000);
         driver.findElement(By.xpath("//*[@id='sidebar']/div/div[1]/ul/li[7]/a")).click();
-        Thread.sleep(3000);
-
-//       点击，审计管理
-        driver.findElement(By.xpath("//*[@id=\"sidebar\"]/div/div[1]/ul/li[7]/ul/li[3]")).click();
-        Thread.sleep(3000);
-//选择，日志
-        driver.findElement(By.xpath("//*/div[2]/table/tbody/tr[1]/td[1]")).click();
-        Thread.sleep(3000);
-//       点击，查看
-        driver.findElement(By.xpath("//*[@class=\"dataTables_wrapper form-inline dt-bootstrap no-footer\"]/div[1]/a[1]")).click();
-        Thread.sleep(3000);
-//      验证，是否打开，审计详情
-        String element2 = driver.findElement(By.xpath("//*[@id=\"detailForm\"]/div/div/div/h4")).getText();
-        System.out.println(element2);
-        Thread.sleep(3000);
-//      关闭，审计详情
-        driver.findElement(By.xpath("//*[@id=\"detailForm\"]/div/div/form/div[2]/div/div/button")).click();
-        Thread.sleep(3000);
-//        点击筛选
-        driver.findElement(By.xpath("//*[@class=\"dataTables_wrapper form-inline dt-bootstrap no-footer\"]/div[1]/a[2]")).click();
-        Thread.sleep(3000);
-//      筛选，录入，操作账号
-        WebElement element3 = driver.findElement(By.xpath("//*[@compile='queryHtml']/form/div[1]/div[2]/div/input"));
-        element3.sendKeys("user0015");
-        Thread.sleep(3000);
-
-//       点击，筛选，确定
-        driver.findElement(By.linkText("确定")).click();
-        Thread.sleep(3000);
-//     验证，筛选结果，
-        String text = driver.findElement(By.xpath("//*/div[2]/table/tbody/tr[1]/td[4]")).getText();
-        System.out.println(text);
-        Thread.sleep(3000);
+// 点击，集中告警
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id=\"sidebar\"]/div/div[1]/ul/li[2]/a/span")).click();
+//点击，告警配置
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id=\"sidebar\"]/div/div[1]/ul/li[2]/ul/li[3]/a")).click();
+//点击，集中告警-告警配置-降噪策略
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='sidebar']/div/div[1]/ul/li[2]/ul/li[3]/ul/li[1]/a")).click();
+//  点击，全部规则
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='cbAlertRuleType']/button[@class='btn btn-default dropdown-toggle']")).click();
+//点击，告警分类规则
+        Thread.sleep(1000);
+        driver.findElement(By.linkText("告警分类规则")).click();
+//点击，新建
+        Thread.sleep(1000);
+        driver.findElement(By.linkText("新建")).click();
+//录入，规则名称
+        Thread.sleep(1000);
+        driver.findElement(By.id("alertRuleRuleTitle")).sendKeys("test Strategy");
+//点击，下一步
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[1]")).click();
+//点击，域
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[1]/div/div/div")).click();
+//        选择，域
+        Thread.sleep(1000);
+        driver.findElement(By.linkText("Domain")).click();
+//点击，类型
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[2]/div/div/div")).click();
+//       选择类型，值
+        Thread.sleep(1000);
+        driver.findElement(By.linkText("监控对象")).click();
+//点击，告警类型选择
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[3]/div/div/div")).click();
+//       选择类型，告警类型选择值
+        Thread.sleep(1000);
+        driver.findElement(By.linkText("厦门告警")).click();
+//点击，下一步
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]")).click();
 
 
     }

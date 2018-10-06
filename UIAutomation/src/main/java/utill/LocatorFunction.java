@@ -87,7 +87,7 @@ public class LocatorFunction {
                 }
             });
         } catch (Exception e) {
-            LogFunction.logError(by.toString() + "--is not exist until--" + waitTime);
+            LogFunction.logError(by.toString() + "--is not exist until--" + "TimeOut:"+waitTime);
         }
         return element;
     }

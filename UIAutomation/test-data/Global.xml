@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <data>
-    <VicubeUrl>http://vicube.test.com:48080/h5</VicubeUrl>
-    <!--<VicubeUrl>http://192.168.20.175:48080/h5</VicubeUrl>-->
+    <!--<VicubeUrl>http://vicube.test.com:48080/h5</VicubeUrl>-->
+    <VicubeUrl>http://192.168.20.121:48080/h5</VicubeUrl>
 </data>
