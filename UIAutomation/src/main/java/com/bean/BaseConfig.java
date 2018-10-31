@@ -23,6 +23,11 @@ public class BaseConfig {
     public static String postgresqlusername;
     public static String postgresqlpassword;
     public static String postgresqlsql;
+    public static String chromeDownloadPathOfWindows;
+    public static String chromeDownloadPathOfLinux;
+    public static String commonObjectConfirm;
+    public static String maxRunCount;
+
 
 
     static {
@@ -44,6 +49,12 @@ public class BaseConfig {
         postgresqlusername = p.getElementText("/*/postgresqlusername");
         postgresqlpassword = p.getElementText("/*/postgresqlpassword");
         postgresqlsql = p.getElementText("/*/postgresqlsql");
+        chromeDownloadPathOfWindows = p.getElementText("/*/chromeDownloadPathOfWindows");
+        chromeDownloadPathOfLinux = p.getElementText("/*/chromeDownloadPathOfLinux");
+        commonObjectConfirm=p.getElementText("/*/commonObjectConfirm");
+        maxRunCount=p.getElementText("/*/maxRunCount");
+
+
     }
 
 }

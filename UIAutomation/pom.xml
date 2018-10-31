@@ -9,7 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <!--设置Maven的编码格式-->
     <properties>
+        <!-- 文件拷贝时的编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     </properties>
 
@@ -204,10 +207,25 @@
     </dependencies>
     <!-- https://mvnrepository.com/artifact/de.openkeyword/autoit -->
 
-
-
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn compile命令时会出现莫名的错误，因为系统默认使用GBK编码 -->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn命令时当发生文件资源copy时将使用系统默认使用GBK编码 -->
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -215,27 +233,24 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
+                        <!--<suiteXmlFile>-->
+                            <!--./src/com.test.page/VicubeSystemSetup.xml-->
+                        <!--</suiteXmlFile>-->
                         <suiteXmlFile>
-                            ./src/com.test.page/VicubeSystemSetup.xml
+                            ./src/com.test.page/VicubeConcentratedAlarmAlarmConfiguration.xml
                         </suiteXmlFile>
                         <suiteXmlFile>
-                            ./src/com.test.page/VicubeConcentratedAlarmTwo.xml
+                            ./src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml
                         </suiteXmlFile>
                         <suiteXmlFile>
-                            ./src/com.test.page/VicubeConcentratedAlarm.xml
+                        ./src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml
+                        </suiteXmlFile>
+                        <suiteXmlFile>
+                            ./src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
-
 </project>

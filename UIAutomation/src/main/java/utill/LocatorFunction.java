@@ -1,4 +1,5 @@
 package utill;
+
 import com.bean.BaseConfig;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,55 +26,79 @@ public class LocatorFunction {
         ParseFunction p = new ParseFunction();
         p.setYamlFile(yamlfile);
         p.getYamlFile();
-        this.map=p.map;
+        this.map = p.map;
         this.driver = driver;
     }
 
-    private WebElement getLocator(String tagName,String replace,boolean wait){
-        WebElement element=null;
-        if (map.containsKey(tagName)){
-            Map<String,String> m=map.get(tagName);
-            String type=m.get("type");
-            String value=m.get("value");
-            if (replace!=null){
-                value=this.getLocatorString(value,replace);
+    private WebElement getLocator(String tagName, String replace, boolean wait) {
+        WebElement element = null;
+        if (map.containsKey(tagName)) {
+            Map<String, String> m = map.get(tagName);
+            String type = m.get("type");
+            String value = m.get("value");
+            if (replace != null) {
+                value = this.getLocatorString(value, replace);
             }
-            By by=this.getBy(type,value);
-            if (wait){
-                element=this.WaitForElement(by);
-                boolean flag=this.waitElementToBeDisplayed(element);
+            By by = this.getBy(type, value);
+            if (wait) {
+                element = this.WaitForElement(by);
+                boolean flag = this.waitElementToBeDisplayed(element);
                 if (!flag) {
                     element = null;
                 }
-            }else {
+            } else {
                 try {
-                    element=driver.findElement(by);
-                }catch (Exception e){
-                    element=null;
+                    element = driver.findElement(by);
+                } catch (Exception e) {
+                    element = null;
                 }
             }
-        }else {
-            LogFunction.logError("locator "+tagName+"--元素是不存在的--"+yamlfile+".yaml");
+        } else {
+            LogFunction.logError("locator " + tagName + "--元素是不存在的--" + yamlfile + ".yaml");
         }
         return element;
     }
 
-    private List<WebElement> getLocator(String tagName){
-        List<WebElement> elements =null;
-        if (map.containsKey(tagName)){
-            Map<String,String> m=map.get(tagName);
-            String type=m.get("type");
-            String value=m.get("value");
-            By by=this.getBy(type,value);
-                  elements = driver.findElements(by);
-        }else {
-            LogFunction.logError("locator "+tagName+"--元素是不存在的--"+yamlfile+".yaml");
+    private List<WebElement> getLocator(String tagName) {
+        List<WebElement> elements = null;
+        if (map.containsKey(tagName)) {
+            Map<String, String> m = map.get(tagName);
+            String type = m.get("type");
+            String value = m.get("value");
+            By by = this.getBy(type, value);
+            elements = driver.findElements(by);
+        } else {
+            LogFunction.logError("locator " + tagName + "--元素是不存在的--" + yamlfile + ".yaml");
         }
         return elements;
     }
 
-    private String getLocatorString(String locatorString ,String ss){
-        locatorString=locatorString.replaceFirst("%s",ss);
+    private Boolean getLocator(String tagName, boolean wait) {
+        WebElement element = null;
+        if (map.containsKey(tagName)) {
+            Map<String, String> m = map.get(tagName);
+            String type = m.get("type");
+            String value = m.get("value");
+
+            By by = this.getBy(type, value);
+            if (wait) {
+                element = this.WaitForElement(by);
+            } else {
+                try {
+                    element = driver.findElement(by);
+                } catch (Exception e) {
+                    element = null;
+                }
+            }
+        } else {
+            LogFunction.logError("locator " + tagName + "--元素是不存在的--" + yamlfile + ".yaml");
+        }
+        return element.isDisplayed();
+    }
+
+
+    private String getLocatorString(String locatorString, String ss) {
+        locatorString = locatorString.replaceFirst("%s", ss);
         return locatorString;
     }
 
@@ -87,7 +112,7 @@ public class LocatorFunction {
                 }
             });
         } catch (Exception e) {
-            LogFunction.logError(by.toString() + "--is not exist until--" + "TimeOut:"+waitTime);
+            LogFunction.logError(by.toString() + "--is not exist until--" + "TimeOut:" + waitTime);
         }
         return element;
     }
@@ -104,19 +129,27 @@ public class LocatorFunction {
                     }
                 });
             } catch (Exception e) {
-                LogFunction.logError(element.toString() + "is not displayed");
+                LogFunction.logError(element.toString() + "--is not displayed");
             }
             return wait;
         }
     }
 
+
+
     public List<WebElement> getElements(String tagName) {
         return this.getLocator(tagName);
     }
 
-    public WebElement getElement(String tagName) {
-        return this.getLocator(tagName,null,true);
+    public Boolean getElementIsDisplay(String tagName) {
+        return this.getLocator(tagName,true);
     }
+
+    public WebElement getElement(String tagName) {
+        return this.getLocator(tagName, null, true);
+    }
+
+
     private By getBy(String type, String value) {
         if ("id".equals(type)) {
             by = By.id(value);

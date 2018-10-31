@@ -1,0 +1,405 @@
+# Created at 2018-10-25T19:06:48.883
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2018-10-25T19:06:50.185
+Unexpected IOException with stream: 2018-06-25 19:10:184 utill.LogFunction : 2018-10-25 19:06:50:规则名称，录入：AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:06:50.623
+Unexpected IOException with stream: 2018-06-25 19:10:622 utill.LogFunction : 2018-10-25 19:06:50:勾选优先级高
+
+
+# Created at 2018-10-25T19:06:50.899
+Unexpected IOException with stream: 2018-06-25 19:10:899 utill.LogFunction : 2018-10-25 19:06:50:点击：下一步
+
+
+# Created at 2018-10-25T19:06:50.901
+Unexpected IOException with stream: 2018-06-25 19:10:900 utill.LogFunction : 2018-10-25 19:06:50:-----------------告警分类策略，第一步，基础设置录入完成---------------------
+
+
+# Created at 2018-10-25T19:06:50.902
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateBasicSetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:06:50.906
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateRulesConditionSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:06:50.908
+Unexpected IOException with stream: 2018-06-25 19:10:907 utill.LogFunction : 2018-10-25 19:06:50:alarmClassifyRulesCreateRulesConditionSetting
+
+
+# Created at 2018-10-25T19:06:52.044
+Unexpected IOException with stream: 2018-06-25 19:10:43 utill.LogFunction : 2018-10-25 19:06:52:点击：域
+
+
+# Created at 2018-10-25T19:06:52.342
+Unexpected IOException with stream: 2018-06-25 19:10:341 utill.LogFunction : 2018-10-25 19:06:52:选择域：rootDomain
+
+
+# Created at 2018-10-25T19:06:52.575
+Unexpected IOException with stream: 2018-06-25 19:10:574 utill.LogFunction : 2018-10-25 19:06:52:点击：类型
+
+
+# Created at 2018-10-25T19:06:53.165
+Unexpected IOException with stream: 2018-06-25 19:10:165 utill.LogFunction : 2018-10-25 19:06:53:选择类型：操作系统
+
+
+# Created at 2018-10-25T19:06:53.369
+Unexpected IOException with stream: 2018-06-25 19:10:369 utill.LogFunction : 2018-10-25 19:06:53:点击：下一步
+
+
+# Created at 2018-10-25T19:06:53.371
+Unexpected IOException with stream: 2018-06-25 19:10:370 utill.LogFunction : 2018-10-25 19:06:53:-----------------告警分类策略，第二步，规则条件设置录入完成---------------------
+
+
+# Created at 2018-10-25T19:06:53.374
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateRulesConditionSetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:06:53.378
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateRulesConditionAdvancedSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:06:53.380
+Unexpected IOException with stream: 2018-06-25 19:10:379 utill.LogFunction : 2018-10-25 19:06:53:alarmClassifyRulesCreateRulesConditionAdvancedSetting
+
+
+# Created at 2018-10-25T19:06:54.961
+Unexpected IOException with stream: 2018-06-25 19:10:961 utill.LogFunction : 2018-10-25 19:06:54:规则名称，录入：AutoTest内容关键词
+
+
+# Created at 2018-10-25T19:06:55.147
+Unexpected IOException with stream: 2018-06-25 19:10:145 utill.LogFunction : 2018-10-25 19:06:55:点击：下一步
+
+
+# Created at 2018-10-25T19:06:55.150
+Unexpected IOException with stream: 2018-06-25 19:10:148 utill.LogFunction : 2018-10-25 19:06:55:-----------------告警分类策略，第三步，规则条件高级设置录入完成---------------------
+
+
+# Created at 2018-10-25T19:06:55.152
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateRulesConditionAdvancedSetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:06:55.155
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateAlarmClassifySetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:06:55.156
+Unexpected IOException with stream: 2018-06-25 19:10:155 utill.LogFunction : 2018-10-25 19:06:55:alarmClassifyRulesCreateAlarmClassifySetting
+
+
+# Created at 2018-10-25T19:06:56.369
+Unexpected IOException with stream: 2018-06-25 19:10:368 utill.LogFunction : 2018-10-25 19:06:56:点击：保存
+
+
+# Created at 2018-10-25T19:06:56.370
+Unexpected IOException with stream: 2018-06-25 19:10:369 utill.LogFunction : 2018-10-25 19:06:56:-----------------告警分类策略，最后一步，告警分类设置录入完成且告警分类策略创建成功---------------------
+
+
+# Created at 2018-10-25T19:06:56.372
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesCreateAlarmClassifySetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:06:56.377
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesSelectVerify(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:06:56.378
+Unexpected IOException with stream: 2018-06-25 19:10:378 utill.LogFunction : 2018-10-25 19:06:56:denoiseStrategyAlarmClassifyRulesSelectVerify
+
+
+# Created at 2018-10-25T19:06:57.556
+Unexpected IOException with stream: 2018-06-25 19:10:555 utill.LogFunction : 2018-10-25 19:06:57:点击：筛选
+
+
+# Created at 2018-10-25T19:06:58.665
+Unexpected IOException with stream: 2018-06-25 19:10:664 utill.LogFunction : 2018-10-25 19:06:58:录入规则名称:AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:06:58.804
+Unexpected IOException with stream: 2018-06-25 19:10:803 utill.LogFunction : 2018-10-25 19:06:58:点开：状态选择框
+
+
+# Created at 2018-10-25T19:06:59.015
+Unexpected IOException with stream: 2018-06-25 19:10:14 utill.LogFunction : 2018-10-25 19:06:59:选择状态：启用
+
+
+# Created at 2018-10-25T19:06:59.505
+Unexpected IOException with stream: 2018-06-25 19:10:504 utill.LogFunction : 2018-10-25 19:06:59:点击：确定
+
+
+# Created at 2018-10-25T19:06:59.743
+Unexpected IOException with stream: 2018-06-25 19:10:742 utill.LogFunction : 2018-10-25 19:06:59:勾选筛选结果规则
+
+
+# Created at 2018-10-25T19:06:59.808
+Unexpected IOException with stream: 2018-06-25 19:10:807 utill.LogFunction : 2018-10-25 19:06:59:规则名称为：AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:06:59.868
+Unexpected IOException with stream: 2018-06-25 19:10:868 utill.LogFunction : 2018-10-25 19:06:59:规则类型为：分类
+
+
+# Created at 2018-10-25T19:06:59.934
+Unexpected IOException with stream: 2018-06-25 19:10:934 utill.LogFunction : 2018-10-25 19:06:59:节点类型为：操作系统
+
+
+# Created at 2018-10-25T19:07:00.000
+Unexpected IOException with stream: 2018-06-25 19:10:999 utill.LogFunction : 2018-10-25 19:06:59:域为：rootDomain
+
+
+# Created at 2018-10-25T19:07:00.061
+Unexpected IOException with stream: 2018-07-25 19:10:60 utill.LogFunction : 2018-10-25 19:07:00:优先级为：高
+
+
+# Created at 2018-10-25T19:07:00.137
+Unexpected IOException with stream: 2018-07-25 19:10:136 utill.LogFunction : 2018-10-25 19:07:00:状态为：已启用
+
+
+# Created at 2018-10-25T19:07:00.139
+Unexpected IOException with stream: 2018-07-25 19:10:138 utill.LogFunction : 2018-10-25 19:07:00:-----------------降噪策略告警规则筛选查询校验完成完成---------------------
+
+
+# Created at 2018-10-25T19:07:00.141
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesSelectVerify(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:07:00.145
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesEditBasicSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:00.147
+Unexpected IOException with stream: 2018-07-25 19:10:146 utill.LogFunction : 2018-10-25 19:07:00:alarmClassifyRulesEditBasicSetting
+
+
+# Created at 2018-10-25T19:07:01.479
+Unexpected IOException with stream: 2018-07-25 19:10:479 utill.LogFunction : 2018-10-25 19:07:01:点击：编辑
+
+
+# Created at 2018-10-25T19:07:02.804
+Unexpected IOException with stream: 2018-07-25 19:10:803 utill.LogFunction : 2018-10-25 19:07:02:规则名称，录入：编辑AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:07:02.960
+Unexpected IOException with stream: 2018-07-25 19:10:959 utill.LogFunction : 2018-10-25 19:07:02:勾选优先级低
+
+
+# Created at 2018-10-25T19:07:03.015
+Unexpected IOException with stream: 2018-07-25 19:10:15 utill.LogFunction : 2018-10-25 19:07:03:true
+
+
+# Created at 2018-10-25T19:07:03.143
+Unexpected IOException with stream: 2018-07-25 19:10:142 utill.LogFunction : 2018-10-25 19:07:03:状态更改为：停用
+
+
+# Created at 2018-10-25T19:07:03.336
+Unexpected IOException with stream: 2018-07-25 19:10:334 utill.LogFunction : 2018-10-25 19:07:03:点击：下一步
+
+
+# Created at 2018-10-25T19:07:03.338
+Unexpected IOException with stream: 2018-07-25 19:10:337 utill.LogFunction : 2018-10-25 19:07:03:-----------------告警分类策略，第一步，基础设置编辑完成---------------------
+
+
+# Created at 2018-10-25T19:07:03.340
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesEditBasicSetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:07:03.343
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesEditRulesConditionSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:03.345
+Unexpected IOException with stream: 2018-07-25 19:10:344 utill.LogFunction : 2018-10-25 19:07:03:alarmClassifyRulesEditRulesConditionSetting
+
+
+# Created at 2018-10-25T19:07:04.471
+Unexpected IOException with stream: 2018-07-25 19:10:471 utill.LogFunction : 2018-10-25 19:07:04:点击：下一步
+
+
+# Created at 2018-10-25T19:07:04.473
+Unexpected IOException with stream: 2018-07-25 19:10:472 utill.LogFunction : 2018-10-25 19:07:04:-----------------告警分类策略，第二步，规则条件设置编辑完成---------------------
+
+
+# Created at 2018-10-25T19:07:04.476
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesEditRulesConditionSetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:07:04.479
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesEditRulesConditionAdvancedSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:04.480
+Unexpected IOException with stream: 2018-07-25 19:10:479 utill.LogFunction : 2018-10-25 19:07:04:alarmClassifyRulesEditRulesConditionAdvancedSetting
+
+
+# Created at 2018-10-25T19:07:05.638
+Unexpected IOException with stream: 2018-07-25 19:10:637 utill.LogFunction : 2018-10-25 19:07:05:点击：下一步
+
+
+# Created at 2018-10-25T19:07:05.640
+Unexpected IOException with stream: 2018-07-25 19:10:639 utill.LogFunction : 2018-10-25 19:07:05:-----------------告警分类策略，第三步，规则条件高级设置编辑完成---------------------
+
+
+# Created at 2018-10-25T19:07:05.641
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesEditRulesConditionAdvancedSetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:07:05.645
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmClassifyRulesEditAlarmClassifySetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:05.647
+Unexpected IOException with stream: 2018-07-25 19:10:646 utill.LogFunction : 2018-10-25 19:07:05:alarmClassifyRulesEditAlarmClassifySetting
+
+
+# Created at 2018-10-25T19:07:06.871
+Unexpected IOException with stream: 2018-07-25 19:10:871 utill.LogFunction : 2018-10-25 19:07:06:点击：保存
+
+
+# Created at 2018-10-25T19:07:06.873
+Unexpected IOException with stream: 2018-07-25 19:10:872 utill.LogFunction : 2018-10-25 19:07:06:-----------------告警分类策略，最后一步，告警合并设置编辑完成且告警合并策略创建成功---------------------
+
+
+# Created at 2018-10-25T19:07:06.876
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,alarmClassifyRulesEditAlarmClassifySetting(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-10-25T19:07:06.879
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesEditSelectVerify(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:06.880
+Unexpected IOException with stream: 2018-07-25 19:10:879 utill.LogFunction : 2018-10-25 19:07:06:denoiseStrategyAlarmClassifyRulesEditSelectVerify
+
+
+# Created at 2018-10-25T19:07:08.463
+Unexpected IOException with stream: 2018-07-25 19:10:462 utill.LogFunction : 2018-10-25 19:07:08:录入规则名称:编辑AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:07:08.748
+Unexpected IOException with stream: 2018-07-25 19:10:747 utill.LogFunction : 2018-10-25 19:07:08:点击：确定
+
+
+# Created at 2018-10-25T19:07:08.823
+Unexpected IOException with stream: 2018-07-25 19:10:822 utill.LogFunction : 2018-10-25 19:07:08:告警列表信息为：表中数据为空
+
+
+# Created at 2018-10-25T19:07:08.898
+Unexpected IOException with stream: 2018-07-25 19:10:897 utill.LogFunction : 2018-10-25 19:07:08:点开：状态选择框
+
+
+# Created at 2018-10-25T19:07:09.111
+Unexpected IOException with stream: 2018-07-25 19:10:111 utill.LogFunction : 2018-10-25 19:07:09:选择状态：停用
+
+
+# Created at 2018-10-25T19:07:09.314
+Unexpected IOException with stream: 2018-07-25 19:10:314 utill.LogFunction : 2018-10-25 19:07:09:点击：确定
+
+
+# Created at 2018-10-25T19:07:14.601
+Unexpected IOException with stream: 2018-07-25 19:10:600 utill.LogFunction : 2018-10-25 19:07:14:By.xpath: //*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-25T19:07:14.602
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesEditSelectVerify(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.denoiseStrategyAlarmClassifyRulesEditSelectVerify:5295 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.denoiseStrategyAlarmClassifyRulesEditSelectVerify(VicubeSystem.java:5295)\000A
+
+
+# Created at 2018-10-25T19:07:14.606
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmRulesStartUsing(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:14.607
+Unexpected IOException with stream: 2018-07-25 19:10:607 utill.LogFunction : 2018-10-25 19:07:14:alarmRulesStartUsing
+
+
+# Created at 2018-10-25T19:07:20.652
+Unexpected IOException with stream: 2018-07-25 19:10:651 utill.LogFunction : 2018-10-25 19:07:20:By.xpath: //*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-25T19:07:20.653
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmRulesStartUsing(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmRulesStartUsing:4781 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmRulesStartUsing(VicubeSystem.java:4781)\000A
+
+
+# Created at 2018-10-25T19:07:20.656
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesEditSelect(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:20.658
+Unexpected IOException with stream: 2018-07-25 19:10:657 utill.LogFunction : 2018-10-25 19:07:20:denoiseStrategyAlarmClassifyRulesEditSelect
+
+
+# Created at 2018-10-25T19:07:22.453
+Unexpected IOException with stream: 2018-07-25 19:10:452 utill.LogFunction : 2018-10-25 19:07:22:点击：清空
+
+
+# Created at 2018-10-25T19:07:23.370
+Unexpected IOException with stream: 2018-07-25 19:10:368 utill.LogFunction : 2018-10-25 19:07:23:录入规则名称:编辑AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:07:23.838
+Unexpected IOException with stream: 2018-07-25 19:10:837 utill.LogFunction : 2018-10-25 19:07:23:点击：确定
+
+
+# Created at 2018-10-25T19:07:29.108
+Unexpected IOException with stream: 2018-07-25 19:10:107 utill.LogFunction : 2018-10-25 19:07:29:By.xpath: //*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-25T19:07:29.109
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesEditSelect(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.denoiseStrategyAlarmClassifyRulesEditSelect:5369 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.denoiseStrategyAlarmClassifyRulesEditSelect(VicubeSystem.java:5369)\000A
+
+
+# Created at 2018-10-25T19:07:29.112
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmRulesBlockUp(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:29.114
+Unexpected IOException with stream: 2018-07-25 19:10:113 utill.LogFunction : 2018-10-25 19:07:29:alarmRulesBlockUp
+
+
+# Created at 2018-10-25T19:07:35.327
+Unexpected IOException with stream: 2018-07-25 19:10:326 utill.LogFunction : 2018-10-25 19:07:35:By.xpath: //*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-25T19:07:35.328
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmRulesBlockUp(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmRulesBlockUp:4816 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmRulesBlockUp(VicubeSystem.java:4816)\000A
+
+
+# Created at 2018-10-25T19:07:35.331
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-25T19:07:35.333
+Unexpected IOException with stream: 2018-07-25 19:10:332 utill.LogFunction : 2018-10-25 19:07:35:denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify
+
+
+# Created at 2018-10-25T19:07:36.751
+Unexpected IOException with stream: 2018-07-25 19:10:750 utill.LogFunction : 2018-10-25 19:07:36:点击：清空
+
+
+# Created at 2018-10-25T19:07:37.322
+Unexpected IOException with stream: 2018-07-25 19:10:321 utill.LogFunction : 2018-10-25 19:07:37:录入规则名称:编辑AutoTest告警分类规则
+
+
+# Created at 2018-10-25T19:07:37.606
+Unexpected IOException with stream: 2018-07-25 19:10:605 utill.LogFunction : 2018-10-25 19:07:37:点击：确定
+
+
+# Created at 2018-10-25T19:07:42.926
+Unexpected IOException with stream: 2018-07-25 19:10:925 utill.LogFunction : 2018-10-25 19:07:42:By.xpath: //*/div[@compile='tableHtml']/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-25T19:07:42.929
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify:5413 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify(VicubeSystem.java:5413)\000A
+
+
+# Created at 2018-10-25T19:07:42.931
+Unexpected IOException with stream: 2018-07-25 19:10:931 utill.LogFunction : 2018-10-25 19:07:42:testEnd
+
+

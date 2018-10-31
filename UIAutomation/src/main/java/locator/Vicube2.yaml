@@ -1,0 +1,169 @@
+-----------------------------告警恢复规则-----------------------------------
+
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则
+AlarmRecoveryRules:
+  type: xpath 
+  value: "//*[@id='cbAlertRuleType']/div/ul/li[7]/a"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建
+AlarmRecoveryRulesCreate:
+  type: xpath
+  value: "//*/div[1]/div[1]/div[2]/div/div[1]/a[1]/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-规则名称输入框
+AlarmRecoveryRulesCreateRuleName:
+  type: xpath
+  value: "//*[@id='alertRuleRuleTitle']" 
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-取消1
+AlarmRecoveryRulesCreateConcel1:
+  type: xpath 
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-下一步1
+AlarmRecoveryRulesCreateNextStep1:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[1]" 
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-域下拉列表
+AlarmRecoveryRulesCreateNextStepDomain:
+  type: xpath
+  value: "//*/div[1]/div/div/div/div/div/ol/button/span[1]/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-域下拉列表-BJDomain
+AlarmRecoveryRulesCreateNextStepDomainBJDomain:
+  type: xpath
+  value: "//*/section[2]/form/div[1]/div/div/div/div/div/ol/div/ul/li[2]/a"  
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-类型下拉列表
+AlarmRecoveryRulesCreateNextStepType:
+  type: xpath
+  value: "//*/section[2]/form/div[2]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-类型下拉列表-Linux
+AlarmRecoveryRulesCreateNextStepTypeLinux:
+  type: xpath
+  value: "//*/section[2]/form/div[2]/div/div/div/div/div/ol/div/ul/li[51]/a"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-告警类型下拉列表
+AlarmRecoveryRulesCreateAlarmTypeSelection:
+  type: xpath  
+  value: "//*/section[2]/form/div[3]/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-告警类型下拉列表-Linux-CPU-Alert
+AlarmRecoveryRulesCreateAlarmTypeSelectionLinuxCPUAlert:
+  type: xpath 
+  value: "//*/section[2]/form/div[3]/div/div/div/div/ol/div/ul/li[13]/a"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-下一步2
+AlarmRecoveryRulesCreateStep2:
+  type: xpath  
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-上一步1
+AlarmRecoveryRulesCreateTheLastStep1:
+  type: xpath  
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[1]"                                     
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-取消2
+AlarmRecoveryRulesCreateConcel2:
+  type: xpath  
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[3]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-节点过滤
+AlarmRecoveryRulesCreateNodeFiltering:
+  type: xpath 
+  value: "//*/section[3]/form/div[1]/div/div/div/div/div/ol/button/span[2]"
+ #菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-节点过滤-StandardLinux-Teat1
+AlarmRecoveryRulesCreateNodeFilteringStandardLinux-Teat1:
+  type: xpath 
+  value: "//*/section[3]/form/div[1]/div/div/div/div/div/ol/div/ul/li[11]/a"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-上一步2
+AlarmRecoveryRulesCreateTheLastStep2:
+  type: xpath  
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-下一步3
+AlarmRecoveryRulesCreateStep3:
+  type: xpath  
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-取消3
+AlarmRecoveryRulesCreateConcel3:
+  type: xpath  
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[3]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-恢复时间门限
+AlarmRecoveryRulesCreateRecoveryTimeThreshold:
+  type: xpath
+  value: "//*[@id='alertRuleRecover']/div[1]/div/input"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-恢复选项-忽略
+AlarmRecoveryRulesCreateRecoveryOptionsIgnore:
+  type: xpath 
+  value: "//*[@id='alertRuleRecover']/div[2]/div/label[1]/input"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-恢复选项-清除内存
+AlarmRecoveryRulesCreateRecoveryOptionsScavengingMemory:
+  type: xpath 
+  value: "//*[@id='alertRuleRecover']/div[2]/div/label[2]/input"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-上一步3
+AlarmRecoveryRulesCreateTheLastStep3:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[1]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-取消4
+AlarmRecoveryRulesCreateConcel4:
+  type: xpath 
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[3]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-新建-保存
+AlarmRecoveryRulesCreatSave:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-删除
+AlarmRecoveryRulesCreateDelete:
+  type: xpath
+  value: "//*/div[1]/div[1]/div[2]/div/div[1]/a[3]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-删除-确认
+AlarmRecoveryRulesCreateDeleteConfirm:
+  type: xpath 
+  value: "//*/div[7]/div[2]/div/div/div/div[3]/button[1]"  
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-删除-取消
+AlarmRecoveryRulesCreateDeleteConcel:
+  type: xpath  
+  value: "//*/div[7]/div[2]/div/div/div/div[3]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-启用
+AlarmRecoveryRulesCreateEnable:
+  type: xpath 
+  value: "//*/div[2]/div/div[1]/a[4]/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-停用
+AlarmRecoveryRulesCreateDiscontinuation:
+  type: xpath
+  value: "//*/div[2]/div/div[1]/a[5]/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选
+AlarmRecoveryRulesCreateScreen:
+  type: xpath
+  value: "//*/div/div[1]/a[6]/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选-规则名称
+AlarmRecoveryRulesCreateScreenRuleName:
+  type: xpath  
+  value: "//*/form/div/div[1]/div[1]/input"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选-状态
+AlarmRecoveryRulesCreateScreenState:
+  type: xpath
+  value: "//*[@id='ruleQueryDiv']/div[1]/form/div/div[2]/div/ol/button/span[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选-状态-启用
+AlarmRecoveryRulesCreateScreenStateEnable:
+  type: xpath  
+  value: "//*[@id='ruleQueryDiv']/div[1]/form/div/div[2]/div/ol/div/ul/li[1]/a"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选-确认
+AlarmRecoveryRulesCreateScreenConfirm:
+  type: xpath
+  value: "//*[@id='doruleQueryDiv']/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选-确认-筛选出的数据
+AlarmRecoveryRulesCreateScreenConfirmData:
+  type: xpath  
+  value: "//*/table/tbody/tr/td[2]" 
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-筛选-收起
+AlarmRecoveryRulesCreateScreenTakeUp:
+  type: xpath 
+  value: "//*[@id='hideruleQueryDiv']/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-编辑
+AlarmRecoveryRulesEdit:
+  type: xpath
+  value: "//*/div[1]/div[1]/div[2]/div/div[1]/a[2]/span"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-编辑-告警类型下拉列表
+AlarmRecoveryRulesEditAlarmTypeSelection:
+  type: xpath
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-编辑-告警类型下拉列表-Linux-Disk-Alert
+AlarmRecoveryRulesEditAlarmTypeSelectionLinuxDiskAlert:
+  type: xpath 
+  value: "//*/section[2]/form/div[3]/div/div/div/div/ol/div/ul/li[15]/a"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-编辑-保存
+AlarmRecoveryRulesEditSave:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#菜单-集中告警-告警配置-降噪策略-告警恢复规则-编辑-取消
+AlarmRecoveryRulesEditConcel:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[3]"

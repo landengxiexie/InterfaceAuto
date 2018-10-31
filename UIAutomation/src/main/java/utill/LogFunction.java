@@ -32,13 +32,13 @@ public class LogFunction {
         }
     }
 
-    public static void logInfo(String message) {
+    public static void logInfo(Object message) {
         LogFunction.getFlag();
         logger.info(new TimeString().getSimpleDateFormat()+":"+message);
         Reporter.log(new TimeString().getSimpleDateFormat()+":"+message);
     }
 
-    public static void logError(String message) {
+    public static void logError(Object message) {
         LogFunction.getFlag();
         logger.info(new TimeString().getSimpleDateFormat()+":"+message);
         Reporter.log(new TimeString().getSimpleDateFormat()+":"+message);

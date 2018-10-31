@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name="系统设置-" verbose="1" parallel="false" thread-count="1">
+<suite name="系统设置" verbose="1" parallel="false" thread-count="1">
     <test name="用户管理：创建、筛选、编辑、分配权限" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
         <classes>
             <class name="com.testcases.VicubeSystem">

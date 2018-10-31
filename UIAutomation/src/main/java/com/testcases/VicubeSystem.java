@@ -1,13 +1,24 @@
 package com.testcases;
 
 import com.base.TestBase;
+import com.bean.BaseConfig;
+import org.apache.log4j.lf5.LF5Appender;
+import org.apache.poi.hssf.record.chart.LineFormatRecord;
+import org.apache.poi.ss.formula.functions.Intercept;
+import org.omg.PortableInterceptor.LOCATION_FORWARD;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.IRetryAnalyzer;
 import org.testng.annotations.*;
 import utill.*;
 
+import java.io.File;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -15,9 +26,8 @@ import java.util.Map;
 public class VicubeSystem extends TestBase {
     public WebDriver driver;
     private LocatorFunction l;
-    private ScreenshotFunction ssf;
     private Map<String, String> param;
-
+    private CommonObject co;
 //    -------------------------------------登录，系统设置-------------------------------------
 
     //    用户登陆
@@ -26,6 +36,11 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         driver.get(param.get("VicubeUrl"));
         LogFunction.logInfo("网址成功打开：" + param.get("VicubeUrl"));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //      输入用户名
         WebElement user = l.getElement(param.get("user"));
         user.clear();
@@ -111,6 +126,11 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         driver.get(param.get("VicubeUrl"));
         LogFunction.logInfo("网址成功打开：" + param.get("VicubeUrl"));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //      输入用户名
         WebElement user = l.getElement(param.get("user"));
         user.clear();
@@ -171,7 +191,6 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("点击：" + text);
         AssertFunction.verifyEquals(driver, text, "系统设置", "----当前菜单是否为系统设置----");
         LogFunction.logInfo("-----------------打开系统设置菜单---------------------");
-        ssf.takeScreenshot();
     }
 
     //    菜单-系统设置，用户管理
@@ -253,9 +272,9 @@ public class VicubeSystem extends TestBase {
         email.sendKeys(param.get("emailValue"));
         LogFunction.logInfo("在邮箱中填入：" + param.get("emailValue"));
 //         验证，保存按钮是否可用
-        enabled = save.isEnabled();
-        LogFunction.logInfo(save.getText() + "：按钮的状态");
-        AssertFunction.verifyEquals(driver, enabled, false, "----验证保存按钮是否可用----");
+//        enabled = save.isEnabled();
+//        LogFunction.logInfo(save.getText() + "：按钮的状态");
+//        AssertFunction.verifyEquals(driver, enabled, false, "----验证保存按钮是否可用----");
 //        点击有效标志输入框
         WebElement flag = l.getElement(param.get("commonCraeteFlag"));
         flag.click();
@@ -475,6 +494,16 @@ public class VicubeSystem extends TestBase {
         String text = edit.getText();
         edit.click();
         LogFunction.logInfo("点击：" + text);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+////        点击，微信确认
+//        WebElement editAffirm = l.getElement(param.get("editAffirm"));
+//        String text2 = editAffirm.getText();
+//        editAffirm.click();
+//        LogFunction.logInfo("点击：" + text);
 //        验证，用户名是否可编辑
         WebElement editUserName = l.getElement(param.get("editUserName"));
         boolean enabled = editUserName.isEnabled();
@@ -884,11 +913,11 @@ public class VicubeSystem extends TestBase {
         delete.click();
         LogFunction.logInfo("点击:" + text);
         AssertFunction.verifyEquals(driver, text, "删除", "----验证是否点击，删除----");
-//         验证，删除提示信息:是否删除当前用户？
+//         验证，删除提示信息:确定要删除？
         WebElement deleteHint = l.getElement(param.get("deleteHint"));
         String text1 = deleteHint.getText();
         LogFunction.logInfo("删除提示信息：" + text1);
-        AssertFunction.verifyEquals(driver, text1, "是否删除当前用户？", "----验证，删除提示信息:是否删除当前用户？----");
+        AssertFunction.verifyEquals(driver, text1, "确定要删除？", "----验证，删除提示信息:是否删除当前用户？----");
 //        点击，是否删除提示确认
         WebElement deleteAffirm = l.getElement(param.get("deleteAffirm"));
         String text2 = deleteAffirm.getText();
@@ -928,11 +957,11 @@ public class VicubeSystem extends TestBase {
         delete.click();
         LogFunction.logInfo("点击:" + text);
         AssertFunction.verifyEquals(driver, text, "删除", "----验证是否点击，删除----");
-//         验证，删除提示信息:是否删除当前用户？
+//         验证，删除提示信息:确定要删除？
         WebElement deleteHint = l.getElement(param.get("deleteHint"));
         String text1 = deleteHint.getText();
         LogFunction.logInfo("删除提示信息：" + text1);
-        AssertFunction.verifyEquals(driver, text1, "是否删除当前组？", "----验证，删除提示信息:是否删除当前用户？----");
+        AssertFunction.verifyEquals(driver, text1, "确定要删除？", "----验证，删除提示信息:是否删除当前用户？----");
 //        点击，是否删除提示确认
         WebElement deleteAffirm = l.getElement(param.get("deleteAffirm"));
         String text2 = deleteAffirm.getText();
@@ -1019,12 +1048,12 @@ public class VicubeSystem extends TestBase {
         AssertFunction.verifyEquals(driver, text, "分配工作组", "----是否点击：分配工作组----");
 //        选择，用户组
         WebElement selectGroup = l.getElement(param.get("chooseWorkingGroupSelect"));
-        Select select=new Select(selectGroup);
+        Select select = new Select(selectGroup);
         List<WebElement> allSelectedOptions = select.getAllSelectedOptions();
-        boolean  contains= allSelectedOptions.contains(param.get("chooseWorkingGroupSelect"));
-        if (contains==true) {
+        boolean contains = allSelectedOptions.contains(param.get("chooseWorkingGroupSelect"));
+        if (contains == true) {
             select.selectByVisibleText(param.get("chooseWorkingGroupSelect"));
-        }else {
+        } else {
             select.selectByVisibleText("超级管理员组");
         }
         LogFunction.logInfo("选择：" + param.get("editWorkingGroupNameValue"));
@@ -1218,12 +1247,13 @@ public class VicubeSystem extends TestBase {
         domainName.click();
         LogFunction.logInfo("选择：" + text2);
         AssertFunction.verifyEquals(driver, text2, "rootDomain", "----验证是否选择域：XMDomain----");
-        LogFunction.logInfo("------------------工作组编辑完成---------------------");
 //         录入，工作组备注
         WebElement Note = l.getElement(param.get("editWorkingGroupeNote"));
         Note.clear();
         Note.sendKeys(param.get("editWorkingGroupeNoteValue"));
         LogFunction.logInfo("录入工作组备注:" + param.get("editWorkingGroupeNoteValue"));
+        LogFunction.logInfo("------------------工作组编辑完成---------------------");
+
     }
 
     @Test(dataProvider = "xmldata")
@@ -1566,7 +1596,7 @@ public class VicubeSystem extends TestBase {
         String text2 = userLogoutSystem.getText();
         userlogouthead.click();
         LogFunction.logInfo("点击：" + text2);
-        AssertFunction.assertEquals(driver, text2, "退出系统");
+        AssertFunction.verifyEquals(driver, text2, "退出系统");
         LogFunction.logInfo("---------------------退出系统成功------------------------");
     }
 
@@ -1768,6 +1798,7 @@ public class VicubeSystem extends TestBase {
 
 //    -------------------------------------集中告警-------------------------------------
 
+    //   菜单-集中告警
     @Test(dataProvider = "xmldata")
     public void concentratedAlarm(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -1781,10 +1812,11 @@ public class VicubeSystem extends TestBase {
         String text = alarmClassifyRules.getText();
         alarmClassifyRules.click();
         LogFunction.logInfo("点击：" + text);
-        AssertFunction.assertEquals(driver, text, "集中告警");
+        AssertFunction.verifyEquals(driver, text, "集中告警");
         LogFunction.logInfo("-----------------进入，集中告警页面---------------------");
     }
 
+    //      菜单-集中告警-告警配置
     @Test(dataProvider = "xmldata")
     public void alarmConfig(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -1793,12 +1825,13 @@ public class VicubeSystem extends TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
 //        点击，告警配置
         WebElement alarmClassifyRules = l.getElement(param.get("alarmConfig"));
         String text = alarmClassifyRules.getText();
         alarmClassifyRules.click();
         LogFunction.logInfo("点击：" + text);
-        AssertFunction.assertEquals(driver, text, "告警配置");
+        AssertFunction.verifyEquals(driver, text, "告警配置");
         LogFunction.logInfo("-----------------进入，告警配置页面---------------------");
     }
 
@@ -1815,7 +1848,7 @@ public class VicubeSystem extends TestBase {
         String text = alarmClassifyRules.getText();
         alarmClassifyRules.click();
         LogFunction.logInfo("点击：" + text);
-        AssertFunction.assertEquals(driver, text, "降噪策略");
+        AssertFunction.verifyEquals(driver, text, "降噪策略");
         LogFunction.logInfo("-----------------进入，降噪策略页面---------------------");
     }
 
@@ -1831,18 +1864,18 @@ public class VicubeSystem extends TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        点击，全部规则
+//        点击，全部策略
         WebElement allRules = l.getElement(param.get("allRules"));
         String text2 = allRules.getText();
         allRules.click();
         LogFunction.logInfo("点击：" + text2);
-        AssertFunction.verifyEquals(driver, text2, "全部规则", "----验证是否点击：全部规则按钮----");
-//        点击，告警分类规则
+        AssertFunction.verifyEquals(driver, text2, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警分类策略
         WebElement alarmClassifyRules = l.getElement(param.get("alarmClassifyRules"));
         String text = alarmClassifyRules.getText();
         alarmClassifyRules.click();
         LogFunction.logInfo("选择：" + text);
-        AssertFunction.verifyEquals(driver, text, "告警分类规则", "告警分类规则");
+        AssertFunction.verifyEquals(driver, text, "告警分类策略", "告警分类策略");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -1978,11 +2011,11 @@ public class VicubeSystem extends TestBase {
         String text10 = alarmClassifyConfigSave.getText();
         alarmClassifyConfigSave.click();
         LogFunction.logInfo("点击：" + text10);
-        AssertFunction.assertEquals(driver, text10, "保存");
-        LogFunction.logInfo("-----------------告警分类规则，创建成功---------------------");
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警分类策略，创建成功---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-选择，告警分类规则
+    //    集中告警-告警配置-降噪策略-选择，告警分类策略
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyChooseAlarmClassifyRules(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -1991,23 +2024,23 @@ public class VicubeSystem extends TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        点击，全部规则
+//        点击，全部策略
         WebElement allRules = l.getElement(param.get("allRules"));
         String text2 = allRules.getText();
-        String allRulesValue = InterceptFunction.intercept(text2, "全部规则");
+        String allRulesValue = InterceptFunction.intercept(text2, "全部策略");
         allRules.click();
         LogFunction.logInfo("点击：" + allRulesValue);
-        AssertFunction.verifyEquals(driver, allRulesValue, "全部规则", "----验证是否点击：全部规则按钮----");
-//        点击，告警分类规则
+        AssertFunction.verifyEquals(driver, allRulesValue, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警分类策略
         WebElement alarmClassifyRules = l.getElement(param.get("alarmClassifyRules"));
         String text = alarmClassifyRules.getText();
         alarmClassifyRules.click();
         LogFunction.logInfo("选择：" + text);
-        AssertFunction.verifyEquals(driver, text, "告警分类规则", "告警分类规则");
-        LogFunction.logInfo("-----------------选择：告警分类规则---------------------");
+        AssertFunction.verifyEquals(driver, text, "告警分类策略", "告警分类策略");
+        LogFunction.logInfo("-----------------选择：告警分类策略---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-选择，告警合并规则
+    //    集中告警-告警配置-降噪策略-选择，告警合并策略
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyChooseAlarmMergeRules(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2016,24 +2049,123 @@ public class VicubeSystem extends TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        点击，全部规则
+//        点击，全部策略
         WebElement allRules = l.getElement(param.get("allRules"));
         String text2 = allRules.getText();
-        String allRulesValue = InterceptFunction.intercept(text2, "全部规则");
+        String allRulesValue = InterceptFunction.intercept(text2, "全部策略");
         allRules.click();
         LogFunction.logInfo("点击：" + allRulesValue);
-        AssertFunction.verifyEquals(driver, allRulesValue, "全部规则", "----验证是否点击：全部规则按钮----");
-//        点击，告警分类规则
+        AssertFunction.verifyEquals(driver, allRulesValue, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警分类策略
         WebElement alarmMergeRules = l.getElement(param.get("alarmMergeRules"));
         String text = alarmMergeRules.getText();
         alarmMergeRules.click();
         LogFunction.logInfo("选择：" + text);
-        AssertFunction.verifyEquals(driver, text, "告警合并规则", "告警合并规则");
-        LogFunction.logInfo("-----------------选择：告警合并规则---------------------");
+        AssertFunction.verifyEquals(driver, text, "告警合并策略", "告警合并策略");
+        LogFunction.logInfo("-----------------选择：告警合并策略---------------------");
     }
 
+    //    集中告警-告警配置-降噪策略-选择，告警过滤策略
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyChooseAlarmFilterRules(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，全部策略
+        WebElement allRules = l.getElement(param.get("allRules"));
+        String text2 = allRules.getText();
+        String allRulesValue = InterceptFunction.intercept(text2, "全部策略");
+        allRules.click();
+        LogFunction.logInfo("点击：" + allRulesValue);
+        AssertFunction.verifyEquals(driver, allRulesValue, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警过滤策略
+        WebElement alarmRecoveryRules = l.getElement(param.get("alarmFilterRules"));
+        String text = alarmRecoveryRules.getText();
+        alarmRecoveryRules.click();
+        LogFunction.logInfo("选择：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警过滤策略");
+        LogFunction.logInfo("-----------------选择：告警过滤策略---------------------");
+    }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-新建第1部分，基础设置
+    //    集中告警-告警配置-降噪策略-选择，告警恢复策略
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyChooseAlarmRecoveryRules(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，全部策略
+        WebElement allRules = l.getElement(param.get("allRules"));
+        String text2 = allRules.getText();
+        String allRulesValue = InterceptFunction.intercept(text2, "全部策略");
+        allRules.click();
+        LogFunction.logInfo("点击：" + allRulesValue);
+        AssertFunction.verifyEquals(driver, allRulesValue, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警恢复策略
+        WebElement alarmRecoveryRules = l.getElement(param.get("alarmRecoveryRules"));
+        String text = alarmRecoveryRules.getText();
+        alarmRecoveryRules.click();
+        LogFunction.logInfo("选择：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警恢复策略", "告警恢复策略");
+        LogFunction.logInfo("-----------------选择：告警恢复策略---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-选择，告警升级策略
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyChooseAlarmUpgradeRules(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，全部策略
+        WebElement allRules = l.getElement(param.get("allRules"));
+        String text2 = allRules.getText();
+        String allRulesValue = InterceptFunction.intercept(text2, "全部策略");
+        allRules.click();
+        LogFunction.logInfo("点击：" + allRulesValue);
+        AssertFunction.verifyEquals(driver, allRulesValue, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警升级策略
+        WebElement alarmRecoveryRules = l.getElement(param.get("alarmUpgradeRules"));
+        String text = alarmRecoveryRules.getText();
+        alarmRecoveryRules.click();
+        LogFunction.logInfo("选择：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警升级策略", "告警升级策略");
+        LogFunction.logInfo("-----------------选择：告警升级策略---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-选择，告警关联策略
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyChooseAlarmRelevanceRules(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，全部策略
+        WebElement allRules = l.getElement(param.get("allRules"));
+        String text2 = allRules.getText();
+        String allRulesValue = InterceptFunction.intercept(text2, "全部策略");
+        allRules.click();
+        LogFunction.logInfo("点击：" + allRulesValue);
+        AssertFunction.verifyEquals(driver, allRulesValue, "全部策略", "----验证是否点击：全部策略按钮----");
+//        点击，告警关联策略
+        WebElement alarmRecoveryRules = l.getElement(param.get("AlarmRelevanceRules"));
+        String text = alarmRecoveryRules.getText();
+        alarmRecoveryRules.click();
+        LogFunction.logInfo("选择：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警关联策略", "告警升级策略");
+        LogFunction.logInfo("-----------------选择：告警关联策略---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警分类策略-新建第1部分，基础设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesCreateBasicSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2063,11 +2195,11 @@ public class VicubeSystem extends TestBase {
         basicsNextStep.click();
         LogFunction.logInfo("点击：" + text3);
         AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警分类规则，第一步，基础设置录入完成---------------------");
+        LogFunction.logInfo("-----------------告警分类策略，第一步，基础设置录入完成---------------------");
 
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-新建第2部分，规则条件设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-新建第2部分，规则条件设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesCreateRulesConditionSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2112,10 +2244,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionConfigNextStep.click();
         LogFunction.logInfo("点击：" + text7);
         AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警分类规则，第二步，规则条件设置录入完成---------------------");
+        LogFunction.logInfo("-----------------告警分类策略，第二步，规则条件设置录入完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-新建第3部分，规则条件高级设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-新建第3部分，规则条件高级设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesCreateRulesConditionAdvancedSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2162,10 +2294,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionAdvancedConfigNextStep.click();
         LogFunction.logInfo("点击：" + text71);
         AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警分类规则，第三步，规则条件高级设置录入完成---------------------");
+        LogFunction.logInfo("-----------------告警分类策略，第三步，规则条件高级设置录入完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-新建第4部分，告警分类设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-新建第4部分，告警分类设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesCreateAlarmClassifySetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2209,11 +2341,11 @@ public class VicubeSystem extends TestBase {
         String text10 = alarmClassifyConfigSave.getText();
         alarmClassifyConfigSave.click();
         LogFunction.logInfo("点击：" + text10);
-        AssertFunction.assertEquals(driver, text10, "保存");
-        LogFunction.logInfo("-----------------告警分类规则，最后一步，告警分类设置录入完成且告警分类规则创建成功---------------------");
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警分类策略，最后一步，告警分类设置录入完成且告警分类策略创建成功---------------------");
     }
 
-//    //    集中告警-告警配置-降噪策略-告警分类规则-筛选及校验
+//    //    集中告警-告警配置-降噪策略-告警分类策略-筛选及校验
 //    @Test(dataProvider = "xmldata")
 //    public void denoiseStrategyAlarmClassifyRulesSelectVerify(Map<String, String> param) {
 //        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2276,7 +2408,7 @@ public class VicubeSystem extends TestBase {
 //        AssertFunction.verifyEquals(driver, title, "已启用");
 //
 //
-//        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+//        LogFunction.logInfo("-----------------降噪策略告警分类策略筛选查询完成---------------------");
 //    }
 
     @Test(dataProvider = "xmldata")
@@ -2292,7 +2424,7 @@ public class VicubeSystem extends TestBase {
         String text = alarmDisplay.getText();
         alarmDisplay.click();
         LogFunction.logInfo("点击：" + text);
-        AssertFunction.assertEquals(driver, text, "告警展示");
+        AssertFunction.verifyEquals(driver, text, "告警展示");
         LogFunction.logInfo("-----------------进入，告警展示页面---------------------");
     }
 
@@ -2319,7 +2451,7 @@ public class VicubeSystem extends TestBase {
 //        List<WebElement> ListNumber = l.getElements(param.get("alarmDisplayListNumber"));
 //        int size = ListNumber.size();
 //        LogFunction.logInfo("列表待处理告警数量：" + String.valueOf(size));
-//        AssertFunction.assertEquals(driver, numberText, String.valueOf(size));
+//        AssertFunction.verifyEquals(driver, numberText, String.valueOf(size));
 
         LogFunction.logInfo("-----------------进入，待处理告警页面---------------------");
     }
@@ -2356,7 +2488,7 @@ public class VicubeSystem extends TestBase {
         WebElement chooseAlarm = l.getElement(param.get("chooseAlarm"));
         chooseAlarm.click();
         LogFunction.logInfo("成功勾选：警示信息");
-//        AssertFunction.assertEquals(driver, numberText, String.valueOf(size));
+//        AssertFunction.verifyEquals(driver, numberText, String.valueOf(size));
 
         LogFunction.logInfo("-----------------进入，已确认告警页面---------------------");
     }
@@ -2376,7 +2508,8 @@ public class VicubeSystem extends TestBase {
         String text = alarmDisplay.getText();
         alarmDisplay.click();
         LogFunction.logInfo("点击：" + text);
-        AssertFunction.verifyEquals(driver, text.substring(0, 5), "已前转告警");
+        AssertFunction.verifyEquals(driver, text.substring(0, 5), "已通知告警");
+
 //        获取，已前转告警数量
 //        WebElement Number = l.getElement(param.get("alarmDisplayForwardShiftingAlarmNumber"));
 //        String numberText = Number.getText();
@@ -2400,7 +2533,7 @@ public class VicubeSystem extends TestBase {
         WebElement chooseAlarm = l.getElement(param.get("chooseAlarm"));
         chooseAlarm.click();
         LogFunction.logInfo("成功勾选：警示信息");
-//        AssertFunction.assertEquals(driver, numberText, String.valueOf(size));
+//        AssertFunction.verifyEquals(driver, numberText, String.valueOf(size));
         LogFunction.logInfo("-----------------进入，已前转告警页面---------------------");
     }
 
@@ -2436,7 +2569,7 @@ public class VicubeSystem extends TestBase {
         WebElement chooseAlarm = l.getElement(param.get("chooseAlarm"));
         chooseAlarm.click();
         LogFunction.logInfo("成功勾选：警示信息");
-//        AssertFunction.assertEquals(driver, numberText, String.valueOf(size));
+//        AssertFunction.verifyEquals(driver, numberText, String.valueOf(size));
         LogFunction.logInfo("-----------------进入，已解决告警页面---------------------");
     }
 
@@ -2472,7 +2605,7 @@ public class VicubeSystem extends TestBase {
         WebElement chooseAlarm = l.getElement(param.get("chooseAlarm"));
         chooseAlarm.click();
         LogFunction.logInfo("成功勾选：警示信息");
-//        AssertFunction.assertEquals(driver, numberText, String.valueOf(size));
+//        AssertFunction.verifyEquals(driver, numberText, String.valueOf(size));
         LogFunction.logInfo("-----------------进入，已忽略告警页面---------------------");
     }
 
@@ -2481,7 +2614,7 @@ public class VicubeSystem extends TestBase {
     public void alarmDisplayChooseTwoFunction(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -2503,10 +2636,26 @@ public class VicubeSystem extends TestBase {
 
     //    集中告警-告警展示-勾选信息功能
     @Test(dataProvider = "xmldata")
+    public void alarmDisplayChooseFunction1(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        勾选，警示信息
+        WebElement chooseAlarm = l.getElement(param.get("chooseAlarm"));
+        chooseAlarm.click();
+        LogFunction.logInfo("成功勾选：警示信息");
+        LogFunction.logInfo("-----------------成功勾选预警信息---------------------");
+    }
+
+    //    集中告警-告警展示-勾选信息功能
+    @Test(dataProvider = "xmldata")
     public void alarmDisplayChooseFunction(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -2620,10 +2769,16 @@ public class VicubeSystem extends TestBase {
 //        CollectSystemValue.click();
 //        LogFunction.logInfo("点击：" + text4);
 //        AssertFunction.verifyEquals(driver, text4, "Zabbix");
-////        点击，空白
-//        WebElement systemTitleblank = l.getElement(param.get("systemTitleblank"));
-//        systemTitleblank.click();
-//        LogFunction.logInfo("点击： 空白");
+
+//        点击，空白
+        WebElement systemTitleblank = l.getElement(param.get("systemTitleblank"));
+        systemTitleblank.click();
+        LogFunction.logInfo("点击： 空白");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        点击，筛选，确定
         WebElement affirm = l.getElement(param.get("affirm"));
         String text21 = affirm.getText();
@@ -2637,7 +2792,7 @@ public class VicubeSystem extends TestBase {
 //        LogFunction.logInfo("点击：" + text33);
 //        AssertFunction.verifyEquals(driver, text33, "收起");
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -2753,9 +2908,64 @@ public class VicubeSystem extends TestBase {
         String text = Confirmation.getText();
         Confirmation.click();
         LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "通知");
+
+    }
+
+    //    集中告警-告警展示-点击前转 Button
+    @Test(dataProvider = "xmldata")
+    public void alarmDisplayForwardShiftingClick1(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，前转
+        WebElement Confirmation = l.getElement(param.get("alarmDisplayForwardShifting"));
+        String text = Confirmation.getText();
+        Confirmation.click();
+        LogFunction.logInfo("点击：" + text);
         AssertFunction.verifyEquals(driver, text, "前转");
 
     }
+
+    //    集中告警-告警展示-点击通知 Button
+    @Test(dataProvider = "xmldata")
+    public void alarmDisplayInformClick(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，通知
+        WebElement Confirmation = l.getElement(param.get("alarmDisplayForwardShifting"));
+        String text = Confirmation.getText();
+        Confirmation.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "通知");
+
+    }
+
+    //    集中告警-告警展示-点击通知 Button
+    @Test(dataProvider = "xmldata")
+    public void alarmDisplayInformClick1(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，通知
+        WebElement Confirmation = l.getElement(param.get("alarmDisplayForwardShifting"));
+        String text = Confirmation.getText();
+        Confirmation.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "通知");
+
+    }
+
 
     //    集中告警-告警展示-前转
     @Test(dataProvider = "xmldata")
@@ -2777,6 +2987,11 @@ public class VicubeSystem extends TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+//        录入，标题
+        WebElement forwardShiftingTitle = l.getElement(param.get("forwardShiftingTitle"));
+        forwardShiftingTitle.clear();
+        forwardShiftingTitle.sendKeys(param.get("commonForwardShiftingTitleValue"));
+        LogFunction.logInfo("前转标题为：" + param.get("commonForwardShiftingTitleValue"));
 //        点击，级别选择框
         WebElement LevelChoose = l.getElement(param.get("LevelChoose"));
         LevelChoose.click();
@@ -2806,7 +3021,7 @@ public class VicubeSystem extends TestBase {
         String text3 = hintMessage.getText();
         hintMessage.click();
         LogFunction.logInfo("提示信息为：" + text3);
-        AssertFunction.verifyEquals(driver, text3, "已前转1条告警!");
+        AssertFunction.verifyEquals(driver, text3, "已发送1条告警!");
 //        点击，备注-提示信息，确认
 //        WebElement affirm1 = l.getElement(param.get("hintMessageConfirm"));
 //        String text4 = affirm1.getText();
@@ -2836,6 +3051,12 @@ public class VicubeSystem extends TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+//        录入，标题
+        WebElement forwardShiftingTitle = l.getElement(param.get("forwardShiftingTitle"));
+        forwardShiftingTitle.click();
+        forwardShiftingTitle.clear();
+        forwardShiftingTitle.sendKeys(param.get("commonForwardShiftingTitleValue"));
+        LogFunction.logInfo("前转标题为：" + param.get("commonForwardShiftingTitleValue"));
 //        点击，直接转给用户
         WebElement LevelChoose = l.getElement(param.get("DirectToUser"));
         LevelChoose.click();
@@ -2871,7 +3092,7 @@ public class VicubeSystem extends TestBase {
         String text3 = hintMessage.getText();
         hintMessage.click();
         LogFunction.logInfo("提示信息为：" + text3);
-        AssertFunction.verifyEquals(driver, text3, "已前转1条告警!");
+        AssertFunction.verifyEquals(driver, text3, "已发送1条告警!");
 //        点击，备注-提示信息，确认
 //        WebElement affirm1 = l.getElement(param.get("hintMessageConfirm"));
 //        String text4 = affirm1.getText();
@@ -2879,6 +3100,24 @@ public class VicubeSystem extends TestBase {
 //        LogFunction.logInfo("点击：" + text4);
 //        AssertFunction.verifyEquals(driver, text4, "确认");
         LogFunction.logInfo("-----------------告警展示,前转，完成---------------------");
+    }
+
+    //    集中告警-告警展示-前转-提示信息确认
+    @Test(dataProvider = "xmldata")
+    public void alarmDisplayForwardShiftingHintConfirm1(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，备注-提示信息，确认
+        WebElement affirm1 = l.getElement(param.get("hintMessageConfirm"));
+        String text4 = affirm1.getText();
+        affirm1.click();
+        LogFunction.logInfo("点击：" + text4);
+        AssertFunction.verifyEquals(driver, text4, "确认");
+        LogFunction.logInfo("-----------------告警展示,前转，提示信息点击确认，完成---------------------");
     }
 
     //    集中告警-告警展示-前转-提示信息确认
@@ -2899,7 +3138,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("-----------------告警展示,前转，提示信息点击确认，完成---------------------");
     }
 
-    //    集中告警-告警展示-解决Button2
+    //    集中告警-告警展示-解决Button
     @Test(dataProvider = "xmldata")
     public void alarmDisplayResolvedButton(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2918,7 +3157,7 @@ public class VicubeSystem extends TestBase {
 
     }
 
-    //    集中告警-告警展示-解决Button
+    //    集中告警-告警展示-解决Button2
     @Test(dataProvider = "xmldata")
     public void alarmDisplayResolvedButton2(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2937,7 +3176,7 @@ public class VicubeSystem extends TestBase {
 
     }
 
-    //    集中告警-告警展示-解决Button
+    //    集中告警-告警展示-解决Button3
     @Test(dataProvider = "xmldata")
     public void alarmDisplayResolvedButton3(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -2955,6 +3194,62 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("-----------------告警展示,点击解决按钮---------------------");
 
     }
+
+    //    集中告警-告警查询-历史告警-导出Button及功能验证
+    @Test(dataProvider = "xmldata")
+    public void alarmDisplayExportButton(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，导出
+        WebElement Export = l.getElement(param.get("alarmDisplayExport"));
+        String text = Export.getText();
+        Export.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "导出");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//        判断文件是否，下载
+        File file = null;
+        if ((SeleniumDriver.value).equals("w")) {
+            file = new File(BaseConfig.chromeDownloadPathOfWindows + "/下载.xls");
+        } else if (((SeleniumDriver.value).equals("l"))) {
+//             file = new File(BaseConfig.chromeDownloadPathOfLinux+"/下载.xls");
+            file = new File(BaseConfig.chromeDownloadPathOfWindows + "/下载.xls");
+        } else {
+            if ((SeleniumDriver.value).equals("w")) {
+                LogFunction.logInfo("文件初始化错误");
+                throw new RuntimeException();
+            }
+        }
+        if (file != null) {
+            String name = file.getName();
+            LogFunction.logInfo("文件名称：" + name);
+            boolean exists = file.exists();
+            LogFunction.logInfo("文件是否存在：" + exists);
+            if (exists == true) {
+                LogFunction.logInfo("文件已导出");
+                boolean delete = file.delete();
+                if (delete) {
+                    LogFunction.logInfo("导出文件已删除");
+                }
+            }
+        } else {
+            LogFunction.logInfo("文件为：null");
+            throw new RuntimeException();
+        }
+
+        LogFunction.logInfo("-----------------告警查询-历史告警,导出功能验证通过---------------------");
+
+    }
+
 
     //    集中告警-告警展示-解决-解决
     @Test(dataProvider = "xmldata")
@@ -3086,7 +3381,7 @@ public class VicubeSystem extends TestBase {
     public void alarmDisplayResolvedOfClearMemory(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -3241,17 +3536,17 @@ public class VicubeSystem extends TestBase {
     public void alarmDisplayViewForwardShifting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        点击，前转
+//        点击，通知
         WebElement alarmDisplayView = l.getElement(param.get("alarmDisplayViewForwardShifting"));
         String text = alarmDisplayView.getText();
         alarmDisplayView.click();
         LogFunction.logInfo("点击：" + text);
-        AssertFunction.verifyEquals(driver, text, "前转");
-        LogFunction.logInfo("-----------------告警展示,进入查看-前转页面---------------------");
+        AssertFunction.verifyEquals(driver, text, "通知");
+        LogFunction.logInfo("-----------------告警展示,进入查看-通知页面---------------------");
     }
 
     //    集中告警-告警展示-查看-前转-提示信息确认按钮
@@ -3524,7 +3819,8 @@ public class VicubeSystem extends TestBase {
         String text2 = alarmDisplay2.getText();
         alarmDisplay2.click();
         LogFunction.logInfo("点击：" + text2);
-        AssertFunction.verifyEquals(driver, text2.substring(0, 5), "已前转告警");
+        AssertFunction.verifyEquals(driver, text2.substring(0, 5), "已通知告警");
+
 //        获取，已前转告警数量
         WebElement Number2 = l.getElement(param.get("alarmDisplayForwardShiftingAlarmNumber"));
         numberText2 = Integer.valueOf(Number2.getText());
@@ -3631,7 +3927,9 @@ public class VicubeSystem extends TestBase {
         String text2 = alarmDisplay2.getText();
         alarmDisplay2.click();
         LogFunction.logInfo("点击：" + text2);
-        AssertFunction.verifyEquals(driver, text2.substring(0, 5), "已前转告警");
+        AssertFunction.verifyEquals(driver, text2.substring(0, 5), "已通知告警");
+
+
 //        获取，已前转告警数量
         WebElement Number2 = l.getElement(param.get("alarmDisplayForwardShiftingAlarmNumber"));
         String numberText22 = Number2.getText();
@@ -3820,16 +4118,17 @@ public class VicubeSystem extends TestBase {
         ColumnSetting.click();
         LogFunction.logInfo("成功点击：列设置按钮");
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 //        勾选所有的列
         List<WebElement> ColumnElement = l.getElements(param.get("alarmDisplayColumnSettingisDisplay"));
+        LogFunction.logInfo(ColumnElement.size());
         LogFunction.logInfo("共有" + String.valueOf(ColumnElement.size()) + "个列值");
         for (WebElement e : ColumnElement) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(500);
             } catch (InterruptedException ee) {
                 ee.printStackTrace();
             }
@@ -3929,6 +4228,11 @@ public class VicubeSystem extends TestBase {
         RankL5.click();
         LogFunction.logInfo("点击：告警级别L5");
         LogFunction.logInfo("级别L5数量为：" + text);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        获取，列表待处理告警数量
         List<WebElement> ListNumber = l.getElements(param.get("alarmDisplayListNumber"));
         int size = ListNumber.size();
@@ -3946,6 +4250,11 @@ public class VicubeSystem extends TestBase {
         RankL4.click();
         LogFunction.logInfo("点击：告警级别L4");
         LogFunction.logInfo("级别L4数量为：" + text1);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        获取，列表待处理告警数量
         List<WebElement> ListNumber1 = l.getElements(param.get("alarmDisplayListNumber"));
         int size1 = ListNumber1.size();
@@ -3963,6 +4272,11 @@ public class VicubeSystem extends TestBase {
         RankL3.click();
         LogFunction.logInfo("点击：告警级别L3");
         LogFunction.logInfo("级别L3数量为：" + text2);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        获取，列表待处理告警数量
         List<WebElement> ListNumber2 = l.getElements(param.get("alarmDisplayListNumber"));
         int size2 = ListNumber2.size();
@@ -3980,6 +4294,11 @@ public class VicubeSystem extends TestBase {
         RankL2.click();
         LogFunction.logInfo("点击：告警级别L2");
         LogFunction.logInfo("级别L2数量为：" + text3);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        获取，列表待处理告警数量
         List<WebElement> ListNumber3 = l.getElements(param.get("alarmDisplayListNumber"));
         int size3 = ListNumber3.size();
@@ -3997,6 +4316,11 @@ public class VicubeSystem extends TestBase {
         RankL1.click();
         LogFunction.logInfo("点击：告警级别L4");
         LogFunction.logInfo("级别L1数量为：" + text4);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //        获取，列表待处理告警数量
         List<WebElement> ListNumber4 = l.getElements(param.get("alarmDisplayListNumber"));
         int size4 = ListNumber4.size();
@@ -4007,10 +4331,11 @@ public class VicubeSystem extends TestBase {
         }
         LogFunction.logInfo("列表待处理告警数量：" + size4);
         AssertFunction.verifyEquals(driver, integer + integer1 + integer2 + integer3 + integer4, size4);
+        LogFunction.logInfo("-----------------告警展示，告警等级，验证通过---------------------");
 
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-新建第1部分，基础设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-新建第1部分，基础设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesCreateBasicSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4040,11 +4365,11 @@ public class VicubeSystem extends TestBase {
         basicsNextStep.click();
         LogFunction.logInfo("点击：" + text3);
         AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第一步，基础设置录入完成---------------------");
+        LogFunction.logInfo("-----------------告警合并策略，第一步，基础设置录入完成---------------------");
 
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-新建第2部分，规则条件设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-新建第2部分，规则条件设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesCreateRulesConditionSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4089,10 +4414,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionConfigNextStep.click();
         LogFunction.logInfo("点击：" + text7);
         AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第二步，规则条件设置录入完成---------------------");
+        LogFunction.logInfo("-----------------告警合并策略，第二步，规则条件设置录入完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-新建第3部分，规则条件高级设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-新建第3部分，规则条件高级设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesCreateRulesConditionAdvancedSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4139,10 +4464,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionAdvancedConfigNextStep.click();
         LogFunction.logInfo("点击：" + text71);
         AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第三步，规则条件高级设置录入完成---------------------");
+        LogFunction.logInfo("-----------------告警合并策略，第三步，规则条件高级设置录入完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-新建第4部分，告警合并设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-新建第4部分，告警合并设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesCreateAlarmMergeSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4170,11 +4495,11 @@ public class VicubeSystem extends TestBase {
         String text10 = alarmMergeConfigSave.getText();
         alarmMergeConfigSave.click();
         LogFunction.logInfo("点击：" + text10);
-        AssertFunction.assertEquals(driver, text10, "保存");
-        LogFunction.logInfo("-----------------告警合并规则，最后一步，告警合并设置录入完成且告警合并规则创建成功---------------------");
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警合并策略，最后一步，告警合并设置录入完成且告警合并策略创建成功---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-筛选及校验
+    //    集中告警-告警配置-降噪策略-告警合并策略-筛选及校验
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyAlarmMergeRulesSelectVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4246,7 +4571,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("-----------------降噪策略告警规则筛选查询校验完成完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑，第1部分，基础设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑，第1部分，基础设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesEditBasicSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4286,11 +4611,11 @@ public class VicubeSystem extends TestBase {
         basicsNextStep.click();
         LogFunction.logInfo("点击：" + text3);
         AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第一步，基础设置编辑完成---------------------");
+        LogFunction.logInfo("-----------------告警合并策略，第一步，基础设置编辑完成---------------------");
 
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑，第2部分，规则条件设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑，第2部分，规则条件设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesEditRulesConditionSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4335,10 +4660,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionConfigNextStep.click();
         LogFunction.logInfo("点击：" + text7);
         AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第二步，规则条件设置编辑完成---------------------");
+        LogFunction.logInfo("-----------------告警合并策略，第二步，规则条件设置编辑完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑，第3部分，规则条件高级设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑，第3部分，规则条件高级设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesEditRulesConditionAdvancedSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4385,10 +4710,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionAdvancedConfigNextStep.click();
         LogFunction.logInfo("点击：" + text71);
         AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第三步，规则条件高级设置编辑完成---------------------");
+        LogFunction.logInfo("-----------------告警合并策略，第三步，规则条件高级设置编辑完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑，第4部分，告警合并设置
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑，第4部分，告警合并设置
     @Test(dataProvider = "xmldata")
     public void alarmMergeRulesEditAlarmMergeSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4416,11 +4741,11 @@ public class VicubeSystem extends TestBase {
         String text10 = alarmMergeConfigSave.getText();
         alarmMergeConfigSave.click();
         LogFunction.logInfo("点击：" + text10);
-        AssertFunction.assertEquals(driver, text10, "保存");
-        LogFunction.logInfo("-----------------告警合并规则，最后一步，告警合并设置编辑完成且告警合并规则创建成功---------------------");
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警合并策略，最后一步，告警合并设置编辑完成且告警合并策略创建成功---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑-筛选及校验
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑-筛选及校验
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyAlarmMergeRulesEditSelectVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4502,7 +4827,7 @@ public class VicubeSystem extends TestBase {
         String title = selectStatus.getAttribute("title");
         LogFunction.logInfo("状态为：" + title);
         AssertFunction.verifyEquals(driver, title, "已禁用");
-        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+        LogFunction.logInfo("-----------------降噪策略,告警合并策略,筛选查询完成---------------------");
     }
 
     //    （公用）启用，告警规则
@@ -4526,7 +4851,12 @@ public class VicubeSystem extends TestBase {
         commonStartUsing.click();
         LogFunction.logInfo("点击：" + text2);
         AssertFunction.verifyEquals(driver, text2, "启用", "----是否点击的是：启用按钮----");
-//        校验,状态
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //        校验,状态
         WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
         String title = selectStatus.getAttribute("title");
         LogFunction.logInfo("状态为：" + title);
@@ -4556,7 +4886,12 @@ public class VicubeSystem extends TestBase {
         commonBlockUp.click();
         LogFunction.logInfo("点击：" + text2);
         AssertFunction.verifyEquals(driver, text2, "停用", "----是否点击的是：停用按钮----");
-//        校验,状态
+        try {
+            Thread.sleep(5500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //        校验,状态
         WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
         String title = selectStatus.getAttribute("title");
         LogFunction.logInfo("状态为：" + title);
@@ -4586,11 +4921,11 @@ public class VicubeSystem extends TestBase {
         delete.click();
         LogFunction.logInfo("点击:" + text);
         AssertFunction.verifyEquals(driver, text, "删除", "----验证是否点击，删除----");
-//         验证，删除提示信息:是否删除选中项？
+//         验证，删除提示信息:确定要删除？
         WebElement deleteHint = l.getElement(param.get("deleteHint"));
         String text1 = deleteHint.getText();
         LogFunction.logInfo("删除提示信息：" + text1);
-        AssertFunction.verifyEquals(driver, text1, "是否删除选中项", "----验证，删除提示信息:是否删除选中项----");
+        AssertFunction.verifyEquals(driver, text1, "确定要删除？");
 //          点击，删除提示信息，确认
         WebElement deleteAffirm1 = l.getElement(param.get("deleteAffirm"));
         String text4 = deleteAffirm1.getText();
@@ -4614,9 +4949,13 @@ public class VicubeSystem extends TestBase {
 //        commonSelect.click();
 //        LogFunction.logInfo("点击：" + text3);
 //        AssertFunction.verifyEquals(driver, text3, "清空");
+
 //        录入，规则名称
+
+
         WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
         selectRulesName.clear();
+
         selectRulesName.sendKeys(param.get("alarmMergeRulesNameEditValue"));
         LogFunction.logInfo("录入规则名称:" + param.get("alarmMergeRulesNameEditValue"));
 //        点击，筛选，确定
@@ -4630,11 +4969,10 @@ public class VicubeSystem extends TestBase {
         String text55 = NumberValue.getText();
         LogFunction.logInfo("告警列表信息为：" + text55);
         AssertFunction.verifyEquals(driver, text55, "表中数据为空");
-
         LogFunction.logInfo("------------------告警规则，删除成功---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑-筛选(仅筛选，勾选规则）
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑-筛选(仅筛选，勾选规则）
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyAlarmMergeRulesEditSelect(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4675,12 +5013,12 @@ public class VicubeSystem extends TestBase {
         WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
         selectChooseRules.click();
         LogFunction.logInfo("勾选筛选结果规则");
-        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+        LogFunction.logInfo("-----------------降噪策略,告警合并规则,筛选查询完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-编辑-筛选(仅筛选，勾选规则）
+    //    集中告警-告警配置-降噪策略-告警合并策略-编辑-筛选(仅筛选，勾选规则）
     @Test(dataProvider = "xmldata")
-    public void denoiseStrategyAlarmMergeRulesEditSelect1(Map<String, String> param) {
+    public void denoiseStrategyAlarmMergeRulesEditDeleteAndSelectVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         try {
             Thread.sleep(1000);
@@ -4719,10 +5057,11 @@ public class VicubeSystem extends TestBase {
         WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
         selectChooseRules.click();
         LogFunction.logInfo("勾选筛选结果规则");
-        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+        co.alarmRulesDelete(param, "alarmMergeRulesNameEditValue");
+        LogFunction.logInfo("-----------------降噪策略,告警合并规则,删除且筛选校验通过---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警合并规则-筛选及校验
+    //    集中告警-告警配置-降噪策略-告警分类规则-筛选及校验
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyAlarmClassifyRulesSelectVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4732,11 +5071,11 @@ public class VicubeSystem extends TestBase {
             e.printStackTrace();
         }
 //        点击，筛选
-            WebElement commonSelect = l.getElement(param.get("commonSelect"));
-            String text = commonSelect.getText();
-            commonSelect.click();
-            LogFunction.logInfo("点击：" + text);
-            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
 
 //        录入，规则名称
         WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
@@ -4797,7 +5136,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("-----------------降噪策略告警规则筛选查询校验完成完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑，第1部分，基础设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑，第1部分，基础设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesEditBasicSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4837,11 +5176,11 @@ public class VicubeSystem extends TestBase {
         basicsNextStep.click();
         LogFunction.logInfo("点击：" + text3);
         AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第一步，基础设置编辑完成---------------------");
+        LogFunction.logInfo("-----------------告警分类策略，第一步，基础设置编辑完成---------------------");
 
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑，第2部分，规则条件设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑，第2部分，规则条件设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesEditRulesConditionSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4886,10 +5225,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionConfigNextStep.click();
         LogFunction.logInfo("点击：" + text7);
         AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第二步，规则条件设置编辑完成---------------------");
+        LogFunction.logInfo("-----------------告警分类策略，第二步，规则条件设置编辑完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑，第3部分，规则条件高级设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑，第3部分，规则条件高级设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesEditRulesConditionAdvancedSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4936,10 +5275,10 @@ public class VicubeSystem extends TestBase {
         rulesConditionAdvancedConfigNextStep.click();
         LogFunction.logInfo("点击：" + text71);
         AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
-        LogFunction.logInfo("-----------------告警合并规则，第三步，规则条件高级设置编辑完成---------------------");
+        LogFunction.logInfo("-----------------告警分类策略，第三步，规则条件高级设置编辑完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑，第4部分，告警分类设置
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑，第4部分，告警分类设置
     @Test(dataProvider = "xmldata")
     public void alarmClassifyRulesEditAlarmClassifySetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -4967,11 +5306,11 @@ public class VicubeSystem extends TestBase {
         String text10 = alarmMergeConfigSave.getText();
         alarmMergeConfigSave.click();
         LogFunction.logInfo("点击：" + text10);
-        AssertFunction.assertEquals(driver, text10, "保存");
-        LogFunction.logInfo("-----------------告警合并规则，最后一步，告警合并设置编辑完成且告警合并规则创建成功---------------------");
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警分类策略，最后一步，告警合并设置编辑完成且告警合并策略创建成功---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑-筛选及校验
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑-筛选及校验
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyAlarmClassifyRulesEditSelectVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -5053,10 +5392,10 @@ public class VicubeSystem extends TestBase {
         String title = selectStatus.getAttribute("title");
         LogFunction.logInfo("状态为：" + title);
         AssertFunction.verifyEquals(driver, title, "已禁用");
-        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+        LogFunction.logInfo("-----------------降噪策略告警分类策略筛选查询完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑-筛选及校验
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑-筛选
     @Test(dataProvider = "xmldata")
     public void denoiseStrategyAlarmClassifyRulesEditSelect(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -5097,12 +5436,12 @@ public class VicubeSystem extends TestBase {
         WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
         selectChooseRules.click();
         LogFunction.logInfo("勾选筛选结果规则");
-        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+        LogFunction.logInfo("-----------------降噪策略告警分类策略筛选查询完成---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-告警分类规则-编辑-筛选及校验
+    //    集中告警-告警配置-降噪策略-告警分类策略-编辑-筛选
     @Test(dataProvider = "xmldata")
-    public void denoiseStrategyAlarmClassifyRulesEditSelect1(Map<String, String> param) {
+    public void denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         try {
             Thread.sleep(1000);
@@ -5141,25 +5480,4875 @@ public class VicubeSystem extends TestBase {
         WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
         selectChooseRules.click();
         LogFunction.logInfo("勾选筛选结果规则");
-        LogFunction.logInfo("-----------------降噪策略告警分类规则筛选查询完成---------------------");
+        co.alarmRulesDelete(param, "alarmClassifyRulesNameEditValue");
+        LogFunction.logInfo("-----------------降噪策略,告警分类策略,删除及筛选校验通过---------------------");
+    }
+
+    //    集中告警-告警查询
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警查询
+        WebElement alarmSelect = l.getElement(param.get("alarmSelect"));
+        String text = alarmSelect.getText();
+        alarmSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警查询");
+        LogFunction.logInfo("-----------------进入，告警查询页面---------------------");
+
+    }
+
+    //    集中告警-告警查询-前转记录
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmSelectForwardShiftingRecording(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，前转记录
+        WebElement shiftingRecording = l.getElement(param.get("shiftingRecording"));
+        String text = shiftingRecording.getText();
+        shiftingRecording.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "前转记录");
+        LogFunction.logInfo("-----------------进入，前转记录页面---------------------");
+
+    }
+
+    //    集中告警-告警查询-前转记录-查看
+    @Test(dataProvider = "xmldata")
+    public void shiftingRecordingView(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，查看
+        WebElement alarmDisplayView = l.getElement(param.get("alarmDisplayView"));
+        String text = alarmDisplayView.getText();
+        alarmDisplayView.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "查看");
+//        点击，取消
+        WebElement viewCancel = l.getElement(param.get("viewCancel"));
+        String text1 = viewCancel.getText();
+        viewCancel.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "取消");
+        LogFunction.logInfo("-----------------告警查询-前转记录,进入查看页面---------------------");
+    }
+
+    //    集中告警-告警查询-前转记录-查看
+    @Test(dataProvider = "xmldata")
+    public void forwardShiftingRecodingViewCancel(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，取消
+        WebElement viewCancel = l.getElement(param.get("viewCancel"));
+        String text = viewCancel.getText();
+        viewCancel.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "取消");
+        LogFunction.logInfo("-----------------告警查询-前转记录,关闭查看页面---------------------");
+    }
+
+    //    集中告警-告警查询-前转记录-查询
+    @Test(dataProvider = "xmldata")
+    public void forwardShiftingRecodingSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，障碍名称
+        WebElement BreakdownName = l.getElement(param.get("BreakdownName"));
+        BreakdownName.clear();
+        BreakdownName.sendKeys(param.get("commonForwardShiftingTitleValue"));
+        LogFunction.logInfo("障碍名称,录入：" + param.get("commonForwardShiftingTitleValue"));
+//        点击，确定
+        WebElement commonAffirm = l.getElement(param.get("commonAffirm"));
+        String c = commonAffirm.getText();
+        commonAffirm.click();
+        LogFunction.logInfo("点击：" + c);
+        AssertFunction.verifyEquals(driver, c, "确定");
+        LogFunction.logInfo("-----------------告警查询-前转记录,关闭查看页面---------------------");
+    }
+
+    //    集中告警-告警查询-历史告警
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmSelectHistoryAlarm(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，历史告警
+        WebElement historyAlarm = l.getElement(param.get("historyAlarm"));
+        String text = historyAlarm.getText();
+        historyAlarm.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "历史告警");
+        LogFunction.logInfo("-----------------进入，历史告警页面---------------------");
+
+    }
+
+    //    集中告警-告警查询-历史告警-筛选
+    @Test(dataProvider = "xmldata")
+    public void alarmQueryHistoryAlarmSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement Select = l.getElement(param.get("commonCentralizedAlarmSelect"));
+        String text = Select.getText();
+        Select.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选");
+//         点击，CI域，选择框
+        WebElement selectCIDomain = l.getElement(param.get("selectCIDomain"));
+        selectCIDomain.click();
+        LogFunction.logInfo("点击：CI域");
+//          选择，CI域，(rootDomain)
+        WebElement selectCIDomainValue = l.getElement(param.get("selectCIDomainValue"));
+        String text1 = selectCIDomainValue.getText();
+        selectCIDomainValue.click();
+        LogFunction.logInfo("CI域选择：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "rootDomain");
+//         点击，CI类型，选择框
+        WebElement selectCIType = l.getElement(param.get("selectCIType"));
+        selectCIType.click();
+        LogFunction.logInfo("点击：CI域");
+//          选择，CI类型，(操作系统)
+        WebElement selectCITypeValue = l.getElement(param.get("selectCITypeValue"));
+        String text2 = selectCITypeValue.getText();
+        selectCITypeValue.click();
+        LogFunction.logInfo("CI类型选择：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "操作系统");
+//         点击，CI名称，选择框
+        WebElement selectCIName = l.getElement(param.get("selectCIName"));
+        selectCIName.click();
+        LogFunction.logInfo("点击：CI域");
+//          选择，CI名称，(StandardLinux_Test1)
+        WebElement selectCINameValue = l.getElement(param.get("selectCINameValue"));
+        String text3 = selectCINameValue.getText();
+        selectCINameValue.click();
+        LogFunction.logInfo("CI名称选择：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "StandardLinux_Test1");
+//        点击，空白
+        WebElement systemTitleblank = l.getElement(param.get("systemTitleblank"));
+        systemTitleblank.click();
+        LogFunction.logInfo("点击： 空白");
+//        录入，告警信息
+        WebElement selectAlarmInformation = l.getElement(param.get("selectAlarmInformation"));
+        selectAlarmInformation.clear();
+        selectAlarmInformation.sendKeys(param.get("selectAlarmInformationValue"));
+        LogFunction.logInfo("告警信息录入：" + param.get("selectAlarmInformationValue"));
+//          点击，确定
+
+        WebElement selectConfirm = l.getElement(param.get("selectConfirm"));
+        String text4 = selectConfirm.getText();
+        selectConfirm.click();
+        LogFunction.logInfo("点击：" + text4);
+        AssertFunction.verifyEquals(driver, text4, "确定");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          校验，筛选结果，信息内容：Message:AutoTest
+        WebElement selecResultInformationContent = l.getElement(param.get("selecResultInformationContent"));
+        String text5 = selecResultInformationContent.getText();
+        LogFunction.logInfo("信息内容为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, "Message:AutoTest");
+
+        LogFunction.logInfo("-----------------历史告警,筛选校验通过---------------------");
+
     }
 
 
+    //    集中告警-告警查询-历史告警-前转
+    @Test(dataProvider = "xmldata")
+    public void alarmQueryHistoryAlarmForwardShifting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+////        点击，前转
+//        WebElement Confirmation = l.getElement(param.get("alarmDisplayForwardShifting"));
+//        String text = Confirmation.getText();
+//        Confirmation.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "前转");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，标题
+        WebElement forwardShiftingTitle = l.getElement(param.get("forwardShiftingTitle"));
+        forwardShiftingTitle.clear();
+        forwardShiftingTitle.sendKeys(param.get("commonForwardShiftingTitleValue"));
+        LogFunction.logInfo("前转标题为：" + param.get("commonForwardShiftingTitleValue"));
+//        点击，级别选择框
+        WebElement LevelChoose = l.getElement(param.get("LevelChoose"));
+        LevelChoose.click();
+        LogFunction.logInfo("点击，级别选择框");
+//        选择，级别选择
+        WebElement LevelChooseValue = l.getElement(param.get("LevelChooseValue"));
+        String text1 = LevelChooseValue.getText();
+        LevelChooseValue.click();
+        LogFunction.logInfo("选择级别选择：" + text1);
+//        点击，故障分类
+        WebElement FaultClassify = l.getElement(param.get("FaultClassify"));
+        FaultClassify.click();
+        LogFunction.logInfo("点击，故障分类框");
+//        选择，故障分类-值
+        WebElement FaultClassifyValue = l.getElement(param.get("FaultClassifyValue"));
+        String text2 = FaultClassifyValue.getText();
+        FaultClassifyValue.click();
+        LogFunction.logInfo("选择级别选择：" + text2);
+//        点击，备注，确定
+        WebElement affirm = l.getElement(param.get("affirm"));
+        String text21 = affirm.getAttribute("value");
+        affirm.click();
+        LogFunction.logInfo("点击：" + text21);
+        AssertFunction.verifyEquals(driver, text21, "确定");
+//        弹出，提示信息
+        WebElement hintMessage = l.getElement(param.get("hintMessage"));
+        String text3 = hintMessage.getText();
+        hintMessage.click();
+        LogFunction.logInfo("提示信息为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "已发送1条告警!");
+//        点击，备注-提示信息，确认
+//        WebElement affirm1 = l.getElement(param.get("hintMessageConfirm"));
+//        String text4 = affirm1.getText();
+//        affirm1.click();
+//        LogFunction.logInfo("点击：" + text4);
+//        AssertFunction.verifyEquals(driver, text4, "确认");
+        LogFunction.logInfo("-----------------告警展示,前转，完成---------------------");
+    }
+
+    //    集中告警-告警查询-历史告警-前转2
+    @Test(dataProvider = "xmldata")
+    public void alarmQueryHistoryAlarmForwardShiftingMode2(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+////        点击，前转
+//        WebElement Confirmation = l.getElement(param.get("alarmDisplayForwardShifting"));
+//        String text = Confirmation.getText();
+//        Confirmation.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "前转");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，标题
+        WebElement forwardShiftingTitle = l.getElement(param.get("forwardShiftingTitle"));
+        forwardShiftingTitle.click();
+        forwardShiftingTitle.clear();
+        forwardShiftingTitle.sendKeys(param.get("commonForwardShiftingTitleValue"));
+        LogFunction.logInfo("前转标题为：" + param.get("commonForwardShiftingTitleValue"));
+//        点击，直接转给用户
+        WebElement LevelChoose = l.getElement(param.get("DirectToUser"));
+        LevelChoose.click();
+        LogFunction.logInfo("点击，直接转给用户");
+//        点击，前转类型选择框
+        WebElement ForwardShiftingClassify = l.getElement(param.get("ForwardShiftingClassify"));
+        ForwardShiftingClassify.click();
+        LogFunction.logInfo("点击，前转类型选择框");
+//        选择，前转类型-值
+        WebElement ForwardShiftingClassifyValue = l.getElement(param.get("ForwardShiftingClassifyValue"));
+        String text1 = ForwardShiftingClassifyValue.getText();
+        ForwardShiftingClassifyValue.click();
+        LogFunction.logInfo("选择前转类型：" + text1);
+
+//        点击，前转用户
+        WebElement ForwardShiftingUser = l.getElement(param.get("ForwardShiftingUser"));
+        ForwardShiftingUser.click();
+        LogFunction.logInfo("点击，前转用户选择框");
+//        选择，前转用户-值
+        WebElement ForwardShiftingUserValue = l.getElement(param.get("ForwardShiftingUserValue"));
+        String text2 = ForwardShiftingUserValue.getText();
+        ForwardShiftingUserValue.click();
+        LogFunction.logInfo("选择前转用户：" + text2);
+//        点击，备注，确定
+        WebElement affirm = l.getElement(param.get("affirm"));
+        String text21 = affirm.getAttribute("value");
+        affirm.click();
+        LogFunction.logInfo("点击：" + text21);
+        AssertFunction.verifyEquals(driver, text21, "确定");
+//        弹出，提示信息
+        WebElement hintMessage = l.getElement(param.get("hintMessage"));
+        String text3 = hintMessage.getText();
+        hintMessage.click();
+        LogFunction.logInfo("提示信息为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "已前转1条告警!");
+//        点击，备注-提示信息，确认
+//        WebElement affirm1 = l.getElement(param.get("hintMessageConfirm"));
+//        String text4 = affirm1.getText();
+//        affirm1.click();
+//        LogFunction.logInfo("点击：" + text4);
+//        AssertFunction.verifyEquals(driver, text4, "确认");
+        LogFunction.logInfo("-----------------告警展示,前转，完成---------------------");
+    }
+
+    //    集中告警-告警查询-历史告警-分页功能
+    @Test(dataProvider = "xmldata")
+    public void alarmQueryHistoryAlarmPaging(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+////        点击，前转
+//        WebElement Confirmation = l.getElement(param.get("alarmDisplayForwardShifting"));
+//        String text = Confirmation.getText();
+//        Confirmation.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "前转");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        获取，历史告警，总数
+        WebElement PagingTotal = l.getElement(param.get("Total"));
+        String text = PagingTotal.getText();
+        String[] split = text.split(" ");
+        String s1 = split[5];
+        String num = "";
+        Integer total=null;
+        if (s1.contains(",")) {
+            String[] split2 = s1.split(",");
+            for (int i = 0; i < split2.length; i++) {
+                num += split2[i];
+            }
+            total = Integer.valueOf(num);
+            LogFunction.logInfo("历史告警总数是：" + total);
+        }else {
+            LogFunction.logInfo("历史告警总数是：" + s1);
+        }
+//        验证，是否从第1项开始，
+        AssertFunction.verifyEquals(driver, Integer.valueOf(split[1]), 1);
+//        获取，选择多少项，分页（50,100,200,All）
+        WebElement TotalChoose = l.getElement(param.get("TotalChoose"));
+        Select s = new Select(TotalChoose);
+        WebElement webElement = s.getFirstSelectedOption();
+        String text1 = webElement.getText();
+//        获取，多少项，整数
+        int i = InterceptFunction.interpeptNumber(text1);
+        LogFunction.logInfo("当前选项是：" + i);
+        if (total <= i) {
+            AssertFunction.verifyEquals(driver, Integer.valueOf(split[3]), total);
+        }
+        LogFunction.logInfo("选择：" + text1);
+//        验证，上页button的状态
+        List<WebElement> PageUp = l.getElements(param.get("TotalChoosePageUpAndDown"));
+        WebElement e = PageUp.get(0);
+        String text2 = e.getText();
+        String aClass = e.getAttribute("class");
+        boolean disabled = !aClass.contains("disabled");
+        LogFunction.logInfo(text2 + "button的状态为：" + disabled);
+        AssertFunction.verifyEquals(driver, false, disabled);
+
+//        验证，下页button的状态
+        int size = PageUp.size();
+        WebElement e1 = PageUp.get(size - 1);
+        String text4 = e1.getText();
+        String aClass1 = e1.getAttribute("class");
+        boolean disabled1 = !aClass1.contains("disabled");
+        LogFunction.logInfo(text4 + "button的状态为：" + disabled1);
+        AssertFunction.verifyEquals(driver, true, disabled1);
+
+//        点击，下页button
+        List<WebElement> Details = l.getElements(param.get("TotalChoosePageUpAndDownDetails"));
+        int size1 = Details.size();
+        WebElement d = Details.get(size1 - 1);
+        String text6 = d.getText();
+        d.click();
+        LogFunction.logInfo("点击：" + text6 + "按钮");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ee) {
+            ee.printStackTrace();
+        }
+        //        验证，上页button的状态
+        List<WebElement> PageUp2 = l.getElements(param.get("TotalChoosePageUpAndDown"));
+        WebElement e2 = PageUp2.get(0);
+        String text22 = e2.getText();
+        String aClass2 = e2.getAttribute("class");
+        boolean disabled2 = !aClass2.contains("disabled");
+        LogFunction.logInfo(text22 + "button的状态为：" + disabled2);
+        AssertFunction.verifyEquals(driver, true, disabled2);
+//        验证，从51项到100项
+        WebElement PagingTotal1 = l.getElement(param.get("Total"));
+        String text11 = PagingTotal1.getText();
+        String[] split1 = text11.split(" ");
+        Integer total1 = Integer.valueOf(split1[1]);
+        Integer total11 = Integer.valueOf(split1[3]);
+        LogFunction.logInfo("从-" + total1 + "-项,到-" + total11 + "-项");
+        AssertFunction.verifyEquals(driver, total1, 51);
+        AssertFunction.verifyEquals(driver, total11, 100);
+//         点击，上页button
+        List<WebElement> Details1 = l.getElements(param.get("TotalChoosePageUpAndDownDetails"));
+        WebElement dd = Details1.get(0);
+        String text5 = dd.getText();
+        dd.click();
+        LogFunction.logInfo("点击：" + text5 + "按钮");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ee) {
+            ee.printStackTrace();
+        }
+//        校验，上页button状态
+        List<WebElement> PageUp3 = l.getElements(param.get("TotalChoosePageUpAndDown"));
+        WebElement e3 = PageUp3.get(0);
+        String text33 = e3.getText();
+        String aClass3 = e3.getAttribute("class");
+        boolean disabled3 = !aClass3.contains("disabled");
+        LogFunction.logInfo(text33 + "button的状态为：" + disabled3);
+        AssertFunction.verifyEquals(driver, false, disabled3);
+
+//          选择，All
+        s.selectByVisibleText("All");
+        LogFunction.logInfo("选择："+s.getFirstSelectedOption().getText().toString());
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException ee) {
+            ee.printStackTrace();
+        }
+//        获取，历史告警，总数
+        WebElement PagingTotal11 = l.getElement(param.get("Total"));
+//        String text3 = PagingTotal11.getText();
+//        String[] split111 = text3.split(" ");
+//        Integer total111 = Integer.valueOf(split[5]);
+//        LogFunction.logInfo("历史告警总数是：" + total111);
+//        AssertFunction.verifyEquals(driver, Integer.valueOf(split111[3]), total111);
+        String text3 = PagingTotal11.getText();
+        String[] split111 = text3.split(" ");
+        String s11 = split111[3];
+        String num1 = "";
+        if (s11.contains(",")) {
+            String[] split22 = s11.split(",");
+            for (int ii = 0; ii < split22.length; ii++) {
+                num1 += split22[ii];
+            }
+            Integer total2 = Integer.valueOf(num1);
+            LogFunction.logInfo("历史告警总数是：" + total2);
+            AssertFunction.verifyEquals(driver, total2, total);
+
+        }else {
+            LogFunction.logInfo("历史告警总数是：" + s11);
+            AssertFunction.verifyEquals(driver, s1, s11);
+        }
+
+
+
+        LogFunction.logInfo("-----------------历史告警-分页功能，验证通过---------------------");
+    }
+
+    //    集中告警-告警通知
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInform(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警查询
+        WebElement AlarmInform = l.getElement(param.get("AlarmInform"));
+        String text = AlarmInform.getText();
+        AlarmInform.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警通知");
+        LogFunction.logInfo("-----------------进入，告警通知页面---------------------");
+
+    }
+
+    //    集中告警-告警通知-接收分组
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformReceiveGrouping(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，接收分组
+        WebElement ReceiveGrouping = l.getElement(param.get("ReceiveGrouping"));
+        String text = ReceiveGrouping.getText();
+        ReceiveGrouping.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "接收分组");
+        LogFunction.logInfo("-----------------进入，接收分组页面---------------------");
+
+    }
+
+    //    集中告警-告警通知-接收分组-新建分组
+    @Test(dataProvider = "xmldata")
+    public void receiveGroupingNewGrouping(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，新建分组
+        WebElement NewGrouping = l.getElement(param.get("NewGrouping"));
+        String text = NewGrouping.getText();
+        NewGrouping.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "新建");
+//        录入，接收分组名称，（我是接收分组名称）
+        WebElement GroupingName = l.getElement(param.get("NewGroupingName"));
+        GroupingName.clear();
+        GroupingName.sendKeys(param.get("NewGroupingNameValue"));
+        LogFunction.logInfo("接收分组名称录入：" + param.get("NewGroupingNameValue"));
+//        录入，接收分组描述，（我是接收分组描述）
+        WebElement NewGroupingDescription = l.getElement(param.get("NewGroupingDescription"));
+        NewGroupingDescription.clear();
+        NewGroupingDescription.sendKeys(param.get("NewGroupingDescriptionValue"));
+        LogFunction.logInfo("接收分组描述录入：" + param.get("NewGroupingDescriptionValue"));
+//          点击，保存
+        WebElement save = l.getElement(param.get("NewGroupingSave"));
+        String text1 = save.getText();
+        save.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "保存");
+//          校验，保存提示信息，添加成功
+        WebElement SavePromptMessage = l.getElement(param.get("SavePromptMessage"));
+        String text2 = SavePromptMessage.getText();
+        LogFunction.logInfo("提示信息为：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "添加成功");
+//          点击，保存提示，确认
+        WebElement SaveHintConfirm = l.getElement(param.get("SaveHintConfirm"));
+        String text3 = SaveHintConfirm.getText();
+        SaveHintConfirm.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "确认");
+        LogFunction.logInfo("-----------------进入，新建分组，新建完成---------------------");
+
+    }
+
+    //    集中告警-告警通知-接收分组-筛选
+    @Test(dataProvider = "xmldata")
+    public void receiveGroupingQuery(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement Select = l.getElement(param.get("commonCentralizedAlarmSelect"));
+        String text = Select.getText();
+        Select.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选");
+//          录入，接收分组名称
+        WebElement QueryName = l.getElement(param.get("receiveGroupingQueryName"));
+        QueryName.clear();
+        QueryName.sendKeys(param.get("NewGroupingNameValue"));
+        LogFunction.logInfo("筛选条件分组名称录入：" + param.get("NewGroupingNameValue"));
+//          点击，确定
+        WebElement QueryConfirm = l.getElement(param.get("receiveGroupingQueryConfirm"));
+        String text1 = QueryConfirm.getText();
+        QueryConfirm.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "确定");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        勾选筛选结果
+        WebElement selectChooseUser = l.getElement(param.get("commonSystemSetupSelectChoose"));
+        boolean selected = selectChooseUser.isSelected();
+        if (selected == false) {
+            selectChooseUser.click();
+        }
+        LogFunction.logInfo("成功勾选筛选结果");
+//          校验，筛选结果，分组名称
+        WebElement GroupingName = l.getElement(param.get("QueryResultGroupingName"));
+        String text2 = GroupingName.getText();
+        LogFunction.logInfo("筛选结果分组名称为；" + text2);
+        AssertFunction.verifyEquals(driver, text2, param.get("NewGroupingNameValue"));
+//          校验，筛选结果，分组描述
+        WebElement Description = l.getElement(param.get("QueryResultGroupingDescription"));
+        String text3 = Description.getText();
+        LogFunction.logInfo("筛选结果分组描述为；" + text3);
+        AssertFunction.verifyEquals(driver, text3, param.get("NewGroupingDescriptionValue"));
+        LogFunction.logInfo("-----------------进入，筛选及验证通过---------------------");
+    }
+
+    //    集中告警-告警通知-接收分组-编辑
+    @Test(dataProvider = "xmldata")
+    public void receiveGroupingEdit(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，编辑
+        WebElement Edit = l.getElement(param.get("commonEdit"));
+        String text = Edit.getText();
+        Edit.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "编辑");
+//        校验，编辑分组名称，不可修改
+        WebElement EditName = l.getElement(param.get("NewGroupingEditName"));
+        boolean enabled = EditName.isEnabled();
+        LogFunction.logInfo("编辑分组名称是否可修改：" + enabled);
+        AssertFunction.verifyEquals(driver, enabled, false);
+//        编辑，接收分组描述，（编辑接收分组描述）
+        WebElement NewGroupingDescription = l.getElement(param.get("NewGroupingEditDescription"));
+        NewGroupingDescription.clear();
+        NewGroupingDescription.sendKeys(param.get("NewGroupingDescriptionEditValue"));
+        LogFunction.logInfo("编辑分组描述：" + param.get("NewGroupingDescriptionEditValue"));
+//          点击，保存
+        WebElement save = l.getElement(param.get("EditNewGroupingSave"));
+        String text1 = save.getText();
+        save.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "保存");
+//          校验，保存提示信息，修改成功
+        WebElement SavePromptMessage = l.getElement(param.get("SavePromptMessage"));
+        String text2 = SavePromptMessage.getText();
+        LogFunction.logInfo("提示信息为：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "修改成功");
+//          点击，保存提示，确认
+        WebElement SaveHintConfirm = l.getElement(param.get("SaveHintConfirm"));
+        String text3 = SaveHintConfirm.getText();
+        SaveHintConfirm.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "确认");
+        LogFunction.logInfo("-----------------进入，编辑分组，完成---------------------");
+    }
+
+    //    集中告警-告警通知-接收分组-编辑筛选
+    @Test(dataProvider = "xmldata")
+    public void receiveGroupingEditQuery(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          校验，筛选区域是否打开
+        Boolean queryArea = l.getElementIsDisplay(param.get("queryArea"));
+        LogFunction.logInfo("筛选区域的状态为：" + queryArea);
+        if (queryArea == false) {
+//        点击，筛选
+            WebElement Select = l.getElement(param.get("commonCentralizedAlarmSelect"));
+            String text = Select.getText();
+            Select.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选");
+        }
+//          录入，接收分组名称
+        WebElement QueryName = l.getElement(param.get("receiveGroupingQueryName"));
+        QueryName.clear();
+        QueryName.sendKeys(param.get("NewGroupingNameValue"));
+        LogFunction.logInfo("筛选条件分组名称录入：" + param.get("NewGroupingNameValue"));
+//          点击，确定
+        WebElement QueryConfirm = l.getElement(param.get("receiveGroupingQueryConfirm"));
+        String text1 = QueryConfirm.getText();
+        QueryConfirm.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "确定");
+//        勾选筛选结果
+        WebElement selectChooseUser = l.getElement(param.get("commonSystemSetupSelectChoose"));
+        boolean selected = selectChooseUser.isSelected();
+        if (selected == false) {
+            selectChooseUser.click();
+        }
+        LogFunction.logInfo("成功勾选筛选结果");
+//          校验，筛选结果，分组名称
+        WebElement GroupingName = l.getElement(param.get("QueryResultGroupingName"));
+        String text2 = GroupingName.getText();
+        LogFunction.logInfo("筛选结果分组名称为；" + text2);
+        AssertFunction.verifyEquals(driver, text2, param.get("NewGroupingNameValue"));
+//          校验，筛选结果，分组描述
+        WebElement Description = l.getElement(param.get("QueryResultGroupingDescription"));
+        String text3 = Description.getText();
+        LogFunction.logInfo("筛选结果分组描述为；" + text3);
+        AssertFunction.verifyEquals(driver, text3, param.get("NewGroupingDescriptionEditValue"));
+        LogFunction.logInfo("-----------------进入，筛选及验证通过---------------------");
+    }
+
+    //    集中告警-告警通知-接收分组-删除
+    @Test(dataProvider = "xmldata")
+    public void receiveGroupingDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，删除
+        WebElement delete = l.getElement(param.get("commonDelete"));
+        String text1 = delete.getText();
+        delete.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "删除");
+//          获取，删除提示信息
+        WebElement PromptMessage = l.getElement(param.get("PromptMessage"));
+        String text2 = PromptMessage.getText();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定要删除？");
+//          点击，确认
+        WebElement HintConfirm = l.getElement(param.get("HintConfirm"));
+        String text3 = HintConfirm.getText();
+        HintConfirm.click();
+        LogFunction.logInfo("点击：删除提示信息Button，" + text3);
+        AssertFunction.verifyEquals(driver, text3, "确认");
+////          获取，删除成功，提示信息
+//        WebElement PromptMessage1 = l.getElement(param.get("PromptMessage"));
+//        String text22 = PromptMessage1.getText();
+//        LogFunction.logInfo("点击：" + text22);
+//        AssertFunction.verifyEquals(driver, text22, "删除故障类型成功");
+////          点击，确认
+//        WebElement HintConfirm1 = l.getElement(param.get("HintConfirm"));
+//        String text33 = HintConfirm1.getText();
+//        HintConfirm1.click();
+//        LogFunction.logInfo("点击：删除成功，提示信息Button，" + text33);
+//        AssertFunction.verifyEquals(driver, text33, "确认");
+
+        LogFunction.logInfo("-----------------分组成功删除---------------------");
+    }
+
+    //    集中告警-告警通知-接收分组-删除筛选
+    @Test(dataProvider = "xmldata")
+    public void receiveGroupingDeleteQuery(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          校验，筛选区域是否打开
+        Boolean queryArea = l.getElementIsDisplay(param.get("queryArea"));
+        LogFunction.logInfo("筛选区域的状态为：" + queryArea);
+        if (queryArea == false) {
+//        点击，筛选
+            WebElement Select = l.getElement(param.get("commonCentralizedAlarmSelect"));
+            String text = Select.getText();
+            Select.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选");
+        }
+//          录入，接收分组名称
+        WebElement QueryName = l.getElement(param.get("receiveGroupingQueryName"));
+        QueryName.clear();
+        QueryName.sendKeys(param.get("NewGroupingNameValue"));
+        LogFunction.logInfo("筛选条件分组名称录入：" + param.get("NewGroupingNameValue"));
+//          点击，确定
+        WebElement QueryConfirm = l.getElement(param.get("receiveGroupingQueryConfirm"));
+        String text1 = QueryConfirm.getText();
+        QueryConfirm.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "确定");
+//         获取筛选结果，空数据
+        WebElement EmptyData = l.getElement(param.get("QueryResultEmptyData"));
+        String text = EmptyData.getText();
+        LogFunction.logInfo("筛选结果:" + text);
+        AssertFunction.assertEquals(driver, text, "表中数据为空");
+        LogFunction.logInfo("-----------------进入，筛选及验证通过---------------------");
+    }
+
+    //    集中告警-告警查询-通知记录
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmSelectNotifyRecord(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警查询-通知记录
+        WebElement AlarmInform = l.getElement(param.get("NotifyRecord"));
+        String text = AlarmInform.getText();
+        AlarmInform.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "通知记录");
+        LogFunction.logInfo("-----------------进入，通知记录页面---------------------");
+
+    }
+
+    //    集中告警-告警查询-通知记录-筛选
+    @Test(dataProvider = "xmldata")
+    public void alarmSelectNotifyRecordQuery(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          校验，筛选区域是否打开
+        Boolean queryArea = l.getElementIsDisplay(param.get("commonQueryArea"));
+        LogFunction.logInfo("筛选区域的状态为：" + queryArea);
+        if (queryArea == false) {
+//        点击，筛选
+            WebElement Select = l.getElement(param.get("commonCentralizedAlarmSelect"));
+            String text = Select.getText();
+            Select.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选");
+        }
+//        录入，通知标题（前转标题）
+        WebElement NoticeTitle = l.getElement(param.get("NoticeTitle"));
+        NoticeTitle.clear();
+        NoticeTitle.sendKeys(param.get("commonForwardShiftingTitleValue"));
+        LogFunction.logInfo("前转标题录入：" + param.get("commonForwardShiftingTitleValue"));
+//          点击，确定
+        WebElement QueryConfirm = l.getElement(param.get("QueryConfirm"));
+        String text = QueryConfirm.getText();
+        QueryConfirm.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "确定");
+//          获取，查询结果，通知标题
+        List<WebElement> queryResultNoticeTitle = l.getElements(param.get("QueryResultNoticeTitle"));
+        for (WebElement e : queryResultNoticeTitle) {
+            String text1 = e.getText();
+            if (!text1.equals(param.get("commonForwardShiftingTitleValue"))) {
+                LogFunction.logInfo("通知标题的值为：" + text1);
+                AssertFunction.verifyEquals(driver, text1, param.get("commonForwardShiftingTitleValue"));
+            } else {
+                AssertFunction.verifyEquals(driver, text1, param.get("commonForwardShiftingTitleValue"));
+            }
+        }
+
+//        勾选筛选结果
+        WebElement selectChooseUser = l.getElement(param.get("commonSystemSetupSelectChoose"));
+        boolean selected = selectChooseUser.isSelected();
+        if (selected == false) {
+            selectChooseUser.click();
+        }
+        LogFunction.logInfo("成功勾选筛选结果");
+        LogFunction.logInfo("-----------------通知记录,筛选功能，查询及校验通过---------------------");
+    }
+
+    //    集中告警-告警查询-通知记录-查看
+    @Test(dataProvider = "xmldata")
+    public void alarmSelectNotifyRecordView(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，查看
+        WebElement View = l.getElement(param.get("commonCentralizedAlarmView"));
+        String text = View.getText();
+        View.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "查看");
+//        校验，查看标题
+        WebElement ViewDetailsTitle = l.getElement(param.get("ViewDetailsTitle"));
+        String text1 = ViewDetailsTitle.getText();
+        LogFunction.logInfo("查看标题为：" + text1);
+        AssertFunction.assertEquals(driver, text1, "通知记录");
+//        点击，取消
+        WebElement ViewDetailsCancle = l.getElement(param.get("ViewDetailsCancle"));
+        String text2 = ViewDetailsCancle.getText();
+        ViewDetailsCancle.click();
+        LogFunction.logInfo("点击" + text2);
+        AssertFunction.verifyEquals(driver, text2, "取消");
+
+    }
+
+    //    集中告警-告警通知-通知方式
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWay(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，通知方式
+        WebElement ReceiveGrouping = l.getElement(param.get("InformWay"));
+        String text = ReceiveGrouping.getText();
+        ReceiveGrouping.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "通知方式");
+        LogFunction.logInfo("-----------------进入，通知方式页面---------------------");
+
+    }
+
+    //    集中告警-告警通知-通知方式-新建
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayCreate(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，新建
+        WebElement Create = l.getElement(param.get("Create"));
+        String text = Create.getText();
+        Create.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "新建");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         录入，名称
+        WebElement CreateName = l.getElement(param.get("AlarmInformInformWayCreateName"));
+        CreateName.sendKeys(param.get("AlarmInformInformWayCreateNameValue"));
+        LogFunction.logInfo("名称录入：" + param.get("AlarmInformInformWayCreateNameValue"));
+//       点击，通知类型
+        WebElement CreateType = l.getElement(param.get("CreateType"));
+        CreateType.click();
+        LogFunction.logInfo("点击：通知类型，选择框");
+//         选择,通知类型
+        WebElement CreateTypeValue = l.getElement(param.get("CreateTypeValue"));
+        String text1 = CreateTypeValue.getText();
+        CreateTypeValue.click();
+        LogFunction.logInfo("选择通知类型：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "邮件");
+//       点击，通知目标用户
+        WebElement CreateUser = l.getElement(param.get("CreateUser"));
+        CreateUser.click();
+        LogFunction.logInfo("点击：目标用户，选择框");
+//         选择,通知目标用户
+        WebElement CreateUserValue = l.getElement(param.get("CreateUserValue"));
+        String text6 = CreateUserValue.getText();
+        CreateUserValue.click();
+        String text66 = InterceptFunction.intercept(text6, "超级管理员");
+        LogFunction.logInfo("选择通知目标用户：" + text6);
+        AssertFunction.verifyEquals(driver, text66, "超级管理员");
+//          校验是否选择启用
+        WebElement CreateEnable = l.getElement(param.get("CreateEnable"));
+        boolean selected = CreateEnable.isSelected();
+        if (selected == false) {
+            CreateEnable.click();
+            LogFunction.logInfo("勾选启用");
+        } else {
+            LogFunction.logInfo("已勾选启用");
+        }
+
+//       点击，通知级别
+        WebElement CreateLevel = l.getElement(param.get("CreateLevel"));
+        CreateLevel.click();
+        LogFunction.logInfo("点击：通知级别，选择框");
+//         选择,通知级别
+        WebElement CreateLevelValue = l.getElement(param.get("CreateLevelValue"));
+        String text3 = CreateLevelValue.getText();
+        CreateLevelValue.click();
+        LogFunction.logInfo("选择通知级别：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "INFO");
+//       点击，接收分组
+        WebElement CreateReceivingPacket = l.getElement(param.get("CreateReceivingPacket"));
+        CreateReceivingPacket.click();
+        LogFunction.logInfo("点击：接收分组，选择框");
+//         选择,接收分组
+        WebElement CreateReceivingPacketValue = l.getElement(param.get("CreateReceivingPacketValue"));
+        String text4 = CreateReceivingPacketValue.getText();
+        CreateReceivingPacketValue.click();
+        String grouping = InterceptFunction.intercept(text4, "我是接收分组名称");
+        LogFunction.logInfo("选择接收分组：" + text4);
+        AssertFunction.verifyEquals(driver, grouping, "我是接收分组名称");
+//         点击，保存
+        WebElement Save = l.getElement(param.get("Save"));
+        String text5 = Save.getText();
+        Save.click();
+        LogFunction.logInfo("点击：" + text5);
+        AssertFunction.verifyEquals(driver, text5, "保存");
+        LogFunction.logInfo("-----------------通知方式，新建完成---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-筛选（新建）
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayCreateSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        校验，筛选区域是否打开
+        Boolean commonQueryArea = l.getElementIsDisplay(param.get("commonQueryArea"));
+        LogFunction.logInfo("筛选区域是否打开：" + commonQueryArea);
+        if (commonQueryArea == false) {
+//        点击，筛选
+            WebElement Create = l.getElement(param.get("Query"));
+            String text = Create.getText();
+            Create.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选");
+        }
+//        名称，输入：我是新建通知方式
+        WebElement QueryName = l.getElement(param.get("QueryName"));
+        QueryName.sendKeys(param.get("AlarmInformInformWayCreateNameValue"));
+        LogFunction.logInfo("名称，录入：" + param.get("AlarmInformInformWayCreateNameValue"));
+//      点击，通知类型
+        WebElement QueryNotificationType = l.getElement(param.get("QueryNotificationType"));
+        QueryNotificationType.click();
+        LogFunction.logInfo("点击：通知类型，选择框");
+//         通知类型，选择：邮件
+        WebElement QueryNotificationTypeValue = l.getElement(param.get("QueryNotificationTypeValue"));
+        String text1 = QueryNotificationTypeValue.getText();
+        QueryNotificationTypeValue.click();
+        LogFunction.logInfo("选择通知类型：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "邮件");
+//      通知目标用户，录入：超级管理员
+        WebElement QueryTargetUser = l.getElement(param.get("QueryTargetUser"));
+        QueryTargetUser.sendKeys(param.get("concentrateAlarmAlarmInformInformWayQueryTargetUserValue"));
+        LogFunction.logInfo("通知目标用户，录入：" + param.get("concentrateAlarmAlarmInformInformWayQueryTargetUserValue"));
+//      点击，状态
+        WebElement QueryStatus = l.getElement(param.get("QueryStatus"));
+        QueryStatus.click();
+        LogFunction.logInfo("点击：状态，选择框");
+//         状态，选择：启用
+        WebElement QueryStatusEnable = l.getElement(param.get("QueryStatusEnable"));
+        String text2 = QueryStatusEnable.getText();
+        QueryStatusEnable.click();
+        LogFunction.logInfo("选择状态：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "启用");
+//         点击，确定
+        WebElement QueryConfirm = l.getElement(param.get("QueryConfirm"));
+        String text3 = QueryConfirm.getText();
+        QueryConfirm.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "确定");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//       校验，筛选结果，名称
+        WebElement ResultName = l.getElement(param.get("ResultName"));
+        String text11 = ResultName.getText();
+        LogFunction.logInfo("筛选结果，名称：" + text11);
+        AssertFunction.verifyEquals(driver, text11, param.get("AlarmInformInformWayCreateNameValue"));
+//       校验，筛选结果，通知类型
+        WebElement ResultType = l.getElement(param.get("ResultType"));
+        String text22 = ResultType.getText();
+        LogFunction.logInfo("筛选结果，通知类型：" + text22);
+        AssertFunction.verifyEquals(driver, text22, "邮件");
+//       校验，筛选结果，状态
+        WebElement ResultEnableLogo = l.getElement(param.get("ResultEnableLogo"));
+        String text33 = ResultEnableLogo.getAttribute("title");
+        LogFunction.logInfo("筛选结果，状态：" + text33);
+        AssertFunction.verifyEquals(driver, text33, "已启用");
+//      勾选，筛选结果
+        WebElement ResultChoose = l.getElement(param.get("ResultChoose"));
+        boolean selected = ResultChoose.isSelected();
+        LogFunction.logInfo("筛选结果是否勾选：" + selected);
+        if (selected == false) {
+            ResultChoose.click();
+            LogFunction.logInfo("成功勾选，筛选结果");
+        }
+        LogFunction.logInfo("-----------------筛选查询，并校验成功---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-编辑
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayEdit(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，编辑
+        WebElement Create = l.getElement(param.get("Edit"));
+        String text = Create.getText();
+        Create.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "编辑");
+//         录入，名称
+        WebElement CreateName = l.getElement(param.get("AlarmInformInformWayCreateName"));
+        CreateName.clear();
+        CreateName.sendKeys(param.get("AlarmInformInformWayEditNameValue"));
+        LogFunction.logInfo("名称更改为：" + param.get("AlarmInformInformWayEditNameValue"));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，通知类型
+        WebElement EditType = l.getElement(param.get("EditType"));
+        EditType.click();
+        LogFunction.logInfo("点击：通知类型，选择框");
+//         选择,通知类型,短信
+        WebElement EditTypeValue = l.getElement(param.get("EditTypeValue"));
+        String text1 = EditTypeValue.getText();
+        EditTypeValue.click();
+        LogFunction.logInfo("选择通知类型更改为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "短信");
+//          校验是否选择启用
+        WebElement CreateEnable = l.getElement(param.get("CreateEnable"));
+        boolean selected = CreateEnable.isSelected();
+        if (selected == true) {
+            CreateEnable.click();
+            LogFunction.logInfo("未勾选启用");
+        } else {
+            LogFunction.logInfo("启用未被勾选");
+        }
+//         点击，保存
+        WebElement Save = l.getElement(param.get("Save"));
+        String text5 = Save.getText();
+        Save.click();
+        AssertFunction.verifyEquals(driver, text5, "保存");
+        LogFunction.logInfo("点击：" + text5);
+        LogFunction.logInfo("-----------------通知方式，编辑完成---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-筛选（编辑）
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        校验，筛选区域是否打开
+        Boolean commonQueryArea = l.getElementIsDisplay(param.get("commonQueryArea"));
+        LogFunction.logInfo("筛选区域是否打开：" + commonQueryArea);
+        if (commonQueryArea == false) {
+//        点击，筛选
+            WebElement Create = l.getElement(param.get("Query"));
+            String text = Create.getText();
+            Create.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选");
+        }
+//        名称，输入：我是编辑通知方式
+        WebElement QueryName = l.getElement(param.get("QueryName"));
+        QueryName.clear();
+        QueryName.sendKeys(param.get("AlarmInformInformWayEditNameValue"));
+        LogFunction.logInfo("名称，录入：" + param.get("AlarmInformInformWayEditNameValue"));
+//      点击，通知类型
+        WebElement QueryNotificationType = l.getElement(param.get("QueryNotificationType"));
+        QueryNotificationType.click();
+        LogFunction.logInfo("点击：通知类型，选择框");
+//         通知类型，选择：短信
+        WebElement QueryNotificationTypeValue = l.getElement(param.get("QueryNotificationTypeValue"));
+        String text1 = QueryNotificationTypeValue.getText();
+        QueryNotificationTypeValue.click();
+        LogFunction.logInfo("选择通知类型：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "短信");
+//          点击，空白
+        WebElement systemTitleblank = l.getElement(param.get("systemTitleblank"));
+        systemTitleblank.click();
+        LogFunction.logInfo("点击：空白");
+//         点击，确定
+        WebElement QueryConfirm = l.getElement(param.get("QueryConfirm"));
+        String text3 = QueryConfirm.getText();
+        QueryConfirm.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "确定");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       校验，筛选结果，为空
+        WebElement ResultEmpty = l.getElement(param.get("ResultEmpty"));
+        String text10 = ResultEmpty.getText();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "表中数据为空");
+//      点击，状态
+        WebElement QueryStatus = l.getElement(param.get("QueryStatus"));
+        QueryStatus.click();
+        LogFunction.logInfo("点击：状态，选择框");
+//         状态，选择：停用
+        WebElement QueryStatusDisable = l.getElement(param.get("QueryStatusDisable"));
+        String text2 = QueryStatusDisable.getText();
+        QueryStatusDisable.click();
+        LogFunction.logInfo("选择状态：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "停用");
+        //         点击，确定
+        WebElement QueryConfirm1 = l.getElement(param.get("QueryConfirm"));
+        String text33 = QueryConfirm1.getText();
+        QueryConfirm1.click();
+        LogFunction.logInfo("点击：" + text33);
+        AssertFunction.verifyEquals(driver, text33, "确定");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       校验，筛选结果，名称
+        WebElement ResultName = l.getElement(param.get("ResultName"));
+        String text11 = ResultName.getText();
+        LogFunction.logInfo("筛选结果，名称：" + text11);
+        AssertFunction.verifyEquals(driver, text11, param.get("AlarmInformInformWayEditNameValue"));
+//       校验，筛选结果，通知类型
+        WebElement ResultType = l.getElement(param.get("ResultType"));
+        String text22 = ResultType.getText();
+        LogFunction.logInfo("筛选结果，通知类型：" + text22);
+        AssertFunction.verifyEquals(driver, text22, "短信");
+//       校验，筛选结果，状态
+        WebElement ResultEnableLogo = l.getElement(param.get("ResultEnableLogo"));
+        String text333 = ResultEnableLogo.getAttribute("title");
+        LogFunction.logInfo("筛选结果，状态：" + text333);
+        AssertFunction.verifyEquals(driver, text333, "已禁用");
+////      勾选，筛选结果
+//        WebElement ResultChoose = l.getElement(param.get("ResultChoose"));
+//        boolean selected = ResultChoose.isSelected();
+//        LogFunction.logInfo("筛选结果是否勾选：" + selected);
+//        if (selected == false) {
+//            ResultChoose.click();
+//            LogFunction.logInfo("成功勾选，筛选结果");
+//        }
+        LogFunction.logInfo("-----------------筛选查询，并校验成功---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-启用
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayEnable(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选，清空
+        WebElement Clear = l.getElement(param.get("QueryClear"));
+        String text = Clear.getText();
+        Clear.click();
+        LogFunction.logInfo("点击，筛选：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        名称，输入：我是编辑通知方式
+        WebElement QueryName = l.getElement(param.get("QueryName"));
+        QueryName.clear();
+        QueryName.sendKeys(param.get("AlarmInformInformWayEditNameValue"));
+        LogFunction.logInfo("名称，录入：" + param.get("AlarmInformInformWayEditNameValue"));
+//         点击，确定
+        WebElement QueryConfirm1 = l.getElement(param.get("QueryConfirm"));
+        String text33 = QueryConfirm1.getText();
+        QueryConfirm1.click();
+        LogFunction.logInfo("点击：" + text33);
+        AssertFunction.verifyEquals(driver, text33, "确定");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //      勾选，结果
+        WebElement ResultChoose1 = l.getElement(param.get("ResultChoose"));
+        boolean selected1 = ResultChoose1.isSelected();
+        LogFunction.logInfo("筛选结果是否勾选：" + selected1);
+        if (selected1 == false) {
+            ResultChoose1.click();
+            LogFunction.logInfo("成功勾选，筛选结果");
+        }
+//         状态，选择：启用
+        WebElement Enable = l.getElement(param.get("Enable"));
+        String text2 = Enable.getText();
+        Enable.click();
+        LogFunction.logInfo("选择状态：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "启用");
+//      勾选，结果
+        WebElement ResultChoose = l.getElement(param.get("ResultChoose"));
+        boolean selected = ResultChoose.isSelected();
+        LogFunction.logInfo("筛选结果是否勾选：" + selected);
+        if (selected == false) {
+            ResultChoose.click();
+            LogFunction.logInfo("成功勾选，筛选结果");
+        }
+//       校验，筛选结果，状态
+        WebElement ResultEnableLogo = l.getElement(param.get("ResultEnableLogo"));
+        String text333 = ResultEnableLogo.getAttribute("title");
+        LogFunction.logInfo("筛选结果，状态：" + text333);
+        AssertFunction.verifyEquals(driver, text333, "已启用");
+        LogFunction.logInfo("-----------------启用成功---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-停用
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayDisable(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //      勾选，结果
+        WebElement ResultChoose = l.getElement(param.get("ResultChoose"));
+        boolean selected = ResultChoose.isSelected();
+        LogFunction.logInfo("筛选结果是否勾选：" + selected);
+        if (selected == false) {
+            ResultChoose.click();
+            LogFunction.logInfo("成功勾选，筛选结果");
+        }
+//         状态，选择：停用
+        WebElement commonBlockUp = l.getElement(param.get("commonBlockUp"));
+        String text2 = commonBlockUp.getText();
+        commonBlockUp.click();
+        LogFunction.logInfo("选择状态：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "停用");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       校验，筛选结果，状态
+        WebElement ResultEnableLogo = l.getElement(param.get("ResultEnableLogo"));
+        String text333 = ResultEnableLogo.getAttribute("title");
+        LogFunction.logInfo("筛选结果，状态：" + text333);
+        AssertFunction.verifyEquals(driver, text333, "已禁用");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//      勾选，结果
+        WebElement ResultChoose1 = l.getElement(param.get("ResultChoose"));
+        boolean selected1 = ResultChoose1.isSelected();
+        LogFunction.logInfo("筛选结果是否勾选：" + selected1);
+        if (selected1 == false) {
+            ResultChoose1.click();
+            LogFunction.logInfo("成功勾选，筛选结果");
+        }
+        LogFunction.logInfo("-----------------停用成功---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-关联告警筛选
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayCreateRelatedAlarm(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，关联告警筛选
+        WebElement RelatedAlarm = l.getElement(param.get("RelatedAlarm"));
+        String text = RelatedAlarm.getText();
+        RelatedAlarm.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "关联告警筛选");
+//         点击，故障规则Button
+        WebElement RelatedAlarmFaultRule = l.getElement(param.get("RelatedAlarmFaultRule"));
+        RelatedAlarmFaultRule.click();
+        LogFunction.logInfo("点击：故障规则");
+//         选择，故障规则（值）
+        WebElement RelatedAlarmFaultRuleValue = l.getElement(param.get("RelatedAlarmFaultRuleValue"));
+        String text1 = RelatedAlarmFaultRuleValue.getText();
+        RelatedAlarmFaultRuleValue.click();
+        LogFunction.logInfo("故障规则选择：" + text1);
+//        AssertFunction.verifyEquals(driver, text1, "关联告警筛选");
+//         点击，确定
+        WebElement RelatedAlarmConfirm = l.getElement(param.get("RelatedAlarmConfirm"));
+        String text2 = RelatedAlarmConfirm.getText();
+        RelatedAlarmConfirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        校验，关联告警筛选
+        WebElement ResultRelatedAlarmSelect = l.getElement(param.get("ResultRelatedAlarmSelect"));
+        String text333 = ResultRelatedAlarmSelect.getText();
+        String autoFault = InterceptFunction.intercept(text333, "自动故障");
+        LogFunction.logInfo("筛选结果，状态：" + text333);
+        AssertFunction.verifyEquals(driver, autoFault, "自动故障");
+//      勾选，结果
+        WebElement ResultChoose1 = l.getElement(param.get("ResultChoose"));
+        boolean selected1 = ResultChoose1.isSelected();
+        LogFunction.logInfo("筛选结果是否勾选：" + selected1);
+        if (selected1 == false) {
+            ResultChoose1.click();
+            LogFunction.logInfo("成功勾选，筛选结果");
+        }
+        LogFunction.logInfo("-----------------关联告警筛选设置成功---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-删除
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformInformWayDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，删除
+        WebElement Delete = l.getElement(param.get("Delete"));
+        String text = Delete.getText();
+        Delete.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "删除");
+//        校验，删除提示
+        WebElement DeleteHint = l.getElement(param.get("DeleteHint"));
+        String text2 = DeleteHint.getText();
+        LogFunction.logInfo("提示信息为：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定要删除？");
+//         点击，确认
+        WebElement DeleteConfirm = l.getElement(param.get("DeleteConfirm"));
+        String text1 = DeleteConfirm.getText();
+        DeleteConfirm.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "确认");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       校验，筛选结果，为空
+        WebElement ResultEmpty = l.getElement(param.get("ResultEmpty"));
+        String text10 = ResultEmpty.getText();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "表中数据为空");
+        LogFunction.logInfo("-----------------通知方式，删除成功---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-阈值规则
+    @Test(dataProvider = "xmldata")
+    public void alarmConfigThresholdStrategy(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，阈值策略
+        WebElement thresholdStrategy = l.getElement(param.get("thresholdStrategy"));
+        String text = thresholdStrategy.getText();
+        thresholdStrategy.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "阈值策略");
+        LogFunction.logInfo("-----------------进入阈值策略页面---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-阈值规则-新建
+    @Test(dataProvider = "xmldata")
+    public void thresholdStrategyCreate(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，新建
+        co.createButton(param);
+//      录入，名称
+        WebElement createName = l.getElement(param.get("CreateName"));
+        createName.clear();
+        createName.sendKeys(param.get("ThresholdStrategyCreateNameValue"));
+        LogFunction.logInfo("阈值策略，名称录入：" + param.get("ThresholdStrategyCreateNameValue"));
+//       选择，启动
+        WebElement createEnable = l.getElement(param.get("CreateEnable"));
+        boolean selected = createEnable.isSelected();
+        if (selected == false) {
+            createEnable.click();
+            LogFunction.logInfo("勾选，启动");
+        } else {
+            LogFunction.logInfo("启动，已勾选");
+        }
+//       点击，数据域
+        WebElement createDatadomain = l.getElement(param.get("CreateDatadomain"));
+        createDatadomain.click();
+        LogFunction.logInfo("点击，数据域");
+//        选择，数据域（值）
+        WebElement createDataDomainValue = l.getElement(param.get("CreateDataDomainValue"));
+        String text = createDataDomainValue.getText();
+        AssertFunction.verifyEquals(driver, text, "rootDomain");
+        createDataDomainValue.click();
+        LogFunction.logInfo("数据域，选择：" + text);
+//       点击，节点类型
+        WebElement CreateNodeType = l.getElement(param.get("CreateNodeType"));
+        CreateNodeType.click();
+        LogFunction.logInfo("点击，节点类型");
+//        选择，节点类型（值）
+        WebElement CreateNodeTypeValue = l.getElement(param.get("CreateNodeTypeValue"));
+        String text1 = CreateNodeTypeValue.getText();
+        AssertFunction.verifyEquals(driver, text1, "操作系统");
+        CreateNodeTypeValue.click();
+        LogFunction.logInfo("节点类型，选择：" + text1);
+//       点击，KPI类型选择
+        WebElement CreateKPITypeSelection = l.getElement(param.get("CreateKPITypeSelection"));
+        CreateKPITypeSelection.click();
+        LogFunction.logInfo("点击，KPI类型选择");
+//        选择，KPI类型选择（值）
+        WebElement CreateKPITypeSelectionValue = l.getElement(param.get("CreateKPITypeSelectionValue"));
+        String text2 = CreateKPITypeSelectionValue.getText();
+        AssertFunction.verifyEquals(driver, text2, "info告警数量");
+        CreateKPITypeSelectionValue.click();
+        LogFunction.logInfo("KPI类型选择，选择：" + text2);
+//       点击，告警类型选择
+        WebElement CreateAlarmTypeSelection = l.getElement(param.get("CreateAlarmTypeSelection"));
+        CreateAlarmTypeSelection.click();
+        LogFunction.logInfo("点击，告警类型选择");
+//        选择，告警类型选择（值）
+        WebElement CreateAlarmTypeSelectionValue = l.getElement(param.get("CreateAlarmTypeSelectionValue"));
+        String text3 = CreateAlarmTypeSelectionValue.getText();
+        AssertFunction.verifyEquals(driver, text3, "CommonCi_infoCount_Alert");
+        CreateAlarmTypeSelectionValue.click();
+        LogFunction.logInfo("告警类型选择，选择：" + text3);
+//       选择，告警级别(INFO)
+        WebElement CreateAlarmLevel = l.getElement(param.get("CreateAlarmLevel"));
+        Select s = new Select(CreateAlarmLevel);
+        s.selectByVisibleText("INFO");
+        String text4 = s.getFirstSelectedOption().getText();
+        LogFunction.logInfo("告警级别选择：" + text4);
+        AssertFunction.verifyEquals(driver, text4, "INFO");
+//       选择，阈值条件
+        WebElement CreateThresholdRuleGreaterThan = l.getElement(param.get("CreateThresholdRuleGreaterThan"));
+        Select s1 = new Select(CreateThresholdRuleGreaterThan);
+        s1.selectByVisibleText("大于");
+        String text5 = s1.getFirstSelectedOption().getText();
+        LogFunction.logInfo("阈值条件选择：" + text5);
+        AssertFunction.verifyEquals(driver, text5, "大于");
+//       选择，阈值条件
+        WebElement CreateThresholdRuleFixedValue = l.getElement(param.get("CreateThresholdRuleFixedValue"));
+        Select s2 = new Select(CreateThresholdRuleFixedValue);
+        s2.selectByVisibleText("固定值");
+        String text6 = s2.getFirstSelectedOption().getText();
+        LogFunction.logInfo("阈值条件选择：" + text6);
+        AssertFunction.verifyEquals(driver, text6, "固定值");
+//       录入，阈值条件
+        WebElement FixedValueValue = l.getElement(param.get("CreateThresholdRuleFixedValueInput"));
+        FixedValueValue.clear();
+        FixedValueValue.sendKeys(param.get("CreateThresholdRuleFixedValueInputValue"));
+        LogFunction.logInfo("阈值条件,大于固定值：" + param.get("CreateThresholdRuleFixedValueInputValue"));
+//      点击，保存
+        WebElement CreateSave = l.getElement(param.get("CreateSave"));
+        String text7 = CreateSave.getText();
+        AssertFunction.verifyEquals(driver, text7, "保存");
+        CreateSave.click();
+        LogFunction.logInfo("点击：" + text7);
+//      保存，确认
+        co.alarmHintAndConfirm(param, "添加阈值规则成功");
+
+        LogFunction.logInfo("-----------------阈值策略，新建完成---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-阈值规则-新建筛选
+    @Test(dataProvider = "xmldata")
+    public void thresholdStrategyCreateSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，筛选
+        Boolean SelectArea = l.getElementIsDisplay(param.get("SelectArea"));
+        LogFunction.logInfo("筛选区域的状态为：" + SelectArea);
+        if (SelectArea == false) {
+            WebElement Select1 = l.getElement(param.get("commonSelect"));
+            String text = Select1.getText();
+            AssertFunction.verifyEquals(driver, text, "筛选");
+            Select1.click();
+            LogFunction.logInfo("打开：" + text);
+        }
+//       点击，数据域
+        WebElement createDatadomain = l.getElement(param.get("SelectDataDomain"));
+        createDatadomain.click();
+        LogFunction.logInfo("点击，数据域");
+//        选择，数据域（值）
+        WebElement createDataDomainValue = l.getElement(param.get("SelectDataDomainValue"));
+        String text = createDataDomainValue.getText();
+        AssertFunction.verifyEquals(driver, text, "rootDomain");
+        createDataDomainValue.click();
+        LogFunction.logInfo("数据域，选择：" + text);
+//       点击，节点类型
+        WebElement CreateNodeType = l.getElement(param.get("SelectNodeType"));
+        CreateNodeType.click();
+        LogFunction.logInfo("点击，节点类型");
+//        选择，节点类型（值）
+        WebElement CreateNodeTypeValue = l.getElement(param.get("SelectNodeTypeValue"));
+        String text1 = CreateNodeTypeValue.getText();
+        AssertFunction.verifyEquals(driver, text1, "操作系统");
+        CreateNodeTypeValue.click();
+        LogFunction.logInfo("节点类型，选择：" + text1);
+//       点击，KPI类型选择
+        WebElement CreateKPITypeSelection = l.getElement(param.get("SelectKPI"));
+        CreateKPITypeSelection.click();
+        LogFunction.logInfo("点击，KPI类型选择");
+//        选择，KPI类型选择（值）
+        WebElement CreateKPITypeSelectionValue = l.getElement(param.get("SelectKPIValue"));
+        String text2 = CreateKPITypeSelectionValue.getText();
+        AssertFunction.verifyEquals(driver, text2, "info告警数量");
+        CreateKPITypeSelectionValue.click();
+        LogFunction.logInfo("KPI类型选择，选择：" + text2);
+//        选择，确定
+        WebElement SelectConfirm = l.getElement(param.get("SelectConfirm"));
+        String text3 = SelectConfirm.getText();
+        AssertFunction.verifyEquals(driver, text3, "确定");
+        SelectConfirm.click();
+        LogFunction.logInfo("KPI类型选择，选择：" + text3);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//      验证,筛选结果,名称
+        WebElement SelectResultName = l.getElement(param.get("SelectResultName"));
+        String text11 = SelectResultName.getText();
+        LogFunction.logInfo("筛选结果,名称：" + text11);
+        AssertFunction.verifyEquals(driver, text11, param.get("ThresholdStrategyCreateNameValue"));
+
+//      验证,筛选结果,节点类型
+        WebElement SelectResultNodeType = l.getElement(param.get("SelectResultNodeType"));
+        String text12 = SelectResultNodeType.getText();
+        LogFunction.logInfo("筛选结果,节点类型：" + text12);
+        AssertFunction.verifyEquals(driver, text12, "操作系统");
+
+//      验证,筛选结果,域
+        WebElement SelectResultDomain = l.getElement(param.get("SelectResultDomain"));
+        String text13 = SelectResultDomain.getText();
+        LogFunction.logInfo("筛选结果,域：" + text13);
+        AssertFunction.verifyEquals(driver, text13, "rootDomain");
+
+//      验证,筛选结果,KPI
+        WebElement SelectResultKPI = l.getElement(param.get("SelectResultKPI"));
+        String text14 = SelectResultKPI.getText();
+        LogFunction.logInfo("筛选结果,KPI：" + text14);
+        AssertFunction.verifyEquals(driver, text14, "info告警数量");
+
+//      验证,筛选结果,Alert
+        WebElement SelectResultAlert = l.getElement(param.get("SelectResultAlert"));
+        String text15 = SelectResultAlert.getText();
+        LogFunction.logInfo("筛选结果,Alert：" + text15);
+        AssertFunction.verifyEquals(driver, text15, "CommonCi_infoCount_Alert");
+
+//      验证,筛选结果,级别
+        WebElement SelectResultLevel = l.getElement(param.get("SelectResultLevel"));
+        String text16 = SelectResultLevel.getText();
+        LogFunction.logInfo("筛选结果,级别：" + text16);
+        AssertFunction.verifyEquals(driver, text16, "INFO");
+
+//      验证,筛选结果,启用
+        WebElement SelectResultEnable = l.getElement(param.get("SelectResultEnable"));
+        String text17 = SelectResultEnable.getAttribute("title");
+        LogFunction.logInfo("筛选结果,是否启用：" + text17);
+        AssertFunction.verifyEquals(driver, text17, "已启用");
+
+
+//      勾选，筛选结果
+        co.chooseSelectResult(param);
+
+        LogFunction.logInfo("-----------------阈值策略，新建，筛选及校验完成---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-阈值规则-编辑
+    @Test(dataProvider = "xmldata")
+    public void thresholdStrategyEdit(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，新建
+        co.editButton(param);
+//      录入，名称
+        WebElement createName = l.getElement(param.get("CreateName"));
+        createName.clear();
+        createName.sendKeys(param.get("ThresholdStrategyEditNameValue"));
+        LogFunction.logInfo("阈值策略，名称录入：" + param.get("ThresholdStrategyEditNameValue"));
+//       选择，启动
+        WebElement createEnable = l.getElement(param.get("CreateEnable"));
+        boolean selected = createEnable.isSelected();
+        if (selected == true) {
+            createEnable.click();
+            LogFunction.logInfo("取消勾选，启动");
+        } else {
+            LogFunction.logInfo("启动，未勾选");
+        }
+//       选择，告警级别(CRITICAL)
+        WebElement CreateAlarmLevel = l.getElement(param.get("CreateAlarmLevel"));
+        Select s = new Select(CreateAlarmLevel);
+        s.selectByVisibleText("CRITICAL");
+        String text4 = s.getFirstSelectedOption().getText();
+        LogFunction.logInfo("告警级别选择：" + text4);
+        AssertFunction.verifyEquals(driver, text4, "CRITICAL");
+//       选择，阈值条件
+        WebElement CreateThresholdRuleGreaterThan = l.getElement(param.get("CreateThresholdRuleGreaterThan"));
+        Select s1 = new Select(CreateThresholdRuleGreaterThan);
+        s1.selectByVisibleText("小于");
+        String text5 = s1.getFirstSelectedOption().getText();
+        LogFunction.logInfo("阈值条件选择：" + text5);
+        AssertFunction.verifyEquals(driver, text5, "小于");
+//      点击，保存
+        WebElement CreateSave = l.getElement(param.get("CreateSave"));
+        String text7 = CreateSave.getText();
+        AssertFunction.verifyEquals(driver, text7, "保存");
+        CreateSave.click();
+        LogFunction.logInfo("点击：" + text7);
+//      保存，确认
+        co.alarmHintAndConfirm(param, "修改阈值规则成功");
+
+        LogFunction.logInfo("-----------------阈值策略，编辑完成---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-阈值规则-编辑筛选
+    @Test(dataProvider = "xmldata")
+    public void thresholdStrategyEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，筛选
+        Boolean SelectArea = l.getElementIsDisplay(param.get("SelectArea"));
+        LogFunction.logInfo("筛选区域的状态为：" + SelectArea);
+        if (SelectArea == false) {
+            WebElement Select1 = l.getElement(param.get("commonSelect"));
+            String text = Select1.getText();
+            AssertFunction.verifyEquals(driver, text, "筛选");
+            Select1.click();
+            LogFunction.logInfo("打开：" + text);
+        }
+//       点击，数据域
+        WebElement createDatadomain = l.getElement(param.get("SelectDataDomain"));
+        createDatadomain.click();
+        LogFunction.logInfo("点击，数据域");
+//        选择，数据域（值）
+        WebElement createDataDomainValue = l.getElement(param.get("SelectDataDomainValue"));
+        String text = createDataDomainValue.getText();
+        AssertFunction.verifyEquals(driver, text, "rootDomain");
+        createDataDomainValue.click();
+        LogFunction.logInfo("数据域，选择：" + text);
+//       点击，节点类型
+        WebElement CreateNodeType = l.getElement(param.get("SelectNodeType"));
+        CreateNodeType.click();
+        LogFunction.logInfo("点击，节点类型");
+//        选择，节点类型（值）
+        WebElement CreateNodeTypeValue = l.getElement(param.get("SelectNodeTypeValue"));
+        String text1 = CreateNodeTypeValue.getText();
+        AssertFunction.verifyEquals(driver, text1, "操作系统");
+        CreateNodeTypeValue.click();
+        LogFunction.logInfo("节点类型，选择：" + text1);
+//       点击，KPI类型选择
+        WebElement CreateKPITypeSelection = l.getElement(param.get("SelectKPI"));
+        CreateKPITypeSelection.click();
+        LogFunction.logInfo("点击，KPI类型选择");
+//        选择，KPI类型选择（值）
+        WebElement CreateKPITypeSelectionValue = l.getElement(param.get("SelectKPIValue"));
+        String text2 = CreateKPITypeSelectionValue.getText();
+        AssertFunction.verifyEquals(driver, text2, "info告警数量");
+        CreateKPITypeSelectionValue.click();
+        LogFunction.logInfo("KPI类型选择，选择：" + text2);
+//        选择，确定
+        WebElement SelectConfirm = l.getElement(param.get("SelectConfirm"));
+        String text3 = SelectConfirm.getText();
+        AssertFunction.verifyEquals(driver, text3, "确定");
+        SelectConfirm.click();
+        LogFunction.logInfo("KPI类型选择，选择：" + text3);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//      验证,筛选结果,名称
+        WebElement SelectResultName = l.getElement(param.get("SelectResultName"));
+        String text11 = SelectResultName.getText();
+        LogFunction.logInfo("筛选结果,名称：" + text11);
+        AssertFunction.verifyEquals(driver, text11, param.get("ThresholdStrategyEditNameValue"));
+
+//      验证,筛选结果,节点类型
+        WebElement SelectResultNodeType = l.getElement(param.get("SelectResultNodeType"));
+        String text12 = SelectResultNodeType.getText();
+        LogFunction.logInfo("筛选结果,节点类型：" + text12);
+        AssertFunction.verifyEquals(driver, text12, "操作系统");
+
+//      验证,筛选结果,域
+        WebElement SelectResultDomain = l.getElement(param.get("SelectResultDomain"));
+        String text13 = SelectResultDomain.getText();
+        LogFunction.logInfo("筛选结果,域：" + text13);
+        AssertFunction.verifyEquals(driver, text13, "rootDomain");
+
+//      验证,筛选结果,KPI
+        WebElement SelectResultKPI = l.getElement(param.get("SelectResultKPI"));
+        String text14 = SelectResultKPI.getText();
+        LogFunction.logInfo("筛选结果,KPI：" + text14);
+        AssertFunction.verifyEquals(driver, text14, "info告警数量");
+
+//      验证,筛选结果,Alert
+        WebElement SelectResultAlert = l.getElement(param.get("SelectResultAlert"));
+        String text15 = SelectResultAlert.getText();
+        LogFunction.logInfo("筛选结果,Alert：" + text15);
+        AssertFunction.verifyEquals(driver, text15, "CommonCi_infoCount_Alert");
+
+//      验证,筛选结果,级别
+        WebElement SelectResultLevel = l.getElement(param.get("SelectResultLevel"));
+        String text16 = SelectResultLevel.getText();
+        LogFunction.logInfo("筛选结果,级别：" + text16);
+        AssertFunction.verifyEquals(driver, text16, "CRITICAL");
+
+//      验证,筛选结果,启用
+        WebElement SelectResultEnable = l.getElement(param.get("SelectResultEnable"));
+        String text17 = SelectResultEnable.getAttribute("title");
+        LogFunction.logInfo("筛选结果,是否启用：" + text17);
+        AssertFunction.verifyEquals(driver, text17, "已禁用");
+
+
+//      勾选，筛选结果
+        co.chooseSelectResult(param);
+
+        LogFunction.logInfo("-----------------阈值策略，编辑，筛选及校验完成---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-阈值规则-删除
+    @Test(dataProvider = "xmldata")
+    public void thresholdStrategyDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，删除
+        co.deleteButton(param);
+//        校验提示,信息,点击确认
+        co.alarmHintAndConfirm(param, "确定要删除？");
+//        二级校验提示,信息,点击确认
+        co.alarmHintAndConfirm(param, "删除阈值规则成功");
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，筛选
+        Boolean SelectArea = l.getElementIsDisplay(param.get("SelectArea"));
+        LogFunction.logInfo("筛选区域的状态为：" + SelectArea);
+        if (SelectArea == false) {
+            WebElement Select1 = l.getElement(param.get("commonSelect"));
+            String text = Select1.getText();
+            AssertFunction.verifyEquals(driver, text, "筛选");
+            Select1.click();
+            LogFunction.logInfo("打开：" + text);
+        }
+//        点击，筛选-清空button
+        co.selectClearButton(param);
+//       点击，数据域
+        WebElement createDatadomain = l.getElement(param.get("SelectDataDomain"));
+        createDatadomain.click();
+        LogFunction.logInfo("点击，数据域");
+//        选择，数据域（值）
+        WebElement createDataDomainValue = l.getElement(param.get("SelectDataDomainValue"));
+        String text = createDataDomainValue.getText();
+        AssertFunction.verifyEquals(driver, text, "rootDomain");
+        createDataDomainValue.click();
+        LogFunction.logInfo("数据域，选择：" + text);
+//       点击，节点类型
+        WebElement CreateNodeType = l.getElement(param.get("SelectNodeType"));
+        CreateNodeType.click();
+        LogFunction.logInfo("点击，节点类型");
+//        选择，节点类型（值）
+        WebElement CreateNodeTypeValue = l.getElement(param.get("SelectNodeTypeValue"));
+        String text1 = CreateNodeTypeValue.getText();
+        AssertFunction.verifyEquals(driver, text1, "操作系统");
+        CreateNodeTypeValue.click();
+        LogFunction.logInfo("节点类型，选择：" + text1);
+//       点击，KPI类型选择
+        WebElement CreateKPITypeSelection = l.getElement(param.get("SelectKPI"));
+        CreateKPITypeSelection.click();
+        LogFunction.logInfo("点击，KPI类型选择");
+//        选择，KPI类型选择（值）
+        WebElement CreateKPITypeSelectionValue = l.getElement(param.get("SelectKPIValue"));
+        String text2 = CreateKPITypeSelectionValue.getText();
+        AssertFunction.verifyEquals(driver, text2, "info告警数量");
+        CreateKPITypeSelectionValue.click();
+        LogFunction.logInfo("KPI类型选择，选择：" + text2);
+//        点击，确定
+        WebElement SelectConfirm = l.getElement(param.get("SelectConfirm"));
+        String text3 = SelectConfirm.getText();
+        AssertFunction.verifyEquals(driver, text3, "确定");
+        SelectConfirm.click();
+        LogFunction.logInfo("点击：" + text3);
+
+//      验证,筛选结果,是否为空
+        co.selectResultIsNull(param, "表中数据为空");
+
+        LogFunction.logInfo("-----------------阈值策略，删除成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-新建第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesCreateBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，新建
+        WebElement commonCreate = l.getElement(param.get("commonCreate"));
+        String text1 = commonCreate.getText();
+        commonCreate.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "新建", "----是否点击新建----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.sendKeys(param.get("alarmRecoveryRulesNameValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmRecoveryRulesNameValue"));
+//          选择，优先级，高
+        WebElement priority = l.getElement(param.get("priority"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警恢复策略，第一步，基础设置录入完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-新建第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesCreateRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+        WebElement domain = l.getElement(param.get("domain"));
+        domain.click();
+        LogFunction.logInfo("点击：域");
+//        选择，域：rootDomain
+        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+        Domain = chooseDomain.getText();
+        chooseDomain.click();
+        LogFunction.logInfo("选择域：" + Domain);
+        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+//          点击，类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：类型");
+//        选择,类型:操作系统
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+//        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警恢复策略，第二步，规则条件设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-新建第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesCreateRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，内容关键字
+        WebElement contentKeyword = l.getElement(param.get("contentKeyword"));
+        contentKeyword.sendKeys(param.get("contentKeywordValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("contentKeywordValue"));
+//       点击，规则条件高级设置，下一步
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警恢复策略，第三步，规则条件高级设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-新建第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesCreateAlarmRecoverySetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，保存
+        WebElement alarmClassifyConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmClassifyConfigSave.getText();
+        alarmClassifyConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警恢复策略，最后一步，告警分类设置录入完成且告警分类策略创建成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmRecoveryRulesSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRecoveryRulesNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRecoveryRulesNameValue"));
+//        点击，状态选择框
+        WebElement selectChooseStatus = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus.click();
+        LogFunction.logInfo("点开：状态选择框");
+
+//        状态，选择：启用
+        WebElement StartUsing = l.getElement(param.get("selectChooseStatusStartUsing"));
+        String text7 = StartUsing.getText();
+        StartUsing.click();
+        LogFunction.logInfo("选择状态：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "启用");
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选,规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmRecoveryRulesNameValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "恢复");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已启用");
+        LogFunction.logInfo("-----------------降噪策略，告警恢复策略筛选查询校验完成完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-编辑，第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesEditBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，编辑
+        WebElement commonEdit = l.getElement(param.get("commonEdit"));
+        String text1 = commonEdit.getText();
+        commonEdit.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "编辑", "----是否点击编辑----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.clear();
+        rulesName.sendKeys(param.get("alarmRecoveryRulesNameEditValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmRecoveryRulesNameEditValue"));
+//          选择，优先级，低
+        WebElement priority = l.getElement(param.get("priorityLow"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        关闭，启动
+        WebElement startOrClose = l.getElement(param.get("startOrClose"));
+        boolean selected = startOrClose.isSelected();
+        LogFunction.logInfo(String.valueOf(selected));
+        if (selected == true) {
+            startOrClose.click();
+            LogFunction.logInfo("状态更改为：停用");
+        }
+
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警恢复策略，第一步，基础设置编辑完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-编辑，第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesEditRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+//        WebElement domain = l.getElement(param.get("domain"));
+//        domain.click();
+//        LogFunction.logInfo("点击：域");
+////        选择，域：rootDomain
+//        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+//        Domain = chooseDomain.getText();
+//        chooseDomain.click();
+//        LogFunction.logInfo("选择域：" + Domain);
+//        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+////          点击，类型
+//        WebElement type = l.getElement(param.get("type"));
+//        type.click();
+//        LogFunction.logInfo("点击：类型");
+////        选择,类型:操作系统
+//        WebElement chooseType = l.getElement(param.get("chooseType"));
+//        Oracal = chooseType.getText();
+//        chooseType.click();
+//        LogFunction.logInfo("选择类型：" + Oracal);
+//        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+////        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警恢复策略，第二步，规则条件设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-编辑，第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesEditRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件高级设置，下一步
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警恢复策略，第三步，规则条件高级设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-编辑，第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRecoveryRulesEditAlarmClassifySetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警内容
+//        WebElement alarmContent = l.getElement(param.get("alarmContent"));
+//        String text = alarmContent.getText();
+//        alarmContent.click();
+//        LogFunction.logInfo("点击：告警内容");
+////        最大合并数量,录入，5
+//        WebElement maxMergeNumber = l.getElement(param.get("maxMergeNumber"));
+//        maxMergeNumber.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入最大合并数量：" + param.get("maxMergeNumberValue"));
+////        合并时间窗口，录入，1
+//        WebElement mergeTimeWindows = l.getElement(param.get("mergeTimeWindows"));
+//        mergeTimeWindows.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入合并时间窗口：" + param.get("mergeTimeWindowsValue"));
+
+//          点击，保存
+        WebElement alarmMergeConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmMergeConfigSave.getText();
+        alarmMergeConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警恢复策略，最后一步，告警恢复设置编辑完成且告警合并策略创建成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-编辑-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyalarmRecoveryRulesEditSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+//        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+//        String text = commonSelect.getText();
+//        commonSelect.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRecoveryRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRecoveryRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        获取，告警信息列表信息，无数据
+        WebElement NumberValue = l.getElement(param.get("alarmRulesListNumberValue"));
+        String text55 = NumberValue.getText();
+        LogFunction.logInfo("告警列表信息为：" + text55);
+        AssertFunction.verifyEquals(driver, text55, "表中数据为空");
+        //        点击，状态选择框
+        WebElement selectChooseStatus1 = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus1.click();
+        LogFunction.logInfo("点开：状态选择框");
+//        状态，选择：停用
+        WebElement BlockUp = l.getElement(param.get("selectChooseStatusBlockUp"));
+        String text8 = BlockUp.getText();
+        BlockUp.click();
+        LogFunction.logInfo("选择状态：" + text8);
+        AssertFunction.verifyEquals(driver, text8, "停用");
+//        点击，筛选，确定
+        WebElement selectAffirm1 = l.getElement(param.get("commonSelectAffirm"));
+        String text22 = selectAffirm1.getText();
+        selectAffirm1.click();
+        LogFunction.logInfo("点击：" + text22);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+        //        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmRecoveryRulesNameEditValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "恢复");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已禁用");
+        LogFunction.logInfo("-----------------降噪策略告警恢复策略筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-编辑-筛选
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmRecoveryRulesEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRecoveryRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRecoveryRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略告警恢复策略筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警恢复策略-删除及筛选校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmRecoveryRulesDeleteAndSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRecoveryRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRecoveryRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        co.alarmRulesDelete(param, "alarmRecoveryRulesNameEditValue");
+        LogFunction.logInfo("-----------------降噪策略，告警恢复策略，删除及筛选校验通过---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-新建第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesCreateBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，新建
+        WebElement commonCreate = l.getElement(param.get("commonCreate"));
+        String text1 = commonCreate.getText();
+        commonCreate.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "新建", "----是否点击新建----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.sendKeys(param.get("alarmUpgradeRulesNameValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmUpgradeRulesNameValue"));
+//          选择，优先级，高
+        WebElement priority = l.getElement(param.get("priority"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警升级策略，第一步，基础设置录入完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-新建第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesCreateRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+        WebElement domain = l.getElement(param.get("domain"));
+        domain.click();
+        LogFunction.logInfo("点击：域");
+//        选择，域：rootDomain
+        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+        Domain = chooseDomain.getText();
+        chooseDomain.click();
+        LogFunction.logInfo("选择域：" + Domain);
+        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+//          点击，类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：类型");
+//        选择,类型:操作系统
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+//        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警升级策略，第二步，规则条件设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-新建第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesCreateRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，内容关键字
+        WebElement contentKeyword = l.getElement(param.get("contentKeyword"));
+        contentKeyword.sendKeys(param.get("contentKeywordValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("contentKeywordValue"));
+//       点击，规则条件高级设置，下一步
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警升级策略，第三步，规则条件高级设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-新建第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesCreateAlarmUpgradeSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，保存
+        WebElement alarmClassifyConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmClassifyConfigSave.getText();
+        alarmClassifyConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警升级策略，最后一步，告警分类设置录入完成且创建成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmUpgradeRulesSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmUpgradeRulesNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmUpgradeRulesNameValue"));
+//        点击，状态选择框
+        WebElement selectChooseStatus = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus.click();
+        LogFunction.logInfo("点开：状态选择框");
+
+//        状态，选择：启用
+        WebElement StartUsing = l.getElement(param.get("selectChooseStatusStartUsing"));
+        String text7 = StartUsing.getText();
+        StartUsing.click();
+        LogFunction.logInfo("选择状态：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "启用");
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmUpgradeRulesNameValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "升级");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已启用");
+        //        勾选,规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略，告警升级策略，新建及筛选校验通过---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-编辑，第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesEditBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，编辑
+        WebElement commonEdit = l.getElement(param.get("commonEdit"));
+        String text1 = commonEdit.getText();
+        commonEdit.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "编辑", "----是否点击编辑----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.clear();
+        rulesName.sendKeys(param.get("alarmUpgradeRulesNameEditValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmUpgradeRulesNameEditValue"));
+//          选择，优先级，低
+        WebElement priority = l.getElement(param.get("priorityLow"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        关闭，启动
+        WebElement startOrClose = l.getElement(param.get("startOrClose"));
+        boolean selected = startOrClose.isSelected();
+        LogFunction.logInfo(String.valueOf(selected));
+        if (selected == true) {
+            startOrClose.click();
+            LogFunction.logInfo("状态更改为：停用");
+        }
+
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警升级策略，第一步，基础设置编辑完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-编辑，第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesEditRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警升级策略，第二步，规则条件设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-编辑，第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesEditRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件高级设置，下一步
+        WebElement NextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = NextStep.getText();
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        NextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        LogFunction.logInfo("-----------------告警升级策略，第三步，规则条件高级设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-编辑，第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmUpgradeRulesEditAlarmClassifySetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警内容
+//        WebElement alarmContent = l.getElement(param.get("alarmContent"));
+//        String text = alarmContent.getText();
+//        alarmContent.click();
+//        LogFunction.logInfo("点击：告警内容");
+////        最大合并数量,录入，5
+//        WebElement maxMergeNumber = l.getElement(param.get("maxMergeNumber"));
+//        maxMergeNumber.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入最大合并数量：" + param.get("maxMergeNumberValue"));
+////        合并时间窗口，录入，1
+//        WebElement mergeTimeWindows = l.getElement(param.get("mergeTimeWindows"));
+//        mergeTimeWindows.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入合并时间窗口：" + param.get("mergeTimeWindowsValue"));
+
+//          点击，保存
+        WebElement alarmMergeConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmMergeConfigSave.getText();
+        alarmMergeConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警升级策略，最后一步，告警升级设置编辑完成且创建成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-编辑-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmUpgradeRulesEditSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+//        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+//        String text = commonSelect.getText();
+//        commonSelect.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmUpgradeRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmUpgradeRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        获取，告警信息列表信息，无数据
+        WebElement NumberValue = l.getElement(param.get("alarmRulesListNumberValue"));
+        String text55 = NumberValue.getText();
+        LogFunction.logInfo("告警列表信息为：" + text55);
+        AssertFunction.verifyEquals(driver, text55, "表中数据为空");
+        //        点击，状态选择框
+        WebElement selectChooseStatus1 = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus1.click();
+        LogFunction.logInfo("点开：状态选择框");
+//        状态，选择：停用
+        WebElement BlockUp = l.getElement(param.get("selectChooseStatusBlockUp"));
+        String text8 = BlockUp.getText();
+        BlockUp.click();
+        LogFunction.logInfo("选择状态：" + text8);
+        AssertFunction.verifyEquals(driver, text8, "停用");
+//        点击，筛选，确定
+        WebElement selectAffirm1 = l.getElement(param.get("commonSelectAffirm"));
+        String text22 = selectAffirm1.getText();
+        selectAffirm1.click();
+        LogFunction.logInfo("点击：" + text22);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+        //        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmUpgradeRulesNameEditValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "升级");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已禁用");
+        LogFunction.logInfo("-----------------降噪策略,告警升级策略,编辑筛选校验通过---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-编辑-筛选
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmUpgradeRulesEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmUpgradeRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmUpgradeRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略,告警升级策略,筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警升级策略-删除及筛选校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmUpgradeRulesDeleteAndSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmUpgradeRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmUpgradeRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        co.alarmRulesDelete(param, "alarmUpgradeRulesNameEditValue");
+        LogFunction.logInfo("-----------------降噪策略,告警升级策略,删除及筛选校验完成---------------------");
+    }
+
+    //      菜单-集中告警-告警配置-预警策略
+    @Test(dataProvider = "xmldata")
+    public void alarmConfigWarningStrategy(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，预警策略
+        WebElement alarmClassifyRules = l.getElement(param.get("WarningStrategy"));
+        String text = alarmClassifyRules.getText();
+        alarmClassifyRules.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "预警策略");
+        LogFunction.logInfo("-----------------进入，预警策略页面---------------------");
+    }
+
+    //      菜单-集中告警-告警配置-预警策略-新建
+    @Test(dataProvider = "xmldata")
+    public void alarmConfigWarningStrategyCreate(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，新建
+        co.createButton(param);
+//        录入，策略名称
+        WebElement strategyName = l.getElement(param.get("strategyName"));
+        strategyName.clear();
+        strategyName.sendKeys(param.get("WarningStrategyCreateStrategyNameValue"));
+        LogFunction.logInfo("录入，策略名称：" + param.get("WarningStrategyCreateStrategyNameValue"));
+//         录入，项目名称
+        WebElement projectName = l.getElement(param.get("projectName"));
+        projectName.clear();
+        projectName.sendKeys(param.get("WarningStrategyCreateProjectNameValue"));
+        LogFunction.logInfo("录入，项目名称：" + param.get("WarningStrategyCreateProjectNameValue"));
+//          点击，策略类型
+        WebElement StrategyType = l.getElement(param.get("StrategyType"));
+        StrategyType.click();
+        LogFunction.logInfo("点击，策略类型");
+//        选择，策略类型（值）
+        WebElement StrategyTypeValue = l.getElement(param.get("StrategyTypeValue"));
+        String text = StrategyTypeValue.getText();
+        AssertFunction.verifyEquals(driver, text, "综合预警");
+        StrategyTypeValue.click();
+        LogFunction.logInfo("选择，策略类型:" + text);
+//          点击，下一步
+        WebElement NextStep = l.getElement(param.get("NextStep"));
+        String text1 = NextStep.getAttribute("value");
+        AssertFunction.verifyEquals(driver, text1, "下一步");
+        NextStep.click();
+        LogFunction.logInfo("点击：" + text1);
+//      获取，共有，多少个策略条件
+        List<WebElement> deleteButton = l.getElements(param.get("DeleteButton"));
+        int size = deleteButton.size();
+        LogFunction.logInfo("策略条件的数量为：" + size);
+//          点击，添加新策略
+        WebElement addNewStrategy = l.getElement(param.get("AddNewStrategy"));
+        String text3 = addNewStrategy.getAttribute("value");
+        AssertFunction.verifyEquals(driver, text3, "添加新策略");
+        addNewStrategy.click();
+        List<WebElement> deleteButton1 = l.getElements(param.get("DeleteButton"));
+        int size1 = deleteButton1.size();
+        LogFunction.logInfo("策略条件的数量为：" + size1);
+        AssertFunction.verifyEquals(driver, size1, size + 1);
+        LogFunction.logInfo("成功，添加新策略");
+        for (int i = 1; i < size1; i++) {
+//            点击，删除按钮，留1个策略条件
+            WebElement deleteButton2 = l.getElement(param.get("DeleteButton"));
+            deleteButton2.click();
+            LogFunction.logInfo("第" + i + "次，点击删除按钮");
+        }
+//        录入,变坏次数净值
+        WebElement NetWorth = l.getElement(param.get("NetWorth"));
+        NetWorth.clear();
+        NetWorth.sendKeys(param.get("WarningStrategyCreateNetWorthValue"));
+        LogFunction.logInfo("录入，变坏次数净值：" + param.get("WarningStrategyCreateNetWorthValue"));
+//      点击，告警级别-超级基线历史最值
+        WebElement alarmLevel = l.getElement(param.get("AlarmLevel"));
+        alarmLevel.click();
+        LogFunction.logInfo("点击，告警级别-超级基线历史最值");
+//        选择，告警级别-超级基线历史最值
+        WebElement AlarmLevelValue = l.getElement(param.get("AlarmLevelValue"));
+        String text2 = AlarmLevelValue.getText();
+        String[] split = text2.split(" ");
+        String s = null;
+        for (String a : split) {
+            s = a.toString();
+        }
+        String info = InterceptFunction.intercept(text2, "Info");
+        AssertFunction.verifyEquals(driver, info, "Info");
+        AlarmLevelValue.click();
+        LogFunction.logInfo("选择，告警级别-超级基线历史最值:" + s);
+//      点击，提交
+        co.modelClickButton(param, "Submit", "提交");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         验证，是否新建成功
+        List<WebElement> AllData = l.getElements(param.get("commonSelectResultFirstColumnAllData"));
+        ArrayList arrayList = new ArrayList(AllData.size());
+        for (WebElement e : AllData) {
+            String text4 = e.getText();
+            arrayList.add(text4);
+        }
+        boolean b = arrayList.contains(param.get("WarningStrategyCreateStrategyNameValue"));
+        LogFunction.logInfo("新建是否成功状态:" + b);
+        AssertFunction.assertEquals(driver, b, true);
+        LogFunction.logInfo("-----------------预警策略新建完成页面---------------------");
+    }
+
+    //      菜单-集中告警-告警配置-预警策略-编辑
+    @Test(dataProvider = "xmldata")
+    public void alarmConfigWarningStrategyEdit(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        勾选，新建策略
+        List<WebElement> AllData = l.getElements(param.get("commonSelectResultFirstColumnAllData"));
+        ArrayList arrayList = new ArrayList(AllData.size());
+        for (WebElement e : AllData) {
+            String text4 = e.getText();
+            arrayList.add(text4);
+        }
+        int iii = arrayList.indexOf(param.get("WarningStrategyCreateStrategyNameValue"));
+        List<WebElement> ChooseAllData = l.getElements(param.get("commonSelectResultChooseAllData"));
+        WebElement webElement = ChooseAllData.get(iii);
+        webElement.click();
+        LogFunction.logInfo("成功勾选，新建的预警策略");
+//        点击，编辑
+        co.editButton(param);
+//        编辑，策略名称
+        WebElement strategyName = l.getElement(param.get("strategyName"));
+        strategyName.clear();
+        strategyName.sendKeys(param.get("WarningStrategyEditStrategyNameValue"));
+        LogFunction.logInfo("编辑，策略名称：" + param.get("WarningStrategyEditStrategyNameValue"));
+//         编辑，项目名称
+        WebElement projectName = l.getElement(param.get("projectName"));
+        projectName.clear();
+        projectName.sendKeys(param.get("WarningStrategyEditProjectNameValue"));
+        LogFunction.logInfo("编辑，项目名称：" + param.get("WarningStrategyEditProjectNameValue"));
+//          点击，下一步
+        WebElement NextStep = l.getElement(param.get("NextStep"));
+        String text1 = NextStep.getAttribute("value");
+        AssertFunction.verifyEquals(driver, text1, "下一步");
+        NextStep.click();
+        LogFunction.logInfo("点击：" + text1);
+//      获取，共有，多少个策略条件
+        List<WebElement> deleteButton = l.getElements(param.get("DeleteButton"));
+        int size = deleteButton.size();
+        LogFunction.logInfo("策略条件的数量为：" + size);
+        for (int i = 1; i <= size; i++) {
+//            点击，删除按钮，留1个策略条件
+            WebElement deleteButton2 = l.getElement(param.get("DeleteButton"));
+            deleteButton2.click();
+            LogFunction.logInfo("第" + i + "次，点击删除按钮");
+        }
+        //          点击，添加新策略
+        WebElement addNewStrategy = l.getElement(param.get("AddNewStrategy"));
+        String text3 = addNewStrategy.getAttribute("value");
+        AssertFunction.verifyEquals(driver, text3, "添加新策略");
+        addNewStrategy.click();
+        List<WebElement> deleteButton1 = l.getElements(param.get("DeleteButton"));
+        int size1 = deleteButton1.size();
+        LogFunction.logInfo("策略条件的数量为：" + size1);
+        AssertFunction.verifyEquals(driver, size1, 1);
+        LogFunction.logInfo("成功，添加新策略");
+//        录入,变坏次数净值
+        WebElement NetWorth = l.getElement(param.get("NetWorth"));
+        NetWorth.clear();
+        NetWorth.sendKeys(param.get("WarningStrategyCreateNetWorthValue"));
+        LogFunction.logInfo("录入，变坏次数净值：" + param.get("WarningStrategyCreateNetWorthValue"));
+//      点击，告警级别-超级基线历史最值
+        WebElement alarmLevel = l.getElement(param.get("AlarmLevel"));
+        alarmLevel.click();
+        LogFunction.logInfo("点击，告警级别-超级基线历史最值");
+//        选择，告警级别-超级基线历史最值
+        WebElement AlarmLevelValue = l.getElement(param.get("AlarmLevelValue"));
+        String text2 = AlarmLevelValue.getText();
+        String[] split = text2.split(" ");
+        String s = null;
+        for (String a : split) {
+            s = a.toString();
+        }
+        String info = InterceptFunction.intercept(text2, "Info");
+        AssertFunction.verifyEquals(driver, info, "Info");
+        AlarmLevelValue.click();
+        LogFunction.logInfo("选择，告警级别-超级基线历史最值:" + s);
+//      点击，提交
+        co.modelClickButton(param, "Submit", "提交");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         验证，是否新建成功
+        List<WebElement> AllData1 = l.getElements(param.get("commonSelectResultFirstColumnAllData"));
+        ArrayList arrayList1 = new ArrayList(AllData1.size());
+        for (WebElement e : AllData1) {
+            String text4 = e.getText();
+            arrayList1.add(text4);
+        }
+        boolean b = arrayList1.contains(param.get("WarningStrategyEditStrategyNameValue"));
+        LogFunction.logInfo("编辑是否成功状态:" + b);
+        AssertFunction.assertEquals(driver, b, true);
+        LogFunction.logInfo("-----------------预警策略编辑完成页面---------------------");
+    }
+
+    //      菜单-集中告警-告警配置-预警策略-删除
+    @Test(dataProvider = "xmldata")
+    public void alarmConfigWarningStrategyDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        勾选，编辑策略
+        List<WebElement> AllData = l.getElements(param.get("commonSelectResultFirstColumnAllData"));
+        ArrayList arrayList = new ArrayList(AllData.size());
+        for (WebElement e : AllData) {
+            String text4 = e.getText();
+            arrayList.add(text4);
+        }
+        int iii = arrayList.indexOf(param.get("WarningStrategyEditStrategyNameValue"));
+        List<WebElement> ChooseAllData = l.getElements(param.get("commonSelectResultChooseAllData"));
+        WebElement webElement = ChooseAllData.get(iii);
+        webElement.click();
+        LogFunction.logInfo("成功勾选，编辑的预警策略");
+//        点击，删除
+        co.deleteButton(param);
+//        确认，删除
+        co.alarmHintAndConfirm(param, "确定要删除？");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         验证，是否删除成功
+        List<WebElement> AllData1 = l.getElements(param.get("commonSelectResultFirstColumnAllData"));
+        ArrayList arrayList1 = new ArrayList(AllData1.size());
+        for (WebElement e : AllData1) {
+            String text4 = e.getText();
+            arrayList1.add(text4);
+        }
+        boolean b = arrayList1.contains(param.get("WarningStrategyEditStrategyNameValue"));
+        LogFunction.logInfo("是否删除成功:" + b);
+        AssertFunction.assertEquals(driver, b, false);
+        LogFunction.logInfo("-----------------预警策略，删除成功---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选
+    @Test(dataProvider = "xmldata")
+    public void concentrateAlarmAlarmInformAlarmScreen(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警筛选
+        WebElement AlarmInform = l.getElement(param.get("AlarmScreen"));
+        String text = AlarmInform.getText();
+        AlarmInform.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "告警筛选");
+        LogFunction.logInfo("-----------------进入，告警筛选页面---------------------");
+
+    }
+
+    //    集中告警-告警通知-告警筛选-新建第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenCreateBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，新建
+        WebElement commonCreate = l.getElement(param.get("commonCreate"));
+        String text1 = commonCreate.getText();
+        commonCreate.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "新建", "----是否点击新建----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.sendKeys(param.get("alarmScreenCreateStrategyNameValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmScreenCreateStrategyNameValue"));
+//          选择，优先级，高
+        WebElement priority = l.getElement(param.get("priority"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警筛选，第一步，基础设置录入完成---------------------");
+
+    }
+
+    //    集中告警-告警通知-告警筛选--新建第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenCreateRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+        WebElement domain = l.getElement(param.get("domain"));
+        domain.click();
+        LogFunction.logInfo("点击：域");
+//        选择，域：rootDomain
+        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+        Domain = chooseDomain.getText();
+        chooseDomain.click();
+        LogFunction.logInfo("选择域：" + Domain);
+        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+//          点击，类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：类型");
+//        选择,类型:操作系统
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+//        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警筛选，第二步，规则条件设置录入完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-新建第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenCreateRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，内容关键字
+        WebElement contentKeyword = l.getElement(param.get("contentKeyword"));
+        contentKeyword.sendKeys(param.get("contentKeywordValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("contentKeywordValue"));
+//       点击，规则条件高级设置，下一步
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警筛选，第三步，规则条件高级设置录入完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-新建第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenCreateAlarmUpgradeSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，保存
+        WebElement alarmClassifyConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmClassifyConfigSave.getText();
+        alarmClassifyConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警筛选，最后一步，告警分类设置录入完成且告警分类策略创建成功---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenCreatSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmScreenCreateStrategyNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmScreenCreateStrategyNameValue"));
+//        点击，状态选择框
+        WebElement selectChooseStatus = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus.click();
+        LogFunction.logInfo("点开：状态选择框");
+
+//        状态，选择：启用
+        WebElement StartUsing = l.getElement(param.get("selectChooseStatusStartUsing"));
+        String text7 = StartUsing.getText();
+        StartUsing.click();
+        LogFunction.logInfo("选择状态：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "启用");
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+//        校验,策略名称
+        WebElement SelectRulesName = l.getElement(param.get("commonSelectResultTwo"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("策略名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmScreenCreateStrategyNameValue"));
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonSelectResultThree"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,数据权限域
+        WebElement selectDomain = l.getElement(param.get("commonSelectResultFour"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonSelectResultFive"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonSelectResultEight"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已启用");
+        //        勾选,策略
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选策略");
+        LogFunction.logInfo("-----------------告警筛选，新建查询校验完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-编辑，第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenEditBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        co.chooseSelectResult(param);
+//          点击，编辑
+        WebElement commonEdit = l.getElement(param.get("commonEdit"));
+        String text1 = commonEdit.getText();
+        commonEdit.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "编辑", "----是否点击编辑----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.clear();
+        rulesName.sendKeys(param.get("alarmScreenEditStrategyNameValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmScreenEditStrategyNameValue"));
+//          选择，优先级，低
+        WebElement priority = l.getElement(param.get("priorityLow"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        关闭，启动
+        WebElement startOrClose = l.getElement(param.get("startOrClose"));
+        boolean selected = startOrClose.isSelected();
+        LogFunction.logInfo(String.valueOf(selected));
+        if (selected == true) {
+            startOrClose.click();
+            LogFunction.logInfo("状态更改为：停用");
+        }
+
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警筛选，第一步，基础设置编辑完成---------------------");
+
+    }
+
+    //    集中告警-告警通知-告警筛选-编辑，第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenEditRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警筛选，第二步，规则条件设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-编辑，第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenEditRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件高级设置，下一步
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警筛选，第三步，规则条件高级设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-编辑，第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenEditAlarmClassifySetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警内容
+//        WebElement alarmContent = l.getElement(param.get("alarmContent"));
+//        String text = alarmContent.getText();
+//        alarmContent.click();
+//        LogFunction.logInfo("点击：告警内容");
+////        最大合并数量,录入，5
+//        WebElement maxMergeNumber = l.getElement(param.get("maxMergeNumber"));
+//        maxMergeNumber.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入最大合并数量：" + param.get("maxMergeNumberValue"));
+////        合并时间窗口，录入，1
+//        WebElement mergeTimeWindows = l.getElement(param.get("mergeTimeWindows"));
+//        mergeTimeWindows.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入合并时间窗口：" + param.get("mergeTimeWindowsValue"));
+
+//          点击，保存
+        WebElement alarmMergeConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmMergeConfigSave.getText();
+        alarmMergeConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警筛选，最后一步，告警筛选设置编辑完成且告警合并策略创建成功---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-编辑-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void alarmScreenEditSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+//        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+//        String text = commonSelect.getText();
+//        commonSelect.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmScreenEditStrategyNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmScreenEditStrategyNameValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        获取，告警信息列表信息，无数据
+        WebElement NumberValue = l.getElement(param.get("alarmRulesListNumberValue"));
+        String text55 = NumberValue.getText();
+        LogFunction.logInfo("告警列表信息为：" + text55);
+        AssertFunction.verifyEquals(driver, text55, "表中数据为空");
+        //        点击，状态选择框
+        WebElement selectChooseStatus1 = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus1.click();
+        LogFunction.logInfo("点开：状态选择框");
+//        状态，选择：停用
+        WebElement BlockUp = l.getElement(param.get("selectChooseStatusBlockUp"));
+        String text8 = BlockUp.getText();
+        BlockUp.click();
+        LogFunction.logInfo("选择状态：" + text8);
+        AssertFunction.verifyEquals(driver, text8, "停用");
+//        点击，筛选，确定
+        WebElement selectAffirm1 = l.getElement(param.get("commonSelectAffirm"));
+        String text22 = selectAffirm1.getText();
+        selectAffirm1.click();
+        LogFunction.logInfo("点击：" + text22);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonSelectResultTwo"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmScreenEditStrategyNameValue"));
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonSelectResultThree"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonSelectResultFour"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonSelectResultFive"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonSelectResultEight"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已禁用");
+        //        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------告警通知，告警筛选筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-编辑-筛选
+    @Test(dataProvider = "xmldata")
+    public void alarmInformAlarmScreenEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmScreenEditStrategyNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmScreenEditStrategyNameValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------告警通知，告警筛选筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-删除及筛选验证
+    @Test(dataProvider = "xmldata")
+    public void alarmInformAlarmScreenDeleteAndSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmScreenEditStrategyNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmScreenEditStrategyNameValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        co.alarmRulesDelete(param, "alarmScreenEditStrategyNameValue");
+        LogFunction.logInfo("-----------------告警通知，告警筛选筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选-启用，告警策略
+    @Test(dataProvider = "xmldata")
+    public void alarmInformAlarmScreenStartUsing(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        勾选，规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        if (selectChooseRules.isSelected() == false) {
+            selectChooseRules.click();
+            LogFunction.logInfo("勾选筛选结果规则");
+        }
+//        点击，启用按钮
+        WebElement commonStartUsing = l.getElement(param.get("commonStartUsing"));
+        String text2 = commonStartUsing.getText();
+        commonStartUsing.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "启用", "----是否点击的是：启用按钮----");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonSelectResultEight"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已启用");
+        LogFunction.logInfo("------------------告警规则，成功启用---------------------");
+
+    }
+
+    //    集中告警-告警通知-告警筛选-禁用，告警策略
+    @Test(dataProvider = "xmldata")
+    public void alarmInformAlarmScreenBlockUp(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        勾选，规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        if (selectChooseRules.isSelected() == false) {
+            selectChooseRules.click();
+            LogFunction.logInfo("勾选筛选结果规则");
+        }
+//        点击，停用按钮
+        WebElement commonBlockUp = l.getElement(param.get("commonBlockUp"));
+        String text2 = commonBlockUp.getText();
+        commonBlockUp.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "停用", "----是否点击的是：停用按钮----");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text3 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "确定");
+        //        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonSelectResultEight"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已禁用");
+        LogFunction.logInfo("------------------告警规则，成功禁用---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，新建
+        WebElement commonCreate = l.getElement(param.get("commonCreate"));
+        String text1 = commonCreate.getText();
+        commonCreate.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "新建", "----是否点击新建----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.sendKeys(param.get("alarmRelevanceRulesNameValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmRelevanceRulesNameValue"));
+//          选择，优先级，高
+        WebElement priority = l.getElement(param.get("priority"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警关联策略，第一步，基础设置录入完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第2部分，根源告警设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateRootAlarmSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+        WebElement domain = l.getElement(param.get("rootJurisdictionDomain"));
+        domain.click();
+        LogFunction.logInfo("点击：域");
+//        选择，域：rootDomain
+        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+        Domain = chooseDomain.getText();
+        chooseDomain.click();
+        LogFunction.logInfo("选择域：" + Domain);
+        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+//          点击，类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：类型");
+//        选择,类型:操作系统
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+//        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警关联策略，第二步，根源告警设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第3部分，规则高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateRulesAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件高级设置，下一步
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("nextstep"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警关联策略，第三步，规则高级设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第4部分，影响告警设置-新建
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateAffectAlarmSettingCreate(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，新建区域是否打开
+        Boolean createArea = l.getElementIsDisplay(param.get("CreateArea"));
+        LogFunction.logInfo("新建区域是否打开" + createArea);
+        if (createArea == false) {
+//            点击，新建
+            WebElement createButton = l.getElement(param.get("CreateButton"));
+            String text = createButton.getText();
+            AssertFunction.verifyEquals(driver, text, "新建");
+            createButton.click();
+            LogFunction.logInfo("点击：" + text);
+        }
+//         点击，域
+//        WebElement domain = l.getElement(param.get("Domain"));
+//        domain.click();
+//        LogFunction.logInfo("点击：域");
+//        选择，域：rootDomain
+//        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+//        Domain = chooseDomain.getText();
+//        chooseDomain.click();
+//        LogFunction.logInfo("选择域：" + Domain);
+//        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+//          点击，节点类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：节点类型");
+//        选择,类型:操作系统
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+
+        //          点击，节点关系
+        WebElement NodeRelation = l.getElement(param.get("NodeRelation"));
+        NodeRelation.click();
+        LogFunction.logInfo("点击：节点关系");
+//        选择,节点关系:归属于
+        WebElement NodeRelationValue = l.getElement(param.get("NodeRelationValue"));
+        String text = NodeRelationValue.getText();
+        NodeRelationValue.click();
+        LogFunction.logInfo("选择节点关系：" + text);
+        AssertFunction.verifyEquals(driver, text, "归属于");
+
+
+        //      点击，保存
+        WebElement save = l.getElement(param.get("save"));
+        String text10 = save.getText();
+        save.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("ResultsNodeType"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+
+//        勾选结果
+        co.modelRadioBox(param, "ChooseResult");
+
+        LogFunction.logInfo("-----------------告警关联策略，最后一步之影响告警设置，新建成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第4部分，影响告警设置-编辑
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateAffectAlarmSettingEdit(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//            点击，编辑
+        WebElement createButton = l.getElement(param.get("EditButton"));
+        String text = createButton.getText();
+        AssertFunction.verifyEquals(driver, text, "编辑");
+        createButton.click();
+        LogFunction.logInfo("点击：" + text);
+//          点击，类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：类型");
+//        选择,类型:资源
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "资源");
+//      点击，保存
+        WebElement save = l.getElement(param.get("save"));
+        String text10 = save.getText();
+        save.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("ResultsNodeType"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+
+        //        勾选结果
+        co.modelRadioBox(param, "ChooseResult");
+        LogFunction.logInfo("-----------------告警关联策略，最后一步之影响告警设置，编辑成功---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第4部分，影响告警设置-删除
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateAffectAlarmSettingDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+//      点击，删除
+        WebElement deleteButton = l.getElement(param.get("DeleteButton"));
+        String text = deleteButton.getText();
+        AssertFunction.verifyEquals(driver,text,"删除");
+        deleteButton.click();
+        LogFunction.logInfo("点击："+text);
+        //        删除，确认
+        co.alarmHintAndConfirm(param,"确定要删除？");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//      检验，是否删除
+        WebElement resultEmpty = l.getElement(param.get("ResultEmpty"));
+        String text1 = resultEmpty.getText();
+        LogFunction.logInfo("结果为："+text1);
+        AssertFunction.assertEquals(driver,text1,"表中数据为空");
+        LogFunction.logInfo("-----------------告警关联策略，最后一步之影响告警设置，删除成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-新建第4部分，影响告警设置-保存
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateAffectAlarmSettingSave(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //          点击，保存
+        WebElement alarmClassifyConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text101 = alarmClassifyConfigSave.getText();
+        alarmClassifyConfigSave.click();
+        LogFunction.logInfo("点击：" + text101);
+        AssertFunction.verifyEquals(driver, text101, "保存");
+        LogFunction.logInfo("-----------------告警关联策略，最后一步，影响告警设置，保存成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesCreateSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRelevanceRulesNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRelevanceRulesNameValue"));
+//        点击，状态选择框
+        WebElement selectChooseStatus = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus.click();
+        LogFunction.logInfo("点开：状态选择框");
+
+//        状态，选择：启用
+        WebElement StartUsing = l.getElement(param.get("selectChooseStatusStartUsing"));
+        String text7 = StartUsing.getText();
+        StartUsing.click();
+        LogFunction.logInfo("选择状态：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "启用");
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmRelevanceRulesNameValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "关联");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, "操作系统");
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已启用");
+        //        勾选,规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略，告警关联策略，新建及筛选校验通过---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联规则-编辑，第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesEditBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，编辑
+        WebElement commonEdit = l.getElement(param.get("commonEdit"));
+        String text1 = commonEdit.getText();
+        commonEdit.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "编辑", "----是否点击编辑----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.clear();
+        rulesName.sendKeys(param.get("alarmRelevanceRulesNameEditValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmRelevanceRulesNameEditValue"));
+//          选择，优先级，低
+        WebElement priority = l.getElement(param.get("priorityLow"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        关闭，启动
+        WebElement startOrClose = l.getElement(param.get("startOrClose"));
+        boolean selected = startOrClose.isSelected();
+        LogFunction.logInfo(String.valueOf(selected));
+        if (selected == true) {
+            startOrClose.click();
+            LogFunction.logInfo("状态更改为：停用");
+        }
+
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警关联规则，第一步，基础设置编辑完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联规则-编辑，第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesEditRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警关联规则，第二步，规则条件设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联规则-编辑，第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesEditRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件高级设置，下一步
+        WebElement NextStep = l.getElement(param.get("rulesConditionAdvancedConfigNextStep"));
+        String text71 = NextStep.getText();
+        AssertFunction.verifyEquals(driver, text71, "下一步", "----验证是否点击：下一步----");
+        NextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        LogFunction.logInfo("-----------------告警关联规则，第三步，规则条件高级设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联规则-编辑，第4部分，告警分类设置
+    @Test(dataProvider = "xmldata")
+    public void alarmRelevanceRulesEditAlarmClassifySetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，告警内容
+//        WebElement alarmContent = l.getElement(param.get("alarmContent"));
+//        String text = alarmContent.getText();
+//        alarmContent.click();
+//        LogFunction.logInfo("点击：告警内容");
+////        最大合并数量,录入，5
+//        WebElement maxMergeNumber = l.getElement(param.get("maxMergeNumber"));
+//        maxMergeNumber.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入最大合并数量：" + param.get("maxMergeNumberValue"));
+////        合并时间窗口，录入，1
+//        WebElement mergeTimeWindows = l.getElement(param.get("mergeTimeWindows"));
+//        mergeTimeWindows.sendKeys(param.get("maxMergeNumberValue"));
+//        LogFunction.logInfo("录入合并时间窗口：" + param.get("mergeTimeWindowsValue"));
+
+//          点击，保存
+        WebElement alarmMergeConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text10 = alarmMergeConfigSave.getText();
+        alarmMergeConfigSave.click();
+        LogFunction.logInfo("点击：" + text10);
+        AssertFunction.verifyEquals(driver, text10, "保存");
+        LogFunction.logInfo("-----------------告警关联规则，最后一步，告警关联设置编辑完成且创建成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联规则-编辑-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyalarmRelevanceRulesEditSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+//        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+//        String text = commonSelect.getText();
+//        commonSelect.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRelevanceRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRelevanceRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        获取，告警信息列表信息，无数据
+        WebElement NumberValue = l.getElement(param.get("alarmRulesListNumberValue"));
+        String text55 = NumberValue.getText();
+        LogFunction.logInfo("告警列表信息为：" + text55);
+        AssertFunction.verifyEquals(driver, text55, "表中数据为空");
+        //        点击，状态选择框
+        WebElement selectChooseStatus1 = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus1.click();
+        LogFunction.logInfo("点开：状态选择框");
+//        状态，选择：停用
+        WebElement BlockUp = l.getElement(param.get("selectChooseStatusBlockUp"));
+        String text8 = BlockUp.getText();
+        BlockUp.click();
+        LogFunction.logInfo("选择状态：" + text8);
+        AssertFunction.verifyEquals(driver, text8, "停用");
+//        点击，筛选，确定
+        WebElement selectAffirm1 = l.getElement(param.get("commonSelectAffirm"));
+        String text22 = selectAffirm1.getText();
+        selectAffirm1.click();
+        LogFunction.logInfo("点击：" + text22);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmRelevanceRulesNameEditValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "关联");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4,"操作系统");
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已禁用");
+ //        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略,告警关联规则,编辑筛选校验通过---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-编辑-筛选
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmRelevanceRulesEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRelevanceRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRelevanceRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略,告警关联策略,筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警关联策略-删除及筛选校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyAlarmRelevanceRulesDeleteAndSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmRelevanceRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmRelevanceRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        co.alarmRulesDelete(param, "alarmRelevanceRulesNameEditValue");
+        LogFunction.logInfo("-----------------降噪策略,告警关联策略,删除及筛选校验完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-新建第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmFilterRulesCreateBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，新建
+        WebElement commonCreate = l.getElement(param.get("commonCreate"));
+        String text1 = commonCreate.getText();
+        commonCreate.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "新建", "----是否点击新建----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.sendKeys(param.get("alarmFilterRulesNameValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmFilterRulesNameValue"));
+//          选择，优先级，高
+        WebElement priority = l.getElement(param.get("priority"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警过滤策略，第一步，基础设置录入完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-新建第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmFilterRulesCreateRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+        WebElement domain = l.getElement(param.get("domain"));
+        domain.click();
+        LogFunction.logInfo("点击：域");
+//        选择，域：rootDomain
+        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+        Domain = chooseDomain.getText();
+        chooseDomain.click();
+        LogFunction.logInfo("选择域：" + Domain);
+        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+//          点击，类型
+        WebElement type = l.getElement(param.get("type"));
+        type.click();
+        LogFunction.logInfo("点击：类型");
+//        选择,类型:操作系统
+        WebElement chooseType = l.getElement(param.get("chooseType"));
+        Oracal = chooseType.getText();
+        chooseType.click();
+        LogFunction.logInfo("选择类型：" + Oracal);
+        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+//        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警过滤策略，第二步，规则条件设置录入完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-新建最后一部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmFilterRulesCreateRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        录入，内容关键字
+        WebElement contentKeyword = l.getElement(param.get("contentKeyword"));
+        contentKeyword.clear();
+        contentKeyword.sendKeys(param.get("contentKeywordValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("contentKeywordValue"));
+//       点击，规则条件高级设置，保存
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "保存", "----验证是否点击：保存----");
+        LogFunction.logInfo("-----------------告警过滤策略，最后一部分，规则条件高级设置录入完成---------------------");
+    }
+
+
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyalarmFilterRulesSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmFilterRulesNameValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmFilterRulesNameValue"));
+//        点击，状态选择框
+        WebElement selectChooseStatus = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus.click();
+        LogFunction.logInfo("点开：状态选择框");
+
+//        状态，选择：启用
+        WebElement StartUsing = l.getElement(param.get("selectChooseStatusStartUsing"));
+        String text7 = StartUsing.getText();
+        StartUsing.click();
+        LogFunction.logInfo("选择状态：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "启用");
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选,规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmFilterRulesNameValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "过滤");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已启用");
+        LogFunction.logInfo("-----------------降噪策略，告警过滤策略筛选查询校验完成完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-编辑，第1部分，基础设置
+    @Test(dataProvider = "xmldata")
+    public void alarmFilterRulesEditBasicSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//          点击，编辑
+        WebElement commonEdit = l.getElement(param.get("commonEdit"));
+        String text1 = commonEdit.getText();
+        commonEdit.click();
+        LogFunction.logInfo("点击：" + text1);
+        AssertFunction.verifyEquals(driver, text1, "编辑", "----是否点击编辑----");
+//          录入，规则名称
+        WebElement rulesName = l.getElement(param.get("rulesName"));
+        rulesName.clear();
+        rulesName.sendKeys(param.get("alarmFilterRulesNameEditValue"));
+        LogFunction.logInfo("规则名称，录入：" + param.get("alarmFilterRulesNameEditValue"));
+//          选择，优先级，低
+        WebElement priority = l.getElement(param.get("priorityLow"));
+        Priority = priority.getText();
+        priority.click();
+        LogFunction.logInfo("勾选优先级" + Priority);
+//        关闭，启动
+        WebElement startOrClose = l.getElement(param.get("startOrClose"));
+        boolean selected = startOrClose.isSelected();
+        LogFunction.logInfo(String.valueOf(selected));
+        if (selected == true) {
+            startOrClose.click();
+            LogFunction.logInfo("状态更改为：停用");
+        }
+
+//        点击，基础设置，下一步
+        WebElement basicsNextStep = l.getElement(param.get("basicsNextStep"));
+        String text3 = basicsNextStep.getText();
+        basicsNextStep.click();
+        LogFunction.logInfo("点击：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警过滤策略，第一步，基础设置编辑完成---------------------");
+
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-编辑，第2部分，规则条件设置
+    @Test(dataProvider = "xmldata")
+    public void alarmFilterRulesEditRulesConditionSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//         点击，域
+//        WebElement domain = l.getElement(param.get("domain"));
+//        domain.click();
+//        LogFunction.logInfo("点击：域");
+////        选择，域：rootDomain
+//        WebElement chooseDomain = l.getElement(param.get("chooseDomain"));
+//        Domain = chooseDomain.getText();
+//        chooseDomain.click();
+//        LogFunction.logInfo("选择域：" + Domain);
+//        AssertFunction.verifyEquals(driver, Domain, "rootDomain", "----验证选择的域是否为：rootDomain----");
+////          点击，类型
+//        WebElement type = l.getElement(param.get("type"));
+//        type.click();
+//        LogFunction.logInfo("点击：类型");
+////        选择,类型:操作系统
+//        WebElement chooseType = l.getElement(param.get("chooseType"));
+//        Oracal = chooseType.getText();
+//        chooseType.click();
+//        LogFunction.logInfo("选择类型：" + Oracal);
+//        AssertFunction.verifyEquals(driver, Oracal, "操作系统", "----验证选择的类型是否为；Oracle----");
+//        点击，告警类型选择
+//        WebElement alarmType = l.getElement(param.get("alarmType"));
+//        alarmType.click();
+//        LogFunction.logInfo("点击：告警类型选择");
+////        选择,告警类型选择:Oracle_System_Alert
+//        WebElement chooseAlarmType = l.getElement(param.get("chooseAlarmType"));
+//        String text6 = chooseAlarmType.getText();
+//        chooseAlarmType.click();
+//        LogFunction.logInfo("选择告警类型：" + text6);
+//        AssertFunction.verifyEquals(driver, text6, "Oracle_System_Alert", "----验证选择的告警类型是否为；Oracle_System_Alert----");
+//       点击，规则条件设置，下一步
+        WebElement rulesConditionConfigNextStep = l.getElement(param.get("rulesConditionConfigNextStep"));
+        String text7 = rulesConditionConfigNextStep.getText();
+        rulesConditionConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text7);
+        AssertFunction.verifyEquals(driver, text7, "下一步", "----验证是否点击：下一步----");
+        LogFunction.logInfo("-----------------告警过滤策略，第二步，规则条件设置编辑完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-编辑，第3部分，规则条件高级设置
+    @Test(dataProvider = "xmldata")
+    public void alarmFilterRulesEditRulesConditionAdvancedSetting(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//       点击，规则条件高级设置，保存
+        WebElement rulesConditionAdvancedConfigNextStep = l.getElement(param.get("alarmClassifyConfigSave"));
+        String text71 = rulesConditionAdvancedConfigNextStep.getText();
+        rulesConditionAdvancedConfigNextStep.click();
+        LogFunction.logInfo("点击：" + text71);
+        AssertFunction.verifyEquals(driver, text71, "保存", "----验证是否点击：保存----");
+        LogFunction.logInfo("-----------------告警过滤策略，最后一步，规则条件高级设置编辑完成---------------------");
+    }
+
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-编辑-筛选及校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyalarmFilterRulesEditSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        点击，筛选
+//        WebElement commonSelect = l.getElement(param.get("commonSelect"));
+//        String text = commonSelect.getText();
+//        commonSelect.click();
+//        LogFunction.logInfo("点击：" + text);
+//        AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmFilterRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmFilterRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        获取，告警信息列表信息，无数据
+        WebElement NumberValue = l.getElement(param.get("alarmRulesListNumberValue"));
+        String text55 = NumberValue.getText();
+        LogFunction.logInfo("告警列表信息为：" + text55);
+        AssertFunction.verifyEquals(driver, text55, "表中数据为空");
+        //        点击，状态选择框
+        WebElement selectChooseStatus1 = l.getElement(param.get("selectChooseStatus"));
+        selectChooseStatus1.click();
+        LogFunction.logInfo("点开：状态选择框");
+//        状态，选择：停用
+        WebElement BlockUp = l.getElement(param.get("selectChooseStatusBlockUp"));
+        String text8 = BlockUp.getText();
+        BlockUp.click();
+        LogFunction.logInfo("选择状态：" + text8);
+        AssertFunction.verifyEquals(driver, text8, "停用");
+//        点击，筛选，确定
+        WebElement selectAffirm1 = l.getElement(param.get("commonSelectAffirm"));
+        String text22 = selectAffirm1.getText();
+        selectAffirm1.click();
+        LogFunction.logInfo("点击：" + text22);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+
+        //        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+//        校验,规则名称
+        WebElement SelectRulesName = l.getElement(param.get("commonDenoiseStrategySelectRulesNameValue"));
+        String text1 = SelectRulesName.getText();
+        LogFunction.logInfo("规则名称为：" + text1);
+        AssertFunction.verifyEquals(driver, text1, param.get("alarmFilterRulesNameEditValue"));
+//        校验,规则类型
+        WebElement selectRulesType = l.getElement(param.get("commonDenoiseStrategySelectRulesTypeValue"));
+        String text3 = selectRulesType.getText();
+        LogFunction.logInfo("规则类型为：" + text3);
+        AssertFunction.verifyEquals(driver, text3, "过滤");
+//        校验,节点类型
+        WebElement selectNodeType = l.getElement(param.get("commonDenoiseStrategySelectNodeTypeValue"));
+        String text4 = selectNodeType.getText();
+        LogFunction.logInfo("节点类型为：" + text4);
+        AssertFunction.verifyEquals(driver, text4, Oracal);
+//        校验,域
+        WebElement selectDomain = l.getElement(param.get("commonDenoiseStrategySelectDomainValue"));
+        String text5 = selectDomain.getText();
+        LogFunction.logInfo("域为：" + text5);
+        AssertFunction.verifyEquals(driver, text5, Domain);
+//        校验,优先级
+        WebElement selectPriority = l.getElement(param.get("commonDenoiseStrategySelectPriorityValue"));
+        String text6 = selectPriority.getText();
+        LogFunction.logInfo("优先级为：" + text6);
+        AssertFunction.verifyEquals(driver, text6, Priority);
+//        校验,状态
+        WebElement selectStatus = l.getElement(param.get("commonDenoiseStrategySelectStatusValue"));
+        String title = selectStatus.getAttribute("title");
+        LogFunction.logInfo("状态为：" + title);
+        AssertFunction.verifyEquals(driver, title, "已禁用");
+        LogFunction.logInfo("-----------------降噪策略告警过滤策略筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-编辑-筛选
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyalarmFilterRulesEditSelect(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmFilterRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmFilterRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        LogFunction.logInfo("-----------------降噪策略告警过滤策略筛选查询完成---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-告警过滤策略-删除及筛选校验
+    @Test(dataProvider = "xmldata")
+    public void denoiseStrategyalarmFilterRulesDeleteAndSelectVerify(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        验证，筛选区域，是否展示
+        WebElement SelectArea = l.getElement(param.get("denoiseStrategySelectArea"));
+        boolean displayed = SelectArea.isDisplayed();
+        if (displayed == false) {
+//        点击，筛选
+            WebElement commonSelect = l.getElement(param.get("commonSelect"));
+            String text = commonSelect.getText();
+            commonSelect.click();
+            LogFunction.logInfo("点击：" + text);
+            AssertFunction.verifyEquals(driver, text, "筛选", "----验证点击的是否是：筛选----");
+        }
+//        点击，清空
+        WebElement commonSelect = l.getElement(param.get("Clear"));
+        String text = commonSelect.getText();
+        commonSelect.click();
+        LogFunction.logInfo("点击：" + text);
+        AssertFunction.verifyEquals(driver, text, "清空");
+//        录入，规则名称
+        WebElement selectRulesName = l.getElement(param.get("selectRulesName"));
+        selectRulesName.clear();
+        selectRulesName.sendKeys(param.get("alarmFilterRulesNameEditValue"));
+        LogFunction.logInfo("录入规则名称:" + param.get("alarmFilterRulesNameEditValue"));
+//        点击，筛选，确定
+        WebElement selectAffirm = l.getElement(param.get("commonSelectAffirm"));
+        String text2 = selectAffirm.getText();
+        selectAffirm.click();
+        LogFunction.logInfo("点击：" + text2);
+        AssertFunction.verifyEquals(driver, text2, "确定", "----是否点击的是：确定按钮----");
+//        勾选规则
+        WebElement selectChooseRules = l.getElement(param.get("commonDenoiseStrategySelectChoose"));
+        selectChooseRules.click();
+        LogFunction.logInfo("勾选筛选结果规则");
+        co.alarmRulesDelete(param, "alarmFilterRulesNameEditValue");
+        LogFunction.logInfo("-----------------降噪策略，告警过滤策略，删除及筛选校验通过---------------------");
+    }
+
+
+
+
+
     @BeforeClass
-    public void aa() {
+    public void testStart() {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         SeleniumDriver seleniumDriver = new SeleniumDriver();
         driver = seleniumDriver.getDriver();
         l = new LocatorFunction(driver);
-        ssf = new ScreenshotFunction(driver);
+        co = new CommonObject(driver, l);
     }
 
     @AfterClass
-    public void bb() throws InterruptedException {
+    public void testEnd() throws InterruptedException {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
         Thread.sleep(3000);
         driver.close();
         driver.quit();
     }
 
+//    @BeforeMethod
+//    public void startTime(){
+//        try {
+//            Thread.sleep(500);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
 }
+

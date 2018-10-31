@@ -16,7 +16,7 @@ public class ScreenshotFunction {
     //    linux下使用
 //    private String Path = "/home/portal/jenkins_dir/snapshot";
     //    windows下使用
-    private String Path = "E:/testScreen/snapshot";
+    private String Path = "./testScreen";
 
     public ScreenshotFunction(WebDriver driver) {
         this.driver = driver;

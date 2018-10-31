@@ -14,7 +14,7 @@
     <!--<postgresqlsql>select d from t_user  where email='edit0015@edit.com'</postgresqlsql>-->
 
     <!--121-->
-    <postgresqlhost>jdbc:postgresql://192.168.20.122:5432/v4.3test_main</postgresqlhost>
+    <postgresqlhost>jdbc:postgresql://192.168.20.122:5432/v4.4test_main</postgresqlhost>
     <!--175-->
     <!--<postgresqlhost>jdbc:postgresql://192.168.20.122:5432/vicube_autotest_main</postgresqlhost>-->
     <!--143-->
@@ -30,5 +30,15 @@
     <emailSender>652444917</emailSender>
     <emailAuthorizationCode>zndvjnnczdunbfha</emailAuthorizationCode>
     <emailRecipient>1766149901</emailRecipient>
+
+    <chromeDownloadPathOfWindows>G:\ChromeDownload</chromeDownloadPathOfWindows>
+    <chromeDownloadPathOfLinux>/home/portal/chromeDownload</chromeDownloadPathOfLinux>
+
+
+
+    <commonObjectConfirm>确认</commonObjectConfirm>
+
+    <maxRunCount>1</maxRunCount>
+
 </config>
 

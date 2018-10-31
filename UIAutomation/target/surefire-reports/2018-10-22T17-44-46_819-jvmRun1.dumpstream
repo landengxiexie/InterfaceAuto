@@ -1,0 +1,133 @@
+# Created at 2018-10-22T17:45:02.797
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2018-10-22T17:45:07.266
+Unexpected IOException with stream: 2018-45-22 17:10:265 utill.LogFunction : 2018-10-22 17:45:07:By.xpath: //*[@id='header']/div/ul/li[2]/a/span--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:07.274
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,vicubeLogin(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.vicubeLogin:152 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.vicubeLogin(VicubeSystem.java:152)\000A
+
+
+# Created at 2018-10-22T17:45:07.277
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,promptMessage(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:07.278
+Unexpected IOException with stream: 2018-45-22 17:10:277 utill.LogFunction : 2018-10-22 17:45:07:promptMessage
+
+
+# Created at 2018-10-22T17:45:13.308
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,promptMessage(com.testcases.VicubeSystem),null,chrome not reachable\000A  (Session info: chrome=66.0.3359.139)\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 66.0.3359.139\002C webStorageEnabled: true}\000ASession ID: 61943c266c91c9051696e96e3440278e\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div},null,chrome not reachable\000A  (Session info: chrome=66.0.3359.139)\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 66.0.3359.139\002C webStorageEnabled: true}\000ASession ID: 61943c266c91c9051696e96e3440278e\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div},VicubeSystem.promptMessage:1516 \00BB WebDriver chrome not reachable\000A  (Session in...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=66.0.3359.139)\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 66.0.3359.139\002C webStorageEnabled: true}\000ASession ID: 61943c266c91c9051696e96e3440278e\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div}\000A\0009at com.testcases.VicubeSystem.promptMessage(VicubeSystem.java:1516)\000A
+
+
+# Created at 2018-10-22T17:45:13.310
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentratedAlarm(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:13.311
+Unexpected IOException with stream: 2018-45-22 17:10:310 utill.LogFunction : 2018-10-22 17:45:13:concentratedAlarm
+
+
+# Created at 2018-10-22T17:45:18.326
+Unexpected IOException with stream: 2018-45-22 17:10:326 utill.LogFunction : 2018-10-22 17:45:18:By.xpath: //*[@id="sidebar"]/div/div[1]/ul/li[2]/a/span--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:18.327
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentratedAlarm(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentratedAlarm:1783 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentratedAlarm(VicubeSystem.java:1783)\000A
+
+
+# Created at 2018-10-22T17:45:18.329
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmConfig(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:18.330
+Unexpected IOException with stream: 2018-45-22 17:10:329 utill.LogFunction : 2018-10-22 17:45:18:alarmConfig
+
+
+# Created at 2018-10-22T17:45:23.348
+Unexpected IOException with stream: 2018-45-22 17:10:348 utill.LogFunction : 2018-10-22 17:45:23:By.xpath: //*[@id="sidebar"]/div/div[1]/ul/li[2]/ul/li[3]/a--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:23.350
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmConfig(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmConfig:1800 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmConfig(VicubeSystem.java:1800)\000A
+
+
+# Created at 2018-10-22T17:45:23.351
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,denoiseStrategy(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:23.352
+Unexpected IOException with stream: 2018-45-22 17:10:352 utill.LogFunction : 2018-10-22 17:45:23:denoiseStrategy
+
+
+# Created at 2018-10-22T17:45:28.365
+Unexpected IOException with stream: 2018-45-22 17:10:365 utill.LogFunction : 2018-10-22 17:45:28:By.xpath: //*[@id="sidebar"]/div/div[1]/ul/li[2]/ul/li[3]/ul/li[1]/a--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:28.367
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,denoiseStrategy(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.denoiseStrategy:1817 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.denoiseStrategy(VicubeSystem.java:1817)\000A
+
+
+# Created at 2018-10-22T17:45:28.369
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,denoiseStrategyChooseAlarmMergeRules(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:28.370
+Unexpected IOException with stream: 2018-45-22 17:10:369 utill.LogFunction : 2018-10-22 17:45:28:denoiseStrategyChooseAlarmMergeRules
+
+
+# Created at 2018-10-22T17:45:33.395
+Unexpected IOException with stream: 2018-45-22 17:10:393 utill.LogFunction : 2018-10-22 17:45:33:By.xpath: //*[@id='cbAlertRuleType']/button[@class='btn btn-default dropdown-toggle']--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:33.398
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,denoiseStrategyChooseAlarmMergeRules(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.denoiseStrategyChooseAlarmMergeRules:2023 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.denoiseStrategyChooseAlarmMergeRules(VicubeSystem.java:2023)\000A
+
+
+# Created at 2018-10-22T17:45:33.402
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmMergeRulesCreateBasicSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:33.403
+Unexpected IOException with stream: 2018-45-22 17:10:402 utill.LogFunction : 2018-10-22 17:45:33:alarmMergeRulesCreateBasicSetting
+
+
+# Created at 2018-10-22T17:45:38.417
+Unexpected IOException with stream: 2018-45-22 17:10:416 utill.LogFunction : 2018-10-22 17:45:38:By.linkText: 新建--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:38.418
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmMergeRulesCreateBasicSetting(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmMergeRulesCreateBasicSetting:4269 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmMergeRulesCreateBasicSetting(VicubeSystem.java:4269)\000A
+
+
+# Created at 2018-10-22T17:45:38.419
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmMergeRulesCreateRulesConditionSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:38.420
+Unexpected IOException with stream: 2018-45-22 17:10:420 utill.LogFunction : 2018-10-22 17:45:38:alarmMergeRulesCreateRulesConditionSetting
+
+
+# Created at 2018-10-22T17:45:43.429
+Unexpected IOException with stream: 2018-45-22 17:10:428 utill.LogFunction : 2018-10-22 17:45:43:By.xpath: //*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[2]/form/div[1]/div/div/div--is not exist until--TimeOut:5
+
+
+# Created at 2018-10-22T17:45:43.430
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmMergeRulesCreateRulesConditionSetting(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmMergeRulesCreateRulesConditionSetting:4303 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmMergeRulesCreateRulesConditionSetting(VicubeSystem.java:4303)\000A
+
+
+# Created at 2018-10-22T17:45:43.432
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmMergeRulesCreateRulesConditionAdvancedSetting(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-10-22T17:45:43.432
+Unexpected IOException with stream: 2018-45-22 17:10:432 utill.LogFunction : 2018-10-22 17:45:43:alarmMergeRulesCreateRulesConditionAdvancedSetting
+
+

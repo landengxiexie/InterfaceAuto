@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="集中告警" verbose="1" parallel="false" thread-count="1">
+    <test name="告警查询-历史记录" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="alarmConfigThresholdStrategy"/>
+                    <include name="thresholdStrategyCreate"/>
+                    <include name=""/>
+                    <include name=""/>
+                    <include name=""/>
+                    <include name=""/>
+                    <include name=""/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <listener class-name="utill.TestngRetryListener"/>
+
+    </listeners>
+</suite>
