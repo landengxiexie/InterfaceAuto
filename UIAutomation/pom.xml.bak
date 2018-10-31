@@ -236,7 +236,7 @@
                         <suiteXmlFile>
                             ./src/com.test.page/VicubeSystemSetup.xml
                         </suiteXmlFile>
-                         <!-- <suiteXmlFile>
+                        <suiteXmlFile>
                             ./src/com.test.page/VicubeConcentratedAlarmAlarmConfiguration.xml
                         </suiteXmlFile>
                         <suiteXmlFile>
@@ -247,7 +247,7 @@
                         </suiteXmlFile>
                         <suiteXmlFile>
                             ./src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml
-                        </suiteXmlFile> -->
+                        </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
