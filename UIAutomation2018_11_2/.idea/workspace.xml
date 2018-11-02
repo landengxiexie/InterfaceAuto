@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java" line="6632" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="ae9ea538-cf59-4990-b691-dc35b5d6b708" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testcases/CommonObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/locator/Vicube2.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmDenoiseRules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmDenoiseRules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.test.page/run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.test.page/run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bean/BaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bean/BaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testcases/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testcases/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/locator/Vicube.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/locator/Vicube.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/locator/Vicube111.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utill/SeleniumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utill/SeleniumDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/testcases/VicubeSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/testcases/VicubeSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-data/Global.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-data/Global.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-data/VicubeSystem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-data/VicubeSystem.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/test$VicubeSystem_userInvalidLogin.ic" NAME="VicubeSystem.userInvalidLogin Coverage Results" MODIFIED="1535699776283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.testcases.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="VicubeSystem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75544">
+              <caret line="2718" column="16" selection-start-line="2718" selection-start-column="16" selection-end-line="2718" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeleniumDriver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utill/SeleniumDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#2711#2727#0" expanded="true" />
+                <element signature="e#3449#3465#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestngRetryListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utill/TestngRetryListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/config/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1036">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com.test.page/run.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VicubeSystem.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-data/VicubeSystem.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18676">
+              <caret line="667" column="78" selection-start-line="667" selection-start-column="28" selection-end-line="667" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vicube.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/locator/Vicube.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27580">
+              <caret line="985" column="13" selection-start-line="985" selection-start-column="13" selection-end-line="985" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>concentrateAlarmAlarmInformInformWayDisable</find>
+      <find>alarmDisplayResolvedOfIgnore</find>
+      <find>alarmDisplayExportButton</find>
+      <find>32</find>
+      <find>321</find>
+      <find>chooseAlarm</find>
+      <find>alarmDisplayChooseFunction2</find>
+      <find>alarmDisplayResolvedOfResolved</find>
+      <find>selectchooseuser</find>
+      <find>concentrateAlarmAlarmInformInformWayEditSelect</find>
+      <find>QueryNotificationType</find>
+      <find>QueryConfirm</find>
+      <find>AlarmInformInformWayEditNameValue</find>
+      <find>QueryName</find>
+      <find>concentrateAlarmAlarmInformInformWayEditSelect1</find>
+      <find>alarmInformAlarmScreenStartUsing</find>
+      <find>---实际</find>
+      <find>列表已前转告警数量</find>
+      <find>alarmDisplayListNumber</find>
+      <find>alarmDisplayResolvedAlarm</find>
+      <find>---实际值</find>
+      <find>已前转告警数量</find>
+      <find>alarmDisplayAlarmsNumber</find>
+      <find>--实际</find>
+      <find>alarmDisplayInformClick</find>
+      <find>FaultClassifyValue</find>
+      <find>alarmDisplayAlarmForwardShiftingFaultClassifyValue</find>
+      <find>alarmDisplayForwardShifting</find>
+      <find>alarmDisplayAlarmRank</find>
+      <find>alarmDisplaySelect</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ThresholdRule</replace>
+      <replace>String text</replace>
+      <replace>co.chooseSelectResult</replace>
+      <replace>alarmHintAndConfirm</replace>
+      <replace>RecoveryRules</replace>
+      <replace>='</replace>
+      <replace>Recovery</replace>
+      <replace>告警恢复规则</replace>
+      <replace>alarmRecoveryRules</replace>
+      <replace>告警升级</replace>
+      <replace>AlarmUpgrade</replace>
+      <replace>全部策略</replace>
+      <replace>告警合并策略</replace>
+      <replace>告警分类策略</replace>
+      <replace>告警升级策略</replace>
+      <replace>告警恢复策略</replace>
+      <replace>AutoTest告警恢复规则</replace>
+      <replace>alarmConfigura</replace>
+      <replace>WarningStrategy</replace>
+      <replace>alarmUpgradeRulesCreateAlarmUpgradeSetting</replace>
+      <replace>alarmScreen</replace>
+      <replace>alarmScreenEdit</replace>
+      <replace>&quot;</replace>
+      <replace>告警筛选</replace>
+      <replace>alarmRelevanceRules</replace>
+      <replace>告警关联</replace>
+      <replace>Relevance</replace>
+      <replace>alarmFilterRules</replace>
+      <replace>alarmFilter</replace>
+      <replace>告警过滤</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/VicubeConcentratedAlarm.java" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarm1.fxml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarm1.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarm3.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/aa.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmTwo.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/locator/lishigaojing.yml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeAlarmQueryHistoryAlarm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/LogFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/locator/Vicube111.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/locator/Vicub1e.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/base/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/commonTest.java" />
+        <option value="$PROJECT_DIR$/test-data/commonTest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/AssertFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/locator/Vicube2.yaml" />
+        <option value="$PROJECT_DIR$/test-data/Global.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/ScreenshotFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/locator/Vicube3.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/ExtentTestNGIReporterListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/TestListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/TestListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/AAA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/RetryListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bean/BaseConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TestngRetryListener.java" />
+        <option value="$PROJECT_DIR$/src/com.test.page/Test.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/RetryToRunCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/TestngRetry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/TestngRetryListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/RetryToRunCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/CommonObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/InterceptFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/Test001.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/config.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeSystemSetup.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmDenoiseRules.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmConfiguration.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/locator/Vicube.yaml" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/LocatorFunction.java" />
+        <option value="$PROJECT_DIR$/test-data/VicubeSystem.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" />
+        <option value="$PROJECT_DIR$/src/com.test.page/run.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utill/SeleniumDriver.java" />
+        <option value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1025" />
+    <option name="y" value="225" />
+    <option name="width" value="610" />
+    <option name="height" value="495" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com.test.page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="locator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIAutomationConcentrationAlarm" type="462c0819:PsiDirectoryNode" />
+              <item name="test-data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="switch&#9;null&#9;null&#10;select&#9;null&#9;null&#10;Login&#9;PSI&#9;JAVA://com.testcases.VicubeSystem#userLogin&#10;wait until&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UIAutomationConcentrationAlarmAlarmConfiguration" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15754437" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SVN2\UIAutomation\src\main\java\locator" />
+      <recent name="D:\SVN2\UIAutomation\seleniumDriver" />
+      <recent name="D:\SVNProject\60\UIAutomation\seleniumDriver" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utill" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SVNProject\60\UIAutomation\src\main\java\utill" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/VicubeConcentratedAlarmAlarmQuery.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmQuery.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="utill.ExtentTestNGIReporterListener" />
+      </listeners>
+    </configuration>
+    <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/com.test.page/run.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="utill.ExtentTestNGIReporterListener" />
+      </listeners>
+    </configuration>
+    <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="utill.ExtentTestNGIReporterListener" />
+      </listeners>
+    </configuration>
+    <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="utill.ExtentTestNGIReporterListener" />
+      </listeners>
+    </configuration>
+    <configuration name="Test001.dd" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.testcases" />
+      <option name="MAIN_CLASS_NAME" value="com.testcases.Test001" />
+      <option name="METHOD_NAME" value="dd" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="utill.ExtentTestNGIReporterListener" />
+      </listeners>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="utill.ExtentTestNGIReporterListener" />
+      </listeners>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" />
+      <item itemvalue="TestNG.D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml" />
+      <item itemvalue="TestNG.Test001.dd" />
+      <item itemvalue="TestNG.D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml" />
+      <item itemvalue="TestNG.D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" />
+      <item itemvalue="TestNG.D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/VicubeConcentratedAlarmAlarmQuery.xml" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" />
+        <item itemvalue="TestNG.D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/VicubeConcentratedAlarmAlarmQuery.xml" />
+        <item itemvalue="TestNG.D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml" />
+        <item itemvalue="TestNG.D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml" />
+        <item itemvalue="TestNG.Test001.dd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\丹哥\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae9ea538-cf59-4990-b691-dc35b5d6b708" name="Default" comment="" />
+      <created>1535681285390</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535681285390</updated>
+      <workItem from="1535681286809" duration="15626000" />
+      <workItem from="1535701668356" duration="9996000" />
+      <workItem from="1535942170710" duration="8982000" />
+      <workItem from="1535966385006" duration="3892000" />
+      <workItem from="1536026767862" duration="11147000" />
+      <workItem from="1536051476075" duration="3562000" />
+      <workItem from="1536055524247" duration="1581000" />
+      <workItem from="1536125958054" duration="15309000" />
+      <workItem from="1536198236832" duration="15285000" />
+      <workItem from="1536219714204" duration="5774000" />
+      <workItem from="1536229655879" duration="291000" />
+      <workItem from="1536285188782" duration="26252000" />
+      <workItem from="1536544766158" duration="14656000" />
+      <workItem from="1536565608379" duration="5377000" />
+      <workItem from="1536724683956" duration="9436000" />
+      <workItem from="1536804124485" duration="19252000" />
+      <workItem from="1536889528780" duration="16968000" />
+      <workItem from="1537150639118" duration="14480000" />
+      <workItem from="1537234845073" duration="24581000" />
+      <workItem from="1537320967306" duration="26811000" />
+      <workItem from="1537407263653" duration="25821000" />
+      <workItem from="1537493325120" duration="25585000" />
+      <workItem from="1537839885883" duration="25990000" />
+      <workItem from="1537926422703" duration="19025000" />
+      <workItem from="1538013413965" duration="23009000" />
+      <workItem from="1538099394921" duration="23285000" />
+      <workItem from="1538272128323" duration="16667000" />
+      <workItem from="1538705311738" duration="4108000" />
+      <workItem from="1538724023594" duration="9062000" />
+      <workItem from="1538793381392" duration="18688000" />
+      <workItem from="1538962312438" duration="27113000" />
+      <workItem from="1539049492390" duration="22391000" />
+      <workItem from="1539135482928" duration="2131000" />
+      <workItem from="1539137918266" duration="23150000" />
+      <workItem from="1539226428271" duration="12499000" />
+      <workItem from="1539568258911" duration="1522000" />
+      <workItem from="1539581616549" duration="1218000" />
+      <workItem from="1539583258753" duration="16224000" />
+      <workItem from="1539654845672" duration="8075000" />
+      <workItem from="1539672605974" duration="2905000" />
+      <workItem from="1539740368865" duration="20834000" />
+      <workItem from="1539766322646" duration="5661000" />
+      <workItem from="1539826978266" duration="17741000" />
+      <workItem from="1539914147059" duration="13246000" />
+      <workItem from="1539941383304" duration="1072000" />
+      <workItem from="1540172785739" duration="459000" />
+      <workItem from="1540173284562" duration="3090000" />
+      <workItem from="1540180661250" duration="864000" />
+      <workItem from="1540186724603" duration="77000" />
+      <workItem from="1540187634053" duration="648000" />
+      <workItem from="1540188345706" duration="500000" />
+      <workItem from="1540191931346" duration="8148000" />
+      <workItem from="1540201932859" duration="2129000" />
+      <workItem from="1540264092992" duration="18736000" />
+      <workItem from="1540346691189" duration="20250000" />
+      <workItem from="1540432647925" duration="25108000" />
+      <workItem from="1540778706097" duration="9191000" />
+      <workItem from="1540792741216" duration="16535000" />
+      <workItem from="1540864445841" duration="24167000" />
+      <workItem from="1540950134723" duration="4572000" />
+      <workItem from="1540958131960" duration="150000" />
+      <workItem from="1540965306335" duration="247000" />
+      <workItem from="1540967271532" duration="12900000" />
+      <workItem from="1541036496396" duration="19348000" />
+      <workItem from="1541123011351" duration="1383000" />
+      <workItem from="1541125220288" duration="485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="D__SVN2_UIAutomationConcentrationAlarm_src_com_test_page_run_xml - 2018.11.01 at 16h 06m 59s.xml">
+      <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomation_src_com_test_page_VicubeConcentratedAlarmAlarmDisplay_xml - 2018.11.01 at 16h 13m 43s.xml">
+      <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomation_src_com_test_page_VicubeConcentratedAlarmAlarmQueryHistoryAlarm_xml - 2018.11.01 at 17h 28m 16s.xml">
+      <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmQueryHistoryAlarm.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomationConcentrationAlarm_src_com_test_page_VicubeConcentratedAlarmAlarmQuery_xml - 2018.11.01 at 17h 30m 50s.xml">
+      <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/VicubeConcentratedAlarmAlarmQuery.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomation_src_com_test_page_VicubeConcentratedAlarmAlarmInform_xml - 2018.11.01 at 17h 54m 35s.xml">
+      <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomation_src_com_test_page_VicubeConcentratedAlarmAlarmInform_xml - 2018.11.01 at 18h 00m 27s.xml">
+      <configuration name="D:/SVN2/UIAutomation/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomationConcentrationAlarm_src_com_test_page_run_xml - 2018.11.01 at 18h 04m 35s.xml">
+      <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomationConcentrationAlarm_src_com_test_page_run_xml - 2018.11.02 at 10h 06m 55s.xml">
+      <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomationConcentrationAlarm_src_com_test_page_run_xml - 2018.11.02 at 10h 07m 04s.xml">
+      <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__SVN2_UIAutomationConcentrationAlarm_src_com_test_page_run_xml - 2018.11.02 at 10h 08m 46s.xml">
+      <configuration name="D:/SVN2/UIAutomationConcentrationAlarm/src/com.test.page/run.xml" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="785267000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1454" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32884097" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502149" side_tool="true" weight="0.361186" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295129" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.497851" weight="0.32614556" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49856734" weight="0.32884097" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Problems" order="13" weight="0.32884097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.10843374" visible="true" weight="0.2922636" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3295129" />
+      <window_info id="Structure" order="1" sideWeight="0.8915663" side_tool="true" weight="0.1482808" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" sideWeight="0.8915663" side_tool="true" weight="0.1482808" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.45822102" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32884097" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32884097" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32884097" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>343</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>413</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>367</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/Test001.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/Test001.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/Test001.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/Test001.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>2433</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>4249</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>5866</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>7279</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>2291</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>7549</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>2045</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>8599</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/test/TestngRetry.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>9425</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>9454</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java</url>
+          <line>9801</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="89" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>&quot;running retry for  '&quot; + result.getName() + &quot;' on class &quot; + this.getClass().getName() + &quot; Retrying &quot;
+                    + retryCount + &quot; times&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>maxRetryCount</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>retryCount</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/locator/Vicube3.yaml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/ITestResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/RetryToRunCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/TestListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/ExtentTestNGIReporterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/ITestListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/IAnnotationTransformer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/LogFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/log4testng/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/ScreenshotFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/Test.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/annotations/ITestAnnotation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/IRetryAnalyzer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/AAA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeConcentratedAlarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/RetryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TestngRetry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bean/BaseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="626" selection-start-line="626" selection-end-line="626" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestMethodWithDataProviderMethodWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/AssertFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/InterceptFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.10.0/selenium-support-3.10.0.jar!/org/openqa/selenium/support/ui/Select.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/testcases/Test001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="130" column="8" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="142" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestNG.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="1256" selection-start-line="1256" selection-end-line="1256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/ParseFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeSystemSetup.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="109" column="16" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/LocatorFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/VicubeConcentratedAlarm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/RetryToRunCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmDenoiseRules.xml" />
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmQuery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/testcases/CommonObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="238" column="25" lean-forward="true" selection-start-line="238" selection-start-column="25" selection-end-line="238" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/Test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/testcases/VicubeSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75544">
+          <caret line="2718" column="16" selection-start-line="2718" selection-start-column="16" selection-end-line="2718" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmConfiguration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+          <folding>
+            <element signature="n#test#0;n#suite#0;n#!!top" />
+            <element signature="n#classes#0;n#test#0;n#suite#0;n#!!top" />
+            <element signature="n#class#0;n#classes#0;n#test#0;n#suite#0;n#!!top" />
+            <element signature="n#methods#0;n#class#0;n#classes#0;n#test#0;n#suite#0;n#!!top" />
+            <element signature="n#test#1;n#suite#0;n#!!top" />
+            <element signature="n#classes#0;n#test#1;n#suite#0;n#!!top" />
+            <element signature="n#class#0;n#classes#0;n#test#1;n#suite#0;n#!!top" />
+            <element signature="n#methods#0;n#class#0;n#classes#0;n#test#1;n#suite#0;n#!!top" />
+            <element signature="n#test#2;n#suite#0;n#!!top" />
+            <element signature="n#classes#0;n#test#2;n#suite#0;n#!!top" />
+            <element signature="n#class#0;n#classes#0;n#test#2;n#suite#0;n#!!top" />
+            <element signature="n#methods#0;n#class#0;n#classes#0;n#test#2;n#suite#0;n#!!top" />
+            <element signature="n#test#3;n#suite#0;n#!!top" />
+            <element signature="n#classes#0;n#test#3;n#suite#0;n#!!top" />
+            <element signature="n#class#0;n#classes#0;n#test#3;n#suite#0;n#!!top" />
+            <element signature="n#methods#0;n#class#0;n#classes#0;n#test#3;n#suite#0;n#!!top" />
+            <element signature="n#test#4;n#suite#0;n#!!top" />
+            <element signature="n#classes#0;n#test#4;n#suite#0;n#!!top" />
+            <element signature="n#class#0;n#classes#0;n#test#4;n#suite#0;n#!!top" />
+            <element signature="n#methods#0;n#class#0;n#classes#0;n#test#4;n#suite#0;n#!!top" />
+            <element signature="n#test#5;n#suite#0;n#!!top" />
+            <element signature="n#test#6;n#suite#0;n#!!top" />
+            <element signature="n#test#7;n#suite#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/locator/Vicube.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27580">
+          <caret line="985" column="13" selection-start-line="985" selection-start-column="13" selection-end-line="985" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="128" column="54" lean-forward="true" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="238" column="38" selection-start-line="238" selection-start-column="38" selection-end-line="238" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/run.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/VicubeSystem.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18676">
+          <caret line="667" column="78" selection-start-line="667" selection-start-column="28" selection-end-line="667" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/TestngRetryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com.test.page/VicubeConcentratedAlarmAlarmInform.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utill/SeleniumDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#2711#2727#0" expanded="true" />
+            <element signature="e#3449#3465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: backport-util-concurrent:backport-util-concurrent:3.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

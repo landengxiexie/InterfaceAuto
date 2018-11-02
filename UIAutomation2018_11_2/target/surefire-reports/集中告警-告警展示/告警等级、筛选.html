@@ -1,0 +1,292 @@
+<html>
+<head>
+<title>TestNG:  告警等级、筛选</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>告警等级、筛选</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 01 16:44:40 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>77 seconds (77905 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.VicubeSystem.alarmDisplaySelect()'><b>alarmDisplaySelect</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, CentralizedAlarmSelectCICase=CentralizedAlarmSelectCICase, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, chooseAlarm=selectchooseuser, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, alarmDisplaySearchBoxValue=AutoTest, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, CentralizedAlarmSelectCICaseValue=CentralizedAlarmSelectCICaseValue, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, CentralizedAlarmSelectCollectSystem=CentralizedAlarmSelectCollectSystem, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, CentralizedAlarmSelectCollectSystemValue=CentralizedAlarmSelectCollectSystemValue, systemTitleblank=systemTitleblank, putAway=CentralizedAlarmSelectCollectPutAway, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, CentralizedAlarmSelectCIDomain=CentralizedAlarmSelectCIDomain, commonCentralizedAlarmResolved=CentralizedAlarmResolved, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, affirm=alarmDisplaySelectAffirm, editWorkingGroupeNoteValue=编辑工作组备注, CentralizedAlarmSelectAlarmTypeValue=, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, CentralizedAlarmSelectAlarmType=CentralizedAlarmSelectAlarmType, commonSelectResultEight=SelectResultEight, CentralizedAlarmSelectCIDomainValue=CentralizedAlarmSelectCIDomainValue, CentralizedAlarmSelectCITypeValue=CentralizedAlarmSelectCITypeValue, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, CentralizedAlarmSelectCIType=CentralizedAlarmSelectCIType, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, Clear=CentralizedAlarmSelectCollectClear, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, alarmDisplayColumnDisplayMessageContent=alarmDisplayColumnDisplayMessageContent, NewGroupingDescriptionValue=我是接收分组描述, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-241922428" onClick='toggleBox("Output-241922428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-241922428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-241922428">
+2018-11-01 16:45:16:alarmDisplaySelect<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;btn btn-default btn-white m-r-5 m-b-5&quot; title=&quot;显示/隐藏查询条件&quot; ng-show=&quot;showSearch&quot; ng-click=&quot;actions.showOptionsAlert()&quot;&gt;...&lt;/a&gt; is not clickable at point (170, 167). Other element would receive the click: &lt;a href=&quot;javascript:;&quot;&gt;...&lt;/a&gt;
+  (Session info: headless chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
+System info: host: &apos;LOSTYOUTH&apos;, ip: &apos;192.168.24.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\丹哥\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: b516d4e49218d2a4179d47e6e931208e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.testcases.VicubeSystem.alarmDisplaySelect(VicubeSystem.java:2729)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace241922428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace241922428'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;btn btn-default btn-white m-r-5 m-b-5&quot; title=&quot;显示/隐藏查询条件&quot; ng-show=&quot;showSearch&quot; ng-click=&quot;actions.showOptionsAlert()&quot;&gt;...&lt;/a&gt; is not clickable at point (170, 167). Other element would receive the click: &lt;a href=&quot;javascript:;&quot;&gt;...&lt;/a&gt;
+  (Session info: headless chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
+System info: host: &apos;LOSTYOUTH&apos;, ip: &apos;192.168.24.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\丹哥\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}
+Session ID: b516d4e49218d2a4179d47e6e931208e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.testcases.VicubeSystem.alarmDisplaySelect(VicubeSystem.java:2729)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>3</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcases.VicubeSystem.alarmDisplay()'><b>alarmDisplay</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, NewGroupingDescriptionValue=我是接收分组描述, alarmDisplay=alarmDisplay, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-212214693" onClick='toggleBox("Output-212214693", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-212214693" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-212214693">
+2018-11-01 16:44:57:alarmDisplay<br/>
+2018-11-01 16:44:58:点击：告警展示<br/>
+2018-11-01 16:44:58:-----------------进入，告警展示页面---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.alarmDisplayAlarmRank()'><b>alarmDisplayAlarmRank</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, alarmDisplayListNumber=alarmDisplayListNumber, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, alarmDisplayListNumberValue=alarmDisplayListNumberValue, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, NewGroupingDescriptionValue=我是接收分组描述, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, alarmDisplayAlarmRankL5=alarmDisplayAlarmRankL5, alarmDisplayAlarmRankL4=alarmDisplayAlarmRankL4, alarmDisplayAlarmRankL3=alarmDisplayAlarmRankL3, commonSelectFlag=selectflag, alarmDisplayAlarmRankL2=alarmDisplayAlarmRankL2, alarmDisplayAlarmRankL1=alarmDisplayAlarmRankL1, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-764902973" onClick='toggleBox("Output-764902973", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-764902973" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-764902973">
+2018-11-01 16:44:58:alarmDisplayAlarmRank<br/>
+2018-11-01 16:45:04:点击：告警级别L5<br/>
+2018-11-01 16:45:04:级别L5数量为：45<br/>
+2018-11-01 16:45:06:列表待处理告警数量：45<br/>
+2018-11-01 16:45:06:点击：告警级别L4<br/>
+2018-11-01 16:45:06:级别L4数量为：46<br/>
+2018-11-01 16:45:08:列表待处理告警数量：91<br/>
+2018-11-01 16:45:09:点击：告警级别L3<br/>
+2018-11-01 16:45:09:级别L3数量为：0<br/>
+2018-11-01 16:45:11:列表待处理告警数量：91<br/>
+2018-11-01 16:45:11:点击：告警级别L2<br/>
+2018-11-01 16:45:11:级别L2数量为：9<br/>
+2018-11-01 16:45:13:列表待处理告警数量：99<br/>
+2018-11-01 16:45:13:期望值为：99    ---实际值为：100<br/>
+2018-11-01 16:45:13:点击：告警级别L4<br/>
+2018-11-01 16:45:13:级别L1数量为：8<br/>
+2018-11-01 16:45:16:列表待处理告警数量：99<br/>
+2018-11-01 16:45:16:期望值为：99    ---实际值为：108<br/>
+2018-11-01 16:45:16:-----------------告警展示，告警等级，验证通过---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.alarmDisplayColumnSettingAllCancle()'><b>alarmDisplayColumnSettingAllCancle</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, alarmDisplayColumnDisplay=alarmDisplayColumnDisplay, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, alarmDisplayColumnSettingisDisplay=alarmDisplayColumnSettingisDisplay, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, NewGroupingDescriptionValue=我是接收分组描述, alarmDisplayColumnSetting=alarmDisplayColumnSetting, alarmDisplayColumnSettingConfirm=alarmDisplayColumnSettingConfirm, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-1347182100" onClick='toggleBox("Output-1347182100", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1347182100" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1347182100">
+2018-11-01 16:45:19:alarmDisplayColumnSettingAllCancle<br/>
+2018-11-01 16:45:23:成功点击：列设置按钮<br/>
+2018-11-01 16:45:25:共有20个列值<br/>
+2018-11-01 16:45:29:取消勾选，所有列<br/>
+2018-11-01 16:45:29:成功点击：确认<br/>
+2018-11-01 16:45:30:页面共展示0个列值<br/>
+2018-11-01 16:45:31:-----------------展示已取消全部列---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.alarmDisplayColumnSettingAllChoose()'><b>alarmDisplayColumnSettingAllChoose</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, alarmDisplayColumnDisplay=alarmDisplayColumnDisplay, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, alarmDisplayColumnSettingisDisplay=alarmDisplayColumnSettingisDisplay, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, NewGroupingDescriptionValue=我是接收分组描述, alarmDisplayColumnSetting=alarmDisplayColumnSetting, alarmDisplayColumnSettingConfirm=alarmDisplayColumnSettingConfirm, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-1567669417" onClick='toggleBox("Output-1567669417", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567669417" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567669417">
+2018-11-01 16:45:31:alarmDisplayColumnSettingAllChoose<br/>
+2018-11-01 16:45:34:成功点击：列设置按钮<br/>
+2018-11-01 16:45:36:20<br/>
+2018-11-01 16:45:36:共有20个列值<br/>
+2018-11-01 16:45:49:成功勾选，所有列<br/>
+2018-11-01 16:45:49:成功点击：确认<br/>
+2018-11-01 16:45:54:页面共展示20个列值<br/>
+2018-11-01 16:45:54:-----------------展示已勾选全部列---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.concentratedAlarm()'><b>concentratedAlarm</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, concentratedAlarm=concentratedalarm, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, NewGroupingDescriptionValue=我是接收分组描述, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-1486412666" onClick='toggleBox("Output-1486412666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1486412666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1486412666">
+2018-11-01 16:44:55:concentratedAlarm<br/>
+2018-11-01 16:44:57:点击：集中告警<br/>
+2018-11-01 16:44:57:-----------------进入，集中告警页面---------------------<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.promptMessage()'><b>promptMessage</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, userNotification=usernotification, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, userNotificationNumber=userNotificationNumber, NewGroupingDescriptionValue=我是接收分组描述, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-1318163840" onClick='toggleBox("Output-1318163840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1318163840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1318163840">
+2018-11-01 16:44:51:promptMessage<br/>
+2018-11-01 16:44:53:提示信息个数：1<br/>
+2018-11-01 16:44:53:关闭提示信息：Close Notification<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+<tr>
+<td title='com.testcases.VicubeSystem.vicubeLogin()'><b>vicubeLogin</b><br>Test class: com.testcases.VicubeSystem<br>Parameters: {commonDenoiseStrategySelectChoose=selectChooseRules, createSave=save, ThresholdStrategyCreateNameValue=我是阈值新建名称, commonSelectResultOne=SelectResultOne, commonEdit=edit, WarningStrategyCreateStrategyNameValue=我的预警策略新建策略名称, alarmRelevanceRulesNameEditValue=编辑AutoTest告警关联规则, commonDenoiseStrategySelectEditTimeValue=selectEditTime, userNameValue=user0015, password=vicube_password, commonDeleteHint=deletehint, mobilephoneValue=16000000015, commonSelectResultIsEmpty=selectResultIsEmpty, alarmFilterRulesNameValue=AutoTest告警过滤规则, editNameValue=edit016, commonStartUsing=startUsing, alarmMergeRulesNameEditValue=编辑AutoTest告警合并规则, commonAffirm=commonaffirm, NewGroupingNameValue=我是接收分组名称, emailValue=edit0015@edit.com, commonQueryArea=receiveGroupingQueryArea, commonBlockUp=blockUp, commonConcentratedAlarm=concentratedalarm, commonDenoiseStrategySelectPriorityValue=selectPriority, commonSelectResult=selectchooseuser, alarmUpgradeRulesNameValue=AutoTest告警升级规则, noteValue=我是备注015, AlarmInformInformWayCreateNameValue=我是新建通知方式, commonInvalid=invalid, commonSelectResultFirstColumnAllData=selectResultFirstColumnAllData, ThresholdStrategyEditNameValue=我是阈值编辑名称, commonCentralizedAlarmConfirmation=CentralizedAlarmConfirmation, responsibilityValue=岗位职责0015, commonCreate=create, commonSelectResultThree=SelectResultThree, VicubeUrl=http://192.168.20.121:48080/h5, WarningStrategyEditProjectNameValue=我的预警策略编辑项目名称, phoneValue=15000000015, AlarmInformInformWayEditNameValue=我是编辑通知方式, commonSelectClear=CentralizedAlarmSelectCollectClear, alarmClassifyRulesNameEditValue=编辑AutoTest告警分类规则, commonSystemManagement=systemManagement, commonValid=valid, commonSelectResultFive=SelectResultFive, commonSelectAffirm=selectaffirm, passwordValue=vicube2017, commonDeleteConfirm=deleteaffirm, commonSelectResultSix=SelectResultSix, commonSystemSetupSelectChoose=selectchooseuser, creatWorkingGroupeNoteValue=我是工作组新增备注, editResponsibilityValue=edit岗位职责016, createWorkingGroupNameValue=AutoTestGroup, commonDenoiseStrategySelectRulesTypeValue=selectRulesType, alarmRecoveryRulesNameEditValue=编辑AutoTest告警恢复规则, commonHint=commonhint, alarmUpgradeRulesNameEditValue=编辑AutoTest告警升级规则, commonAllocationPrivilege=allocationprivilege, commonDenoiseStrategySelectNodeTypeValue=selectNodeType, editNoteValue=我是编辑备注016, NewGroupingDescriptionEditValue=编辑接收分组描述, commonSaveHint=editsavehint, commonDenoiseStrategySelectStatusValue=selectStatus, editPhoneValue=15000000016, userLoginID=vicube_userloginid, editMobilePhoneValue=16000000016, commonDenoiseStrategySelectDomainValue=selectDomain, alarmFilterRulesNameEditValue=编辑AutoTest告警过滤规则, CreateThresholdRuleFixedValueInputValue=2, alarmScreenEditStrategyNameValue=AutoTest编辑告警筛选, commonSelectResultChooseAllData=selectResultChooseAllData, commonCentralizedAlarmResolved=CentralizedAlarmResolved, commonSelectInvalid=selctinvalid, nameValue=edit0015, WarningStrategyCreateNetWorthValue=3, WarningStrategyCreateProjectNameValue=我的预警策略新建项目名称, commonDenoiseStrategySelectExceptionValue=selectException, alarmScreenCreateStrategyNameValue=AutoTest新建告警筛选, commonSaveConfirm=editsaveaffirm, editWorkingGroupeNoteValue=编辑工作组备注, editWorkingGroupNameValue=AutoTestGroupEdit, alarmRecoveryRulesNameValue=AutoTest告警恢复规则, alarmClassifyRulesNameValue=AutoTest告警分类规则, commonSelectResultEight=SelectResultEight, commonDenoiseStrategy=denoisestrategy, alarmMergeRulesNameValue=AutoTest告警合并规则, commonChangeState=changestate, commonAllRules=allrules, commonCentralizedAlarmSelect=CentralizedAlarmSelect, WarningStrategyEditStrategyNameValue=我的预警策略编辑策略名称, editEmailValue=edit016@edit.com, button=vicube_loginButton, commonSelectArea=receiveGroupingQueryArea, alarmRelevanceRulesNameValue=AutoTest告警关联规则, commonForwardShiftingTitleValue=前转标题, userValue=administrator, commonAlarmConfig=alarmconfig, commonDelete=delete, commonCraeteFlag=flag, concentrateAlarmAlarmInformInformWayQueryTargetUserValue=超级管理员, contentKeywordValue=AutoTest内容关键词, commonSelectValid=selctvalid, commonDenoiseStrategySelectRulesNameValue=selectRulesName, commonCentralizedAlarmView=CentralizedAlarmView, NewGroupingDescriptionValue=我是接收分组描述, commonSelectResultFour=SelectResultFour, commonSelectResultTwo=SelectResultTwo, commonSelectFlag=selectflag, user=vicube_user, commonSelectResultSeven=SelectResultSeven, commonSelect=select, commonCentralizedAlarmForwardShifting=CentralizedAlarmForwardShifting}<br/>
+<a href="#Output-1491982102" onClick='toggleBox("Output-1491982102", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1491982102" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491982102">
+2018-11-01 16:44:43:vicubeLogin<br/>
+2018-11-01 16:44:45:网址成功打开：http://192.168.20.121:48080/h5<br/>
+2018-11-01 16:44:46:用户名：administrator<br/>
+2018-11-01 16:44:46:密码：vicube2017<br/>
+2018-11-01 16:44:46:点击按钮:登录<br/>
+2018-11-01 16:44:51:用户登陆标识为：超级管理员<br/>
+2018-11-01 16:44:51:------------------超级管理员登陆成功-------------------<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.testcases.VicubeSystem@71423665</td></tr>
+</table><p>
+</body>
+</html>

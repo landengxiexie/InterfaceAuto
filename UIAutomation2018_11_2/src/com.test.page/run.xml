@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="集中告警-告警配置" verbose="1" parallel="false">
+    <test name="告警展示-告警等级、筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayAlarmRank"/>
+                    <include name="alarmDisplaySelect"/>
+                    <include name="alarmDisplayColumnSettingAllCancle"/>
+                    <include name="alarmDisplayColumnSettingAllChoose"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

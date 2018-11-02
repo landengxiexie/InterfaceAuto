@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="集中告警-告警查询" verbose="1" parallel="tests" thread-count="2">
+    <test name="历史告警" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmSelect"/>
+                    <include name="concentrateAlarmAlarmSelectHistoryAlarm"/>
+                    <include name="alarmQueryHistoryAlarmPaging"/>
+                    <include name="alarmQueryHistoryAlarmSelect"/>
+                    <include name="alarmDisplayChooseFunction"/>
+                    <include name="alarmDisplayForwardShiftingClick"/>
+                    <include name="alarmQueryHistoryAlarmForwardShifting"/>
+                    <include name="alarmDisplayForwardShiftingHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction1"/>
+                    <include name="alarmDisplayForwardShiftingClick1"/>
+                    <include name="alarmQueryHistoryAlarmForwardShiftingMode2"/>
+                    <include name="alarmDisplayForwardShiftingHintConfirm1"/>
+                    <include name="alarmDisplayResolvedButton"/>
+                    <include name="alarmDisplayResolvedOfResolved"/>
+                    <include name="alarmDisplayResolvedOfResolvedHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction2"/>
+                    <include name="alarmDisplayResolvedButton2"/>
+                    <include name="alarmDisplayResolvedOfIgnore"/>
+                    <include name="alarmDisplayResolvedOfIgnoreHintConfirm"/>
+                    <include name="alarmDisplayExportButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="通知记录" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmSelect"/>
+                    <include name="concentrateAlarmAlarmSelectNotifyRecord"/>
+                    <include name="alarmSelectNotifyRecordQuery"/>
+                    <include name="alarmSelectNotifyRecordView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

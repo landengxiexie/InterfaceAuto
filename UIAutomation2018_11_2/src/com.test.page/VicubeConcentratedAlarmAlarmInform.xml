@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="集中告警-告警通知" verbose="1" parallel="false" thread-count="1">
+    <test name="接收分组" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingNewGrouping"/>
+                    <include name="receiveGroupingQuery"/>
+                    <include name="receiveGroupingEdit"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="告警筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformAlarmScreen"/>
+
+                    <include name="alarmScreenCreateBasicSetting"/>
+                    <include name="alarmScreenCreateRulesConditionSetting"/>
+                    <include name="alarmScreenCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmScreenCreateAlarmUpgradeSetting"/>
+                    <include name="alarmScreenCreatSelectVerify"/>
+
+                    <include name="alarmScreenEditBasicSetting"/>
+                    <include name="alarmScreenEditRulesConditionSetting"/>
+                    <include name="alarmScreenEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmScreenEditAlarmClassifySetting"/>
+                    <include name="alarmScreenEditSelectVerify"/>
+
+                    <include name="alarmInformAlarmScreenStartUsing"/>
+                    <include name="alarmInformAlarmScreenEditSelect"/>
+                    <include name="alarmInformAlarmScreenBlockUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="通知方式" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreate"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreateSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEdit"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEditSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEnable"/>
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test name="删除-接收分组、告警筛选、通知方式" preserve-order="true">-->
+    <!--<classes>-->
+    <!--<class name="com.testcases.VicubeSystem">-->
+    <!--<methods>-->
+
+    <!--<include name="vicubeLogin"/>-->
+    <!--<include name="promptMessage"/>-->
+    <!--<include name="concentratedAlarm"/>-->
+    <!--<include name="concentrateAlarmAlarmInform"/>-->
+    <!--<include name="concentrateAlarmAlarmInformInformWay"/>-->
+
+    <!--<include name="concentrateAlarmAlarmInformInformWayEditSelect1"/>-->
+    <!--<include name="concentrateAlarmAlarmInformInformWayDisable"/>-->
+    <!--<include name="concentrateAlarmAlarmInformInformWayCreateRelatedAlarm"/>-->
+    <!--<include name="concentrateAlarmAlarmInformInformWayDelete"/>-->
+
+    <!--<include name="concentrateAlarmAlarmInformReceiveGrouping"/>-->
+
+    <!--<include name="receiveGroupingEditQuery"/>-->
+    <!--<include name="receiveGroupingDelete"/>-->
+    <!--<include name="receiveGroupingDeleteQuery"/>-->
+
+
+    <!--<include name="concentrateAlarmAlarmInformAlarmScreen"/>-->
+
+    <!--<include name="alarmInformAlarmScreenDeleteAndSelectVerify"/>-->
+    <!--</methods>-->
+    <!--</class>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

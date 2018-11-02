@@ -1,0 +1,1274 @@
+# Created at 2018-11-01T16:52:26.871
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2018-11-01T16:52:30.153
+Unexpected IOException with stream: 2018-52-01 16:11:151 utill.LogFunction : 2018-11-01 16:52:30:By.xpath: //*/div[1]/div[3]/div[2]/table/tbody/tr/td/center/input--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:30.155
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmInformAlarmScreenDeleteAndSelectVerify(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmInformAlarmScreenDeleteAndSelectVerify:9259 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmInformAlarmScreenDeleteAndSelectVerify(VicubeSystem.java:9259)\000A
+
+
+# Created at 2018-11-01T16:52:30.157
+Unexpected IOException with stream: 2018-52-01 16:11:157 utill.LogFunction : 2018-11-01 16:52:30:testEnd
+
+
+# Created at 2018-11-01T16:52:36.962
+Unexpected IOException with stream: 十一月 01, 2018 4:52:36 下午 org.openqa.selenium.os.OsProcess destroy
+严重: Unable to kill process java.lang.ProcessImpl@319b92f3
+
+
+# Created at 2018-11-01T16:52:37.022
+Unexpected IOException with stream: 2018-52-01 16:11:21 utill.LogFunction : 2018-11-01 16:52:37:testStart
+
+
+# Created at 2018-11-01T16:52:37.043
+Unexpected IOException with stream: 2018-52-01 16:11:42 utill.LogFunction : 2018-11-01 16:52:37:testStart
+
+
+# Created at 2018-11-01T16:52:37.337
+Unexpected IOException with stream: S
+
+# Created at 2018-11-01T16:52:37.339
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:37.341
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.343
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.345
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:37.346
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:37.348
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.350
+Unexpected IOException with stream: g
+
+# Created at 2018-11-01T16:52:37.352
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.353
+Unexpected IOException with stream: C
+
+# Created at 2018-11-01T16:52:37.354
+Unexpected IOException with stream: h
+
+# Created at 2018-11-01T16:52:37.355
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.356
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.358
+Unexpected IOException with stream: m
+
+# Created at 2018-11-01T16:52:37.360
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.362
+Unexpected IOException with stream: D
+
+# Created at 2018-11-01T16:52:37.364
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.365
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:37.367
+Unexpected IOException with stream: v
+
+# Created at 2018-11-01T16:52:37.369
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.371
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.373
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.375
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.377
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:37.379
+Unexpected IOException with stream: 3
+
+# Created at 2018-11-01T16:52:37.381
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:37.383
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:37.385
+Unexpected IOException with stream: 5
+
+# Created at 2018-11-01T16:52:37.387
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.389
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:37.472
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.474
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.476
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:37.477
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.479
+Unexpected IOException with stream: S
+
+# Created at 2018-11-01T16:52:37.481
+Unexpected IOException with stream: (
+
+# Created at 2018-11-01T16:52:37.482
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.484
+Unexpected IOException with stream: 5
+
+# Created at 2018-11-01T16:52:37.486
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.488
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.489
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:37.491
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:37.493
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.495
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:37.497
+Unexpected IOException with stream: 9
+
+# Created at 2018-11-01T16:52:37.499
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.501
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.502
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.504
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.506
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.508
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.509
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.511
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.513
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.515
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.517
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.519
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.521
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.523
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.524
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.526
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.528
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.530
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:37.533
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:37.535
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.536
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.538
+Unexpected IOException with stream: f
+
+# Created at 2018-11-01T16:52:37.540
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.542
+Unexpected IOException with stream: f
+
+# Created at 2018-11-01T16:52:37.543
+Unexpected IOException with stream: 9
+
+# Created at 2018-11-01T16:52:37.545
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.547
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.549
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.551
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.553
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.555
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.557
+Unexpected IOException with stream: 9
+
+# Created at 2018-11-01T16:52:37.558
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.560
+Unexpected IOException with stream: )
+
+# Created at 2018-11-01T16:52:37.562
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.564
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.566
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.568
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.569
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.571
+Unexpected IOException with stream: p
+
+# Created at 2018-11-01T16:52:37.573
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.575
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.576
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:37.579
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:37.581
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.582
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.584
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:37.586
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.588
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.590
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.592
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:37.595
+Unexpected IOException with stream: 
+
+# Created at 2018-11-01T16:52:37.606
+Unexpected IOException with stream: 
+
+
+# Created at 2018-11-01T16:52:37.608
+Unexpected IOException with stream: O
+
+# Created at 2018-11-01T16:52:37.610
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.613
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:37.616
+Unexpected IOException with stream: y
+
+# Created at 2018-11-01T16:52:37.618
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.621
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:37.625
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.627
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.638
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.640
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:37.643
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.645
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.646
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.648
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.651
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.653
+Unexpected IOException with stream: g
+
+# Created at 2018-11-01T16:52:37.654
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.656
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.658
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.660
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.663
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:37.665
+Unexpected IOException with stream: C
+
+# Created at 2018-11-01T16:52:37.667
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:37.669
+Unexpected IOException with stream: h
+
+# Created at 2018-11-01T16:52:37.671
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.673
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.675
+Unexpected IOException with stream: s
+
+# Created at 2018-11-01T16:52:37.677
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.679
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.681
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.682
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.684
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.686
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.688
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.690
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:37.691
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:37.693
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.694
+Unexpected IOException with stream: w
+
+# Created at 2018-11-01T16:52:37.696
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.698
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:37.700
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:37.702
+Unexpected IOException with stream: 
+
+# Created at 2018-11-01T16:52:37.704
+Unexpected IOException with stream: 
+
+
+# Created at 2018-11-01T16:52:37.707
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.710
+Unexpected IOException with stream: m
+
+# Created at 2018-11-01T16:52:37.712
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.714
+Unexpected IOException with stream: D
+
+# Created at 2018-11-01T16:52:37.721
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.723
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:37.725
+Unexpected IOException with stream: v
+
+# Created at 2018-11-01T16:52:37.727
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.729
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:37.733
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.740
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.755
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:37.758
+Unexpected IOException with stream: 3
+
+# Created at 2018-11-01T16:52:37.761
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:37.763
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:37.765
+Unexpected IOException with stream: 5
+
+# Created at 2018-11-01T16:52:37.768
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.770
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:37.780
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.786
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.788
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:37.790
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.792
+Unexpected IOException with stream: (
+
+# Created at 2018-11-01T16:52:37.794
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.797
+Unexpected IOException with stream: 5
+
+# Created at 2018-11-01T16:52:37.800
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.802
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.803
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:37.805
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:37.806
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.808
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:37.810
+Unexpected IOException with stream: 9
+
+# Created at 2018-11-01T16:52:37.812
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.813
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.815
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.817
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.819
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.821
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.822
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.824
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.826
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.828
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:37.830
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.844
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.847
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.849
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.852
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.854
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:37.855
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:37.857
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:37.858
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.861
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:37.864
+Unexpected IOException with stream: f
+
+# Created at 2018-11-01T16:52:37.867
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:37.869
+Unexpected IOException with stream: f
+
+# Created at 2018-11-01T16:52:37.871
+Unexpected IOException with stream: 9
+
+# Created at 2018-11-01T16:52:37.875
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:37.886
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.906
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.918
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:37.955
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:37.958
+Unexpected IOException with stream: 9
+
+# Created at 2018-11-01T16:52:37.960
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:37.969
+Unexpected IOException with stream: )
+
+# Created at 2018-11-01T16:52:37.990
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.992
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:37.994
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:37.996
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:37.998
+Unexpected IOException with stream: p
+
+# Created at 2018-11-01T16:52:38.000
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:38.002
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:38.004
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:38.005
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:38.008
+Unexpected IOException with stream: 3
+
+# Created at 2018-11-01T16:52:38.014
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:38.016
+Unexpected IOException with stream: 8
+
+# Created at 2018-11-01T16:52:38.018
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:38.033
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:38.034
+Unexpected IOException with stream: 
+
+# Created at 2018-11-01T16:52:38.036
+Unexpected IOException with stream: 
+
+
+# Created at 2018-11-01T16:52:38.038
+Unexpected IOException with stream: O
+
+# Created at 2018-11-01T16:52:38.040
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:38.042
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:38.044
+Unexpected IOException with stream: y
+
+# Created at 2018-11-01T16:52:38.046
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:38.048
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:38.051
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:38.053
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:38.055
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:38.057
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:38.059
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:38.061
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:38.063
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:38.065
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:38.068
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:38.072
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:38.074
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:38.077
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:38.079
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:38.085
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:38.087
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:38.090
+Unexpected IOException with stream: s
+
+# Created at 2018-11-01T16:52:38.092
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:38.095
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:38.097
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:38.099
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:38.102
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:38.105
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:38.107
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:38.111
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:38.118
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:38.132
+Unexpected IOException with stream: w
+
+# Created at 2018-11-01T16:52:38.135
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:38.137
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:38.140
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:38.145
+Unexpected IOException with stream: 
+
+# Created at 2018-11-01T16:52:38.148
+Unexpected IOException with stream: 
+
+
+# Created at 2018-11-01T16:52:40.031
+Unexpected IOException with stream: 十一月 01, 2018 4:52:40 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+
+
+# Created at 2018-11-01T16:52:40.135
+Unexpected IOException with stream: 十一月 01, 2018 4:52:40 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+
+
+# Created at 2018-11-01T16:52:41.445
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,vicubeLogin(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:41.447
+Unexpected IOException with stream: 2018-52-01 16:11:446 utill.LogFunction : 2018-11-01 16:52:41:vicubeLogin
+
+
+# Created at 2018-11-01T16:52:41.548
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,vicubeLogin(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:41.550
+Unexpected IOException with stream: 2018-52-01 16:11:549 utill.LogFunction : 2018-11-01 16:52:41:vicubeLogin
+
+
+# Created at 2018-11-01T16:52:43.527
+Unexpected IOException with stream: 2018-52-01 16:11:526 utill.LogFunction : 2018-11-01 16:52:43:网址成功打开：http://192.168.20.121:48080/h5
+
+
+# Created at 2018-11-01T16:52:43.751
+Unexpected IOException with stream: 2018-52-01 16:11:750 utill.LogFunction : 2018-11-01 16:52:43:网址成功打开：http://192.168.20.121:48080/h5
+
+
+# Created at 2018-11-01T16:52:44.761
+Unexpected IOException with stream: 2018-52-01 16:11:760 utill.LogFunction : 2018-11-01 16:52:44:用户名：administrator
+
+
+# Created at 2018-11-01T16:52:44.975
+Unexpected IOException with stream: 2018-52-01 16:11:973 utill.LogFunction : 2018-11-01 16:52:44:用户名：administrator
+
+
+# Created at 2018-11-01T16:52:45.206
+Unexpected IOException with stream: 2018-52-01 16:11:205 utill.LogFunction : 2018-11-01 16:52:45:密码：vicube2017
+
+
+# Created at 2018-11-01T16:52:45.353
+Unexpected IOException with stream: 2018-52-01 16:11:352 utill.LogFunction : 2018-11-01 16:52:45:密码：vicube2017
+
+
+# Created at 2018-11-01T16:52:45.369
+Unexpected IOException with stream: 2018-52-01 16:11:368 utill.LogFunction : 2018-11-01 16:52:45:点击按钮:登录
+
+
+# Created at 2018-11-01T16:52:45.518
+Unexpected IOException with stream: 2018-52-01 16:11:517 utill.LogFunction : 2018-11-01 16:52:45:点击按钮:登录
+
+
+# Created at 2018-11-01T16:52:50.374
+Unexpected IOException with stream: [
+
+# Created at 2018-11-01T16:52:50.375
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:50.376
+Unexpected IOException with stream: 5
+
+# Created at 2018-11-01T16:52:50.377
+Unexpected IOException with stream: 4
+
+# Created at 2018-11-01T16:52:50.378
+Unexpected IOException with stream: 1
+
+# Created at 2018-11-01T16:52:50.379
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:50.380
+Unexpected IOException with stream: 6
+
+# Created at 2018-11-01T16:52:50.382
+Unexpected IOException with stream: 2
+
+# Created at 2018-11-01T16:52:50.383
+Unexpected IOException with stream: 3
+
+# Created at 2018-11-01T16:52:50.384
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:50.385
+Unexpected IOException with stream: 0
+
+# Created at 2018-11-01T16:52:50.386
+Unexpected IOException with stream: .
+
+# Created at 2018-11-01T16:52:50.387
+Unexpected IOException with stream: 3
+
+# Created at 2018-11-01T16:52:50.388
+Unexpected IOException with stream: 7
+
+# Created at 2018-11-01T16:52:50.390
+Unexpected IOException with stream: 3
+
+# Created at 2018-11-01T16:52:50.391
+Unexpected IOException with stream: ]
+
+# Created at 2018-11-01T16:52:50.392
+Unexpected IOException with stream: [
+
+# Created at 2018-11-01T16:52:50.393
+Unexpected IOException with stream: S
+
+# Created at 2018-11-01T16:52:50.394
+Unexpected IOException with stream: 2018-52-01 16:11:393 utill.LogFunction : 2018-11-01 16:52:50:By.xpath: //*[@id='header']/div/ul/li[2]/a/span--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:50.396
+Unexpected IOException with stream: E
+
+# Created at 2018-11-01T16:52:50.397
+Unexpected IOException with stream: V
+
+# Created at 2018-11-01T16:52:50.398
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,vicubeLogin(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.vicubeLogin:171 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.vicubeLogin(VicubeSystem.java:171)\000A
+
+
+# Created at 2018-11-01T16:52:50.399
+Unexpected IOException with stream: E
+
+# Created at 2018-11-01T16:52:50.401
+Unexpected IOException with stream: R
+
+# Created at 2018-11-01T16:52:50.402
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,promptMessage(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:50.403
+Unexpected IOException with stream: E
+
+# Created at 2018-11-01T16:52:50.404
+Unexpected IOException with stream: 2018-52-01 16:11:403 utill.LogFunction : 2018-11-01 16:52:50:promptMessage
+
+
+# Created at 2018-11-01T16:52:50.406
+Unexpected IOException with stream: ]
+
+# Created at 2018-11-01T16:52:50.407
+Unexpected IOException with stream: :
+
+# Created at 2018-11-01T16:52:50.408
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.409
+Unexpected IOException with stream: U
+
+# Created at 2018-11-01T16:52:50.410
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:50.411
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:50.412
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:50.413
+Unexpected IOException with stream: l
+
+# Created at 2018-11-01T16:52:50.414
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.415
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.416
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:50.417
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:50.418
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.419
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:50.420
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.421
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:50.422
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:50.423
+Unexpected IOException with stream: i
+
+# Created at 2018-11-01T16:52:50.424
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.425
+Unexpected IOException with stream: v
+
+# Created at 2018-11-01T16:52:50.426
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.427
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.428
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:50.428
+Unexpected IOException with stream: o
+
+# Created at 2018-11-01T16:52:50.429
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:50.430
+Unexpected IOException with stream: u
+
+# Created at 2018-11-01T16:52:50.431
+Unexpected IOException with stream: m
+
+# Created at 2018-11-01T16:52:50.432
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.433
+Unexpected IOException with stream: n
+
+# Created at 2018-11-01T16:52:50.434
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:50.435
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.436
+Unexpected IOException with stream: s
+
+# Created at 2018-11-01T16:52:50.437
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:50.438
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:50.439
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:50.440
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.441
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.441
+Unexpected IOException with stream: t
+
+# Created at 2018-11-01T16:52:50.442
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:50.443
+Unexpected IOException with stream: b
+
+# Created at 2018-11-01T16:52:50.444
+Unexpected IOException with stream:  
+
+# Created at 2018-11-01T16:52:50.445
+Unexpected IOException with stream: c
+
+# Created at 2018-11-01T16:52:50.445
+Unexpected IOException with stream: r
+
+# Created at 2018-11-01T16:52:50.446
+Unexpected IOException with stream: a
+
+# Created at 2018-11-01T16:52:50.447
+Unexpected IOException with stream: s
+
+# Created at 2018-11-01T16:52:50.447
+Unexpected IOException with stream: h
+
+# Created at 2018-11-01T16:52:50.448
+Unexpected IOException with stream: e
+
+# Created at 2018-11-01T16:52:50.449
+Unexpected IOException with stream: d
+
+# Created at 2018-11-01T16:52:50.450
+Unexpected IOException with stream: 
+
+# Created at 2018-11-01T16:52:50.451
+Unexpected IOException with stream: 
+
+
+# Created at 2018-11-01T16:52:50.573
+Unexpected IOException with stream: 2018-52-01 16:11:572 utill.LogFunction : 2018-11-01 16:52:50:用户登陆标识为：超级管理员
+
+
+# Created at 2018-11-01T16:52:50.573
+Unexpected IOException with stream: 2018-52-01 16:11:573 utill.LogFunction : 2018-11-01 16:52:50:------------------超级管理员登陆成功-------------------
+
+
+# Created at 2018-11-01T16:52:50.575
+Unexpected IOException: 6,1,com.testcases.VicubeSystem,vicubeLogin(com.testcases.VicubeSystem),null,null,null
+
+
+# Created at 2018-11-01T16:52:50.576
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,promptMessage(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:50.577
+Unexpected IOException with stream: 2018-52-01 16:11:577 utill.LogFunction : 2018-11-01 16:52:50:promptMessage
+
+
+# Created at 2018-11-01T16:52:52.410
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,promptMessage(com.testcases.VicubeSystem),null,no such session\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 70.0.3538.77\002C webStorageEnabled: true}\000ASession ID: f09ff8439bbdaf7e9b796dc6b8305036\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div},null,no such session\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 70.0.3538.77\002C webStorageEnabled: true}\000ASession ID: f09ff8439bbdaf7e9b796dc6b8305036\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div},VicubeSystem.promptMessage:1545 \00BB NoSuchSession no such session\000A  (Driver info...,org.openqa.selenium.NoSuchSessionException: \000Ano such session\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 70.0.3538.77\002C webStorageEnabled: true}\000ASession ID: f09ff8439bbdaf7e9b796dc6b8305036\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div}\000A\0009at com.testcases.VicubeSystem.promptMessage(VicubeSystem.java:1545)\000A
+
+
+# Created at 2018-11-01T16:52:52.439
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentratedAlarm(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:52.440
+Unexpected IOException with stream: 2018-52-01 16:11:439 utill.LogFunction : 2018-11-01 16:52:52:concentratedAlarm
+
+
+# Created at 2018-11-01T16:52:52.603
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,promptMessage(com.testcases.VicubeSystem),null,unknown error: session deleted because of page crash\000Afrom tab crashed\000A  (Session info: headless chrome=70.0.3538.77)\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 70.0.3538.77\002C webStorageEnabled: true}\000ASession ID: 661694ce7c39293e524eca57b055fb3a\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div},null,unknown error: session deleted because of page crash\000Afrom tab crashed\000A  (Session info: headless chrome=70.0.3538.77)\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 70.0.3538.77\002C webStorageEnabled: true}\000ASession ID: 661694ce7c39293e524eca57b055fb3a\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div},VicubeSystem.promptMessage:1545 \00BB WebDriver unknown error: session deleted bec...,org.openqa.selenium.WebDriverException: \000Aunknown error: session deleted because of page crash\000Afrom tab crashed\000A  (Session info: headless chrome=70.0.3538.77)\000A  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91)\002Cplatform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.10.0'\002C revision: '176b4a9'\002C time: '2018-03-02T19:03:16.397Z'\000ASystem info: host: 'LOSTYOUTH'\002C ip: '192.168.24.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C acceptSslCerts: false\002C applicationCacheEnabled: false\002C browserConnectionEnabled: false\002C browserName: chrome\002C chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb...\002C userDataDir: C:\005CUsers\005C\4E39\54E5\005CAppData\005CLocal\005CT...}\002C cssSelectorsEnabled: true\002C databaseEnabled: false\002C handlesAlerts: true\002C hasTouchScreen: false\002C javascriptEnabled: true\002C locationContextEnabled: true\002C mobileEmulationEnabled: false\002C nativeEvents: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C rotatable: false\002C setWindowRect: true\002C takesHeapSnapshot: true\002C takesScreenshot: true\002C unexpectedAlertBehaviour: \002C unhandledPromptBehavior: \002C version: 70.0.3538.77\002C webStorageEnabled: true}\000ASession ID: 661694ce7c39293e524eca57b055fb3a\000A*** Element info: {Using=xpath\002C value=//*/div[@id='gritter-notice-wrapper']/div}\000A\0009at com.testcases.VicubeSystem.promptMessage(VicubeSystem.java:1545)\000A
+
+
+# Created at 2018-11-01T16:52:52.606
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentratedAlarm(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:52.608
+Unexpected IOException with stream: 2018-52-01 16:11:607 utill.LogFunction : 2018-11-01 16:52:52:concentratedAlarm
+
+
+# Created at 2018-11-01T16:52:53.445
+Unexpected IOException with stream: 2018-52-01 16:11:445 utill.LogFunction : 2018-11-01 16:52:53:By.xpath: //*[@id="sidebar"]/div/div[1]/ul/li[2]/a/span--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:53.447
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentratedAlarm(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentratedAlarm:1812 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentratedAlarm(VicubeSystem.java:1812)\000A
+
+
+# Created at 2018-11-01T16:52:53.450
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelect(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:53.451
+Unexpected IOException with stream: 2018-52-01 16:11:450 utill.LogFunction : 2018-11-01 16:52:53:concentrateAlarmAlarmSelect
+
+
+# Created at 2018-11-01T16:52:53.611
+Unexpected IOException with stream: 2018-52-01 16:11:611 utill.LogFunction : 2018-11-01 16:52:53:By.xpath: //*[@id="sidebar"]/div/div[1]/ul/li[2]/a/span--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:53.613
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentratedAlarm(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentratedAlarm:1812 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentratedAlarm(VicubeSystem.java:1812)\000A
+
+
+# Created at 2018-11-01T16:52:53.615
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelect(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:53.616
+Unexpected IOException with stream: 2018-52-01 16:11:616 utill.LogFunction : 2018-11-01 16:52:53:concentrateAlarmAlarmSelect
+
+
+# Created at 2018-11-01T16:52:54.455
+Unexpected IOException with stream: 2018-52-01 16:11:455 utill.LogFunction : 2018-11-01 16:52:54:By.linkText: 告警查询--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:54.457
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelect(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentrateAlarmAlarmSelect:5558 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentrateAlarmAlarmSelect(VicubeSystem.java:5558)\000A
+
+
+# Created at 2018-11-01T16:52:54.459
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelectNotifyRecord(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:54.460
+Unexpected IOException with stream: 2018-52-01 16:11:460 utill.LogFunction : 2018-11-01 16:52:54:concentrateAlarmAlarmSelectNotifyRecord
+
+
+# Created at 2018-11-01T16:52:54.620
+Unexpected IOException with stream: 2018-52-01 16:11:620 utill.LogFunction : 2018-11-01 16:52:54:By.linkText: 告警查询--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:54.622
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelect(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentrateAlarmAlarmSelect:5558 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentrateAlarmAlarmSelect(VicubeSystem.java:5558)\000A
+
+
+# Created at 2018-11-01T16:52:54.624
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelectHistoryAlarm(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:54.625
+Unexpected IOException with stream: 2018-52-01 16:11:624 utill.LogFunction : 2018-11-01 16:52:54:concentrateAlarmAlarmSelectHistoryAlarm
+
+
+# Created at 2018-11-01T16:52:55.464
+Unexpected IOException with stream: 2018-52-01 16:11:463 utill.LogFunction : 2018-11-01 16:52:55:By.linkText: 通知记录--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:55.466
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelectNotifyRecord(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentrateAlarmAlarmSelectNotifyRecord:6358 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentrateAlarmAlarmSelectNotifyRecord(VicubeSystem.java:6358)\000A
+
+
+# Created at 2018-11-01T16:52:55.467
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmSelectNotifyRecordQuery(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:55.468
+Unexpected IOException with stream: 2018-52-01 16:11:468 utill.LogFunction : 2018-11-01 16:52:55:alarmSelectNotifyRecordQuery
+
+
+# Created at 2018-11-01T16:52:56.472
+Unexpected IOException with stream: 2018-52-01 16:11:472 utill.LogFunction : 2018-11-01 16:52:56:By.xpath: //*/div[@class='panel-body']/div[1]/div[1]--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:56.474
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmSelectNotifyRecordQuery(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmSelectNotifyRecordQuery:6376 \00BB NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmSelectNotifyRecordQuery(VicubeSystem.java:6376)\000A
+
+
+# Created at 2018-11-01T16:52:56.476
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmSelectNotifyRecordView(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:56.477
+Unexpected IOException with stream: 2018-52-01 16:11:476 utill.LogFunction : 2018-11-01 16:52:56:alarmSelectNotifyRecordView
+
+
+# Created at 2018-11-01T16:52:57.831
+Unexpected IOException with stream: 2018-52-01 16:11:831 utill.LogFunction : 2018-11-01 16:52:57:By.xpath: //*[@id='sidebar']/div/div[1]/ul/li[2]/ul/li[2]/ul/li[1]/a--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:58.197
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,concentrateAlarmAlarmSelectHistoryAlarm(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.concentrateAlarmAlarmSelectHistoryAlarm:5661 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.concentrateAlarmAlarmSelectHistoryAlarm(VicubeSystem.java:5661)\000A
+
+
+# Created at 2018-11-01T16:52:58.199
+Unexpected IOException: 5,1,com.testcases.VicubeSystem,alarmQueryHistoryAlarmPaging(com.testcases.VicubeSystem),com.testcases.VicubeSystem,null,null
+
+
+# Created at 2018-11-01T16:52:58.201
+Unexpected IOException with stream: 2018-52-01 16:11:200 utill.LogFunction : 2018-11-01 16:52:58:alarmQueryHistoryAlarmPaging
+
+
+# Created at 2018-11-01T16:52:59.493
+Unexpected IOException with stream: 2018-52-01 16:11:492 utill.LogFunction : 2018-11-01 16:52:59:By.linkText: 查看--is not exist until--TimeOut:5
+
+
+# Created at 2018-11-01T16:52:59.494
+Unexpected IOException: 8,1,com.testcases.VicubeSystem,alarmSelectNotifyRecordView(com.testcases.VicubeSystem),null,null,null,null,VicubeSystem.alarmSelectNotifyRecordView:6430 NullPointer,java.lang.NullPointerException\000A\0009at com.testcases.VicubeSystem.alarmSelectNotifyRecordView(VicubeSystem.java:6430)\000A
+
+
+# Created at 2018-11-01T16:52:59.496
+Unexpected IOException with stream: 2018-52-01 16:11:495 utill.LogFunction : 2018-11-01 16:52:59:testEnd
+
+
