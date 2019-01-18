@@ -1,0 +1,3332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <common>
+        <!--筛选结果-->
+        <commonSelectResultOne>SelectResultOne</commonSelectResultOne>
+        <commonSelectResultTwo>SelectResultTwo</commonSelectResultTwo>
+        <commonSelectResultTwo2>SelectResultTwo2</commonSelectResultTwo2>
+        <commonSelectResultThree>SelectResultThree</commonSelectResultThree>
+        <commonSelectResultFour>SelectResultFour</commonSelectResultFour>
+        <commonSelectResultFive>SelectResultFive</commonSelectResultFive>
+        <commonSelectResultSix>SelectResultSix</commonSelectResultSix>
+        <commonSelectResultSeven>SelectResultSeven</commonSelectResultSeven>
+        <commonSelectResultEight>SelectResultEight</commonSelectResultEight>
+
+        <!--菜单-系统设置-->
+        <menuButton>systemLeftMenuButton</menuButton>
+        <menuButtonArea>systemLeftMenuArea</menuButtonArea>
+        <commonCreate>create</commonCreate>
+        <commonCraeteFlag>flag</commonCraeteFlag>
+        <commonValid>valid</commonValid>
+        <commonInvalid>invalid</commonInvalid>
+        <commonValid1>Valid</commonValid1>
+        <commonInvalid1>Invalid</commonInvalid1>
+        <commonSelect>select</commonSelect>
+        <commonSearch>search</commonSearch>
+        <commonSelectArea>receiveGroupingQueryArea</commonSelectArea>
+        <commonChangeState>changestate</commonChangeState>
+        <commonChangeState1>changestate1</commonChangeState1>
+        <commonSelectFlag>selectflag</commonSelectFlag>
+        <commonSelectValid>selctvalid</commonSelectValid>
+        <commonSelectInvalid>selectinvalid</commonSelectInvalid>
+        <commonSelectAffirm>selectaffirm</commonSelectAffirm>
+        <commonSelectClear>selectClear</commonSelectClear>
+
+        <commonSystemSetupSelectChoose>selectchooseuser</commonSystemSetupSelectChoose>
+        <commonAllocationPrivilege>allocationprivilege</commonAllocationPrivilege>
+        <commonHint>commonhint</commonHint>
+        <commonAffirm>commonaffirm</commonAffirm>
+        <commonSystemManagement>systemManagement</commonSystemManagement>
+        <commonEdit>edit</commonEdit>
+        <commonStartUsing>startUsing</commonStartUsing>
+        <commonBlockUp>blockUp</commonBlockUp>
+        <commonDelete>delete</commonDelete>
+        <commonDesign>design</commonDesign>
+        <commonDeleteHint>deletehint</commonDeleteHint>
+        <commonDeleteConfirm>deleteaffirm</commonDeleteConfirm>
+        <commonSelectResultIsEmpty>selectResultIsEmpty</commonSelectResultIsEmpty>
+        <commonSelectClear>CentralizedAlarmSelectCollectClear</commonSelectClear>
+
+
+        <commonSaveHint>editsavehint</commonSaveHint>
+        <commonSaveConfirm>editsaveaffirm</commonSaveConfirm>
+
+        <commonCopy>copy</commonCopy>
+
+        <!--菜单-集中告警-->
+        <commonConcentratedAlarm>concentratedalarm</commonConcentratedAlarm>
+        <commonAlarmConfig>alarmconfig</commonAlarmConfig>
+        <commonAlarmConfigArea>alarmConfigArea</commonAlarmConfigArea>
+        <commonDenoiseStrategy>denoisestrategy</commonDenoiseStrategy>
+        <commonAllRules>allrules</commonAllRules>
+        <commonDenoiseStrategySelectChoose>selectChooseRules</commonDenoiseStrategySelectChoose>
+        <commonDenoiseStrategySelectRulesNameValue>selectRulesName</commonDenoiseStrategySelectRulesNameValue>
+        <commonDenoiseStrategySelectRulesTypeValue>selectRulesType</commonDenoiseStrategySelectRulesTypeValue>
+        <commonDenoiseStrategySelectNodeTypeValue>selectNodeType</commonDenoiseStrategySelectNodeTypeValue>
+        <commonDenoiseStrategySelectDomainValue>selectDomain</commonDenoiseStrategySelectDomainValue>
+        <commonDenoiseStrategySelectPriorityValue>selectPriority</commonDenoiseStrategySelectPriorityValue>
+        <commonDenoiseStrategySelectExceptionValue>selectException</commonDenoiseStrategySelectExceptionValue>
+        <commonDenoiseStrategySelectEditTimeValue>selectEditTime</commonDenoiseStrategySelectEditTimeValue>
+        <commonDenoiseStrategySelectStatusValue>selectStatus</commonDenoiseStrategySelectStatusValue>
+        <commonQueryArea>receiveGroupingQueryArea</commonQueryArea>
+        <commonSelectResult>selectchooseuser</commonSelectResult>
+        <commonSelectResultFirstColumnAllData>selectResultFirstColumnAllData</commonSelectResultFirstColumnAllData>
+        <commonSelectResultChooseAllData>selectResultChooseAllData</commonSelectResultChooseAllData>
+        <commonSelectResultAll>selectResultChooseAll</commonSelectResultAll>
+        <commonSelectResultAll2>selectResultChooseAll2</commonSelectResultAll2>
+        <commonselectResultAll9>selectResultChooseAll9</commonselectResultAll9>
+        <commonselectResultAll12>selectResultChooseAll12</commonselectResultAll12>
+
+        <!--菜单-系统设置-数据-->
+        <createSave>save</createSave>
+        <userNameValue>user0015</userNameValue>
+        <nameValue>edit0015</nameValue>
+        <emailValue>edit0015@edit.com</emailValue>
+        <responsibilityValue>岗位职责0015</responsibilityValue>
+        <phoneValue>15000000015</phoneValue>
+        <mobilephoneValue>16000000015</mobilephoneValue>
+        <noteValue>我是备注015</noteValue>
+
+        <editNameValue>edit016</editNameValue>
+        <editResponsibilityValue>edit岗位职责016</editResponsibilityValue>
+        <editPhoneValue>15000000016</editPhoneValue>
+        <editMobilePhoneValue>16000000016</editMobilePhoneValue>
+        <editEmailValue>edit016@edit.com</editEmailValue>
+        <editNoteValue>我是编辑备注016</editNoteValue>
+
+        <createWorkingGroupNameValue>AutoTestGroup</createWorkingGroupNameValue>
+        <creatWorkingGroupeNoteValue>我是工作组新增备注</creatWorkingGroupeNoteValue>
+        <editWorkingGroupNameValue>AutoTestGroupEdit</editWorkingGroupNameValue>
+        <editWorkingGroupeNoteValue>编辑工作组备注</editWorkingGroupeNoteValue>
+
+        <!--菜单-集中告警-数据-->
+        <alarmClassifyRulesNameValue>AutoTest告警分类规则</alarmClassifyRulesNameValue>
+        <alarmClassifyRulesNameEditValue>编辑AutoTest告警分类规则</alarmClassifyRulesNameEditValue>
+        <alarmRecoveryRulesNameValue>AutoTest告警恢复规则</alarmRecoveryRulesNameValue>
+        <alarmRecoveryRulesNameEditValue>编辑AutoTest告警恢复规则</alarmRecoveryRulesNameEditValue>
+        <alarmUpgradeRulesNameValue>AutoTest告警升级规则</alarmUpgradeRulesNameValue>
+        <alarmUpgradeRulesNameEditValue>编辑AutoTest告警升级规则</alarmUpgradeRulesNameEditValue>
+        <alarmFilterRulesNameValue>AutoTest告警过滤规则</alarmFilterRulesNameValue>
+        <alarmFilterRulesNameEditValue>编辑AutoTest告警过滤规则</alarmFilterRulesNameEditValue>
+        <alarmRelevanceRulesNameValue>AutoTest告警关联规则</alarmRelevanceRulesNameValue>
+        <alarmRelevanceRulesNameEditValue>编辑AutoTest告警关联规则</alarmRelevanceRulesNameEditValue>
+        <contentKeywordValue>.*Selenium.*</contentKeywordValue>
+        <alarmMergeRulesNameValue>AutoTest告警合并规则</alarmMergeRulesNameValue>
+        <alarmMergeRulesNameEditValue>编辑AutoTest告警合并规则</alarmMergeRulesNameEditValue>
+        <NewGroupingNameValue>我是接收分组名称</NewGroupingNameValue>
+        <NewGroupingDescriptionValue>我是接收分组描述</NewGroupingDescriptionValue>
+        <NewGroupingDescriptionEditValue>编辑接收分组描述</NewGroupingDescriptionEditValue>
+        <AlarmInformInformWayCreateNameValue>我是新建通知方式</AlarmInformInformWayCreateNameValue>
+        <AlarmInformInformWayEditNameValue>我是编辑通知方式</AlarmInformInformWayEditNameValue>
+        <concentrateAlarmAlarmInformInformWayQueryTargetUserValue>超级管理员
+        </concentrateAlarmAlarmInformInformWayQueryTargetUserValue>
+        <ThresholdStrategyCreateNameValue>我是阈值新建名称</ThresholdStrategyCreateNameValue>
+        <CreateThresholdRuleFixedValueInputValue>2</CreateThresholdRuleFixedValueInputValue>
+        <ThresholdStrategyEditNameValue>我是阈值编辑名称</ThresholdStrategyEditNameValue>
+        <WarningStrategyCreateStrategyNameValue>我的预警策略新建策略名称</WarningStrategyCreateStrategyNameValue>
+        <WarningStrategyCreateProjectNameValue>我的预警策略新建项目名称</WarningStrategyCreateProjectNameValue>
+        <WarningStrategyEditStrategyNameValue>我的预警策略编辑策略名称</WarningStrategyEditStrategyNameValue>
+        <WarningStrategyEditProjectNameValue>我的预警策略编辑项目名称</WarningStrategyEditProjectNameValue>
+        <WarningStrategyCreateNetWorthValue>3</WarningStrategyCreateNetWorthValue>
+        <alarmScreenCreateStrategyNameValue>AutoTest新建告警筛选</alarmScreenCreateStrategyNameValue>
+        <alarmScreenEditStrategyNameValue>AutoTest编辑告警筛选</alarmScreenEditStrategyNameValue>
+
+
+        <!--菜单-集中告警-告警展示-->
+        <commonCentralizedAlarmConfirmation>CentralizedAlarmConfirmation</commonCentralizedAlarmConfirmation>
+        <commonCentralizedAlarmForwardShifting>CentralizedAlarmForwardShifting</commonCentralizedAlarmForwardShifting>
+        <commonCentralizedAlarmResolved>CentralizedAlarmResolved</commonCentralizedAlarmResolved>
+        <commonCentralizedAlarmView>CentralizedAlarmView</commonCentralizedAlarmView>
+        <commonCentralizedAlarmSelect>CentralizedAlarmSelect</commonCentralizedAlarmSelect>>
+        <commonForwardShiftingTitleValue>前转标题</commonForwardShiftingTitleValue>
+
+        <!--菜单-资源管理-数据-->
+        <URMPAddDisplayNameValue>新增URMP显示名称</URMPAddDisplayNameValue>
+        <URMPAddNameValue>新增URMP名称</URMPAddNameValue>
+        <URMPEditDisplayNameValue>编辑URMP显示名称</URMPEditDisplayNameValue>
+        <CITypeAttributeCreateDisplayNameValue>新建属性显示名称</CITypeAttributeCreateDisplayNameValue>
+        <CITypeAttributeCreateAttributeNameValue>新建属性属性名称</CITypeAttributeCreateAttributeNameValue>
+        <CITypeAttributeEditDisplayNameValue>编辑属性显示名称</CITypeAttributeEditDisplayNameValue>
+        <CITypeRelationAttributeCreateDisplayNameValue>新建关系属性显示名称</CITypeRelationAttributeCreateDisplayNameValue>
+        <CITypeRelationAttributeCreateAttributeNameValue>LocatedInOS</CITypeRelationAttributeCreateAttributeNameValue>
+        <CITypeRelationAttributeEditDisplayNameValue>编辑关系属性显示名称</CITypeRelationAttributeEditDisplayNameValue>
+        <ResourceExampleCreateNameValue>resourceExampleExampleListName</ResourceExampleCreateNameValue>
+        <ResourceExampleCreateDisplayNameValue>resourceExampleExampleListDisplayName</ResourceExampleCreateDisplayNameValue>
+        <ResourceExampleEditDisplayNameValue>editResourceExampleExampleListDisplayName</ResourceExampleEditDisplayNameValue>
+        <ResourceExampleCreateDomainValue>rootDomain</ResourceExampleCreateDomainValue>
+        <ClassifyUniqueLogoValue>AutoTest123</ClassifyUniqueLogoValue>
+        <DiscardUniqueLogoValue>AutoTest321</DiscardUniqueLogoValue>
+        <DiscoveryRuleRuleNameCreateValue>新建发现规则名称</DiscoveryRuleRuleNameCreateValue>
+        <DiscoveryRuleRuleNameEditValue>编辑发现规则名称</DiscoveryRuleRuleNameEditValue>
+        <DiscoveryRuleIPRangeValue>192.168.20.1-11</DiscoveryRuleIPRangeValue>
+        <DiscoveryRuleTimeIntervalValue>2</DiscoveryRuleTimeIntervalValue>
+
+        <!--菜单-视图中心-->
+        <ViewCanvasCreateNameValue>新建画布视图名称</ViewCanvasCreateNameValue>
+        <ViewCanvasEditNameValue>编辑画布视图名称</ViewCanvasEditNameValue>
+        <ViewCanvasEditCopyNameValue>编辑画布视图名称-复制</ViewCanvasEditCopyNameValue>
+
+
+        <!--菜单-数据分析-->
+        <commonNewlyIncreased>newlyIncreased</commonNewlyIncreased>
+        <BaselineStrategyCreateStrategyNameValue>新增策略名称</BaselineStrategyCreateStrategyNameValue>
+        <BaselineStrategyEditStrategyNameValue>编辑策略名称</BaselineStrategyEditStrategyNameValue>
+        <BaselineStrategyCreatePeriodicValue>30</BaselineStrategyCreatePeriodicValue>
+        <BaselineStrategyCreateTimeStepValue>3</BaselineStrategyCreateTimeStepValue>
+        <BaselineStrategyCreateSampleDensityAreaValue>1</BaselineStrategyCreateSampleDensityAreaValue>
+        <BaselineStrategyCreateTriggerTimeValue>0 50 * * ?</BaselineStrategyCreateTriggerTimeValue>
+        <BaselineStrategyCreateSigmaValue>2</BaselineStrategyCreateSigmaValue>
+        <BaselineApplicationNumericalPrecisionValue>1</BaselineApplicationNumericalPrecisionValue>
+        <BaselineApplicationCreateBaselineTitleValue>新建基线标题</BaselineApplicationCreateBaselineTitleValue>
+        <BaselineApplicationEditBaselineTitleValue>编辑基线标题</BaselineApplicationEditBaselineTitleValue>
+        <DataSourceCreateNameValue>新增数据源名称</DataSourceCreateNameValue>
+        <DataSourceEditNameValue>编辑数据源名称</DataSourceEditNameValue>
+        <DataSourceURLAdressValue>jdbc:postgresql://192.168.20.122:5432/v4.4test_main</DataSourceURLAdressValue>
+        <DataSourceUserNameValue>postgres</DataSourceUserNameValue>
+        <DataSourcePasswordValue>postgres</DataSourcePasswordValue>
+        <SQLDataSetCreateNameValue>新增SQL数据集名称</SQLDataSetCreateNameValue>
+        <SQLDataSetEditNameValue>编辑SQL数据集名称</SQLDataSetEditNameValue>
+        <SQLDataSetCreateSQLValue>select encrypted_pwd from t_user  where user_id='administrator'</SQLDataSetCreateSQLValue>
+
+
+    </common>
+    <!--菜单-系统设置-->
+    <vicubeLogin>
+        <user>vicube_user</user>
+        <userValue>administrator</userValue>
+        <password>vicube_password</password>
+        <passwordValue>vicube2017</passwordValue>
+        <button>vicube_loginButton</button>
+        <userLoginID>vicube_userloginid</userLoginID>
+    </vicubeLogin>
+
+    <userLogin>
+        <user>vicube_user</user>
+        <password>vicube_password</password>
+        <button>vicube_loginButton</button>
+        <userLoginID>vicube_userloginid</userLoginID>
+    </userLogin>
+
+    <systemSetting>
+        <systemSetting>systemsetting</systemSetting>
+    </systemSetting>
+
+    <userManagement>
+        <userManagement>usermanagement</userManagement>
+    </userManagement>
+
+    <userManagementCreate>
+        <userName>username</userName>
+        <name>name</name>
+        <email>email</email>
+        <responsibility>responsibility</responsibility>
+        <phone>phone</phone>
+        <mobilephone>mobilephone</mobilephone>
+        <note>note</note>
+        <valid>valid</valid>
+        <Valid>Valid</Valid>
+
+    </userManagementCreate>
+
+    <userCreateSave>
+        <saveHint>savehint</saveHint>
+        <saveAffirm>saveaffirm</saveAffirm>
+    </userCreateSave>
+
+    <userCreateCancel>
+        <cancel>cancel</cancel>
+        <cancelHint>cancelhint</cancelHint>
+        <cancelAffirm>cancelaffirm</cancelAffirm>
+    </userCreateCancel>
+
+    <userSelect>
+        <select>select</select>
+        <Area>userSelectArea</Area>
+        <selectUserName>selectusername</selectUserName>
+        <selectName>selectname</selectName>
+        <selectEmail>selectemail</selectEmail>
+        <selectUsernameValue>selectusernamevalue</selectUsernameValue>
+        <selectNameValue>selectnamevalue</selectNameValue>
+        <selecteMailValue>selectemailvalue</selecteMailValue>
+        <selectResponsibilityValue>selectresponsibilityvalue</selectResponsibilityValue>
+        <selectPhoneValue>selectphonevalue</selectPhoneValue>
+        <selectMobilephoneValue>selectmobilephonevalue</selectMobilephoneValue>
+        <selectNoteValue>selectnotevalue</selectNoteValue>
+        <selectValidValue>selectvalidvalue</selectValidValue>
+    </userSelect>
+
+    <userEdit>
+        <edit>edit</edit>
+        <editAffirm>saveaffirm</editAffirm>
+        <editUserName>editusername</editUserName>
+        <editnName>editname</editnName>
+        <editResponsibility>editresponsibility</editResponsibility>
+        <editPhone>editphone</editPhone>
+        <editMobilePhone>editmobilephone</editMobilePhone>
+        <editEmail>editemail</editEmail>
+        <editNote>editnote</editNote>
+        <editFlag>editflag</editFlag>
+        <editInvalid>editinvalid</editInvalid>
+        <Invalid>Invalid</Invalid>
+    </userEdit>
+
+    <commonSave>
+        <edit>edit</edit>
+        <editSave>editsave</editSave>
+        <editSaveHint>editsavehint</editSaveHint>
+        <editSaveAffirm>editsaveaffirm</editSaveAffirm>
+    </commonSave>
+
+    <userEditSaveSelect>
+        <select>select</select>
+        <selectUserName>selectusername</selectUserName>
+        <selectName>selectname</selectName>
+        <selectEmail>selectemail</selectEmail>
+        <selectFlag>selectflag</selectFlag>
+        <selectValid>selctvalid</selectValid>
+        <selectInvalid>selctinvalid</selectInvalid>
+        <selectAffirm>selectaffirm</selectAffirm>
+        <selectUsernameValue>selectusernamevalue</selectUsernameValue>
+        <selectNameValue>selectnamevalue</selectNameValue>
+        <selecteMailValue>selectemailvalue</selecteMailValue>
+        <selectResponsibilityValue>selectresponsibilityvalue</selectResponsibilityValue>
+        <selectPhoneValue>selectphonevalue</selectPhoneValue>
+        <selectMobilephoneValue>selectmobilephonevalue</selectMobilephoneValue>
+        <selectNoteValue>selectnotevalue</selectNoteValue>
+        <selectValidValue>selectvalidvalue</selectValidValue>
+        <selectChooseUser>selectchooseuser</selectChooseUser>
+    </userEditSaveSelect>
+
+    <userEditSaveSelect1>
+        <select>select</select>
+        <selectUserName>selectusername</selectUserName>
+        <selectName>selectname</selectName>
+        <selectEmail>selectemail</selectEmail>
+        <selectFlag>selectflag</selectFlag>
+        <selectValid>selctvalid</selectValid>
+        <selectInvalid>selctinvalid</selectInvalid>
+        <selectAffirm>selectaffirm</selectAffirm>
+        <selectUsernameValue>selectusernamevalue</selectUsernameValue>
+        <selectNameValue>selectnamevalue</selectNameValue>
+        <selecteMailValue>selectemailvalue</selecteMailValue>
+        <selectResponsibilityValue>selectresponsibilityvalue</selectResponsibilityValue>
+        <selectPhoneValue>selectphonevalue</selectPhoneValue>
+        <selectMobilephoneValue>selectmobilephonevalue</selectMobilephoneValue>
+        <selectNoteValue>selectnotevalue</selectNoteValue>
+        <selectValidValue>selectvalidvalue</selectValidValue>
+        <selectChooseUser>selectchooseuser</selectChooseUser>
+    </userEditSaveSelect1>
+
+    <userEditCancel>
+        <edit>edit</edit>
+        <editCancel>editcancel</editCancel>
+        <editCancelHint>editcancelhint</editCancelHint>
+        <editCancelAffirm>editcancelaffirm</editCancelAffirm>
+    </userEditCancel>
+
+    <userDelete>
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <deleteCancel>deletecancel</deleteCancel>
+    </userDelete>
+
+    <userGroupDelete>
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <deleteCancel>deletecancel</deleteCancel>
+    </userGroupDelete>
+
+    <userResetPassword>
+        <resetPassword>resetpassword</resetPassword>
+        <resetPasswordHint>resetpasswordhint</resetPasswordHint>
+        <resetPasswordAffirm>resetpasswordaffirm</resetPasswordAffirm>
+        <resetPasswordCancel>resetpasswordcancel</resetPasswordCancel>
+    </userResetPassword>
+
+    <userAssignmentGroup>
+        <assignmentGroup>assignmentgroup</assignmentGroup>
+        <!--<chooseWorkingGroup>chooseWorkingGroup</chooseWorkingGroup>-->
+        <chooseWorkingGroupSelect>chooseWorkingGroupSelect</chooseWorkingGroupSelect>
+        <selectGroupRightMove>selectgrouprightmove</selectGroupRightMove>
+        <assignmentGroupSave>commonsave</assignmentGroupSave>
+        <chooseWorkingGroupSelectRight>chooseWorkingGroupSelectRight</chooseWorkingGroupSelectRight>
+    </userAssignmentGroup>
+
+    <workingGroupAssignmentUser>
+        <assignmentUser>assignmentUser</assignmentUser>
+        <chooseUser>chooseUser</chooseUser>
+        <selectUserRightMove>selectUserRightMove</selectUserRightMove>
+        <assignmentUserSave>commonsave</assignmentUserSave>
+    </workingGroupAssignmentUser>
+
+    <workingGroupAssignmentManagement>
+        <assignmentManagement>assignmentManagement</assignmentManagement>
+        <chooseUser>chooseManagement</chooseUser>
+        <selectUserRightMove>selectAdminRightMove</selectUserRightMove>
+        <assignmentUserSave>commonsave</assignmentUserSave>
+    </workingGroupAssignmentManagement>
+
+    <workingGroupManagement>
+        <workingGroupManagement>workinggroupmanagent</workingGroupManagement>
+    </workingGroupManagement>
+
+    <workingGroupManagementGreate>
+        <createWorkingGroupName>workingGroupName</createWorkingGroupName>
+        <createDomainNameSelectBox>domainNameSelectBox</createDomainNameSelectBox>
+        <createDomainName>createDomainName</createDomainName>
+        <creatWorkingGroupeNote>creatWorkingGroupeNote</creatWorkingGroupeNote>
+    </workingGroupManagementGreate>
+
+    <workingGroupManagementEdit>
+        <editWorkingGroup>edit</editWorkingGroup>
+        <editWorkingGroupName>workingGroupName</editWorkingGroupName>
+        <domainNameSelectBox>domainNameSelectBox</domainNameSelectBox>
+        <editDomainName>editDomainName</editDomainName>
+        <editWorkingGroupeNote>creatWorkingGroupeNote</editWorkingGroupeNote>
+    </workingGroupManagementEdit>
+
+    <workingGroupManagementEditSelect>
+        <inputSelectWorkingGroupname>inputselectworkinggroupname</inputSelectWorkingGroupname>
+        <selectworkinggroupnameValue>selectworkinggroupname</selectworkinggroupnameValue>
+        <selectWorkingGroupFlagValue>selectworkinggroupvalidflag</selectWorkingGroupFlagValue>
+        <selectWorkingGroupNoteValue>selectWorkingGroupNoteValue</selectWorkingGroupNoteValue>
+        <area>selectWorkingGroupArea</area>
+
+    </workingGroupManagementEditSelect>
+
+    <workingGroupManagementInvalidSelect>
+        <inputSelectWorkingGroupname>inputselectworkinggroupname</inputSelectWorkingGroupname>
+        <selectworkinggroupnameValue>selectworkinggroupname</selectworkinggroupnameValue>
+        <selectWorkingGroupFlagValue>selectworkinggroupvalidflag</selectWorkingGroupFlagValue>
+        <selectWorkingGroupNoteValue>selectWorkingGroupNoteValue</selectWorkingGroupNoteValue>
+    </workingGroupManagementInvalidSelect>
+
+    <workingGroupManagementSelect>
+        <inputSelectWorkingGroupname>inputselectworkinggroupname</inputSelectWorkingGroupname>
+        <selectworkinggroupnameValue>selectworkinggroupname</selectworkinggroupnameValue>
+        <selectWorkingGroupFlagValue>selectworkinggroupvalidflag</selectWorkingGroupFlagValue>
+        <selectWorkingGroupNoteValue>selectWorkingGroupNoteValue</selectWorkingGroupNoteValue>
+        <area>selectWorkingGroupArea</area>
+    </workingGroupManagementSelect>
+
+    <userAllocationPrivilege>
+        <!--<choosePrivilegeBJ-UPS1>chooseprivilegebj-ups1</choosePrivilegeBJ-UPS1>-->
+        <!--<choosePrivilegeBJ-UPS2>chooseprivilegebj-ups2</choosePrivilegeBJ-UPS2>-->
+        <!--<choosePrivilegeBJ-UPS3>chooseprivilegebj-ups3</choosePrivilegeBJ-UPS3>-->
+        <!--<choosePrivilegeBJ-UPS4>chooseprivilegebj-ups4</choosePrivilegeBJ-UPS4>-->
+        <choosePrivilege>choosePrivilege</choosePrivilege>
+        <choosePrivilegeMoveAllRight>chooseprivilegemoveallright</choosePrivilegeMoveAllRight>
+        <choosePrivilegeMoveRight>chooseprivilegemoveright</choosePrivilegeMoveRight>
+        <choosePrivilegeMoveLeft>chooseprivilegemoveleft</choosePrivilegeMoveLeft>
+        <choosePrivilegeMoveAllLeft>chooseprivilegemoveallleft</choosePrivilegeMoveAllLeft>
+    </userAllocationPrivilege>
+
+    <userAllocationPrivilegeSave>
+        <allocationSave>allocationprivilegesave</allocationSave>
+        <allocationSaveHint>editsavehint</allocationSaveHint>
+        <allocationSaveAffirm>editsaveaffirm</allocationSaveAffirm>
+    </userAllocationPrivilegeSave>
+    <promptMessage>
+        <userNotification>usernotification</userNotification>
+        <userNotificationNumber>userNotificationNumber</userNotificationNumber>
+
+
+    </promptMessage>
+
+    <refresh>
+        <userNotification>usernotification</userNotification>
+        <userNotificationNumber>userNotificationNumber</userNotificationNumber>
+    </refresh>
+
+    <userLogoutSystem>
+        <userLogoutHead>userlogouthead</userLogoutHead>
+        <userLogoutSystem>userlogoutsystem</userLogoutSystem>
+        <userNotification>usernotification</userNotification>
+    </userLogoutSystem>
+
+    <userChangeState></userChangeState>
+
+    <userGroupChangeState></userGroupChangeState>
+
+    <chooseUserButton></chooseUserButton>
+
+    <clickSelectButton>
+        <area>clickSelectButtonArea</area>
+    </clickSelectButton>
+
+    <userInvalidLogin>
+        <user>vicube_user</user>
+        <user>vicube_user</user>
+        <password>vicube_password</password>
+        <button>vicube_loginButton</button>
+        <userLoginID>vicube_userloginid</userLoginID>
+        <userInvalidLoginHint>userInvalidLoginHint</userInvalidLoginHint>
+        <userInvalidLoginAffirm>userInvalidLoginAffirm</userInvalidLoginAffirm>
+    </userInvalidLogin>
+
+    <userViewConfig>
+        <userViewConfigPlus>userviewconfigplus</userViewConfigPlus>
+        <userViewConfigViewOne>userviewconfigviewone</userViewConfigViewOne>
+        <userViewConfigViewTwo>userviewconfigviewtwo</userViewConfigViewTwo>
+        <userViewConfigViewThree>userviewconfigviewthree</userViewConfigViewThree>
+        <userViewConfigViewFour>userviewconfigviewfour</userViewConfigViewFour>
+        <userViewConfigMoveRight>userviewconfigmoveright</userViewConfigMoveRight>
+        <userViewConfigSave>userviewconfigsave</userViewConfigSave>
+        <userViewConfig8586BJUPS1>userviewconfig8586bjups1</userViewConfig8586BJUPS1>
+    </userViewConfig>
+
+    <auditManagement>
+        <auditManagement>auditmanagement</auditManagement>
+    </auditManagement>
+
+    <auditManagementViewLog>
+        <selectLog>selectLog</selectLog>
+        <view>view</view>
+        <auditDetail>auditDetail</auditDetail>
+        <closeAuditDetail>closeAuditDetail</closeAuditDetail>
+    </auditManagementViewLog>
+
+    <auditManagementSelect>
+        <selectButton>selectButton</selectButton>
+        <modelName>modelName</modelName>
+        <modelNameValue>统一用户管理</modelNameValue>
+        <operationID>operationID</operationID>
+        <operationIDValue>user0015</operationIDValue>
+        <functionName>functionName</functionName>
+        <functionNameValue>用户登陆</functionNameValue>
+        <selectOperationID>selectOperationID</selectOperationID>
+        <Area>auditManagementSelectArea</Area>
+        <confirm>auditManagementSelectConfirm</confirm>
+    </auditManagementSelect>
+
+    <editSave>
+        <edit>edit</edit>
+        <editSave>editsave</editSave>
+        <editSaveHint>editsavehint</editSaveHint>
+        <editSaveAffirm>editsaveaffirm</editSaveAffirm>
+    </editSave>
+
+    <menuModle>
+        <menuModle>menuModle</menuModle>
+        <systemManagement>menuModleSystemManagement</systemManagement>
+    </menuModle>
+
+    <verifyMenuSystemManagement></verifyMenuSystemManagement>
+
+
+    <!--菜单-集中告警-->
+    <concentratedAlarm>
+        <concentratedAlarm>concentratedalarm</concentratedAlarm>
+    </concentratedAlarm>
+
+    <alarmConfig>
+        <alarmConfigArea>alarmConfigArea</alarmConfigArea>
+        <alarmConfig>alarmconfig</alarmConfig>
+    </alarmConfig>
+
+    <denoiseStrategy>
+        <denoiseStrategy>denoisestrategy</denoiseStrategy>
+    </denoiseStrategy>
+
+    <alarmClassifyRulesCreate>
+        <allRules>allrules</allRules>
+        <alarmClassifyRules>alarmclassifyrules</alarmClassifyRules>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <newAlarmType>newalarmtype</newAlarmType>
+        <chooseNewAlarmType>choosenewalarmtype</chooseNewAlarmType>
+        <newAlarmRank>newalarmrank</newAlarmRank>
+        <deselectAll>deselectall</deselectAll>
+        <chooseNewAlarmRank>choosenewalarmrank</chooseNewAlarmRank>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmClassifyRulesCreate>
+
+    <denoiseStrategyChooseAlarmClassifyRules>
+        <allRules>allrules</allRules>
+        <alarmClassifyRules>alarmclassifyrules</alarmClassifyRules>
+    </denoiseStrategyChooseAlarmClassifyRules>
+
+    <denoiseStrategyChooseAlarmUpgradeRules>
+        <allRules>allrules</allRules>
+        <alarmUpgradeRules>alarmUpgradeRules</alarmUpgradeRules>
+    </denoiseStrategyChooseAlarmUpgradeRules>
+
+    <denoiseStrategyChooseAlarmMergeRules>
+        <allRules>allrules</allRules>
+        <alarmMergeRules>alarmMergeRules</alarmMergeRules>
+    </denoiseStrategyChooseAlarmMergeRules>
+
+    <denoiseStrategyChooseAlarmRecoveryRules>
+        <allRules>allrules</allRules>
+        <alarmRecoveryRules>alarmRecoveryRules</alarmRecoveryRules>
+    </denoiseStrategyChooseAlarmRecoveryRules>
+
+
+    <alarmClassifyRulesCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmClassifyRulesCreateBasicSetting>
+
+    <alarmClassifyRulesCreateRulesConditionSetting>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmClassifyRulesCreateRulesConditionSetting>
+
+    <alarmClassifyRulesCreateRulesConditionAdvancedSetting>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmClassifyRulesCreateRulesConditionAdvancedSetting>
+
+    <alarmClassifyRulesCreateAlarmClassifySetting>
+        <blank>blank</blank>
+        <newAlarmType>newalarmtype</newAlarmType>
+        <chooseNewAlarmType>choosenewalarmtype</chooseNewAlarmType>
+        <newAlarmRank>newalarmrank</newAlarmRank>
+        <deselectAll>deselectall</deselectAll>
+        <chooseNewAlarmRank>choosenewalarmrank</chooseNewAlarmRank>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmClassifyRulesCreateAlarmClassifySetting>
+
+    <denoiseStrategyAlarmClassifyRulesSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <AlarmScreenScreenResultNull>AlarmScreenScreenResultNull</AlarmScreenScreenResultNull>
+    </denoiseStrategyAlarmClassifyRulesSelectVerify>
+
+    <alarmDisplay>
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+    </alarmDisplay>
+
+    <alarmDisplayPendingAlarm>
+        <alarmDisplayPendingAlarm>alarmDisplayPendingAlarm</alarmDisplayPendingAlarm>
+        <alarmDisplayPendingAlarmNumber>alarmDisplayPendingAlarmNumber</alarmDisplayPendingAlarmNumber>
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+    </alarmDisplayPendingAlarm>
+
+    <alarmDisplayConfirmedAlarm>
+        <alarmDisplayConfirmedAlarm>alarmDisplayConfirmedAlarm</alarmDisplayConfirmedAlarm>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <alarmDisplayConfirmedAlarmNumber>alarmDisplayConfirmedAlarmNumber</alarmDisplayConfirmedAlarmNumber>
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+
+    </alarmDisplayConfirmedAlarm>
+
+    <alarmDisplayForwardShiftingAlarm>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmDisplayForwardShiftingAlarmNumber>alarmDisplayForwardShiftingAlarmNumber</alarmDisplayForwardShiftingAlarmNumber>
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+
+    </alarmDisplayForwardShiftingAlarm>
+
+    <denoiseStrategyChooseAlarmFilterRules>
+        <allRules>allrules</allRules>
+        <alarmFilterRules>alarmFilterRules</alarmFilterRules>
+    </denoiseStrategyChooseAlarmFilterRules>
+
+    <alarmDisplayResolvedAlarm>
+        <alarmDisplayResolvedAlarm>alarmDisplayResolvedAlarm</alarmDisplayResolvedAlarm>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <alarmDisplayResolvedAlarmNumber>alarmDisplayResolvedAlarmNumber</alarmDisplayResolvedAlarmNumber>
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+
+    </alarmDisplayResolvedAlarm>
+
+    <alarmDisplayIgnoreAlarm>
+        <alarmDisplayIgnoreAlarm>alarmDisplayIgnoreAlarm</alarmDisplayIgnoreAlarm>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <alarmDisplayIgnoreAlarmNumber>alarmDisplayIgnoreAlarmNumber</alarmDisplayIgnoreAlarmNumber>
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+
+    </alarmDisplayIgnoreAlarm>
+
+    <alarmDisplaySelect>
+
+        <CentralizedAlarmSelectCIDomain>CentralizedAlarmSelectCIDomain</CentralizedAlarmSelectCIDomain>
+        <CentralizedAlarmSelectCIType>CentralizedAlarmSelectCIType</CentralizedAlarmSelectCIType>
+        <CentralizedAlarmSelectCICase>CentralizedAlarmSelectCICase</CentralizedAlarmSelectCICase>
+        <CentralizedAlarmSelectAlarmType>CentralizedAlarmSelectAlarmType</CentralizedAlarmSelectAlarmType>
+        <CentralizedAlarmSelectCollectSystem>CentralizedAlarmSelectCollectSystem</CentralizedAlarmSelectCollectSystem>
+
+        <CentralizedAlarmSelectCIDomainValue>CentralizedAlarmSelectCIDomainValue</CentralizedAlarmSelectCIDomainValue>
+        <CentralizedAlarmSelectCITypeValue>CentralizedAlarmSelectCITypeValue</CentralizedAlarmSelectCITypeValue>
+        <CentralizedAlarmSelectCICaseValue>CentralizedAlarmSelectCICaseValue</CentralizedAlarmSelectCICaseValue>
+        <CentralizedAlarmSelectAlarmTypeValue></CentralizedAlarmSelectAlarmTypeValue>
+        <CentralizedAlarmSelectCollectSystemValue>CentralizedAlarmSelectCollectSystemValue</CentralizedAlarmSelectCollectSystemValue>
+        <affirm>alarmDisplaySelectAffirm</affirm>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <putAway>CentralizedAlarmSelectCollectPutAway</putAway>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <systemTitleblank>systemTitleblank</systemTitleblank>
+
+        <alarmDisplayColumnDisplayMessageContent>alarmDisplayColumnDisplayMessageContent</alarmDisplayColumnDisplayMessageContent>
+        <alarmDisplaySearchBoxValue>AutoTest</alarmDisplaySearchBoxValue>
+
+    </alarmDisplaySelect>
+
+    <alarmDisplaySelectClear>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </alarmDisplaySelectClear>
+
+    <alarmDisplayConfirmationClick>
+        <alarmDisplayConfirmation>CentralizedAlarmConfirmation</alarmDisplayConfirmation>
+    </alarmDisplayConfirmationClick>
+
+    <alarmDisplayConfirmation>
+        <alarmDisplayConfirmation>CentralizedAlarmConfirmation</alarmDisplayConfirmation>
+
+        <alarmDisplayConfirmationRemark>alarmDisplayConfirmationRemark</alarmDisplayConfirmationRemark>
+        <alarmDisplayConfirmationRemarkValue>我是告警展示确认备注</alarmDisplayConfirmationRemarkValue>
+        <affirm>alarmDisplayConfirm</affirm>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageConfirm>alarmDisplayHintMessageConfirm</hintMessageConfirm>
+
+    </alarmDisplayConfirmation>
+
+    <alarmDisplayInformClick>
+        <alarmDisplayForwardShifting>CentralizedAlarmInform</alarmDisplayForwardShifting>
+    </alarmDisplayInformClick>
+
+    <alarmDisplayInformClick1>
+        <alarmDisplayForwardShifting>CentralizedAlarmInform</alarmDisplayForwardShifting>
+    </alarmDisplayInformClick1>
+
+    <alarmDisplayForwardShiftingClick>
+        <alarmDisplayForwardShifting>CentralizedAlarmInform</alarmDisplayForwardShifting>
+    </alarmDisplayForwardShiftingClick>
+
+    <alarmDisplayForwardShiftingClick1>
+        <alarmDisplayForwardShifting>CentralizedAlarmInform</alarmDisplayForwardShifting>
+    </alarmDisplayForwardShiftingClick1>
+
+    <alarmDisplayForwardShifting>
+        <alarmDisplayForwardShifting>CentralizedAlarmForwardShifting</alarmDisplayForwardShifting>
+        <LevelChoose>alarmDisplayAlarmForwardShiftingLevelChoose</LevelChoose>
+        <LevelChooseValue>alarmDisplayAlarmForwardShiftingLevelChooseValue</LevelChooseValue>
+        <FaultClassify>alarmDisplayAlarmForwardShiftingFaultClassify</FaultClassify>
+        <FaultClassifyValue>alarmDisplayAlarmForwardShiftingFaultClassifyValue</FaultClassifyValue>
+        <affirm>alarmDisplayForwardShiftingConfirm</affirm>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageConfirm>alarmDisplayForwardShiftingHintMessageConfirm</hintMessageConfirm>
+        <forwardShiftingTitle>alarmDisplayAlarmForwardShiftingTitle</forwardShiftingTitle>
+
+    </alarmDisplayForwardShifting>
+
+    <alarmDisplayForwardShiftingMode2>
+        <alarmDisplayForwardShifting>CentralizedAlarmForwardShifting</alarmDisplayForwardShifting>
+        <DirectToUser>alarmDisplayAlarmForwardShiftingDirectToUser</DirectToUser>
+        <ForwardShiftingClassify>alarmDisplayAlarmForwardShiftingForwardShiftingClassify</ForwardShiftingClassify>
+        <ForwardShiftingClassifyValue>alarmDisplayAlarmForwardShiftingForwardShiftingClassifyValue</ForwardShiftingClassifyValue>
+        <ForwardShiftingUser>alarmDisplayAlarmForwardShiftingForwardShiftingUser</ForwardShiftingUser>
+        <ForwardShiftingUserValue>alarmDisplayAlarmForwardShiftingForwardShiftingUserValue</ForwardShiftingUserValue>
+        <affirm>alarmDisplayForwardShiftingConfirm</affirm>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageConfirm>alarmDisplayForwardShiftingHintMessageConfirm</hintMessageConfirm>
+        <forwardShiftingTitle>alarmDisplayAlarmForwardShiftingTitle</forwardShiftingTitle>
+    </alarmDisplayForwardShiftingMode2>
+
+
+    <alarmDisplayForwardShiftingHintConfirm>
+        <hintMessageConfirm>alarmDisplayForwardShiftingHintMessageConfirm</hintMessageConfirm>
+    </alarmDisplayForwardShiftingHintConfirm>
+
+    <alarmDisplayForwardShiftingHintConfirm1>
+        <hintMessageConfirm>alarmDisplayForwardShiftingHintMessageConfirm</hintMessageConfirm>
+    </alarmDisplayForwardShiftingHintConfirm1>
+
+    <alarmDisplayResolvedButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+    </alarmDisplayResolvedButton>
+
+    <alarmDisplayResolvedButton2>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+    </alarmDisplayResolvedButton2>
+
+    <alarmDisplayResolvedButton3>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+    </alarmDisplayResolvedButton3>
+
+    <alarmDisplayViewForwardShiftingHintConfirm>
+        <hintMessageAffirm>alarmDisplayViewForwardShiftingHintConfirm</hintMessageAffirm>
+    </alarmDisplayViewForwardShiftingHintConfirm>
+
+    <alarmDisplayViewResolvedOfResolvedHintConfirm>
+        <hintMessageAffirm>alarmDisplayViewResolvedOfResolvedHintConfirm</hintMessageAffirm>
+    </alarmDisplayViewResolvedOfResolvedHintConfirm>
+
+    <alarmDisplayViewResolvedOfIgnoreHintConfirm>
+        <hintMessageAffirm>alarmDisplayViewResolvedOfIgnoreHintConfirm</hintMessageAffirm>
+    </alarmDisplayViewResolvedOfIgnoreHintConfirm>
+
+    <alarmDisplayResolvedOfResolved>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <alarmDisplayResovledOpinion>alarmDisplayResovledOpinion</alarmDisplayResovledOpinion>
+        <alarmDisplayResovledOpinionValue>我是解决的处理意见</alarmDisplayResovledOpinionValue>
+        <affirm>alarmDisplayOpinionConfirm2</affirm>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageAffirm>alarmDisplayResovledOpinionConfirm</hintMessageAffirm>
+    </alarmDisplayResolvedOfResolved>
+
+    <alarmDisplayResolvedOfResolvedHintConfirm>
+        <hintMessageAffirm>alarmDisplayResovledOpinionConfirm</hintMessageAffirm>
+    </alarmDisplayResolvedOfResolvedHintConfirm>
+
+    <alarmDisplayResolvedOfIgnore>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <alarmDisplayResovledOpinion>alarmDisplayResovledOpinion</alarmDisplayResovledOpinion>
+        <alarmDisplayResovledOpinionValue>我是解决的处理意见</alarmDisplayResovledOpinionValue>
+        <IgnoreButton>alarmDisplayResovledOpinionIgnoreButton</IgnoreButton>
+        <affirm>alarmDisplayOpinionConfirm2</affirm>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageAffirm>alarmDisplayResovledOpinionIgnoreConfirm</hintMessageAffirm>
+    </alarmDisplayResolvedOfIgnore>
+
+    <alarmDisplayResolvedOfIgnoreHintConfirm>
+        <hintMessageAffirm>alarmDisplayResovledOpinionIgnoreConfirm</hintMessageAffirm>
+    </alarmDisplayResolvedOfIgnoreHintConfirm>
+
+    <alarmDisplayResolvedOfClearMemory>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <alarmDisplayResovledOpinion>alarmDisplayResovledOpinion</alarmDisplayResovledOpinion>
+        <alarmDisplayResovledOpinionValue>我是解决的处理意见</alarmDisplayResovledOpinionValue>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm2</affirm>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageAffirm>alarmDisplayResovledOpinionIgnoreConfirm</hintMessageAffirm>
+    </alarmDisplayResolvedOfClearMemory>
+
+    <alarmDisplayResolvedOfClearMemoryHintConfirm>
+        <hintMessageAffirm>alarmDisplayResolvedOfClearMemoryConfirm</hintMessageAffirm>
+    </alarmDisplayResolvedOfClearMemoryHintConfirm>
+
+
+    <alarmDisplayView>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+    </alarmDisplayView>
+
+    <alarmDisplayView2>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+    </alarmDisplayView2>
+
+    <alarmDisplayView3>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+    </alarmDisplayView3>
+
+    <alarmDisplayView4>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+    </alarmDisplayView4>
+
+    <alarmDisplayViewForwardShifting>
+        <alarmDisplayViewForwardShifting>alarmDisplayViewForwardShifting</alarmDisplayViewForwardShifting>
+    </alarmDisplayViewForwardShifting>
+
+    <alarmDisplayViewResolved>
+        <alarmDisplayViewResolved>alarmDisplayViewResolved</alarmDisplayViewResolved>
+    </alarmDisplayViewResolved>
+
+    <alarmDisplayViewResolved2>
+        <alarmDisplayViewResolved>alarmDisplayViewResolved</alarmDisplayViewResolved>
+    </alarmDisplayViewResolved2>
+
+    <alarmDisplayViewEventQuery>
+        <alarmDisplayViewEventQuery>alarmDisplayViewEventQuery</alarmDisplayViewEventQuery>
+        <alarmDisplayViewEventQueryClose>alarmDisplayViewEventQueryClose</alarmDisplayViewEventQueryClose>
+        <alarmDisplayViewEventQueryEventMessage>alarmDisplayViewEventQueryEventMessage</alarmDisplayViewEventQueryEventMessage>
+        <alarmDisplayViewEventQueryTitle>alarmDisplayViewEventQueryTitle</alarmDisplayViewEventQueryTitle>
+    </alarmDisplayViewEventQuery>
+
+
+    <alarmDisplayViewOperationLogs>
+        <alarmDisplayViewOperationLogs>alarmDisplayViewOperationLogs</alarmDisplayViewOperationLogs>
+        <alarmDisplayViewOperationLogsClose>alarmDisplayViewOperationLogsClose</alarmDisplayViewOperationLogsClose>
+        <alarmDisplayViewOperationLogsTitle>alarmDisplayViewOperationLogsTitle</alarmDisplayViewOperationLogsTitle>
+    </alarmDisplayViewOperationLogs>
+
+    <alarmDisplayRelevanceAlarm>
+        <alarmDisplayRelevanceAlarm>alarmDisplayRelevanceAlarm</alarmDisplayRelevanceAlarm>
+        <alarmDisplayRelevanceAlarmClose>alarmDisplayRelevanceAlarmClose</alarmDisplayRelevanceAlarmClose>
+        <alarmDisplayRelevanceAlarmTitle>alarmDisplayRelevanceAlarmTitle</alarmDisplayRelevanceAlarmTitle>
+    </alarmDisplayRelevanceAlarm>
+
+    <alarmDisplayViewCancel>
+        <alarmDisplayViewCancel>alarmDisplayViewCancel</alarmDisplayViewCancel>
+    </alarmDisplayViewCancel>
+
+    <alarmDisplayChooseFunction>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+    </alarmDisplayChooseFunction>
+
+    <alarmDisplayChooseFunction1>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+    </alarmDisplayChooseFunction1>
+
+    <alarmDisplayChooseFunction2>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+    </alarmDisplayChooseFunction2>
+
+    <alarmDisplayChooseFunction3>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+    </alarmDisplayChooseFunction3>
+
+    <alarmDisplayChooseFunction4>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+    </alarmDisplayChooseFunction4>
+
+
+    <alarmDisplayAlarmsNumber>
+        <alarmDisplayPendingAlarm>alarmDisplayPendingAlarm</alarmDisplayPendingAlarm>
+        <alarmDisplayConfirmedAlarm>alarmDisplayConfirmedAlarm</alarmDisplayConfirmedAlarm>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+        <alarmDisplayResolvedAlarm>alarmDisplayResolvedAlarm</alarmDisplayResolvedAlarm>
+        <alarmDisplayIgnoreAlarm>alarmDisplayIgnoreAlarm</alarmDisplayIgnoreAlarm>
+
+        <alarmDisplayIgnoreAlarmNumber>alarmDisplayIgnoreAlarmNumber</alarmDisplayIgnoreAlarmNumber>
+        <alarmDisplayResolvedAlarmNumber>alarmDisplayResolvedAlarmNumber</alarmDisplayResolvedAlarmNumber>
+        <alarmDisplayForwardShiftingAlarmNumber>alarmDisplayForwardShiftingAlarmNumber</alarmDisplayForwardShiftingAlarmNumber>
+        <alarmDisplayConfirmedAlarmNumber>alarmDisplayConfirmedAlarmNumber</alarmDisplayConfirmedAlarmNumber>
+        <alarmDisplayPendingAlarmNumber>alarmDisplayPendingAlarmNumber</alarmDisplayPendingAlarmNumber>
+
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+
+    </alarmDisplayAlarmsNumber>
+
+
+    <alarmDisplayAlarmsNumberVerify>
+        <alarmDisplayPendingAlarm>alarmDisplayPendingAlarm</alarmDisplayPendingAlarm>
+        <alarmDisplayConfirmedAlarm>alarmDisplayConfirmedAlarm</alarmDisplayConfirmedAlarm>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+        <alarmDisplayResolvedAlarm>alarmDisplayResolvedAlarm</alarmDisplayResolvedAlarm>
+        <alarmDisplayIgnoreAlarm>alarmDisplayIgnoreAlarm</alarmDisplayIgnoreAlarm>
+
+        <alarmDisplayIgnoreAlarmNumber>alarmDisplayIgnoreAlarmNumber</alarmDisplayIgnoreAlarmNumber>
+        <alarmDisplayResolvedAlarmNumber>alarmDisplayResolvedAlarmNumber</alarmDisplayResolvedAlarmNumber>
+        <alarmDisplayForwardShiftingAlarmNumber>alarmDisplayForwardShiftingAlarmNumber</alarmDisplayForwardShiftingAlarmNumber>
+        <alarmDisplayConfirmedAlarmNumber>alarmDisplayConfirmedAlarmNumber</alarmDisplayConfirmedAlarmNumber>
+        <alarmDisplayPendingAlarmNumber>alarmDisplayPendingAlarmNumber</alarmDisplayPendingAlarmNumber>
+
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+    </alarmDisplayAlarmsNumberVerify>
+
+    <alarmDisplayAutoRefresh>
+        <alarmDisplayAutoRefreshOpen>alarmDisplayAutoRefreshOpen</alarmDisplayAutoRefreshOpen>
+        <alarmDisplayAutoRefreshClose>alarmDisplayAutoRefreshClose</alarmDisplayAutoRefreshClose>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <systemTitleblank>systemTitleblank</systemTitleblank>
+    </alarmDisplayAutoRefresh>
+
+    <alarmDisplayChooseTwoFunction>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <chooseAlarm2>selectchooseuser2</chooseAlarm2>
+    </alarmDisplayChooseTwoFunction>
+
+    <alarmDisplayViewPushAlarm></alarmDisplayViewPushAlarm>
+
+    <alarmDisplayViewMultitermHint>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <chooseAlarm2>selectchooseuser2</chooseAlarm2>
+        <chooseAlarm11>selectchooseuser</chooseAlarm11>
+        <chooseAlarm21>selectchooseuser2</chooseAlarm21>
+        <hintMessage>alarmDisplayConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageConfirm>alarmDisplayViewMultitermHintConfirm</hintMessageConfirm>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+    </alarmDisplayViewMultitermHint>
+
+    <alarmDisplaySearch>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchBoxValue>AutoTest</alarmDisplaySearchBoxValue>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <chooseAlarm>selectchooseuser</chooseAlarm>
+        <alarmDisplayColumnDisplayMessageContent>alarmDisplayColumnDisplayMessageContent</alarmDisplayColumnDisplayMessageContent>
+    </alarmDisplaySearch>
+
+    <alarmDisplayColumnSettingAllChoose>
+        <alarmDisplayColumnSetting>alarmDisplayColumnSetting</alarmDisplayColumnSetting>
+        <alarmDisplayColumnSettingisDisplay>alarmDisplayColumnSettingisDisplay</alarmDisplayColumnSettingisDisplay>
+        <alarmDisplayColumnSettingConfirm>alarmDisplayColumnSettingConfirm</alarmDisplayColumnSettingConfirm>
+        <alarmDisplayColumnDisplay>alarmDisplayColumnDisplay</alarmDisplayColumnDisplay>
+    </alarmDisplayColumnSettingAllChoose>
+
+    <alarmDisplayColumnSettingAllCancle>
+        <alarmDisplayColumnSetting>alarmDisplayColumnSetting</alarmDisplayColumnSetting>
+        <alarmDisplayColumnSettingisDisplay>alarmDisplayColumnSettingisDisplay</alarmDisplayColumnSettingisDisplay>
+        <alarmDisplayColumnSettingConfirm>alarmDisplayColumnSettingConfirm</alarmDisplayColumnSettingConfirm>
+        <alarmDisplayColumnDisplay>alarmDisplayColumnDisplay</alarmDisplayColumnDisplay>
+    </alarmDisplayColumnSettingAllCancle>
+
+    <alarmDisplayAlarmRank>
+        <alarmDisplayAlarmRankL5>alarmDisplayAlarmRankL5</alarmDisplayAlarmRankL5>
+        <alarmDisplayAlarmRankL4>alarmDisplayAlarmRankL4</alarmDisplayAlarmRankL4>
+        <alarmDisplayAlarmRankL3>alarmDisplayAlarmRankL3</alarmDisplayAlarmRankL3>
+        <alarmDisplayAlarmRankL2>alarmDisplayAlarmRankL2</alarmDisplayAlarmRankL2>
+        <alarmDisplayAlarmRankL1>alarmDisplayAlarmRankL1</alarmDisplayAlarmRankL1>
+
+        <alarmDisplayListNumber>alarmDisplayListNumber</alarmDisplayListNumber>
+        <alarmDisplayListNumberValue>alarmDisplayListNumberValue</alarmDisplayListNumberValue>
+    </alarmDisplayAlarmRank>
+
+    <alarmDisplayViewOtherInformation>
+        <alarmDisplayViewOtherInformation>alarmDisplayViewOtherInformation</alarmDisplayViewOtherInformation>
+    </alarmDisplayViewOtherInformation>
+
+
+    <alarmMergeRulesCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmMergeRulesCreateBasicSetting>
+
+    <alarmMergeRulesCreateRulesConditionSetting>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmMergeRulesCreateRulesConditionSetting>
+
+    <alarmMergeRulesCreateRulesConditionAdvancedSetting>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmMergeRulesCreateRulesConditionAdvancedSetting>
+
+    <alarmMergeRulesCreateAlarmMergeSetting>
+        <alarmContent>alarmContent</alarmContent>
+        <maxMergeNumber>maxMergeNumber</maxMergeNumber>
+        <mergeTimeWindows>mergeTimeWindows</mergeTimeWindows>
+        <maxMergeNumberValue>5</maxMergeNumberValue>
+        <mergeTimeWindowsValue>1</mergeTimeWindowsValue>
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+    </alarmMergeRulesCreateAlarmMergeSetting>
+
+    <denoiseStrategyAlarmMergeRulesSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmMergeRulesSelectVerify>
+
+    <alarmMergeRulesEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>startOrClose</startOrClose>
+    </alarmMergeRulesEditBasicSetting>
+
+    <alarmMergeRulesEditRulesConditionSetting>
+        <!--<domain>domain</domain>-->
+        <!--<chooseDomain>choosedomain</chooseDomain>-->
+        <!--<type>type</type>-->
+        <!--<chooseType>choosetype</chooseType>-->
+        <!--<alarmType>alarmtype</alarmType>-->
+        <!--<chooseAlarmType>choosealarmtype</chooseAlarmType>-->
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmMergeRulesEditRulesConditionSetting>
+
+    <alarmMergeRulesEditRulesConditionAdvancedSetting>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmMergeRulesEditRulesConditionAdvancedSetting>
+
+    <alarmMergeRulesEditAlarmMergeSetting>
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+    </alarmMergeRulesEditAlarmMergeSetting>
+
+    <denoiseStrategyAlarmMergeRulesEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+
+    </denoiseStrategyAlarmMergeRulesEditSelectVerify>
+
+    <alarmRulesStartUsing></alarmRulesStartUsing>
+
+    <alarmRulesBlockUp></alarmRulesBlockUp>
+
+    <alarmRulesDelete>
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </alarmRulesDelete>
+
+    <denoiseStrategyAlarmMergeRulesEditSelect>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </denoiseStrategyAlarmMergeRulesEditSelect>
+
+    <denoiseStrategyAlarmMergeRulesEditDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmMergeRulesEditDeleteAndSelectVerify>
+
+    <alarmClassifyRulesEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>startOrClose</startOrClose>
+    </alarmClassifyRulesEditBasicSetting>
+
+    <alarmClassifyRulesEditRulesConditionSetting>
+        <!--<domain>domain</domain>-->
+        <!--<chooseDomain>choosedomain</chooseDomain>-->
+        <!--<type>type</type>-->
+        <!--<chooseType>choosetype</chooseType>-->
+        <!--<alarmType>alarmtype</alarmType>-->
+        <!--<chooseAlarmType>choosealarmtype</chooseAlarmType>-->
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmClassifyRulesEditRulesConditionSetting>
+
+    <alarmClassifyRulesEditRulesConditionAdvancedSetting>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmClassifyRulesEditRulesConditionAdvancedSetting>
+
+    <alarmClassifyRulesEditAlarmClassifySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmClassifyRulesEditAlarmClassifySetting>
+
+    <denoiseStrategyAlarmClassifyRulesEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+
+    </denoiseStrategyAlarmClassifyRulesEditSelectVerify>
+
+    <denoiseStrategyAlarmClassifyRulesEditSelect>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </denoiseStrategyAlarmClassifyRulesEditSelect>
+
+    <denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify>
+
+    <concentrateAlarmAlarmSelect>
+        <alarmSelectArea>alarmSelectArea</alarmSelectArea>
+        <alarmSelect>alarmSelect</alarmSelect>
+    </concentrateAlarmAlarmSelect>
+
+    <concentrateAlarmAlarmSelectForwardShiftingRecording>
+        <shiftingRecording>shiftingRecording</shiftingRecording>
+    </concentrateAlarmAlarmSelectForwardShiftingRecording>
+
+    <shiftingRecordingView>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+        <viewCancel>forwardShiftingRecodingViewCancel</viewCancel>
+    </shiftingRecordingView>
+
+    <forwardShiftingRecodingViewCancel>
+        <viewCancel>forwardShiftingRecodingViewCancel</viewCancel>
+    </forwardShiftingRecodingViewCancel>
+
+    <forwardShiftingRecodingSelect>
+        <BreakdownName>forwardShiftingRecodingSelectBreakdownName</BreakdownName>
+    </forwardShiftingRecodingSelect>
+
+    <concentrateAlarmAlarmSelectHistoryAlarm>
+        <historyAlarm>concentrateAlarmAlarmSelectHistoryAlarm</historyAlarm>
+    </concentrateAlarmAlarmSelectHistoryAlarm>
+
+    <alarmQueryHistoryAlarmSelect>
+        <selectCIDomain>alarmQueryHistoryAlarmSelectCIDomain</selectCIDomain>
+        <selectCIDomainValue>alarmQueryHistoryAlarmSelectCIDomainValue</selectCIDomainValue>
+        <selectCIType>alarmQueryHistoryAlarmSelectCIType</selectCIType>
+        <selectCITypeValue>alarmQueryHistoryAlarmSelectCITypeValue</selectCITypeValue>
+        <selectCIName>alarmQueryHistoryAlarmSelectCIName</selectCIName>
+        <selectCINameValue>alarmQueryHistoryAlarmSelectCINameValue</selectCINameValue>
+        <systemTitleblank>systemTitleblank</systemTitleblank>
+        <selectAlarmInformation>alarmQueryHistoryAlarmSelectAlarmInformation</selectAlarmInformation>
+        <selectAlarmInformationValue>AutoTest</selectAlarmInformationValue>
+        <selectConfirm>alarmQueryHistoryAlarmSelectConfirm</selectConfirm>
+        <selecResultInformationContent>alarmQueryHistoryAlarmSelecResultInformationContent</selecResultInformationContent>
+
+    </alarmQueryHistoryAlarmSelect>
+
+    <alarmQueryHistoryAlarmForwardShifting>
+        <alarmDisplayForwardShifting>CentralizedAlarmForwardShifting</alarmDisplayForwardShifting>
+        <LevelChoose>alarmQueryHistoryAlarmForwardShiftingLevelChoose</LevelChoose>
+        <LevelChooseValue>alarmQueryHistoryAlarmForwardShiftingLevelChooseValue</LevelChooseValue>
+        <FaultClassify>alarmQueryHistoryAlarmForwardShiftingFaultClassify</FaultClassify>
+        <FaultClassifyValue>alarmQueryHistoryAlarmForwardShiftingFaultClassifyValue</FaultClassifyValue>
+        <affirm>alarmQueryHistoryAlarmForwardShiftingConfirm</affirm>
+        <hintMessage>alarmQueryHistoryAlarmConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageConfirm>alarmDisplayForwardShiftingHintMessageConfirm</hintMessageConfirm>
+        <forwardShiftingTitle>alarmDisplayAlarmForwardShiftingTitle</forwardShiftingTitle>
+    </alarmQueryHistoryAlarmForwardShifting>
+
+    <alarmQueryHistoryAlarmForwardShiftingMode2>
+        <alarmDisplayForwardShifting>CentralizedAlarmForwardShifting</alarmDisplayForwardShifting>
+        <DirectToUser>alarmQueryHistoryAlarmForwardShiftingDirectToUser</DirectToUser>
+        <ForwardShiftingClassify>alarmQueryHistoryAlarmAlarmForwardForwardType</ForwardShiftingClassify>
+        <ForwardShiftingClassifyValue>alarmQueryHistoryAlarmAlarmForwardForwardTypeValue</ForwardShiftingClassifyValue>
+        <ForwardShiftingUser>alarmQueryHistoryAlarmAlarmForwardForwardUser</ForwardShiftingUser>
+        <ForwardShiftingUserValue>alarmQueryHistoryAlarmAlarmForwardForwardUserValue</ForwardShiftingUserValue>
+        <affirm>alarmQueryHistoryAlarmForwardShiftingConfirm</affirm>
+        <hintMessage>alarmQueryHistoryAlarmConfirmationRemarkHintMessage</hintMessage>
+        <hintMessageConfirm>alarmDisplayForwardShiftingHintMessageConfirm</hintMessageConfirm>
+        <forwardShiftingTitle>alarmQueryHistoryAlarmAlarmForwardShiftingTitle</forwardShiftingTitle>
+    </alarmQueryHistoryAlarmForwardShiftingMode2>
+
+
+    <alarmDisplayExportButton>
+        <alarmDisplayExport>CentralizedAlarmExport</alarmDisplayExport>
+    </alarmDisplayExportButton>
+
+    <alarmQueryHistoryAlarmPaging>
+        <Total>alarmQueryHistoryAlarmPagingTotal</Total>
+        <TotalChoose>alarmQueryHistoryAlarmPagingTotalChoose</TotalChoose>
+        <TotalChoosePageUpAndDown>alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDown</TotalChoosePageUpAndDown>
+        <TotalChoosePageUpAndDownDetails>alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDownDetails</TotalChoosePageUpAndDownDetails>
+    </alarmQueryHistoryAlarmPaging>
+
+    <alarmQueryHistoryAlarmPaging2>
+        <Total>alarmQueryHistoryAlarmPagingTotal</Total>
+        <TotalChoose>alarmQueryHistoryAlarmPagingTotalChoose</TotalChoose>
+        <TotalChoosePageUpAndDown>alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDown</TotalChoosePageUpAndDown>
+        <TotalChoosePageUpAndDownDetails>alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDownDetails</TotalChoosePageUpAndDownDetails>
+    </alarmQueryHistoryAlarmPaging2>
+
+
+    <concentrateAlarmAlarmInform>
+        <AlarmInform>alarmInformArea</AlarmInform>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+    </concentrateAlarmAlarmInform>
+
+    <concentrateAlarmAlarmInformReceiveGrouping>
+        <ReceiveGrouping>concentrateAlarmAlarmInformReceiveGrouping</ReceiveGrouping>
+    </concentrateAlarmAlarmInformReceiveGrouping>
+
+    <receiveGroupingNewGrouping>
+        <NewGrouping>receiveGroupingNewGrouping</NewGrouping>
+        <NewGroupingName>receiveGroupingNewGroupingName</NewGroupingName>
+        <NewGroupingSave>receiveGroupingNewGroupingSave</NewGroupingSave>
+        <SavePromptMessage>receiveGroupingNewGroupingSavePromptMessage</SavePromptMessage>
+        <SaveHintConfirm>receiveGroupingNewGroupingSaveHintConfirm</SaveHintConfirm>
+        <NewGroupingDescription>receiveGroupingNewGroupingDescription</NewGroupingDescription>
+    </receiveGroupingNewGrouping>
+
+    <receiveGroupingQuery>
+        <receiveGroupingQueryName>receiveGroupingQueryName</receiveGroupingQueryName>
+        <receiveGroupingQueryConfirm>receiveGroupingQueryConfirm</receiveGroupingQueryConfirm>
+        <QueryResultGroupingName>receiveGroupingQueryResultGroupingName</QueryResultGroupingName>
+        <QueryResultGroupingDescription>receiveGroupingQueryResultGroupingDescription</QueryResultGroupingDescription>
+    </receiveGroupingQuery>
+
+    <receiveGroupingEdit>
+        <NewGroupingEditName>receiveGroupingNewGroupingEditName</NewGroupingEditName>
+        <EditNewGroupingSave>receiveGroupingEditNewGroupingSave</EditNewGroupingSave>
+        <SavePromptMessage>receiveGroupingNewGroupingSavePromptMessage</SavePromptMessage>
+        <SaveHintConfirm>receiveGroupingEditGroupingSaveHintConfirm</SaveHintConfirm>
+        <NewGroupingEditDescription>receiveGroupingNewGroupingEditDescription</NewGroupingEditDescription>
+    </receiveGroupingEdit>
+
+    <receiveGroupingEditQuery>
+        <queryArea>receiveGroupingQueryArea</queryArea>
+        <receiveGroupingQueryName>receiveGroupingQueryName</receiveGroupingQueryName>
+        <receiveGroupingQueryConfirm>receiveGroupingQueryConfirm</receiveGroupingQueryConfirm>
+        <QueryResultGroupingName>receiveGroupingQueryResultGroupingName</QueryResultGroupingName>
+        <QueryResultGroupingDescription>receiveGroupingQueryResultGroupingDescription</QueryResultGroupingDescription>
+    </receiveGroupingEditQuery>
+
+    <receiveGroupingEditQuery2>
+        <queryArea>receiveGroupingQueryArea</queryArea>
+        <receiveGroupingQueryName>receiveGroupingQueryName</receiveGroupingQueryName>
+        <receiveGroupingQueryConfirm>receiveGroupingQueryConfirm</receiveGroupingQueryConfirm>
+        <QueryResultGroupingName>receiveGroupingQueryResultGroupingName</QueryResultGroupingName>
+        <QueryResultGroupingDescription>receiveGroupingQueryResultGroupingDescription</QueryResultGroupingDescription>
+    </receiveGroupingEditQuery2>
+
+    <receiveGroupingDelete>
+        <PromptMessage>receiveGroupingNewGroupingSavePromptMessage</PromptMessage>
+        <HintConfirm>receiveGroupingNewGroupingSaveHintConfirm</HintConfirm>
+    </receiveGroupingDelete>
+
+    <receiveGroupingDeleteQuery>
+        <queryArea>receiveGroupingQueryArea</queryArea>
+        <receiveGroupingQueryName>receiveGroupingQueryName</receiveGroupingQueryName>
+        <receiveGroupingQueryConfirm>receiveGroupingQueryConfirm</receiveGroupingQueryConfirm>
+        <QueryResultGroupingName>receiveGroupingQueryResultGroupingName</QueryResultGroupingName>
+        <QueryResultGroupingDescription>receiveGroupingQueryResultGroupingDescription</QueryResultGroupingDescription>
+        <QueryResultEmptyData>receiveGroupingQueryResultEmptyData</QueryResultEmptyData>
+    </receiveGroupingDeleteQuery>
+
+    <concentrateAlarmAlarmSelectNotifyRecord>
+        <NotifyRecord>alarmQueryNoticeRecord</NotifyRecord>
+    </concentrateAlarmAlarmSelectNotifyRecord>
+
+    <alarmSelectNotifyRecordQuery>
+        <NoticeTitle>alarmQueryNoticeRecordQueryNoticeTitle</NoticeTitle>
+        <QueryConfirm>receiveGroupingQueryConfirm</QueryConfirm>
+        <QueryResultNoticeTitle>alarmQueryNoticeRecordQueryResultNoticeTitle</QueryResultNoticeTitle>
+    </alarmSelectNotifyRecordQuery>
+
+    <alarmSelectNotifyRecordView>
+        <ViewDetailsTitle>alarmQueryNoticeRecordViewDetailsTitle</ViewDetailsTitle>
+        <ViewDetailsCancle>alarmQueryNoticeRecordViewDetailsCancle</ViewDetailsCancle>
+    </alarmSelectNotifyRecordView>
+
+    <concentrateAlarmAlarmInformInformWay>
+        <InformWay>concentrateAlarmAlarmInformInformWay</InformWay>
+    </concentrateAlarmAlarmInformInformWay>
+
+    <concentrateAlarmAlarmInformInformWayCreate>
+        <Create>AlarmInformInformWayCreate</Create>
+        <AlarmInformInformWayCreateName>AlarmInformInformWayCreateName</AlarmInformInformWayCreateName>
+        <CreateType>AlarmInformInformWayCreateType</CreateType>
+        <CreateTypeValue>AlarmInformInformWayCreateTypeValue</CreateTypeValue>
+        <CreateUser>AlarmInformInformWayCreateUser</CreateUser>
+        <CreateUserValue>AlarmInformInformWayCreateUserValue</CreateUserValue>
+        <CreateEnable>AlarmInformInformWayCreateEnable</CreateEnable>
+        <CreateLevel>AlarmInformInformWayCreateLevel</CreateLevel>
+        <CreateLevelValue>AlarmInformInformWayCreateLevelValue</CreateLevelValue>
+        <CreateReceivingPacket>AlarmInformInformWayCreateReceivingPacket</CreateReceivingPacket>
+        <CreateReceivingPacketValue>AlarmInformInformWayCreateReceivingPacketValue</CreateReceivingPacketValue>
+        <Save>AlarmInformInformWayCreateSave</Save>
+    </concentrateAlarmAlarmInformInformWayCreate>
+
+    <concentrateAlarmAlarmInformInformWayCreateSelect>
+        <Query>AlarmInformInformWayQuery</Query>
+        <QueryName>AlarmInformInformWayQueryName</QueryName>
+        <QueryNotificationType>AlarmInformInformWayQueryNotificationType</QueryNotificationType>
+        <QueryNotificationTypeValue>AlarmInformInformWayQueryNotificationTypeValue</QueryNotificationTypeValue>
+        <QueryTargetUser>AlarmInformInformWayQueryTargetUser</QueryTargetUser>
+        <QueryStatus>AlarmInformInformWayQueryStatus</QueryStatus>
+        <QueryStatusEnable>AlarmInformInformWayQueryStatusEnable</QueryStatusEnable>
+        <QueryConfirm>AlarmInformInformWayQueryConfirm</QueryConfirm>
+        <ResultName>AlarmInformInformWayQueryResultName</ResultName>
+        <ResultType>AlarmInformInformWayQueryResultType</ResultType>
+        <ResultEnableLogo>AlarmInformInformWayQueryResultEnableLogo</ResultEnableLogo>
+        <ResultChoose>AlarmInformInformWayQueryResultChoose</ResultChoose>
+    </concentrateAlarmAlarmInformInformWayCreateSelect>
+
+    <concentrateAlarmAlarmInformInformWayEdit>
+        <Edit>AlarmInformInformWayEdit</Edit>
+        <AlarmInformInformWayCreateName>AlarmInformInformWayCreateName</AlarmInformInformWayCreateName>
+        <EditType>AlarmInformInformWayEditType</EditType>
+        <EditTypeValue>AlarmInformInformWayEditTypeValue</EditTypeValue>
+        <CreateEnable>AlarmInformInformWayCreateEnable</CreateEnable>
+        <Save>AlarmInformInformWayCreateSave</Save>
+    </concentrateAlarmAlarmInformInformWayEdit>
+
+    <concentrateAlarmAlarmInformInformWayEditOfHistoryAlarm>
+        <Edit>AlarmInformInformWayEdit</Edit>
+        <AlarmInformInformWayCreateName>AlarmInformInformWayCreateName</AlarmInformInformWayCreateName>
+        <Save>AlarmInformInformWayCreateSave</Save>
+    </concentrateAlarmAlarmInformInformWayEditOfHistoryAlarm>
+
+    <concentrateAlarmAlarmInformInformWayEditSelect>
+        <Query>AlarmInformInformWayQuery</Query>
+        <QueryName>AlarmInformInformWayQueryName</QueryName>
+        <QueryNotificationType>AlarmInformInformWayQueryEditNotificationType</QueryNotificationType>
+        <QueryNotificationTypeValue>AlarmInformInformWayQueryEditNotificationTypeValue</QueryNotificationTypeValue>
+        <QueryStatus>AlarmInformInformWayQueryEditStatus</QueryStatus>
+        <QueryStatusDisable>AlarmInformInformWayQueryStatusDisable</QueryStatusDisable>
+        <QueryConfirm>AlarmInformInformWayQueryConfirm</QueryConfirm>
+        <ResultEmpty>AlarmInformInformWayQueryResultEmpty</ResultEmpty>
+        <ResultName>AlarmInformInformWayQueryResultName</ResultName>
+        <ResultType>AlarmInformInformWayQueryResultType</ResultType>
+        <ResultEnableLogo>AlarmInformInformWayQueryResultEnableLogo</ResultEnableLogo>
+        <ResultChoose>AlarmInformInformWayQueryResultChoose</ResultChoose>
+        <systemTitleblank>systemTitleblank</systemTitleblank>
+    </concentrateAlarmAlarmInformInformWayEditSelect>
+
+    <concentrateAlarmAlarmInformInformWayEditSelect1>
+        <Query>AlarmInformInformWayQuery</Query>
+        <QueryName>AlarmInformInformWayQueryName</QueryName>
+        <QueryConfirm>AlarmInformInformWayQueryConfirm</QueryConfirm>
+        <ResultChoose>AlarmInformInformWayQueryResultChoose</ResultChoose>
+
+    </concentrateAlarmAlarmInformInformWayEditSelect1>
+
+    <concentrateAlarmAlarmInformInformWayEnable>
+        <QueryClear>AlarmInformInformWayQueryClear</QueryClear>
+        <ResultEnableLogo>AlarmInformInformWayQueryResultEnableLogo</ResultEnableLogo>
+        <ResultChoose>AlarmInformInformWayQueryResultChoose</ResultChoose>
+        <QueryName>AlarmInformInformWayQueryName</QueryName>
+        <QueryConfirm>AlarmInformInformWayQueryConfirm</QueryConfirm>
+        <Enable>AlarmInformInformWayEnable</Enable>
+    </concentrateAlarmAlarmInformInformWayEnable>
+
+    <concentrateAlarmAlarmInformInformWayDisable>
+        <ResultEnableLogo>AlarmInformInformWayQueryResultEnableLogo</ResultEnableLogo>
+        <ResultChoose>AlarmInformInformWayQueryResultChoose</ResultChoose>
+    </concentrateAlarmAlarmInformInformWayDisable>
+
+    <concentrateAlarmAlarmInformInformWayCreateRelatedAlarm>
+        <RelatedAlarm>AlarmInformInformWayCreateRelatedAlarm</RelatedAlarm>
+        <RelatedAlarmFaultRule>AlarmInformInformWaycreateRelatedAlarmFaultRule</RelatedAlarmFaultRule>
+        <RelatedAlarmFaultRuleValue>AlarmInformInformWaycreateRelatedAlarmFaultRuleValue</RelatedAlarmFaultRuleValue>
+        <RelatedAlarmConfirm>AlarmInformInformWaycreateRelatedAlarmConfirm</RelatedAlarmConfirm>
+        <ResultRelatedAlarmSelect>AlarmInformInformWayQueryResultRelatedAlarmSelect</ResultRelatedAlarmSelect>
+        <ResultChoose>AlarmInformInformWayQueryResultChoose</ResultChoose>
+    </concentrateAlarmAlarmInformInformWayCreateRelatedAlarm>
+
+    <concentrateAlarmAlarmInformInformWayDelete>
+        <Delete>AlarmInformInformWayDelete</Delete>
+        <DeleteConfirm>AlarmInformInformWayDeleteConfirm</DeleteConfirm>
+        <DeleteHint>AlarmInformInformWayDeleteHint</DeleteHint>
+        <ResultEmpty>AlarmInformInformWayQueryResultEmpty</ResultEmpty>
+    </concentrateAlarmAlarmInformInformWayDelete>
+
+    <alarmConfigThresholdStrategy>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+
+    </alarmConfigThresholdStrategy>
+
+    <thresholdStrategyCreate>
+        <CreateName>FigurationThresholdStrategyCreateName</CreateName>
+        <CreateEnable>FigurationThresholdStrategyCreateNameEnable</CreateEnable>
+        <CreateDatadomain>FigurationThresholdStrategyCreateDataDomain</CreateDatadomain>
+        <CreateDataDomainValue>FigurationThresholdStrategyCreateDataDomainValue</CreateDataDomainValue>
+        <CreateNodeType>FigurationThresholdStrategyCreateNodeType</CreateNodeType>
+        <CreateNodeTypeValue>FigurationThresholdStrategyCreateNodeTypeValue</CreateNodeTypeValue>
+        <CreateKPITypeSelection>FigurationThresholdStrategyCreateKPITypeSelection</CreateKPITypeSelection>
+        <CreateKPITypeSelectionValue>FigurationThresholdStrategyCreateKPITypeSelectionValue</CreateKPITypeSelectionValue>
+        <CreateAlarmTypeSelection>FigurationThresholdStrategyCreateAlarmTypeSelection</CreateAlarmTypeSelection>
+        <CreateAlarmTypeSelectionValue>FigurationThresholdStrategyCreateAlarmTypeSelectionValue</CreateAlarmTypeSelectionValue>
+        <CreateAlarmLevel>FigurationThresholdStrategyCreateAlarmLevel</CreateAlarmLevel>
+        <CreateThresholdRuleGreaterThan>FigurationThresholdStrategyCreateThresholdRuleGreaterThan</CreateThresholdRuleGreaterThan>
+        <CreateThresholdRuleFixedValue>FigurationThresholdStrategyCreateThresholdRuleFixedValue</CreateThresholdRuleFixedValue>
+        <CreateThresholdRuleFixedValueInput>FigurationThresholdStrategyCreateThresholdRuleFixedValueValue</CreateThresholdRuleFixedValueInput>
+        <CreateSave>FigurationThresholdStrategyCreateSave</CreateSave>
+    </thresholdStrategyCreate>
+
+    <thresholdStrategyCreateSelect>
+        <SelectArea>FigurationThresholdStrategySelectArea</SelectArea>
+        <SelectDataDomain>FigurationThresholdStrategySelectDataDomain</SelectDataDomain>
+        <SelectDataDomainValue>FigurationThresholdStrategySelectDataDomainValue</SelectDataDomainValue>
+        <SelectNodeType>FigurationThresholdStrategySelectNodeType</SelectNodeType>
+        <SelectNodeTypeValue>FigurationThresholdStrategySelectNodeTypeValue</SelectNodeTypeValue>
+        <SelectKPI>FigurationThresholdStrategySelectKPI</SelectKPI>
+        <SelectKPIValue>FigurationThresholdStrategySelectKPIValue</SelectKPIValue>
+        <SelectConfirm>FigurationThresholdStrategySelectConfirm</SelectConfirm>
+
+        <SelectResultName>FigurationThresholdStrategySelectResultName</SelectResultName>
+        <SelectResultNodeType>FigurationThresholdStrategySelectResultNodeType</SelectResultNodeType>
+        <SelectResultDomain>FigurationThresholdStrategySelectResultDomain</SelectResultDomain>
+        <SelectResultKPI>FigurationThresholdStrategySelectResultKPI</SelectResultKPI>
+        <SelectResultAlert>FigurationThresholdStrategySelectResultAlert</SelectResultAlert>
+        <SelectResultLevel>FigurationThresholdStrategySelectResultLevel</SelectResultLevel>
+        <SelectResultEnable>FigurationThresholdStrategySelectResultEnable</SelectResultEnable>
+    </thresholdStrategyCreateSelect>
+
+
+    <thresholdStrategyEdit>
+        <CreateName>FigurationThresholdStrategyEditName</CreateName>
+        <CreateEnable>FigurationThresholdStrategyEditNameEnable</CreateEnable>
+        <CreateAlarmLevel>FigurationThresholdStrategyEditAlarmLevel</CreateAlarmLevel>
+        <CreateThresholdRuleGreaterThan>FigurationThresholdStrategyEditThresholdRuleLessThan</CreateThresholdRuleGreaterThan>
+        <CreateThresholdRuleFixedValueInput>FigurationThresholdStrategyEditThresholdRuleFixedValueValue</CreateThresholdRuleFixedValueInput>
+        <CreateSave>FigurationThresholdStrategyEditSave</CreateSave>
+    </thresholdStrategyEdit>
+
+    <thresholdStrategyEditSelect>
+        <SelectArea>FigurationThresholdStrategySelectArea</SelectArea>
+        <SelectDataDomain>FigurationThresholdStrategySelectDataDomain</SelectDataDomain>
+        <SelectDataDomainValue>FigurationThresholdStrategySelectDataDomainValue</SelectDataDomainValue>
+        <SelectNodeType>FigurationThresholdStrategySelectNodeType</SelectNodeType>
+        <SelectNodeTypeValue>FigurationThresholdStrategySelectNodeTypeValue</SelectNodeTypeValue>
+        <SelectKPI>FigurationThresholdStrategySelectKPI</SelectKPI>
+        <SelectKPIValue>FigurationThresholdStrategySelectKPIValue</SelectKPIValue>
+        <SelectConfirm>FigurationThresholdStrategySelectConfirm</SelectConfirm>
+
+        <SelectResultName>FigurationThresholdStrategySelectResultName</SelectResultName>
+        <SelectResultNodeType>FigurationThresholdStrategySelectResultNodeType</SelectResultNodeType>
+        <SelectResultDomain>FigurationThresholdStrategySelectResultDomain</SelectResultDomain>
+        <SelectResultKPI>FigurationThresholdStrategySelectResultKPI</SelectResultKPI>
+        <SelectResultAlert>FigurationThresholdStrategySelectResultAlert</SelectResultAlert>
+        <SelectResultLevel>FigurationThresholdStrategySelectResultLevel</SelectResultLevel>
+        <SelectResultEnable>FigurationThresholdStrategySelectResultEnable</SelectResultEnable>
+    </thresholdStrategyEditSelect>
+
+    <thresholdStrategyDelete>
+        <SelectArea>FigurationThresholdStrategySelectArea</SelectArea>
+        <SelectDataDomain>FigurationThresholdStrategySelectDataDomain</SelectDataDomain>
+        <SelectDataDomainValue>FigurationThresholdStrategySelectDataDomainValue</SelectDataDomainValue>
+        <SelectNodeType>FigurationThresholdStrategySelectNodeType</SelectNodeType>
+        <SelectNodeTypeValue>FigurationThresholdStrategySelectNodeTypeValue</SelectNodeTypeValue>
+        <SelectKPI>FigurationThresholdStrategySelectKPI</SelectKPI>
+        <SelectKPIValue>FigurationThresholdStrategySelectKPIValue</SelectKPIValue>
+        <SelectConfirm>FigurationThresholdStrategySelectConfirm</SelectConfirm>
+    </thresholdStrategyDelete>
+
+    <alarmRecoveryRulesCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmRecoveryRulesCreateBasicSetting>
+
+    <alarmRecoveryRulesCreateRulesConditionSetting>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmRecoveryRulesCreateRulesConditionSetting>
+
+    <alarmRecoveryRulesCreateRulesConditionAdvancedSetting>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmRecoveryRulesCreateRulesConditionAdvancedSetting>
+
+    <alarmRecoveryRulesCreateAlarmRecoverySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmRecoveryRulesCreateAlarmRecoverySetting>
+
+    <denoiseStrategyAlarmRecoveryRulesSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmRecoveryRulesSelectVerify>
+
+
+    <alarmRecoveryRulesEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>startOrClose</startOrClose>
+    </alarmRecoveryRulesEditBasicSetting>
+
+    <alarmRecoveryRulesEditRulesConditionSetting>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmRecoveryRulesEditRulesConditionSetting>
+
+    <alarmRecoveryRulesEditRulesConditionAdvancedSetting>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmRecoveryRulesEditRulesConditionAdvancedSetting>
+
+    <alarmRecoveryRulesEditAlarmClassifySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmRecoveryRulesEditAlarmClassifySetting>
+
+    <denoiseStrategyAlarmRecoveryRulesEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+    </denoiseStrategyAlarmRecoveryRulesEditSelectVerify>
+
+    <denoiseStrategyAlarmRecoveryRulesEditSelect>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </denoiseStrategyAlarmRecoveryRulesEditSelect>
+
+    <denoiseStrategyAlarmRecoveryRulesDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmRecoveryRulesDeleteAndSelectVerify>
+
+
+    <alarmUpgradeRulesCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmUpgradeRulesCreateBasicSetting>
+
+    <alarmUpgradeRulesCreateRulesConditionSetting>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmUpgradeRulesCreateRulesConditionSetting>
+
+    <alarmUpgradeRulesCreateRulesConditionAdvancedSetting>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmUpgradeRulesCreateRulesConditionAdvancedSetting>
+
+    <alarmUpgradeRulesCreateAlarmUpgradeSetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmUpgradeRulesCreateAlarmUpgradeSetting>
+
+    <denoiseStrategyAlarmUpgradeRulesSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmUpgradeRulesSelectVerify>
+
+
+    <alarmUpgradeRulesEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>startOrClose</startOrClose>
+    </alarmUpgradeRulesEditBasicSetting>
+
+    <alarmUpgradeRulesEditRulesConditionSetting>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmUpgradeRulesEditRulesConditionSetting>
+
+    <alarmUpgradeRulesEditRulesConditionAdvancedSetting>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmUpgradeRulesEditRulesConditionAdvancedSetting>
+
+    <alarmUpgradeRulesEditAlarmClassifySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmUpgradeRulesEditAlarmClassifySetting>
+
+    <denoiseStrategyAlarmUpgradeRulesEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+    </denoiseStrategyAlarmUpgradeRulesEditSelectVerify>
+
+    <denoiseStrategyAlarmUpgradeRulesEditSelect>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </denoiseStrategyAlarmUpgradeRulesEditSelect>
+
+    <denoiseStrategyAlarmUpgradeRulesDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmUpgradeRulesDeleteAndSelectVerify>
+
+    <alarmConfigWarningStrategy>
+        <WarningStrategy>alarmConfigWarningStrategy</WarningStrategy>
+    </alarmConfigWarningStrategy>
+
+    <alarmConfigWarningStrategyCreate>
+        <strategyName>WarningStrategyCreateStrategyName</strategyName>
+        <projectName>WarningStrategyCreateProjectName</projectName>
+        <StrategyType>WarningStrategyCreateStrategyType</StrategyType>
+        <StrategyTypeValue>WarningStrategyCreateStrategyTypeValue</StrategyTypeValue>
+        <NextStep>WarningStrategyCreateNextStep</NextStep>
+        <DeleteButton>WarningStrategyCreateDeleteButton</DeleteButton>
+        <NetWorth>WarningStrategyCreateNetWorth</NetWorth>
+        <AlarmLevel>WarningStrategyCreateAlarmLevel</AlarmLevel>
+        <AlarmLevelValue>WarningStrategyCreateAlarmLevelValue</AlarmLevelValue>
+        <AddNewStrategy>WarningStrategyCreateAddNewStrategy</AddNewStrategy>
+        <Submit>WarningStrategyCreateSubmit</Submit>
+    </alarmConfigWarningStrategyCreate>
+
+    <alarmConfigWarningStrategyEdit>
+        <strategyName>WarningStrategyCreateStrategyName</strategyName>
+        <projectName>WarningStrategyCreateProjectName</projectName>
+        <StrategyType>WarningStrategyCreateStrategyType</StrategyType>
+        <StrategyTypeValue>WarningStrategyCreateStrategyTypeValue</StrategyTypeValue>
+        <NextStep>WarningStrategyCreateNextStep</NextStep>
+        <DeleteButton>WarningStrategyCreateDeleteButton</DeleteButton>
+        <NetWorth>WarningStrategyCreateNetWorth</NetWorth>
+        <AlarmLevel>WarningStrategyCreateAlarmLevel</AlarmLevel>
+        <AlarmLevelValue>WarningStrategyCreateAlarmLevelValue</AlarmLevelValue>
+        <AddNewStrategy>WarningStrategyCreateAddNewStrategy</AddNewStrategy>
+        <Submit>WarningStrategyCreateSubmit</Submit>
+    </alarmConfigWarningStrategyEdit>
+
+    <alarmConfigWarningStrategyDelete></alarmConfigWarningStrategyDelete>
+
+    <concentrateAlarmAlarmInformAlarmScreen>
+        <AlarmScreen>concentrateAlarmAlarmScreen</AlarmScreen>
+    </concentrateAlarmAlarmInformAlarmScreen>
+
+    <alarmScreenCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmScreenCreateBasicSetting>
+
+    <alarmScreenCreateRulesConditionSetting>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmScreenCreateRulesConditionSetting>
+
+    <alarmScreenCreateRulesConditionAdvancedSetting>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmScreenCreateRulesConditionAdvancedSetting>
+
+    <alarmScreenCreateAlarmUpgradeSetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmScreenCreateAlarmUpgradeSetting>
+
+    <alarmScreenCreatSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </alarmScreenCreatSelectVerify>
+
+    <alarmScreenEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>alarmScreenStartOrClose</startOrClose>
+    </alarmScreenEditBasicSetting>
+
+    <alarmScreenEditRulesConditionSetting>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmScreenEditRulesConditionSetting>
+
+    <alarmScreenEditRulesConditionAdvancedSetting>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmScreenEditRulesConditionAdvancedSetting>
+
+    <alarmScreenEditAlarmClassifySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmScreenEditAlarmClassifySetting>
+
+    <alarmScreenEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <QueryResultEmptyData>receiveGroupingQueryResultEmptyData</QueryResultEmptyData>
+    </alarmScreenEditSelectVerify>
+
+    <alarmInformAlarmScreenEditSelect>
+        <denoiseStrategySelectArea>AlarmScreenSelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </alarmInformAlarmScreenEditSelect>
+
+    <alarmInformAlarmScreenDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>AlarmScreenSelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <AlarmScreenScreenResultNull>AlarmScreenScreenResultNull</AlarmScreenScreenResultNull>
+    </alarmInformAlarmScreenDeleteAndSelectVerify>
+
+    <alarmInformAlarmScreenStartUsing></alarmInformAlarmScreenStartUsing>
+
+    <alarmInformAlarmScreenBlockUp></alarmInformAlarmScreenBlockUp>
+
+    <denoiseStrategyChooseAlarmRelevanceRules>
+        <allRules>allrules</allRules>
+        <AlarmRelevanceRules>AlarmRelevanceRules</AlarmRelevanceRules>
+    </denoiseStrategyChooseAlarmRelevanceRules>
+
+    <alarmRelevanceRulesCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmRelevanceRulesCreateBasicSetting>
+
+    <alarmRelevanceRulesCreateRootAlarmSetting>
+        <rootJurisdictionDomain>alarmRelevanceRootJurisdictionDomain</rootJurisdictionDomain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>alarmRelevanceNodeType</type>
+        <chooseType>choosetype</chooseType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmRelevanceRulesCreateRootAlarmSetting>
+
+    <alarmRelevanceRulesCreateRulesAdvancedSetting>
+        <nextstep>rulesconditionadvancedconfignextstep</nextstep>
+    </alarmRelevanceRulesCreateRulesAdvancedSetting>
+
+
+    <alarmRelevanceRulesCreateAffectAlarmSettingCreate>
+        <CreateArea>alarmRelevanceAffectAlarmSettingCreateArea</CreateArea>
+        <CreateButton>alarmRelevanceAffectAlarmSettingCreateButton</CreateButton>
+        <Domain>alarmRelevanceAffectAlarmSettingCreateDomain</Domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>alarmRelevanceAffectAlarmSettingCreateNodeType</type>
+        <chooseType>choosetype</chooseType>
+        <save>alarmRelevanceAffectAlarmSettingCreateSave</save>
+        <ResultsNodeType>alarmRelevanceAffectAlarmSettingResultNodeType</ResultsNodeType>
+        <NodeRelation>alarmRelevanceAffectAlarmSettingCreateNodeRelation</NodeRelation>
+        <NodeRelationValue>alarmRelevanceAffectAlarmSettingCreateNodeRelationValue</NodeRelationValue>
+        <ChooseResult>alarmRelevanceAffectAlarmSettingChooseResult</ChooseResult>
+
+    </alarmRelevanceRulesCreateAffectAlarmSettingCreate>
+
+    <alarmRelevanceRulesCreateAffectAlarmSettingEdit>
+        <EditButton>alarmRelevanceAffectAlarmSettingEditButton</EditButton>
+        <type>alarmRelevanceAffectAlarmSettingCreateNodeType</type>
+        <chooseType>choosetype2</chooseType>
+        <save>alarmRelevanceAffectAlarmSettingCreateSave</save>
+        <ResultsNodeType>alarmRelevanceAffectAlarmSettingResultNodeType</ResultsNodeType>
+        <ChooseResult>alarmRelevanceAffectAlarmSettingChooseResult</ChooseResult>
+        <NodeRelation>alarmRelevanceAffectAlarmSettingCreateNodeRelation</NodeRelation>
+        <NodeRelationValue>alarmRelevanceAffectAlarmSettingCreateNodeRelationValue</NodeRelationValue>
+    </alarmRelevanceRulesCreateAffectAlarmSettingEdit>
+
+    <alarmRelevanceRulesCreateAffectAlarmSettingDelete>
+        <ChooseResult>alarmRelevanceAffectAlarmSettingChooseResult</ChooseResult>
+        <DeleteButton>alarmRelevanceAffectAlarmSettingDeleteButton</DeleteButton>
+        <ResultEmpty>alarmRelevanceAffectAlarmSettingResultIsEmpty</ResultEmpty>
+    </alarmRelevanceRulesCreateAffectAlarmSettingDelete>
+
+    <alarmRelevanceRulesCreateAffectAlarmSettingSave>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmRelevanceRulesCreateAffectAlarmSettingSave>
+
+    <alarmRelevanceRulesCreateSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </alarmRelevanceRulesCreateSelectVerify>
+
+    <alarmRelevanceRulesEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>startOrClose</startOrClose>
+    </alarmRelevanceRulesEditBasicSetting>
+
+    <alarmRelevanceRulesEditRulesConditionSetting>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmRelevanceRulesEditRulesConditionSetting>
+
+    <alarmRelevanceRulesEditRulesConditionAdvancedSetting>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+    </alarmRelevanceRulesEditRulesConditionAdvancedSetting>
+
+    <alarmRelevanceRulesEditAlarmClassifySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmRelevanceRulesEditAlarmClassifySetting>
+
+    <denoiseStrategyalarmRelevanceRulesEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+    </denoiseStrategyalarmRelevanceRulesEditSelectVerify>
+
+    <denoiseStrategyAlarmRelevanceRulesDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyAlarmRelevanceRulesDeleteAndSelectVerify>
+
+    <denoiseStrategyAlarmRelevanceRulesEditSelect>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </denoiseStrategyAlarmRelevanceRulesEditSelect>
+
+    <alarmFilterRulesCreateBasicSetting>
+        <rulesName>rulesname</rulesName>
+        <priority>priority</priority>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+    </alarmFilterRulesCreateBasicSetting>
+
+    <alarmFilterRulesCreateRulesConditionSetting>
+        <domain>domain</domain>
+        <chooseDomain>choosedomain</chooseDomain>
+        <type>type</type>
+        <chooseType>choosetype</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>choosealarmtype</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmFilterRulesCreateRulesConditionSetting>
+
+    <alarmFilterRulesCreateRulesConditionAdvancedSetting>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilter</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmFilterRulesCreateRulesConditionAdvancedSetting>
+
+
+    <denoiseStrategyalarmFilterRulesSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyalarmFilterRulesSelectVerify>
+
+
+    <alarmFilterRulesEditBasicSetting>
+        <edit>edit</edit>
+        <priorityLow>priorityLow</priorityLow>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <startOrClose>startOrClose</startOrClose>
+    </alarmFilterRulesEditBasicSetting>
+
+    <alarmFilterRulesEditRulesConditionSetting>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    </alarmFilterRulesEditRulesConditionSetting>
+
+    <alarmFilterRulesEditRulesConditionAdvancedSetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmFilterRulesEditRulesConditionAdvancedSetting>
+
+    <alarmFilterRulesEditAlarmClassifySetting>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    </alarmFilterRulesEditAlarmClassifySetting>
+
+    <denoiseStrategyalarmFilterRulesEditSelectVerify>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <selectChooseStatus>selectChooseStatus</selectChooseStatus>
+        <selectChooseStatusStartUsing>selectChooseStatusStartUsing</selectChooseStatusStartUsing>
+        <selectChooseStatusBlockUp>selectChooseStatusBlockUp</selectChooseStatusBlockUp>
+        <selectChooseRules>selectChooseRules</selectChooseRules>
+        <alarmRulesListNumber>alarmRulesListNumber</alarmRulesListNumber>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+    </denoiseStrategyalarmFilterRulesEditSelectVerify>
+
+    <denoiseStrategyalarmFilterRulesEditSelect>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+    </denoiseStrategyalarmFilterRulesEditSelect>
+
+    <denoiseStrategyalarmFilterRulesDeleteAndSelectVerify>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+
+        <delete>delete</delete>
+        <deleteHint>deletehint</deleteHint>
+        <deleteAffirm>deleteaffirm</deleteAffirm>
+        <denoiseStrategySelectArea>denoiseStrategySelectArea</denoiseStrategySelectArea>
+        <selectRulesName>selectrulesname</selectRulesName>
+        <Clear>CentralizedAlarmSelectCollectClear</Clear>
+        <alarmRulesListNumberValue>alarmRulesListNumberValue</alarmRulesListNumberValue>
+    </denoiseStrategyalarmFilterRulesDeleteAndSelectVerify>
+
+    <resourceManagement>
+        <resourceManagement>resourceManagement</resourceManagement>
+    </resourceManagement>
+
+    <resourceModel>
+        <resourceModel>resourceModel</resourceModel>
+    </resourceModel>
+
+    <resourceExample>
+        <resourceExample>resourceExample</resourceExample>
+    </resourceExample>
+
+    <automaticDiscovery>
+        <automaticDiscoveryArea>automaticDiscoveryArea</automaticDiscoveryArea>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+    </automaticDiscovery>
+
+    <discoveryRule>
+        <discoveryRule>discoveryRule</discoveryRule>
+    </discoveryRule>
+
+    <automaticDiscoveryDiscoveryList>
+        <automaticDiscoveryDiscoveryList>automaticDiscoveryDiscoveryList</automaticDiscoveryDiscoveryList>
+    </automaticDiscoveryDiscoveryList>
+
+    <resourceModelCreateCIType>
+        <URMPButton>resourceModelURMPButton</URMPButton>
+        <add>resourceModelURMPAdd</add>
+        <DisplayName>URMPAddDisplayName</DisplayName>
+        <Name>URMPAddName</Name>
+        <Save>URMPAddSave</Save>
+    </resourceModelCreateCIType>
+
+    <resourceModelCreateCITypeVerify>
+        <resourceModelTree>resourceModelTree</resourceModelTree>
+    </resourceModelCreateCITypeVerify>
+
+    <resourceModelEditCIType>
+        <createDisplayNameButton>createDisplayNameButton</createDisplayNameButton>
+        <resourceModelEditButton>resourceModelEditButton</resourceModelEditButton>
+        <DisplayName>URMPAddDisplayName</DisplayName>
+        <Name>URMPAddName</Name>
+        <URMPEditSave>URMPEditSave</URMPEditSave>
+    </resourceModelEditCIType>
+
+    <resourceModelEditCITypeVerify>
+        <resourceModelTree>resourceModelTree</resourceModelTree>
+    </resourceModelEditCITypeVerify>
+
+    <resourceModelDeleteCIType>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+        <delete>resourceModelDeleteButton</delete>
+        <URMPButton>resourceModelURMPButton</URMPButton>
+
+    </resourceModelDeleteCIType>
+
+    <resourceModelDeleteCITypeVerify>
+        <resourceModelTree>resourceModelTree</resourceModelTree>
+    </resourceModelDeleteCITypeVerify>
+
+    <resourceModelCreateCITypeAttribute>
+        <choosetype2>choosetype2</choosetype2>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+        <CITypeAttributeCreateDisplayName>CITypeAttributeCreateDisplayName</CITypeAttributeCreateDisplayName>
+        <CITypeAttributeCreateAttributeName>CITypeAttributeCreateAttributeName</CITypeAttributeCreateAttributeName>
+        <CITypeAttributeCreateDataType>CITypeAttributeCreateDataType</CITypeAttributeCreateDataType>
+        <CITypeAttributeCreateDataTypeValue>CITypeAttributeCreateDataTypeValue</CITypeAttributeCreateDataTypeValue>
+        <CITypeAttributeCreateDisplayType>CITypeAttributeCreateDisplayType</CITypeAttributeCreateDisplayType>
+        <CITypeAttributeCreateDisplayTypeValue>CITypeAttributeCreateDisplayTypeValue</CITypeAttributeCreateDisplayTypeValue>
+        <CITypeAttributeCreateGroup>CITypeAttributeCreateGroup</CITypeAttributeCreateGroup>
+        <CITypeAttributeCreateGroupValue>CITypeAttributeCreateGroupValue</CITypeAttributeCreateGroupValue>
+        <CITypeAttributeCreateSave>CITypeAttributeCreateSave</CITypeAttributeCreateSave>
+    </resourceModelCreateCITypeAttribute>
+
+    <resourceModelCreateCITypeAttributeVerify>
+        <CITypeAttributeSelectArea>CITypeAttributeSelectArea</CITypeAttributeSelectArea>
+        <CITypeAttributeSelectDisplayName>CITypeAttributeSelectDisplayName</CITypeAttributeSelectDisplayName>
+        <CITypeAttributeSelectAttributeName>CITypeAttributeSelectAttributeName</CITypeAttributeSelectAttributeName>
+        <CITypeAttributeSelectAffirm>CITypeAttributeSelectAffirm</CITypeAttributeSelectAffirm>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+
+        <CITypeAttributeSelectResult>CITypeAttributeSelectResult</CITypeAttributeSelectResult>
+    </resourceModelCreateCITypeAttributeVerify>
+
+    <resourceModelEditCITypeAttribute>
+        <CITypeAttributeCreateDisplayName>CITypeAttributeCreateDisplayName</CITypeAttributeCreateDisplayName>
+        <CITypeAttributeCreateAttributeName>CITypeAttributeCreateAttributeName</CITypeAttributeCreateAttributeName>
+        <CITypeAttributeCreateSave>CITypeAttributeCreateSave</CITypeAttributeCreateSave>
+    </resourceModelEditCITypeAttribute>
+
+    <resourceModelEditCITypeAttributeVerify>
+        <CITypeAttributeSelectArea>CITypeAttributeSelectArea</CITypeAttributeSelectArea>
+        <CITypeAttributeSelectDisplayName>CITypeAttributeSelectDisplayName</CITypeAttributeSelectDisplayName>
+        <CITypeAttributeSelectAttributeName>CITypeAttributeSelectAttributeName</CITypeAttributeSelectAttributeName>
+        <CITypeAttributeSelectAffirm>CITypeAttributeSelectAffirm</CITypeAttributeSelectAffirm>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+        <CITypeAttributeSelectResult>CITypeAttributeSelectResult</CITypeAttributeSelectResult>
+    </resourceModelEditCITypeAttributeVerify>
+
+    <resourceModelDeleteCITypeAttribute></resourceModelDeleteCITypeAttribute>
+
+    <resourceModelDeleteCITypeAttributeVerify>
+        <CITypeAttributeSelectArea>CITypeAttributeSelectArea</CITypeAttributeSelectArea>
+        <CITypeAttributeSelectDisplayName>CITypeAttributeSelectDisplayName</CITypeAttributeSelectDisplayName>
+        <CITypeAttributeSelectAttributeName>CITypeAttributeSelectAttributeName</CITypeAttributeSelectAttributeName>
+        <CITypeAttributeSelectAffirm>CITypeAttributeSelectAffirm</CITypeAttributeSelectAffirm>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+        <CITypeAttributeSelectResultIsNull>CITypeAttributeSelectResultIsNull</CITypeAttributeSelectResultIsNull>
+    </resourceModelDeleteCITypeAttributeVerify>
+
+    <resourceModelCreateCITypeRelationAttribute>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+
+        <CITypeRelationAttribute>CITypeRelationAttribute</CITypeRelationAttribute>
+        <CITypeRelationAttributeCreateAttributeName>CITypeRelationAttributeCreateAttributeName</CITypeRelationAttributeCreateAttributeName>
+        <CITypeRelationAttributeCreateDisplayName>CITypeRelationAttributeCreateDisplayName</CITypeRelationAttributeCreateDisplayName>
+        <CITypeRelationAttributeCreateTarget>CITypeRelationAttributeCreateTarget</CITypeRelationAttributeCreateTarget>
+        <CITypeRelationAttributeCreateTargetValue>CITypeRelationAttributeCreateTargetValue</CITypeRelationAttributeCreateTargetValue>
+        <CITypeRelationAttributeCreateMapType>CITypeRelationAttributeCreateMapType</CITypeRelationAttributeCreateMapType>
+        <CITypeRelationAttributeCreateMapTypeValue>CITypeRelationAttributeCreateMapTypeValue</CITypeRelationAttributeCreateMapTypeValue>
+        <CITypeRelationAttributeCreateGroup>CITypeRelationAttributeCreateGroup</CITypeRelationAttributeCreateGroup>
+        <CITypeRelationAttributeCreateGroupValue>CITypeRelationAttributeCreateGroupValue</CITypeRelationAttributeCreateGroupValue>
+        <CITypeRelationAttributeCreateRelationType>CITypeRelationAttributeCreateRelationType</CITypeRelationAttributeCreateRelationType>
+        <CITypeRelationAttributeCreateRelationTypeValue>CITypeRelationAttributeCreateRelationTypeValue</CITypeRelationAttributeCreateRelationTypeValue>
+        <CITypeAttributeCreateSave>CITypeAttributeCreateSave</CITypeAttributeCreateSave>
+
+    </resourceModelCreateCITypeRelationAttribute>
+
+    <resourceModelCreateCITypeRelationAttributeVerify>
+        <CITypeRelationAttributeSelectArea>CITypeRelationAttributeSelectArea</CITypeRelationAttributeSelectArea>
+        <CITypeRelationAttributeSelectDisplayName>CITypeRelationAttributeSelectDisplayName</CITypeRelationAttributeSelectDisplayName>
+        <CITypeRelationAttributeSelectAttributeName>CITypeRelationAttributeSelectAttributeName</CITypeRelationAttributeSelectAttributeName>
+        <CITypeRelationAttributeSelectAffirm>CITypeRelationAttributeSelectAffirm</CITypeRelationAttributeSelectAffirm>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+
+        <CITypeRelationAttribute>CITypeRelationAttribute</CITypeRelationAttribute>
+
+        <CITypeRelationAttributeSelectResult>CITypeRelationAttributeSelectResult</CITypeRelationAttributeSelectResult>
+    </resourceModelCreateCITypeRelationAttributeVerify>
+
+    <resourceModelEditCITypeRelationAttribute>
+        <ResultChoose>CITypeRelationAttributeSelectResultChoose</ResultChoose>
+        <CITypeRelationAttributeCreateAttributeName>CITypeRelationAttributeCreateAttributeName</CITypeRelationAttributeCreateAttributeName>
+        <CITypeRelationAttributeCreateDisplayName>CITypeRelationAttributeCreateDisplayName</CITypeRelationAttributeCreateDisplayName>
+        <CITypeAttributeCreateSave>CITypeAttributeCreateSave</CITypeAttributeCreateSave>
+    </resourceModelEditCITypeRelationAttribute>
+
+    <resourceModelEditCITypeRelationAttributeVerify>
+        <CITypeRelationAttributeSelectArea>CITypeRelationAttributeSelectArea</CITypeRelationAttributeSelectArea>
+        <CITypeRelationAttributeSelectDisplayName>CITypeRelationAttributeSelectDisplayName</CITypeRelationAttributeSelectDisplayName>
+        <CITypeRelationAttributeSelectAttributeName>CITypeRelationAttributeSelectAttributeName</CITypeRelationAttributeSelectAttributeName>
+        <CITypeRelationAttributeSelectAffirm>CITypeRelationAttributeSelectAffirm</CITypeRelationAttributeSelectAffirm>
+
+        <CITypeRelationAttributeSelectResult>CITypeRelationAttributeSelectResult</CITypeRelationAttributeSelectResult>
+        <CITypeRelationAttribute>CITypeRelationAttribute</CITypeRelationAttribute>
+    </resourceModelEditCITypeRelationAttributeVerify>
+
+    <resourceModelDeleteCITypeRelationAttribute>
+        <ResultChoose>CITypeRelationAttributeSelectResultChoose</ResultChoose>
+        <CITypeRelationAttribute>CITypeRelationAttribute</CITypeRelationAttribute>
+    </resourceModelDeleteCITypeRelationAttribute>
+
+    <resourceModelDeleteCITypeRelationAttributeVerify>
+        <SelectArea>CITypeRelationAttributeSelectArea</SelectArea>
+        <DisplayName>CITypeRelationAttributeSelectDisplayName</DisplayName>
+        <AttributeName>CITypeRelationAttributeSelectAttributeName</AttributeName>
+        <Affirm>CITypeRelationAttributeSelectAffirm</Affirm>
+        <ResultEmpty>CITypeRelationAttributeSelectResultEmpty</ResultEmpty>
+    </resourceModelDeleteCITypeRelationAttributeVerify>
+
+    <resourceModelSelectCITypeOperationLog>
+        <editDisplayNameButton>editDisplayNameButton</editDisplayNameButton>
+
+        <SelectArea>CITypeOperationLogSelectArea</SelectArea>
+        <OperationLog>OperationLog</OperationLog>
+        <OperationNodeName>CITypeOperationLogSelectOperationNodeName</OperationNodeName>
+        <Affirm>CITypeOperationLogSelectAffirm</Affirm>
+        <SelectResultOperationVersion>CITypeOperationLogSelectResultOperationVersion</SelectResultOperationVersion>
+    </resourceModelSelectCITypeOperationLog>
+
+    <resourceModelSelectCITypeVersion>
+        <Version>CITypeVersion</Version>
+        <SelectArea>CITypeVersionSelectArea</SelectArea>
+        <OperationVersionNumber>CITypeVersionSelectOperationVersionNumber</OperationVersionNumber>
+        <Affirm>CITypeVersionSelectAffirm</Affirm>
+        <VersionNumber>CITypeVersionSelectResultVersionNumber</VersionNumber>
+    </resourceModelSelectCITypeVersion>
+
+
+    <resourceModelCITypeVersionExport>
+        <exprot>CentralizedAlarmExport</exprot>
+        <ResultChoose>CITypeVersionSelectResultChoose</ResultChoose>
+    </resourceModelCITypeVersionExport>
+
+    <resourceModelDeleteCITypeInterface>
+        <url>http://192.168.20.121:48080/urmp/api/rest/post/modelService/remove</url>
+        <params>['新增URMP名称','administrator',['']]</params>
+    </resourceModelDeleteCITypeInterface>
+
+    <resourceManagementResourceTreeSelect>
+        <selectHint>resourceModelSelectHintTitle</selectHint>
+        <selectInputBox>resourceModelSelectInputBox</selectInputBox>
+        <resourceModelSelectButton>resourceModelSelectButton</resourceModelSelectButton>
+        <ResourceTreeResource>resourceManangementResourceTreeResource</ResourceTreeResource>
+        <urmp>URMP</urmp>
+    </resourceManagementResourceTreeSelect>
+
+
+    <resourceExampleExampleListCreate>
+        <ResourceTreeResource>resourceManangementResourceTreeResource</ResourceTreeResource>
+        <Title>ResourceExampleExampleListCreateTitle</Title>
+
+        <Name>ResourceExampleCreateName</Name>
+        <DisplayName>ResourceExampleCreateDisplayName</DisplayName>
+        <Domain>ResourceExampleCreateDomain</Domain>
+        <Save>ResourceExampleCreateSave</Save>
+    </resourceExampleExampleListCreate>
+
+    <resourceExampleExampleListCreateVerify>
+        <ScreenArea>ResourceExampleScreenArea</ScreenArea>
+        <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
+        <Confirm>ResourceExampleScreenConfirm</Confirm>
+        <screenResult>ResourceExampleScreenResultDisplayName</screenResult>
+    </resourceExampleExampleListCreateVerify>
+
+    <resourceExampleExampleListEdit>
+        <ResultChoose>ResourceExampleScreenResultChoose</ResultChoose>
+        <Title>ResourceExampleExampleListEditTitle</Title>
+        <DisplayName>ResourceExampleEditDisplayName</DisplayName>
+        <Save>ResourceExampleCreateSave</Save>
+    </resourceExampleExampleListEdit>
+
+    <resourceExampleExampleListEditVerify>
+        <ScreenArea>ResourceExampleScreenArea</ScreenArea>
+        <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
+        <Confirm>ResourceExampleScreenConfirm</Confirm>
+        <screenResult>ResourceExampleScreenResultDisplayName</screenResult>
+    </resourceExampleExampleListEditVerify>
+
+    <resourceExampleExampleListDelete>
+        <ResultChoose>ResourceExampleScreenResultChoose</ResultChoose>
+    </resourceExampleExampleListDelete>
+
+    <resourceExampleExampleListDeleteVerify>
+        <ScreenArea>ResourceExampleScreenArea</ScreenArea>
+        <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
+        <Confirm>ResourceExampleScreenConfirm</Confirm>
+    </resourceExampleExampleListDeleteVerify>
+
+
+    <resourceExampleOperationLog>
+        <ResourceTreeResource>resourceManangementResourceTreeResource</ResourceTreeResource>
+
+        <SelectArea>CITypeOperationLogSelectArea</SelectArea>
+        <OperationLog>OperationLog</OperationLog>
+        <OperationNodeName>CITypeOperationLogSelectOperationNodeName</OperationNodeName>
+        <Affirm>CITypeOperationLogSelectAffirm</Affirm>
+        <ScreenResult>ResourceExampleOperationLogScreenResult</ScreenResult>
+    </resourceExampleOperationLog>
+
+    <discoveryListClassifyScreen>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+        <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
+        <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
+        <Confirm>DiscoveryListScreenConfirm</Confirm>
+        <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
+    </discoveryListClassifyScreen>
+
+    <discoveryListClassify>
+        <ResultChoose>SelectResultOne</ResultChoose>
+        <Classify>DiscoveryListClassify</Classify>
+        <NodeTypeButton>DiscoveryListClassifyNodeTypeButton</NodeTypeButton>
+        <NodeTypeValue>CentralizedAlarmSelectCITypeValue</NodeTypeValue>
+        <Save>DiscoveryListClassifySave</Save>
+    </discoveryListClassify>
+
+    <discoveryListClassifyVerifyOfDiscoveryList>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+        <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
+
+        <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
+        <Confirm>DiscoveryListScreenConfirm</Confirm>
+        <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
+        <ConfirmClassify>DiscoveryListConfirmClassify</ConfirmClassify>
+    </discoveryListClassifyVerifyOfDiscoveryList>
+
+    <discoveryListClassifyVerifyOfResourceExample>
+        <resourceExample>resourceExample</resourceExample>
+        <OperationSystem>OperationSystem</OperationSystem>
+        <ScreenArea>ResourceExampleScreenArea</ScreenArea>
+        <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
+        <Confirm>ResourceExampleScreenConfirm</Confirm>
+        <screenResult>ResourceExampleScreenResultDisplayName</screenResult>
+
+        <ResultChoose>ResourceExampleScreenResultChoose</ResultChoose>
+
+        <ScreenArea>ResourceExampleScreenArea</ScreenArea>
+        <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
+
+        <automaticDiscoveryArea>automaticDiscoveryArea</automaticDiscoveryArea>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+        <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
+
+        <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
+        <Confirm1>DiscoveryListScreenConfirm</Confirm1>
+        <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
+        <ConfirmClassify>DiscoveryListConfirmClassify</ConfirmClassify>
+        <SelectArea>DiscoveryListScreenArea</SelectArea>
+
+    </discoveryListClassifyVerifyOfResourceExample>
+
+    <discoveryListDiscardScreen>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+        <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
+        <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
+        <Confirm>DiscoveryListScreenConfirm</Confirm>
+        <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
+    </discoveryListDiscardScreen>
+
+    <discoveryListDiscard>
+        <ResultChoose>SelectResultOne</ResultChoose>
+        <Discard>DiscoveryListDiscard</Discard>
+    </discoveryListDiscard>
+
+
+    <discoveryListDiscardVerify>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+        <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
+        <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
+        <Confirm>DiscoveryListScreenConfirm</Confirm>
+        <ConfirmClassify>DiscoveryListConfirmClassify</ConfirmClassify>
+    </discoveryListDiscardVerify>
+
+    <discoveryRuleCreate>
+        <name>DiscoveryRuleRuleName</name>
+        <ipRange>DiscoveryRuleIPRange</ipRange>
+        <timeInterval>DiscoveryRuleTimeInterval</timeInterval>
+        <enable>DiscoveryRuleEnable</enable>
+        <save>DiscoveryRuleSave</save>
+        <collectionPlugin>DiscoveryRuleCollectionPlugin</collectionPlugin>
+        <collectionPluginValue>DiscoveryRuleCollectionPluginValue</collectionPluginValue>
+    </discoveryRuleCreate>
+
+    <discoveryRuleCreateVerify>
+        <area>DiscoveryRuleScreenArea</area>
+        <ruleName>DiscoveryRuleScreenRuleName</ruleName>
+        <confirm>DiscoveryRuleScreenConfirm</confirm>
+        <resultName>SelectResultTwo</resultName>
+        <resultEnable>DiscoveryRuleScreenResultEnable</resultEnable>
+
+        <userNotification>usernotification</userNotification>
+        <userNotificationNumber>userNotificationNumber</userNotificationNumber>
+    </discoveryRuleCreateVerify>
+
+    <discoveryRuleEdit>
+        <name>DiscoveryRuleRuleName</name>
+        <enable>DiscoveryRuleEnable</enable>
+        <save>DiscoveryRuleSave</save>
+    </discoveryRuleEdit>
+
+    <discoveryRuleEditVerify>
+        <area>DiscoveryRuleScreenArea</area>
+        <ruleName>DiscoveryRuleScreenRuleName</ruleName>
+        <confirm>DiscoveryRuleScreenConfirm</confirm>
+        <resultName>SelectResultTwo</resultName>
+        <resultEnable>DiscoveryRuleScreenResultEnable</resultEnable>
+    </discoveryRuleEditVerify>
+
+    <discoveryRuleEnable>
+        <area>DiscoveryRuleScreenArea</area>
+        <ruleName>DiscoveryRuleScreenRuleName</ruleName>
+        <confirm>DiscoveryRuleScreenConfirm</confirm>
+        <resultEnable>DiscoveryRuleScreenResultEnable</resultEnable>
+    </discoveryRuleEnable>
+
+    <discoveryRuleDisenable>
+        <area>DiscoveryRuleScreenArea</area>
+        <ruleName>DiscoveryRuleScreenRuleName</ruleName>
+        <confirm>DiscoveryRuleScreenConfirm</confirm>
+        <resultEnable>DiscoveryRuleScreenResultEnable</resultEnable>
+    </discoveryRuleDisenable>
+
+    <discoveryRuleDelete>
+        <area>DiscoveryRuleScreenArea</area>
+        <ruleName>DiscoveryRuleScreenRuleName</ruleName>
+        <confirm>DiscoveryRuleScreenConfirm</confirm>
+    </discoveryRuleDelete>
+
+    <viewCenter>
+        <ViewCenter>ViewCenter</ViewCenter>
+        <Area>ViewCenterArea</Area>
+    </viewCenter>
+
+    <viewCanvas>
+        <ViewCenter>ViewCenter</ViewCenter>
+    </viewCanvas>
+
+    <viewCanvasCreate>
+        <ViewCenter>ViewCenter</ViewCenter>
+        <Area>ViewCenterArea</Area>
+        <ViewCanvas>ViewCanvas</ViewCanvas>
+        <Title>ViewCanvasCreateTitle</Title>
+        <Name>ViewCanvasCreateName</Name>
+        <Save>ViewCanvasCreateSave</Save>
+    </viewCanvasCreate>
+
+    <viewCanvasCreateVerify>
+        <Area>ViewCanvasScreenArea</Area>
+        <Name>ViewCanvasScreenViewName</Name>
+        <Confirm>ViewCanvasScreenConfirm</Confirm>
+    </viewCanvasCreateVerify>
+
+    <viewCanvasEdit>
+        <Name>ViewCanvasCreateName</Name>
+        <Save>ViewCanvasCreateSave</Save>
+    </viewCanvasEdit>
+
+    <viewCanvasEditVerify>
+        <Area>ViewCanvasScreenArea</Area>
+        <Name>ViewCanvasScreenViewName</Name>
+        <Confirm>ViewCanvasScreenConfirm</Confirm>
+    </viewCanvasEditVerify>
+
+    <viewCanvasCopyAndVerify>
+        <Area>ViewCanvasScreenArea</Area>
+        <Name>ViewCanvasScreenViewName</Name>
+        <Confirm>ViewCanvasScreenConfirm</Confirm>
+    </viewCanvasCopyAndVerify>
+
+    <viewCanvasDesign>
+        <ViewCanvas>ViewCanvas</ViewCanvas>
+        <Area>ViewCanvasScreenArea</Area>
+        <Name>ViewCanvasScreenViewName</Name>
+        <Confirm>ViewCanvasScreenConfirm</Confirm>
+        <viewCanvasDesignModul>viewCanvasDesignModul</viewCanvasDesignModul>
+        <viewCanvasDesignModulTwo>viewCanvasDesignModulTwo</viewCanvasDesignModulTwo>
+        <viewCanvasDesignModulTwoDragAfter>viewCanvasDesignModulTwoDragAfter</viewCanvasDesignModulTwoDragAfter>
+        <viewCanvasDesignModulDataSource>viewCanvasDesignModulDataSource</viewCanvasDesignModulDataSource>
+        <DesignModulDataSourceSQLDataSet>DesignModulDataSourceSQLDataSet</DesignModulDataSourceSQLDataSet>
+        <DesignModulDataSourceDataSet>DesignModulDataSourceDataSet</DesignModulDataSourceDataSet>
+        <DesignModulDataSourceDataSetEditSQLDataSet>DesignModulDataSourceDataSetEditSQLDataSet</DesignModulDataSourceDataSetEditSQLDataSet>
+        <DesignModulDataSourceDataValidColumn>DesignModulDataSourceDataValidColumn</DesignModulDataSourceDataValidColumn>
+        <DesignModulDataSourceDataValidColumnValue>DesignModulDataSourceDataValidColumnValue</DesignModulDataSourceDataValidColumnValue>
+        <DesignModulDataSourceDataYAxis>DesignModulDataSourceDataYAxis</DesignModulDataSourceDataYAxis>
+        <DesignModulDataSourceDataYAxisValue>DesignModulDataSourceDataYAxisValue</DesignModulDataSourceDataYAxisValue>
+        <DesignModulDataSourceDataPreview>DesignModulDataSourceDataPreview</DesignModulDataSourceDataPreview>
+        <viewCanvasDesignSave>viewCanvasDesignSave</viewCanvasDesignSave>
+        <viewCanvasDesignSaveConfirm>viewCanvasDesignSaveConfirm</viewCanvasDesignSaveConfirm>
+        <viewCanvasDesignExit>viewCanvasDesignExit</viewCanvasDesignExit>
+        <viewCanvasDesignExitConfirm>viewCanvasDesignExitConfirm</viewCanvasDesignExitConfirm>
+    </viewCanvasDesign>
+
+    <viewCanvasDelete>
+        <ViewCanvas>ViewCanvas</ViewCanvas>
+        <Area>ViewCanvasScreenArea</Area>
+        <Name>ViewCanvasScreenViewName</Name>
+        <Confirm>ViewCanvasScreenConfirm</Confirm>
+        <deleleConfirm>ViewCanvasDeleteConfirm</deleleConfirm>
+    </viewCanvasDelete>
+
+    <viewCanvasDeleteVerify>
+        <Area>ViewCanvasScreenArea</Area>
+        <Name>ViewCanvasScreenViewName</Name>
+        <Confirm>ViewCanvasScreenConfirm</Confirm>
+    </viewCanvasDeleteVerify>
+
+    <viewDisplay>
+        <ViewCenter>ViewCenter</ViewCenter>
+        <ViewDisplay>ViewDisplay</ViewDisplay>
+        <AddButton>ViewDisplayAddButton</AddButton>
+        <LeftList>ViewDisplayLeftList</LeftList>
+        <RightList>ViewDisplayRightList</RightList>
+        <RightButton>ViewDisplayRightButton</RightButton>
+        <Save>ViewDisplaySaveButton</Save>
+        <SelectBox>ViewDisplaySelectBox</SelectBox>
+        <ViewResult>ViewDisplayViewResult</ViewResult>
+        <ViewDisplayView>ViewDisplayView</ViewDisplayView>
+        <ViewDisplayViewValue>ViewDisplayViewValue</ViewDisplayViewValue>
+        <ViewDisplayViewControlExit>ViewDisplayViewControlExit</ViewDisplayViewControlExit>
+    </viewDisplay>
+
+    <dataAnalyze>
+        <DataAnalyze>DataAnalyze</DataAnalyze>
+    </dataAnalyze>
+
+    <baselineStrategyCreate>
+        <BaselineStrategy>BaselineStrategy</BaselineStrategy>
+        <BaselineStrategyCreateStrategyName>BaselineStrategyCreateStrategyName</BaselineStrategyCreateStrategyName>
+        <BaselineStrategyCreatePeriodic>BaselineStrategyCreatePeriodic</BaselineStrategyCreatePeriodic>
+        <BaselineStrategyCreateTimeStep>BaselineStrategyCreateTimeStep</BaselineStrategyCreateTimeStep>
+        <BaselineStrategyCreateSampleDensityArea>BaselineStrategyCreateSampleDensityArea</BaselineStrategyCreateSampleDensityArea>
+        <BaselineStrategyCreateTriggerTime>BaselineStrategyCreateTriggerTime</BaselineStrategyCreateTriggerTime>
+        <BaselineStrategyCreateSigma>BaselineStrategyCreateSigma</BaselineStrategyCreateSigma>
+        <Save>BaselineStrategyCreateSave</Save>
+    </baselineStrategyCreate>
+
+    <baselineStrategyCreateVerify>
+        <Area>BaselineStrategyScreenArea</Area>
+        <StrategyName>BaselineStrategyScreenStrategyName</StrategyName>
+        <Confirm>BaselineStrategyScreenConfirm</Confirm>
+    </baselineStrategyCreateVerify>
+
+    <baselineStrategyEdit>
+        <BaselineStrategyCreateStrategyName>BaselineStrategyCreateStrategyName</BaselineStrategyCreateStrategyName>
+        <Save>BaselineStrategyCreateSave</Save>
+    </baselineStrategyEdit>
+
+    <baselineStrategyEditVerify>
+        <BaselineStrategy>BaselineStrategy</BaselineStrategy>
+
+        <Area>BaselineStrategyScreenArea</Area>
+        <StrategyName>BaselineStrategyScreenStrategyName</StrategyName>
+        <Confirm>BaselineStrategyScreenConfirm</Confirm>
+    </baselineStrategyEditVerify>
+
+    <baselineStrategyDelete></baselineStrategyDelete>
+
+    <baselineStrategyDeleteVerify>
+        <Area>BaselineStrategyScreenArea</Area>
+        <StrategyName>BaselineStrategyScreenStrategyName</StrategyName>
+        <Confirm>BaselineStrategyScreenConfirm</Confirm>
+    </baselineStrategyDeleteVerify>
+
+    <baselineApplicationCreate>
+        <BaselineApplication>BaselineApplication</BaselineApplication>
+        <Calculation>BaselineApplicationCreateCalculation</Calculation>
+        <CalculationValue>BaselineApplicationCreateCalculationValue</CalculationValue>
+        <BaselineTitle>BaselineApplicationCreateBaselineTitle</BaselineTitle>
+        <CIType>BaselineApplicationCreateCIType</CIType>
+        <CITypeValue>BaselineApplicationCreateCITypeValue</CITypeValue>
+        <CIExample>BaselineApplicationCreateCIExample</CIExample>
+        <CIExampleValue>BaselineApplicationCreateCIExampleValue</CIExampleValue>
+        <KPI>BaselineApplicationCreateKPI</KPI>
+        <KPIValue>BaselineApplicationCreateKPIValue</KPIValue>
+        <NextStep1>BaselineApplicationCreateNextStep1</NextStep1>
+
+        <CalculationStrategy>BaselineApplicationCreateCalculationStrategy</CalculationStrategy>
+        <CalculationStrategyValue>BaselineApplicationCreateCalculationStrategyValue</CalculationStrategyValue>
+        <NumericalPrecision>BaselineApplicationNumericalPrecision</NumericalPrecision>
+        <NextStep2>BaselineApplicationCreateNextStep2</NextStep2>
+
+        <NextStep3>BaselineApplicationCreateNextStep3</NextStep3>
+
+        <AlarmRules>BaselineApplicationCreateAlarmRules</AlarmRules>
+        <AlarmRulesValue>BaselineApplicationCreateAlarmRulesValue</AlarmRulesValue>
+        <Blank>BaselineApplicationCreateBlank</Blank>
+        <Submit>BaselineApplicationCreateSubmit</Submit>
+        <Enable>BaselineApplicationCreateEnable</Enable>
+    </baselineApplicationCreate>
+
+    <baselineApplicationCreateVerify>
+        <Area>BaselineApplicationScreenArea</Area>
+        <BaselineName>BaselineApplicationScreenBaselineName</BaselineName>
+        <Confirm>BaselineApplicationScreenConfirm</Confirm>
+    </baselineApplicationCreateVerify>
+
+    <baselineApplicationEdit>
+        <BaselineTitle>BaselineApplicationCreateBaselineTitle</BaselineTitle>
+        <NextStep1>BaselineApplicationCreateNextStep1</NextStep1>
+        <NextStep2>BaselineApplicationCreateNextStep2</NextStep2>
+        <NextStep3>BaselineApplicationCreateNextStep3</NextStep3>
+        <Submit>BaselineApplicationCreateSubmit</Submit>
+    </baselineApplicationEdit>
+
+    <baselineApplicationEditVerify>
+        <Area>BaselineApplicationScreenArea</Area>
+        <BaselineName>BaselineApplicationScreenBaselineName</BaselineName>
+        <Confirm>BaselineApplicationScreenConfirm</Confirm>
+    </baselineApplicationEditVerify>
+
+    <baselineApplicationDeleteAndVerify>
+        <Area>BaselineApplicationScreenArea</Area>
+        <BaselineName>BaselineApplicationScreenBaselineName</BaselineName>
+        <Confirm>BaselineApplicationScreenConfirm</Confirm>
+    </baselineApplicationDeleteAndVerify>
+
+    <viewSourceCreate>
+        <ViewData>ViewData</ViewData>
+        <ViewDataArea>ViewDataArea</ViewDataArea>
+        <DataSource>DataSource</DataSource>
+        <DataSourceName>DataSourceName</DataSourceName>
+        <DataSourceDataLibraryType>DataSourceDataLibraryType</DataSourceDataLibraryType>
+        <DataSourceDataLibraryTypeValue>DataSourceDataLibraryTypeValue</DataSourceDataLibraryTypeValue>
+        <DataSourceURLAdress>DataSourceURLAdress</DataSourceURLAdress>
+        <DataSourceUserName>DataSourceUserName</DataSourceUserName>
+        <DataSourcePassword>DataSourcePassword</DataSourcePassword>
+        <DataSourceTestConnect>DataSourceTestConnect</DataSourceTestConnect>
+        <DataSourceTestConnectHint>DataSourceTestConnectHint</DataSourceTestConnectHint>
+        <DataSourceSave>DataSourceSave</DataSourceSave>
+    </viewSourceCreate>
+
+    <viewSourceEdit>
+        <DataSourceName>DataSourceName</DataSourceName>
+        <DataSourceTestConnect>DataSourceTestConnect</DataSourceTestConnect>
+        <DataSourceTestConnectHint>DataSourceTestConnectHint</DataSourceTestConnectHint>
+        <DataSourceSave>DataSourceSave</DataSourceSave>
+    </viewSourceEdit>
+
+    <viewSourceDelete>
+        <ViewData>ViewData</ViewData>
+        <DataSource>DataSource</DataSource>
+    </viewSourceDelete>
+
+    <SQLDataSetCreate>
+        <ViewData>ViewData</ViewData>
+        <SQLDataSet>SQLDataSet</SQLDataSet>
+        <SQLDataSetName>SQLDataSetName</SQLDataSetName>
+        <SQLDataSetCreateDataSource>SQLDataSetCreateDataSource</SQLDataSetCreateDataSource>
+        <SQLDataSetCreateDataSourceValue>SQLDataSetCreateDataSourceValue</SQLDataSetCreateDataSourceValue>
+        <SQLDataSetCreateSQL>SQLDataSetCreateSQL</SQLDataSetCreateSQL>
+        <SQLDataSetCreateSQLValue>SQLDataSetCreateSQLValue</SQLDataSetCreateSQLValue>
+        <SQLDataSetCreatePreview>SQLDataSetCreatePreview</SQLDataSetCreatePreview>
+        <SQLDataSetCreatePreviewResult>SQLDataSetCreatePreviewResult</SQLDataSetCreatePreviewResult>
+        <SQLDataSetCreateSave>SQLDataSetCreateSave</SQLDataSetCreateSave>
+    </SQLDataSetCreate>
+
+    <SQLDataSetCreateVerify>
+        <SQLDataSetScreenArea>SQLDataSetScreenArea</SQLDataSetScreenArea>
+        <SQLDataSetScreenDataSetName>SQLDataSetScreenDataSetName</SQLDataSetScreenDataSetName>
+        <SQLDataSetScreenConfirm>SQLDataSetScreenConfirm</SQLDataSetScreenConfirm>
+    </SQLDataSetCreateVerify>
+
+    <SQLDataSetEdit>
+        <SQLDataSetName>SQLDataSetName</SQLDataSetName>
+        <SQLDataSetCreatePreview>SQLDataSetCreatePreview</SQLDataSetCreatePreview>
+        <SQLDataSetCreatePreviewResult>SQLDataSetCreatePreviewResult</SQLDataSetCreatePreviewResult>
+        <SQLDataSetCreateSave>SQLDataSetCreateSave</SQLDataSetCreateSave>
+    </SQLDataSetEdit>
+
+    <SQLDataSetEditVerify>
+        <SQLDataSetScreenArea>SQLDataSetScreenArea</SQLDataSetScreenArea>
+        <SQLDataSetScreenDataSetName>SQLDataSetScreenDataSetName</SQLDataSetScreenDataSetName>
+        <SQLDataSetScreenConfirm>SQLDataSetScreenConfirm</SQLDataSetScreenConfirm>
+    </SQLDataSetEditVerify>
+
+    <SQLDataSetCopyAndVerify>
+        <SQLDataSetScreenArea>SQLDataSetScreenArea</SQLDataSetScreenArea>
+        <SQLDataSetScreenDataSetName>SQLDataSetScreenDataSetName</SQLDataSetScreenDataSetName>
+        <SQLDataSetScreenConfirm>SQLDataSetScreenConfirm</SQLDataSetScreenConfirm>
+    </SQLDataSetCopyAndVerify>
+
+    <SQLDataSetDeleteAndVerify>
+        <ViewData>ViewData</ViewData>
+        <SQLDataSet>SQLDataSet</SQLDataSet>
+        <SQLDataSetScreenArea>SQLDataSetScreenArea</SQLDataSetScreenArea>
+        <SQLDataSetScreenDataSetName>SQLDataSetScreenDataSetName</SQLDataSetScreenDataSetName>
+        <SQLDataSetScreenConfirm>SQLDataSetScreenConfirm</SQLDataSetScreenConfirm>
+    </SQLDataSetDeleteAndVerify>
+
+
+    <mergeRulesVerifySourceNodeAndRE>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <blank>blank</blank>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <chooseMergeGistSourceNode>来源节点</chooseMergeGistSourceNode>
+
+        <maxMergeNumber>maxMergeNumber</maxMergeNumber>
+        <mergeTimeWindows>mergeTimeWindows</mergeTimeWindows>
+        <maxMergeNumberValue>4</maxMergeNumberValue>
+        <mergeTimeWindowsValue>3</mergeTimeWindowsValue>
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifySourceNodeAndRE>
+
+    <mergeRulesVerifyAlarmTypeAndMergeNum>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeLinux</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeLinux</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterLinux</chooseNodeFilter>
+
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <chooseMergeGistAlarmType>告警类型</chooseMergeGistAlarmType>
+
+        <maxMergeNumber>maxMergeNumber</maxMergeNumber>
+        <mergeTimeWindows>mergeTimeWindows</mergeTimeWindows>
+        <maxMergeNumberValue>3</maxMergeNumberValue>
+        <mergeTimeWindowsValue>4</mergeTimeWindowsValue>
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifyAlarmTypeAndMergeNum>
+
+    <mergeRulesVerifyAlarmTypeAndStrategyException>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifyAlarmTypeAndStrategyException>
+
+    <mergeRulesVerifySourceInstance>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <MergeGistBoxOfSourceInstance>MergeGistBoxOfSourceInstance</MergeGistBoxOfSourceInstance>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifySourceInstance>
+
+    <mergeRulesVerifyAutoRecovery>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeOptionBox>rulesConditionAdvancedConfigMergeOptionBox</MergeOptionBox>
+        <MergeOptionBoxUpdateAlert>MergeOptionBoxUpdateAlert</MergeOptionBoxUpdateAlert>
+        <MergeOptionBoxAutoRecovery>MergeOptionBoxAutoRecovery</MergeOptionBoxAutoRecovery>
+
+        <MergeGistBoxOfSourceInstance>MergeGistBoxOfSourceInstance</MergeGistBoxOfSourceInstance>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <confirmedAlarm>alarmDisplayConfirmedAlarm</confirmedAlarm>
+        <resolvedAlarm>alarmDisplayResolvedAlarm</resolvedAlarm>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifyAutoRecovery>
+
+    <mergeRulesVerifyAlarmLevel>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <MergeGistBoxOfAlarmLevel>MergeGistBoxOfAlarmLevel</MergeGistBoxOfAlarmLevel>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifyAlarmLevel>
+
+    <mergeRulesVerifyCollectorSystem>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <MergeGistBoxOfCollectorSystem>MergeGistBoxOfCollectorSystem</MergeGistBoxOfCollectorSystem>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifyCollectorSystem>
+
+    <mergeRulesVerifyAlarmContent>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <MergeGistBoxOfAlarmContent>MergeGistBoxOfAlarmContent</MergeGistBoxOfAlarmContent>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </mergeRulesVerifyAlarmContent>
+
+    <mergeRulesVerifyAlarmContentAndAbsoluteTime>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <AlarmTimeFilterBox>rulesConditionAdvancedConfigAlarmTimeFilterBox</AlarmTimeFilterBox>
+
+        <alarmTimeFilterOfAbsolute>alarmTimeFilterOfAbsolute</alarmTimeFilterOfAbsolute>
+        <MinTime>alarmTimeFilterOfAbsoluteMinTime</MinTime>
+        <MaxTime>alarmTimeFilterOfAbsoluteMaxTime</MaxTime>
+
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+        <mergeTimeWindows>mergeTimeWindows</mergeTimeWindows>
+        <mergeTimeWindowsValue>600</mergeTimeWindowsValue>
+
+    </mergeRulesVerifyAlarmContentAndAbsoluteTime>
+
+
+    <mergeRulesVerifyDelete></mergeRulesVerifyDelete>
+
+    <filterRulesVerifyFilter>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigSave>rulesconditionadvancedconfigSave</rulesConditionAdvancedConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </filterRulesVerifyFilter>
+
+    <filterRulesVerifyFilterAndStrategyException>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigSave>rulesconditionadvancedconfigSave</rulesConditionAdvancedConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </filterRulesVerifyFilterAndStrategyException>
+
+    <filterRulesVerifyFilterAndRE>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigSave>rulesconditionadvancedconfigSave</rulesConditionAdvancedConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+    </filterRulesVerifyFilterAndRE>
+
+    <filterRulesVerifyDelete></filterRulesVerifyDelete>
+
+
+    <classifyRulesVerifyClassify>
+        <allRules>allrules</allRules>
+        <alarmClassifyRules>alarmclassifyrules</alarmClassifyRules>
+
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <newAlarmType>newalarmtype</newAlarmType>
+        <chooseNewAlarmType>choosenewalarmtype</chooseNewAlarmType>
+        <newAlarmRank>newalarmrank</newAlarmRank>
+        <deselectAll>deselectall</deselectAll>
+        <chooseNewAlarmRank>choosenewalarmrank</chooseNewAlarmRank>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+        <otherInformation>alarmDisplayViewOtherInformation</otherInformation>
+        <otherInformationAlarmType>otherInformationAlarmType</otherInformationAlarmType>
+        <alarmDisplayViewCancel>alarmDisplayViewCancel</alarmDisplayViewCancel>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </classifyRulesVerifyClassify>
+
+
+    <classifyRulesVerifyClassifyAndRE>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+        <otherInformation>alarmDisplayViewOtherInformation</otherInformation>
+        <otherInformationAlarmType>otherInformationAlarmType</otherInformationAlarmType>
+        <alarmDisplayViewCancel>alarmDisplayViewCancel</alarmDisplayViewCancel>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </classifyRulesVerifyClassifyAndRE>
+
+    <classifyRulesVerifyClassifyAndMerge>
+        <allRules>allrules</allRules>
+        <alarmMergeRules>alarmMergeRules</alarmMergeRules>
+
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <chooseMergeGistSourceNode>来源节点</chooseMergeGistSourceNode>
+
+        <maxMergeNumber>maxMergeNumber</maxMergeNumber>
+        <mergeTimeWindows>mergeTimeWindows</mergeTimeWindows>
+        <maxMergeNumberValue>4</maxMergeNumberValue>
+        <mergeTimeWindowsValue>3</mergeTimeWindowsValue>
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayView>CentralizedAlarmView</alarmDisplayView>
+        <otherInformation>alarmDisplayViewOtherInformation</otherInformation>
+        <otherInformationAlarmType>otherInformationAlarmType</otherInformationAlarmType>
+        <alarmDisplayViewCancel>alarmDisplayViewCancel</alarmDisplayViewCancel>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </classifyRulesVerifyClassifyAndMerge>
+
+    <classifyRulesVerifyDelete></classifyRulesVerifyDelete>
+
+    <recoveryRulesVerifyRecoveryAndClearMemoryRE>
+        <allRules>allrules</allRules>
+        <alarmRecoveryRules>alarmRecoveryRules</alarmRecoveryRules>
+
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+
+        <recoveryTimeThreshold>recoveryRulesRecoveryTimeThreshold</recoveryTimeThreshold>
+        <recoveryTimeThresholdValue>1</recoveryTimeThresholdValue>
+
+        <recoveryOption>recoveryOption</recoveryOption>
+        <recoveryOptionSetIgnore>recoveryOptionSetIgnore</recoveryOptionSetIgnore>
+        <recoveryOptionClearMemory>recoveryOptionClearMemory</recoveryOptionClearMemory>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </recoveryRulesVerifyRecoveryAndClearMemoryRE>
+
+    <recoveryRulesVerifyRecoveryAndIgnoreStrategyException>
+        <allRules>allrules</allRules>
+        <alarmRecoveryRules>alarmRecoveryRules</alarmRecoveryRules>
+
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <recoveryOption>recoveryOption</recoveryOption>
+        <recoveryOptionSetIgnore>recoveryOptionSetIgnore</recoveryOptionSetIgnore>
+        <recoveryOptionClearMemory>recoveryOptionClearMemory</recoveryOptionClearMemory>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+        <alarmDisplayIgnoreAlarm>alarmDisplayIgnoreAlarm</alarmDisplayIgnoreAlarm>
+    </recoveryRulesVerifyRecoveryAndIgnoreStrategyException>
+
+    <recoveryRulesVerifyRecoveryAndMerge>
+        <allRules>allrules</allRules>
+        <alarmRecoveryRules>alarmRecoveryRules</alarmRecoveryRules>
+        <alarmMergeRules>alarmMergeRules</alarmMergeRules>
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <recoveryOption>recoveryOption</recoveryOption>
+        <recoveryOptionSetIgnore>recoveryOptionSetIgnore</recoveryOptionSetIgnore>
+        <recoveryOptionClearMemory>recoveryOptionClearMemory</recoveryOptionClearMemory>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+        <alarmDisplayIgnoreAlarm>alarmDisplayIgnoreAlarm</alarmDisplayIgnoreAlarm>
+
+        <MergeGist>rulesConditionAdvancedConfigMergeGist</MergeGist>
+        <MergeGistBox>rulesConditionAdvancedConfigMergeGistBox</MergeGistBox>
+
+        <chooseMergeGistSourceNode>来源节点</chooseMergeGistSourceNode>
+
+        <maxMergeNumber>maxMergeNumber</maxMergeNumber>
+        <mergeTimeWindows>mergeTimeWindows</mergeTimeWindows>
+        <maxMergeNumberValue>4</maxMergeNumberValue>
+        <mergeTimeWindowsValue>6000</mergeTimeWindowsValue>
+        <alarmMergeConfigSave>alarmMergeConfigSave</alarmMergeConfigSave>
+
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+        <contentKeyword>contentkeyword</contentKeyword>
+    </recoveryRulesVerifyRecoveryAndMerge>
+
+    <recoveryRulesVerifyDelete></recoveryRulesVerifyDelete>
+
+    <test0001></test0001>
+
+</data>
+

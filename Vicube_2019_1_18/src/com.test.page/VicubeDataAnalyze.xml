@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="数据分析" verbose="1" parallel="false" thread-count="1">
+    <test name="基线策略" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="dataAnalyze"/>
+                    <include name="baselineStrategyCreate"/>
+                    <include name="baselineStrategyCreateVerify"/>
+                    <include name="baselineStrategyEdit"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="基线应用" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="dataAnalyze"/>
+                    <include name="baselineApplicationCreate"/>
+                    <include name="baselineApplicationCreateVerify"/>
+                    <include name="baselineApplicationEdit"/>
+                    <include name="baselineApplicationEditVerify"/>
+                    <include name="baselineApplicationDeleteAndVerify"/>
+                    <include name="baselineStrategyEditVerify"/>
+                    <include name="baselineStrategyDelete"/>
+                    <include name="baselineStrategyDeleteVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+
+    </listeners>
+</suite>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="资源管理" verbose="1" parallel="false">
+    <test name="资源模型-资源树" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="resourceManagement"/>
+                    <include name="resourceModel"/>
+                    <include name="resourceModelCreateCIType"/>
+                    <include name="resourceModelCreateCITypeVerify"/>
+                    <include name="resourceModelEditCIType"/>
+                    <include name="resourceModelEditCITypeVerify"/>
+                    <include name="resourceModelDeleteCIType"/>
+                    <include name="resourceModelDeleteCITypeVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="资源模型" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="resourceManagement"/>
+                    <include name="resourceModel"/>
+                    <include name="resourceModelCreateCITypeAttribute"/>
+                    <include name="resourceModelCreateCITypeAttributeVerify"/>
+                    <include name="resourceModelEditCITypeAttribute"/>
+                    <include name="resourceModelEditCITypeAttributeVerify"/>
+                    <include name="resourceModelDeleteCITypeAttribute"/>
+                    <include name="resourceModelDeleteCITypeAttributeVerify"/>
+
+                    <include name="resourceModelCreateCITypeRelationAttribute"/>
+                    <include name="resourceModelCreateCITypeRelationAttributeVerify"/>
+                    <include name="resourceModelEditCITypeRelationAttribute"/>
+
+                    <include name="resourceModelSelectCITypeOperationLog"/>
+                    <include name="resourceModelSelectCITypeVersion"/>
+
+                    <include name="resourceModelEditCITypeRelationAttributeVerify"/>
+                    <include name="resourceModelDeleteCITypeRelationAttribute"/>
+                    <include name="resourceModelDeleteCITypeRelationAttributeVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="资源管理-自动发现" verbose="1" parallel="false">
+    <test name="发现列表" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="resourceManagement"/>
+                    <include name="automaticDiscovery"/>
+                    <include name="discoveryList"/>
+                    <include name="discoveryListClassifyScreen"/>
+                    <include name="discoveryListClassify"/>
+                    <include name="discoveryListClassifyVerifyOfDiscoveryList"/>
+                    <include name="discoveryListClassifyVerifyOfResourceExample"/>
+                    <include name="discoveryListDiscardScreen"/>
+                    <include name="discoveryListDiscard"/>
+                    <include name="discoveryListDiscardVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="发现规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="resourceManagement"/>
+                    <include name="automaticDiscovery"/>
+                    <include name="discoveryList"/>
+                    <include name="discoveryRule"/>
+                    <include name="discoveryRuleCreate"/>
+                    <include name="discoveryRuleCreateVerify"/>
+                    <include name="discoveryRuleEdit"/>
+                    <include name="discoveryRuleEditVerify"/>
+                    <include name="discoveryRuleEnable"/>
+                    <include name="discoveryRuleDisenable"/>
+                    <include name="discoveryRuleDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

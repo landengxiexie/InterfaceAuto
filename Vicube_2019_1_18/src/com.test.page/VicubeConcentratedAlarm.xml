@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="集中告警-告警通知" verbose="1" parallel="false" thread-count="1">
+
+    <!--告警配置-->
+    <test name="降噪策略-告警合并规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmMergeRules"/>
+                    <include name="alarmMergeRulesCreateBasicSetting"/>
+                    <include name="alarmMergeRulesCreateRulesConditionSetting"/>
+                    <include name="alarmMergeRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmMergeRulesCreateAlarmMergeSetting"/>
+                    <include name="denoiseStrategyAlarmMergeRulesSelectVerify"/>
+
+                    <include name="alarmMergeRulesEditBasicSetting"/>
+                    <include name="alarmMergeRulesEditRulesConditionSetting"/>
+                    <include name="alarmMergeRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmMergeRulesEditAlarmMergeSetting"/>
+                    <include name="denoiseStrategyAlarmMergeRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmMergeRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmMergeRulesEditDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警分类规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmClassifyRules"/>
+                    <include name="alarmClassifyRulesCreateBasicSetting"/>
+                    <include name="alarmClassifyRulesCreateRulesConditionSetting"/>
+                    <include name="alarmClassifyRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmClassifyRulesCreateAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesSelectVerify"/>
+
+                    <include name="alarmClassifyRulesEditBasicSetting"/>
+                    <include name="alarmClassifyRulesEditRulesConditionSetting"/>
+                    <include name="alarmClassifyRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmClassifyRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警恢复规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmRecoveryRules"/>
+
+                    <include name="alarmRecoveryRulesCreateBasicSetting"/>
+                    <include name="alarmRecoveryRulesCreateRulesConditionSetting"/>
+                    <include name="alarmRecoveryRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmRecoveryRulesCreateAlarmRecoverySetting"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesSelectVerify"/>
+
+                    <include name="alarmRecoveryRulesEditBasicSetting"/>
+                    <include name="alarmRecoveryRulesEditRulesConditionSetting"/>
+                    <include name="alarmRecoveryRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmRecoveryRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警升级规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmUpgradeRules"/>
+
+                    <include name="alarmUpgradeRulesCreateBasicSetting"/>
+                    <include name="alarmUpgradeRulesCreateRulesConditionSetting"/>
+                    <include name="alarmUpgradeRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmUpgradeRulesCreateAlarmUpgradeSetting"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesSelectVerify"/>
+
+                    <include name="alarmUpgradeRulesEditBasicSetting"/>
+                    <include name="alarmUpgradeRulesEditRulesConditionSetting"/>
+                    <include name="alarmUpgradeRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmUpgradeRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警关联规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmRelevanceRules"/>
+
+                    <include name="alarmRelevanceRulesCreateBasicSetting"/>
+                    <include name="alarmRelevanceRulesCreateRootAlarmSetting"/>
+                    <include name="alarmRelevanceRulesCreateRulesAdvancedSetting"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingCreate"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingEdit"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingDelete"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingSave"/>
+                    <include name="alarmRelevanceRulesCreateSelectVerify"/>
+
+                    <include name="alarmRelevanceRulesEditBasicSetting"/>
+                    <include name="alarmRelevanceRulesEditRulesConditionSetting"/>
+                    <include name="alarmRelevanceRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmRelevanceRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyalarmRelevanceRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmRelevanceRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmRelevanceRulesDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警过滤规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmFilterRules"/>
+
+                    <include name="alarmFilterRulesCreateBasicSetting"/>
+                    <include name="alarmFilterRulesCreateRulesConditionSetting"/>
+                    <include name="alarmFilterRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="denoiseStrategyalarmFilterRulesSelectVerify"/>
+
+                    <include name="alarmFilterRulesEditBasicSetting"/>
+                    <include name="alarmFilterRulesEditRulesConditionSetting"/>
+                    <include name="alarmFilterRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="denoiseStrategyalarmFilterRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyalarmFilterRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyalarmFilterRulesDeleteAndSelectVerify"/>
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="预警策略" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="alarmConfigWarningStrategy"/>
+                    <include name="alarmConfigWarningStrategyCreate"/>
+                    <include name="alarmConfigWarningStrategyEdit"/>
+                    <include name="alarmConfigWarningStrategyDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="阈值策略" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="alarmConfigThresholdStrategy"/>
+                    <include name="thresholdStrategyCreate"/>
+                    <include name="thresholdStrategyCreateSelect"/>
+                    <include name="thresholdStrategyEdit"/>
+                    <include name="thresholdStrategyEditSelect"/>
+                    <include name="thresholdStrategyDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--告警展示-->
+    <test name="接收分组、通知方式1" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingNewGrouping"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreate"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreateSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEditOfHistoryAlarm"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="告警展示-查看(详情)" preserve-order="true" >
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="alarmDisplayViewPushAlarm"/>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayColumnSettingAllChoose"/>
+                    <include name="alarmDisplayPendingAlarm"/>
+                    <include name="alarmDisplayViewMultitermHint"/>
+                    <include name="alarmDisplayChooseTwoFunction"/>
+                    <include name="alarmDisplayAutoRefresh"/>
+                    <include name="alarmDisplaySelect"/>
+                    <include name="alarmDisplayView"/>
+                    <include name="alarmDisplayViewForwardShifting"/>
+                    <include name="alarmDisplayForwardShiftingMode2"/>
+                    <include name="alarmDisplayViewForwardShiftingHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction"/>
+                    <include name="alarmDisplayView2"/>
+                    <include name="alarmDisplayViewResolved"/>
+                    <include name="alarmDisplayResolvedOfResolved"/>
+                    <include name="alarmDisplayViewResolvedOfResolvedHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction2"/>
+                    <include name="alarmDisplayView3"/>
+                    <include name="alarmDisplayViewOtherInformation"/>
+                    <include name="alarmDisplayViewResolved2"/>
+                    <include name="alarmDisplayResolvedOfIgnore"/>
+                    <include name="alarmDisplayViewResolvedOfIgnoreHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction3"/>
+                    <include name="alarmDisplayView4"/>
+                    <include name="alarmDisplayViewResolved"/>
+                    <include name="alarmDisplayViewEventQuery"/>
+                    <include name="alarmDisplayViewOperationLogs"/>
+                    <include name="alarmDisplayRelevanceAlarm"/>
+                    <include name="alarmDisplayViewCancel"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="告警展示-告警数量，确认、前转、解决、查看、筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayAlarmsNumber"/>
+                    <include name="alarmDisplayPendingAlarm"/>
+                    <include name="alarmDisplaySearch"/>
+                    <include name="alarmDisplayConfirmationClick"/>
+                    <include name="alarmDisplayConfirmation"/>
+                    <include name="alarmDisplayChooseFunction"/>
+                    <include name="alarmDisplayResolvedButton3"/>
+                    <include name="alarmDisplayResolvedOfClearMemory"/>
+                    <include name="alarmDisplayResolvedOfClearMemoryHintConfirm"/>
+                    <include name="alarmDisplayConfirmedAlarm"/>
+                    <include name="alarmDisplayInformClick"/>
+                    <include name="alarmDisplayForwardShifting"/>
+                    <include name="alarmDisplayForwardShiftingHintConfirm"/>
+                    <include name="alarmDisplaySelectClear"/>
+                    <include name="alarmDisplayForwardShiftingAlarm"/>
+                    <include name="alarmDisplayResolvedButton"/>
+                    <include name="alarmDisplayResolvedOfResolved"/>
+                    <include name="alarmDisplayResolvedOfResolvedHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction2"/>
+                    <include name="alarmDisplayResolvedButton2"/>
+                    <include name="alarmDisplayResolvedOfIgnore"/>
+                    <include name="alarmDisplayResolvedOfIgnoreHintConfirm"/>
+                    <include name="alarmDisplayResolvedAlarm"/>
+                    <include name="alarmDisplayIgnoreAlarm"/>
+                    <include name="alarmDisplayAlarmsNumberVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="告警展示-告警等级、筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmDisplay"/>
+                    <include name="alarmDisplayAlarmRank"/>
+                    <!--<include name="alarmDisplaySelect"/>-->
+                    <include name="alarmDisplayColumnSettingAllCancle"/>
+                    <include name="alarmDisplayColumnSettingAllChoose"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="删除-接收分组、通知方式1" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWayEditSelect1"/>
+                    <include name="concentrateAlarmAlarmInformInformWayDelete"/>
+
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingEditQuery2"/>
+                    <include name="receiveGroupingDelete"/>
+                    <include name="receiveGroupingDeleteQuery"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--告警查询-->
+    <test name="接收分组、通知方式2" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingNewGrouping"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreate"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreateSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEditOfHistoryAlarm"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="历史告警" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmSelect"/>
+                    <include name="concentrateAlarmAlarmSelectHistoryAlarm"/>
+                    <include name="alarmQueryHistoryAlarmPaging2"/>
+                    <include name="alarmQueryHistoryAlarmSelect"/>
+                    <include name="alarmDisplayChooseFunction"/>
+                    <include name="alarmDisplayForwardShiftingClick"/>
+                    <include name="alarmQueryHistoryAlarmForwardShifting"/>
+                    <include name="alarmDisplayForwardShiftingHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction1"/>
+                    <include name="alarmDisplayForwardShiftingClick1"/>
+                    <include name="alarmQueryHistoryAlarmForwardShiftingMode2"/>
+                    <include name="alarmDisplayForwardShiftingHintConfirm1"/>
+                    <include name="alarmDisplayResolvedButton"/>
+                    <include name="alarmDisplayResolvedOfResolved"/>
+                    <include name="alarmDisplayResolvedOfResolvedHintConfirm"/>
+                    <include name="alarmDisplayChooseFunction2"/>
+                    <include name="alarmDisplayResolvedButton2"/>
+                    <include name="alarmDisplayResolvedOfIgnore"/>
+                    <include name="alarmDisplayResolvedOfIgnoreHintConfirm"/>
+                    <!--<include name="alarmDisplayExportButton"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="通知记录" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmSelect"/>
+                    <include name="concentrateAlarmAlarmSelectNotifyRecord"/>
+                    <include name="alarmSelectNotifyRecordQuery"/>
+                    <include name="alarmSelectNotifyRecordView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="删除-接收分组、通知方式2" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWayEditSelect1"/>
+                    <include name="concentrateAlarmAlarmInformInformWayDelete"/>
+
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingEditQuery2"/>
+                    <include name="receiveGroupingDelete"/>
+                    <include name="receiveGroupingDeleteQuery"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--告警通知-->
+
+    <test name="接收分组" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingNewGrouping"/>
+                    <include name="receiveGroupingQuery"/>
+                    <include name="receiveGroupingEdit"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="告警筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformAlarmScreen"/>
+
+                    <include name="alarmScreenCreateBasicSetting"/>
+                    <include name="alarmScreenCreateRulesConditionSetting"/>
+                    <include name="alarmScreenCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmScreenCreateAlarmUpgradeSetting"/>
+                    <include name="alarmScreenCreatSelectVerify"/>
+
+                    <include name="alarmScreenEditBasicSetting"/>
+                    <include name="alarmScreenEditRulesConditionSetting"/>
+                    <include name="alarmScreenEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmScreenEditAlarmClassifySetting"/>
+                    <include name="alarmScreenEditSelectVerify"/>
+
+                    <include name="alarmInformAlarmScreenStartUsing"/>
+                    <include name="alarmInformAlarmScreenEditSelect"/>
+                    <include name="alarmInformAlarmScreenBlockUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="通知方式" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreate"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreateSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEdit"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEditSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEnable"/>
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="删除-接收分组、告警筛选、通知方式" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWayEditSelect1"/>
+                    <include name="concentrateAlarmAlarmInformInformWayDisable"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreateRelatedAlarm"/>
+                    <include name="concentrateAlarmAlarmInformInformWayDelete"/>
+
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+
+                    <include name="receiveGroupingEditQuery"/>
+                    <include name="receiveGroupingDelete"/>
+                    <include name="receiveGroupingDeleteQuery"/>
+
+
+                    <include name="concentrateAlarmAlarmInformAlarmScreen"/>
+
+                    <include name="alarmInformAlarmScreenDeleteAndSelectVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="集中告警-告警配置" verbose="1" parallel="tests" thread-count="3">
+    <test name="降噪策略-告警合并规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmMergeRules"/>
+                    <include name="alarmMergeRulesCreateBasicSetting"/>
+                    <include name="alarmMergeRulesCreateRulesConditionSetting"/>
+                    <include name="alarmMergeRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmMergeRulesCreateAlarmMergeSetting"/>
+                    <include name="denoiseStrategyAlarmMergeRulesSelectVerify"/>
+
+                    <include name="alarmMergeRulesEditBasicSetting"/>
+                    <include name="alarmMergeRulesEditRulesConditionSetting"/>
+                    <include name="alarmMergeRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmMergeRulesEditAlarmMergeSetting"/>
+                    <include name="denoiseStrategyAlarmMergeRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmMergeRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmMergeRulesEditDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警分类规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmClassifyRules"/>
+                    <include name="alarmClassifyRulesCreateBasicSetting"/>
+                    <include name="alarmClassifyRulesCreateRulesConditionSetting"/>
+                    <include name="alarmClassifyRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmClassifyRulesCreateAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesSelectVerify"/>
+
+                    <include name="alarmClassifyRulesEditBasicSetting"/>
+                    <include name="alarmClassifyRulesEditRulesConditionSetting"/>
+                    <include name="alarmClassifyRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmClassifyRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmClassifyRulesDeleteAndSelectVerify"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警恢复规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmRecoveryRules"/>
+
+                    <include name="alarmRecoveryRulesCreateBasicSetting"/>
+                    <include name="alarmRecoveryRulesCreateRulesConditionSetting"/>
+                    <include name="alarmRecoveryRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmRecoveryRulesCreateAlarmRecoverySetting"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesSelectVerify"/>
+
+                    <include name="alarmRecoveryRulesEditBasicSetting"/>
+                    <include name="alarmRecoveryRulesEditRulesConditionSetting"/>
+                    <include name="alarmRecoveryRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmRecoveryRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmRecoveryRulesDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警升级规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmUpgradeRules"/>
+
+                    <include name="alarmUpgradeRulesCreateBasicSetting"/>
+                    <include name="alarmUpgradeRulesCreateRulesConditionSetting"/>
+                    <include name="alarmUpgradeRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="alarmUpgradeRulesCreateAlarmUpgradeSetting"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesSelectVerify"/>
+
+                    <include name="alarmUpgradeRulesEditBasicSetting"/>
+                    <include name="alarmUpgradeRulesEditRulesConditionSetting"/>
+                    <include name="alarmUpgradeRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmUpgradeRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmUpgradeRulesDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警关联规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmRelevanceRules"/>
+
+                    <include name="alarmRelevanceRulesCreateBasicSetting"/>
+                    <include name="alarmRelevanceRulesCreateRootAlarmSetting"/>
+                    <include name="alarmRelevanceRulesCreateRulesAdvancedSetting"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingCreate"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingEdit"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingDelete"/>
+                    <include name="alarmRelevanceRulesCreateAffectAlarmSettingSave"/>
+                    <include name="alarmRelevanceRulesCreateSelectVerify"/>
+
+                    <include name="alarmRelevanceRulesEditBasicSetting"/>
+                    <include name="alarmRelevanceRulesEditRulesConditionSetting"/>
+                    <include name="alarmRelevanceRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="alarmRelevanceRulesEditAlarmClassifySetting"/>
+                    <include name="denoiseStrategyalarmRelevanceRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyAlarmRelevanceRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyAlarmRelevanceRulesDeleteAndSelectVerify"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="降噪策略-告警过滤规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="denoiseStrategy"/>
+                    <include name="denoiseStrategyChooseAlarmFilterRules"/>
+
+                    <include name="alarmFilterRulesCreateBasicSetting"/>
+                    <include name="alarmFilterRulesCreateRulesConditionSetting"/>
+                    <include name="alarmFilterRulesCreateRulesConditionAdvancedSetting"/>
+                    <include name="denoiseStrategyalarmFilterRulesSelectVerify"/>
+
+                    <include name="alarmFilterRulesEditBasicSetting"/>
+                    <include name="alarmFilterRulesEditRulesConditionSetting"/>
+                    <include name="alarmFilterRulesEditRulesConditionAdvancedSetting"/>
+                    <include name="denoiseStrategyalarmFilterRulesEditSelectVerify"/>
+
+                    <include name="alarmRulesStartUsing"/>
+                    <include name="denoiseStrategyalarmFilterRulesEditSelect"/>
+                    <include name="alarmRulesBlockUp"/>
+                    <include name="denoiseStrategyalarmFilterRulesDeleteAndSelectVerify"/>
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="预警策略" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="alarmConfigWarningStrategy"/>
+                    <include name="alarmConfigWarningStrategyCreate"/>
+                    <include name="alarmConfigWarningStrategyEdit"/>
+                    <include name="alarmConfigWarningStrategyDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="阈值策略" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="alarmConfig"/>
+                    <include name="alarmConfigThresholdStrategy"/>
+                    <include name="thresholdStrategyCreate"/>
+                    <include name="thresholdStrategyCreateSelect"/>
+                    <include name="thresholdStrategyEdit"/>
+                    <include name="thresholdStrategyEditSelect"/>
+                    <include name="thresholdStrategyDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>
+
+
+
+

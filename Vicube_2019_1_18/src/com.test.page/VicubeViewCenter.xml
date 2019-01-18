@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="视图中心" verbose="1" parallel="false" thread-count="1">
+    <test name="视图画布+视图数据" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+
+                    <include name="viewCanvasCreate"/>
+                    <include name="viewCanvasCreateVerify"/>
+                    <include name="viewCanvasEdit"/>
+                    <include name="viewCanvasEditVerify"/>
+                    <include name="viewCanvasCopyAndVerify"/>
+
+                    <include name="viewSourceCreate"/>
+                    <include name="viewSourceEdit"/>
+
+                    <include name="SQLDataSetCreate"/>
+                    <include name="SQLDataSetCreateVerify"/>
+                    <include name="SQLDataSetEdit"/>
+                    <include name="SQLDataSetEditVerify"/>
+                    <include name="SQLDataSetCopyAndVerify"/>
+
+                    <include name="viewCanvasDesign"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="视图展示+（视图画布+视图数据）删除" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="promptCenter"/>
+                    <include name="viewDisplay"/>
+                    <include name="viewCanvasDelete"/>
+                    <include name="viewCanvasDeleteVerify"/>
+
+                    <include name="SQLDataSetDeleteAndVerify"/>
+                    <include name="viewSourceDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

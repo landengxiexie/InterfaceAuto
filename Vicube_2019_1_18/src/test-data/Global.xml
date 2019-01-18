@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+    <!--<VicubeUrl>http://vicube.test.com:48080/h5</VicubeUrl>-->
+    <VicubeUrl>http://192.168.20.175:48080/h5</VicubeUrl>
+    <!--<VicubeUrl>http://192.168.20.121:48080/h5</VicubeUrl>-->
+    <!--<VicubeUrl>http://192.168.20.127:48080/h5</VicubeUrl>-->
+
+
+    <!--接口url+params-->
+    <pushAlarmUrl>http://192.168.20.175:48080/apirestcenter/rest/v1/collector/postArrayData/TestAlertDataV2</pushAlarmUrl>
+
+    <pushAlarmParams123>[{
+        "nodeKey":"AutoTest123",
+        "severity":2,
+        "message":"AutoTest",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushAlarmParams123>
+    <pushAlarmParams321>[{
+        "nodeKey":"AutoTest321",
+        "severity":2,
+        "message":"AutoTest",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushAlarmParams321>
+
+
+    <!--告警合并规则，推送消息-->
+    <pushMergeAlarmSourceNode1>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushMergeAlarmSourceNode1>
+
+    <pushMergeAlarmSourceNode2>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":3,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"2"
+        }]
+    </pushMergeAlarmSourceNode2>
+
+    <pushMergeAlarmAlarmType>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":3,
+        "message":"Selenium",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"instance1"
+        }]
+    </pushMergeAlarmAlarmType>
+
+
+    <pushMergeAlarmSourceInstance>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":3,
+        "message":"Selenium",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"instance2"
+        }]
+    </pushMergeAlarmSourceInstance>
+
+
+    <pushMergeAlarmAlarmTypeStrategyException>[{
+        "nodeKey":"StandardLinux_Test3",
+        "severity":3,
+        "message":"Aele",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"Zabbix",
+        "instance":"instance1"
+        }]
+    </pushMergeAlarmAlarmTypeStrategyException>
+
+
+    <pushMergeAlarmAlarmLevel>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":2,
+        "message":"Selenium",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"instance2"
+        }]
+    </pushMergeAlarmAlarmLevel>
+
+    <pushMergeAlarmAlarmRecovery>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":-1,
+        "message":"Selenium",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"instance1"
+        }]
+    </pushMergeAlarmAlarmRecovery>
+
+    <pushMergeAlarmAlarmContent>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":3,
+        "message":"Aele",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"instance1"
+        }]
+    </pushMergeAlarmAlarmContent>
+
+    <pushMergeAlarmCollectSystem>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":3,
+        "message":"Aele",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"PIGOSS",
+        "instance":"instance1"
+        }]
+    </pushMergeAlarmCollectSystem>
+
+
+    <!--告警过滤规则，推送消息-->
+    <pushFilterAlarmOracle>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushFilterAlarmOracle>
+
+    <pushFilterAlarmOracleRE>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushFilterAlarmOracleRE>
+
+    <!--告警分类规则，推送消息-->
+    <pushClassifyAlarmOracle>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushClassifyAlarmOracle>
+    <pushClassifyAlarmOracleRE>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushClassifyAlarmOracleRE>
+
+
+    <!--告警恢复规则，推送消息-->
+    <pushRecoveryAlarmSelenium>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushRecoveryAlarmSelenium>
+    <pushRecoveryAlarmAele>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushRecoveryAlarmAele>
+
+
+</data>
+

@@ -1,0 +1,2895 @@
+#登陆
+#用户名
+vicube_user:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/vic-login/div/div[2]/div[2]/form/div[1]/input"
+#密码
+vicube_password:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/vic-login/div/div[2]/div[2]/form/div[2]/input"
+#登陆按钮
+vicube_loginButton:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/vic-login/div/div[2]/div[2]/form/div[3]/button"
+#用户登陆标识
+vicube_userloginid:
+  type: xpath
+  value: "//*[@id='header']/div/ul/li[2]/a/span"
+
+#--------------------------------------------菜单-系统配置------------------------------------------
+#菜单
+#系统设置
+systemsetting:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/li[6]"
+#系统设置-用户管理
+usermanagement:
+  type: link
+  value: 用户管理
+
+#筛选结果-是空
+selectResultIsEmpty:
+  type: xpath
+  value: "//*/tbody/tr/td[contains(text(),'')]"
+
+#用户管理-更改状态
+changestate:
+  type: link
+  value: 更改状态
+#用户管理-更改状态
+changestate1:
+  type: link
+  value: 改变状态
+#用户管理-新建
+create:
+  type: link
+  value: 新建
+#复制
+copy:
+  type: link
+  value: 复制
+#用户管理-新建-保存
+save:
+  type: xpath
+  value: "//*[@class='modal-footer']/div[@class='ng-isolate-scope']/div[1]/button[1]"
+#用户管理-新建-用户名
+username:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='userId']"
+#用户管理-新建-姓名
+name:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name=\"staffName\"]"
+#用户管理-新建-邮箱
+email:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name=\"email\"]"
+#用户管理-新建-岗位职责
+responsibility:
+  type: name
+  value: jobTitle
+#用户管理-新建-办公电话
+phone:
+  type: xpath
+  value: "//*[@name=\"phone\"]"
+#用户管理-新建-移动电话
+mobilephone:
+  type: xpath
+  value: "//*[@name=\"mobilephone\"]"
+#用户管理-新建-备注
+note:
+  type: name
+  value: note
+#用户管理-新建-有效标志
+flag:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/ol[@name='flag']"
+#用户管理-新建-有效标志-有效
+valid:
+  type: link
+  value: 有效
+Valid:
+  type: link
+  value: Valid
+#用户管理-新建-有效标志-无效
+invalid:
+  type: link
+  value: 无效
+Invalid:
+  type: link
+  value: Invalid
+
+#用户管理-新建-保存提示
+savehint:
+  type: xpath
+  value: "//*[@class='modal-dialog']/div[@class='modal-content']/div[@class='modal-body']/span[@id='content']"
+#用户管理-新建-保存确定
+saveaffirm:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[3]/button"
+
+#用户管理-新建-取消
+cancel:
+  type: xpath
+  value: "//*[@class='modal-footer']/div[@class='ng-isolate-scope']/div[1]/button[2]"
+#用户管理-新建-取消提示
+cancelhint:
+  type: xpath
+  value: "//div[@class='modal-body']/span[@id=\"content\"]"
+#用户管理-新建-取消确认
+cancelaffirm:
+  type: xpath
+  value: "//*[@class='modal-footer']/button[1]"
+
+#用户管理-筛选
+select:
+  type: link
+  value: 筛选
+#用户管理-检索
+search:
+  type: link
+  value: 检索
+#用户管理-检索（筛选）-区域
+userSelectArea:
+  type: xpath
+  value: "//*[@id='userList']/div[1]"
+#用户管理-筛选-用户名
+selectusername:
+  type: xpath
+  value: "//*[@class='col-md-4']/div[@class='form-group']/input[@name=\"userId\"]"
+#用户管理-筛选-姓名
+selectname:
+  type: xpath
+  value: "//*[@class='col-md-4']/div[@class='form-group']/input[@name=\"staffName\"]"
+#用户管理-筛选-邮箱
+selectemail:
+  type: xpath
+  value: "//*[@class='col-md-4']/div[@class='form-group']/input[@name=\"email\"]"
+#用户管理-筛选-有效标志
+selectflag:
+  type: xpath
+  value: "//*[@name=\"flag\"]/button"
+#用户管理-筛选-有效
+selectvalid:
+  type: xpath
+  value: "//*[@name=\"flag\"]/div/ul/li[2]/a"
+#用户管理-筛选-无效
+selectinvalid:
+  type: xpath
+  value: "//*[@name='flag']/div/ul/li[3]/a"
+#用户管理-筛选-确认
+selectaffirm:
+  type: link
+  value: 确定
+#用户管理-筛选-确认
+selectClear:
+  type: link
+  value: 清空
+#用户管理-筛选-区域
+clickSelectButtonArea:
+  type: xpath
+  value: "//*[@id='userList']/div[1]"
+
+
+#集中告警-告警展示-筛选
+alarmDisplaySelectAffirm:
+  type: xpath
+  value: "//*/form/div[3]/div/a[1]"
+#用户管理-筛选结果-用户名
+selectusernamevalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[2]"
+#用户管理-筛选结果-姓名
+selectnamevalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[3]"
+#用户管理-筛选结果-邮箱
+selectemailvalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[7]"
+#用户管理-筛选结果-岗位职责
+selectresponsibilityvalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[4]"
+#用户管理-筛选结果-办公电话
+selectphonevalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[5]"
+#用户管理-筛选结果-移动电话
+selectmobilephonevalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[6]"
+#用户管理-筛选结果-备注
+selectnotevalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[9]"
+#用户管理-筛选结果-有效
+selectvalidvalue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[10]"
+#用户管理-筛选结果勾选用户-第一行
+selectchooseuser:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[1]/center/input"
+#用户管理-筛选结果勾选用户-所有
+selectResultChooseAllData:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[1]/center/input"
+#用户管理-筛选结果勾选用户-所有
+selectResultFirstColumnAllData:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[2]"
+#用户管理-筛选结果勾选用户-所有用户-第一列
+selectResultChooseAll:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[1]/center/input"
+#用户管理-筛选结果勾选用户-所有用户-第二列
+selectResultChooseAll2:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[2]"
+#用户管理-筛选结果勾选用户-所有用户-第九列
+selectResultChooseAll9:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[9]/div"
+#用户管理-筛选结果勾选用户-所有用户-第九列
+selectResultChooseAll12:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[12]/div"
+#用户管理-筛选结果勾选用户-第二行
+selectchooseuser2:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[2]/td[1]/center/input"
+#用户管理-编辑
+edit:
+  type: link
+  value: 编辑
+#用户管理-编辑-用户名
+editusername:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='userId']"
+#用户管理-编辑-姓名
+editname:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='staffName']"
+#用户管理-编辑-岗位职责
+editresponsibility:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='jobTitle']"
+#用户管理-编辑-办公电话
+editphone:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='phone']"
+#用户管理-编辑-移动电话
+editmobilephone:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='mobilephone']"
+#用户管理-编辑-邮箱
+editemail:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/input[@name='email']"
+#用户管理-编辑-备注
+editnote:
+  type: xpath
+  value: "//*[@class='col-md-6']/div[@class='form-group']/textarea[@name='note']"
+#用户管理-编辑-有效标志
+editflag:
+  type: xpath
+  value: "//*[@ng-model='formModel.instance.flag']"
+#用户管理-编辑-无效
+editinvalid:
+  type: link
+  value: 无效
+#用户管理-编辑-保存
+editsave:
+  type: xpath
+  value: "//*[@class='ng-isolate-scope']/div[@compile='buttonHtml']/button[1]"
+#用户管理-编辑-保存提示信息
+editsavehint:
+  type: xpath
+  value: "//*/span[@id='content']"
+#用户管理-编辑-保存提示确认
+editsaveaffirm:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[1]"
+#用户管理-编辑-取消
+editcancel:
+  type: xpath
+  value: "//*[@class='ng-isolate-scope']/div[@compile='buttonHtml']/button[2]"
+#用户管理-编辑-保存提示信息
+editcancelhint:
+  type: xpath
+  value: "//*/span[@id='content']"
+#用户管理-编辑-保存提示确认
+editcancelaffirm:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[1]"
+
+
+
+#用户管理-删除
+delete:
+  type: link
+  value: 删除
+#设计
+design:
+  type: link
+  value: 设计
+#用户管理-删除-提示
+deletehint:
+  type: xpath
+  value: "//*/span[@id='content']"
+#用户管理-删除-确认
+deleteaffirm:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[1]"
+#用户管理-删除-取消
+deletecancel:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[2]"
+
+
+#用户管理-重置密码
+resetpassword:
+  type: link
+  value: 重置密码
+#用户管理-重置密码-提示
+resetpasswordhint:
+  type: xpath
+  value: "//*/span[@id='content']"
+#用户管理-重置密码-确认
+resetpasswordaffirm:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[1]"
+#用户管理-重置密码-取消
+resetpasswordcancel:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[2]"
+
+#系统设置-工作组管理
+workinggroupmanagent:
+  type: link
+  value: 工作组管理
+#工作组管理-新增-工作组名称
+workingGroupName:
+  type: xpath
+  value: "//*/div[@class='col-md-6']/div[1]/input[@name=\"groupName\"]"
+#工作组管理-新增-域
+domainNameSelectBox:
+  type: xpath
+  value: "//*[@compile='formHtml']/ol/button"
+#工作组管理-新增-域名
+createDomainName:
+  type: link
+  value: rootDomain
+#  type: xpath
+#  value: "//*[@compile='formHtml']/ol/div/ul/li[1]/a"
+#工作组管理-新增-备注
+creatWorkingGroupeNote:
+  type: xpath
+  value: "//*/div[@class='col-md-6']/div[1]/textarea[@name='note']"
+
+
+#工作组管理-编辑-域名
+editDomainName:
+  type: link
+  value: rootDomain
+#  type: xpath
+#  value: "//*[@compile='formHtml']/ol/div/ul/li[2]/a"
+
+#工作组管理-分配用户
+assignmentUser:
+  type: link
+  value: 分配用户
+#工作组管理-分配管理员
+assignmentManagement:
+  type: link
+  value: 分配管理员
+#工作组管理-设置用户-选择用户
+selectUser:
+  type: xpath
+  value: "//*[@name='from[]']/option[1]"
+#工作组管理-设置用户-查询用户右移
+selectUserRightMove:
+  type: xpath
+  value: "//*[@id='groupUserSelect']/div/div/div[2]/div/div/div/div[2]/button[2]"
+#工作组管理-设置管理员-查询用户右移
+selectAdminRightMove:
+  type: xpath
+  value: "//*[@id='groupAdminSelect']/div/div/div[2]/div/div/div/div[2]/button[2]"
+
+
+
+
+#工作组管理-筛选-录入工作组名称
+inputselectworkinggroupname:
+  type: xpath
+  value: "//*[@class='col-md-4']/div[1]/input[@name=\"groupName\"]"
+
+#工作组管理-筛选结果-工作组名称
+selectworkinggroupname:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[3]"
+#工作组管理-筛选结果-有效标志，有效
+selectworkinggroupvalidflag:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[4]"
+#工作组管理-筛选结果-备注
+selectWorkingGroupNoteValue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[5]"
+#工作组管理-筛选-筛选区域
+selectWorkingGroupArea:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[1]/div[1]/div/div/div/div/div[1]"
+
+
+
+#工作组管理-分配权限
+allocationprivilege:
+  type: link
+  value: 分配权限
+#工作组管理-选择权限：BJ-UPS1
+chooseprivilegebj-ups1:
+  type: xpath
+  value: "//*[@class='col-sm-5']/select[@name='from[]']/option[1]"
+#用户管理-分配工作组-选择工作组：
+chooseWorkingGroup:
+  type: xpath
+  value: "//*[@class='col-sm-5']/select[@name='from[]']/option[1]"
+chooseWorkingGroupSelect:
+  type: xpath
+  value: "//*[@id='groupSelect']/div/div/div[2]/div/div/div/div[1]/select"
+chooseWorkingGroupSelectRight:
+  type: xpath
+  value: "//*[@id='groupSelect']/div/div/div[2]/div/div/div/div[3]/select"
+
+#用户管理、工作组管理-分配权限-选择权限：
+choosePrivilege:
+  type: xpath
+  value: "//*/div[@class='col-md-12']/div/div/div/div[@class='col-sm-5']/select[@name='from[]']/option[1]"
+#工作组管理-分配用户-选择用户：
+chooseUser:
+  type: xpath
+  value: "//*[@id='groupUserSelect']/div/div/div[2]/div/div/div/div[1]/select/option[contains(text(),'edit016')]"
+#工作组管理-分配用户/分配管理员-选择用户/选择管理员：
+chooseManagement:
+  type: xpath
+  value: "//*[@id='groupAdminSelect']/div/div/div[2]/div/div/div/div[1]/select/option[contains(text(),'edit016')]"
+
+#工作组管理-选择权限：BJ-UPS2
+chooseprivilegebj-ups2:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[10]"
+#工作组管理-选择权限：BJ-UPS3
+chooseprivilegebj-ups3:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[11]"
+#工作组管理-选择权限：BJ-UPS4
+chooseprivilegebj-ups4:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[12]"
+#工作组管理-选择权限：右全移
+chooseprivilegemoveallright:
+  type: xpath
+  value: "//*[@id='view']/div[1]/div[@class='col-sm-2']/button[1]"
+#工作组管理-选择权限：右移
+chooseprivilegemoveright:
+  type: xpath
+  value: "//*[@id='view']/div[1]/div[@class='col-sm-2']/button[2]"
+#工作组管理-选择权限：左移
+chooseprivilegemoveleft:
+  type: xpath
+  value: "//*[@id='view']/div[1]/div[@class='col-sm-2']/button[3]"
+#工作组管理-选择权限：左全移
+chooseprivilegemoveallleft:
+  type: xpath
+  value: "//*[@id='view']/div[1]/div[@class='col-sm-2']/button[3]"
+
+#工作组管理-选择权限-保存
+allocationprivilegesave:
+  type: xpath
+  value: "//*[@id='permissionDetail']/div/div/div[3]/a[1]"
+
+#系统-退出-遮挡提示信息
+usernotification:
+  type: xpath
+  value: "//*/div[@id='gritter-notice-wrapper']/div[1]/div[2]/a"
+#系统-退出-遮挡提示信息个数
+userNotificationNumber:
+  type: xpath
+  value: "//*/div[@id='gritter-notice-wrapper']/div"
+#系统-左侧菜单区域
+systemLeftMenuArea:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[1]"
+#系统-左侧菜单区域
+systemLeftMenuButton:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/div/i"
+#系统-退出-用户头像
+userlogouthead:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/nz-dropdown/a"
+#系统-退出-退出系统按钮
+userlogoutsystem:
+  type: xpath
+  value: "//*/div/div/ul/li[2]/a"
+
+#用户管理-提示信息
+commonhint:
+  type: xpath
+  value: "//*/span[@id='content']"
+#用户管理-提示确认
+commonaffirm:
+  type: xpath
+  value: "//*/div[@class='modal-content']/div[@class='modal-footer']/button[1]"
+
+#用户管理-分配工作组
+assignmentgroup:
+  type: link
+  value: 分配工作组
+#用户管理-分配工作组-选择工作组
+selectgroup:
+  type: xpath
+  value: "//*[@name='from[]']/option[1]"
+#用户管理-分配工作组-右移
+selectgrouprightmove:
+  type: xpath
+  value: "//*[@class='col-md-12']/div[1]/div[2]/button[2]"
+#保存
+commonsave:
+  type: link
+  value: 保存
+#系统管理
+systemManagement:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/li[1]"
+
+#新用户-视图配置-“+”
+userviewconfigplus:
+  type: id
+  value: addBtn
+#新用户-视图配置-自定义视图一
+userviewconfigviewone:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[1]"
+#新用户-视图配置-自定义视图二
+userviewconfigviewtwo:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[2]"
+#新用户-视图配置-自定义视图三
+userviewconfigviewthree:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[3]"
+#新用户-视图配置-自定义视图四
+userviewconfigviewfour:
+  type: xpath
+  value: "//*[@name=\"from[]\"]/option[4]"
+#新用户-视图配置-右移
+userviewconfigmoveright:
+  type: xpath
+  value: "//*[@class='col-md-12']/div[1]/div[@class='col-sm-2']/button[2]"
+#新用户-视图配置-保存
+userviewconfigsave:
+  type: xpath
+  value: "//*/div[@class='modal-footer ng-scope']/button[1]"
+#新用户-视图配置-断言视图：8586-BJ-UPS1是否添加成功
+userviewconfig8586bjups1:
+  type: xpath
+  value: "//*[@id='8586']/div[2]/div[1]/span"
+
+
+#菜单-审计管理
+#审计管理
+auditmanagement:
+  type: link
+  value: 审计管理
+#审计管理-勾选日志
+selectLog:
+  type: xpath
+  value: "//*/div[2]/table/tbody/tr[1]/td[1]"
+#审计管理-查看
+view:
+  type: xpath
+  value: "//*[@class=\"dataTables_wrapper form-inline dt-bootstrap no-footer\"]/div[1]/a[1]"
+#审计管理-查看-审计详情
+auditDetail:
+  type: xpath
+  value: "//*[@id=\"detailForm\"]/div/div/div/h4"
+#审计管理-查看-审计详情
+closeAuditDetail:
+  type: xpath
+  value: "//*[@id=\"detailForm\"]/div/div/form/div[2]/div/div/button"
+#审计管理-筛选按钮
+selectButton:
+  type: xpath
+  value: "//*[@class=\"dataTables_wrapper form-inline dt-bootstrap no-footer\"]/div[1]/a[2]"
+#审计管理-筛选-模块名称
+modelName:
+  type: xpath
+  value: "//*[@compile='queryHtml']/form/div[1]/div[1]/div/input"
+#审计管理-筛选-操作账号
+operationID:
+  type: xpath
+  value: "//*[@compile='queryHtml']/form/div[1]/div[2]/div/input"
+#审计管理-筛选-功能名称
+functionName:
+  type: xpath
+  value: "//*[@compile='queryHtml']/form/div[1]/div[3]/div/input"
+#审计管理-筛选结果-操作账号
+selectOperationID:
+  type: xpath
+  value: "//*/div[2]/table/tbody/tr[1]/td[4]"
+#审计管理-筛选-筛选区域
+auditManagementSelectArea:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div[1]/div/div/div/div/div[1]"
+#审计管理-筛选-筛选区域
+auditManagementSelectConfirm:
+  type: xpath
+  value: "//*/div[1]/div[2]/div/a[1]/span"
+#用户管理、工作组管理-分配权限-菜单模块
+menuModle:
+  type: xpath
+  value: "//*[@class='nav nav-tabs']/li[2]"
+#用户管理、工作组管理-分配权限-菜单模块-系统管理
+menuModleSystemManagement:
+  type: xpath
+  value: "//*[@class='level0 line']/li[1]/span[2]"
+
+
+
+
+
+
+
+
+#----------------------------------------------菜单-集中告警----------------------------------------
+#===================================================================================================
+#----------------------------------------------菜单-集中告警----------------------------------------
+#菜单
+#菜单-集中告警
+concentratedalarm:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/li[2]"
+
+#菜单-集中告警-告警配置-展示区域
+alarmConfigArea:
+  type: xpath
+  value: "//div/ul[3]/li"
+#菜单-集中告警-告警配置
+alarmconfig:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[3]/li/div/span"
+#菜单-集中告警-告警配置-降噪策略
+denoisestrategy:
+  type: link
+  value: 降噪策略
+
+#降噪策略-全部策略
+allrules:
+  type: xpath
+  value: "//*[@id='cbAlertRuleType']/button[@class='btn btn-default dropdown-toggle']"
+#降噪策略-告警分类策略:
+alarmclassifyrules:
+  type: link
+  value: 告警分类策略
+#降噪策略-告警合并策略:
+alarmMergeRules:
+  type: link
+  value: 告警合并策略
+#降噪策略-告警过滤策略:
+alarmFilterRules:
+  type: link
+  value: 告警过滤策略
+#降噪策略-告警合并策略:
+alarmRecoveryRules:
+  type: link
+  value: 告警恢复策略
+#降噪策略-告警合并策略:
+alarmUpgradeRules:
+  type: link
+  value: 告警升级策略
+#降噪策略-告警分类策略-新建-基础设置-规则名称（值）
+rulesname:
+  type: id
+  value: alertRuleRuleTitle
+#降噪策略-告警分类策略-新建-基础设置-优先级-高
+priority:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[1]/form/div[3]/div/label[3]"
+#降噪策略-告警分类策略-新建-基础设置-优先级-低
+priorityLow:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[1]/form/div[3]/div/label[1]"
+#降噪策略-告警分类策略-新建-基础设置-启用
+startOrClose:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[1]/form/div[4]/label/input"
+#告警通知-告警筛选-新建-基础设置-启用
+alarmScreenStartOrClose:
+  type: xpath
+  value: "//*[@id='incidentDefineMadal']/div/div/div[2]/div/div[1]/section[1]/form/div[4]/label"
+#降噪策略-告警分类策略-新建-基础设置-下一步
+basicsnextstep:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[2]/button[contains(text(),'下一步')]"
+#降噪策略-告警分类策略-新建-规则条件设置-域
+domainDefault:
+    type: xpath
+    value: "//*/div/div/div[2]/div/div[1]/section[2]/form/div[1]/div/div/div/div[1]/div/ol/button/span[1]/span"
+#降噪策略-告警分类策略-新建-规则条件设置-域
+domain:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[2]/form/div[1]/div/div/div"
+#降噪策略-告警分类策略-新建-规则条件设置-选择域（值）
+choosedomain:
+  type: link
+  value: rootDomain
+#降噪策略-告警分类策略-新建-规则条件设置-类型
+type:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[2]/form/div[2]/div/div/div/div/div/ol/button"
+#降噪策略-告警分类策略-新建-规则条件设置-选择类型（值）-Oracle
+choosetypeOracle:
+  type: link
+  value: Oracle
+#降噪策略-告警分类策略-新建-规则条件设置-选择类型（值）-Linux
+choosetypeLinux:
+  type: link
+  value: Linux
+#降噪策略-告警分类策略-新建-规则条件设置-选择类型（值）
+choosetype:
+  type: link
+  value: Oracle
+#降噪策略-告警分类策略-新建-规则条件设置-选择类型（值）
+choosetype2:
+  type: link
+  value: 资源
+#降噪策略-告警分类策略-新建-规则条件设置-告警类型选择
+alarmtype:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[2]/form/div[3]/div/div/div//button"
+#降噪策略-告警分类策略-新建-规则条件设置-选择告警类型选择（值）-Oracle
+chooseAlarmTypeOracle:
+  type: link
+  value: Oracle_System_Alert
+#降噪策略-告警分类策略-新建-规则条件设置-选择告警类型选择（值）-Linux
+chooseAlarmTypeLinux:
+  type: link
+  value: Linux_System_Alert
+#降噪策略-告警分类策略-新建-规则条件设置-下一步
+rulesconditionconfignextstep:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[2]/button[contains(text(),'下一步')]"
+#降噪策略-告警分类策略-新建-规则条件高级设置-节点过滤
+nodefilter:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[3]/form/div[1]/div/div/div/div//ol/button[1]"
+#降噪策略-告警分类策略-新建-规则条件高级设置-选择节点过滤（值）-Oracle
+choosenodefilterOracle:
+  type: link
+  value: StandardTest-Oracle2
+#降噪策略-告警分类策略-新建-规则条件高级设置-选择节点过滤（值）-Linux
+choosenodefilterLinux:
+  type: link
+  value: StandardLinux_Test4
+#降噪策略-告警分类策略-新建-规则条件高级设置-空白处
+blank:
+  type: xpath
+  value: "//*/div/div/div[2]/ul"
+#降噪策略-告警分类策略-新建-规则条件高级设置-采集系统选择
+acquisitionsystemchoose:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[3]/form/div[3]/div/div/div/div//ol/button[1]"
+#降噪策略-告警分类策略-新建-规则条件高级设置-选择采集系统选择（值）
+chooseacquisitionsystemchoose:
+  type: link
+  value: WPL
+#降噪策略-告警分类策略-新建-规则条件高级设置-内容关键字
+contentkeyword:
+  type: xpath
+  value: "//*[@id=\"alertRuleMessageFilter\"]"
+#降噪策略-告警分类策略-新建-规则条件高级设置-策略例外
+strategyException:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[3]/form/div[6]/div/label/input"
+#降噪策略-告警分类策略-新建-规则条件高级设置-下一步
+rulesconditionadvancedconfignextstep:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[2]/button[text()='下一步']"
+#降噪策略-告警分类策略-新建-规则条件高级设置-保存
+rulesconditionadvancedconfigSave:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[2]/button[2]"
+#降噪策略-告警分类策略-新建-告警合并设置-告警合并依据
+rulesConditionAdvancedConfigMergeGist:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label"
+#降噪策略-告警分类策略-新建-告警合并设置-告警合并依据-box
+rulesConditionAdvancedConfigMergeGistBox:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警时间过滤-box
+rulesConditionAdvancedConfigAlarmTimeFilterBox:
+  type: xpath
+  value: "//*/div/div[1]/div/label/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警时间过滤-绝对
+alarmTimeFilterOfAbsolute:
+  type: xpath
+  value: "//*/div/div[1]/div/label[2]/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警时间过滤-绝对-最小时间
+alarmTimeFilterOfAbsoluteMinTime:
+  type: xpath
+  value: "//*[@id='datetimepickerStart']"
+#降噪策略-告警分类策略-新建-策略条件设置-告警时间过滤-绝对-最大时间
+alarmTimeFilterOfAbsoluteMaxTime:
+  type: xpath
+  value: "//*[@id='datetimepickerEnd']"
+#降噪策略-告警分类策略-新建-告警合并设置-合并选项-box
+rulesConditionAdvancedConfigMergeOptionBox:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[4]/div/label/input"
+#降噪策略-告警分类策略-新建-告警合并设置-合并选项-更新告警
+MergeOptionBoxUpdateAlert:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[4]/div/label[1]/input"
+#降噪策略-告警分类策略-新建-告警合并设置-合并选项-自动恢复
+MergeOptionBoxAutoRecovery:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[4]/div/label[2]/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警合并依据-来源实例
+MergeGistBoxOfSourceInstance:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label[3]/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警合并依据-告警级别
+MergeGistBoxOfAlarmLevel:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label[5]/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警合并依据-采集系统
+MergeGistBoxOfCollectorSystem:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label[6]/input"
+#降噪策略-告警分类策略-新建-策略条件高级设置-告警合并依据-告警内容
+MergeGistBoxOfAlarmContent:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label[7]/input"
+#降噪策略-告警分类策略-新建-告警分类设置-新的告警类型
+newalarmtype:
+  type: xpath
+  value: "//*[@id='alertRuleClassify']/div[1]/div//button"
+#降噪策略-告警分类策略-新建-告警分类设置-选择新的告警类型（值）
+choosenewalarmtype:
+  type: link
+  value: Oracle_CPU_Alert
+#降噪策略-告警分类策略-新建-告警分类设置-新的告警级别
+newalarmrank:
+  type: xpath
+  value: "//*[@id='alertRuleClassify']/div[2]/div//button"
+#降噪策略-告警分类策略-新建-告警分类设置-新的告警级别-取消全选
+deselectall:
+  type: xpath
+  value: "//*[@id='alertRuleClassify']/div[2]/div/div/div/div/ol/div/div[2]/div/button[2]"
+#降噪策略-告警分类策略-新建-告警分类设置-选择新的告警级别（值）
+choosenewalarmrank:
+  type: link
+  value: INFO
+#降噪策略-告警分类策略-新建-告警分类设置-保存
+alarmclassifyconfigsave:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[2]/button[contains(text(),'保')]"
+#降噪策略-告警恢复策略-新建-告警恢复策略-恢复时间门限
+recoveryRulesRecoveryTimeThreshold:
+  type: xpath
+  value: "//*[@id='alertRuleRecover']/div[1]/div/input"
+#降噪策略-告警恢复策略-新建-告警恢复策略-恢复选项
+recoveryOption:
+  type: xpath
+  value: "//*[@id='alertRuleRecover']/div[2]/div/label/input"
+#降噪策略-告警恢复策略-新建-告警恢复策略-恢复选项-清出内存
+recoveryOptionClearMemory:
+  type: xpath
+  value: "//*[@id='alertRuleRecover']/div[2]/div/label[2]"
+#降噪策略-告警恢复策略-新建-告警恢复策略-恢复选项-设置为忽略
+recoveryOptionSetIgnore:
+  type: xpath
+  value: "//*[@id='alertRuleRecover']/div[2]/div/label[1]"
+
+#降噪策略-筛选-规则名称
+selectrulesname:
+  type: xpath
+  value: "//*/div[@class='col-md-4']/div/input"
+#降噪策略-筛选-状态
+selectChooseStatus:
+  type: xpath
+  value: "//*/div[1]/form/div/div[2]/div/ol/button"
+#降噪策略-筛选-状态-启用
+selectChooseStatusStartUsing:
+  type: xpath
+  value: "//*/div[1]/form/div/div[2]/div/ol/div/ul/li[1]/a"
+#降噪策略-筛选-状态-停用
+selectChooseStatusBlockUp:
+  type: xpath
+  value: "//*/div[1]/form/div/div[2]/div/ol/div/ul/li[2]/a"
+
+
+
+#降噪策略-筛选-筛选结果-勾选规则
+selectChooseRules:
+  type: xpath
+  value: "//*/table/tbody/tr/td/center/input"
+#降噪策略-筛选-筛选结果-规则名称
+selectRulesName:
+    type: xpath
+    value: "//*/tbody/tr/td[2]"
+#降噪策略-筛选-筛选结果-规则类型
+selectRulesType:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[3]"
+#降噪策略-筛选-筛选结果-节点类型
+selectNodeType:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[4]"
+#降噪策略-筛选-筛选结果-域
+selectDomain:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[5]"
+#降噪策略-筛选-筛选结果-优先级
+selectPriority:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[6]"
+#降噪策略-筛选-筛选结果-例外
+selectException:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[7]"
+#降噪策略-筛选-筛选结果-编辑时间
+selectEditTime:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[8]"
+#降噪策略-筛选-筛选结果-状态
+selectStatus:
+    type: xpath
+    value: "//*/table/tbody/tr[1]/td[9]/center/img"
+
+#菜单-集中告警-告警展示
+alarmDisplay:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[1]/li/a"
+#菜单-集中告警-告警展示-待处理告警
+alarmDisplayPendingAlarm:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[1]"
+#菜单-集中告警-告警展示-待处理告警-数量
+alarmDisplayPendingAlarmNumber:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[1]/b"
+#菜单-集中告警-告警展示-已确认告警
+alarmDisplayConfirmedAlarm:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[2]"
+#菜单-集中告警-告警展示-已确认告警-数量
+alarmDisplayConfirmedAlarmNumber:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[2]/b"
+#菜单-集中告警-告警展示-已前转告警
+alarmDisplayForwardShiftingAlarm:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[3]"
+#菜单-集中告警-告警展示-已前转告警-数量
+alarmDisplayForwardShiftingAlarmNumber:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[3]/b"
+#菜单-集中告警-告警展示-已解决告警
+alarmDisplayResolvedAlarm:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[4]"
+#菜单-集中告警-告警展示-已解决告警-数量
+alarmDisplayResolvedAlarmNumber:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[4]/b"
+#菜单-集中告警-告警展示-已忽略告警
+alarmDisplayIgnoreAlarm:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[5]"
+#菜单-集中告警-告警展示-已忽略告警-数量
+alarmDisplayIgnoreAlarmNumber:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div[5]/b"
+#菜单-集中告警-告警展示-列表告警数量
+alarmDisplayListNumber:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr"
+#菜单-集中告警-告警展示-列表告警数量-值
+alarmDisplayListNumberValue:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[1]"
+
+#菜单-集中告警-告警展示-确认
+CentralizedAlarmConfirmation:
+  type: link
+  value: 确认
+#菜单-集中告警-告警展示-前转
+CentralizedAlarmForwardShifting:
+  type: link
+  value: 前转
+#菜单-集中告警-告警展示-通知
+CentralizedAlarmInform:
+  type: link
+  value: 通知
+#菜单-集中告警-告警展示-解决
+CentralizedAlarmResolved:
+  type: link
+  value: 解决
+#菜单-集中告警-告警查询-历史告警-导出
+CentralizedAlarmExport:
+  type: link
+  value: 导出
+#菜单-集中告警-告警展示-查看
+CentralizedAlarmView:
+  type: link
+  value: 查看
+#菜单-集中告警-告警展示-筛选
+CentralizedAlarmSelect:
+  type: link
+  value: 筛选
+#菜单-集中告警-告警展示-筛选条件-CI域选择框
+CentralizedAlarmSelectCIDomain:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[1]/div[1]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-CI类型选择框
+CentralizedAlarmSelectCIType:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[1]/div[2]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-CI实例选择框
+CentralizedAlarmSelectCICase:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[1]/div[3]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-告警类型选择框
+CentralizedAlarmSelectAlarmType:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[2]/div[1]/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-采集系统选择框
+CentralizedAlarmSelectCollectSystem:
+  type: xpath
+  value: "//*/div[1]/div[1]/form/div[2]/div[2]/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-筛选条件-选择CI域值
+CentralizedAlarmSelectCIDomainValue:
+  type: link
+  value: rootDomain
+#菜单-集中告警-告警展示-筛选条件-选择CI类型
+CentralizedAlarmSelectCITypeValue:
+  type: link
+  value: 操作系统
+#菜单-集中告警-告警展示-筛选条件-选择CI实例
+CentralizedAlarmSelectCICaseValue:
+  type: link
+  value: StandardLinux_Test1
+#菜单-集中告警-告警展示-筛选条件-选择告警类型
+CentralizedAlarmSelectAlarmTypeValue:
+  type: link
+  value: rootDomain
+#菜单-集中告警-告警展示-筛选条件-选择采集系统
+CentralizedAlarmSelectCollectSystemValue:
+  type: link
+  value: Zabbix
+#菜单-集中告警-告警展示-筛选条件-收起
+CentralizedAlarmSelectCollectPutAway:
+  type: link
+  value: 收起
+#菜单-集中告警-告警展示-筛选条件-清空
+CentralizedAlarmSelectCollectClear:
+  type: link
+  value: 清空
+#菜单-集中告警-告警展示-确认-备注
+alarmDisplayConfirmationRemark:
+  type: id
+  value: claimRemark
+#菜单-集中告警-告警展示-确认-备注提示信息
+alarmDisplayConfirmationRemarkHintMessage:
+  type: xpath
+  value: "//*/div/span[@id='content']"
+#菜单-集中告警-告警查询-历史告警-确认-备注提示信息
+alarmQueryHistoryAlarmConfirmationRemarkHintMessage:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[2]"
+
+
+#菜单-集中告警-告警展示-解决-处理意见
+alarmDisplayResovledOpinion:
+  type: id
+  value: closeRemark
+#菜单-集中告警-告警展示-解决-处理意见-设置为忽略按钮
+alarmDisplayResovledOpinionIgnoreButton:
+  type: xpath
+  value: "//*[@id='closeOption']/label[3]/input"
+#菜单-集中告警-告警展示-解决-处理意见-解决确定
+alarmDisplayResovledOpinionConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-解决-处理意见-忽略确定
+alarmDisplayResovledOpinionIgnoreConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-解决-处理意见-清楚内存确定
+alarmDisplayResolvedOfClearMemoryConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-解决-处理意见-清出内存
+alarmDisplayResovledClearMemoryButton:
+  type: xpath
+  value: "//*/div/div/form/div/div/label[3]"
+#菜单-集中告警-告警展示-告警确认-备注-确定
+alarmDisplayConfirm:
+  type: xpath
+  value: "//div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-告警确认提示-确认
+alarmDisplayHintMessageConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-告警解决-处理意见-确定
+alarmDisplayOpinionConfirm:
+  type: xpath
+  value: "//*[@id='alertClaimModal']/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-告警解决-处理意见-确定1
+alarmDisplayOpinionConfirm1:
+  type: xpath
+  value: "//*/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-告警解决-处理意见-确定2
+alarmDisplayOpinionConfirm2:
+  type: xpath
+  value: "//*[@id='alertCloseModal']/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-告警前转-标题
+alarmDisplayAlarmForwardShiftingTitle:
+  type: xpath
+  value: "//*[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty'][@id='alertForword.title']"
+#菜单-集中告警-告警展示-告警前转-级别选择
+alarmDisplayAlarmForwardShiftingLevelChoose:
+  type: xpath
+  value: "//*/div/div/form/div/div[3]/div/ol/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-告警前转-级别选择
+alarmQueryHistoryAlarmForwardShiftingLevelChoose:
+  type: xpath
+  value: "//*/div/div/div/form/div/div[3]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-级别选择-值
+alarmDisplayAlarmForwardShiftingLevelChooseValue:
+  type: xpath
+  value: "//div/div/form/div/div[3]/div/ol/div/ul/li[1]"
+#菜单-集中告警-告警查询-历史告警-告警前转-级别选择-值
+alarmQueryHistoryAlarmForwardShiftingLevelChooseValue:
+  type: xpath
+  value: "//*/div/div/div/form/div/div[3]/div/ol/div/ul/li[1]"
+#菜单-集中告警-告警展示-告警前转-故障分类
+alarmDisplayAlarmForwardShiftingFaultClassify:
+  type: xpath
+  value: "//div/div/form/div/div[4]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-级别选择-值
+alarmDisplayAlarmForwardShiftingFaultClassifyValue:
+  type: xpath
+  value: "//div/div/form/div/div[4]/div/ol/div/ul/li[1]"
+#菜单-集中告警-告警查询-历史告警-告警前转-故障分类
+alarmQueryHistoryAlarmForwardShiftingFaultClassify:
+  type: xpath
+  value: "//*/div/div/div/form/div/div[4]/div/ol/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-告警前转-故障分类-值
+alarmQueryHistoryAlarmForwardShiftingFaultClassifyValue:
+  type: xpath
+  value: "//*/div/div/div/form/div/div[4]/div/ol/div/ul/li[1]"
+
+
+#菜单-集中告警-告警展示-告警前转-直接转给用户(单选按钮）
+alarmDisplayAlarmForwardShiftingDirectToUser:
+  type: xpath
+  value: "//*/div/div/form/div/div[2]/div/label[3]/input"
+#菜单-集中告警-告警查询-告警历史-告警前转-直接转给用户(单选按钮）
+alarmQueryHistoryAlarmForwardShiftingDirectToUser:
+  type: xpath
+  value: "//*[@id='alertForwordForm']/div[1]/div[2]/div/label[3]/input"
+
+#菜单-集中告警-告警展示-告警前转-前转类型
+alarmDisplayAlarmForwardShiftingForwardShiftingClassify:
+  type: xpath
+  value: "//div/div/form/div/div[5]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-前转类型-值
+alarmDisplayAlarmForwardShiftingForwardShiftingClassifyValue:
+  type: xpath
+  value: "//div/div/form/div/div[5]/div/ol/div/ul/li[1]/a"
+#菜单-集中告警-告警展示-告警前转-前转用户
+alarmDisplayAlarmForwardShiftingForwardShiftingUser:
+  type: xpath
+  value: "//div/div/form/div/div[6]/div/ol/button/span[2]"
+#菜单-集中告警-告警展示-告警前转-前转用户-值
+alarmDisplayAlarmForwardShiftingForwardShiftingUserValue:
+  type: xpath
+  value: "//div/div/form/div/div[6]/div/ol/div/ul/li[1]/a"
+
+
+
+
+#菜单-集中告警-告警展示-告警前转-确定
+alarmDisplayForwardShiftingConfirm:
+  type: xpath
+  value: "//div/div/form/div[2]/input[1]"
+#菜单-集中告警-告警查询-历史告警-告警前转-确定
+alarmQueryHistoryAlarmForwardShiftingConfirm:
+  type: xpath
+  value: "//*[@id='alertForwordForm']/div[2]/input[1]"
+
+#菜单-集中告警-告警展示-告警前转-取消
+alarmDisplayForwardShiftingCancel:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope alertModal alertForwordModal in']/div/div/form/div[2]/input[2]"
+#菜单-集中告警-告警展示-告警前转提示-确认
+alarmDisplayForwardShiftingHintMessageConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+
+#菜单-集中告警-告警展示-查看-其他信息
+alarmDisplayViewOtherInformation:
+  type: xpath
+  value: "//*/div/div/ul[@class='nav nav-tabs underline ng-scope']/li[2]/a"
+#菜单-集中告警-告警展示-查看-其他信息-告警类型
+otherInformationAlarmType:
+  type: id
+  value: detailAlertTypeLabel
+#菜单-集中告警-告警展示-查看-前转（通知）
+alarmDisplayViewForwardShifting:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-查看-解决
+alarmDisplayViewResolved:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[2]"
+#菜单-集中告警-告警展示-查看-事件查询
+alarmDisplayViewEventQuery:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[3]"
+#菜单-集中告警-告警展示-查看-事件查询-告警事件查询
+alarmDisplayViewEventQueryTitle:
+  type: xpath
+  value: "//*[@id='eventModal']/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警展示-查看-事件查询-事件信息
+alarmDisplayViewEventQueryEventMessage:
+  type: xpath
+  value: "//div[2]/div[2]//tbody/tr/td[3]/div"
+#菜单-集中告警-告警展示-查看-事件查询-关闭
+alarmDisplayViewEventQueryClose:
+  type: xpath
+  value: "//*[@id='eventModal']/div/div/div[3]/a"
+#菜单-集中告警-告警展示-查看-操作日志
+alarmDisplayViewOperationLogs:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[4]"
+#菜单-集中告警-告警展示-查看-操作日志-告警操作日志查看
+alarmDisplayViewOperationLogsTitle:
+  type: xpath
+  value: "//*[@id='operlogModal']/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警展示-查看-操作日志-关闭
+alarmDisplayViewOperationLogsClose:
+  type: xpath
+  value: "//*[@id='operlogModal']/div/div/div[3]/a"
+
+#菜单-集中告警-告警展示-查看-关联告警
+alarmDisplayRelevanceAlarm:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[5]"
+#菜单-集中告警-告警展示-查看-关联告警-关联告警查看
+alarmDisplayRelevanceAlarmTitle:
+  type: xpath
+  value: "//*[@id='relationModal']/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警展示-查看-关联告警-关闭
+alarmDisplayRelevanceAlarmClose:
+  type: xpath
+  value: "//*[@id='relationModal']/div/div/div[3]/a"
+#菜单-集中告警-告警展示-查看-取消
+alarmDisplayViewCancel:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a[6]"
+#菜单-集中告警-告警展示-查看-前转-提示信息确定按钮
+alarmDisplayViewForwardShiftingHintConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-查看-解决-解决-提示信息确定按钮
+alarmDisplayViewResolvedOfResolvedHintConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-查看-解决-忽视-提示信息确定按钮
+alarmDisplayViewResolvedOfIgnoreHintConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-自动刷新-打开
+alarmDisplayAutoRefreshOpen:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[2]/i"
+#菜单-集中告警-告警展示-自动刷新-打开
+alarmDisplayAutoRefreshClose:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[2]/i"
+#系统-标题-空白处
+systemTitleblank:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/div"
+#菜单-集中告警-告警展示-查看-确认（多条选择提示）
+alarmDisplayViewMultitermHintConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button"
+#菜单-集中告警-告警展示-搜索框
+alarmDisplaySearchBox:
+  type: xpath
+  value: "//*[@id='optionsKeyWords']"
+#菜单-集中告警-告警展示-搜索按钮
+alarmDisplaySearchButton:
+  type: xpath
+  value: "//*/div/div/form/div/span"
+#菜单-集中告警-告警展示-列设置
+alarmDisplayColumnSetting:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[1]"
+#菜单-集中告警-告警展示-列设置-是否显示框
+alarmDisplayColumnSettingisDisplay:
+  type: xpath
+  value: "//div/div/div[2]/div/ol/li/div[2]/div/label/input"
+#菜单-集中告警-告警展示-列设置-确认
+alarmDisplayColumnSettingConfirm:
+  type: xpath
+  value: "//div/div/div[3]/a[1]"
+#菜单-集中告警-告警展示-列-是否显示
+alarmDisplayColumnDisplay:
+  type: xpath
+  value: "//*/div[2]/div/div/div[1]/div/table/thead/tr/th"
+#菜单-集中告警-告警展示-列-消息内容
+alarmDisplayColumnDisplayMessageContent:
+  type: xpath
+  value: "//table/tbody/tr[1]/td[9]"
+
+#菜单-集中告警-告警展示-告警级别-L5
+alarmDisplayAlarmRankL5:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[4]/span"
+#菜单-集中告警-告警展示-告警级别-L4
+alarmDisplayAlarmRankL4:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[5]/span"
+#菜单-集中告警-告警展示-告警级别-L3
+alarmDisplayAlarmRankL3:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[6]/span"
+#菜单-集中告警-告警展示-告警级别-L2
+alarmDisplayAlarmRankL2:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[7]/span"
+#菜单-集中告警-告警展示-告警级别-L1
+alarmDisplayAlarmRankL1:
+  type: xpath
+  value: "//*/div[2]/div[2]/div/a[8]/span"
+
+#降噪策略-告警合并策略-新建-告警合并设置-告警内容
+alarmContent:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[1]/div/label[7]/input"
+#降噪策略-告警合并策略-新建-告警合并设置-最大合并数量
+maxMergeNumber:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[2]/input"
+#降噪策略-告警合并策略-新建-告警合并设置-合并时间窗口
+mergeTimeWindows:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[3]/div/input"
+#降噪策略-告警合并策略-新建-告警合并设置-保存
+alarmMergeConfigSave:
+  type: xpath
+  value: "//*[@id='alertRuleMarge']/div[5]/button[2]"
+#启用
+startUsing:
+  type: link
+  value: 启用
+#停用
+blockUp:
+  type: link
+  value: 停用
+#菜单-集中告警-告警配置-降噪策略-列表告警数量
+alarmRulesListNumber:
+  type: xpath
+  value: "//*/div[@id='alertRuleManage']/div/div[2]/div/div[3]/div/table/tbody/tr"
+#菜单-集中告警-告警配置-降噪策略-列表告警数量-值
+alarmRulesListNumberValue:
+  type: xpath
+  value: "//*[@id='alertRuleManage']//tbody/tr/td[1]"
+#菜单-集中告警-告警配置-降噪策略-筛选区域
+denoiseStrategySelectArea:
+  type: id
+  value: ruleQueryDiv
+#菜单-集中告警-告警查询-（区域）
+alarmSelectArea:
+  type: xpath
+  value: "//div/ul[2]/li"
+#菜单-集中告警-告警查询
+alarmSelect:
+  type: xpath
+  value: "//div/ul[2]/li/div/span"
+#菜单-集中告警-告警查询-前转记录
+shiftingRecording:
+  type: link
+  value: 前转记录
+#菜单-集中告警-告警查询-前转记录-查看-取消
+forwardShiftingRecodingViewCancel:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a"
+#菜单-集中告警-告警查询-前转记录-查询-故障名称
+forwardShiftingRecodingSelectBreakdownName:
+  type: xpath
+  value: "//*/div[@class='ng-isolate-scope']/div[1]/div[1]/form/div[1]/div[2]/div/input"
+
+#菜单-集中告警-告警查询-历史告警
+concentrateAlarmAlarmSelectHistoryAlarm:
+  type: xpath
+  value: "//div/ul[2]/li/ul/ul/li[1]/a"
+#菜单-集中告警-告警查询-历史告警-筛选条件-CI域选择框
+alarmQueryHistoryAlarmSelectCIDomain:
+  type: xpath
+  value: "//*/div/div[1]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-筛选条件-CI域值(rootDomain)
+alarmQueryHistoryAlarmSelectCIDomainValue:
+  type: link
+  value: rootDomain
+#菜单-集中告警-告警查询-历史告警-筛选条件-ci类型
+alarmQueryHistoryAlarmSelectCIType:
+  type: xpath
+  value: "//*/div[1]/div[2]/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-筛选条件-ci类型(操作系统)
+alarmQueryHistoryAlarmSelectCITypeValue:
+  type: link
+  value: 操作系统
+#菜单-集中告警-告警查询-历史告警-筛选条件-CI名称
+alarmQueryHistoryAlarmSelectCIName:
+  type: xpath
+  value: "//*/div[@urmp-instance]/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-筛选条件-CI名称（StandardLinux_Test1）
+alarmQueryHistoryAlarmSelectCINameValue:
+  type: link
+  value: StandardLinux_Test1
+#菜单-集中告警-告警查询-历史告警-筛选条件-告警信息
+alarmQueryHistoryAlarmSelectAlarmInformation:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div[3]/div[1]/input"
+#菜单-集中告警-告警查询-历史告警-筛选条件-确定
+alarmQueryHistoryAlarmSelectConfirm:
+  type: xpath
+  value: "//*/div[@class='form-group']/div/a[1]/span"
+#菜单-集中告警-告警查询-历史告警-筛选结果-消息内容
+alarmQueryHistoryAlarmSelecResultInformationContent:
+  type: xpath
+  value: "//*[@datatable]/tbody/tr[1]/td[6]"
+#菜单-集中告警-告警查询-历史告警-告警前转-前转类型
+alarmQueryHistoryAlarmAlarmForwardForwardType:
+  type: xpath
+  value: "//*[@id='alertForword.forwordType']/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-告警前转-前转类型-值(短信)
+alarmQueryHistoryAlarmAlarmForwardForwardTypeValue:
+  type: xpath
+  value: "//*[@id='alertForword.forwordType']/div/ul/li[3]/a"
+#菜单-集中告警-告警查询-历史告警-告警前转-前转用户
+alarmQueryHistoryAlarmAlarmForwardForwardUser:
+  type: xpath
+  value: "//*[@id='alertForword.userList']/button/span[2]"
+#菜单-集中告警-告警查询-历史告警-告警前转-前转用户-值
+alarmQueryHistoryAlarmAlarmForwardForwardUserValue:
+  type: xpath
+  value: "//*[@id='alertForword.userList']/div/ul/li[1]/a"
+#菜单-集中告警-告警查询-历史告警-告警前转-标题
+alarmQueryHistoryAlarmAlarmForwardShiftingTitle:
+  type: id
+  value: alertForword.title
+
+#菜单-集中告警-告警查询-历史告警-分页-总数
+alarmQueryHistoryAlarmPagingTotal:
+  type: xpath
+  value: "//div[2]/div/div[3]/div[1]"
+#菜单-集中告警-告警查询-历史告警-分页-选择
+alarmQueryHistoryAlarmPagingTotalChoose:
+  type: xpath
+  value: "//div[2]/div/div[3]/div[2]/label/select"
+#菜单-集中告警-告警查询-历史告警-分页-上页、下页
+alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDown:
+  type: xpath
+  value: "//*/div[1]/div[1]/div[2]/div[1]/div[4]/div[3]/ul/li"
+#菜单-集中告警-告警查询-历史告警-分页-上页、下页
+alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDown:
+  type: xpath
+  value: "//div[2]/div/div[3]/div[3]/ul/li"
+#菜单-集中告警-告警查询-历史告警-分页-上页、下页
+alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDownDetails:
+  type: xpath
+  value: "//div[2]/div/div[3]/div[3]/ul/li/a"
+#菜单-集中告警-告警通知-区域
+alarmInformArea:
+  type: xpath
+  value: "//div/ul[4]/li"
+#菜单-集中告警-告警通知
+concentrateAlarmAlarmInform:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[4]/li/div/span"
+#菜单-集中告警-告警通知-接收分组
+concentrateAlarmAlarmInformReceiveGrouping:
+  type: link
+  value: 接收分组
+#菜单-集中告警-告警通知-接收分组-新建分组
+receiveGroupingNewGrouping:
+  type: link
+  value: 新建
+#菜单-集中告警-告警通知-接收分组-新建分组-名称
+receiveGroupingNewGroupingName:
+  type: xpath
+  value: "//*[@id='SFaddForm']/div[1]/div/div/div/div/div[1]/div[1]/div/input"
+#菜单-集中告警-告警通知-接收分组-新建分组-编辑名称
+receiveGroupingNewGroupingEditName:
+  type: xpath
+  value: "//*[@id='SFeditForm']/div[1]/div/div/div/div/div[1]/div[1]/div/input"
+#菜单-集中告警-告警通知-接收分组-新建分组-描述
+receiveGroupingNewGroupingDescription:
+  type: xpath
+  value: "//*[@id='SFaddForm']/div[1]/div/div/div/div/div[2]/div/div/textarea"
+#菜单-集中告警-告警通知-接收分组-新建分组-编辑描述
+receiveGroupingNewGroupingEditDescription:
+  type: xpath
+  value: "//*[@id='SFeditForm']/div[1]/div/div/div/div/div[2]/div/div/textarea"
+#菜单-集中告警-告警通知-接收分组-新建分组-保存
+receiveGroupingNewGroupingSave:
+  type: xpath
+  value: "//*[@id='SFaddForm']/div[2]/div/div/button[1]"
+#菜单-集中告警-告警通知-接收分组-编辑分组-保存
+receiveGroupingEditNewGroupingSave:
+  type: xpath
+  value: "//*[@id='SFeditForm']/div[2]/div/div/button[1]"
+#菜单-集中告警-告警通知-接收分组-新建分组-保存-提示信息
+receiveGroupingNewGroupingSavePromptMessage:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[2]/span[@id='content']"
+#菜单-集中告警-告警通知-接收分组-新建分组-保存-提示确认
+receiveGroupingNewGroupingSaveHintConfirm:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[3]/button[1]"
+#菜单-集中告警-告警通知-接收分组-编辑分组-保存-提示确认
+receiveGroupingEditGroupingSaveHintConfirm:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[3]/button[1]"
+#菜单-集中告警-告警通知-接收分组-筛选-名称
+receiveGroupingQueryName:
+  type: xpath
+  value: "//*/div[1]/form/div/div/div/input"
+#菜单-集中告警-告警通知-接收分组-筛选-确定
+receiveGroupingQueryConfirm:
+  type: xpath
+  value: "//*/div[2]/div/a[1]/span[text()='确定']"
+#菜单-集中告警-告警通知-接收分组-筛选结果-分组名称
+receiveGroupingQueryResultGroupingName:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[3]"
+#菜单-集中告警-告警通知-接收分组-筛选结果-分组描述
+receiveGroupingQueryResultGroupingDescription:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[5]"
+#菜单-集中告警-告警通知-接收分组-筛选
+receiveGroupingQueryArea:
+  type: xpath
+  value: "//*/div[@class='panel-body']/div[1]/div[1]"
+#菜单-集中告警-告警通知-接收分组-筛选结果（无数据）
+receiveGroupingQueryResultEmptyData:
+  type: xpath
+  value: "//*/tbody/tr/td"
+#菜单-集中告警-告警查询-通知记录
+alarmQueryNoticeRecord:
+  type: link
+  value: 通知记录
+#菜单-集中告警-告警查询-通知记录-筛选-通知标题
+alarmQueryNoticeRecordQueryNoticeTitle:
+  type: xpath
+  value: "//*/div[1]/form/div[1]/div[2]/div/input"
+#菜单-集中告警-告警查询-通知记录-筛选-结果-通知标题
+alarmQueryNoticeRecordQueryResultNoticeTitle:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[5]"
+#菜单-集中告警-告警查询-通知记录-查看详情-标题
+alarmQueryNoticeRecordViewDetailsTitle:
+  type: xpath
+  value: "//*/div/div/div[1]/h4/strong"
+#菜单-集中告警-告警查询-通知记录-查看详情-取消
+alarmQueryNoticeRecordViewDetailsCancle:
+  type: xpath
+  value: "//*[@id='detailModal']/div/div/div[3]/a"
+#菜单-集中告警-告警通知-通知方式
+concentrateAlarmAlarmInformInformWay:
+  type: link
+  value: 通知方式
+#菜单-集中告警-告警通知-告警筛选
+concentrateAlarmAlarmScreen:
+  type: link
+  value: 告警筛选
+#菜单-集中告警-告警通知-告警筛选-筛选结果null
+AlarmScreenScreenResultNull:
+  type: xpath
+  value: "//*/tbody/tr/td"
+#菜单-集中告警-告警通知-通知方式-新建
+AlarmInformInformWayCreate:
+  type: xpath
+  value: "//*/div[2]/div/div[1]/a[1]/span"
+#菜单-集中告警-告警通知-通知方式-新建-名称
+AlarmInformInformWayCreateName:
+  type: xpath
+  value: "//*[@id='forwardPathEditForm']/div[1]/input"
+#菜单-集中告警-告警通知-通知方式-新建-通知类型
+AlarmInformInformWayCreateType:
+  type: xpath
+  value: "//*[@id='cbForwardType']/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-新建-通知类型（值）邮件
+AlarmInformInformWayCreateTypeValue:
+  type: link
+  value: 邮件
+#菜单-集中告警-告警通知-通知方式-新建-通知目标用户
+AlarmInformInformWayCreateUser:
+  type: xpath
+  value: "//*[@id='userListFilter']/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-新建-通知目标用户(值)
+AlarmInformInformWayCreateUserValue:
+  type: xpath
+  value: "//*[@id='userListFilter']/div/ul/li/a/span[1]"
+#菜单-集中告警-告警通知-通知方式-新建-启用
+AlarmInformInformWayCreateEnable:
+  type: xpath
+  value: "//*[@id='forwardPathEditForm']/div[7]/label/input"
+#菜单-集中告警-告警通知-通知方式-新建-通知级别
+AlarmInformInformWayCreateLevel:
+  type: xpath
+  value: "//*[@id='cbIncidentSeverity']/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-新建-通知级别（值）
+AlarmInformInformWayCreateLevelValue:
+  type: xpath
+  value: "//*[@id='cbIncidentSeverity']/div/ul/li/a[contains(text(),'INFO')]"
+#菜单-集中告警-告警通知-通知方式-新建-接收分组
+AlarmInformInformWayCreateReceivingPacket:
+  type: xpath
+  value: "//*[@id='cbIncidentType']/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-新建-接收分组（值）
+AlarmInformInformWayCreateReceivingPacketValue:
+  type: xpath
+  value: "//*[@id='cbIncidentType']/div/ul/li/a[contains(text(),'我是接收分组名称')]"
+#菜单-集中告警-告警通知-通知方式-新建-保存
+AlarmInformInformWayCreateSave:
+  type: xpath
+  value: "//*[@id='forwardPathMadal']/div/div/div[3]/button[1]"
+
+#菜单-集中告警-告警通知-通知方式-筛选
+AlarmInformInformWayQuery:
+  type: xpath
+  value: "//*/div[1]/a[7]/span"
+#菜单-集中告警-告警通知-通知方式-筛选-名称
+AlarmInformInformWayQueryName:
+  type: xpath
+  value: "//*/div[1]/div/input[@name='forwardPathTitle']"
+#菜单-集中告警-告警通知-通知方式-筛选-通知类型
+AlarmInformInformWayQueryNotificationType:
+  type: xpath
+  value: "//*/div[1]/form/div[1]/div[2]/div/ol/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-筛选-通知类型-邮件
+AlarmInformInformWayQueryNotificationTypeValue:
+  type: xpath
+  value: "//*/div[1]/form/div[1]/div[2]/div/ol/div/ul/li[2]/a"
+#菜单-集中告警-告警通知-通知方式-筛选-通知目标用户
+AlarmInformInformWayQueryTargetUser:
+  type: xpath
+  value: "//*/input[@name='forwardUser']"
+#菜单-集中告警-告警通知-通知方式-筛选-状态
+AlarmInformInformWayQueryStatus:
+  type: xpath
+  value: "//*/div[1]/form/div[2]/div/div/ol/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-筛选-状态-启用
+AlarmInformInformWayQueryStatusEnable:
+  type: xpath
+  value: "//*/div[1]/form/div[2]/div/div/ol/div/ul/li/a[contains(text(),'启用')]"
+#菜单-集中告警-告警通知-通知方式-筛选-状态-停用
+AlarmInformInformWayQueryStatusDisable:
+  type: xpath
+  value: "//*/div[1]/form/div[2]/div/div/ol/div/ul/li/a[contains(text(),'停用')]"
+#菜单-集中告警-告警通知-通知方式-筛选-确定
+AlarmInformInformWayQueryConfirm:
+  type: xpath
+  value: "//*/div[2]/div/a[1]/span"
+#菜单-集中告警-告警通知-通知方式-筛选结果-名称
+AlarmInformInformWayQueryResultName:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[2]"
+#菜单-集中告警-告警通知-通知方式-筛选结果-通知类型
+AlarmInformInformWayQueryResultType:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[3]"
+#菜单-集中告警-告警通知-通知方式-筛选结果-启用标识
+AlarmInformInformWayQueryResultEnableLogo:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[7]/center/img"
+#菜单-集中告警-告警通知-通知方式-筛选结果-关联的告警筛选
+AlarmInformInformWayQueryResultRelatedAlarmSelect:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[6]"
+
+#菜单-集中告警-告警通知-通知方式-筛选结果-勾选
+AlarmInformInformWayQueryResultChoose:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[1]"
+#菜单-集中告警-告警通知-通知方式-编辑
+AlarmInformInformWayEdit:
+  type: xpath
+  value: "//*/div[2]/div/div[1]/a[2]/span"
+#菜单-集中告警-告警通知-通知方式-新建-通知类型
+AlarmInformInformWayEditType:
+  type: xpath
+  value: "//*[@id='cbForwardType']/button/span[1]"
+#菜单-集中告警-告警通知-通知方式-编辑-通知类型（值）邮件
+AlarmInformInformWayEditTypeValue:
+  type: link
+  value: 短信
+#菜单-集中告警-告警通知-通知方式-筛选（编辑）-通知类型
+AlarmInformInformWayQueryEditNotificationType:
+  type: xpath
+  value: "//*/div[1]/form/div[1]/div[2]/div/ol/button/span[1]"
+#菜单-集中告警-告警通知-通知方式-筛选(编辑)-通知类型-短信
+AlarmInformInformWayQueryEditNotificationTypeValue:
+  type: xpath
+  value: "//*/div[1]/form/div[1]/div[2]/div/ol/div/ul/li[3]/a"
+#菜单-集中告警-告警通知-通知方式-筛选结果（空）
+AlarmInformInformWayQueryResultEmpty:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td"
+#菜单-集中告警-告警通知-通知方式-筛选(编辑)-状态
+AlarmInformInformWayQueryEditStatus:
+  type: xpath
+  value: "//*/div[1]/form/div[2]/div/div/ol/button/span[1]"
+#菜单-集中告警-告警通知-通知方式-筛选-清空
+AlarmInformInformWayQueryClear:
+  type: xpath
+  value: "//*/div[2]/div/a[2]/span"
+#菜单-集中告警-告警通知-通知方式-启用
+AlarmInformInformWayEnable:
+  type: xpath
+  value: "//*/div[1]/a[4]/span[contains(text(),'启用')]"
+#菜单-集中告警-告警通知-通知方式-关联告警筛选
+AlarmInformInformWayCreateRelatedAlarm:
+  type: link
+  value: 关联告警筛选
+#菜单-集中告警-告警通知-通知方式-关联告警筛选-告警筛选策略
+AlarmInformInformWaycreateRelatedAlarmFaultRule:
+  type: xpath
+  value: "//*[@id='incidentRule']/button/span[2]"
+#菜单-集中告警-告警通知-通知方式-关联告警筛选-告警筛选策略（值）
+AlarmInformInformWaycreateRelatedAlarmFaultRuleValue:
+  type: xpath
+  value: "//*[@id='incidentRule']/div/ul/li/a[contains(text(),'AutoTest编辑告警筛选')]"
+ #菜单-集中告警-告警通知-通知方式-关联告警筛选-确认
+AlarmInformInformWaycreateRelatedAlarmConfirm:
+  type: xpath
+  value: "//*[@id='incidentRelationMadal']/div/div/div[3]/button[1]"
+#菜单-集中告警-告警通知-通知方式-删除
+AlarmInformInformWayDelete:
+  type: xpath
+  value: "//*/div[2]/div/div[1]/a[3]/span"
+#菜单-集中告警-告警通知-通知方式-删除-提示信息
+AlarmInformInformWayDeleteHint:
+  type: xpath
+  value: "//*/span[@id='content'][contains(text(),'')]"
+#菜单-集中告警-告警通知-通知方式-删除-确定
+AlarmInformInformWayDeleteConfirm:
+  type: xpath
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div/div[3]/button[1]"
+
+#菜单-集中告警-告警配置-阈值策略
+thresholdStrategy:
+  type: link
+  value: 阈值策略
+#菜单-集中告警-告警配置-阈值策略-新建-名称
+FigurationThresholdStrategyCreateName:
+  type: id
+  value: addModel_title
+#菜单-集中告警-告警配置-阈值策略-编辑-名称
+FigurationThresholdStrategyEditName:
+  type: id
+  value: editModel_title
+#菜单-集中告警-告警配置-阈值策略-新建-启用
+FigurationThresholdStrategyCreateNameEnable:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[2]/label[2]/input"
+#菜单-集中告警-告警配置-阈值策略-编辑-启用
+FigurationThresholdStrategyEditNameEnable:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[2]/label[2]/input"
+#菜单-集中告警-告警配置-阈值策略-新建-数据域(框)
+FigurationThresholdStrategyCreateDataDomain:
+  type: xpath
+  value: "//*/div[@id='addThresholdForm']/div/div/form/div[1]/div/div[3]/div[1]/div/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警配置-阈值策略-新建-数据域(值)
+FigurationThresholdStrategyCreateDataDomainValue:
+  type: link
+  value: rootDomain
+#菜单-集中告警-告警配置-阈值策略-新建-节点类型
+FigurationThresholdStrategyCreateNodeType:
+  type: xpath
+  value: "//*/div[@id='addThresholdForm']/div/div/form/div[1]/div/div[3]/div[2]/div/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-阈值策略-新建-节点类型（值）
+FigurationThresholdStrategyCreateNodeTypeValue:
+  type: link
+  value: 操作系统
+#菜单-集中告警-告警配置-阈值策略-新建-kpi类型选择
+FigurationThresholdStrategyCreateKPITypeSelection:
+  type: xpath
+  value: "//*/div[@id='addThresholdForm']/div/div/form/div[1]/div/div[6]/div[1]/div/div/div/div/div/div/ol/button/span[2]"
+#菜单-集中告警-告警配置-阈值策略-新建-kpi类型选择（值）
+FigurationThresholdStrategyCreateKPITypeSelectionValue:
+   type: link
+   value: info告警数量
+#菜单-集中告警-告警配置-阈值策略-新建-告警类型选择
+FigurationThresholdStrategyCreateAlarmTypeSelection:
+  type: xpath
+  value: "//*/div[@id='addThresholdForm']/div/div/form/div[1]/div/div[6]/div[2]/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-阈值策略-新建-告警类型选择（值）
+FigurationThresholdStrategyCreateAlarmTypeSelectionValue:
+  type: link
+  value: CommonCi_infoCount_Alert
+#菜单-告警配置-阈值策略-新建-告警级别-info
+FigurationThresholdStrategyCreateAlarmLevel:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[7]/select"
+#菜单-告警配置-阈值策略-编辑-告警级别-CRITICAL
+FigurationThresholdStrategyEditAlarmLevel:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[7]/select"
+#菜单-告警配置-阈值策略-新建-阈值规则-大于
+FigurationThresholdStrategyCreateThresholdRuleGreaterThan:
+  type: xpath  
+  value: "//*[@id='addModelForm']/div[1]/div/div[8]/div/div[1]/div/select"
+#菜单-告警配置-阈值策略-编辑-阈值规则-小于
+FigurationThresholdStrategyEditThresholdRuleLessThan:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[8]/div/div[1]/div/select"
+#菜单-告警配置-阈值策略-新建-阈值规则-固定值
+FigurationThresholdStrategyCreateThresholdRuleFixedValue:
+  type: xpath 
+  value: "//*[@id='addModelForm']/div[1]/div/div[8]/div/div[2]/div/select"
+#菜单-告警配置-阈值策略-新建-阈值规则-值
+FigurationThresholdStrategyCreateThresholdRuleFixedValueValue:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[8]/div/div[4]/div/input"
+#菜单-告警配置-阈值策略-编辑-阈值规则-值
+FigurationThresholdStrategyEditThresholdRuleFixedValueValue:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[8]/div/div[4]/div/input"
+#菜单-告警配置-阈值策略-新建-保存
+FigurationThresholdStrategyCreateSave:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[2]/button[1]"
+#菜单-告警配置-阈值策略-编辑-保存
+FigurationThresholdStrategyEditSave:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[2]/button[1]"
+#菜单-告警配置-阈值策略-筛选区域
+FigurationThresholdStrategySelectArea:
+  type: id
+  value: privateQueryArea
+#菜单-告警配置-阈值策略-筛选-数据域
+FigurationThresholdStrategySelectDataDomain:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div/div[1]/div"
+#菜单-告警配置-阈值策略-筛选-数据域(值)
+FigurationThresholdStrategySelectDataDomainValue:
+  type: link
+  value: rootDomain
+#菜单-告警配置-阈值策略-筛选-节点类型
+FigurationThresholdStrategySelectNodeType:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div/div[2]/div"
+ #菜单-告警配置-阈值策略-筛选-节点类型（值）
+FigurationThresholdStrategySelectNodeTypeValue:
+  type: link
+  value: 操作系统
+#菜单-告警配置-阈值策略-筛选-KPI
+FigurationThresholdStrategySelectKPI:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div/div[3]/div"
+#菜单-告警配置-阈值策略-筛选-KPI（值）
+FigurationThresholdStrategySelectKPIValue:
+  type: link
+  value: info告警数量
+#菜单-告警配置-阈值策略-筛选-确认
+FigurationThresholdStrategySelectConfirm:
+  type: xpath
+  value: "//*/div/form/div[2]/div/a[1]/span"
+#菜单-告警配置-阈值策略-筛选结果-名称
+FigurationThresholdStrategySelectResultName:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[2]"
+#菜单-告警配置-阈值策略-筛选结果-节点类型
+FigurationThresholdStrategySelectResultNodeType:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[3]"
+#菜单-告警配置-阈值策略-筛选结果-域
+FigurationThresholdStrategySelectResultDomain:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[5]"
+#菜单-告警配置-阈值策略-筛选结果-KPI
+FigurationThresholdStrategySelectResultKPI:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[6]"
+#菜单-告警配置-阈值策略-筛选结果-Alert
+FigurationThresholdStrategySelectResultAlert:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[7]"
+#菜单-告警配置-阈值策略-筛选结果-级别
+FigurationThresholdStrategySelectResultLevel:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[8]"
+#菜单-告警配置-阈值策略-筛选结果-启用
+FigurationThresholdStrategySelectResultEnable:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr[1]/td[9]/center/img"
+
+#菜单-告警配置-预警规则（预警策略）
+alarmConfigWarningStrategy:
+  type: link
+  value: 预警规则
+#菜单-集中告警-告警配置-预警策略-新建-策略名称
+WarningStrategyCreateStrategyName:
+  type: xpath 
+  value: "//*[@id='warningName']"
+#菜单-集中告警-告警配置-预警策略-新建-项目名称
+WarningStrategyCreateProjectName:
+  type: xpath 
+  value: "//*[@id='projectName']"
+#菜单-集中告警-告警配置-预警策略-新建-策略类型
+WarningStrategyCreateStrategyType:
+  type: xpath 
+  value: "//*[@id='viewfilter']/button/span[2]"
+#菜单-集中告警-告警配置-预警策略-新建-策略类型-综合预警
+WarningStrategyCreateStrategyTypeValue:
+  type: xpath
+  value: "//*[@id='viewfilter']/div/ul/li/a/span[1]"
+#菜单-集中告警-告警配置-预警策略-新建-下一步
+WarningStrategyCreateNextStep:
+  type: xpath
+  value: "//*[@id='firstForm']/div[6]/div/input[1]"
+#菜单-集中告警-告警配置-预警策略-新建-删除button
+WarningStrategyCreateDeleteButton:
+  type: xpath
+  value: "//div[1]/div[2]/div/div[5]/span/i"
+#菜单-集中告警-告警配置-预警规则-新建-变坏次数净值
+WarningStrategyCreateNetWorth:
+  type: xpath
+  value: "//*/div[1]/div[2]/div[1]/div[2]/input"
+#菜单-集中告警-告警配置-预警规则-新建-告警级别-超级基线历史最值
+WarningStrategyCreateAlarmLevel:
+  type: xpath
+  value: "//div[1]/div[2]/div/div[4]/ol[1]/button"
+#菜单-集中告警-告警配置-预警规则-新建-告警级别-超级基线历史最值-info
+WarningStrategyCreateAlarmLevelValue:
+  type: xpath
+  value: "//div[1]/div[2]/div/div[4]/ol[1]/div/ul/li[3]/a[contains(text(),'Info')]"
+#菜单-集中告警-告警配置-预警规则-新建-告警级别-超级基线历史最值-info
+WarningStrategyCreateAddNewStrategy:
+  type: xpath
+  value: "//*/div[2]/div/input[contains(@value,'添加新策略')]"
+#菜单-集中告警-告警配置-预警规则-新建-提交
+WarningStrategyCreateSubmit:
+  type: xpath
+  value: "//div[2]/div/input[3]"
+
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultOne:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[1]/center/input"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultTwo:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[2]"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultTwo2:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[2]//img"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultThree:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[3]"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultFour:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[4]"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultFive:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[5]"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultSix:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[6]"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultSeven:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[7]"
+#菜单-集中告警-告警通知-告警筛选-筛选结果
+SelectResultEight:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[8]/center/img"
+#菜单-集中告警-告警通知-告警筛选-筛选区域
+AlarmScreenSelectArea:
+  type: xpath
+  value: "//*/div[@id='incidentDefinePannel']/div/div[1]"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略
+AlarmRelevanceRules:
+  type: link
+  value: 告警关联策略
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-根源告警设置-数据权限域
+alarmRelevanceRootJurisdictionDomain:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[8]/form/div[1]/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-根源告警设置-节点类型
+alarmRelevanceNodeType:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[8]/form/div[2]/div/div/div/div/div/ol/button"
+
+
+
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-区域
+alarmRelevanceAffectAlarmSettingCreateArea:
+  type: xpath
+  value: "//*[@id='editPannel']"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建button
+alarmRelevanceAffectAlarmSettingCreateButton:
+  type: xpath
+  value: "//*/div[@id='listForm']/div[1]/div[2]/div[1]/div[1]/a[1]/span[text()='新建']"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-编辑button
+alarmRelevanceAffectAlarmSettingEditButton:
+  type: xpath
+  value: "//*/div[@id='listForm']/div[1]/div[2]/div[1]/div[1]/a/span[text()='编辑']"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-删除button
+alarmRelevanceAffectAlarmSettingDeleteButton:
+  type: xpath
+  value: "//*/div[@id='listForm']/div[1]/div[2]/div[1]/div[1]/a/span[text()='删除']"
+
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-域
+alarmRelevanceAffectAlarmSettingCreateDomain:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-类型
+alarmRelevanceAffectAlarmSettingCreateNodeType:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div[2]/div"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点关系
+alarmRelevanceAffectAlarmSettingCreateNodeRelation:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div[3]/div//ol/button"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点关系
+alarmRelevanceAffectAlarmSettingCreateNodeRelationValue:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div[3]/div//ul/li[1]/a[2]"
+
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-保存
+alarmRelevanceAffectAlarmSettingCreateSave:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[2]/div/button[1]"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-结果-节点类型
+alarmRelevanceAffectAlarmSettingResultNodeType:
+  type: xpath
+  value: "//table/tbody/tr[1]/td[2]"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-勾选
+alarmRelevanceAffectAlarmSettingChooseResult:
+  type: xpath
+  value: "//*/table/tbody/tr[1]/td[1]/center/input"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-勾选
+alarmRelevanceAffectAlarmSettingResultIsEmpty:
+  type: xpath
+  value: "//*[@id='listForm']//table/tbody/tr/td"
+
+#菜单-资源管理
+resourceManagement:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/li[4]"
+#菜单-资源管理-资源模型
+resourceModel:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[1]/li/a/span"
+#菜单-资源管理-资源实例
+resourceExample:
+  type: xpath
+  value: "//div/ul[2]/li/a/span"
+#菜单-资源管理-自动发现-区域
+automaticDiscoveryArea:
+  type: xpath
+  value: "//div/ul[3]/li"
+#菜单-资源管理-自动发现
+automaticDiscovery:
+  type: xpath
+  value: "//div/ul[3]/li/div/span"
+ #菜单-资源管理-自动发现-发现规则
+discoveryRule:
+  type: link
+  value: 发现规则
+ #菜单-资源管理-自动发现-发现列表
+automaticDiscoveryDiscoveryList:
+  type: link
+  value: 发现列表
+#菜单-资源管理-自动发现-发现列表-归类
+DiscoveryListClassify:
+  type: link
+  value: 归类
+#菜单-资源管理-自动发现-发现列表-丢弃
+DiscoveryListDiscard:
+  type: link
+  value: 丢弃
+
+ #菜单-资源管理-自动发现-发现列表-待确认归类
+DiscoveryListToBeConfirmClassify:
+  type: xpath
+  value: "//div/div/div/div/div[1]/ul/li[1]/a"
+#菜单-资源管理-自动发现-发现列表-已确认归类
+DiscoveryListConfirmClassify:
+  type: xpath
+  value: "//div/div/div/div/div[1]/ul/li[2]/a"
+ #菜单-资源管理-资源模型-URMP(Button)
+resourceModelURMPButton:
+  type: link
+  value: URMP
+ #菜单-资源管理-资源模型-URMP(Button)-新增（+）
+resourceModelURMPAdd:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[2]/div[1]/div[1]/ul/li[2]/div/a[3]"
+ #菜单-资源管理-资源模型-URMP(Button)-新增-显示名称
+URMPAddDisplayName:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input"
+#菜单-资源管理-资源模型-URMP(Button)-新增-名称
+URMPAddName:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input"
+ #菜单-资源管理-资源模型-URMP(Button)-新增-保存
+URMPAddSave:
+  type: xpath
+  value: "//*[@class='ng-dirty ng-valid-parse ng-valid ng-valid-required']/div[2]/div/div[1]/button[1][text()='保存']"
+#菜单-资源管理-资源模型-Tree
+resourceModelTree:
+  type: xpath
+  value: "//*[@id='urmpTree']/div[2]/div/li/ul/li/a"
+ #菜单-资源管理-资源模型-新增URMP显示名称（button）
+createDisplayNameButton:
+  type: link
+  value: 新增URMP显示名称
+ #菜单-资源管理-资源模型-编辑URMP显示名称（button）
+editDisplayNameButton:
+  type: xpath
+  value: "//*/ul/li/a[@title='编辑URMP显示名称']"
+ #菜单-资源管理-资源模型-属性列表-筛选结果为空
+CITypeAttributeSelectResultIsNull:
+  type: xpath
+  value: "//*[@id='tableId_model']/tbody/tr/td"
+ #菜单-资源管理-资源模型-编辑button
+resourceModelEditButton:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[2]/div[1]/div[1]/ul/li[2]/div/a[4]"
+ #菜单-资源管理-资源模型-删除button
+resourceModelDeleteButton:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[2]/div[1]/div[1]/ul/li[2]/div/a[5]"
+ #菜单-资源管理-资源模型-导入button
+resourceModelImportButton:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[2]/div[1]/div[1]/ul/li[2]/div/a[1]"
+ #菜单-资源管理-资源模型-导出button
+resourceModelExportButton:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[2]/div[1]/div[1]/ul/li[2]/div/a[2]"
+#菜单-资源管理-资源模型-URMP(Button)-新增-保存
+URMPEditSave:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div[2]/div/div/button[text()='保存']"
+#菜单-资源管理-资源模型-CI类型-属性-新建-显示名称
+CITypeAttributeCreateDisplayName:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[1]/div[1]/div/input"
+#菜单-资源管理-资源模型-CI类型-属性-新建-属性名称
+CITypeAttributeCreateAttributeName:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[1]/div[2]/div/input"
+#菜单-资源管理-资源模型-CI类型-属性-新建-数据类型(button)
+CITypeAttributeCreateDataType:
+  type: xpath
+  value: "//*[@class='tab-pane fade  ng-scope active in']/div/div[2]/div/div/div/form/div[1]/div/div/div/div/div[2]/div[2]/div[1]/ol/button"
+#菜单-资源管理-资源模型-CI类型-属性-新建-数据类型(值)-LONG
+CITypeAttributeCreateDataTypeValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[2]/div[2]/div/ol/div/ul/li/a[text()='LONG']"
+#菜单-资源管理-资源模型-CI类型-属性-新建-显示类型(button)
+CITypeAttributeCreateDisplayType:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[3]/div[1]/div/ol/button"
+#菜单-资源管理-资源模型-CI类型-属性-新建-显示类型(值)-TEXT
+CITypeAttributeCreateDisplayTypeValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[3]/div[1]/div/ol/div/ul/li/a[text()='TEXT']"
+#菜单-资源管理-资源模型-CI类型-属性-新建-所属分组(button)
+CITypeAttributeCreateGroup:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[7]/div[2]/div/ol/button"
+#菜单-资源管理-资源模型-CI类型-属性-新建-所属分组(值)-基本信息
+CITypeAttributeCreateGroupValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[7]/div[2]/div/ol/div/ul/li[1]/a"
+#菜单-资源管理-资源模型-CI类型-属性-新建-保存
+CITypeAttributeCreateSave:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div[2]/div/div/button[text()='保存']"
+#菜单-资源管理-资源模型-CI类型-属性-筛选区域
+CITypeAttributeSelectArea:
+  type: xpath
+  value: "//*[@id='modelTab']/div/div[1]/div[1]/div[1]/div[1]/div[1]"
+#菜单-资源管理-资源模型-CI类型-属性-筛选-显示名称
+CITypeAttributeSelectDisplayName:
+  type: xpath
+  value: "//*[@class='tab-pane fade  ng-scope active in']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form/div/div[2]/div/input"
+#菜单-资源管理-资源模型-CI类型-属性-筛选-属性名称
+CITypeAttributeSelectAttributeName:
+  type: xpath
+  value: "//*[@class='tab-pane fade  ng-scope active in']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form/div/div[1]/div/input"
+#菜单-资源管理-资源模型-CI类型-属性-筛选-确定
+CITypeAttributeSelectAffirm:
+  type: xpath
+  value: "//*/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/span"
+#菜单-资源管理-资源模型-CI类型-属性列表
+CITypeAttributeList:
+  type: link
+  value: 属性列表
+#菜单-资源管理-资源模型-CI类型-属性列表
+CITypeRelationAttribute:
+  type: link
+  value: 关系属性
+#菜单-资源管理-资源模型-CI类型-操作日志
+OperationLog:
+  type: link
+  value: 操作日志
+#菜单-资源管理-资源模型-CI类型-版本
+CITypeVersion:
+  type: link
+  value: 版本
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-属性名称
+CITypeRelationAttributeCreateAttributeName:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[1]/div[1]/div/input"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-显示名称
+CITypeRelationAttributeCreateDisplayName:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[1]/div[2]/div/input"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-目标
+CITypeRelationAttributeCreateTarget:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[2]/div[1]/div/div//button"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-目标(值)（操作系统）
+CITypeRelationAttributeCreateTargetValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[2]/div[1]/div/div/div/div/div/div/ol/div/ul/li/a[2][text()='操作系统']"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-映射类型
+CITypeRelationAttributeCreateMapType:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[2]/div[2]/div/ol//button"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-映射类型(值)（one）
+CITypeRelationAttributeCreateMapTypeValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[2]/div[2]/div/ol/div/ul/li[1]/a[1]"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-所属分组
+CITypeRelationAttributeCreateGroup:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[3]/div[2]/div/ol//button"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-所属分组(值)（基本信息）
+CITypeRelationAttributeCreateGroupValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[3]/div[2]/div/ol/div/ul/li[1]/a[1]"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-关系类型
+CITypeRelationAttributeCreateRelationType:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[3]/div[1]/div/ol//button"
+#菜单-资源管理-资源模型-CI类型-关系属性-新建-关系类型(值)（位于）
+CITypeRelationAttributeCreateRelationTypeValue:
+  type: xpath
+  value: "//*[@class='modal fade ng-isolate-scope ui-draggable in']/div[1]/div[1]/form/div/div/div/div/div/div[3]/div[1]/div/ol/div/ul/li/a[text()='位于']"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选-显示名称
+CITypeRelationAttributeSelectDisplayName:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form/div/div[2]/div/input"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选-属性名称
+CITypeRelationAttributeSelectAttributeName:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form/div/div[1]/div/input"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选-确定
+CITypeRelationAttributeSelectAffirm:
+  type: xpath
+  value: "//*/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/span"
+#菜单-资源管理-资源模型-CI类型-属性-筛选-结果2
+CITypeAttributeSelectResult:
+  type: xpath
+  value: "//*[@id='tableId_model']/tbody/tr[1]/td[2]"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选-结果3
+CITypeRelationAttributeSelectResult:
+  type: xpath
+  value: "//*[@id='tableId_relation']/tbody/tr[1]/td[3]"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选-结果1
+CITypeRelationAttributeSelectResultChoose:
+  type: xpath
+  value: "//*[@id='tableId_relation']/tbody/tr/td[1]/center/input"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选区域
+CITypeRelationAttributeSelectArea:
+  type: xpath
+  value: "//*[@id='relationTab']/div/div[1]/div[1]/div[1]/div[1]/div[1]"
+#菜单-资源管理-资源模型-CI类型-操作日志-筛选-操作节点名称
+CITypeOperationLogSelectOperationNodeName:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form/div/div[2]/div/input"
+#菜单-资源管理-资源模型-CI类型-操作日志-筛选-确定
+CITypeOperationLogSelectAffirm:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div/div/div/div/div/div/div[2]/div/a[1]"
+#菜单-资源管理-资源模型-CI类型-操作日志-筛选区域
+CITypeOperationLogSelectArea:
+  type: xpath
+  value: "//*[@class='logPannel ng-scope']/div/div/div/div[1]"
+#菜单-资源管理-资源模型-CI类型-操作日志-筛选结果-操作节点名称
+CITypeOperationLogSelectResultOperationVersion:
+  type: xpath
+  value: "//*[@id='tableId_log']/tbody/tr[1]/td[6]/div"
+#菜单-资源管理-资源模型-CI类型-版本-筛选区域
+CITypeVersionSelectArea:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div/div/div/div/div/div[1]"
+#菜单-资源管理-资源模型-CI类型-版本-筛选-操作版本号
+CITypeVersionSelectOperationVersionNumber:
+  type: xpath
+  value: "//*[@class='versionPannel ng-scope']/div/div/div/div[1]/div[1]/form/div/div/div/input"
+#菜单-资源管理-资源模型-CI类型-版本-筛选--确定
+CITypeVersionSelectAffirm:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div/div/div/div/div/div/div[2]/div/a[1]"
+#菜单-资源管理-资源模型-CI类型-版本-筛选结果-版本号
+CITypeVersionSelectResultVersionNumber:
+  type: xpath
+  value: "//*[@id='tableId_version']/tbody/tr/td[2]/div"
+#菜单-资源管理-资源模型-CI类型-版本-筛选结果-勾选
+CITypeVersionSelectResultChoose:
+  type: xpath
+  value: "//*[@id='tableId_version']/tbody/tr/td[1]/center/input"
+#菜单-资源管理-资源模型-CI类型-关系属性-筛选结果空
+CITypeRelationAttributeSelectResultEmpty:
+  type: xpath
+  value: "//*[@id='tableId_relation']/tbody/tr/td"
+#菜单-资源管理-资源模型-筛选为空-提示title
+resourceModelSelectHintTitle:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[1]/h4[text()='提示']"
+#菜单-资源管理-资源模型-筛选输入框
+resourceModelSelectInputBox:
+  type: xpath
+  value: "//*[@id='urmpTree']/div[1]/span/div/input"
+#菜单-资源管理-资源模型-筛选按钮
+resourceModelSelectButton:
+  type: xpath
+  value: "//*[@id='urmpTree']/div[1]/span/div/span"
+#菜单-资源管理-资源树-资源
+resourceManangementResourceTreeResource:
+  type: xpath
+  value: "//*/ul/li/a/span[2][contains(text(),'资源')]"
+#菜单-资源管理-资源实例-实例列表-新增标题
+ResourceExampleExampleListCreateTitle:
+  type: xpath
+  value: "//*/div/div/div/div[1]/h4/strong[text()='新增']"
+#菜单-资源管理-资源实例-实例列表-新增-基本信息-名称
+ResourceExampleCreateName:
+  type: xpath
+  value: "//*[@id='base']/div/div/div[1]/div[1]/div/input"
+#菜单-资源管理-资源实例-实例列表-新增-基本信息-显示名称
+ResourceExampleCreateDisplayName:
+  type: xpath
+  value: "//*[@id='base']/div/div/div[1]/div[2]/div/input"
+#菜单-资源管理-资源实例-实例列表-新增-基本信息-域
+ResourceExampleCreateDomain:
+  type: xpath
+  value: "//*[@id='base']/div/div/div[2]/div[1]/div/input"
+#菜单-资源管理-资源实例-实例列表-新增-保存
+ResourceExampleCreateSave:
+  type: xpath
+  value: "//*/div/div/div/div[2]/button[1]"
+#菜单-资源管理-资源实例-实例列表-筛选域
+ResourceExampleScreenArea:
+  type: xpath
+  value: "//*[@id='instanceTab']/div/div/div/div/div/div[1]"
+#菜单-资源管理-资源实例-实例列表-筛选-显示名称
+ResourceExampleScreenDisplayName:
+  type: xpath
+  value: "//*[@class='tab-pane fade ng-scope active in']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form/div/div/div/input"
+#菜单-资源管理-资源实例-实例列表-筛选-确定
+ResourceExampleScreenConfirm:
+  type: xpath
+  value: "//*[@ng-controller='instanceController']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a/span[text()='确定']"
+#菜单-资源管理-资源实例-实例列表-筛选-结果-显示名称
+ResourceExampleScreenResultDisplayName:
+  type: xpath
+  value: "//*[@id='tableId_instance']/tbody/tr/td[5]"
+#菜单-资源管理-资源实例-实例列表-筛选-结果-选择框
+ResourceExampleScreenResultChoose:
+  type: xpath
+  value: "//*[@id='tableId_instance']/tbody/tr/td[1]/center/input"
+#菜单-资源管理-资源实例-实例列表-编辑标题
+ResourceExampleExampleListEditTitle:
+  type: xpath
+  value: "//*/div/div/div/div[1]/h4/strong[text()='编辑']"
+#菜单-资源管理-资源实例-实例列表-编辑-显示名称
+ResourceExampleEditDisplayName:
+  type: xpath
+  value: "//*[@id='base']/div/div/div[2]/div[1]/div/input"
+#菜单-资源管理-资源实例-实例列表-编辑-显示名称
+ResourceExampleOperationLogScreenResult:
+  type: xpath
+  value: "//*[@id='tableId_log']/tbody/tr[1]/td[4]/div"
+#菜单-资源管理-自动发现-发现列表-筛选区域
+DiscoveryListScreenArea:
+  type: id
+  value: privateQueryArea
+#菜单-资源管理-自动发现-发现列表-筛选-唯一标识
+DiscoveryListScreenUniqueLogo:
+  type: id
+  value: ciName
+#菜单-资源管理-自动发现-发现列表-筛选-确定
+DiscoveryListScreenConfirm:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div[2]/div/a[1]/span"
+#菜单-资源管理-自动发现-发现列表-归类-节点类型button
+DiscoveryListClassifyNodeTypeButton:
+  type: xpath
+  value: "//*[@id='firstForm']/div[4]/div/div/div/div/div/div/ol/button"
+#菜单-资源管理-自动发现-发现列表-归类-保存
+DiscoveryListClassifySave:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/input[1]"
+#文本-操作系统
+OperationSystem:
+  type: plink
+  value: 操作系统
+#菜单-资源管理-自动发现-发现规则-规则名称
+DiscoveryRuleRuleName:
+  type: id
+  value: name
+#菜单-资源管理-自动发现-发现规则-IP范围
+DiscoveryRuleIPRange:
+  type: id
+  value: ipRange
+#菜单-资源管理-自动发现-发现规则-时间间隔
+DiscoveryRuleTimeInterval:
+  type: id
+  value: timeInterval
+#菜单-资源管理-自动发现-发现规则-启用
+DiscoveryRuleEnable:
+  type: id
+  value: state
+#菜单-资源管理-自动发现-发现规则-采集插件button
+DiscoveryRuleCollectionPlugin:
+  type: xpath
+  value: "//*[@id='collectionPlugin']/button"
+#菜单-资源管理-自动发现-发现规则-采集插件value
+DiscoveryRuleCollectionPluginValue:
+  type: link
+  value: ICMP
+#菜单-资源管理-自动发现-发现规则-保存
+DiscoveryRuleSave:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/button[1]"
+#菜单-资源管理-自动发现-发现规则-筛选区域
+DiscoveryRuleScreenArea:
+  type: xpath
+  value: "//*[@id='warningruleManage']/div/div[1]"
+#菜单-资源管理-自动发现-发现规则-筛选-规则名称
+DiscoveryRuleScreenRuleName:
+  type: xpath
+  value: "//*/div[1]/form/div/div[1]/div/input"
+#菜单-资源管理-自动发现-发现规则-筛选-确定
+DiscoveryRuleScreenConfirm:
+  type: xpath
+  value: "//*/div[2]/div/a[1]/span"
+#菜单-资源管理-自动发现-发现规则-筛选结果-启用
+DiscoveryRuleScreenResultEnable:
+  type: xpath
+  value: "//*/tbody/tr[1]/td[6]/center/img"
+#菜单-视图中心
+ViewCenter:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/li[1]"
+#菜单-视图中心-区域
+ViewCenterArea:
+  type: xpath
+  value: "//*[@id='sidebar']/div/div[1]/ul/li[1]/ul"
+#菜单-视图中心-视图展示
+ViewDisplay:
+  type: link
+  value: 视图展示
+#菜单-视图中心-视图画布
+ViewCanvas:
+  type: link
+  value: 视图画布
+#菜单-视图中心-视图画布-新建-title
+ViewCanvasCreateTitle:
+  type: xpath
+  value: "//*/div[2]/div[1]/div/div/div/h4"
+#菜单-视图中心-视图画布-新建-title
+ViewCanvasCreateName:
+  type: xpath
+  value: "//*/div/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input"
+#菜单-视图中心-视图画布-新建-保存
+ViewCanvasCreateSave:
+  type: xpath
+  value: "//*/div[2]/div/div/button[1]"
+#菜单-视图中心-视图画布-筛选-区域
+ViewCanvasScreenArea:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div[1]/div/div/div[1]"
+#菜单-视图中心-视图画布-筛选-视图名称（输入框）
+ViewCanvasScreenViewName:
+  type: xpath
+  value: "//*/div[1]/form/div/div[2]/div/input"
+#菜单-视图中心-视图画布-筛选-确定
+ViewCanvasScreenConfirm:
+  type: xpath
+  value: "//*/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]"
+#菜单-视图中心-视图画布-删除-确认
+ViewCanvasDeleteConfirm:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[3]/button[1]"
+#菜单-视图中心-视图展示-“+”
+ViewDisplayAddButton:
+  type: xpath
+  value: "//*[@id='addBtn']/img"
+#菜单-视图中心-视图展示-添加-左边列表
+ViewDisplayLeftList:
+  type: xpath
+  value: "//*/div/div/div/div[2]/div/div/div/div[1]/select"
+#菜单-视图中心-视图展示-添加-右边列表
+ViewDisplayRightList:
+  type: xpath
+  value: "//*/div/div/div/div[2]/div/div/div/div[3]/select"
+#菜单-视图中心-视图展示-添加-右移按钮
+ViewDisplayRightButton:
+  type: xpath
+  value: "//*/div/div/div/div[2]/div/div/div/div[2]/button[2]"
+#菜单-视图中心-视图展示-添加-保存按钮
+ViewDisplaySaveButton:
+  type: xpath
+  value: "//*/div/div/div/div[3]/button[1]"
+#菜单-视图中心-视图展示-搜索框
+ViewDisplaySelectBox:
+  type: xpath
+  value: "//*[@id='viewoptions']/div[2]/input"
+#菜单-视图中心-视图展示-结果
+ViewDisplayViewResult:
+  type: xpath
+  value: "//*/div[1]/div[2]/div[1]/div[2]/div[1]/span"
+#菜单-数据分析
+DataAnalyze:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-header/ul/li[5]"
+#菜单-数据分析-基线策略
+BaselineStrategy:
+  type: link
+  value: 基线策略
+#菜单-数据分析-基线应用
+BaselineApplication:
+  type: link
+  value: 基线应用
+#新增
+newlyIncreased:
+  type: link
+  value: 新增
+#菜单-数据分析-基线策略-新增-策略名称（box）
+BaselineStrategyCreateStrategyName:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/div[1]/div/div/input[2]"
+#菜单-数据分析-基线策略-新增-周期值（box）
+BaselineStrategyCreatePeriodic:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/div[2]/div[1]/div/input"
+#菜单-数据分析-基线策略-新增-时间步长（box）
+BaselineStrategyCreateTimeStep:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/div[2]/div[2]/div/input"
+#菜单-数据分析-基线策略-新增-样品密集区域（box）
+BaselineStrategyCreateSampleDensityArea:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/div[3]/div[1]/div/input"
+#菜单-数据分析-基线策略-新增-触发时间（box）
+BaselineStrategyCreateTriggerTime:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/div[3]/div[2]/div/input"
+#菜单-数据分析-基线策略-新增-西格马（box）
+BaselineStrategyCreateSigma:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/div[4]/div/div/input"
+#菜单-数据分析-基线策略-新增-保存
+BaselineStrategyCreateSave:
+  type: xpath
+  value: "//*[@id='firstForm']/div[2]/input[1]"
+#菜单-数据分析-基线策略-筛选-区域
+BaselineStrategyScreenArea:
+  type: xpath
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/div/div/div/div/div/div[1]/div/div/div/div/div[1]"
+#菜单-数据分析-基线策略-筛选-策略名称
+BaselineStrategyScreenStrategyName:
+  type: xpath
+  value: "//*/div[1]/form/div/div[1]/div/input"
+#菜单-数据分析-基线策略-筛选-确定
+BaselineStrategyScreenConfirm:
+  type: xpath
+  value: "//*/div[2]/div/a[1]/span"
+#菜单-数据分析-基线应用-新增-计算方式(button)
+BaselineApplicationCreateCalculation:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/ol/button"
+#菜单-数据分析-基线应用-新增-计算方式(value)
+BaselineApplicationCreateCalculationValue:
+  type: xpath
+  value: "//*[@id='firstForm']/div[1]/div/ol/div/ul/li[1]/a"
+#菜单-数据分析-基线应用-新增-基线标题
+BaselineApplicationCreateBaselineTitle:
+  type: xpath
+  value: " //*[@id='firstForm']/div[2]/div/input[2]"
+#菜单-数据分析-基线应用-新增-CI类型(button)
+BaselineApplicationCreateCIType:
+  type: xpath
+  value: "//*[@id='firstForm']/div[3]/div/div/div/div/div/div/ol/button"
+#菜单-数据分析-基线应用-新增-CI类型(value)
+BaselineApplicationCreateCITypeValue:
+  type: link
+  value: 操作系统
+#菜单-数据分析-基线应用-新增-CI实例(button)
+BaselineApplicationCreateCIExample:
+  type: xpath
+  value: "//*[@id='firstForm']/div[4]/div/div/div/div/div/div/ol/button"
+#菜单-数据分析-基线应用-新增-CI实例(value)
+BaselineApplicationCreateCIExampleValue:
+  type: xpath
+  value: "//*[@id='firstForm']/div[4]/div/div/div/div/div/div//ul/li[1]/a[2]"
+#菜单-数据分析-基线应用-新增-KPI(button)
+BaselineApplicationCreateKPI:
+  type: xpath
+  value: "//*[@id='firstForm']/div[5]/div/div/div/div/div/div/ol/button"
+#菜单-数据分析-基线应用-新增-KPI(value)
+BaselineApplicationCreateKPIValue:
+  type: xpath
+  value: "//*[@id='firstForm']/div[5]/div/div/div/div/div/div//ul/li[1]/a[2]"
+#菜单-数据分析-基线应用-新增-下一步（第一部分）
+BaselineApplicationCreateNextStep1:
+  type: xpath
+  value: "//*[@id='firstForm']/div[6]/input[1]"
+#菜单-数据分析-基线应用-新增-计算策略(button)
+BaselineApplicationCreateCalculationStrategy:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[1]/div/ol/button"
+#菜单-数据分析-基线应用-新增-计算策略(value)
+BaselineApplicationCreateCalculationStrategyValue:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[1]/div/ol/div/ul/li[1]/a"
+#菜单-数据分析-基线应用-新增-计算策略(value)
+BaselineApplicationNumericalPrecision:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[2]/div/input"
+#菜单-数据分析-基线应用-新增-下一步(第二部分)
+BaselineApplicationCreateNextStep2:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[7]/input[2]"
+#菜单-数据分析-基线应用-新增-下一步(第三部分)
+BaselineApplicationCreateNextStep3:
+  type: xpath
+  value: "//*[@id='secondForm']/div[2]/input[2]"
+#菜单-数据分析-基线应用-新增-预警规则(button)
+BaselineApplicationCreateAlarmRules:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[1]/div/div[1]/ol/button"
+#菜单-数据分析-基线应用-新增-预警规则(value)
+BaselineApplicationCreateAlarmRulesValue:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[1]/div/div[1]/ol/div/ul/li[1]/a"
+#菜单-数据分析-基线应用-新增-空白
+BaselineApplicationCreateBlank:
+  type: xpath
+  value: "//*[@id='dataskModal']/div/div/div[1]/h4/strong"
+#菜单-数据分析-基线应用-新增-启用
+BaselineApplicationCreateEnable:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[2]/div/label/input"
+#菜单-数据分析-基线应用-新增-提交
+BaselineApplicationCreateSubmit:
+  type: xpath
+  value: "//*[@id='thirdForm']/div[3]/input[2]"
+#菜单-数据分析-基线应用-筛选区域
+BaselineApplicationScreenArea:
+  type: xpath
+  value: "//*[@id='privateQueryArea']"
+#菜单-数据分析-基线应用-动态基线名称
+BaselineApplicationScreenBaselineName:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div[1]/div[1]/input"
+#菜单-数据分析-基线应用-筛选区域-确定
+BaselineApplicationScreenConfirm:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div[2]/div/a[1]/span"
+#菜单-视图数据-区域
+ViewDataArea:
+  type: xpath
+  value: "//div/ul[3]/li"
+#菜单-视图数据
+ViewData:
+  type: xpath
+  value: "//*/div/span[text()='视图数据']"
+#菜单-视图数据-数据源
+DataSource:
+  type: link
+  value: 数据源
+#菜单-视图数据-数据源-新增-数据源名字
+DataSourceName:
+  type: id
+  value: sourceName
+#菜单-视图数据-数据源-新增-数据库类型
+DataSourceDataLibraryType:
+  type: xpath
+  value: "//*[@id='sourceTypeId']/ol/button"
+#菜单-视图数据-数据源-新增-数据库类型(值)
+DataSourceDataLibraryTypeValue:
+  type: plink
+  value: Postgresql
+#菜单-视图数据-数据源-新增-URL地址
+DataSourceURLAdress:
+  type: id
+  value: driverUrl
+#菜单-视图数据-数据源-新增-用户名
+DataSourceUserName:
+  type: id
+  value: userName
+#菜单-视图数据-数据源-新增-密码
+DataSourcePassword:
+  type: xpath
+  value: "//*[@id='viewDataForm']/div/input[@type='password']"
+#菜单-视图数据-数据源-新增-测试链接
+DataSourceTestConnect:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/input[1]"
+#菜单-视图数据-数据源-新增-测试链接-提示信息
+DataSourceTestConnectHint:
+  type: xpath
+  value: "//*/span[@id='content']"
+#菜单-视图数据-数据源-新增-测试链接-保存
+DataSourceSave:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/input[2]"
+#菜单-视图数据-SQL数据集
+SQLDataSet:
+  type: link
+  value: SQL数据集
+#菜单-视图数据-SQL数据集-新增-名称
+SQLDataSetName:
+  type: id
+  value: setName
+#菜单-视图数据-SQL数据集-新增-数据源
+SQLDataSetCreateDataSource:
+  type: xpath
+  value: "//*[@id='sourceId']/ol/button"
+#菜单-视图数据-SQL数据集-新增-数据源(值)
+SQLDataSetCreateDataSourceValue:
+  type: plink
+  value: 编辑数据源名称
+#菜单-视图数据-SQL数据集-新增-sql语句
+SQLDataSetCreateSQL:
+  type: id
+  value: sql
+#菜单-视图数据-SQL数据集-新增-预览
+SQLDataSetCreatePreview:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/input[1]"
+#菜单-视图数据-SQL数据集-新增-预览-结果
+SQLDataSetCreatePreviewResult:
+  type: xpath
+  value: "//*[@id='viewDataForm']/div[6]/div[2]/table/tbody/tr[2]/td"
+#菜单-视图数据-SQL数据集-新增-保存
+SQLDataSetCreateSave:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/input[2]"
+#菜单-视图数据-SQL数据集-筛选-筛选区域
+SQLDataSetScreenArea:
+  type: id
+  value: privateQueryArea
+#菜单-视图数据-SQL数据集-筛选-数据集名称
+SQLDataSetScreenDataSetName:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div[1]/div[1]/input"
+#菜单-视图数据-SQL数据集-筛选-确定
+SQLDataSetScreenConfirm:
+  type: xpath
+  value: "//*[@id='privateQueryArea']/div[2]/div/a[1]"
+#菜单-视图画布-设计-组件
+viewCanvasDesignModul:
+  type: xpath
+  value: "//*[@id='leftDesignSidebar']/ul/li[1]/a"
+#菜单-视图画布-设计-组件-文本
+viewCanvasDesignModulTwo:
+  type: xpath
+  value: "//*[@id='chartPannelchart1']/img"
+#菜单-视图画布-设计-组件-拖拽后的文本
+viewCanvasDesignModulTwoDragAfter:
+  type: xpath
+  value: "//*[@id='viewBody']/div"
+#菜单-视图画布-设计-组件-数据源
+viewCanvasDesignModulDataSource:
+  type: xpath
+  value: "//*[@id='rightDesignSidebar']/ul/li[1]/a"
+#菜单-视图画布-设计-组件-数据源-SQL数据集
+DesignModulDataSourceSQLDataSet:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[1]/label[2]/input"
+#菜单-视图画布-设计-组件-数据源-数据集
+DesignModulDataSourceDataSet:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[3]/div[2]/div/ol/button"
+#菜单-视图画布-设计-组件-数据源-数据集-编辑SQL数据集名称
+DesignModulDataSourceDataSetEditSQLDataSet:
+  type: plink
+  value: 编辑SQL数据集名称
+#菜单-视图画布-设计-组件-数据源-有效列
+DesignModulDataSourceDataValidColumn:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[3]/div[5]/div/ol/button"
+#菜单-视图画布-设计-组件-数据源-有效列(值)
+DesignModulDataSourceDataValidColumnValue:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[3]/div[5]/div/ol/div/ul/li/a"
+#菜单-视图画布-设计-组件-数据源-Y轴
+DesignModulDataSourceDataYAxis:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[3]/div[7]/div/ol/button"
+#菜单-视图画布-设计-组件-数据源-Y轴
+DesignModulDataSourceDataYAxisValue:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[3]/div[7]/div/ol/div/ul/li/a"
+#菜单-视图画布-设计-组件-数据源-预览
+DesignModulDataSourceDataPreview:
+  type: xpath
+  value: "//*[@id='rightcollapseTwo']/div/div[3]/div[1]/label/a"
+#菜单-视图画布-设计-保存
+viewCanvasDesignSave:
+  type: id
+  value: btn-save
+#菜单-视图画布-设计-保存-确认
+viewCanvasDesignSaveConfirm:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[3]/button"
+#菜单-视图画布-设计-退出X
+viewCanvasDesignExit:
+  type: xpath
+  value: "//*[@id='designTitle']/button"
+#菜单-视图画布-设计-退出X-确认
+viewCanvasDesignExitConfirm:
+  type: xpath
+  value: "//*/div[2]/div/div/div/div[3]/button[1]"
+#菜单-视图中心-视图展示-视图（编辑画布视图名称-复制）
+ViewDisplayView:
+  type: xpath
+  value: "//*[@id='gallery']/div[1]/div/div/span"
+#  value: "//*/div/div/span[contains(text(),'编辑画布视图名称-复制')]"
+#菜单-视图中心-视图展示-视图（编辑画布视图名称-复制）
+ViewDisplayViewValue:
+  type: css
+  value: "#viewBody div :nth-child(2) svg g text tspan"
+#菜单-视图中心-视图展示-视图-（编辑画布视图名称-复制）
+ViewDisplayViewControlExit:
+  type: xpath
+  value: "/html/body/div/div/div/div[3]/div/ul/li[11]"
+#用户-无效登陆-提示
+userInvalidLoginHint:
+  type: xpath
+  value: "//*/div/div/div[2]/span"
+#用户-无效登陆-提示-确认
+userInvalidLoginAffirm:
+  type: xpath
+  value: "//*[@id='cdk-overlay-0']/nz-modal/div/div[2]/div[1]/div/div[3]/button"

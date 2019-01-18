@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="资源管理" verbose="1" parallel="false">
+    <test name="资源实例" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="resourceManagement"/>
+                    <include name="resourceExample"/>
+                    <include name="resourceExampleExampleListCreate"/>
+                    <include name="resourceExampleExampleListCreateVerify"/>
+                    <include name="resourceExampleExampleListEdit"/>
+                    <include name="resourceExampleExampleListEditVerify"/>
+                    <include name="resourceExampleExampleListDelete"/>
+                    <include name="resourceExampleExampleListDeleteVerify"/>
+                    <include name="resourceExampleOperationLog"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>
