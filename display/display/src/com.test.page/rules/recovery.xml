@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="全部规则" verbose="1" parallel="false">
+    <test name="恢复规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="recoveryRulesVerifyRecoveryAndClearMemoryRE"/>
+                    <include name="recoveryRulesVerifyRecoveryAndIgnoreStrategyException"/>
+                    <include name="recoveryRulesVerifyRecoveryAndMerge"/>
+                    <include name="recoveryRulesVerifyDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

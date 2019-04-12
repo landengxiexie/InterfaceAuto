@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="系统设置" verbose="1" parallel="false" thread-count="1">
+    <test name="用户管理：创建、筛选、编辑、分配权限" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="systemSetting"/>
+                    <include name="userManagement"/>
+                    <include name="userManagementCreate"/>
+                    <include name="userCreateSave"/>
+                    <include name="userSelect"/>
+                    <include name="userEdit"/>
+                    <include name="commonSave"/>
+                    <include name="userEditSaveSelect"/>
+                    <include name="userAllocationPrivilege"/>
+                    <include name="menuModle"/>
+                    <include name="userAllocationPrivilegeSave"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="工作组管理：工作组创建、编辑、分配用户、分配管理员、分配权限、查询" preserve-order="true">（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="systemSetting"/>
+                    <include name="workingGroupManagement"/>
+                    <include name="workingGroupManagementGreate"/>
+                    <include name="commonSave"/>
+                    <include name="workingGroupManagementSelect"/>
+                    <include name="workingGroupManagementEdit"/>
+                    <include name="editSave"/>
+                    <include name="refresh"/>
+                    <include name="workingGroupManagementEditSelect"/>
+                    <include name="workingGroupAssignmentUser"/>
+                    <include name="workingGroupAssignmentManagement"/>
+                    <include name="userAllocationPrivilege"/>
+                    <include name="userAllocationPrivilegeSave"/>
+                    <!--<include name="userLogoutSystem"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="用户管理：无效登陆、分配工作组、更改状态、重置密码" preserve-order="true" >（为true按照include顺序执行，false按照书写顺序执行，该字段不写，默认为ture）
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="userInvalidLogin"/>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="systemSetting"/>
+                    <include name="userManagement"/>
+                    <include name="clickSelectButton"/>
+                    <include name="userEditSaveSelect"/>
+                    <include name="userAssignmentGroup"/>
+                    <include name="userResetPassword"/>
+                    <include name="userChangeState"/>
+                    <include name="userLogoutSystem"/>
+                    <include name="userLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="verifyMenuSystemManagement"/>
+                    <include name="userViewConfig"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="审计管理：查看、筛选" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="systemSetting"/>
+                    <include name="auditManagement"/>
+                    <include name="auditManagementViewLog"/>
+                    <include name="auditManagementSelect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="用户管理：更改状态、删除；工作组管理：删除" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="systemSetting"/>
+                    <include name="userManagement"/>
+                    <include name="clickSelectButton"/>
+                    <include name="userEditSaveSelect1"/>
+                    <include name="userChangeState"/>
+                    <include name="chooseUserButton"/>
+                    <include name="userDelete"/>
+                    <include name="workingGroupManagement"/>
+                    <include name="workingGroupManagementEditSelect"/>
+                    <include name="userGroupChangeState"/>
+                    <include name="workingGroupManagementInvalidSelect"/>
+                    <include name="userGroupDelete"/>
+                </methods>
+            </class>`
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>
+
+

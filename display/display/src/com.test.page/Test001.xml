@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="资源管理" verbose="1" parallel="false">
+    <test name="合并规则" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="classifyRulesVerifyClassify"/>
+                    <!--<include name="classifyRulesVerifyClassifyAndRE"/>-->
+                    <!--<include name="classifyRulesVerifyClassifyAndMerge"/>-->
+                    <!--<include name="classifyRulesVerifyDelete"/>-->
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

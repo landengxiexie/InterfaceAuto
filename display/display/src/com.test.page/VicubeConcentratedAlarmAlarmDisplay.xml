@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="集中告警" verbose="1" parallel="false" thread-count="1">
+    <test name="接收分组、通知方式" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingNewGrouping"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreate"/>
+                    <include name="concentrateAlarmAlarmInformInformWayCreateSelect"/>
+                    <include name="concentrateAlarmAlarmInformInformWayEditOfHistoryAlarm"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="删除-接收分组、通知方式" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformInformWay"/>
+
+                    <include name="concentrateAlarmAlarmInformInformWayEditSelect1"/>
+                    <include name="concentrateAlarmAlarmInformInformWayDelete"/>
+
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingEditQuery2"/>
+                    <include name="receiveGroupingDelete"/>
+                    <include name="receiveGroupingDeleteQuery"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>
