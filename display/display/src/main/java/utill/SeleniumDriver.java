@@ -93,7 +93,7 @@ public class SeleniumDriver {
         DesiredCapabilities caps = new DesiredCapabilities();
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
-        options.addArguments("--start-maximized");
+//        options.addArguments("--start-maximized");
         caps.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(caps);
         return "l";
