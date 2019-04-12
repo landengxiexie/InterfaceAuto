@@ -9,7 +9,7 @@
                     <include name="concentratedAlarm"/>
                     <include name="recoveryRulesVerifyRecoveryAndClearMemoryRE"/>
                     <include name="recoveryRulesVerifyRecoveryAndIgnoreStrategyException"/>
-                    <include name="recoveryRulesVerifyRecoveryAndMerge"/>
+                    <!--<include name="recoveryRulesVerifyRecoveryAndMerge"/>-->
                     <include name="recoveryRulesVerifyDelete"/>
                 </methods>
             </class>

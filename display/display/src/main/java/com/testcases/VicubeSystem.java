@@ -2,16 +2,20 @@ package com.testcases;
 
 import com.base.TestBase;
 import com.bean.BaseConfig;
+import com.sun.mail.iap.Argument;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.*;
+import sun.util.resources.cldr.ff.LocaleNames_ff;
 import utill.*;
 
-import java.io.File;
+import java.io.*;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @SuppressWarnings("ALL")
 public class VicubeSystem extends TestBase {
@@ -25,7 +29,7 @@ public class VicubeSystem extends TestBase {
     @AfterClass
     public void testEnd() throws InterruptedException {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         driver.close();
         driver.quit();
     }
@@ -1575,7 +1579,7 @@ public class VicubeSystem extends TestBase {
     public void alarmConfig(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，告警配置
-        co.modelAreaDisplayAndClick(param,"alarmConfigArea","alarmConfig");
+        co.modelAreaDisplayAndClick(param, "alarmConfigArea", "alarmConfig");
 //        co.modelClickButton(param, "alarmConfig");
         LogFunction.logInfo("-----------------进入，告警配置页面---------------------");
     }
@@ -3572,6 +3576,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("-----------------告警展示,自动刷新功能校验，成功---------------------");
 
     }
+
     //    集中告警-告警展示-查看-提示（选择多条）
     @Test(dataProvider = "xmldata")
     public void alarmDisplayViewPushAlarm(Map<String, String> param) {
@@ -3581,7 +3586,7 @@ public class VicubeSystem extends TestBase {
         while (i <= 20) {
             co.pushMergeAlarmInfo(param, "pushAlarmParams123");
             co.sleep(100);
-            LogFunction.logInfo("推送第"+i+"条告警");
+            LogFunction.logInfo("推送第" + i + "条告警");
             i++;
         }
         LogFunction.logInfo("----------------推送告警，结束---------------------");
@@ -3661,22 +3666,20 @@ public class VicubeSystem extends TestBase {
         co.sleep(2000);
 //        勾选所有的列
         List<WebElement> ColumnElement = l.getElements(param.get("alarmDisplayColumnSettingisDisplay"));
-        LogFunction.logInfo(ColumnElement.size());
+//        LogFunction.logInfo(ColumnElement.size());
         LogFunction.logInfo("共有" + String.valueOf(ColumnElement.size()) + "个列值");
         for (WebElement e : ColumnElement) {
             co.sleep(300);
             boolean selected = e.isSelected();
             if (selected == false) {
-                e.click();
+                co.click(param, e);
             }
         }
         LogFunction.logInfo("成功勾选，所有列");
-//      点击，确定
-        WebElement ColumnSettingConfirm = l.getElement(param.get("alarmDisplayColumnSettingConfirm"));
-        String text = ColumnSettingConfirm.getText();
-        ColumnSettingConfirm.click();
-        LogFunction.logInfo("成功点击：" + text);
         co.sleep(1000);
+//      点击，确定
+        co.modelClickButton(param, "alarmDisplayColumnSettingConfirm");
+        co.sleep(2000);
 //        获取，页面中所有的列值
         List<WebElement> ColumnDisplay = l.getElements(param.get("alarmDisplayColumnDisplay"));
         AssertFunction.verifyEquals(driver, ColumnDisplay.size() - 1, ColumnElement.size());
@@ -3703,7 +3706,7 @@ public class VicubeSystem extends TestBase {
             co.sleep(100);
             boolean selected = e.isSelected();
             if (selected == true) {
-                e.click();
+                co.click(param, e);
             }
         }
         LogFunction.logInfo("取消勾选，所有列");
@@ -4908,7 +4911,7 @@ public class VicubeSystem extends TestBase {
     public void concentrateAlarmAlarmSelect(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，告警查询
-        co.modelAreaDisplayAndClick(param,"alarmSelectArea","alarmSelect");
+        co.modelAreaDisplayAndClick(param, "alarmSelectArea", "alarmSelect");
 //        co.modelClickButton(param, "alarmSelect");
         LogFunction.logInfo("-----------------进入，告警查询页面---------------------");
 
@@ -5493,7 +5496,7 @@ public class VicubeSystem extends TestBase {
     public void concentrateAlarmAlarmInform(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，告警通知
-        co.modelAreaDisplayAndClick(param,"AlarmInformArea","AlarmInform");
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
         LogFunction.logInfo("-----------------进入，告警通知页面---------------------");
 
     }
@@ -5541,8 +5544,7 @@ public class VicubeSystem extends TestBase {
         SaveHintConfirm.click();
         LogFunction.logInfo("点击：" + text3);
         AssertFunction.verifyEquals(driver, text3, "确认");
-        LogFunction.logInfo("-----------------进入，新建分组，新建完成---------------------");
-
+        LogFunction.logInfo("-----------------接收分组，新建完成---------------------");
     }
 
     //    集中告警-告警通知-接收分组-筛选
@@ -5550,7 +5552,7 @@ public class VicubeSystem extends TestBase {
     public void receiveGroupingQuery(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，筛选
-        co.selectO(param);
+        co.modelClickButton(param, "receiveGroupScreen");
 //          录入，接收分组名称
         WebElement QueryName = l.getElement(param.get("receiveGroupingQueryName"));
         QueryName.clear();
@@ -5560,11 +5562,8 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "receiveGroupingQueryConfirm");
         co.sleep(2000);
 //        勾选筛选结果
-        WebElement selectChooseUser = l.getElement(param.get("commonSystemSetupSelectChoose"));
-        boolean selected = selectChooseUser.isSelected();
-        if (selected == false) {
-            selectChooseUser.click();
-        }
+        WebElement selectChooseUser = l.getElement(param.get("commonSelectChooseResult"));
+        selectChooseUser.click();
         LogFunction.logInfo("成功勾选筛选结果");
 //          校验，筛选结果，分组名称
         WebElement GroupingName = l.getElement(param.get("QueryResultGroupingName"));
@@ -5576,7 +5575,7 @@ public class VicubeSystem extends TestBase {
         String text3 = Description.getText();
         LogFunction.logInfo("筛选结果分组描述为；" + text3);
         AssertFunction.verifyEquals(driver, text3, param.get("NewGroupingDescriptionValue"));
-        LogFunction.logInfo("-----------------进入，筛选及验证通过---------------------");
+        LogFunction.logInfo("-----------------接收分组，筛选及验证通过---------------------");
     }
 
 
@@ -5618,7 +5617,7 @@ public class VicubeSystem extends TestBase {
         SaveHintConfirm.click();
         LogFunction.logInfo("点击：" + text3);
         AssertFunction.verifyEquals(driver, text3, "确认");
-        LogFunction.logInfo("-----------------进入，编辑分组，完成---------------------");
+        LogFunction.logInfo("-----------------接收分组，编辑完成---------------------");
     }
 
     //    集中告警-告警通知-接收分组-编辑筛选
@@ -5859,7 +5858,6 @@ public class VicubeSystem extends TestBase {
     @Test(dataProvider = "xmldata")
     public void concentrateAlarmAlarmInformInformWay(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
-
 //        点击，通知方式
         co.modelClickButton(param, "InformWay");
         LogFunction.logInfo("-----------------进入，通知方式页面---------------------");
@@ -8134,11 +8132,6 @@ public class VicubeSystem extends TestBase {
     @Test(dataProvider = "xmldata")
     public void alarmScreenCreateAlarmUpgradeSetting(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 //          点击，保存
         WebElement alarmClassifyConfigSave = l.getElement(param.get("alarmClassifyConfigSave"));
         String text10 = alarmClassifyConfigSave.getText();
@@ -8672,7 +8665,7 @@ public class VicubeSystem extends TestBase {
 
 
 //        选择,节点关系:
-        co.modelClickAndChooseValue(param,"NodeRelation","NodeRelationValue","节点过滤");
+        co.modelClickAndChooseValue(param, "NodeRelation", "NodeRelationValue", "节点过滤");
         //      点击，保存
         WebElement save = l.getElement(param.get("save"));
         String text10 = save.getText();
@@ -8695,7 +8688,7 @@ public class VicubeSystem extends TestBase {
     public void alarmRelevanceRulesCreateAffectAlarmSettingEdit(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //            点击，编辑
-        co.modelClickButton(param,"EditButton");
+        co.modelClickButton(param, "EditButton");
 //          点击，类型
         WebElement type = l.getElement(param.get("type"));
         type.click();
@@ -8707,7 +8700,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("选择类型：" + Oracal);
         AssertFunction.verifyEquals(driver, Oracal, "资源");
         //          点击，节点关系
-        co.modelClickAndChooseValue(param,"NodeRelation","NodeRelationValue","节点过滤");
+        co.modelClickAndChooseValue(param, "NodeRelation", "NodeRelationValue", "节点过滤");
 //        WebElement NodeRelation = l.getElement(param.get("NodeRelation"));
 //        NodeRelation.click();
 //        LogFunction.logInfo("点击：节点关系");
@@ -9569,7 +9562,7 @@ public class VicubeSystem extends TestBase {
     public void automaticDiscovery(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，自动发现
-        co.modelAreaDisplayAndClick(param,"automaticDiscoveryArea","automaticDiscovery");
+        co.modelAreaDisplayAndClick(param, "automaticDiscoveryArea", "automaticDiscovery");
 //        co.modelClickButton(param, "automaticDiscovery");
         LogFunction.logInfo("-----------------进入菜单-自动发现---------------------");
     }
@@ -10360,14 +10353,12 @@ public class VicubeSystem extends TestBase {
         co.sleep(100);
         co.pushMergeAlarmInfo(param, "pushAlarmParams321");
         LogFunction.logInfo("----------------推送告警，结束---------------------");
-//      点击，自动发现
-//        co.modelClickButton2(param, "automaticDiscovery", "自动发现");
 //      点击，发现列表
         co.modelClickButton2(param, "DiscoveryList", "发现列表");
-        //      点击，未确认归类
+//      点击，未确认归类
         co.modelClickButton3(param, "ToBeConfirmClassify", "点击：待确认归类");
-        //        点击，筛选
-        co.select(param, "SelectArea");
+//        点击，筛选
+        co.modelAreaDisplayAndClick(param,"SelectArea","DiscoveryListScreen","筛选按钮");
 //      录入，唯一标识
         co.modelInputBox(param, "UniqueLogo", "ClassifyUniqueLogoValue", "唯一标识");
 //      点击，筛选，确定
@@ -10378,31 +10369,85 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("----------------资源管理-自动发现-发现列表，归类，筛选完成---------------------");
     }
 
+    //    资源管理-自动发现-发现列表-归类-筛选
+    @Test(dataProvider = "xmldata")
+    public void discoveryListDiscardRepush(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushAlarmParams123");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAlarmParams321");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//      点击，发现列表
+        co.modelClickButton2(param, "DiscoveryList", "发现列表");
+//      点击，未确认归类
+        co.modelClickButton3(param, "ToBeConfirmClassify", "点击：待确认归类");
+//        点击，筛选
+        co.modelAreaDisplayAndClick(param,"SelectArea","DiscoveryListScreen","筛选按钮");
+//      录入，唯一标识
+        co.modelInputBox(param, "UniqueLogo", "ClassifyUniqueLogoValue", "唯一标识");
+//      点击，筛选，确定
+        co.modelClickButton2(param, "Confirm", "确定");
+        co.sleep(500);
+//      验证，筛选结果-唯一标识
+        co.selectResultVerify(param, "ResultUniqueLogo", "ClassifyUniqueLogoValue");
+        co.sleep(500);
+//      点击，勾选结果
+        co.chooseSelectResult(param);
+//      点击，丢弃
+        co.modelClickButton2(param, "Discard", "丢弃");
+//      点击，丢弃，提示确认
+        co.sleep(1000);
+        co.alarmHintAndConfirm(param);
+//      录入，唯一标识
+        co.modelInputBox(param, "UniqueLogo", "DiscardUniqueLogoValue", "唯一标识");
+//      点击，筛选，确定
+        co.modelClickButton2(param, "Confirm", "确定");
+        co.sleep(500);
+//      验证，筛选结果-唯一标识
+        co.selectResultVerify(param, "ResultUniqueLogo", "DiscardUniqueLogoValue");
+        co.sleep(500);
+//      点击，勾选结果
+        co.chooseSelectResult(param);
+//      点击，丢弃
+        co.modelClickButton2(param, "Discard", "丢弃");
+//      点击，丢弃，提示确认
+        co.sleep(1000);
+        co.alarmHintAndConfirm(param);
+////        点击，集中告警
+//        co.modelClickButton(param, "concentratedAlarm");
+////        点击，告警展示
+//        co.modelClickButton(param, param.get("alarmDisplay"));
+//        co.sleep(1000);
+////        搜索框录入，Selenium
+//        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+////        点击，搜索按钮
+//        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//        co.sleep(2000);
+////        告警条数，为
+//        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+//        LogFunction.logInfo("KPI条数为：" + r.size());
+//        AssertFunction.verifyEquals(driver, r.size(), 1);
+//        if (r.size() != 0) {
+////        将发送的告警，解决，清空内存
+//            co.resolvedClearMemory(param);
+//        }
+
+        LogFunction.logInfo("----------------资源管理-自动发现-发现列表，丢弃再推送完成---------------------");
+    }
+
     //    资源管理-自动发现-发现列表-归类
     @Test(dataProvider = "xmldata")
     public void discoveryListClassify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //      点击，勾选结果
-        co.modelClickButton3(param, "ResultChoose", "勾选，结果");
+        co.chooseSelectResult(param);
 //      点击，归类
         co.modelClickButton2(param, "Classify", "归类");
-        //      点击，节点类型Button
-        co.modelClickButton3(param, "NodeTypeButton", "点击，节点类型");
-        co.sleep(1000);
-        //      选择，节点类型值
-        co.modelClickButton(param, "NodeTypeValue");
+//     选择，节点类型-操作系统
+        co.modelClickAndChooseValueTwo(param,"NodeTypeButton","NodeTypeValue","节点类型");
         //      点击，保存
-//        co.modelClickButton(param, "Save", "保存");
-        WebElement element = l.getElement(param.get("Save"));
-        String text = element.getAttribute("value");
-        Actions a = new Actions(driver);
-        a.moveToElement(element).build().perform();
-
-        ScreenshotFunction s = new ScreenshotFunction(driver);
-        s.takeScreenshot();
-
-        JavascriptExecutor j = (JavascriptExecutor) driver;
-        j.executeScript("arguments[0].click();", element);
+        co.modelClickButton(param, "Save");
         //      点击，保存，提示确认
         co.alarmHintAndConfirm(param);
         LogFunction.logInfo("----------------资源管理-自动发现-发现列表，归类，操作完成---------------------");
@@ -10430,7 +10475,6 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton2(param, "Confirm", "确定", "点击，筛选");
 //      验证，筛选结果-唯一标识
         co.selectResultVerify(param, "ResultUniqueLogo", "ClassifyUniqueLogoValue");
-
         LogFunction.logInfo("----------------资源管理-自动发现-发现列表，归类，(发现列表环节)筛选验证完成---------------------");
     }
 
@@ -10445,7 +10489,7 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton3(param, "OperationSystem", "点击，操作系统");
         co.sleep(200);
 //        点击，筛选
-        co.select(param, "ScreenArea");
+        co.modelAreaDisplayAndClick(param,"ScreenArea","ResourceExampleScreen","筛选按钮");
 //      录入，显示名称
         co.modelInputBox(param, "DisplayName", "ClassifyUniqueLogoValue", "显示名称");
 //      点击，筛选，确定
@@ -10454,7 +10498,7 @@ public class VicubeSystem extends TestBase {
 //      验证，筛选结果-显示名称
         co.selectResultVerify(param, "screenResult", "ClassifyUniqueLogoValue");
 //        勾选，结果
-        co.modelClickButton3(param, "ResultChoose", "勾选结果");
+        co.chooseSelectResult(param);
 //        点击，删除
         co.deleteButton(param);
 //      点击，删除提示确认
@@ -10462,24 +10506,25 @@ public class VicubeSystem extends TestBase {
 //        点击，删除成功确认
         co.alarmHintAndConfirm(param, "删除成功");
         //        点击，筛选
-        co.select(param, "ScreenArea");
+        co.modelAreaDisplayAndClick(param,"ScreenArea","ResourceExampleScreen","筛选按钮");
         co.sleep(200);
 //      录入，显示名称
         co.modelInputBox(param, "DisplayName", "ClassifyUniqueLogoValue", "显示名称");
 //      点击，筛选，确定
         co.modelClickButton2(param, "Confirm", "确定");
-        co.sleep(500);
+        co.sleep(1500);
 //      验证，筛选结果-是否为空
-        co.selectResultIsNull(param);
+        co.selectResultIsNull(param,"ResultIsEmpty");
         //      点击，自动发现
-        co.modelAreaDisplayAndClick(param,"automaticDiscoveryArea","automaticDiscovery");
+        co.modelAreaDisplayAndClick(param, "automaticDiscoveryArea", "automaticDiscovery");
 //        co.modelClickButton2(param, "automaticDiscovery", "自动发现");
 //      点击，发现列表
         co.modelClickButton2(param, "DiscoveryList", "发现列表");
 //        点击，已确认归类
         co.modelClickButton3(param, "ConfirmClassify", "点击：已确认归类");
+        co.sleep(1000);
 //        点击，筛选
-        co.select(param, "SelectArea");
+        co.modelAreaDisplayAndClick(param,"SelectArea1","DiscoveryListScreen","筛选按钮");
         co.sleep(200);
 //      录入，唯一标识
         co.modelInputBox(param, "UniqueLogo", "ClassifyUniqueLogoValue", "唯一标识");
@@ -10502,7 +10547,7 @@ public class VicubeSystem extends TestBase {
 //      点击，未确认归类
         co.modelClickButton3(param, "ToBeConfirmClassify", "点击：待确认归类");
         //        点击，筛选
-        co.select(param, "SelectArea");
+        co.modelAreaDisplayAndClick(param,"SelectArea1","DiscoveryListScreen","筛选按钮");
 //      录入，唯一标识
         co.modelInputBox(param, "UniqueLogo", "DiscardUniqueLogoValue", "唯一标识");
 //      点击，筛选，确定
@@ -10518,7 +10563,7 @@ public class VicubeSystem extends TestBase {
     public void discoveryListDiscard(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //      点击，勾选结果
-        co.modelClickButton3(param, "ResultChoose", "勾选，结果");
+        co.chooseSelectResult(param);
 //      点击，丢弃
         co.modelClickButton2(param, "Discard", "丢弃");
 //      点击，丢弃，提示确认
@@ -10534,7 +10579,6 @@ public class VicubeSystem extends TestBase {
 //      点击，未确认归类
         co.modelClickButton3(param, "ToBeConfirmClassify", "点击：待确认归类");
 //        点击，筛选
-        co.select(param, "SelectArea");
         co.sleep(200);
 //      录入，唯一标识
         co.modelInputBox(param, "UniqueLogo", "DiscardUniqueLogoValue", "唯一标识");
@@ -10558,6 +10602,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //      点击，新建
         co.createButton(param);
+        co.sleep(1000);
 //      录入，规则名称
         co.modelInputBox(param, "name", "DiscoveryRuleRuleNameCreateValue", "规则名称");
 //      录入，ip范围
@@ -10565,15 +10610,12 @@ public class VicubeSystem extends TestBase {
 //      录入，时间间隔
         co.modelInputBox(param, "timeInterval", "DiscoveryRuleTimeIntervalValue", "时间间隔");
 //      选择，采集插件
-        co.modelClickButton(param, "collectionPlugin", "采集插件", "");
-        co.sleep(500);
-        co.modelClickButton(param, "collectionPluginValue");
-        co.sleep(500);
+        co.modelClickAndChooseValueTwo(param,"collectionPlugin","collectionPluginValue","采集插件");
         //      勾选，启用
         co.modelRadioBox(param, "enable");
 //        点击，保存
         co.modelClickButton2(param, "save", "保存");
-
+        co.sleep(1500);
         LogFunction.logInfo("----------------资源管理-自动发现-发现规则,新建完成---------------------");
     }
 
@@ -10581,18 +10623,14 @@ public class VicubeSystem extends TestBase {
     @Test(dataProvider = "xmldata")
     public void discoveryRuleCreateVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
-//        driver.navigate().refresh();
-//        LogFunction.logInfo("页面刷新成功");
-//        co.sleep(3000);
-//        promptMessage(param);
-        //      点击，筛选
-        co.select(param, "area");
-        co.sleep(1000);
+//      点击，筛选
+        co.modelAreaDisplayAndClick(param,"area","DiscoveryRuleScreen","筛选按钮");
+        co.sleep(500);
 //      录入，规则名称
         co.modelInputBox(param, "ruleName", "DiscoveryRuleRuleNameCreateValue", "规则名称");
 //        点击，确定
         co.modelClickButton2(param, "confirm", "确定");
-        co.sleep(500);
+        co.sleep(1000);
 //        校验筛选结果，规则名称
         co.selectResultVerify(param, "resultName", "DiscoveryRuleRuleNameCreateValue");
 //        校验筛选结果，已启用
@@ -10607,15 +10645,16 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        勾选，结果
         co.chooseSelectResult(param);
-//      点击，新建
+//      点击，编辑
         co.editButton(param);
+        co.sleep(1000);
 //      录入，规则名称
         co.modelInputBox(param, "name", "DiscoveryRuleRuleNameEditValue", "规则名称");
         //      勾选，启用
         co.modelNoRadioBox(param, "enable", "启用");
 //        点击，保存
         co.modelClickButton(param, "save");
-
+        co.sleep(1500);
         LogFunction.logInfo("----------------资源管理-自动发现-发现规则,编辑完成---------------------");
     }
 
@@ -10625,11 +10664,12 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //      点击，筛选
         co.select(param, "area");
+        co.sleep(500);
 //      录入，规则名称
         co.modelInputBox(param, "ruleName", "DiscoveryRuleRuleNameEditValue", "规则名称");
 //        点击，确定
         co.modelClickButton2(param, "confirm", "确定");
-        co.sleep(500);
+        co.sleep(1000);
 //        校验筛选结果，规则名称
         co.selectResultVerify(param, "resultName", "DiscoveryRuleRuleNameEditValue");
 //        校验筛选结果，已禁用
@@ -10646,13 +10686,14 @@ public class VicubeSystem extends TestBase {
         co.chooseSelectResult(param);
 //        点击，启用
         co.enableButton(param);
+        co.sleep(2000);
 //      点击，筛选
         co.select(param, "area");
 //      录入，规则名称
         co.modelInputBox(param, "ruleName", "DiscoveryRuleRuleNameEditValue", "规则名称");
 //        点击，确定
         co.modelClickButton2(param, "confirm", "确定");
-        co.sleep(500);
+        co.sleep(1000);
 //        校验筛选结果，已启用
         co.selectResultVerifyOfTextType(param, "resultEnable", "已启用", "title");
         LogFunction.logInfo("----------------资源管理-自动发现-发现规则,启用且筛选验证完成---------------------");
@@ -10666,13 +10707,14 @@ public class VicubeSystem extends TestBase {
         co.chooseSelectResult(param);
 //        点击，禁用
         co.disenableButton(param);
+        co.sleep(2000);
 //      点击，筛选
         co.select(param, "area");
 //      录入，规则名称
         co.modelInputBox(param, "ruleName", "DiscoveryRuleRuleNameEditValue", "规则名称");
 //        点击，确定
         co.modelClickButton2(param, "confirm", "确定");
-        co.sleep(500);
+        co.sleep(1000);
 //        校验筛选结果，已禁用
         co.selectResultVerifyOfTextType(param, "resultEnable", "已禁用", "title");
         LogFunction.logInfo("----------------资源管理-自动发现-发现规则,禁用且筛选验证完成---------------------");
@@ -10688,6 +10730,7 @@ public class VicubeSystem extends TestBase {
         co.deleteButton(param);
 //        点击，删除确认
         co.alarmHintAndConfirm(param);
+        co.sleep(2000);
 //      点击，筛选
         co.select(param, "area");
 //      录入，规则名称
@@ -11163,7 +11206,7 @@ public class VicubeSystem extends TestBase {
     public void viewSourceCreate(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，视图数据
-        co.modelAreaDisplayAndClick(param,"ViewDataArea","ViewData");
+        co.modelAreaDisplayAndClick(param, "ViewDataArea", "ViewData");
 //        点击，数据源
         co.modelClickButton(param, "DataSource");
 //        点击，新增按钮
@@ -11223,7 +11266,7 @@ public class VicubeSystem extends TestBase {
     public void viewSourceDelete(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，视图数据
-        co.modelAreaDisplayAndClick(param,"ViewDataArea","ViewData");
+        co.modelAreaDisplayAndClick(param, "ViewDataArea", "ViewData");
 //        co.modelClickButton(param, "ViewData");
 //        点击，数据源
         co.modelClickButton(param, "DataSource");
@@ -11339,7 +11382,7 @@ public class VicubeSystem extends TestBase {
     public void SQLDataSetDeleteAndVerify(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
 //        点击，视图数据
-        co.modelAreaDisplayAndClick(param,"ViewDataArea","ViewData");
+        co.modelAreaDisplayAndClick(param, "ViewDataArea", "ViewData");
 //        co.modelClickButton(param, "ViewData");
 //        点击，SQL数据集
         co.modelClickButton(param, "SQLDataSet");
@@ -11410,16 +11453,19 @@ public class VicubeSystem extends TestBase {
             co.pushMergeAlarmInfo(param, "pushMergeAlarmSourceNode1");
             co.pushMergeAlarmInfo(param, "pushMergeAlarmSourceNode2");
             LogFunction.logInfo("推送，第" + i + "次");
-            if(i==5){
-               break;
-            }else {
+            if (i == 5) {
+                break;
+            } else {
                 co.sleep(1100);
             }
         }
         LogFunction.logInfo("----------------推送告警，结束---------------------");
-
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        设置所有列
+        alarmDisplayColumnSettingAllChoose(param);
         co.verifyMergeRule(param);
-
         LogFunction.logInfo("----------------合并验证：来源节点、正则表达式、时间窗口，结束---------------------");
 
     }
@@ -11928,7 +11974,7 @@ public class VicubeSystem extends TestBase {
 //      录入，最小时间
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long min = System.currentTimeMillis();
-        long max = min + 60 * 1000;
+        long max = min + 2 * 60 * 1000;
         String formatMin = df.format(new Date(min));
         String formatMax = df.format(new Date(max));
         co.modelInputBox(param, "MinTime", formatMin, "最小时间");
@@ -11944,7 +11990,7 @@ public class VicubeSystem extends TestBase {
         co.pushMergeAlarmInfo(param, "pushMergeAlarmAlarmType");
         co.sleep(100);
         co.pushMergeAlarmInfo(param, "pushMergeAlarmAlarmType");
-        co.sleep(60000);
+        co.sleep(120000);
         co.pushMergeAlarmInfo(param, "pushMergeAlarmAlarmType");
         LogFunction.logInfo("----------------推送告警，结束---------------------");
 
@@ -12023,6 +12069,8 @@ public class VicubeSystem extends TestBase {
 //        点击，告警展示
         co.modelClickButton(param, param.get("alarmDisplay"));
         co.sleep(1000);
+//        设置，所有列
+        alarmDisplayColumnSettingAllChoose(param);
 //        搜索框录入，Selenium
         co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
 //        点击，搜索按钮
@@ -12158,9 +12206,9 @@ public class VicubeSystem extends TestBase {
         co.alarmConfigurationDenoiseStrategy(param);
         co.sleep(1000);
 //        点击，全部策略
-        co.modelClickButton(param,"allRules");
+        co.modelClickButton(param, "allRules");
 //        点击，告警分类策略
-        co.modelClickButton(param,"alarmClassifyRules");
+        co.modelClickButton(param, "alarmClassifyRules");
         co.sleep(1000);
         LogFunction.logInfo("----------------分类验证：分类,开始---------------------");
 //          点击，新建
@@ -12190,11 +12238,12 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
         LogFunction.logInfo("第三步，规则条件高级设置录入完成");
 //        选择，新的警告类型,Oracle_CPU_Alert
-        co.modelClickAndChooseValueTwo(param,"newAlarmType","chooseNewAlarmType","新的警告类型");
+        co.modelClickAndChooseValueTwo(param, "newAlarmType", "chooseNewAlarmType", "新的警告类型");
 //        点击，新的告警级别,INFO
-        co.modelClickAndChooseValueThree(param,"newAlarmRank","deselectAll","chooseNewAlarmRank","新的告警级别");
+        co.modelClickAndChooseValueTwo(param, "newAlarmRank","chooseNewAlarmRank", "新的告警级别");
+//        co.modelClickAndChooseValueThree(param, "newAlarmRank", "deselectAll", "chooseNewAlarmRank", "新的告警级别");
 //          点击，保存
-        co.modelClickButton(param,"alarmClassifyConfigSave");
+        co.modelClickButton(param, "alarmClassifyConfigSave");
         LogFunction.logInfo("告警分类策略，最后一步，告警分类设置录入完成，告警分类策略创建成功");
         LogFunction.logInfo("----------------推送告警，开始---------------------");
         co.pushMergeAlarmInfo(param, "pushClassifyAlarmOracle");
@@ -12202,6 +12251,8 @@ public class VicubeSystem extends TestBase {
 //        点击，告警展示
         co.modelClickButton(param, param.get("alarmDisplay"));
         co.sleep(1000);
+//        设置，所有列
+        alarmDisplayColumnSettingAllChoose(param);
 //        搜索框录入，Selenium
         co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
 //        点击，搜索按钮
@@ -12213,20 +12264,20 @@ public class VicubeSystem extends TestBase {
         AssertFunction.verifyEquals(driver, r.size(), 1);
 //        获取告警级别，并，校验
         String rank = co.getTextValueString(param, "commonSelectResultTwo2", "title");
-        LogFunction.logInfo("分类后，告警级别为："+rank);
-        AssertFunction.verifyEquals(driver,rank,"INFO");
+        LogFunction.logInfo("分类后，告警级别为：" + rank);
+        AssertFunction.verifyEquals(driver, rank, "INFO");
 //        勾选，结果
         co.chooseSelectResult(param);
 //        点击，查看
-        co.modelClickButton(param,"alarmDisplayView");
+        co.modelClickButton(param, "alarmDisplayView");
 //      点击，其他信息
-        co.modelClickButton(param,"otherInformation");
+        co.modelClickButton(param, "otherInformation");
 //        获取，告警类型，并，校验
         String alarmType = co.getTextValueString(param, "otherInformationAlarmType", "value");
-        LogFunction.logInfo("分类后，告警类型为："+alarmType);
-        AssertFunction.verifyEquals(driver,alarmType,"Oracle_CPU_Alert");
+        LogFunction.logInfo("分类后，告警类型为：" + alarmType);
+        AssertFunction.verifyEquals(driver, alarmType, "Oracle_CPU_Alert");
 //      点击，查看，关闭
-        co.modelClickButton(param,"alarmDisplayViewCancel");
+        co.modelClickButton(param, "alarmDisplayViewCancel");
 //        将发送的告警，解决，清空内存
         co.resolvedClearMemory(param);
         LogFunction.logInfo("----------------分类验证：分类，结束---------------------");
@@ -12255,7 +12306,7 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
         LogFunction.logInfo("第三步，规则条件高级设置录入完成");
 //          点击，保存
-        co.modelClickButton(param,"alarmClassifyConfigSave");
+        co.modelClickButton(param, "alarmClassifyConfigSave");
         LogFunction.logInfo("告警分类策略，最后一步，告警分类设置录入完成，告警分类策略创建成功");
         LogFunction.logInfo("----------------推送告警，开始---------------------");
         co.pushMergeAlarmInfo(param, "pushClassifyAlarmOracle");
@@ -12275,20 +12326,20 @@ public class VicubeSystem extends TestBase {
         AssertFunction.verifyEquals(driver, r.size(), 1);
 //        获取告警级别，并，校验
         String rank = co.getTextValueString(param, "commonSelectResultTwo2", "title");
-        LogFunction.logInfo("分类后，告警级别为："+rank);
-        AssertFunction.verifyEquals(driver,rank,"INFO");
+        LogFunction.logInfo("分类后，告警级别为：" + rank);
+        AssertFunction.verifyEquals(driver, rank, "INFO");
 //        勾选，结果
         co.chooseSelectResult(param);
 //        点击，查看
-        co.modelClickButton(param,"alarmDisplayView");
+        co.modelClickButton(param, "alarmDisplayView");
 //      点击，其他信息
-        co.modelClickButton(param,"otherInformation");
+        co.modelClickButton(param, "otherInformation");
 //        获取，告警类型，并，校验
         String alarmType = co.getTextValueString(param, "otherInformationAlarmType", "value");
-        LogFunction.logInfo("分类后，告警类型为："+alarmType);
-        AssertFunction.verifyEquals(driver,alarmType,"Oracle_CPU_Alert");
+        LogFunction.logInfo("分类后，告警类型为：" + alarmType);
+        AssertFunction.verifyEquals(driver, alarmType, "Oracle_CPU_Alert");
 //      点击，查看，关闭
-        co.modelClickButton(param,"alarmDisplayViewCancel");
+        co.modelClickButton(param, "alarmDisplayViewCancel");
 //        将发送的告警，解决，清空内存
         co.resolvedClearMemory(param);
 
@@ -12303,20 +12354,20 @@ public class VicubeSystem extends TestBase {
         AssertFunction.verifyEquals(driver, r1.size(), 1);
 //        获取告警级别，并，校验
         String rank1 = co.getTextValueString(param, "commonSelectResultTwo2", "title");
-        LogFunction.logInfo("分类后，告警级别为："+rank1);
-        AssertFunction.verifyEquals(driver,rank1,"MINOR");
+        LogFunction.logInfo("分类后，告警级别为：" + rank1);
+        AssertFunction.verifyEquals(driver, rank1, "MINOR");
 //        勾选，结果
         co.chooseSelectResult(param);
 //        点击，查看
-        co.modelClickButton(param,"alarmDisplayView");
+        co.modelClickButton(param, "alarmDisplayView");
 //      点击，其他信息
-        co.modelClickButton(param,"otherInformation");
+        co.modelClickButton(param, "otherInformation");
 //        获取，告警类型，并，校验
         String alarmType1 = co.getTextValueString(param, "otherInformationAlarmType", "value");
-        LogFunction.logInfo("分类后，告警类型为："+alarmType1);
-        AssertFunction.verifyEquals(driver,alarmType1,"Oracle_System_Alert");
+        LogFunction.logInfo("分类后，告警类型为：" + alarmType1);
+        AssertFunction.verifyEquals(driver, alarmType1, "Oracle_System_Alert");
 //      点击，查看，关闭
-        co.modelClickButton(param,"alarmDisplayViewCancel");
+        co.modelClickButton(param, "alarmDisplayViewCancel");
 //        将发送的告警，解决，清空内存
         co.resolvedClearMemory(param);
         LogFunction.logInfo("----------------分类验证：分类，结束---------------------");
@@ -12340,12 +12391,12 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "rulesConditionConfigNextStep");
         LogFunction.logInfo("第二步，规则条件设置录入完成");
 //        清空，内容关键字（正则表达式）
-        co.modelInputBoxClear(param, "contentKeyword","内容关键词");
+        co.modelInputBoxClear(param, "contentKeyword", "内容关键词");
 //       点击，规则条件高级设置，下一步
         co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
         LogFunction.logInfo("第三步，规则条件高级设置录入完成");
 //          点击，保存
-        co.modelClickButton(param,"alarmClassifyConfigSave");
+        co.modelClickButton(param, "alarmClassifyConfigSave");
         LogFunction.logInfo("----------------合并规则，新建，开始---------------------");
 //        点击，全部规则+合并规则
         denoiseStrategyChooseAlarmMergeRules(param);
@@ -12403,25 +12454,25 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("告警条数为：" + r.size());
         AssertFunction.verifyEquals(driver, r.size(), 1);
         int text = Integer.valueOf(r12.get(0).getText());
-        LogFunction.logInfo("告警,次数分别为:" + r12.get(0).getText());
+        LogFunction.logInfo("告警,次数为:" + r12.get(0).getText());
         AssertFunction.verifyEquals(driver, text, 2);
 
 //        获取告警级别，并，校验
         String rank = co.getTextValueString(param, "commonSelectResultTwo2", "title");
-        LogFunction.logInfo("分类后，告警级别为："+rank);
-        AssertFunction.verifyEquals(driver,rank,"INFO");
+        LogFunction.logInfo("分类后，告警级别为：" + rank);
+        AssertFunction.verifyEquals(driver, rank, "INFO");
 //        勾选，结果
         co.chooseSelectResult(param);
 //        点击，查看
-        co.modelClickButton(param,"alarmDisplayView");
+        co.modelClickButton(param, "alarmDisplayView");
 //      点击，其他信息
-        co.modelClickButton(param,"otherInformation");
+        co.modelClickButton(param, "otherInformation");
 //        获取，告警类型，并，校验
         String alarmType = co.getTextValueString(param, "otherInformationAlarmType", "value");
-        LogFunction.logInfo("分类后，告警类型为："+alarmType);
-        AssertFunction.verifyEquals(driver,alarmType,"Oracle_CPU_Alert");
+        LogFunction.logInfo("分类后，告警类型为：" + alarmType);
+        AssertFunction.verifyEquals(driver, alarmType, "Oracle_CPU_Alert");
 //      点击，查看，关闭
-        co.modelClickButton(param,"alarmDisplayViewCancel");
+        co.modelClickButton(param, "alarmDisplayViewCancel");
 //        将发送的告警，解决，清空内存
         co.resolvedClearMemory(param);
         LogFunction.logInfo("----------------分类验证：分类，结束---------------------");
@@ -12444,7 +12495,7 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("----------------分类、合并规则，删除成功---------------------");
     }
 
-    //    集中告警-告警配置-降噪策略-恢复规则-恢复验证：恢复，清出内存，时间门限
+    //    集中告警-告警配置-降噪策略-恢复规则-恢复验证：恢复、清出内存、时间门限、正则表达式
     @Test(dataProvider = "xmldata")
     public void recoveryRulesVerifyRecoveryAndClearMemoryRE(Map<String, String> param) {
         LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
@@ -12452,9 +12503,9 @@ public class VicubeSystem extends TestBase {
         co.alarmConfigurationDenoiseStrategy(param);
         co.sleep(1000);
 //        点击，全部策略
-        co.modelClickButton(param,"allRules");
+        co.modelClickButton(param, "allRules");
 //        点击，告警恢复策略
-        co.modelClickButton(param,"alarmRecoveryRules");
+        co.modelClickButton(param, "alarmRecoveryRules");
         co.sleep(1000);
         LogFunction.logInfo("----------------恢复验证：恢复、清出内存、时间门限、正则表达式，开始---------------------");
 //          点击，新建
@@ -12484,22 +12535,22 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
         LogFunction.logInfo("第三步，规则条件高级设置录入完成");
 //        恢复时间门限，录入，1
-        co.modelInputBox(param,"recoveryTimeThreshold","recoveryTimeThresholdValue","恢复时间门限");
+        co.modelInputBox(param, "recoveryTimeThreshold", "recoveryTimeThresholdValue", "恢复时间门限");
 //        选择，清出内存
-        co.modelCheckBoxClearAllOption(param,"recoveryOption");
-        co.modelRadioBox(param,"recoveryOptionClearMemory","清出内存");
+        co.modelCheckBoxClearAllOption(param, "recoveryOption");
+        co.modelRadioBox(param, "recoveryOptionClearMemory", "清出内存");
 //          点击，保存
-        co.modelClickButton(param,"alarmClassifyConfigSave");
+        co.modelClickButton(param, "alarmClassifyConfigSave");
         LogFunction.logInfo("告警恢复策略，最后一步，告警恢复策略录入完成，告警恢复策略创建成功");
         LogFunction.logInfo("----------------推送告警，开始---------------------");
         for (int i = 1; i < 4; i++) {
             co.pushMergeAlarmInfo(param, "pushRecoveryAlarmSelenium");
             co.sleep(100);
             co.pushMergeAlarmInfo(param, "pushRecoveryAlarmAele");
-            LogFunction.logInfo("第"+i+"次，推送告警，完成");
-            if (i==3){
+            LogFunction.logInfo("第" + i + "次，推送告警，完成");
+            if (i == 3) {
                 break;
-            }else{
+            } else {
                 co.sleep(40000);
             }
         }
@@ -12507,6 +12558,7 @@ public class VicubeSystem extends TestBase {
 //        点击，告警展示
         co.modelClickButton(param, param.get("alarmDisplay"));
         co.sleep(1000);
+        alarmDisplayColumnSettingAllChoose(param);
 //        搜索框录入，Selenium
         co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
 //        点击，搜索按钮
@@ -12558,18 +12610,18 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
         LogFunction.logInfo("第三步，规则条件高级设置录入完成");
 //        选择，设置为忽略
-        co.modelCheckBoxClearAllOption(param,"recoveryOption");
-        co.modelRadioBox(param,"recoveryOptionSetIgnore","设置为忽略");
+        co.modelCheckBoxClearAllOption(param, "recoveryOption");
+        co.modelRadioBox(param, "recoveryOptionSetIgnore", "设置为忽略");
 //          点击，保存
-        co.modelClickButton(param,"alarmClassifyConfigSave");
+        co.modelClickButton(param, "alarmClassifyConfigSave");
         LogFunction.logInfo("告警恢复策略，最后一步，告警恢复策略录入完成，告警恢复策略创建成功");
         LogFunction.logInfo("----------------推送告警，开始---------------------");
         for (int i = 1; i < 4; i++) {
             co.pushMergeAlarmInfo(param, "pushRecoveryAlarmSelenium");
-            LogFunction.logInfo("第"+i+"次，推送告警");
-            if (i==3){
+            LogFunction.logInfo("第" + i + "次，推送告警");
+            if (i == 3) {
                 break;
-            }else{
+            } else {
                 co.sleep(40000);
             }
         }
@@ -12600,7 +12652,7 @@ public class VicubeSystem extends TestBase {
         List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
         LogFunction.logInfo("告警条数为：" + r1.size());
         AssertFunction.verifyEquals(driver, r1.size(), 0);
-        if(r1.size()!=0){
+        if (r1.size() != 0) {
 //        将发送的告警，解决，清空内存
             co.resolvedClearMemory(param);
         }
@@ -12631,7 +12683,7 @@ public class VicubeSystem extends TestBase {
         co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
         LogFunction.logInfo("第三步，规则条件高级设置录入完成");
 //          点击，保存
-        co.modelClickButton(param,"alarmClassifyConfigSave");
+        co.modelClickButton(param, "alarmClassifyConfigSave");
         LogFunction.logInfo("告警恢复策略，最后一步，告警恢复策略录入完成，告警恢复策略创建成功");
         LogFunction.logInfo("----------------合并规则，新建，开始---------------------");
 //        点击，全部规则+合并规则
@@ -12672,10 +12724,10 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("----------------推送告警，开始---------------------");
         for (int i = 1; i < 4; i++) {
             co.pushMergeAlarmInfo(param, "pushRecoveryAlarmSelenium");
-            LogFunction.logInfo("第"+i+"次，推送告警");
-            if (i==3){
+            LogFunction.logInfo("第" + i + "次，推送告警");
+            if (i == 3) {
                 break;
-            }else{
+            } else {
                 co.sleep(40000);
             }
         }
@@ -12692,7 +12744,11 @@ public class VicubeSystem extends TestBase {
         List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
         LogFunction.logInfo("告警条数为：" + r.size());
         AssertFunction.verifyEquals(driver, r.size(), 1);
-        if(r.size()!=0){
+        if (r.size() != 0) {
+            List<WebElement> r12 = l.getElements(param.get("commonselectResultAll12"));
+            int text = Integer.valueOf(r12.get(0).getText());
+            LogFunction.logInfo("告警,次数为:" + r12.get(0).getText());
+            AssertFunction.verifyEquals(driver, text, 1);
 //        将发送的告警，解决，清空内存
             co.resolvedClearMemory(param);
         }
@@ -12708,7 +12764,11 @@ public class VicubeSystem extends TestBase {
         List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
         LogFunction.logInfo("告警条数为：" + r1.size());
         AssertFunction.verifyEquals(driver, r1.size(), 1);
-        if(r1.size()!=0){
+        if (r1.size() != 0) {
+            List<WebElement> r112 = l.getElements(param.get("commonselectResultAll12"));
+            int text1 = Integer.valueOf(r112.get(0).getText());
+            LogFunction.logInfo("告警,次数为:" + r112.get(0).getText());
+            AssertFunction.verifyEquals(driver, text1, 2);
 //        将发送的告警，解决，清空内存
             co.resolvedClearMemory(param);
         }
@@ -12731,22 +12791,1974 @@ public class VicubeSystem extends TestBase {
         LogFunction.logInfo("----------------恢复，合并规则，删除成功---------------------");
     }
 
+    //    集中告警-告警配置-降噪策略-升级规则-升级验证：升级、正则表达式、告警数量门限、升级次数限制、升级周期、目标级别-升级
+    @Test(dataProvider = "xmldata")
+    public void upgradeRulesVerifyUpgradeAndRE(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+        co.sleep(1000);
+
+//        点击，全部策略
+        co.modelClickButton(param, "allRules");
+//        点击，告警升级策略
+        co.modelClickButton(param, "alarmUpgradeRules");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------升级验证：升级、正则表达式、告警数量门限、升级次数限制、升级周期、目标级别-升级，开始---------------------");
+//          点击，新建
+        co.createButton(param);
+//          录入，规则名称
+        co.modelInputBox(param, "rulesName", "alarmUpgradeRulesNameValue", "规则名称");
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//          验证，域默认值
+        String valueString = co.getTextValueString(param, "domainDefault", "text");
+        AssertFunction.verifyEquals(driver, valueString, "rootDomain");
+//          选择，类型,Oracle
+        co.modelClickAndChooseValueTwo(param, "type", "chooseType", "类型");
+//          选择，告警类型,Oracle_System_Alert
+        co.modelClickAndChooseValueTwo(param, "alarmType", "chooseAlarmType", "告警类型");
+//       点击，规则条件设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，规则条件设置录入完成");
+//        选择，节点过滤
+        co.modelClickAndChooseValue(param, "nodeFilter", "chooseNodeFilter", "节点过滤");
+//        选择，采集系统选择
+        co.modelClickAndChooseValue(param, "acquisitionSystemChoose", "chooseAcquisitionSystemChoose", "采集系统选择");
+//        录入，内容关键字（正则表达式）
+        co.modelInputBox(param, "contentKeyword", "contentKeywordValue", "内容关键词");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//        升级周期，录入，1
+        co.modelInputBox(param, "upgradeCycle", "upgradeCycleValue", "升级周期");
+//        告警数量门限，录入，1
+        co.modelInputBox(param, "alarmNumberThreshold", "alarmNumberThresholdValue", "告警数量门限");
+//        升级次数限制，录入，2
+        co.modelInputBox(param, "upgradeLimit", "upgradeLimitValue", "升级次数限制");
+//        目标级别，选择-升级
+        co.modelClickButton(param, "targetLevelUpgrade", "升级", "");
+//          点击，保存
+        co.modelClickButton(param, "alarmClassifyConfigSave");
+        LogFunction.logInfo("告警升级策略，最后一步，告警升级设置完成，告警升级策略创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        for (int i = 1; i < 3; i++) {
+            co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium");
+            co.sleep(100);
+            co.pushMergeAlarmInfo(param, "pushUpgradeAlarmAele");
+            LogFunction.logInfo("第" + i + "次，推送告警，完成");
+        }
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+        LogFunction.logInfo("等待2.5分钟");
+        co.sleep(2*60*1000+30*1000);
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+        alarmDisplayColumnSettingAllChoose(param);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 2);
+//        告警级别，分别为
+        List<WebElement> img = l.getElements(param.get("commonselectResultChooseAll2_img"));
+        if (r.size() == 2) {
+            ArrayList<String> es = new ArrayList<>();
+            for (int i = 0; i < img.size(); i++) {
+                WebElement e = img.get(i);
+                String title = e.getAttribute("title");
+                es.add(title);
+            }
+            LogFunction.logInfo("告警级别,分别为：" + es.get(0) + "、" + es.get(1));
+            AssertFunction.verifyEquals(driver, es.get(0), "MINOR");
+            AssertFunction.verifyEquals(driver, es.get(1), "MINOR");
+        }
+        if (img.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 2);
+//        告警级别，分别为
+        List<WebElement> img1 = l.getElements(param.get("commonselectResultChooseAll2_img"));
+        if (r1.size() == 2) {
+            ArrayList<String> es = new ArrayList<>();
+            for (int i = 0; i < img1.size(); i++) {
+                WebElement e = img1.get(i);
+                String title = e.getAttribute("title");
+                es.add(title);
+            }
+            LogFunction.logInfo("告警级别,分别为：" + es.get(0) + "、" + es.get(1));
+            for (int i = 0; i < img1.size(); i++) {
+                AssertFunction.verifyEquals(driver, es.get(i), "INFO");
+            }
+        }
+        if (img1.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------升级验证：升级、正则表达式、告警数量门限、升级次数限制、升级周期、目标级别-升级，结束---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-升级规则-升级验证：升级、此策略为例外
+    @Test(dataProvider = "xmldata")
+    public void upgradeRulesVerifyUpgradeAndException(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+        co.sleep(1000);
+        LogFunction.logInfo("----------------升级验证：升级、此策略为例外，开始---------------------");
+//          勾选，告警
+        co.chooseSelectResultOfCondition(param, "alarmUpgradeRulesNameValue");
+//          点击，编辑
+        co.editButton(param);
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//       点击，规则条件设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，规则条件设置录入完成");
+//        清空，内容关键字（正则表达式）
+        co.modelInputBoxClear(param, "contentKeyword", "内容关键词");
+//        勾选，此策略为例外
+        co.modelRadioBox(param, "strategyException", "此策略为例外");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//        升级次数限制，录入，1
+        co.modelInputBox(param, "upgradeLimit", "upgradeLimitValue", "升级次数限制");
+//          点击，保存
+        co.modelClickButton(param, "alarmClassifyConfigSave");
+        LogFunction.logInfo("告警升级策略，最后一步，告警升级设置完成，告警升级策略创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium0");
+//        co.sleep(100);
+//        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmAeleLinux");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+        LogFunction.logInfo("等待1分钟");
+        co.sleep(70*1000);
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+//        告警级别，为
+        List<WebElement> img = l.getElements(param.get("commonselectResultChooseAll2_img"));
+        if (r.size() == 1) {
+            ArrayList<String> es = new ArrayList<>();
+            String title = img.get(0).getAttribute("title");
+            es.add(title);
+            LogFunction.logInfo("告警级别,为：" + es.get(0));
+            AssertFunction.verifyEquals(driver, es.get(0), "INFO");
+        }
+        if (img.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 1);
+//        告警级别，分别为
+        List<WebElement> img1 = l.getElements(param.get("commonselectResultChooseAll2_img"));
+        //        告警级别，为
+        if (r1.size() == 1) {
+            ArrayList<String> es = new ArrayList<>();
+            String title = img1.get(0).getAttribute("title");
+            es.add(title);
+            LogFunction.logInfo("告警级别,为：" + es.get(0));
+            AssertFunction.verifyEquals(driver, es.get(0), "WARNING");
+        }
+        if (img1.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------升级验证：升级、此策略为例外，结束---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-升级规则-升级验证：降级
+    @Test(dataProvider = "xmldata")
+    public void upgradeRulesVerifyDemotion(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+        co.sleep(1000);
+        LogFunction.logInfo("----------------升级验证：降级，开始---------------------");
+//          勾选，告警
+        co.chooseSelectResultOfCondition(param, "alarmUpgradeRulesNameValue");
+//          点击，编辑
+        co.editButton(param);
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//       点击，规则条件设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，规则条件设置录入完成");
+//        勾选，此策略为例外
+        co.modelNoRadioBox(param, "strategyException", "此策略为例外");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//        选择-目标级别-降级
+        co.modelClickButton(param, "targetLevelDemotion", "降级", "");
+//          点击，保存
+        co.modelClickButton(param, "alarmClassifyConfigSave");
+        LogFunction.logInfo("告警升级策略，最后一步，告警升级设置完成，告警升级策略创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium4");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium4");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+        LogFunction.logInfo("等待1分钟");
+        co.sleep(60*1000);
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 2);
+//        告警级别，为
+        List<WebElement> img = l.getElements(param.get("commonselectResultChooseAll2_img"));
+        if (r.size() == 2) {
+            ArrayList<String> es = new ArrayList<>();
+            for (int i = 0; i < img.size(); i++) {
+                WebElement e = img.get(i);
+                String title = e.getAttribute("title");
+                es.add(title);
+            }
+            LogFunction.logInfo("告警级别,分别为：" + es.get(0) + "、" + es.get(1));
+            AssertFunction.verifyEquals(driver, es.get(0), "MINOR");
+            AssertFunction.verifyEquals(driver, es.get(1), "MINOR");
+        }
+        if (img.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------升级验证：降级，结束---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-升级规则-升级验证：固定级别
+    @Test(dataProvider = "xmldata")
+    public void upgradeRulesVerifyFixedLevel(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+        co.sleep(1000);
+        LogFunction.logInfo("----------------升级验证：降级，开始---------------------");
+//          勾选，告警
+        co.chooseSelectResultOfCondition(param, "alarmUpgradeRulesNameValue");
+//          点击，编辑
+        co.editButton(param);
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//       点击，规则条件设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，规则条件设置录入完成");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//        选择-目标级别-固定级别
+        co.modelClickButton(param, "targetLevelFixedLevel", "固定级别");
+//        选择-目标级别-固定级别-INFO
+        co.modelClickAndChooseValueTwo(param, "targetLevelFixedLevelButton", "targetLevelFixedLevelInfo", "INFO");
+//          点击，保存
+        co.modelClickButton(param, "alarmClassifyConfigSave");
+        LogFunction.logInfo("告警升级策略，最后一步，告警升级设置完成，告警升级策略创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium2");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium3");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium4");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushUpgradeAlarmSelenium5");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+        LogFunction.logInfo("等待1分钟");
+        co.sleep(70*1000);
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 5);
+//        告警级别，为
+        List<WebElement> img = l.getElements(param.get("commonselectResultChooseAll2_img"));
+        if (r.size() == 5) {
+            ArrayList<String> es = new ArrayList<>();
+            for (int i = 0; i < img.size(); i++) {
+                WebElement e = img.get(i);
+                String title = e.getAttribute("title");
+                es.add(title);
+            }
+            LogFunction.logInfo("告警级别,分别为：" + es.get(0) + "、" + es.get(1) + "、" + es.get(2) + "、" + es.get(3) + "、" + es.get(4));
+            AssertFunction.verifyEquals(driver, es.get(0), "INFO");
+            AssertFunction.verifyEquals(driver, es.get(1), "INFO");
+            AssertFunction.verifyEquals(driver, es.get(2), "INFO");
+            AssertFunction.verifyEquals(driver, es.get(3), "INFO");
+            AssertFunction.verifyEquals(driver, es.get(4), "INFO");
+        }
+        if (img.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------升级验证：降级，结束---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-升级规则-删除
+    @Test(dataProvider = "xmldata")
+    public void upgradeRulesVerifyDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+//      勾选，告警
+        co.chooseSelectResultOfCondition(param, "alarmUpgradeRulesNameValue");
+//          点击，删除
+        co.deleteButton(param);
+//        弹出，提示信息
+        co.alarmHintAndConfirm(param);
+        LogFunction.logInfo("----------------合并规则，删除成功---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-关联规则-关联验证：关联
+    @Test(dataProvider = "xmldata")
+    public void relevanceRulesVerifyRelevance(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+        co.sleep(1000);
+//        点击，全部策略
+        co.modelClickButton(param, "allRules");
+//        点击，告警关联策略
+        co.modelClickButton(param, "AlarmRelevanceRules");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------关联验证：关联，开始---------------------");
+//          点击，新建
+        co.createButton(param);
+//          录入，规则名称
+        co.modelInputBox(param, "rulesName", "alarmRelevanceRulesNameValue", "规则名称");
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//          验证，域默认值
+        String valueString = co.getTextValueString(param, "domainDefault", "text");
+        AssertFunction.verifyEquals(driver, valueString, "rootDomain");
+//          选择，节点类型,Oracle
+        co.modelClickAndChooseValueTwo(param, "type", "chooseType", "节点类型");
+//        选择，节点过滤
+        co.modelClickAndChooseValue(param, "relevanceNodeFilter", "relevanceNodeFilterValue", "节点过滤");
+//        选择，告警类型
+        co.modelClickAndChooseValueTwo(param, "relevanceAlarmType", "relevanceAlarmTypeValue", "告警类型");
+//       点击，根源告警设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，根源告警设置录入完成");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//        点击，影响告警配置，新建
+        co.modelAreaDisplayAndClick(param, "CreateArea", "CreateButton");
+//          验证，影响告警配置，新建-域默认值
+        String valueString1 = co.getTextValueString(param, "relevanceCreateDomain", "text");
+        AssertFunction.verifyEquals(driver, valueString1, "rootDomain");
+//          选择，影响告警配置，新建-节点类型,Linux
+        co.modelClickAndChooseValueTwo(param, "createType", "createChooseType", "类型");
+//        选择，影响告警配置，新建-节点过滤-StandardLinux_Test4
+        co.modelClickAndChooseValue(param, "createNodeFilter", "createNodeFilterValue", "节点过滤");
+//        选择，影响告警配置，新建-告警类型-Linux_System_Alert
+        co.modelClickAndChooseValueTwo(param, "createAlarmType", "createAlarmTypeValue", "告警类型");
+//        选择，影响告警配置，新建-节点关系-依赖
+//        co.modelClickAndChooseValueTwo(param, "createNodeRelation", "createNodeRelationValue", "节点关系");
+//          点击，影响告警配置，新建-保存
+        co.modelClickButton(param, "save2", "影响告警配置，新建-保存", "");
+        co.sleep(1000);
+//          点击，保存
+        co.modelClickButton(param, "alarmRelevanceConfigSave");
+        LogFunction.logInfo("告警升级策略，最后一步，告警升级设置完成，告警升级策略创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushRelevanceAlarmOracle");
+        co.sleep(500);
+        co.pushMergeAlarmInfo(param, "pushRelevanceAlarmLinux");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        勾选，所有列
+        alarmDisplayColumnSettingAllChoose(param);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+//        告警级别，分别为
+        List<WebElement> img = l.getElements(param.get("commonselectResultAll7"));
+        List<WebElement> i = l.getElements(param.get("commonselectResultAll21"));
+        if (r.size() == 1) {
+            String t = img.get(0).getText();
+            LogFunction.logInfo("告警类型,为：" + t);
+            AssertFunction.verifyEquals(driver, t, "Oracle");
+            String t1 = i.get(0).getText();
+            LogFunction.logInfo("告警类型,为：" + t1);
+            AssertFunction.verifyEquals(driver, t1, "true");
+//           勾选,告警
+            co.chooseSelectResultAll(param);
+//           点击,查看
+            co.modelClickButton(param, "CentralizedAlarmView");
+            co.sleep(500);
+//            点击，关联告警
+            co.modelClickButton(param, "alarmDisplayRelevanceAlarm");
+//             校验，关联告警信息-节点类型
+            String valueString2 = co.getTextValueString(param, "alarmDisplayRelevanceAlarmNodeType", "text");
+            LogFunction.logInfo("关联告警信息-节点类型:" + valueString2);
+            AssertFunction.verifyEquals(driver, valueString2, "Linux");
+//            点击，关联告警信息-关闭
+            co.modelClickButton(param, "alarmDisplayRelevanceAlarmClose", "关联告警信息-关闭", "");
+//            点击，查看告警信息-关闭
+            co.modelClickButton(param, "alarmDisplayViewCancel", "查看告警信息-关闭", "");
+        }
+        if (r.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+
+        LogFunction.logInfo("----------------关联验证：关联，结束---------------------");
+    }
+
+    //    集中告警-告警配置-降噪策略-升级规则-删除
+    @Test(dataProvider = "xmldata")
+    public void relevanceRulesVerifyDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置，降噪策略
+        co.alarmConfigurationDenoiseStrategy(param);
+//      勾选，告警
+        co.chooseSelectResultOfCondition(param, "alarmRelevanceRulesNameValue");
+//          点击，删除
+        co.deleteButton(param);
+//        弹出，提示信息
+        co.alarmHintAndConfirm(param);
+        LogFunction.logInfo("----------------合并规则，删除成功---------------------");
+    }
+
+    //    性能透视-搜索
+    @Test(dataProvider = "xmldata")
+    public void performancePerspectiveSearch(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，性能透视
+        co.modelClickButton(param, "performancePerspective", "性能透视", "");
+//      判断，树视图是否打开
+        co.modelAreaDisplayAndClick(param, "performancePerspectiveTreeViewButton", "performancePerspectiveTreeViewArea", "树视图");
+//      搜索框，录入Linux
+        co.modelInputBox(param, "performancePerspectiveTreeViewSearch", "performancePerspectiveTreeViewSearchValue", "树视图-搜索框");
+//       点击，搜索按钮
+        co.modelClickButton(param, "performancePerspectiveTreeViewSearchButton", "树视图搜索按钮", "");
+//      校验，搜索结果
+        co.sleep(1000);
+        String valueString = co.getTextValueString(param, "performancePerspectiveTreeViewSearchResult", "text");
+        AssertFunction.verifyEquals(driver, valueString, "Linux");
+        LogFunction.logInfo("----------------性能透视-搜索成功------ ---------------");
+    }
+
+    //    集中告警-告警通知-告警筛选（自动前转）-验证：自动前转、正则表达式
+    @Test(dataProvider = "xmldata")
+    public void forwardShiftingVerifyRE(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警通知
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，告警筛选
+        co.modelClickButton(param, "AlarmScreen");
+        co.sleep(2000);
+        LogFunction.logInfo("----------------告警筛选（自动前转）验证：自动前转、正则表达式，开始---------------------");
+//          点击，新建
+        co.createButton(param);
+//          录入，规则名称
+        co.modelInputBox(param, "rulesName", "alarmScreenCreateStrategyNameValue", "告警筛选名称");
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//          验证，域默认值
+        String valueString = co.getTextValueString(param, "domainDefault", "text");
+        AssertFunction.verifyEquals(driver, valueString, "rootDomain");
+//          选择，类型,Oracle
+        co.modelClickAndChooseValueTwo(param, "type", "chooseType", "类型");
+//          选择，告警类型,Oracle_System_Alert
+        co.modelClickAndChooseValueTwo(param, "alarmType", "chooseAlarmType", "告警类型");
+//       点击，规则条件设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，规则条件设置录入完成");
+//        选择，节点过滤
+        co.modelClickAndChooseValue(param, "nodeFilter", "chooseNodeFilter", "节点过滤");
+//        选择，采集系统选择
+        co.modelClickAndChooseValue(param, "acquisitionSystemChoose", "chooseAcquisitionSystemChoose", "采集系统选择");
+//        录入，内容关键字（正则表达式）
+        co.modelInputBox(param, "contentKeyword", "contentKeywordValue", "内容关键词");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//        选择，通知级别-INFO
+        co.modelClickAndChooseValue(param, "alarmScreenCreateNotifyLevel", "alarmScreenCreateNotifyLevelValue", "通知级别");
+//         选择，接收分组-我是接收分组名称
+        co.modelClickAndChooseValueTwo(param, "alarmScreenCreateReceiveGrouping", "alarmScreenCreateReceiveGroupingValue", "接收分组");
+//          录入，告警数量
+        co.modelInputBox(param, "alarmScreenCreateAlarmNum", "alarmScreenCreateAlarmNumValue", "告警数量");
+//          录入，活动周期
+        co.modelInputBox(param, "alarmScreenCreateActivityCycle", "alarmScreenCreateActivityCycleValue", "活动周期");
+//          选择，活动周期，单元-分钟
+        co.modelClickAndChooseValueTwo(param, "alarmScreenCreateActivityCycleUnit", "alarmScreenCreateActivityCycleUnitValue", "活动周期");
+//          点击，保存
+        co.modelClickButton(param, "alarmInformAlarmScreenSave");
+        LogFunction.logInfo("告警筛选（自动前转），最后一步，告警通知设置录入完成，告警筛选创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAele");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingSelenium");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingSelenium");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingSelenium");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(2000);
+//    集中告警-告警展示-列设置-全选
+        alarmDisplayColumnSettingAllChoose(param);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 0);
+//        将发送的告警，解决，清空内存
+        if (r.size() != 0) {
+            if (r.size() != 0) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+
+        }
+//        点击，已前转告警
+        co.sleep(500);
+        co.modelClickButton(param, "alarmDisplayForwardShiftingAlarm", "已前转告警", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r11 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r11.size());
+        AssertFunction.verifyEquals(driver, r11.size(), 3);
+//        将发送的告警，解决，清空内存
+        if (r11.size() != 0) {
+            if (r11.size() != 3) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+
+        }
+//        点击，待处理告警
+        co.sleep(500);
+        co.modelClickButton(param, "alarmDisplayPendingAlarm", "待处理告警", "");
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 1);
+//        将发送的告警，解决，清空内存
+        if (r1.size() != 0) {
+            if (r1.size() != 1) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------告警筛选（自动前转）验证：自动前转、正则表达式，结束---------------------");
+    }
+
+    //    集中告警-告警通知-告警筛选（自动前转）-验证：自动前转、告警数量、活动周期、策略为例外
+    @Test(dataProvider = "xmldata")
+    public void forwardShiftingVerifyStrategyException(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警通知
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，告警筛选
+        co.modelClickButton(param, "AlarmScreen");
+        co.sleep(2000);
+        LogFunction.logInfo("----------------告警筛选（自动前转）验证：自动前转、告警数量、活动周期、策略为例外，开始---------------------");
+//          勾选，告警筛选
+        co.chooseSelectResultOfCondition(param, "alarmScreenCreateStrategyNameValue");
+//          点击，编辑
+        co.editButton(param);
+//          点击，基础设置，下一步
+        co.modelClickButton(param, "basicsNextStep");
+        LogFunction.logInfo("第一步，基础设置录入完成");
+//       点击，规则条件设置，下一步
+        co.modelClickButton(param, "rulesConditionConfigNextStep");
+        LogFunction.logInfo("第二步，规则条件设置录入完成");
+//        清空，内容关键字（正则表达式）
+        co.modelInputBoxClear(param, "contentKeyword", "内容关键词");
+//        勾选，此策略为例外
+        co.modelRadioBox(param, "strategyException", "此策略为例外");
+//       点击，规则条件高级设置，下一步
+        co.modelClickButton(param, "rulesConditionAdvancedConfigNextStep");
+        LogFunction.logInfo("第三步，规则条件高级设置录入完成");
+//          点击，保存
+        co.modelClickButton(param, "alarmInformAlarmScreenSave");
+        LogFunction.logInfo("告警筛选（自动前转），最后一步，告警通知设置录入完成，告警筛选创建成功");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingSelenium");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxINFO");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxINFO");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxWARNING");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 0);
+//        将发送的告警，解决，清空内存
+        if (r.size() != 0) {
+            if (r.size() != 0) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 0);
+//        告警级别，为
+//        if (r1.size()==0){
+//            WebElement ee = l.getElement(param.get("commonselectResultChooseAll2_img"));
+//            String title = ee.getAttribute("title");
+//            LogFunction.logInfo("告警级别为：" +title);
+//            AssertFunction.verifyEquals(driver,title, "WARNING");
+//        }
+//        将发送的告警，解决，清空内存
+        if (r1.size() != 0) {
+            if (r1.size() != 1) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+        }
+        //        点击，已前转告警
+        co.sleep(500);
+        co.modelClickButton(param, "alarmDisplayForwardShiftingAlarm", "已前转告警", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r11 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r11.size());
+        AssertFunction.verifyEquals(driver, r11.size(), 3);
+//        将发送的告警，解决，清空内存
+        if (r11.size() != 0) {
+            if (r11.size() != 3) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------告警筛选（自动前转）验证：自动前转、告警数量、活动周期、策略为例外，结束---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-验证：短信、微信、邮箱，通知功能
+    @Test(dataProvider = "xmldata")
+    public void informWayVerifyDXEmailWX(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警通知
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，通知方式
+        co.modelClickButton(param, "InformWay");
+        co.sleep(2000);
+        LogFunction.logInfo("----------------通知方式-验证：短信、微信、邮箱，通知功能，开始---------------------");
+//          点击，新建-邮件
+        co.createButton(param);
+//      录入，名称
+        co.modelInputBox(param, "AlarmInformInformWayCreateName", "AlarmInformInformWayCreateNameValue1", "通知方式，名称");
+//      选择-通知类型-邮件
+        co.modelClickAndChooseValueTwo(param, "CreateType", "CreateTypeValueEmail", "通知类型");
+//      选择-目标用户-Selenium
+        co.modelClickAndChooseValue(param, "CreateUser", "informWayCreateUserValueSelenium", "目标用户");
+//          校验是否选择启用
+        co.modelRadioBox(param, "CreateEnable", "启用");
+//         点击，保存
+        co.modelClickButton(param, "Save");
+        co.sleep(500);
+//          勾选，新建通知方式-邮件
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue1");
+        co.sleep(300);
+//         点击，关联告警筛选
+        co.modelClickButton(param, "relatedAlarm");
+//      选择，告警筛选策略
+        co.modelClickAndChooseValue(param, "relatedAlarmFaultRule", "relatedAlarmFaultRuleValue", "告警筛选策略");
+//      点击，确定
+        co.modelClickButton(param, "Confirm");
+
+//          点击，新建-短信
+        co.createButton(param);
+//      录入，名称
+        co.modelInputBox(param, "AlarmInformInformWayCreateName", "AlarmInformInformWayCreateNameValue2", "通知方式，短信");
+//      选择-通知类型-短信
+        co.modelClickAndChooseValueTwo(param, "CreateType", "CreateTypeValueDX", "通知类型");
+//      选择-目标用户-Selenium
+        co.modelClickAndChooseValue(param, "CreateUser", "informWayCreateUserValueSelenium", "目标用户");
+//          校验是否选择启用
+        co.modelRadioBox(param, "CreateEnable", "启用");
+//         点击，保存
+        co.modelClickButton(param, "Save");
+        driver.navigate().refresh();
+        co.sleep(2000);
+        //          勾选，新建通知方式-短信
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue2");
+//         点击，关联告警筛选
+        co.modelClickButton(param, "relatedAlarm");
+//      选择，告警筛选策略
+        co.modelClickAndChooseValue(param, "relatedAlarmFaultRule", "relatedAlarmFaultRuleValue", "告警筛选策略");
+//      点击，确定
+        co.modelClickButton(param, "Confirm");
+
+//          点击，新建-微信
+        co.createButton(param);
+//      录入，名称
+        co.modelInputBox(param, "AlarmInformInformWayCreateName", "AlarmInformInformWayCreateNameValue3", "通知方式，微信");
+//      选择-通知类型-微信
+        co.modelClickAndChooseValueTwo(param, "CreateType", "CreateTypeValueWX", "通知类型");
+//      选择-目标用户-Selenium
+        co.modelClickAndChooseValue(param, "CreateUser", "informWayCreateUserValueSelenium", "目标用户");
+//          校验是否选择启用
+        co.modelRadioBox(param, "CreateEnable", "启用");
+//         点击，保存
+        co.modelClickButton(param, "Save");
+        driver.navigate().refresh();
+        co.sleep(2000);
+//          勾选，新建通知方式-微信
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue3");
+//         点击，关联告警筛选
+        co.modelClickButton(param, "relatedAlarm");
+//      选择，告警筛选策略
+        co.modelClickAndChooseValue(param, "relatedAlarmFaultRule", "relatedAlarmFaultRuleValue", "告警筛选策略");
+//      点击，确定
+        co.modelClickButton(param, "Confirm");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxINFO");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxINFO");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxINFO");
+        co.sleep(100);
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxWARNING");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, "alarmDisplay");
+        co.sleep(1000);
+        //        点击，已前转告警
+        co.sleep(500);
+        co.modelClickButton(param, "alarmDisplayForwardShiftingAlarm", "已前转告警", "");
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 4);
+//        将发送的告警，解决，清空内存
+        if (r.size() != 0) {
+            if (r.size() != 4) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------通知方式-验证：短信、微信、邮箱，通知功能，结束---------------------");
+    }
+
+    //    集中告警-告警通知-通知方式-验证：编辑、微信，通知功能
+    @Test(dataProvider = "xmldata")
+    public void informWayVerifyEditWX(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警通知
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，通知方式
+        co.modelClickButton(param, "InformWay");
+        co.sleep(2000);
+        LogFunction.logInfo("----------------验证：编辑、微信，通知功能，开始---------------------");
+//        勾选，我是新建通知方式-邮件
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue1");
+//          点击，编辑
+        co.editButton(param);
+//      选择-通知类型-微信
+        co.modelClickAndChooseValueTwo(param, "editType", "CreateTypeValueWX", "通知类型");
+//          校验是否选择启用
+        co.modelRadioBox(param, "CreateEnable", "启用");
+//         点击，保存
+        co.modelClickButton(param, "Save");
+        co.sleep(500);
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushMergeAlarmInfo(param, "pushAutoForwardShiftingAeleLinuxINFO");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        点击，已前转告警
+        co.sleep(500);
+        co.modelClickButton(param, "alarmDisplayForwardShiftingAlarm", "已前转告警", "");
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//      验证，告警条数
+        co.sleep(2000);
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("告警条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+//        将发送的告警，解决，清空内存
+        if (r.size() != 0) {
+            if (r.size() != 1) {
+                LogFunction.logInfo("告警筛选（自动前转），功能异常");
+            }
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------验证：编辑、微信，通知功能，结束---------------------");
+    }
+
+    //    集中告警-告警通知-删除
+    @Test(dataProvider = "xmldata")
+    public void alarmNotificationDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警通知
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，通知方式
+        co.modelClickButton(param, "InformWay");
+//      勾选，通知方式-邮件、短信、微信
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue1");
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue2");
+        co.chooseSelectResultOfCondition(param, "AlarmInformInformWayCreateNameValue3");
+//          点击，删除
+        co.deleteButton(param);
+//       校验，提示信息
+        WebElement Hint = l.getElement(param.get("informWayDeleteHintMessage"));
+        String text = Hint.getText();
+        LogFunction.logInfo("提示信息为：" + text);
+//        点击，确认
+        co.modelClickButton(param, "informWayDeleteAffirm");
+        LogFunction.logInfo("----------------通知方式-邮件、短信、微信，删除成功---------------------");
+        co.sleep(500);
+//        点击，告警筛选
+        co.modelClickButton(param, "AlarmScreen");
+        co.sleep(2000);
+//          勾选，告警筛选3
+        co.chooseSelectResultOfCondition(param, "alarmScreenCreateStrategyNameValue");
+        //          点击，删除
+        co.deleteButton(param);
+//        弹出，提示信息
+        co.alarmHintAndConfirm(param);
+        LogFunction.logInfo("----------------告警筛选，删除成功---------------------");
+        co.sleep(500);
+//        点击，接收分组
+        co.modelClickButton(param, "ReceiveGrouping");
+        co.sleep(2000);
+//          勾选，告警筛选
+        co.chooseSelectResultOfConditionNumber(param, "NewGroupingNameValue", "commonSelectResultAll3");
+        //          点击，删除
+        co.deleteButton(param);
+//        弹出，提示信息
+        co.alarmHintAndConfirm(param);
+        LogFunction.logInfo("----------------接收分组，删除成功---------------------");
+
+
+    }
+
+    //    集中告警-告警配置-阈值策略-验证：阈值策略，等于数值
+    @Test(dataProvider = "xmldata")
+    public void thresholdRulesVerifyEqualNumberValue(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，阈值策略
+        co.modelClickButton(param, "thresholdStrategy");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，等于数值，开始---------------------");
+//          点击，新建
+        co.createButton(param);
+//      录入，策略名称
+        co.modelInputBox(param, "CreateName", "ThresholdStrategyCreateNameValue", "策略名称");
+//       选择，启动
+        co.modelRadioBox(param, "CreateEnable", "启用");
+//       选择，数据权限域-rootDomain
+        co.modelClickAndChooseValueTwo(param, "CreateDatadomain", "CreateDataDomainValue", "数据权限域");
+//       选择，节点类型-Linux
+        co.modelClickAndChooseValueTwo(param, "CreateNodeType", "CreateNodeTypeValue", "节点类型");
+//       选择，节点名称-OS_Linux_192.168.20.132
+        co.modelClickAndChooseValueTwo(param, "CreateNodeName", "CreateNodeNameValue", "节点名称");
+//       选择，KPI类型-内存使用率
+        co.modelClickAndChooseValueTwo(param, "CreateKPITypeSelection", "CreateKPITypeSelectionValue", "KPI类型");
+//       选择，告警类型-Linux_System_Alert
+        co.modelClickAndChooseValueTwo(param, "CreateAlarmTypeSelection", "CreateAlarmTypeSelectionValue", "告警类型选择");
+//       选择，告警级别-INFO
+        co.modelClickAndChooseValueTwo(param, "CreateAlarmLevel", "CreateAlarmLevelValue", "告警类型选择");
+//       选择并录入，阈值条件，等于，固定值，8
+        co.modelClickAndChooseValueTwo(param, "ThresholdConditionOneButton", "ThresholdConditionOneValue", "阈值条件");
+        co.modelClickAndChooseValueTwo(param, "ThresholdConditionTwoButton", "ThresholdConditionTwoValue", "阈值条件");
+        co.modelInputBox(param, "ThresholdRuleFixedValueInput", "ThresholdRuleFixedValueInputValue", "阈值条件-值");
+//       录入，技术条件，当满足  3  次时激活，以后每  2  次时重复发送
+        co.modelInputBox(param, "CountConditionOneInput", "CountConditionOneInputValue", "计数条件，当满足 X 次时激活");
+        co.modelInputBox(param, "CountConditionTwoInput", "CountConditionTwoInputValue", "计数条件，以后每 X 次时重复发送");
+//      点击，保存
+        co.modelClickButton(param, "CreateSave");
+//      保存，确认
+        co.alarmHintAndConfirm(param, "添加阈值策略成功");
+        LogFunction.logInfo("-----------------阈值策略，新建完成---------------------");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushKPIInfo(param, "pushKPISelenium8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISelenium8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPIAele9");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISelenium8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISelenium8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISelenium8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISelenium8");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        勾选，所有列
+        alarmDisplayColumnSettingAllChoose(param);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 2);
+        if (r.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 0);
+        if (r1.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，等于数值，结束---------------------");
+    }
+
+    //    集中告警-告警配置-阈值策略-验证：阈值策略，等于字符
+    @Test(dataProvider = "xmldata")
+    public void thresholdRulesVerifyEqualChar(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，阈值策略
+        co.modelClickButton(param, "thresholdStrategy");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，等于字符，开始---------------------");
+//          勾选，阈值策略
+        co.chooseSelectResultOfCondition(param, "ThresholdStrategyCreateNameValue");
+//          点击，编辑
+        co.editButton(param);
+//       选择，KPI类型-操作系统版本信息
+        co.modelClickAndChooseValueTwo(param, "EditKPITypeSelection", "EditKPITypeSelectionValue", "KPI类型");
+//       选择并录入，阈值条件，等于，固定值，Linux h5urmp 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64
+        co.modelInputBox(param, "ThresholdRuleFixedValueInput", "ThresholdRuleFixedValueInputValue", "阈值条件-值");
+//      点击，保存
+        co.modelClickButton(param, "EditSave");
+//      保存，确认
+        co.alarmHintAndConfirm(param, "修改阈值策略成功");
+        LogFunction.logInfo("-----------------阈值策略，新建完成---------------------");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushKPIInfo(param, "pushKPISeleniumChar");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISeleniumChar");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPIAeleChar");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISeleniumChar");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+        if (r.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 0);
+        if (r1.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，等于字符，结束---------------------");
+    }
+
+    //    集中告警-告警配置-阈值策略-验证：阈值策略，小于数值
+    @Test(dataProvider = "xmldata")
+    public void thresholdRulesVerifyLessThanNumberValue(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，阈值策略
+        co.modelClickButton(param, "thresholdStrategy");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，小于数值，开始---------------------");
+//          勾选，阈值策略
+        co.chooseSelectResultOfCondition(param, "ThresholdStrategyCreateNameValue");
+//          点击，编辑
+        co.editButton(param);
+//       选择并录入，阈值条件，小于，固定值，8
+        co.modelClickAndChooseValueTwo(param, "ThresholdConditionOneButton", "ThresholdConditionOneValue", "阈值条件");
+        co.modelInputBox(param, "ThresholdRuleFixedValueInput", "ThresholdRuleFixedValueInputValue", "阈值条件-值");
+//      点击，保存
+        co.modelClickButton(param, "EditSave");
+//      保存，确认
+        co.alarmHintAndConfirm(param, "修改阈值策略成功");
+        LogFunction.logInfo("-----------------阈值策略，新建完成---------------------");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushKPIInfo(param, "pushKPISeleniumLess7");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISeleniumLess7");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPIAeleLess8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISeleniumLess7");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+        if (r.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 0);
+        if (r1.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，小于数值，结束---------------------");
+    }
+
+
+    //    集中告警-告警配置-阈值策略-验证：阈值策略，大于数值
+    @Test(dataProvider = "xmldata")
+    public void thresholdRulesVerifyGreaterThanNumberValue(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置
+        co.modelAreaDisplayAndClick(param, "AlarmInformArea", "AlarmInform");
+//        点击，阈值策略
+        co.modelClickButton(param, "thresholdStrategy");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，大于数值，开始---------------------");
+//          勾选，阈值策略
+        co.chooseSelectResultOfCondition(param, "ThresholdStrategyCreateNameValue");
+//          点击，编辑
+        co.editButton(param);
+//       选择并录入，阈值条件，小于，固定值，8
+        co.modelClickAndChooseValueTwo(param, "ThresholdConditionOneButton", "ThresholdConditionOneValue", "阈值条件");
+//      点击，保存
+        co.modelClickButton(param, "EditSave");
+//      保存，确认
+        co.alarmHintAndConfirm(param, "修改阈值策略成功");
+        LogFunction.logInfo("-----------------阈值策略，新建完成---------------------");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushKPIInfo(param, "pushKPISeleniumGreater9");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISeleniumGreater9");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPIAeleGreater8");
+        co.sleep(100);
+        co.pushKPIInfo(param, "pushKPISeleniumGreater9");
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+        if (r.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+//        搜索框录入，Aele
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Aele", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r1 = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r1.size());
+        AssertFunction.verifyEquals(driver, r1.size(), 0);
+        if (r1.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+        LogFunction.logInfo("----------------阈值策略验证：阈值策略，大于数值，结束---------------------");
+    }
+
+
+    //    集中告警-告警配置-阈值策略-验证：阈值策略，动态基线
+    @Test(dataProvider = "xmldata")
+    public void thresholdRulesVerifyDynamicBaseline(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置
+        co.modelAreaDisplayAndClick(param, "alarmConfigArea", "alarmconfig");
+//        点击，阈值策略
+        co.modelClickButton(param, "thresholdStrategy");
+        co.sleep(1000);
+        LogFunction.logInfo("----------------阈值策略验证：动态基线，大于最大值，开始---------------------");
+//          勾选，阈值策略
+        co.chooseSelectResultOfCondition(param, "ThresholdStrategyCreateNameValue");
+//          点击，编辑
+        co.editButton(param);
+//       选择，KPI类型-内存使用率
+        co.modelClickAndChooseValueTwo(param, "CreateKPITypeSelection", "CreateKPITypeSelectionValue", "KPI类型");
+//       选择并录入，阈值条件，大于，动态基线，90
+        co.modelClickAndChooseValueTwo(param, "ThresholdConditionOneButton", "ThresholdConditionOneValue", "阈值条件");
+        co.modelClickAndChooseValueTwo(param, "ThresholdConditionTwoButton", "ThresholdConditionTwoValue", "阈值条件");
+        co.modelInputBox(param, "ThresholdRuleFixedValueInput", "ThresholdRuleFixedValueInputValue", "阈值条件-值");
+//       录入，技术条件，当满足  1  次时激活，以后每  1  次时重复发送
+        co.modelInputBox(param, "CountConditionOneInput", "CountConditionOneInputValue", "计数条件，当满足 X 次时激活，");
+        co.modelInputBox(param, "CountConditionTwoInput", "CountConditionTwoInputValue", "计数条件，以后每 X 次时重复发送，");
+//      点击，保存
+        co.modelClickButton(param, "EditSave");
+//      保存，确认
+        co.alarmHintAndConfirm(param, "修改阈值策略成功");
+        LogFunction.logInfo("-----------------阈值策略，编辑完成---------------------");
+        LogFunction.logInfo("----------------推送告警，开始---------------------");
+        co.pushKPIInfo(param, "pushKPISelenium101");;
+        LogFunction.logInfo("----------------推送告警，结束---------------------");
+//        点击，告警展示
+        co.modelClickButton(param, param.get("alarmDisplay"));
+        co.sleep(1000);
+//        搜索框录入，Selenium
+        co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+//        点击，搜索按钮
+        co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+        co.sleep(2000);
+//        告警条数，为
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        LogFunction.logInfo("KPI条数为：" + r.size());
+        AssertFunction.verifyEquals(driver, r.size(), 1);
+        if (r.size() != 0) {
+//        将发送的告警，解决，清空内存
+            co.resolvedClearMemory(param);
+        }
+
+////        获取，10分钟之内的，动态基线最大值
+//        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+//        String s=null;
+//        try {
+//             s = cp.queryValue("select top_line_value from t_baseline_data where ci_id=378378585860000 and kpi_code=1101020305 and baseline_time> now()-interval '10 MINUTE' order by baseline_time limit 1");
+//            LogFunction.logInfo("动态基线最大值为:"+s);
+//        } catch (SQLException e1) {
+//            e1.printStackTrace();
+//        }
+//        if(Float.valueOf(s.trim())>90){
+////        点击，告警展示
+//            co.modelClickButton(param, param.get("alarmDisplay"));
+//            co.sleep(1000);
+////        搜索框录入，Selenium
+//            co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+////        点击，搜索按钮
+//            co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//            co.sleep(2000);
+////        告警条数，为
+//            List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+//            LogFunction.logInfo("KPI条数为：" + r.size());
+//            AssertFunction.verifyEquals(driver, r.size(), 1);
+//            if (r.size() != 0) {
+////        将发送的告警，解决，清空内存
+//                co.resolvedClearMemory(param);
+//            }
+//        }else {
+////        点击，告警展示
+//            co.modelClickButton(param, param.get("alarmDisplay"));
+//            co.sleep(1000);
+////        搜索框录入，Selenium
+//            co.modelInputBox(param, "alarmDisplaySearchBox", "Selenium", "搜索框");
+////        点击，搜索按钮
+//            co.modelClickButton(param, "alarmDisplaySearchButton", "搜索按钮", "");
+//            co.sleep(2000);
+////        告警条数，为
+//            List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+//            LogFunction.logInfo("KPI条数为：" + r.size());
+//            AssertFunction.verifyEquals(driver, r.size(), 0);
+//            if (r.size() != 0) {
+////        将发送的告警，解决，清空内存
+//                co.resolvedClearMemory(param);
+//            }
+//        }
+        LogFunction.logInfo("----------------阈值策略验证：动态基线，大于最大值，结束---------------------");
+    }
+
+    //    集中告警-告警配置-阈值策略-删除
+    @Test(dataProvider = "xmldata")
+    public void thresholdRulesDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+//        点击，告警配置
+        co.modelAreaDisplayAndClick(param, "alarmConfigArea", "alarmconfig");
+//        点击，阈值策略
+        co.modelClickButton(param, "thresholdStrategy");
+        LogFunction.logInfo("----------------阈值策略，删除，开始---------------------");
+//          勾选，阈值策略
+        co.chooseSelectResultOfCondition(param, "ThresholdStrategyCreateNameValue");
+//          点击，删除
+        co.deleteButton(param);
+//       校验，提示信息
+        WebElement Hint = l.getElement(param.get("informWayDeleteHintMessage"));
+        String text = Hint.getText();
+        LogFunction.logInfo("提示信息为：" + text);
+//        点击，确认
+        co.modelClickButton(param, "informWayDeleteAffirm");
+        LogFunction.logInfo("----------------阈值策略，删除成功---------------------");
+
+
+
+    }
+
+    //    数据分析-相关性分析-自相关-单次任务
+    @Test(dataProvider = "xmldata")
+    public void pertinenceAnalyzeOnceTask(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        LogFunction.logInfo("----------------相关性分析,验证新建、自相关-单次任务、历史详情、详细报告开始---------------------");
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+//        点击，新建
+        co.createButton(param);
+//        录入，任务名称-新建自相关任务
+        co.modelInputBox(param,"PATaskName","PATaskNameValue","任务名称");
+//         选择-计算方式-自相关
+        co.modelClickAndChooseValueTwo(param,"PACalculationMethod","PACalculationMethodValue","计算方式");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep1");
+//      打开，关键指标选取，区域（默认为开）
+        co.modelAreaDisplayAndClick(param,"PAKeyIndicatorsSelectionArea","PAKeyIndicatorsSelectionButton","关键指标选取");
+//      点击，ci类型，选择，Linux，PostgreSQL
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIType","KeyIndicatorsSelectionCITypeLinux","CI类型");
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIType","KeyIndicatorsSelectionCITypePostgreSQL","CI类型");
+        co.sleep(1000);
+//      点击，linux，选择CI实例，KPI指标
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypeLinux1");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIExample","KeyIndicatorsSelectionCIExample131","CI实例");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionKPIIndicator","KeyIndicatorsSelectionKPIIndicator1","KPI指标");
+        co.sleep(1000);
+//      点击，PostgreSQL，选择CI实例，KPI指标
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypePostgreSQL1");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIExample","KeyIndicatorsSelectionCIExample155","CI实例");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionKPIIndicator","KeyIndicatorsSelectionKPIIndicator2","KPI指标");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep2");
+//      勾选，任务类型-单次任务
+        co.modelClickButton(param,"PATaskTypeOnceTask","单次任务","");
+
+//        点击，数据开始时间
+        co.modelClickButton(param,"PATaskTypeDataStartTimeButton","数据开始时间","");
+//      执行js，将时间插件输入框设置为显示
+        co.executeJS(param,"PATaskTypeDataStartTimePlug","arguments[0].style.display='block';");
+        co.executeJS(param,"PATaskTypeDataEndTimePlug","arguments[0].style.display='block';");
+//        录入，数据开始时间
+        co.modelInputBox(param,"PATaskTypeDataStartTimeInput","PATaskTypeDataStartTimeValue","数据开始时间");
+        co.sleep(500);
+//        录入，数据结束时间
+        co.modelInputBox(param,"PATaskTypeDataEndTimeInput","PATaskTypeDataEndTimeValue","数据结束时间");
+        co.sleep(500);
+//        点击，确定
+        co.modelClickButton(param,"TimeControlsConfirm");
+        co.sleep(1000);
+        String time = co.getCurrentTimeAndOneMinute(param, 2);
+//         录入，任务触发时间
+        co.modelClickButton(param,"PATaskTypeTaskTriggerTimeButton","任务触发时间","");
+//      执行js，将时间插件输入框设置为显示
+        co.executeJS(param,"PATaskTypeTaskTriggerTimePlug","arguments[0].style.display='block';");
+//         录入，任务触发时间
+        co.modelInputBox(param,"PATaskTypeTaskTriggerTimeInput",time,"任务触发时间");
+//         点击，确定
+        co.modelClickButton(param,"TimeControlsConfirm");
+//      选择，启用
+//        co.modelRadioBox(param,"PAEnable","启用");
+//      点击，提交
+        co.modelClickButton(param,"PASubmit","提交","");
+        LogFunction.logInfo("等待3分钟，触发任务");
+        co.sleep(3*60*1000);
+        LogFunction.logInfo("3分钟，等待结束");
+
+//      点击，历史详情
+        co.relevanceAnalyzeClickOfCondition(param,"PATaskNameValue",",历史详情");
+        co.sleep(500);
+//      获取，历史详情页，条数
+        List<WebElement> r = l.getElements(param.get("relecanceAnalyzeList2"));
+        LogFunction.logInfo("历史详情页条数为：" + r.size()+"条");
+        if (r.size()<=0){
+            LogFunction.logInfo("历史详情页条数异常！！！");
+        }
+//        点击，查看报告
+        if (r.size()>0){
+            co.relevanceAnalyzeClickOfCondition(param,"PATaskNameValue",",查看报告");
+            co.sleep(1000);
+//      获取，查看报告页，条数
+            List<WebElement> r1 = l.getElements(param.get("relecanceAnalyzeList2"));
+            LogFunction.logInfo("查看报告条数为：" + r1.size()+"条");
+            if (r1.size()<=0){
+                LogFunction.logInfo("报告条数异常！！！");
+            }
+        }
+//        数据库查询结果为：
+        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+        Object[][] query = cp.query(" select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("查询结果Linux，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("------------------数据库查询结果Linux,为：------------------------------");
+
+        for (int i=0;i<query.length;i++){
+            for (int j=0;j<query[i].length;j++){
+                LogFunction.logInfo(query[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果Linux，共："+query.length+"条------------------------------");
+
+        LogFunction.logInfo("查询结果PostgreSQL，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+
+        Object[][] query1 = cp.query("select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL,为------------------------------");
+        for (int i=0;i<query1.length;i++){
+            for (int j=0;j<query1[i].length;j++){
+                LogFunction.logInfo(query1[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL，共："+query1.length+"条------------------------------");
+        LogFunction.logInfo("----------------相关性分析,验证新建、自相关-单次任务、历史详情、详细报告结束---------------------");
+    }
+
+    //    数据分析-相关性分析-自相关-周期任务
+    @Test(dataProvider = "xmldata")
+    public void pertinenceAnalyzeCycleTask(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        LogFunction.logInfo("----------------相关性分析,验证新建、自相关-周期任务、历史详情、详细报告开始---------------------");
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+//        点击，新建
+        co.createButton(param);
+//        录入，任务名称-新建自相关任务
+        co.modelInputBox(param,"PATaskName","PATaskNameValue","任务名称");
+//         选择-计算方式-自相关
+        co.modelClickAndChooseValueTwo(param,"PACalculationMethod","PACalculationMethodValue","计算方式");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep1");
+//      打开，关键指标选取，区域（默认为开）
+        co.modelAreaDisplayAndClick(param,"PAKeyIndicatorsSelectionArea","PAKeyIndicatorsSelectionButton","关键指标选取");
+//      点击，ci类型，选择，Linux，PostgreSQL
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIType","KeyIndicatorsSelectionCITypeLinux","CI类型");
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIType","KeyIndicatorsSelectionCITypePostgreSQL","CI类型");
+        co.sleep(1000);
+//      点击，linux，选择CI实例，KPI指标
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypeLinux1");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIExample","KeyIndicatorsSelectionCIExample131","CI实例");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionKPIIndicator","KeyIndicatorsSelectionKPIIndicator1","KPI指标");
+        co.sleep(1000);
+//      点击，PostgreSQL，选择CI实例，KPI指标
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypePostgreSQL1");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionCIExample","KeyIndicatorsSelectionCIExample155","CI实例");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"KeyIndicatorsSelectionKPIIndicator","KeyIndicatorsSelectionKPIIndicator2","KPI指标");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep2");
+//      勾选，任务类型-周期任务
+        co.modelClickButton(param,"PATaskTypeCycleTask","周期任务","");
+//      选择，周期类型-每天
+        co.modelClickAndChooseValueTwo(param,"CycleTaskCycleType","CycleTaskCycleTypeValue","数据周期选择");
+//      选择，数据周期选择-当天
+        co.modelClickAndChooseValueTwo(param,"CycleTaskDataCycleChoose","CycleTaskDataCycleChooseValue","周期类型");
+//      选择数据开始时间-时
+        co.modelClickAndChooseValueTwo(param,"CycleTaskStartTimeHour","CycleTaskStartTimeHourValue","数据开始时间-时");
+//      选择数据开始时间-分
+        co.modelClickAndChooseValueTwo(param,"CycleTaskStartTimeMinute","CycleTaskStartTimeMinuteValue","数据开始时间-分");
+//      选择数据结束时间-时
+        co.modelClickAndChooseValueTwo(param,"CycleTaskEndTimeHour","CycleTaskEndTimeHourValue","数据结束时间-时");
+//      选择数据结束时间-分
+        co.modelClickAndChooseValueTwo(param,"CycleTaskEndTimeMinute","CycleTaskEndTimeMinuteValue","数据结束时间-分");
+
+//      获取，当前时间2分钟后的，时，分
+        String a = co.getCurrentTimeAndOneMinute(param, 2);
+        String[] split = a.split(":");
+        String s = split[0];
+        String[] split1 = s.split(" ");
+        String yyMMdd = split1[0];
+        LogFunction.logInfo("当前时间，年月日是:"+yyMMdd);
+        String hour = co.getPrettyNumber(split1[1]);
+        String minute = co.getPrettyNumber(split[1]);
+        LogFunction.logInfo("当前时间，2分钟后的，时、分，是:"+hour+":"+minute);
+//        点击，触发时间，时
+        co.modelClickButton(param,"CycleTaskTriggerTimeHour","触发时间，时","");
+        co.sleep(1000);
+//      选择，触发时间，时
+        WebElement e = driver.findElement(By.xpath("//*/div[last()]/div/div/ul/li[normalize-space(text())='" + hour + "']"));
+        String t1 = e.getText();
+        co.click(param,e);
+//        点击，触发时间，分
+        co.modelClickButton(param,"CycleTaskTriggerTimeMinute","触发时间，分","");
+        co.sleep(1000);
+//      选择，触发时间，分
+        WebElement e1 = driver.findElement(By.xpath("//*/div[last()]/div/div/ul/li[normalize-space(text())='" + minute + "']"));
+        String t2 = e1.getText();
+        co.click(param,e1);
+        LogFunction.logInfo("选择，触发时间，为："+t1+":"+t2);
+
+//      选择，启用
+//        co.modelRadioBox(param,"PAEnable","启用");
+//      点击，提交
+        co.modelClickButton(param,"PASubmit","提交","");
+        LogFunction.logInfo("等待3分钟，触发任务");
+        co.sleep(3*60*1000);
+        LogFunction.logInfo("3分钟，等待结束");
+//      点击，历史详情
+        co.relevanceAnalyzeClickOfCondition(param,"PATaskNameValue",",历史详情");
+        co.sleep(500);
+//      获取，历史详情页，条数
+        List<WebElement> r = l.getElements(param.get("relecanceAnalyzeList2"));
+        LogFunction.logInfo("历史详情页条数为：" + r.size()+"条");
+        if (r.size()<=0){
+            LogFunction.logInfo("历史详情页条数异常！！！");
+        }
+//        点击，查看报告
+        if (r.size()>0){
+            co.relevanceAnalyzeClickOfCondition(param,"PATaskNameValue",",查看报告");
+            co.sleep(1000);
+//      获取，查看报告页，条数
+            List<WebElement> r1 = l.getElements(param.get("relecanceAnalyzeList2"));
+            LogFunction.logInfo("查看报告条数为：" + r1.size()+"条");
+            if (r1.size()<=0){
+                LogFunction.logInfo("报告条数异常！！！");
+            }
+        }
+
+//        数据库查询结果为：
+        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+        Object[][] query = cp.query(" select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("查询结果Linux，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+
+        LogFunction.logInfo("------------------数据库查询结果Linux,为：------------------------------");
+
+        for (int i=0;i<query.length;i++){
+            for (int j=0;j<query[i].length;j++){
+                LogFunction.logInfo(query[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果Linux，共："+query.length+"条------------------------------");
+
+        LogFunction.logInfo("查询结果PostgreSQL，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+
+        Object[][] query1 = cp.query("select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL,为------------------------------");
+        for (int i=0;i<query1.length;i++){
+            for (int j=0;j<query1[i].length;j++){
+                LogFunction.logInfo(query1[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL，共："+query1.length+"条------------------------------");
+        LogFunction.logInfo("----------------相关性分析,验证新建、自相关-周期任务、历史详情、详细报告结束---------------------");
+//        相关性分析-删除
+        pertinenceAnalyzeDelete(param);
+    }
+
+    //    数据分析-相关性分析-删除
+    @Test(dataProvider = "xmldata")
+    public void pertinenceAnalyzeDelete(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        driver.navigate().refresh();
+        co.sleep(3000);
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+        LogFunction.logInfo("----------------相关性分析，删除，开始---------------------");
+//          勾选，相关性分析
+        co.relevanceAnalyzeChooseSelectResultOfCondition(param, "PATaskNameValue");
+//          点击，删除
+        co.deleteButton(param);
+        co.sleep(1000);
+//       校验，提示信息
+        WebElement Hint = l.getElement(param.get("PADeleteHintMessage"));
+        String text = Hint.getText();
+        LogFunction.logInfo("提示信息为：" + text);
+//        点击，确认
+        co.modelClickButton(param, "PADeleteHintConfirm");
+        LogFunction.logInfo("----------------相关性分析，删除成功---------------------");
+
+    }
+
+    //    数据分析-相关性分析-协相关-单次任务
+    @Test(dataProvider = "xmldata")
+    public void pertinenceAnalyzeAssistRelatedOnceTask(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        LogFunction.logInfo("----------------相关性分析,验证新建、协相关-单次任务、历史详情、详细报告开始---------------------");
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+//        点击，新建
+        co.createButton(param);
+//        录入，任务名称-新建协相关任务
+        co.modelInputBox(param,"PATaskName","PATaskNameAssistRelated","任务名称");
+//         选择-计算方式-协相关
+        co.modelClickAndChooseValueTwo(param,"PACalculationMethod","PACalculationMethodAssistRelated","计算方式");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep1");
+        co.sleep(1000);
+//      点击，ci类型，选择，Linux
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIType","ARKeyIndicatorsSelectionCITypeLinux","CI类型");
+        co.sleep(1000);
+//      点击，linux，选择CI实例，KPI指标
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypeLinux1");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIExample","ARKeyIndicatorsSelectionCIExample131","CI实例");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionKPIIndicator","KeyIndicatorsSelectionKPIIndicator1","KPI指标");
+        co.sleep(1000);
+//       选择,CI分类，全量CI
+        co.modelClickButton(param,"ARKeyIndicatorsSelectionCIClassify");
+//      点击，ci类型，选择，PostgreSQL
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIType2","ARKeyIndicatorsSelectionCITypePostgreSQL","CI类型");
+//      点击，PostgreSQL
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypePostgreSQL1");
+        co.sleep(1000);
+//        选择，CI实例
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIExample2","KeyIndicatorsSelectionCIExample155","CI实例");
+        co.sleep(1000);
+//         选择，KPI指标
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionKPIIndicator2","KeyIndicatorsSelectionKPIIndicator2","KPI指标");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep2");
+        co.sleep(1000);
+//      勾选，任务类型-单次任务
+        co.modelClickButton(param,"PATaskTypeOnceTask","单次任务","");
+//        点击，数据开始时间
+        co.modelClickButton(param,"PATaskTypeDataStartTimeButton","数据开始时间","");
+//      执行js，将时间插件输入框设置为显示
+        co.executeJS(param,"PATaskTypeDataStartTimePlug","arguments[0].style.display='block';");
+        co.executeJS(param,"PATaskTypeDataEndTimePlug","arguments[0].style.display='block';");
+
+//        录入，数据开始时间
+        co.modelInputBox(param,"PATaskTypeDataStartTimeInput","PATaskTypeDataStartTimeValue","数据开始时间");
+        co.sleep(500);
+//        录入，数据结束时间
+        co.modelInputBox(param,"PATaskTypeDataEndTimeInput","PATaskTypeDataEndTimeValue","数据结束时间");
+        co.sleep(500);
+//        点击，确定
+        co.modelClickButton(param,"TimeControlsConfirm");
+        co.sleep(1000);
+        String time = co.getCurrentTimeAndOneMinute(param, 2);
+//         点击，任务触发时间
+        co.modelClickButton(param,"PATaskTypeTaskTriggerTimeButton","任务触发时间","");
+//      执行js，将时间插件输入框设置为显示
+        co.executeJS(param,"PATaskTypeTaskTriggerTimePlug","arguments[0].style.display='block';");
+//         录入，任务触发时间
+        co.modelInputBox(param,"PATaskTypeTaskTriggerTimeInput",time,"任务触发时间");
+//        点击，任务触发时间，确认
+        co.modelClickButton(param,"TimeControlsConfirm");
+//      选择，启用
+//        co.modelRadioBox(param,"PAEnable","启用");
+//      点击，提交
+        co.modelClickButton(param,"PASubmit","提交","");
+        LogFunction.logInfo("等待3分钟，触发任务");
+        co.sleep(3*60*1000);
+        LogFunction.logInfo("3分钟，等待结束");
+
+//      点击，历史详情
+        co.relevanceAnalyzeClickOfCondition(param,"PATaskNameAssistRelated",",历史详情");
+        co.sleep(500);
+//      获取，历史详情页，条数
+        List<WebElement> r = l.getElements(param.get("relecanceAnalyzeList2"));
+        LogFunction.logInfo("历史详情页条数为：" + r.size()+"条");
+        if (r.size()<=0){
+            LogFunction.logInfo("历史详情页条数异常！！！");
+        }
+//        点击，查看报告
+        if (r.size()>0){
+            co.relevanceAnalyzeClickOfCondition(param,"PATaskNameAssistRelated",",查看报告");
+            co.sleep(1000);
+//      获取，查看报告页，条数
+            List<WebElement> r1 = l.getElements(param.get("relecanceAnalyzeList2"));
+            LogFunction.logInfo("查看报告条数为：" + r1.size()+"条");
+            if (r1.size()<=0){
+                LogFunction.logInfo("报告条数异常！！！");
+            }
+        }
+//        数据库查询结果为：
+        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+        Object[][] query = cp.query(" select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("查询结果Linux，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("------------------数据库查询结果Linux,为：------------------------------");
+
+        for (int i=0;i<query.length;i++){
+            for (int j=0;j<query[i].length;j++){
+                LogFunction.logInfo(query[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果Linux，共："+query.length+"条------------------------------");
+
+        LogFunction.logInfo("查询结果PostgreSQL，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+
+        Object[][] query1 = cp.query("select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL,为------------------------------");
+        for (int i=0;i<query1.length;i++){
+            for (int j=0;j<query1[i].length;j++){
+                LogFunction.logInfo(query1[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL，共："+query1.length+"条------------------------------");
+        LogFunction.logInfo("----------------相关性分析,验证新建、自相关-单次任务、历史详情、详细报告结束---------------------");
+
+        driver.navigate().refresh();
+        co.sleep(3000);
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+        LogFunction.logInfo("----------------相关性分析，删除，开始---------------------");
+//          勾选，相关性分析
+        co.relevanceAnalyzeChooseSelectResultOfCondition(param, "PATaskNameAssistRelated");
+//          点击，删除
+        co.deleteButton(param);
+//       校验，提示信息
+        WebElement Hint = l.getElement(param.get("PADeleteHintMessage"));
+        String text = Hint.getText();
+        LogFunction.logInfo("提示信息为：" + text);
+//        点击，确认
+        co.modelClickButton(param, "PADeleteHintConfirm");
+        LogFunction.logInfo("----------------相关性分析，删除成功---------------------");
+    }
+
+
+    //    数据分析-相关性分析-协相关-周期任务
+    @Test(dataProvider = "xmldata")
+    public void pertinenceAnalyzeAssistRelatedCycleTask(Map<String, String> param) {
+        LogFunction.logInfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+        LogFunction.logInfo("----------------相关性分析,验证新建、协相关-周期任务、历史详情、详细报告开始---------------------");
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+//        点击，新建
+        co.createButton(param);
+//        录入，任务名称-新建协相关任务
+        co.modelInputBox(param,"PATaskName","PATaskNameAssistRelated","任务名称");
+//         选择-计算方式-协相关
+        co.modelClickAndChooseValueTwo(param,"PACalculationMethod","PACalculationMethodAssistRelated","计算方式");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep1");
+        co.sleep(1000);
+//      点击，ci类型，选择，Linux
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIType","ARKeyIndicatorsSelectionCITypeLinux","CI类型");
+        co.sleep(1000);
+//      点击，linux，选择CI实例，KPI指标
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypeLinux1");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIExample","ARKeyIndicatorsSelectionCIExample131","CI实例");
+        co.sleep(1000);
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionKPIIndicator","KeyIndicatorsSelectionKPIIndicator1","KPI指标");
+        co.sleep(1000);
+//       选择,CI分类，全量CI
+        co.modelClickButton(param,"ARKeyIndicatorsSelectionCIClassify");
+//      点击，ci类型，选择，PostgreSQL
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIType2","ARKeyIndicatorsSelectionCITypePostgreSQL","CI类型");
+//      点击，PostgreSQL
+        co.modelClickButton(param,"KeyIndicatorsSelectionCITypePostgreSQL1");
+        co.sleep(1000);
+//        选择，CI实例
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionCIExample2","KeyIndicatorsSelectionCIExample155","CI实例");
+        co.sleep(1000);
+//         选择，KPI指标
+        co.modelClickAndChooseValue(param,"ARKeyIndicatorsSelectionKPIIndicator2","KeyIndicatorsSelectionKPIIndicator2","KPI指标");
+//         点击，下一步
+        co.modelClickButton(param,"PANextStep2");
+        co.sleep(1000);
+//      勾选，任务类型-周期任务
+        co.modelClickButton(param,"PATaskTypeCycleTask","周期任务","");
+//      选择，周期类型-每天
+        co.modelClickAndChooseValueTwo(param,"CycleTaskCycleType","CycleTaskCycleTypeValue","数据周期选择");
+//      选择，数据周期选择-当天
+        co.modelClickAndChooseValueTwo(param,"CycleTaskDataCycleChoose","CycleTaskDataCycleChooseValue","周期类型");
+//      选择数据开始时间-时
+        co.modelClickAndChooseValueTwo(param,"CycleTaskStartTimeHour","CycleTaskStartTimeHourValue","数据开始时间-时");
+//      选择数据开始时间-分
+        co.modelClickAndChooseValueTwo(param,"CycleTaskStartTimeMinute","CycleTaskStartTimeMinuteValue","数据开始时间-分");
+//      选择数据结束时间-时
+        co.modelClickAndChooseValueTwo(param,"CycleTaskEndTimeHour","CycleTaskEndTimeHourValue","数据结束时间-时");
+//      选择数据结束时间-分
+        co.modelClickAndChooseValueTwo(param,"CycleTaskEndTimeMinute","CycleTaskEndTimeMinuteValue","数据结束时间-分");
+
+//      获取，当前时间2分钟后的，时，分
+        String a = co.getCurrentTimeAndOneMinute(param, 2);
+        String[] split = a.split(":");
+        String s = split[0];
+        String[] split1 = s.split(" ");
+        String yyMMdd = split1[0];
+        LogFunction.logInfo("当前时间，年月日是:"+yyMMdd);
+        String hour = co.getPrettyNumber(split1[1]);
+        String minute = co.getPrettyNumber(split[1]);
+        LogFunction.logInfo("当前时间，2分钟后的，时、分，是:"+hour+":"+minute);
+//        点击，触发时间，时
+        co.modelClickButton(param,"CycleTaskTriggerTimeHour","触发时间，时","");
+        co.sleep(1000);
+//      选择，触发时间，时
+        WebElement e = driver.findElement(By.xpath("//*/div[last()]/div/div/ul/li[normalize-space(text())='" + hour + "']"));
+        String t1 = e.getText();
+        co.click(param,e);
+//        点击，触发时间，分
+        co.modelClickButton(param,"CycleTaskTriggerTimeMinute","触发时间，分","");
+        co.sleep(1000);
+//      选择，触发时间，分
+        WebElement e1 = driver.findElement(By.xpath("//*/div[last()]/div/div/ul/li[normalize-space(text())='" + minute + "']"));
+        String t2 = e1.getText();
+        co.click(param,e1);
+        LogFunction.logInfo("选择，触发时间，为："+t1+":"+t2);
+//      选择，启用
+//        co.modelRadioBox(param,"PAEnable","启用");
+//      点击，提交
+        co.modelClickButton(param,"PASubmit","提交","");
+        LogFunction.logInfo("等待3分钟，触发任务");
+        co.sleep(3*60*1000);
+        LogFunction.logInfo("3分钟，等待结束");
+//      点击，历史详情
+        co.relevanceAnalyzeClickOfCondition(param,"PATaskNameAssistRelated",",历史详情");
+        co.sleep(500);
+//      获取，历史详情页，条数
+        List<WebElement> r = l.getElements(param.get("relecanceAnalyzeList2"));
+        LogFunction.logInfo("历史详情页条数为：" + r.size()+"条");
+        if (r.size()<=0){
+            LogFunction.logInfo("历史详情页条数异常！！！");
+        }
+//        点击，查看报告
+        if (r.size()>0){
+            co.relevanceAnalyzeClickOfCondition(param,"PATaskNameAssistRelated",",查看报告");
+            co.sleep(1000);
+//      获取，查看报告页，条数
+            List<WebElement> r1 = l.getElements(param.get("relecanceAnalyzeList2"));
+            LogFunction.logInfo("查看报告条数为：" + r1.size()+"条");
+            if (r1.size()<=0){
+                LogFunction.logInfo("报告条数异常！！！");
+            }
+        }
+
+//        数据库查询结果为：
+        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+        Object[][] query = cp.query(" select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("查询结果Linux，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+
+        LogFunction.logInfo("------------------数据库查询结果Linux,为：------------------------------");
+
+        for (int i=0;i<query.length;i++){
+            for (int j=0;j<query[i].length;j++){
+                LogFunction.logInfo(query[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果Linux，共："+query.length+"条------------------------------");
+
+        LogFunction.logInfo("查询结果PostgreSQL，的SQL为：select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+
+        Object[][] query1 = cp.query("select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+yyMMdd+" 01:00:00"+"' and '"+yyMMdd+" 01:10:00"+ "' ORDER BY arising_time desc ");
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL,为------------------------------");
+        for (int i=0;i<query1.length;i++){
+            for (int j=0;j<query1[i].length;j++){
+                LogFunction.logInfo(query1[i][j]);
+            }
+        }
+        LogFunction.logInfo("------------------数据库查询结果PostgreSQL，共："+query1.length+"条------------------------------");
+        LogFunction.logInfo("----------------相关性分析,验证新建、协相关-周期任务、历史详情、详细报告结束---------------------");
+
+
+        driver.navigate().refresh();
+        co.sleep(3000);
+//        点击，相关性分析
+        co.modelClickButton(param, "pertinenceAnalyze", "相关性分析","");
+        LogFunction.logInfo("----------------相关性分析，删除，开始---------------------");
+//          勾选，相关性分析
+        co.relevanceAnalyzeChooseSelectResultOfCondition(param, "PATaskNameAssistRelated");
+//          点击，删除
+        co.deleteButton(param);
+//       校验，提示信息
+        WebElement Hint = l.getElement(param.get("PADeleteHintMessage"));
+        String text = Hint.getText();
+        LogFunction.logInfo("提示信息为：" + text);
+//        点击，确认
+        co.modelClickButton(param, "PADeleteHintConfirm");
+        LogFunction.logInfo("----------------相关性分析，删除成功---------------------");
+    }
+
+
+
     @Test(dataProvider = "xmldata")
     public void test0001(Map<String, String> param) throws InterruptedException {
 
 
-//        driver.get("https://www.hao123.com/");
-//        co.sleep(2000);
-//        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
-//        LogFunction.logInfo("1213");
-//        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 700)");
-//        Thread.sleep(3000);
-////结合上面的scrollBy语句，相当于移动到700+800=1600像素位置
-//        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 800)");
-////移动到窗口绝对位置坐标，如下移动到纵坐标1600像素位置
-//        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 1600)");
-//        Thread.sleep(3000);
-////结合上面的scrollTo语句，仍然移动到纵坐标1200像素位置
-//        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 1200)");
+
+
+//        System.out.println(param.get("PATaskTypeDataStartTimeValue"));
+//
+//        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+//        Object[][] query = cp.query(" select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+//        LogFunction.logInfo(" select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1101020708 and t.ci_id = 381700460870000 and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+//        LogFunction.logInfo(query.length);
+//        Object[][] query1 = cp.query("select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+//        LogFunction.logInfo("select t.arising_time,t.instance_id,t.kpi_code,t.ci_id,t.agent_id from t_kpi_current t where t.kpi_code=1102080203 and t.ci_id = 378770219510000  and arising_time BETWEEN '"+param.get("PATaskTypeDataStartTimeValue")+"' and '"+param.get("PATaskTypeDataEndTimeValue") + "' ORDER BY arising_time desc ");
+//        LogFunction.logInfo(query1.length);
+
+////      设置日期格式
+//        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        Date now = new Date();
+//        String currentDate = df.format(new Date());
+//        LogFunction.logInfo("当前的系统时间为："+currentDate);
+////      10分钟
+//        long t=10*60*1000;
+////      new Date()为获取当前10分钟前的系统时间
+//        Date f = new Date((now.getTime()-t));
+//        String tenBeforeDate = df.format(f);
+//        LogFunction.logInfo("10分钟前的系统时间为："+tenBeforeDate);
+////        通过,当前10分钟前的系统时间，查询
+//        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+//        String time = null;
+//        System.out.println("select top_line_value from t_baseline_data where  baseline_time between '"+currentDate+"' and '"+tenBeforeDate+"'");
+//        try {
+//            String s = cp.queryValue("select top_line_value from t_baseline_data where  baseline_time between '"+currentDate+"' and '"+tenBeforeDate+"'");
+//            System.out.println(s);
+//        } catch (SQLException e1) {
+//            e1.printStackTrace();
+//        }
+//
+//        ConnectPostgreSQL cp = new ConnectPostgreSQL();
+//        try {
+//            String s = cp.queryValue("select top_line_value from t_baseline_data where ci_id=378378585860000 and kpi_code=1101020305 and baseline_time> now()-interval '10 MINUTE' limit 1");
+//            System.out.println(s +"---"+Float.valueOf(s.trim()));
+//        } catch (SQLException e1) {
+//            e1.printStackTrace();
+//        }
+
+//        driver.get("https://www.baidu.com");
+//        String pageSource = driver.getPageSource();
+//        System.out.println(pageSource);
+//        List<String> list = new ArrayList<String>();
+//        Pattern p = Pattern.compile("<img.*?>");
+//        Matcher m = p.matcher(pageSource);
+//        while (m.find()) {
+//            list.add(m.group().substring(0, m.group().length() - 0));
+//        }
+//        System.out.println("数量为" + list.size());
+//        for (int i = 0; i < list.size(); i++) {
+//            String s = list.get(i);
+//            System.out.println(s);
+//
+//        }
+//    }
     }
+
 }

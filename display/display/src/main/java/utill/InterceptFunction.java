@@ -1,5 +1,6 @@
 package utill;
 
+import javafx.beans.binding.NumberBinding;
 import org.apache.log4j.DailyRollingFileAppender;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

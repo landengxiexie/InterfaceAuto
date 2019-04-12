@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <suite name="全部规则" verbose="1" parallel="false">
-    <test name="恢复规则" preserve-order="true">
+    <test name="关联规则" preserve-order="true">
         <classes>
             <class name="com.testcases.VicubeSystem">
                 <methods>
                     <include name="vicubeLogin"/>
                     <include name="promptMessage"/>
                     <include name="concentratedAlarm"/>
-                    <include name="recoveryRulesVerifyRecoveryAndClearMemoryRE"/>
-                    <include name="recoveryRulesVerifyRecoveryAndIgnoreStrategyException"/>
-                    <include name="recoveryRulesVerifyRecoveryAndMerge"/>
-                    <!--<include name="recoveryRulesVerifyDelete"/>-->
+                    <include name="relevanceRulesVerifyRelevance"/>
+                    <include name="relevanceRulesVerifyDelete"/>
                 </methods>
             </class>
         </classes>

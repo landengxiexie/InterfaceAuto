@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.HashMap;
 
 
+@SuppressWarnings("ALL")
 public class SeleniumDriver {
     private WebDriver driver;
     public static String value;
@@ -96,6 +97,7 @@ public class SeleniumDriver {
         caps.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(caps);
         return "l";
+
     }
 
 

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <common>
+        <!--数据分析：开始  结束  时间-->
+        <PATaskTypeDataStartTimeValue>2019-03-15 01:00:00</PATaskTypeDataStartTimeValue>
+        <PATaskTypeDataEndTimeValue>2019-03-15 01:10:00</PATaskTypeDataEndTimeValue>
+        <!--告警显示列设置-->
+        <alarmDisplayColumnSetting>alarmDisplayColumnSetting</alarmDisplayColumnSetting>
+        <alarmDisplayColumnSettingisDisplay>alarmDisplayColumnSettingisDisplay</alarmDisplayColumnSettingisDisplay>
+        <alarmDisplayColumnSettingisDisplayChoose>alarmDisplayColumnSettingisDisplayChoose</alarmDisplayColumnSettingisDisplayChoose>
+        <alarmDisplayColumnSettingConfirm>alarmDisplayColumnSettingConfirm</alarmDisplayColumnSettingConfirm>
+        <alarmDisplayColumnDisplay>alarmDisplayColumnDisplay</alarmDisplayColumnDisplay>
         <!--筛选结果-->
         <commonSelectResultOne>SelectResultOne</commonSelectResultOne>
         <commonSelectResultTwo>SelectResultTwo</commonSelectResultTwo>
@@ -16,6 +25,7 @@
         <menuButton>systemLeftMenuButton</menuButton>
         <menuButtonArea>systemLeftMenuArea</menuButtonArea>
         <commonCreate>create</commonCreate>
+        <commonCreateButton>createButton</commonCreateButton>
         <commonCraeteFlag>flag</commonCraeteFlag>
         <commonValid>valid</commonValid>
         <commonInvalid>invalid</commonInvalid>
@@ -33,14 +43,17 @@
         <commonSelectClear>selectClear</commonSelectClear>
 
         <commonSystemSetupSelectChoose>selectchooseuser</commonSystemSetupSelectChoose>
+        <commonSelectChooseResult>selectchooseresult</commonSelectChooseResult>
         <commonAllocationPrivilege>allocationprivilege</commonAllocationPrivilege>
         <commonHint>commonhint</commonHint>
         <commonAffirm>commonaffirm</commonAffirm>
         <commonSystemManagement>systemManagement</commonSystemManagement>
         <commonEdit>edit</commonEdit>
+        <commonEditButton>editButton</commonEditButton>
         <commonStartUsing>startUsing</commonStartUsing>
         <commonBlockUp>blockUp</commonBlockUp>
         <commonDelete>delete</commonDelete>
+        <commonDeleteButton>deleteButton</commonDeleteButton>
         <commonDesign>design</commonDesign>
         <commonDeleteHint>deletehint</commonDeleteHint>
         <commonDeleteConfirm>deleteaffirm</commonDeleteConfirm>
@@ -74,8 +87,12 @@
         <commonSelectResultChooseAllData>selectResultChooseAllData</commonSelectResultChooseAllData>
         <commonSelectResultAll>selectResultChooseAll</commonSelectResultAll>
         <commonSelectResultAll2>selectResultChooseAll2</commonSelectResultAll2>
+        <commonSelectResultAll3>selectResultChooseAll3</commonSelectResultAll3>
+        <commonselectResultChooseAll2_img>selectResultChooseAll2_img</commonselectResultChooseAll2_img>
         <commonselectResultAll9>selectResultChooseAll9</commonselectResultAll9>
         <commonselectResultAll12>selectResultChooseAll12</commonselectResultAll12>
+        <commonselectResultAll7>selectResultChooseAll7</commonselectResultAll7>
+        <commonselectResultAll21>selectResultChooseAll21</commonselectResultAll21>
 
         <!--菜单-系统设置-数据-->
         <createSave>save</createSave>
@@ -117,9 +134,12 @@
         <NewGroupingDescriptionValue>我是接收分组描述</NewGroupingDescriptionValue>
         <NewGroupingDescriptionEditValue>编辑接收分组描述</NewGroupingDescriptionEditValue>
         <AlarmInformInformWayCreateNameValue>我是新建通知方式</AlarmInformInformWayCreateNameValue>
+        <AlarmInformInformWayCreateNameValue1>我是新建通知方式-邮件</AlarmInformInformWayCreateNameValue1>
+        <AlarmInformInformWayCreateNameValue2>我是新建通知方式-短信</AlarmInformInformWayCreateNameValue2>
+        <AlarmInformInformWayCreateNameValue3>我是新建通知方式-微信</AlarmInformInformWayCreateNameValue3>
+        <informWayCreateUserValueSelenium>informWayCreateUserValueSelenium</informWayCreateUserValueSelenium>
         <AlarmInformInformWayEditNameValue>我是编辑通知方式</AlarmInformInformWayEditNameValue>
-        <concentrateAlarmAlarmInformInformWayQueryTargetUserValue>超级管理员
-        </concentrateAlarmAlarmInformInformWayQueryTargetUserValue>
+        <concentrateAlarmAlarmInformInformWayQueryTargetUserValue>超级管理员</concentrateAlarmAlarmInformInformWayQueryTargetUserValue>
         <ThresholdStrategyCreateNameValue>我是阈值新建名称</ThresholdStrategyCreateNameValue>
         <CreateThresholdRuleFixedValueInputValue>2</CreateThresholdRuleFixedValueInputValue>
         <ThresholdStrategyEditNameValue>我是阈值编辑名称</ThresholdStrategyEditNameValue>
@@ -187,8 +207,13 @@
         <SQLDataSetCreateNameValue>新增SQL数据集名称</SQLDataSetCreateNameValue>
         <SQLDataSetEditNameValue>编辑SQL数据集名称</SQLDataSetEditNameValue>
         <SQLDataSetCreateSQLValue>select encrypted_pwd from t_user  where user_id='administrator'</SQLDataSetCreateSQLValue>
-
-
+        <PATaskNameValue>新建自相关任务</PATaskNameValue>
+        <PATaskNameAssistRelated>新建协相关任务</PATaskNameAssistRelated>
+        <relecanceAnalyzeList1>relecanceAnalyzeList1</relecanceAnalyzeList1>
+        <relecanceAnalyzeList2>relecanceAnalyzeList2</relecanceAnalyzeList2>
+        <relecanceAnalyzeList3>relecanceAnalyzeList3</relecanceAnalyzeList3>
+        <DataAnalyze>DataAnalyze</DataAnalyze>
+        <pertinenceAnalyze>pertinenceAnalyze</pertinenceAnalyze>
     </common>
     <!--菜单-系统设置-->
     <vicubeLogin>
@@ -1272,7 +1297,7 @@
 
 
     <concentrateAlarmAlarmInform>
-        <AlarmInform>alarmInformArea</AlarmInform>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
         <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
     </concentrateAlarmAlarmInform>
 
@@ -1294,6 +1319,7 @@
         <receiveGroupingQueryConfirm>receiveGroupingQueryConfirm</receiveGroupingQueryConfirm>
         <QueryResultGroupingName>receiveGroupingQueryResultGroupingName</QueryResultGroupingName>
         <QueryResultGroupingDescription>receiveGroupingQueryResultGroupingDescription</QueryResultGroupingDescription>
+        <receiveGroupScreen>receiveGroupScreen</receiveGroupScreen>
     </receiveGroupingQuery>
 
     <receiveGroupingEdit>
@@ -1454,7 +1480,6 @@
 
     <alarmConfigThresholdStrategy>
         <thresholdStrategy>thresholdStrategy</thresholdStrategy>
-
     </alarmConfigThresholdStrategy>
 
     <thresholdStrategyCreate>
@@ -2331,11 +2356,34 @@
         <automaticDiscovery>automaticDiscovery</automaticDiscovery>
         <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
         <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <DiscoveryListScreen>DiscoveryListScreen</DiscoveryListScreen>
         <SelectArea>DiscoveryListScreenArea</SelectArea>
         <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
         <Confirm>DiscoveryListScreenConfirm</Confirm>
         <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
     </discoveryListClassifyScreen>
+
+    <discoveryListDiscardRepush>
+        <automaticDiscovery>automaticDiscovery</automaticDiscovery>
+        <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
+        <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
+        <DiscoveryListScreen>DiscoveryListScreen</DiscoveryListScreen>
+        <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
+        <Confirm>DiscoveryListScreenConfirm</Confirm>
+        <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
+
+        <ResultChoose>SelectResultOne</ResultChoose>
+        <Discard>DiscoveryListDiscard</Discard>
+
+        <concentratedAlarm>concentratedalarm</concentratedAlarm>
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </discoveryListDiscardRepush>
 
     <discoveryListClassify>
         <ResultChoose>SelectResultOne</ResultChoose>
@@ -2364,12 +2412,12 @@
         <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
         <Confirm>ResourceExampleScreenConfirm</Confirm>
         <screenResult>ResourceExampleScreenResultDisplayName</screenResult>
-
+        <ResultIsEmpty>resourceExampleSelectResultIsEmpty</ResultIsEmpty>
         <ResultChoose>ResourceExampleScreenResultChoose</ResultChoose>
+        <ResourceExampleScreen>ResourceExampleScreen</ResourceExampleScreen>
 
-        <ScreenArea>ResourceExampleScreenArea</ScreenArea>
-        <DisplayName>ResourceExampleScreenDisplayName</DisplayName>
-
+        <SelectArea1>DiscoveryListScreenArea</SelectArea1>
+        <DiscoveryListScreen>DiscoveryListScreen2</DiscoveryListScreen>
         <automaticDiscoveryArea>automaticDiscoveryArea</automaticDiscoveryArea>
         <automaticDiscovery>automaticDiscovery</automaticDiscovery>
         <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
@@ -2379,15 +2427,14 @@
         <Confirm1>DiscoveryListScreenConfirm</Confirm1>
         <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
         <ConfirmClassify>DiscoveryListConfirmClassify</ConfirmClassify>
-        <SelectArea>DiscoveryListScreenArea</SelectArea>
-
     </discoveryListClassifyVerifyOfResourceExample>
 
     <discoveryListDiscardScreen>
         <automaticDiscovery>automaticDiscovery</automaticDiscovery>
         <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
         <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
-        <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <SelectArea1>DiscoveryListScreenArea</SelectArea1>
+        <DiscoveryListScreen>DiscoveryListScreen</DiscoveryListScreen>
         <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
         <Confirm>DiscoveryListScreenConfirm</Confirm>
         <ResultUniqueLogo>SelectResultTwo</ResultUniqueLogo>
@@ -2404,6 +2451,7 @@
         <DiscoveryList>automaticDiscoveryDiscoveryList</DiscoveryList>
         <ToBeConfirmClassify>DiscoveryListToBeConfirmClassify</ToBeConfirmClassify>
         <SelectArea>DiscoveryListScreenArea</SelectArea>
+        <DiscoveryListScreen>DiscoveryListScreen</DiscoveryListScreen>
         <UniqueLogo>DiscoveryListScreenUniqueLogo</UniqueLogo>
         <Confirm>DiscoveryListScreenConfirm</Confirm>
         <ConfirmClassify>DiscoveryListConfirmClassify</ConfirmClassify>
@@ -2420,6 +2468,7 @@
     </discoveryRuleCreate>
 
     <discoveryRuleCreateVerify>
+        <DiscoveryRuleScreen>DiscoveryRuleScreen</DiscoveryRuleScreen>
         <area>DiscoveryRuleScreenArea</area>
         <ruleName>DiscoveryRuleScreenRuleName</ruleName>
         <confirm>DiscoveryRuleScreenConfirm</confirm>
@@ -3113,7 +3162,7 @@
         <newAlarmRank>newalarmrank</newAlarmRank>
         <deselectAll>deselectall</deselectAll>
         <chooseNewAlarmRank>choosenewalarmrank</chooseNewAlarmRank>
-        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+        <alarmClassifyConfigSave>alarmClassifyConfigSave</alarmClassifyConfigSave>
 
 
         <alarmDisplay>alarmDisplay</alarmDisplay>
@@ -3138,7 +3187,7 @@
         <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
         <contentKeyword>contentkeyword</contentKeyword>
         <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
-        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+        <alarmClassifyConfigSave>alarmClassifyConfigSave</alarmClassifyConfigSave>
         <alarmDisplay>alarmDisplay</alarmDisplay>
         <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
         <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
@@ -3205,45 +3254,45 @@
     <classifyRulesVerifyDelete></classifyRulesVerifyDelete>
 
     <recoveryRulesVerifyRecoveryAndClearMemoryRE>
-        <allRules>allrules</allRules>
-        <alarmRecoveryRules>alarmRecoveryRules</alarmRecoveryRules>
+    <allRules>allrules</allRules>
+    <alarmRecoveryRules>alarmRecoveryRules</alarmRecoveryRules>
 
-        <rulesName>rulesname</rulesName>
-        <basicsNextStep>basicsnextstep</basicsNextStep>
+    <rulesName>rulesname</rulesName>
+    <basicsNextStep>basicsnextstep</basicsNextStep>
 
-        <domainDefault>domainDefault</domainDefault>
-        <type>type</type>
-        <chooseType>choosetypeOracle</chooseType>
-        <alarmType>alarmtype</alarmType>
-        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
-        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+    <domainDefault>domainDefault</domainDefault>
+    <type>type</type>
+    <chooseType>choosetypeOracle</chooseType>
+    <alarmType>alarmtype</alarmType>
+    <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+    <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
 
-        <nodeFilter>nodefilter</nodeFilter>
-        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+    <nodeFilter>nodefilter</nodeFilter>
+    <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
 
-        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
-        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
-        <contentKeyword>contentkeyword</contentKeyword>
-        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
-
-
-        <recoveryTimeThreshold>recoveryRulesRecoveryTimeThreshold</recoveryTimeThreshold>
-        <recoveryTimeThresholdValue>1</recoveryTimeThresholdValue>
-
-        <recoveryOption>recoveryOption</recoveryOption>
-        <recoveryOptionSetIgnore>recoveryOptionSetIgnore</recoveryOptionSetIgnore>
-        <recoveryOptionClearMemory>recoveryOptionClearMemory</recoveryOptionClearMemory>
-        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+    <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+    <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+    <contentKeyword>contentkeyword</contentKeyword>
+    <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
 
 
-        <alarmDisplay>alarmDisplay</alarmDisplay>
-        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
-        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+    <recoveryTimeThreshold>recoveryRulesRecoveryTimeThreshold</recoveryTimeThreshold>
+    <recoveryTimeThresholdValue>1</recoveryTimeThresholdValue>
 
-        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
-        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
-        <affirm>alarmDisplayOpinionConfirm1</affirm>
-    </recoveryRulesVerifyRecoveryAndClearMemoryRE>
+    <recoveryOption>recoveryOption</recoveryOption>
+    <recoveryOptionSetIgnore>recoveryOptionSetIgnore</recoveryOptionSetIgnore>
+    <recoveryOptionClearMemory>recoveryOptionClearMemory</recoveryOptionClearMemory>
+    <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+
+    <alarmDisplay>alarmDisplay</alarmDisplay>
+    <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+    <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+    <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+    <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+    <affirm>alarmDisplayOpinionConfirm1</affirm>
+</recoveryRulesVerifyRecoveryAndClearMemoryRE>
 
     <recoveryRulesVerifyRecoveryAndIgnoreStrategyException>
         <allRules>allrules</allRules>
@@ -3326,7 +3375,624 @@
 
     <recoveryRulesVerifyDelete></recoveryRulesVerifyDelete>
 
-    <test0001></test0001>
+    <upgradeRulesVerifyUpgradeAndRE>
+        <allRules>allrules</allRules>
+        <alarmUpgradeRules>alarmUpgradeRules</alarmUpgradeRules>
 
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <upgradeCycle>upgradeCycle</upgradeCycle>
+        <upgradeCycleValue>1</upgradeCycleValue>
+        <alarmNumberThreshold>alarmNumberThreshold</alarmNumberThreshold>
+        <alarmNumberThresholdValue>1</alarmNumberThresholdValue>
+        <upgradeLimit>upgradeLimit</upgradeLimit>
+        <upgradeLimitValue>2</upgradeLimitValue>
+        <targetLevelUpgrade>targetLevelUpgrade</targetLevelUpgrade>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </upgradeRulesVerifyUpgradeAndRE>
+
+    <upgradeRulesVerifyUpgradeAndException>
+        <allRules>allrules</allRules>
+        <alarmUpgradeRules>alarmUpgradeRules</alarmUpgradeRules>
+
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <upgradeLimit>upgradeLimit</upgradeLimit>
+        <upgradeLimitValue>1</upgradeLimitValue>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </upgradeRulesVerifyUpgradeAndException>
+
+    <upgradeRulesVerifyDemotion>
+        <allRules>allrules</allRules>
+        <alarmUpgradeRules>alarmUpgradeRules</alarmUpgradeRules>
+
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <strategyException>strategyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <targetLevelDemotion>targetLevelDemotion</targetLevelDemotion>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </upgradeRulesVerifyDemotion>
+
+    <upgradeRulesVerifyFixedLevel>
+        <allRules>allrules</allRules>
+        <alarmUpgradeRules>alarmUpgradeRules</alarmUpgradeRules>
+
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <targetLevelFixedLevel>targetLevelFixedLevel</targetLevelFixedLevel>
+        <targetLevelFixedLevelButton>targetLevelFixedLevelButton</targetLevelFixedLevelButton>
+        <targetLevelFixedLevelInfo>targetLevelFixedLevelInfo</targetLevelFixedLevelInfo>
+        <alarmClassifyConfigSave>alarmclassifyconfigsave</alarmClassifyConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </upgradeRulesVerifyFixedLevel>
+
+
+    <upgradeRulesVerifyDelete></upgradeRulesVerifyDelete>
+
+    <relevanceRulesVerifyRelevance>
+        <allRules>allrules</allRules>
+        <AlarmRelevanceRules>AlarmRelevanceRules</AlarmRelevanceRules>
+
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>relevanceDomain</domainDefault>
+        <type>relevanceNodeType</type>
+        <chooseType>relevanceNodeTypeValue</chooseType>
+        <relevanceNodeFilter>relevanceNodeFilter</relevanceNodeFilter>
+        <relevanceNodeFilterValue>relevanceNodeFilterValue</relevanceNodeFilterValue>
+        <relevanceAlarmType>relevanceAlarmType</relevanceAlarmType>
+        <relevanceAlarmTypeValue>relevanceAlarmTypeValue</relevanceAlarmTypeValue>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+
+        <CreateArea>alarmRelevanceAffectAlarmSettingCreateArea</CreateArea>
+        <CreateButton>alarmRelevanceAffectAlarmSettingCreateButton</CreateButton>
+        <relevanceCreateDomain>relevanceCreateDomain</relevanceCreateDomain>
+        <createType>alarmRelevanceAffectAlarmSettingCreateNodeType</createType>
+        <createChooseType>choosetypeLinux</createChooseType>
+        <createNodeFilter>alarmRelevanceAffectAlarmSettingCreateNodeFilter</createNodeFilter>
+        <createNodeFilterValue>choosenodefilterLinux</createNodeFilterValue>
+        <createAlarmType>alarmRelevanceAffectAlarmSettingCreateAlarmType</createAlarmType>
+        <createAlarmTypeValue>chooseAlarmTypeLinux</createAlarmTypeValue>
+        <createNodeRelation>alarmRelevanceAffectAlarmSettingCreateNodeRelation</createNodeRelation>
+        <createNodeRelationValue>alarmRelevanceAffectAlarmSettingCreateNodeRelationDepend</createNodeRelationValue>
+        <save2>alarmRelevanceAffectAlarmSettingCreateSave</save2>
+
+        <alarmRelevanceConfigSave>alarmRelevanceConfigSave</alarmRelevanceConfigSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+
+        <CentralizedAlarmView>CentralizedAlarmView</CentralizedAlarmView>
+        <alarmDisplayRelevanceAlarm>alarmDisplayRelevanceAlarm</alarmDisplayRelevanceAlarm>
+        <alarmDisplayRelevanceAlarmNodeType>alarmDisplayRelevanceAlarmNodeType</alarmDisplayRelevanceAlarmNodeType>
+        <alarmDisplayRelevanceAlarmClose>alarmDisplayRelevanceAlarmClose</alarmDisplayRelevanceAlarmClose>
+        <alarmDisplayViewCancel>alarmDisplayViewCancel</alarmDisplayViewCancel>
+    </relevanceRulesVerifyRelevance>
+
+    <relevanceRulesVerifyDelete></relevanceRulesVerifyDelete>
+
+    <performancePerspectiveSearch>
+        <performancePerspective>performancePerspective</performancePerspective>
+        <performancePerspectiveTreeViewArea>performancePerspectiveTreeViewArea</performancePerspectiveTreeViewArea>
+        <performancePerspectiveTreeViewButton>performancePerspectiveTreeViewButton</performancePerspectiveTreeViewButton>
+        <performancePerspectiveTreeViewSearch>performancePerspectiveTreeViewSearch</performancePerspectiveTreeViewSearch>
+        <performancePerspectiveTreeViewSearchButton>performancePerspectiveTreeViewSearchButton</performancePerspectiveTreeViewSearchButton>
+        <performancePerspectiveTreeViewSearchValue>Linux</performancePerspectiveTreeViewSearchValue>
+        <performancePerspectiveTreeViewSearchResult>performancePerspectiveTreeViewSearchResult</performancePerspectiveTreeViewSearchResult>
+    </performancePerspectiveSearch>
+
+    <forwardShiftingVerifyRE>
+
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <AlarmScreen>concentrateAlarmAlarmScreen</AlarmScreen>
+
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+
+        <domainDefault>domainDefault</domainDefault>
+        <type>type</type>
+        <chooseType>choosetypeOracle</chooseType>
+        <alarmType>alarmtype</alarmType>
+        <chooseAlarmType>chooseAlarmTypeOracle</chooseAlarmType>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+
+        <nodeFilter>nodefilter</nodeFilter>
+        <chooseNodeFilter>choosenodefilterOracle</chooseNodeFilter>
+
+        <acquisitionSystemChoose>acquisitionsystemchoose</acquisitionSystemChoose>
+        <chooseAcquisitionSystemChoose>chooseacquisitionsystemchoose</chooseAcquisitionSystemChoose>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+
+        <alarmScreenCreateNotifyLevel>alarmScreenCreateNotifyLevel</alarmScreenCreateNotifyLevel>
+        <alarmScreenCreateNotifyLevelValue>alarmScreenCreateNotifyLevelValue</alarmScreenCreateNotifyLevelValue>
+        <alarmScreenCreateReceiveGrouping>alarmScreenCreateReceiveGrouping</alarmScreenCreateReceiveGrouping>
+        <alarmScreenCreateReceiveGroupingValue>alarmScreenCreateReceiveGroupingValue</alarmScreenCreateReceiveGroupingValue>
+        <alarmScreenCreateAlarmNum>alarmScreenCreateAlarmNum</alarmScreenCreateAlarmNum>
+        <alarmScreenCreateAlarmNumValue>2</alarmScreenCreateAlarmNumValue>
+        <alarmScreenCreateActivityCycle>alarmScreenCreateActivityCycle</alarmScreenCreateActivityCycle>
+        <alarmScreenCreateActivityCycleValue>1</alarmScreenCreateActivityCycleValue>
+        <alarmScreenCreateActivityCycleUnit>alarmScreenCreateActivityCycleUnit</alarmScreenCreateActivityCycleUnit>
+        <alarmScreenCreateActivityCycleUnitValue>alarmScreenCreateActivityCycleUnitValue</alarmScreenCreateActivityCycleUnitValue>
+
+        <alarmDisplayPendingAlarm>alarmDisplayPendingAlarm</alarmDisplayPendingAlarm>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+        <recoveryTimeThreshold>recoveryRulesRecoveryTimeThreshold</recoveryTimeThreshold>
+        <recoveryTimeThresholdValue>1</recoveryTimeThresholdValue>
+
+        <recoveryOption>recoveryOption</recoveryOption>
+        <recoveryOptionSetIgnore>recoveryOptionSetIgnore</recoveryOptionSetIgnore>
+        <recoveryOptionClearMemory>recoveryOptionClearMemory</recoveryOptionClearMemory>
+        <alarmInformAlarmScreenSave>alarmInformAlarmScreenSave</alarmInformAlarmScreenSave>
+
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </forwardShiftingVerifyRE>
+
+    <forwardShiftingVerifyStrategyException>
+
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <AlarmScreen>concentrateAlarmAlarmScreen</AlarmScreen>
+
+        <rulesName>rulesname</rulesName>
+        <basicsNextStep>basicsnextstep</basicsNextStep>
+        <rulesConditionConfigNextStep>rulesconditionconfignextstep</rulesConditionConfigNextStep>
+        <contentKeyword>contentkeyword</contentKeyword>
+        <strategyException>alarmScreenCreateStragegyException</strategyException>
+        <rulesConditionAdvancedConfigNextStep>rulesconditionadvancedconfignextstep</rulesConditionAdvancedConfigNextStep>
+        <alarmInformAlarmScreenSave>alarmInformAlarmScreenSave</alarmInformAlarmScreenSave>
+
+        <alarmDisplayPendingAlarm>alarmDisplayPendingAlarm</alarmDisplayPendingAlarm>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </forwardShiftingVerifyStrategyException>
+
+    <informWayVerifyDXEmailWX>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <InformWay>concentrateAlarmAlarmInformInformWay</InformWay>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <AlarmInformInformWayCreateName>AlarmInformInformWayCreateName</AlarmInformInformWayCreateName>
+        <CreateType>AlarmInformInformWayCreateType</CreateType>
+        <CreateTypeValueEmail>AlarmInformInformWayCreateTypeValueEmail</CreateTypeValueEmail>
+        <CreateTypeValueDX>AlarmInformInformWayCreateTypeValueDX</CreateTypeValueDX>
+        <CreateTypeValueWX>AlarmInformInformWayCreateTypeValueWX</CreateTypeValueWX>
+        <CreateUser>AlarmInformInformWayCreateUser</CreateUser>
+        <CreateEnable>AlarmInformInformWayCreateEnable</CreateEnable>
+        <Save>AlarmInformInformWayCreateSave</Save>
+
+        <relatedAlarm>AlarmInformInformWayCreateRelatedAlarm</relatedAlarm>
+        <relatedAlarmFaultRule>AlarmInformInformWaycreateRelatedAlarmFaultRule</relatedAlarmFaultRule>
+        <relatedAlarmFaultRuleValue>AlarmInformInformWaycreateRelatedAlarmFaultRuleValue</relatedAlarmFaultRuleValue>
+        <Confirm>AlarmInformInformWaycreateRelatedAlarmConfirm</Confirm>
+    </informWayVerifyDXEmailWX>
+
+    <informWayVerifyEditWX>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <InformWay>concentrateAlarmAlarmInformInformWay</InformWay>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplayForwardShiftingAlarm>alarmDisplayForwardShiftingAlarm</alarmDisplayForwardShiftingAlarm>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+
+        <AlarmInformInformWayCreateName>AlarmInformInformWayCreateName</AlarmInformInformWayCreateName>
+        <editType>AlarmInformInformWayEditType</editType>
+        <CreateTypeValueEmail>AlarmInformInformWayCreateTypeValueEmail</CreateTypeValueEmail>
+        <CreateTypeValueDX>AlarmInformInformWayCreateTypeValueDX</CreateTypeValueDX>
+        <CreateTypeValueWX>AlarmInformInformWayCreateTypeValueWX</CreateTypeValueWX>
+        <CreateUser>AlarmInformInformWayCreateUser</CreateUser>
+        <CreateEnable>AlarmInformInformWayCreateEnable</CreateEnable>
+        <Save>AlarmInformInformWayCreateSave</Save>
+
+        <relatedAlarm>AlarmInformInformWayCreateRelatedAlarm</relatedAlarm>
+        <relatedAlarmFaultRule>AlarmInformInformWaycreateRelatedAlarmFaultRule</relatedAlarmFaultRule>
+        <relatedAlarmFaultRuleValue>AlarmInformInformWaycreateRelatedAlarmFaultRuleValue</relatedAlarmFaultRuleValue>
+        <Confirm>AlarmInformInformWaycreateRelatedAlarmConfirm</Confirm>
+    </informWayVerifyEditWX>
+
+
+    <alarmNotificationDelete>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <InformWay>concentrateAlarmAlarmInformInformWay</InformWay>
+        <AlarmScreen>concentrateAlarmAlarmScreen</AlarmScreen>
+        <ReceiveGrouping>concentrateAlarmAlarmInformReceiveGrouping</ReceiveGrouping>
+        <informWayDeleteAffirm>informWayDeleteAffirm</informWayDeleteAffirm>
+        <informWayDeleteHintMessage>informWayDeleteHintMessage</informWayDeleteHintMessage>
+    </alarmNotificationDelete>
+
+    <thresholdRulesVerifyEqualNumberValue>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+
+        <CreateName>FigurationThresholdStrategyCreateName</CreateName>
+        <CreateEnable>FigurationThresholdStrategyCreateNameEnable</CreateEnable>
+        <CreateDatadomain>FigurationThresholdStrategyCreateDataDomain</CreateDatadomain>
+        <CreateDataDomainValue>FigurationThresholdStrategyCreateDataDomainValue</CreateDataDomainValue>
+        <CreateNodeType>FigurationThresholdStrategyCreateNodeType</CreateNodeType>
+        <CreateNodeTypeValue>FigurationThresholdStrategyCreateNodeTypeValue</CreateNodeTypeValue>
+        <CreateNodeName>FigurationThresholdStrategyCreateNodeName</CreateNodeName>
+        <CreateNodeNameValue>FigurationThresholdStrategyCreateNodeNameValue</CreateNodeNameValue>
+        <CreateKPITypeSelection>FigurationThresholdStrategyCreateKPITypeSelection</CreateKPITypeSelection>
+        <CreateKPITypeSelectionValue>FigurationThresholdStrategyCreateKPITypeSelectionValue</CreateKPITypeSelectionValue>
+        <CreateAlarmTypeSelection>FigurationThresholdStrategyCreateAlarmTypeSelection</CreateAlarmTypeSelection>
+        <CreateAlarmTypeSelectionValue>FigurationThresholdStrategyCreateAlarmTypeSelectionValue</CreateAlarmTypeSelectionValue>
+        <CreateAlarmLevel>FigurationThresholdStrategyCreateAlarmLevel</CreateAlarmLevel>
+        <CreateAlarmLevelValue>alarmScreenCreateNotifyLevelValue</CreateAlarmLevelValue>
+        <ThresholdConditionOneButton>ThresholdStrategyCreateThresholdConditionOneButton</ThresholdConditionOneButton>
+        <ThresholdConditionOneValue>ThresholdStrategyCreateThresholdConditionOneValue</ThresholdConditionOneValue>
+        <ThresholdConditionTwoButton>ThresholdStrategyCreateThresholdConditionTwoButton</ThresholdConditionTwoButton>
+        <ThresholdConditionTwoValue>ThresholdStrategyCreateThresholdConditionTwoValue</ThresholdConditionTwoValue>
+        <ThresholdRuleFixedValueInput>FigurationThresholdStrategyCreateThresholdRuleFixedValueValue</ThresholdRuleFixedValueInput>
+        <ThresholdRuleFixedValueInputValue>8</ThresholdRuleFixedValueInputValue>
+        <CountConditionOneInput>ThresholdStrategyCreateCountConditionOneInput</CountConditionOneInput>
+        <CountConditionOneInputValue>3</CountConditionOneInputValue>
+        <CountConditionTwoInput>ThresholdStrategyCreateCountConditionTwoInput</CountConditionTwoInput>
+        <CountConditionTwoInputValue>2</CountConditionTwoInputValue>
+        <CreateSave>FigurationThresholdStrategyCreateSave</CreateSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </thresholdRulesVerifyEqualNumberValue>
+
+    <thresholdRulesVerifyEqualChar>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+        <EditKPITypeSelection>FigurationThresholdStrategyEditKPITypeSelection</EditKPITypeSelection>
+        <EditKPITypeSelectionValue>FigurationThresholdStrategyEditKPITypeSelectionValue</EditKPITypeSelectionValue>
+        <ThresholdRuleFixedValueInput>FigurationThresholdStrategyEditThresholdRuleFixedValueValue</ThresholdRuleFixedValueInput>
+        <ThresholdRuleFixedValueInputValue>Linux h5urmp 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64</ThresholdRuleFixedValueInputValue>
+        <EditSave>FigurationThresholdStrategyEditSave</EditSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </thresholdRulesVerifyEqualChar>
+
+    <thresholdRulesVerifyLessThanNumberValue>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+        <ThresholdRuleFixedValueInput>FigurationThresholdStrategyEditThresholdRuleFixedValueValue</ThresholdRuleFixedValueInput>
+        <ThresholdRuleFixedValueInputValue>8</ThresholdRuleFixedValueInputValue>
+        <EditSave>FigurationThresholdStrategyEditSave</EditSave>
+
+        <ThresholdConditionOneButton>ThresholdStrategyEditThresholdConditionOneButton</ThresholdConditionOneButton>
+        <ThresholdConditionOneValue>ThresholdStrategyEditThresholdConditionOneValueLessThan</ThresholdConditionOneValue>
+
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </thresholdRulesVerifyLessThanNumberValue>
+
+    <thresholdRulesVerifyGreaterThanNumberValue>
+        <AlarmInformArea>alarmInformArea</AlarmInformArea>
+        <AlarmInform>concentrateAlarmAlarmInform</AlarmInform>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+        <ThresholdConditionOneButton>ThresholdStrategyEditThresholdConditionOneButton</ThresholdConditionOneButton>
+        <ThresholdConditionOneValue>ThresholdStrategyEditThresholdConditionOneValueGreaterThan</ThresholdConditionOneValue>
+        <EditSave>FigurationThresholdStrategyEditSave</EditSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </thresholdRulesVerifyGreaterThanNumberValue>
+
+    <thresholdRulesVerifyDynamicBaseline>
+        <alarmConfigArea>alarmConfigArea</alarmConfigArea>
+        <alarmconfig>alarmconfig</alarmconfig>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+        <CreateKPITypeSelection>FigurationThresholdStrategyEditKPITypeSelection</CreateKPITypeSelection>
+        <CreateKPITypeSelectionValue>FigurationThresholdStrategyCreateKPITypeSelectionValue</CreateKPITypeSelectionValue>
+        <ThresholdConditionOneButton>ThresholdStrategyEditThresholdConditionOneButton</ThresholdConditionOneButton>
+        <ThresholdConditionOneValue>ThresholdStrategyEditThresholdConditionOneValueGreaterThan</ThresholdConditionOneValue>
+        <ThresholdConditionTwoButton>ThresholdStrategyEditThresholdConditionTwoButton</ThresholdConditionTwoButton>
+        <ThresholdConditionTwoValue>ThresholdStrategyCreateThresholdConditionTwoValueBaseline</ThresholdConditionTwoValue>
+        <ThresholdRuleFixedValueInput>FigurationThresholdStrategyEditThresholdRuleFixedValueValue</ThresholdRuleFixedValueInput>
+        <ThresholdRuleFixedValueInputValue>1</ThresholdRuleFixedValueInputValue>
+        <CountConditionOneInput>ThresholdStrategyEditCountConditionOneInput</CountConditionOneInput>
+        <CountConditionOneInputValue>1</CountConditionOneInputValue>
+        <CountConditionTwoInput>ThresholdStrategyEditCountConditionTwoInput</CountConditionTwoInput>
+        <CountConditionTwoInputValue>1</CountConditionTwoInputValue>
+        <EditSave>FigurationThresholdStrategyEditSave</EditSave>
+
+        <alarmDisplay>alarmDisplay</alarmDisplay>
+        <alarmDisplaySearchBox>alarmDisplaySearchBox</alarmDisplaySearchBox>
+        <alarmDisplaySearchButton>alarmDisplaySearchButton</alarmDisplaySearchButton>
+        <alarmDisplayResolved>CentralizedAlarmResolved</alarmDisplayResolved>
+        <ClearMemoryButton>alarmDisplayResovledClearMemoryButton</ClearMemoryButton>
+        <affirm>alarmDisplayOpinionConfirm1</affirm>
+    </thresholdRulesVerifyDynamicBaseline>
+
+    <thresholdRulesDelete>
+        <alarmConfigArea>alarmConfigArea</alarmConfigArea>
+        <alarmconfig>alarmconfig</alarmconfig>
+        <thresholdStrategy>thresholdStrategy</thresholdStrategy>
+        <AlarmScreen>concentrateAlarmAlarmScreen</AlarmScreen>
+        <ReceiveGrouping>concentrateAlarmAlarmInformReceiveGrouping</ReceiveGrouping>
+        <informWayDeleteAffirm>informWayDeleteAffirm</informWayDeleteAffirm>
+        <informWayDeleteHintMessage>informWayDeleteHintMessage</informWayDeleteHintMessage>
+    </thresholdRulesDelete>
+
+    <pertinenceAnalyzeOnceTask>
+        <PATaskName>PATaskName</PATaskName>
+        <PACalculationMethod>PACalculationMethod</PACalculationMethod>
+        <PACalculationMethodValue>PACalculationMethodValue</PACalculationMethodValue>
+        <PANextStep1>PANextStep1</PANextStep1>
+        <PAKeyIndicatorsSelectionArea>PAKeyIndicatorsSelectionArea</PAKeyIndicatorsSelectionArea>
+        <PAKeyIndicatorsSelectionButton>PAKeyIndicatorsSelectionButton</PAKeyIndicatorsSelectionButton>
+        <KeyIndicatorsSelectionCIType>KeyIndicatorsSelectionCIType</KeyIndicatorsSelectionCIType>
+        <KeyIndicatorsSelectionCITypeLinux>KeyIndicatorsSelectionCITypeLinux</KeyIndicatorsSelectionCITypeLinux>
+        <KeyIndicatorsSelectionCITypeLinux1>KeyIndicatorsSelectionCITypeLinux1</KeyIndicatorsSelectionCITypeLinux1>
+        <KeyIndicatorsSelectionCITypePostgreSQL>KeyIndicatorsSelectionCITypePostgreSQL</KeyIndicatorsSelectionCITypePostgreSQL>
+        <KeyIndicatorsSelectionCITypePostgreSQL1>KeyIndicatorsSelectionCITypePostgreSQL1</KeyIndicatorsSelectionCITypePostgreSQL1>
+        <KeyIndicatorsSelectionCIExample>KeyIndicatorsSelectionCIExample</KeyIndicatorsSelectionCIExample>
+        <KeyIndicatorsSelectionCIExample131>KeyIndicatorsSelectionCIExample131</KeyIndicatorsSelectionCIExample131>
+        <KeyIndicatorsSelectionCIExample155>KeyIndicatorsSelectionCIExample155</KeyIndicatorsSelectionCIExample155>
+        <KeyIndicatorsSelectionKPIIndicator>KeyIndicatorsSelectionKPIIndicator</KeyIndicatorsSelectionKPIIndicator>
+        <KeyIndicatorsSelectionKPIIndicator1>KeyIndicatorsSelectionKPIIndicator1</KeyIndicatorsSelectionKPIIndicator1>
+        <KeyIndicatorsSelectionKPIIndicator2>KeyIndicatorsSelectionKPIIndicator2</KeyIndicatorsSelectionKPIIndicator2>
+        <PANextStep2>PANextStep2</PANextStep2>
+        <PATaskTypeOnceTask>PATaskTypeOnceTask</PATaskTypeOnceTask>
+        <PATaskTypeDataStartTimeButton>PATaskTypeDataStartTimeButton</PATaskTypeDataStartTimeButton>
+        <PATaskTypeDataStartTimePlug>PATaskTypeDataStartTimePlug</PATaskTypeDataStartTimePlug>
+        <PATaskTypeDataStartTimeInput>PATaskTypeDataStartTimeInput</PATaskTypeDataStartTimeInput>
+        <PATaskTypeDataEndTimeButton>PATaskTypeDataEndTimeButton</PATaskTypeDataEndTimeButton>
+        <PATaskTypeDataEndTimePlug>PATaskTypeDataEndTimePlug</PATaskTypeDataEndTimePlug>
+        <PATaskTypeDataEndTimeInput>PATaskTypeDataEndTimeInput</PATaskTypeDataEndTimeInput>
+        <PATaskTypeTaskTriggerTimeButton>PATaskTypeTaskTriggerTimeButton</PATaskTypeTaskTriggerTimeButton>
+        <PATaskTypeTaskTriggerTimePlug>PATaskTypeTaskTriggerTimePlug</PATaskTypeTaskTriggerTimePlug>
+        <PATaskTypeTaskTriggerTimeInput>PATaskTypeTaskTriggerTimeInput</PATaskTypeTaskTriggerTimeInput>
+        <TimeControlsOneNum>TimeControlsOneNum</TimeControlsOneNum>
+        <TimeControlsTwoNum>TimeControlsTwoNum</TimeControlsTwoNum>
+        <TimeControlsThirtyOneNum>TimeControlsThirtyOneNum</TimeControlsThirtyOneNum>
+        <TimeControlsConfirm>TimeControlsConfirm</TimeControlsConfirm>
+        <PAEnable>PAEnable</PAEnable>
+        <PASubmit>PASubmit</PASubmit>
+    </pertinenceAnalyzeOnceTask>
+
+
+    <pertinenceAnalyzeCycleTask>
+            <PATaskName>PATaskName</PATaskName>
+            <PACalculationMethod>PACalculationMethod</PACalculationMethod>
+            <PACalculationMethodValue>PACalculationMethodValue</PACalculationMethodValue>
+            <PANextStep1>PANextStep1</PANextStep1>
+            <PAKeyIndicatorsSelectionArea>PAKeyIndicatorsSelectionArea</PAKeyIndicatorsSelectionArea>
+            <PAKeyIndicatorsSelectionButton>PAKeyIndicatorsSelectionButton</PAKeyIndicatorsSelectionButton>
+            <KeyIndicatorsSelectionCIType>KeyIndicatorsSelectionCIType</KeyIndicatorsSelectionCIType>
+            <KeyIndicatorsSelectionCITypeLinux>KeyIndicatorsSelectionCITypeLinux</KeyIndicatorsSelectionCITypeLinux>
+            <KeyIndicatorsSelectionCITypeLinux1>KeyIndicatorsSelectionCITypeLinux1</KeyIndicatorsSelectionCITypeLinux1>
+            <KeyIndicatorsSelectionCITypePostgreSQL>KeyIndicatorsSelectionCITypePostgreSQL</KeyIndicatorsSelectionCITypePostgreSQL>
+            <KeyIndicatorsSelectionCITypePostgreSQL1>KeyIndicatorsSelectionCITypePostgreSQL1</KeyIndicatorsSelectionCITypePostgreSQL1>
+            <KeyIndicatorsSelectionCIExample>KeyIndicatorsSelectionCIExample</KeyIndicatorsSelectionCIExample>
+            <KeyIndicatorsSelectionCIExample131>KeyIndicatorsSelectionCIExample131</KeyIndicatorsSelectionCIExample131>
+            <KeyIndicatorsSelectionCIExample155>KeyIndicatorsSelectionCIExample155</KeyIndicatorsSelectionCIExample155>
+            <KeyIndicatorsSelectionKPIIndicator>KeyIndicatorsSelectionKPIIndicator</KeyIndicatorsSelectionKPIIndicator>
+            <KeyIndicatorsSelectionKPIIndicator1>KeyIndicatorsSelectionKPIIndicator1</KeyIndicatorsSelectionKPIIndicator1>
+            <KeyIndicatorsSelectionKPIIndicator2>KeyIndicatorsSelectionKPIIndicator2</KeyIndicatorsSelectionKPIIndicator2>
+            <PANextStep2>PANextStep2</PANextStep2>
+
+        <PATaskTypeCycleTask>PATaskTypeCycleTask</PATaskTypeCycleTask>
+        <CycleTaskCycleType>CycleTaskCycleType</CycleTaskCycleType>
+        <CycleTaskCycleTypeValue>CycleTaskCycleTypeValue</CycleTaskCycleTypeValue>
+        <CycleTaskDataCycleChoose>CycleTaskDataCycleChoose</CycleTaskDataCycleChoose>
+        <CycleTaskDataCycleChooseValue>CycleTaskDataCycleChooseValue</CycleTaskDataCycleChooseValue>
+        <CycleTaskStartTimeHour>CycleTaskStartTimeHour</CycleTaskStartTimeHour>
+        <CycleTaskStartTimeHourValue>CycleTaskStartTimeHourValue</CycleTaskStartTimeHourValue>
+        <CycleTaskStartTimeMinute>CycleTaskStartTimeMinute</CycleTaskStartTimeMinute>
+        <CycleTaskStartTimeMinuteValue>CycleTaskStartTimeMinuteValue</CycleTaskStartTimeMinuteValue>
+        <CycleTaskEndTimeHour>CycleTaskEndTimeHour</CycleTaskEndTimeHour>
+        <CycleTaskEndTimeHourValue>CycleTaskEndTimeHourValue</CycleTaskEndTimeHourValue>
+        <CycleTaskEndTimeMinute>CycleTaskEndTimeMinute</CycleTaskEndTimeMinute>
+        <CycleTaskEndTimeMinuteValue>CycleTaskEndTimeMinuteValue</CycleTaskEndTimeMinuteValue>
+        <CycleTaskTriggerTimeHour>CycleTaskTriggerTimeHour</CycleTaskTriggerTimeHour>
+        <CycleTaskTriggerTimeMinute>CycleTaskTriggerTimeMinute</CycleTaskTriggerTimeMinute>
+
+        <TimeControlsConfirm>TimeControlsConfirm</TimeControlsConfirm>
+        <PAEnable>PAEnable</PAEnable>
+        <PASubmit>PASubmit</PASubmit>
+
+        <PADeleteHintMessage>PADeleteHintMessage</PADeleteHintMessage>
+        <PADeleteHintConfirm>PADeleteHintConfirm</PADeleteHintConfirm>
+    </pertinenceAnalyzeCycleTask>
+
+
+    <pertinenceAnalyzeDelete>
+        <PADeleteHintMessage>PADeleteHintMessage</PADeleteHintMessage>
+        <PADeleteHintConfirm>PADeleteHintConfirm</PADeleteHintConfirm>
+    </pertinenceAnalyzeDelete>
+
+
+    <pertinenceAnalyzeAssistRelatedOnceTask>
+        <PATaskName>PATaskName</PATaskName>
+        <PACalculationMethod>PACalculationMethod</PACalculationMethod>
+        <PACalculationMethodAssistRelated>PACalculationMethodAssistRelated</PACalculationMethodAssistRelated>
+        <PANextStep1>PANextStep1</PANextStep1>
+        <PAKeyIndicatorsSelectionArea>PAKeyIndicatorsSelectionArea</PAKeyIndicatorsSelectionArea>
+        <PAKeyIndicatorsSelectionButton>PAKeyIndicatorsSelectionButton</PAKeyIndicatorsSelectionButton>
+        <ARKeyIndicatorsSelectionCIType>ARKeyIndicatorsSelectionCIType</ARKeyIndicatorsSelectionCIType>
+        <ARKeyIndicatorsSelectionCITypeLinux>ARKeyIndicatorsSelectionCITypeLinux</ARKeyIndicatorsSelectionCITypeLinux>
+        <KeyIndicatorsSelectionCITypeLinux1>KeyIndicatorsSelectionCITypeLinux1</KeyIndicatorsSelectionCITypeLinux1>
+        <ARKeyIndicatorsSelectionCIExample>ARKeyIndicatorsSelectionCIExample</ARKeyIndicatorsSelectionCIExample>
+        <ARKeyIndicatorsSelectionCIExample131>ARKeyIndicatorsSelectionCIExample131</ARKeyIndicatorsSelectionCIExample131>
+        <ARKeyIndicatorsSelectionKPIIndicator>ARKeyIndicatorsSelectionKPIIndicator</ARKeyIndicatorsSelectionKPIIndicator>
+        <KeyIndicatorsSelectionKPIIndicator1>KeyIndicatorsSelectionKPIIndicator1</KeyIndicatorsSelectionKPIIndicator1>
+        <ARKeyIndicatorsSelectionCIClassify>ARKeyIndicatorsSelectionCIClassify</ARKeyIndicatorsSelectionCIClassify>
+        <ARKeyIndicatorsSelectionCIType2>ARKeyIndicatorsSelectionCIType2</ARKeyIndicatorsSelectionCIType2>
+        <ARKeyIndicatorsSelectionCITypePostgreSQL>ARKeyIndicatorsSelectionCITypePostgreSQL</ARKeyIndicatorsSelectionCITypePostgreSQL>
+        <KeyIndicatorsSelectionCITypePostgreSQL1>KeyIndicatorsSelectionCITypePostgreSQL1</KeyIndicatorsSelectionCITypePostgreSQL1>
+        <ARKeyIndicatorsSelectionCIExample2>ARKeyIndicatorsSelectionCIExample2</ARKeyIndicatorsSelectionCIExample2>
+        <KeyIndicatorsSelectionCIExample155>KeyIndicatorsSelectionCIExample155</KeyIndicatorsSelectionCIExample155>
+        <ARKeyIndicatorsSelectionKPIIndicator2>ARKeyIndicatorsSelectionKPIIndicator2</ARKeyIndicatorsSelectionKPIIndicator2>
+        <KeyIndicatorsSelectionKPIIndicator2>KeyIndicatorsSelectionKPIIndicator2</KeyIndicatorsSelectionKPIIndicator2>
+        <PANextStep2>PANextStep2</PANextStep2>
+        <PATaskTypeOnceTask>PATaskTypeOnceTask</PATaskTypeOnceTask>
+        <PATaskTypeDataStartTimeButton>PATaskTypeDataStartTimeButton</PATaskTypeDataStartTimeButton>
+        <PATaskTypeDataStartTimePlug>PATaskTypeDataStartTimePlug</PATaskTypeDataStartTimePlug>
+        <PATaskTypeDataStartTimeInput>PATaskTypeDataStartTimeInput</PATaskTypeDataStartTimeInput>
+        <PATaskTypeDataEndTimeButton>PATaskTypeDataEndTimeButton</PATaskTypeDataEndTimeButton>
+        <PATaskTypeDataEndTimePlug>PATaskTypeDataEndTimePlug</PATaskTypeDataEndTimePlug>
+        <PATaskTypeDataEndTimeInput>PATaskTypeDataEndTimeInput</PATaskTypeDataEndTimeInput>
+        <PATaskTypeTaskTriggerTimeButton>PATaskTypeTaskTriggerTimeButton</PATaskTypeTaskTriggerTimeButton>
+        <PATaskTypeTaskTriggerTimePlug>PATaskTypeTaskTriggerTimePlug</PATaskTypeTaskTriggerTimePlug>
+        <PATaskTypeTaskTriggerTimeInput>PATaskTypeTaskTriggerTimeInput</PATaskTypeTaskTriggerTimeInput>
+        <TimeControlsOneNum>TimeControlsOneNum</TimeControlsOneNum>
+        <TimeControlsTwoNum>TimeControlsTwoNum</TimeControlsTwoNum>
+        <TimeControlsThirtyOneNum>TimeControlsThirtyOneNum</TimeControlsThirtyOneNum>
+        <TimeControlsConfirm>TimeControlsConfirm</TimeControlsConfirm>
+        <PAEnable>PAEnable</PAEnable>
+        <PASubmit>PASubmit</PASubmit>
+
+        <PADeleteHintMessage>PADeleteHintMessage</PADeleteHintMessage>
+        <PADeleteHintConfirm>PADeleteHintConfirm</PADeleteHintConfirm>
+    </pertinenceAnalyzeAssistRelatedOnceTask>
+
+
+
+    <pertinenceAnalyzeAssistRelatedCycleTask>
+        <PATaskName>PATaskName</PATaskName>
+        <PACalculationMethod>PACalculationMethod</PACalculationMethod>
+        <PACalculationMethodAssistRelated>PACalculationMethodAssistRelated</PACalculationMethodAssistRelated>
+        <PANextStep1>PANextStep1</PANextStep1>
+        <PAKeyIndicatorsSelectionArea>PAKeyIndicatorsSelectionArea</PAKeyIndicatorsSelectionArea>
+        <PAKeyIndicatorsSelectionButton>PAKeyIndicatorsSelectionButton</PAKeyIndicatorsSelectionButton>
+        <ARKeyIndicatorsSelectionCIType>ARKeyIndicatorsSelectionCIType</ARKeyIndicatorsSelectionCIType>
+        <ARKeyIndicatorsSelectionCITypeLinux>ARKeyIndicatorsSelectionCITypeLinux</ARKeyIndicatorsSelectionCITypeLinux>
+        <KeyIndicatorsSelectionCITypeLinux1>KeyIndicatorsSelectionCITypeLinux1</KeyIndicatorsSelectionCITypeLinux1>
+        <ARKeyIndicatorsSelectionCIExample>ARKeyIndicatorsSelectionCIExample</ARKeyIndicatorsSelectionCIExample>
+        <ARKeyIndicatorsSelectionCIExample131>ARKeyIndicatorsSelectionCIExample131</ARKeyIndicatorsSelectionCIExample131>
+        <ARKeyIndicatorsSelectionKPIIndicator>ARKeyIndicatorsSelectionKPIIndicator</ARKeyIndicatorsSelectionKPIIndicator>
+        <KeyIndicatorsSelectionKPIIndicator1>KeyIndicatorsSelectionKPIIndicator1</KeyIndicatorsSelectionKPIIndicator1>
+        <ARKeyIndicatorsSelectionCIClassify>ARKeyIndicatorsSelectionCIClassify</ARKeyIndicatorsSelectionCIClassify>
+        <ARKeyIndicatorsSelectionCIType2>ARKeyIndicatorsSelectionCIType2</ARKeyIndicatorsSelectionCIType2>
+        <ARKeyIndicatorsSelectionCITypePostgreSQL>ARKeyIndicatorsSelectionCITypePostgreSQL</ARKeyIndicatorsSelectionCITypePostgreSQL>
+        <KeyIndicatorsSelectionCITypePostgreSQL1>KeyIndicatorsSelectionCITypePostgreSQL1</KeyIndicatorsSelectionCITypePostgreSQL1>
+        <ARKeyIndicatorsSelectionCIExample2>ARKeyIndicatorsSelectionCIExample2</ARKeyIndicatorsSelectionCIExample2>
+        <KeyIndicatorsSelectionCIExample155>KeyIndicatorsSelectionCIExample155</KeyIndicatorsSelectionCIExample155>
+        <ARKeyIndicatorsSelectionKPIIndicator2>ARKeyIndicatorsSelectionKPIIndicator2</ARKeyIndicatorsSelectionKPIIndicator2>
+        <KeyIndicatorsSelectionKPIIndicator2>KeyIndicatorsSelectionKPIIndicator2</KeyIndicatorsSelectionKPIIndicator2>
+        <PANextStep2>PANextStep2</PANextStep2>
+
+        <PATaskTypeCycleTask>PATaskTypeCycleTask</PATaskTypeCycleTask>
+        <CycleTaskCycleType>CycleTaskCycleType</CycleTaskCycleType>
+        <CycleTaskCycleTypeValue>CycleTaskCycleTypeValue</CycleTaskCycleTypeValue>
+        <CycleTaskDataCycleChoose>CycleTaskDataCycleChoose</CycleTaskDataCycleChoose>
+        <CycleTaskDataCycleChooseValue>CycleTaskDataCycleChooseValue</CycleTaskDataCycleChooseValue>
+        <CycleTaskStartTimeHour>CycleTaskStartTimeHour</CycleTaskStartTimeHour>
+        <CycleTaskStartTimeHourValue>CycleTaskStartTimeHourValue</CycleTaskStartTimeHourValue>
+        <CycleTaskStartTimeMinute>CycleTaskStartTimeMinute</CycleTaskStartTimeMinute>
+        <CycleTaskStartTimeMinuteValue>CycleTaskStartTimeMinuteValue</CycleTaskStartTimeMinuteValue>
+        <CycleTaskEndTimeHour>CycleTaskEndTimeHour</CycleTaskEndTimeHour>
+        <CycleTaskEndTimeHourValue>CycleTaskEndTimeHourValue</CycleTaskEndTimeHourValue>
+        <CycleTaskEndTimeMinute>CycleTaskEndTimeMinute</CycleTaskEndTimeMinute>
+        <CycleTaskEndTimeMinuteValue>CycleTaskEndTimeMinuteValue</CycleTaskEndTimeMinuteValue>
+        <CycleTaskTriggerTimeHour>CycleTaskTriggerTimeHour</CycleTaskTriggerTimeHour>
+        <CycleTaskTriggerTimeMinute>CycleTaskTriggerTimeMinute</CycleTaskTriggerTimeMinute>
+
+        <TimeControlsConfirm>TimeControlsConfirm</TimeControlsConfirm>
+        <PAEnable>PAEnable</PAEnable>
+        <PASubmit>PASubmit</PASubmit>
+
+        <PADeleteHintMessage>PADeleteHintMessage</PADeleteHintMessage>
+        <PADeleteHintConfirm>PADeleteHintConfirm</PADeleteHintConfirm>
+    </pertinenceAnalyzeAssistRelatedCycleTask>
+    <test0001></test0001>
 </data>
 

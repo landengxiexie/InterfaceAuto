@@ -197,6 +197,7 @@
                     <source>8</source>
                     <target>8</target>
                     <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn compile命令时会出现莫名的错误，因为系统默认使用GBK编码 -->
+                    <!--<compilerArgument>-Xlint:unchecked</compilerArgument>-->
                 </configuration>
             </plugin>
             <plugin>
@@ -215,8 +216,8 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            <!--./src/com.test.page/rules/recovery.xml-->
-                            ./src/com.test.page/VicubeConcentratedAlarmAlarmDisplay.xml
+                            ./src/com.test.page/rules/classify.xml
+                            <!--./src/com.test.page/VicubeDataAnalyzePertinenceAnalyze.xml-->
                     </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

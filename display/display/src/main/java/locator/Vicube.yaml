@@ -2,15 +2,15 @@
 #用户名
 vicube_user:
   type: xpath
-  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/vic-login/div/div[2]/div[2]/form/div[1]/input"
+  value: "//*/form/div[1]/input"
 #密码
 vicube_password:
   type: xpath
-  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/vic-login/div/div[2]/div[2]/form/div[2]/input"
+  value: "//*/form/div[2]/input"
 #登陆按钮
 vicube_loginButton:
   type: xpath
-  value: "/html/body/vic-root/nz-layout/nz-layout/nz-layout/nz-content/vic-login/div/div[2]/div[2]/form/div[3]/button"
+  value: "//*[@type='submit']"
 #用户登陆标识
 vicube_userloginid:
   type: xpath
@@ -32,6 +32,11 @@ selectResultIsEmpty:
   type: xpath
   value: "//*/tbody/tr/td[contains(text(),'')]"
 
+#资源实例-筛选结果-是空
+resourceExampleSelectResultIsEmpty:
+  type: xpath
+  value: "//*[@id='tableId_instance']/tbody/tr/td"
+
 #用户管理-更改状态
 changestate:
   type: link
@@ -44,6 +49,18 @@ changestate1:
 create:
   type: link
   value: 新建
+#用户管理-新建
+createButton:
+  type: xpath
+  value: "//button/*[text()='新建']"
+#用户管理-删除
+deleteButton:
+  type: xpath
+  value: "//button/*[text()='删除']"
+#用户管理-编辑
+editButton:
+  type: xpath
+  value: "//button/*[text()='编辑']"
 #复制
 copy:
   type: link
@@ -211,6 +228,9 @@ selectvalidvalue:
 selectchooseuser:
   type: xpath
   value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[1]/center/input"
+selectchooseresult:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[1]"
 #用户管理-筛选结果勾选用户-所有
 selectResultChooseAllData:
   type: xpath
@@ -227,6 +247,30 @@ selectResultChooseAll:
 selectResultChooseAll2:
   type: xpath
   value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[2]"
+#数据分析-相关性分析-列表-第一列
+relecanceAnalyzeList1:
+  type: xpath
+  value: "//*/table/tbody/tr/td[1]/label"
+#数据分析-相关性分析-列表-第二列
+relecanceAnalyzeList2:
+  type: xpath
+  value: "//*/table/tbody/tr/td[2]"
+#数据分析-相关性分析-列表-第三列
+relecanceAnalyzeList3:
+  type: xpath
+  value: "//*/table/tbody/tr/td[3]"
+#用户管理-筛选结果勾选用户-所有用户-第三列
+selectResultChooseAll3:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[3]"
+#用户管理-筛选结果勾选用户-所有用户-第二列
+selectResultChooseAll2_img:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[2]//img"
+#用户管理-筛选结果勾选用户-所有用户-第七列
+selectResultChooseAll7:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[7]/div"
 #用户管理-筛选结果勾选用户-所有用户-第九列
 selectResultChooseAll9:
   type: xpath
@@ -235,6 +279,10 @@ selectResultChooseAll9:
 selectResultChooseAll12:
   type: xpath
   value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[12]/div"
+#用户管理-筛选结果勾选用户-所有用户-第二十一列
+selectResultChooseAll21:
+  type: xpath
+  value: "//*/div[@class='dataTables_scrollBody']/table/tbody/tr/td[21]/div"
 #用户管理-筛选结果勾选用户-第二行
 selectchooseuser2:
   type: xpath
@@ -656,11 +704,11 @@ concentratedalarm:
 #菜单-集中告警-告警配置-展示区域
 alarmConfigArea:
   type: xpath
-  value: "//div/ul[3]/li"
+  value: "//div/ul/li[3]/ul"
 #菜单-集中告警-告警配置
 alarmconfig:
   type: xpath
-  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[3]/li/div/span"
+  value: "//div/ul/li[3]/div"
 #菜单-集中告警-告警配置-降噪策略
 denoisestrategy:
   type: link
@@ -877,7 +925,19 @@ choosenewalarmrank:
 #降噪策略-告警分类策略-新建-告警分类设置-保存
 alarmclassifyconfigsave:
   type: xpath
-  value: "//*/div/div/div[2]/div/div[2]/button[contains(text(),'保')]"
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#降噪策略-告警分类策略-新建-告警分类设置-保存
+alarmClassifyConfigSave:
+  type: xpath
+  value: "//*[@id='alertRuleClassify']/div[4]/button[2]"
+#降噪策略-告警分类策略-新建-告警关联设置-保存
+alarmRelevanceConfigSave:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[2]/button[2]"
+#告警通知-告警筛选-保存
+alarmInformAlarmScreenSave:
+  type: xpath
+  value: "//div/div/div[2]/div/div[2]/button[2]"
 #降噪策略-告警恢复策略-新建-告警恢复策略-恢复时间门限
 recoveryRulesRecoveryTimeThreshold:
   type: xpath
@@ -894,6 +954,43 @@ recoveryOptionClearMemory:
 recoveryOptionSetIgnore:
   type: xpath
   value: "//*[@id='alertRuleRecover']/div[2]/div/label[1]"
+
+#降噪策略-告警升级策略-新建-告警升级策略-升级周期
+upgradeCycle:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[1]/div/input"
+#降噪策略-告警升级策略-新建-告警升级策略-告警数量门限
+alarmNumberThreshold:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[2]/input"
+#降噪策略-告警升级策略-新建-告警升级策略-升级次数限制
+upgradeLimit:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[3]/input"
+#降噪策略-告警升级策略-新建-告警升级策略-目标级别
+targetLevel:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[4]/div/label"
+#降噪策略-告警升级策略-新建-告警升级策略-目标级别-升级
+targetLevelUpgrade:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[4]/div/label[1]"
+#降噪策略-告警升级策略-新建-告警升级策略-目标级别-降级
+targetLevelDemotion:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[4]/div/label[2]"
+#降噪策略-告警升级策略-新建-告警升级策略-固定级别
+targetLevelFixedLevel:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[4]/div/label[3]"
+#降噪策略-告警升级策略-新建-告警升级策略-目标级别-固定级别-按钮
+targetLevelFixedLevelButton:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[4]/div/ol/button"
+#降噪策略-告警升级策略-新建-告警升级策略-目标级别-固定级别-INFO
+targetLevelFixedLevelInfo:
+  type: xpath
+  value: "//*[@id='alertRuleUpgrade']/div[4]/div/ol/div/ul/li[1]/a"
 
 #降噪策略-筛选-规则名称
 selectrulesname:
@@ -1280,7 +1377,7 @@ alarmDisplayRelevanceAlarmTitle:
 alarmDisplayRelevanceAlarmClose:
   type: xpath
   value: "//*[@id='relationModal']/div/div/div[3]/a"
-#菜单-集中告警-告警展示-查看-取消
+#菜单-集中告警-告警展示-查看-关闭
 alarmDisplayViewCancel:
   type: xpath
   value: "//*[@id='detailModal']/div/div/div[3]/a[6]"
@@ -1323,11 +1420,15 @@ alarmDisplaySearchButton:
 #菜单-集中告警-告警展示-列设置
 alarmDisplayColumnSetting:
   type: xpath
-  value: "//*/div[@class='ng-isolate-scope']/div/div[2]/div[2]/div/a[1]"
+  value: "//div[1]/div[@class='text-right alertBtn']/a[1]"
 #菜单-集中告警-告警展示-列设置-是否显示框
 alarmDisplayColumnSettingisDisplay:
   type: xpath
   value: "//div/div/div[2]/div/ol/li/div[2]/div/label/input"
+#菜单-集中告警-告警展示-列设置-勾选
+alarmDisplayColumnSettingisDisplayChoose:
+  type: xpath
+  value: "//div/div/div[2]/div/ol/li/div[2]/div/label"
 #菜单-集中告警-告警展示-列设置-确认
 alarmDisplayColumnSettingConfirm:
   type: xpath
@@ -1335,7 +1436,7 @@ alarmDisplayColumnSettingConfirm:
 #菜单-集中告警-告警展示-列-是否显示
 alarmDisplayColumnDisplay:
   type: xpath
-  value: "//*/div[2]/div/div/div[1]/div/table/thead/tr/th"
+  value: "//*/div[2]/div/div/div[1]/div[1]/table/thead/tr/th"
 #菜单-集中告警-告警展示-列-消息内容
 alarmDisplayColumnDisplayMessageContent:
   type: xpath
@@ -1401,11 +1502,11 @@ denoiseStrategySelectArea:
 #菜单-集中告警-告警查询-（区域）
 alarmSelectArea:
   type: xpath
-  value: "//div/ul[2]/li"
+  value: "//div/ul/li[2]/ul"
 #菜单-集中告警-告警查询
 alarmSelect:
   type: xpath
-  value: "//div/ul[2]/li/div/span"
+  value: "//div/ul/li[2]/div"
 #菜单-集中告警-告警查询-前转记录
 shiftingRecording:
   type: link
@@ -1503,11 +1604,11 @@ alarmQueryHistoryAlarmPagingTotalChoosePageUpAndDownDetails:
 #菜单-集中告警-告警通知-区域
 alarmInformArea:
   type: xpath
-  value: "//div/ul[4]/li"
+  value: "//div/ul/li[4]/ul"
 #菜单-集中告警-告警通知
 concentrateAlarmAlarmInform:
   type: xpath
-  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul[4]/li/div/span"
+  value: "//div/ul/li[4]/div"
 #菜单-集中告警-告警通知-接收分组
 concentrateAlarmAlarmInformReceiveGrouping:
   type: link
@@ -1527,11 +1628,11 @@ receiveGroupingNewGroupingEditName:
 #菜单-集中告警-告警通知-接收分组-新建分组-描述
 receiveGroupingNewGroupingDescription:
   type: xpath
-  value: "//*[@id='SFaddForm']/div[1]/div/div/div/div/div[2]/div/div/textarea"
+  value: "//*[@id='SFaddForm']/div[1]/div/div/div/div/div[3]/div/div/textarea"
 #菜单-集中告警-告警通知-接收分组-新建分组-编辑描述
 receiveGroupingNewGroupingEditDescription:
   type: xpath
-  value: "//*[@id='SFeditForm']/div[1]/div/div/div/div/div[2]/div/div/textarea"
+  value: "//*[@id='SFeditForm']/div[1]/div/div/div/div/div[3]/div/div/textarea"
 #菜单-集中告警-告警通知-接收分组-新建分组-保存
 receiveGroupingNewGroupingSave:
   type: xpath
@@ -1543,15 +1644,15 @@ receiveGroupingEditNewGroupingSave:
 #菜单-集中告警-告警通知-接收分组-新建分组-保存-提示信息
 receiveGroupingNewGroupingSavePromptMessage:
   type: xpath
-  value: "//*/div[2]/div/div/div/div[2]/span[@id='content']"
+  value: "//*[@id='content']"
 #菜单-集中告警-告警通知-接收分组-新建分组-保存-提示确认
 receiveGroupingNewGroupingSaveHintConfirm:
   type: xpath
-  value: "//*/div[2]/div/div/div/div[3]/button[1]"
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div[3]/button[1]"
 #菜单-集中告警-告警通知-接收分组-编辑分组-保存-提示确认
 receiveGroupingEditGroupingSaveHintConfirm:
   type: xpath
-  value: "//*/div[2]/div/div/div/div[3]/button[1]"
+  value: "//*[@class='ngdialog ngdialog-theme-default ng-scope']/div[2]/div/div/div[3]/button[1]"
 #菜单-集中告警-告警通知-接收分组-筛选-名称
 receiveGroupingQueryName:
   type: xpath
@@ -1624,6 +1725,18 @@ AlarmInformInformWayCreateType:
 AlarmInformInformWayCreateTypeValue:
   type: link
   value: 邮件
+#菜单-集中告警-告警通知-通知方式-新建-通知类型（值）邮件
+AlarmInformInformWayCreateTypeValueEmail:
+  type: link
+  value: 邮件
+#菜单-集中告警-告警通知-通知方式-新建-通知类型（值）短信
+AlarmInformInformWayCreateTypeValueDX:
+  type: link
+  value: 短信
+#菜单-集中告警-告警通知-通知方式-新建-通知类型（值）微信
+AlarmInformInformWayCreateTypeValueWX:
+  type: link
+  value: 微信
 #菜单-集中告警-告警通知-通知方式-新建-通知目标用户
 AlarmInformInformWayCreateUser:
   type: xpath
@@ -1632,6 +1745,10 @@ AlarmInformInformWayCreateUser:
 AlarmInformInformWayCreateUserValue:
   type: xpath
   value: "//*[@id='userListFilter']/div/ul/li/a/span[1]"
+#菜单-集中告警-告警通知-通知方式-新建-通知目标用户(值)
+informWayCreateUserValueSelenium:
+  type: xpath
+  value: "//*[@id='userListFilter']/div/ul/li/a/span[1][contains(text(),'Selenium')]"
 #菜单-集中告警-告警通知-通知方式-新建-启用
 AlarmInformInformWayCreateEnable:
   type: xpath
@@ -1761,7 +1878,7 @@ AlarmInformInformWaycreateRelatedAlarmFaultRule:
 #菜单-集中告警-告警通知-通知方式-关联告警筛选-告警筛选策略（值）
 AlarmInformInformWaycreateRelatedAlarmFaultRuleValue:
   type: xpath
-  value: "//*[@id='incidentRule']/div/ul/li/a[contains(text(),'AutoTest编辑告警筛选')]"
+  value: "//*[@id='incidentRule']/div/ul/li/a[contains(text(),'AutoTest')]"
  #菜单-集中告警-告警通知-通知方式-关联告警筛选-确认
 AlarmInformInformWaycreateRelatedAlarmConfirm:
   type: xpath
@@ -1814,15 +1931,31 @@ FigurationThresholdStrategyCreateNodeType:
 #菜单-集中告警-告警配置-阈值策略-新建-节点类型（值）
 FigurationThresholdStrategyCreateNodeTypeValue:
   type: link
-  value: 操作系统
+  value: Linux
+#菜单-集中告警-告警配置-阈值策略-新建-节点名称
+FigurationThresholdStrategyCreateNodeName:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[4]/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-阈值策略-新建-节点名称（值）
+FigurationThresholdStrategyCreateNodeNameValue:
+  type: link
+  value: OS_Linux_192.168.20.132
 #菜单-集中告警-告警配置-阈值策略-新建-kpi类型选择
 FigurationThresholdStrategyCreateKPITypeSelection:
   type: xpath
-  value: "//*/div[@id='addThresholdForm']/div/div/form/div[1]/div/div[6]/div[1]/div/div/div/div/div/div/ol/button/span[2]"
+  value: "//*/div[@id='addThresholdForm']/div/div/form/div[1]/div/div[6]/div[1]/div/div/div/div/div/div/ol/button"
 #菜单-集中告警-告警配置-阈值策略-新建-kpi类型选择（值）
 FigurationThresholdStrategyCreateKPITypeSelectionValue:
    type: link
-   value: info告警数量
+   value: 内存使用率
+#菜单-集中告警-告警配置-阈值策略-编辑-kpi类型选择
+FigurationThresholdStrategyEditKPITypeSelection:
+  type: xpath
+  value: "//*/div[@id='editThresholdForm']/div/div/form/div[1]/div/div[6]/div[1]/div/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-阈值策略-编辑-kpi类型选择（值）
+FigurationThresholdStrategyEditKPITypeSelectionValue:
+   type: link
+   value: 操作系统版本信息
 #菜单-集中告警-告警配置-阈值策略-新建-告警类型选择
 FigurationThresholdStrategyCreateAlarmTypeSelection:
   type: xpath
@@ -1830,11 +1963,11 @@ FigurationThresholdStrategyCreateAlarmTypeSelection:
 #菜单-集中告警-告警配置-阈值策略-新建-告警类型选择（值）
 FigurationThresholdStrategyCreateAlarmTypeSelectionValue:
   type: link
-  value: CommonCi_infoCount_Alert
+  value: Linux_System_Alert
 #菜单-告警配置-阈值策略-新建-告警级别-info
 FigurationThresholdStrategyCreateAlarmLevel:
   type: xpath
-  value: "//*[@id='addModelForm']/div[1]/div/div[7]/select"
+  value: "//*[@id='addModelForm']/div[1]/div/div[7]/ol/button"
 #菜单-告警配置-阈值策略-编辑-告警级别-CRITICAL
 FigurationThresholdStrategyEditAlarmLevel:
   type: xpath
@@ -1843,6 +1976,58 @@ FigurationThresholdStrategyEditAlarmLevel:
 FigurationThresholdStrategyCreateThresholdRuleGreaterThan:
   type: xpath  
   value: "//*[@id='addModelForm']/div[1]/div/div[8]/div/div[1]/div/select"
+#菜单-告警配置-阈值策略-新建-阈值规则-button
+ThresholdStrategyCreateThresholdConditionOneButton:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[8]/div/div[1]/div/ol/button"
+#菜单-告警配置-阈值策略-新建-阈值规则-等于
+ThresholdStrategyCreateThresholdConditionOneValue:
+  type: link
+  value: 等于
+#菜单-告警配置-阈值策略-编辑-阈值规则-button
+ThresholdStrategyEditThresholdConditionOneButton:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[8]/div/div[1]/div/ol/button"
+#菜单-告警配置-阈值策略-编辑-阈值规则-小于
+ThresholdStrategyEditThresholdConditionOneValueLessThan:
+  type: link
+  value: 小于
+#菜单-告警配置-阈值策略-编辑-阈值规则-大于
+ThresholdStrategyEditThresholdConditionOneValueGreaterThan:
+  type: link
+  value: 大于
+#菜单-告警配置-阈值策略-新建-阈值规则-button
+ThresholdStrategyCreateThresholdConditionTwoButton:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[8]/div/div[2]/div/ol/button"
+#菜单-告警配置-阈值策略-编辑-阈值规则-button
+ThresholdStrategyEditThresholdConditionTwoButton:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[8]/div/div[2]/div/ol/button"
+#菜单-告警配置-阈值策略-新建-阈值规则-固定值
+ThresholdStrategyCreateThresholdConditionTwoValue:
+  type: link
+  value: 固定值
+#菜单-告警配置-阈值策略-新建-阈值规则-固定值
+ThresholdStrategyCreateThresholdConditionTwoValueBaseline:
+  type: link
+  value: 动态基线
+#菜单-告警配置-阈值策略-新建-阈值规则-计数条件-当满足 X 次时激活
+ThresholdStrategyCreateCountConditionOneInput:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[9]/div/div[1]/input"
+#菜单-告警配置-阈值策略-新建-阈值规则-计数条件-以后每 X 次时重复发送
+ThresholdStrategyCreateCountConditionTwoInput:
+  type: xpath
+  value: "//*[@id='addModelForm']/div[1]/div/div[9]/div/div[2]/input"
+#菜单-告警配置-阈值策略-编辑-阈值规则-计数条件-当满足 X 次时激活
+ThresholdStrategyEditCountConditionOneInput:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[9]/div/div[1]/input"
+#菜单-告警配置-阈值策略-编辑-阈值规则-计数条件-以后每 X 次时重复发送
+ThresholdStrategyEditCountConditionTwoInput:
+  type: xpath
+  value: "//*[@id='editModelForm']/div[1]/div/div[9]/div/div[2]/input"
 #菜单-告警配置-阈值策略-编辑-阈值规则-小于
 FigurationThresholdStrategyEditThresholdRuleLessThan:
   type: xpath
@@ -2056,16 +2241,27 @@ alarmRelevanceAffectAlarmSettingCreateDomain:
 #菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-类型
 alarmRelevanceAffectAlarmSettingCreateNodeType:
   type: xpath
-  value: "//*[@id='editPannel']/div/div[1]/div[2]/div"
-#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点关系
-alarmRelevanceAffectAlarmSettingCreateNodeRelation:
+  value: "//*[@id='editPannel']/div/div[1]/div[2]/div/div/div/div/div/ol/button"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点过滤
+alarmRelevanceAffectAlarmSettingCreateNodeFilter:
   type: xpath
   value: "//*[@id='editPannel']/div/div[1]/div[3]/div//ol/button"
-#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点关系
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点过滤(值)
 alarmRelevanceAffectAlarmSettingCreateNodeRelationValue:
   type: xpath
   value: "//*[@id='editPannel']/div/div[1]/div[3]/div//ul/li[1]/a[2]"
-
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-告警类型
+alarmRelevanceAffectAlarmSettingCreateAlarmType:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div[4]/div//ol/button"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点关系
+alarmRelevanceAffectAlarmSettingCreateNodeRelation:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div[5]/div[1]/div/div/div/div//button"
+#菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-节点关系(值)
+alarmRelevanceAffectAlarmSettingCreateNodeRelationDepend:
+  type: link
+  value: 依赖
 #菜单-集中告警-告警配置-降噪策略-告警关联策略-影响告警设置-新建-保存
 alarmRelevanceAffectAlarmSettingCreateSave:
   type: xpath
@@ -2094,15 +2290,15 @@ resourceModel:
 #菜单-资源管理-资源实例
 resourceExample:
   type: xpath
-  value: "//div/ul[2]/li/a/span"
+  value: "//nz-sider/div/ul/li[2]/a/span"
 #菜单-资源管理-自动发现-区域
 automaticDiscoveryArea:
   type: xpath
-  value: "//div/ul[3]/li"
+  value: "/html/body/vic-root/nz-layout/nz-layout/nz-sider/div/ul/li[3]"
 #菜单-资源管理-自动发现
 automaticDiscovery:
   type: xpath
-  value: "//div/ul[3]/li/div/span"
+  value: "//div/ul/li[3]/div/span"
  #菜单-资源管理-自动发现-发现规则
 discoveryRule:
   type: link
@@ -2123,11 +2319,11 @@ DiscoveryListDiscard:
  #菜单-资源管理-自动发现-发现列表-待确认归类
 DiscoveryListToBeConfirmClassify:
   type: xpath
-  value: "//div/div/div/div/div[1]/ul/li[1]/a"
+  value: "//nz-content/div[2]/div/div/div/ul/li[1]/a"
 #菜单-资源管理-自动发现-发现列表-已确认归类
 DiscoveryListConfirmClassify:
   type: xpath
-  value: "//div/div/div/div/div[1]/ul/li[2]/a"
+  value: "//nz-content/div[2]/div/div/div/ul/li[2]/a"
  #菜单-资源管理-资源模型-URMP(Button)
 resourceModelURMPButton:
   type: link
@@ -2396,6 +2592,10 @@ ResourceExampleCreateDomain:
 ResourceExampleCreateSave:
   type: xpath
   value: "//*/div/div/div/div[2]/button[1]"
+#菜单-资源管理-资源实例-实例列表-筛选button
+ResourceExampleScreen:
+  type: xpath
+  value: "//*[@id='tableId_instance_wrapper']/div[1]/a[5]"
 #菜单-资源管理-资源实例-实例列表-筛选域
 ResourceExampleScreenArea:
   type: xpath
@@ -2411,7 +2611,7 @@ ResourceExampleScreenConfirm:
 #菜单-资源管理-资源实例-实例列表-筛选-结果-显示名称
 ResourceExampleScreenResultDisplayName:
   type: xpath
-  value: "//*[@id='tableId_instance']/tbody/tr/td[5]"
+  value: "//*[@id='tableId_instance']/tbody/tr/td[4]"
 #菜单-资源管理-资源实例-实例列表-筛选-结果-选择框
 ResourceExampleScreenResultChoose:
   type: xpath
@@ -2428,6 +2628,14 @@ ResourceExampleEditDisplayName:
 ResourceExampleOperationLogScreenResult:
   type: xpath
   value: "//*[@id='tableId_log']/tbody/tr[1]/td[4]/div"
+#菜单-资源管理-自动发现-发现列表-筛选button
+DiscoveryListScreen:
+  type: xpath
+  value: "//*[@class='dt-buttons btn-group']/a[3]"
+#菜单-资源管理-自动发现-发现列表-筛选button2
+DiscoveryListScreen2:
+  type: xpath
+  value: "//*[@class='dt-buttons btn-group']/a[2]"
 #菜单-资源管理-自动发现-发现列表-筛选区域
 DiscoveryListScreenArea:
   type: id
@@ -2443,7 +2651,7 @@ DiscoveryListScreenConfirm:
 #菜单-资源管理-自动发现-发现列表-归类-节点类型button
 DiscoveryListClassifyNodeTypeButton:
   type: xpath
-  value: "//*[@id='firstForm']/div[4]/div/div/div/div/div/div/ol/button"
+  value: "//*[@class='form-control nya-bs-select ng-untouched btn-group ng-scope ng-dirty ng-empty ng-invalid ng-invalid-required']/button[@class='btn btn-default dropdown-toggle show-special-title']"
 #菜单-资源管理-自动发现-发现列表-归类-保存
 DiscoveryListClassifySave:
   type: xpath
@@ -2480,6 +2688,10 @@ DiscoveryRuleCollectionPluginValue:
 DiscoveryRuleSave:
   type: xpath
   value: "/html/body/div/div/div/div[3]/button[1]"
+#菜单-资源管理-自动发现-发现规则-筛选button
+DiscoveryRuleScreen:
+  type: xpath
+  value: "//*[@class='dt-buttons btn-group']/a[6]"
 #菜单-资源管理-自动发现-发现规则-筛选区域
 DiscoveryRuleScreenArea:
   type: xpath
@@ -2893,3 +3105,369 @@ userInvalidLoginHint:
 userInvalidLoginAffirm:
   type: xpath
   value: "//*[@id='cdk-overlay-0']/nz-modal/div/div[2]/div[1]/div/div[3]/button"
+#降噪策略-告警关联策略-新建-根源告警设置-节点过滤-button
+relevanceNodeFilter:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[8]/form/div[3]/div/div/div/div/div/ol/button"
+#降噪策略-告警关联策略-新建-根源告警设置-节点过滤（值）-StandardTest-Oracle2
+relevanceNodeFilterValue:
+  type: link
+  value: StandardTest-Oracle2
+#降噪策略-告警关联策略-新建-根源告警设置-告警类型选择（值）-Oracle_System_Alert
+relevanceAlarmType:
+  type: xpath
+  value: "//*[@id='alertRuleMadal']/div/div/div[2]/div/div[1]/section[8]/form/div[4]/div/div/div/div/ol/button"
+#降噪策略-告警关联策略-新建-根源告警设置-告警类型选择（值）-Oracle_System_Alert
+relevanceAlarmTypeValue:
+  type: link
+  value: Oracle_System_Alert
+#降噪策略-告警关联策略-新建-根源告警设置-节点类型-button
+relevanceNodeType:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[8]/form/div[2]/div/div/div/div/div/ol/button"
+#降噪策略-告警关联策略-新建-根源告警设置-节点类型（值）-Oracle
+relevanceNodeTypeValue:
+  type: link
+  value: Oracle
+#降噪策略-告警关联策略-新建-根源告警设置-域-默认值-rootDomain
+relevanceDomain:
+  type: xpath
+  value: "//*/div/div/div[2]/div/div[1]/section[8]/form/div[1]/div/div/div/div/div/ol/button/span[1]/span"
+#降噪策略-告警关联策略-新建-影响告警-新建-域-默认值-rootDomain
+relevanceCreateDomain:
+  type: xpath
+  value: "//*[@id='editPannel']/div/div[1]/div[1]/div/div/div/div/div/ol/button/span[1]/span"
+#菜单-集中告警-告警展示-查看-关联告警信息-节点类型
+alarmDisplayRelevanceAlarmNodeType:
+  type: xpath
+  value: "//*/div[3]/div/div/div[2]/table/tbody/tr/td[6]"
+#菜单-性能透视
+performancePerspective:
+  type: xpath
+  value: "//nz-header/ul/li[3]"
+#菜单-性能透视-树视图-区域
+performancePerspectiveTreeViewArea:
+  type: xpath
+  value: "//*[@id='treeview']/div[1]"
+#菜单-性能透视-树视图-button
+performancePerspectiveTreeViewButton:
+  type: xpath
+  value: "//*[@id='treeview']/div[2]/div[2]"
+#菜单-性能透视-树视图-搜索框
+performancePerspectiveTreeViewSearch:
+  type: id
+  value: searchInput
+#菜单-性能透视-树视图-搜索button
+performancePerspectiveTreeViewSearchButton:
+  type: id
+  value: searchBtn
+#菜单-性能透视-树视图-搜索-结果
+performancePerspectiveTreeViewSearchResult:
+  type: xpath
+  value: "//*[@id='treeview']/div[1]/div[2]/li/a/span[2]"
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-通知级别
+alarmScreenCreateNotifyLevel:
+  type: xpath
+  value: "//*[@id='incidentDefineMadal']/div/div/div[2]/div/div[1]/section[4]/form/div[1]/div/div/div/div/ol/button"
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-通知级别-INFO（值）
+alarmScreenCreateNotifyLevelValue:
+  type: link
+  value: INFO
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-接收分组
+alarmScreenCreateReceiveGrouping:
+  type: xpath
+  value: "//*[@id='incidentDefineMadal']/div/div/div[2]/div/div[1]/section[4]/form/div[2]/div/div/div/div/ol/button"
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-接收分组-我是接收分组名称（值）
+alarmScreenCreateReceiveGroupingValue:
+  type: link
+  value: 我是接收分组名称
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-告警数量
+alarmScreenCreateAlarmNum:
+  type: xpath
+  value: "//*[@id='incidentDefineMadal']/div/div/div[2]/div/div[1]/section[4]/form/div[3]/input"
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-活动周期
+alarmScreenCreateActivityCycle:
+  type: xpath
+  value: "//*[@id='incidentDefineMadal']/div/div/div[2]/div/div[1]/section[4]/form/div[4]/div/div/div[1]/input"
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-活动周期-单元
+alarmScreenCreateActivityCycleUnit:
+  type: xpath
+  value: "//*[@id='cbLifeCycleUnit']/button"
+#菜单-集中告警-告警通知-告警筛选-新建-告警通知设置-活动周期-单元-分钟（值）
+alarmScreenCreateActivityCycleUnitValue:
+  type: plink
+  value: 分钟
+#菜单-集中告警-告警通知-告警筛选-新建-此策略为例外
+alarmScreenCreateStragegyException:
+  type: xpath
+  value: "//*[@id='incidentDefineMadal']/div/div/div[2]/div/div[1]/section[3]/form/div[6]/div/label"
+#菜单-集中告警-告警通知-通知方式-删除-确认
+informWayDeleteAffirm:
+  type: xpath
+  value: "//*/div[@class='ngdialog-content']/div/div/div[3]/button[1]"
+#菜单-集中告警-告警通知-通知方式-删除-确认
+informWayDeleteHintMessage:
+  type: xpath
+  value: "//*/div[@class='ngdialog-content']/div/div/div[2]/span"
+#菜单-集中告警-接收分组-筛选
+receiveGroupScreen:
+  type: xpath
+  value: "//*[@class='ng-isolate-scope']/div[2]/div[1]/div[1]/a[4]"
+
+#菜单-数据分析-相关性分析
+pertinenceAnalyze:
+  type: link
+  value: 相关性分析
+#菜单-数据分析-相关性分析-任务名称
+PATaskName:
+  type: xpath
+  value: "//*[@class='correctName']/input"
+#菜单-数据分析-相关性分析-计算方式
+PACalculationMethod:
+  type: id
+  value: computingMode
+#菜单-数据分析-相关性分析-计算方式(值)-自相关
+PACalculationMethodValue:
+  type: xpath
+  value: "//*/li[normalize-space(text())='自相关']"
+#菜单-数据分析-相关性分析-计算方式(值)-协相关
+PACalculationMethodAssistRelated:
+  type: xpath
+  value: "//*/li[normalize-space(text())='协相关']"
+#菜单-数据分析-相关性分析-下一步1
+PANextStep1:
+  type: xpath
+  value: "//div[@class='ng-star-inserted']/button[1]"
+#菜单-数据分析-相关性分析-关键指标选取area
+PAKeyIndicatorsSelectionArea:
+  type: class
+  value: displayBlock
+#菜单-数据分析-相关性分析-关键指标选取button
+PAKeyIndicatorsSelectionButton:
+  type: class
+  value: customTitle
+#菜单-数据分析-相关性分析-关键指标选取-CI类型
+KeyIndicatorsSelectionCIType:
+  type: xpath
+  value: "//*/nz-form-control[1]/div/span/nz-select"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型值-Linux
+KeyIndicatorsSelectionCITypeLinux:
+  type: xpath
+  value: "//*[normalize-space(text())='Linux']"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型值-PostgreSQL
+KeyIndicatorsSelectionCITypePostgreSQL:
+  type: xpath
+  value: "//*[normalize-space(text())='PostgreSQL']"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型值-Linux
+KeyIndicatorsSelectionCITypeLinux1:
+  type: xpath
+  value: "//*/div/span/div/ul/li[contains(text(),'Linux')]"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型值-PostgreSQL
+KeyIndicatorsSelectionCITypePostgreSQL1:
+  type: xpath
+  value: "//*/div/span/div/ul/li[contains(text(),'PostgreSQL')]"
+#菜单-数据分析-相关性分析-关键指标选取-CI实例
+KeyIndicatorsSelectionCIExample:
+  type: xpath
+  value: "//*/nz-form-control[2]/div/span/nz-select"
+#菜单-数据分析-相关性分析-关键指标选取-CI类实例-rg.131.os
+KeyIndicatorsSelectionCIExample131:
+  type: xpath
+  value: "//*/div/div/ul/li[contains(text(),'rg.131.os')]"
+#菜单-数据分析-相关性分析-关键指标选取-CI类实例-rg.155.pg
+KeyIndicatorsSelectionCIExample155:
+  type: xpath
+  value: "//*/div/div/ul/li[contains(text(),'rg.155.pg')]"
+#菜单-数据分析-相关性分析-关键指标选取-KPI指标
+KeyIndicatorsSelectionKPIIndicator:
+  type: xpath
+  value: "//*/nz-form-control[3]/div/span/nz-select"
+#菜单-数据分析-相关性分析-关键指标选取-KPI指标-每秒总传输量
+KeyIndicatorsSelectionKPIIndicator1:
+  type: xpath
+  value: "//*/div/div/ul/li[contains(text(),'每秒总传输量')]"
+#菜单-数据分析-相关性分析-关键指标选取-KPI指标-数据库每秒DELETE行数
+KeyIndicatorsSelectionKPIIndicator2:
+  type: xpath
+  value: "//*/div/div/ul/li[contains(text(),'数据库每秒DELETE行数')]"
+#菜单-数据分析-相关性分析-下一步2
+PANextStep2:
+  type: xpath
+  value: "//div[@class='ng-star-inserted']/button[2]"
+#菜单-数据分析-相关性分析-任务类型-单次任务
+PATaskTypeOnceTask:
+  type: xpath
+  value: "//*[@id='cdk-overlay-2']/nz-modal/div/div[2]/div[1]/div/div[2]/div/div[2]/div[3]"
+#菜单-数据分析-相关性分析-任务类型-周期任务
+PATaskTypeCycleTask:
+  type: xpath
+  value: "//*[@id='cdk-overlay-2']/nz-modal/div/div[2]/div[1]/div/div[2]/div/div[2]/div[1]"
+#菜单-数据分析-相关性分析-数据开始时间-button
+PATaskTypeDataStartTimeButton:
+  type: xpath
+  value: "//input[1][@class='ant-calendar-range-picker-input ng-star-inserted']"
+#菜单-数据分析-相关性分析-数据开始时间-plug
+PATaskTypeDataStartTimePlug:
+  type: xpath
+  value: "//div/date-range-popup/div/div/div/div/div[1]/calendar-input"
+#菜单-数据分析-相关性分析-数据开始时间-input
+PATaskTypeDataStartTimeInput:
+  type: xpath
+  value: "//*[@class='ant-calendar-range-part ant-calendar-range-left ng-star-inserted']//*[@class='ant-calendar-date-input-wrap']/input"
+#菜单-数据分析-相关性分析-数据结束时间-button
+PATaskTypeDataEndTimeButton:
+  type: xpath
+  value: "//input[2][@class='ant-calendar-range-picker-input ng-star-inserted']"
+#菜单-数据分析-相关性分析-数据结束时间-plug
+PATaskTypeDataEndTimePlug:
+  type: xpath
+  value: "//*/div/date-range-popup/div/div/div/div/div[3]/calendar-input"
+#菜单-数据分析-相关性分析-数据结束时间-input
+PATaskTypeDataEndTimeInput:
+  type: xpath
+  value: "//*[@class='ant-calendar-range-part ant-calendar-range-right ng-star-inserted']//*[@class='ant-calendar-date-input-wrap']/input"
+#菜单-数据分析-相关性分析-任务触发时间-button
+PATaskTypeTaskTriggerTimeButton:
+  type: xpath
+  value: "//input[1][@class='ant-calendar-picker-input ant-input ng-star-inserted']"
+#菜单-数据分析-相关性分析-任务触发时间-plug
+PATaskTypeTaskTriggerTimePlug:
+  type: xpath
+  value: "//*/div/date-range-popup/div/div/div/calendar-input"
+#菜单-数据分析-相关性分析-任务触发时间-input
+PATaskTypeTaskTriggerTimeInput:
+  type: xpath
+  value: "//*[@class='ant-calendar-picker-container  ant-calendar-picker-container-placement-bottomLeft']//*[@class='ant-calendar-date-input-wrap']/input"
+#时间控件1号
+TimeControlsOneNum:
+  type: xpath
+  value: "//div[1]/div/inner-popup/div/date-table/table/tbody/tr[1]//*[@class='ant-calendar-date ng-star-inserted'][text()=1]"
+#时间控件2号
+TimeControlsTwoNum:
+  type: xpath
+  value: "//div[1]/div/inner-popup/div/date-table/table/tbody/tr[1]//*[@class='ant-calendar-date ng-star-inserted'][text()=2]"
+#时间控件31号
+TimeControlsThirtyOneNum:
+  type: xpath
+  value: "//div[1]/div/inner-popup/div/date-table/table/tbody/tr[1]//*[@class='ant-calendar-date ng-star-inserted'][text()=31]"
+#时间控件确定
+TimeControlsConfirm:
+  type: xpath
+  value: "//calendar-footer/div/span/ok-button/a"
+#菜单-数据分析-相关性分析-启用
+PAEnable:
+  type: xpath
+  value: "//*[@id='cdk-overlay-2']/nz-modal/div/div[2]/div[1]/div/div[2]/div/div[4]/div[1]"
+#菜单-数据分析-相关性分析-提交
+PASubmit:
+  type: xpath
+  value: "//div[@class='ng-star-inserted']/button[2]"
+#菜单-数据分析-相关性分析-删除-提示
+PADeleteHintMessage:
+  type: xpath
+  value: "//div[contains(text(),'删除')]"
+#菜单-数据分析-相关性分析-删除-提示-确定
+PADeleteHintConfirm:
+  type: xpath
+  value: "//*/button/span[contains(text(),'确定')]"
+#菜单-数据分析-相关性分析-周期任务-周期类型
+CycleTaskCycleType:
+  type: xpath
+  value: "//*/nz-form-item[1]/nz-form-control/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-周期类型-每天
+CycleTaskCycleTypeValue:
+  type: xpath
+  value: "//*/div/div/ul/li[normalize-space(text())='每天']"
+#菜单-数据分析-相关性分析-周期任务-数据周期选择
+CycleTaskDataCycleChoose:
+  type: xpath
+  value: "//*/nz-form-item[2]/nz-form-control/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-数据周期选择-当天
+CycleTaskDataCycleChooseValue:
+  type: xpath
+  value: "//*/div/div/ul/li[normalize-space(text())='当天']"
+#菜单-数据分析-相关性分析-周期任务-数据开始时间-时
+CycleTaskStartTimeHour:
+  type: xpath
+  value: "//nz-form-item[3]/nz-form-control[1]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-数据开始时间-时 1
+CycleTaskStartTimeHourValue:
+  type: xpath
+  value: "//*/div[last()]/div/div/ul/li[normalize-space(text())='1']"
+#菜单-数据分析-相关性分析-周期任务-数据开始时间-分
+CycleTaskStartTimeMinute:
+  type: xpath
+  value: "//nz-form-item[3]/nz-form-control[2]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-数据开始时间-分 0
+CycleTaskStartTimeMinuteValue:
+  type: xpath
+  value: "//*/div[last()]/div/div/ul/li[normalize-space(text())='0']"
+#菜单-数据分析-相关性分析-周期任务-数据结束时间-时
+CycleTaskEndTimeHour:
+  type: xpath
+  value: "//nz-form-item[4]/nz-form-control[1]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-数据结束时间-时 1
+CycleTaskEndTimeHourValue:
+  type: xpath
+  value: "//*/div[last()]/div/div/ul/li[normalize-space(text())='1']"
+#菜单-数据分析-相关性分析-周期任务-数据结束时间-分
+CycleTaskEndTimeMinute:
+  type: xpath
+  value: "//nz-form-item[4]/nz-form-control[2]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-数据结束时间-分 10
+CycleTaskEndTimeMinuteValue:
+  type: xpath
+  value: "//*/div[last()]/div/div/ul/li[normalize-space(text())='10']"
+#菜单-数据分析-相关性分析-周期任务-触发时间-时
+CycleTaskTriggerTimeHour:
+  type: xpath
+  value: "//nz-form-item[5]/nz-form-control[1]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-周期任务-触发时间-分
+CycleTaskTriggerTimeMinute:
+  type: xpath
+  value: "//nz-form-item[5]/nz-form-control[2]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型（协相关）
+ARKeyIndicatorsSelectionCIType:
+  type: xpath
+  value: "//div/div[2]/div/div[2]/nz-form-item/nz-form-control[1]/div/span/nz-select"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型2（协相关）
+ARKeyIndicatorsSelectionCIType2:
+  type: xpath
+  value: "//div/div[3]/div[2]/nz-form-item/nz-form-control[2]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-关键指标选取-CI实例2（协相关）
+ARKeyIndicatorsSelectionCIExample2:
+  type: xpath
+  value: "//div/div[3]/div[2]/nz-form-item/nz-form-control[3]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-关键指标选取-KPI指标2（协相关）
+ARKeyIndicatorsSelectionKPIIndicator2:
+  type: xpath
+  value: "//div/div[3]/div[2]/nz-form-item/nz-form-control[4]/div/span/nz-select/div"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型值-Linux（协相关）
+ARKeyIndicatorsSelectionCITypeLinux:
+  type: xpath
+  value: "//*[@class='cdk-overlay-container']/div[last()]/div/div/div/ul/li[contains(text(),'Linux')]"
+#菜单-数据分析-相关性分析-关键指标选取-CI类型值-PostgreSQL（协相关）
+ARKeyIndicatorsSelectionCITypePostgreSQL:
+  type: xpath
+  value: "//*[@class='cdk-overlay-container']/div[last()]/div/div/div/ul/li[contains(text(),'PostgreSQL')]"
+#菜单-数据分析-相关性分析-关键指标选取-CI实例（协相关）
+ARKeyIndicatorsSelectionCIExample:
+  type: xpath
+  value: "//div/div[2]/div/div[2]/nz-form-item/nz-form-control[2]/div/span/nz-select"
+#菜单-数据分析-相关性分析-关键指标选取-CI类实例-rg.131.os（协相关）
+ARKeyIndicatorsSelectionCIExample131:
+  type: xpath
+  value: "//*/div/div/ul/li[contains(text(),'rg.131.os')]"
+#菜单-数据分析-相关性分析-关键指标选取-CI类实例-rg.155.pg
+KeyIndicatorsSelectionCIExample155:
+  type: xpath
+  value: "//*/div/div/ul/li[contains(text(),'rg.155.pg')]"
+#菜单-数据分析-相关性分析-关键指标选取-KPI指标（协相关）
+ARKeyIndicatorsSelectionKPIIndicator:
+  type: xpath
+  value: "//div/div[2]/div/div[2]/nz-form-item/nz-form-control[3]/div/span/nz-select"
+#菜单-数据分析-相关性分析-关键指标选取-CI分类（协相关）
+ARKeyIndicatorsSelectionCIClassify:
+  type: xpath
+  value: "//div[contains(text(),'全量CI')]"
+

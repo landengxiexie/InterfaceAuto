@@ -59,8 +59,6 @@
                     <include name="concentrateAlarmAlarmInformInformWayEdit"/>
                     <include name="concentrateAlarmAlarmInformInformWayEditSelect"/>
                     <include name="concentrateAlarmAlarmInformInformWayEnable"/>
-
-
                 </methods>
             </class>
         </classes>

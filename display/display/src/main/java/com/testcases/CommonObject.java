@@ -22,7 +22,11 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.math.BigDecimal;
+import java.security.PublicKey;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -59,12 +63,17 @@ public class CommonObject {
         WebElement commonCreate;
         String text = null;
         try {
-            sleep(1000);
+            sleep(500);
             commonCreate = l.getElement(param.get("commonNewlyIncreased"));
             text = commonCreate.getText();
         } catch (Exception e) {
-            commonCreate = l.getElement(param.get("commonCreate"));
-            text = commonCreate.getText();
+            try {
+                commonCreate = l.getElement(param.get("commonCreate"));
+                text = commonCreate.getText();
+            } catch (Exception e1) {
+                commonCreate = l.getElement(param.get("commonCreateButton"));
+                text = commonCreate.getText();
+            }
         }
         click(param, commonCreate);
         LogFunction.logInfo("点击：" + text);
@@ -73,9 +82,15 @@ public class CommonObject {
 
     //      点击，编辑Button
     public void editButton(Map<String, String> param) {
-        WebElement commonEdit = l.getElement(param.get("commonEdit"));
-        String text = commonEdit.getText();
-        AssertFunction.verifyEquals(driver, text, "编辑");
+        WebElement commonEdit;
+        String text=null;
+        try {
+            commonEdit = l.getElement(param.get("commonEdit"));
+            text = commonEdit.getText();
+        } catch (Exception e1) {
+            commonEdit = l.getElement(param.get("commonEditButton"));
+            text = commonEdit.getText();
+        }
         click(param, commonEdit);
         LogFunction.logInfo("点击：" + text);
         sleep(1000);
@@ -113,9 +128,15 @@ public class CommonObject {
 
     //      点击，删除Button
     public void deleteButton(Map<String, String> param) {
-        WebElement commonDelete = l.getElement(param.get("commonDelete"));
-        String text = commonDelete.getText();
-        AssertFunction.verifyEquals(driver, text, "删除");
+        WebElement commonDelete;
+        String text=null;
+        try {
+            commonDelete = l.getElement(param.get("commonDelete"));
+            text = commonDelete.getText();
+        } catch (Exception e1) {
+            commonDelete = l.getElement(param.get("commonDeleteButton"));
+            text = commonDelete.getText();
+        }
         click(param, commonDelete);
         LogFunction.logInfo("点击：" + text);
         sleep(1000);
@@ -420,6 +441,79 @@ public class CommonObject {
             throw new RuntimeException("未获取到：" + param.get(chooseValue));
         }
     }
+    //      勾选，筛选结果，通过指定名称勾选。。
+    public void relevanceAnalyzeChooseSelectResultOfCondition(Map<String, String> param, String chooseValue) {
+        sleep(2000);
+        List<WebElement> r = l.getElements(param.get("relecanceAnalyzeList1"));
+        List<WebElement> r1 = l.getElements(param.get("relecanceAnalyzeList2"));
+//        LogFunction.logInfo("筛序结果的数量为：" + r.size());
+        if (r.size() > 0) {
+            for (int i = 0; i < r.size(); i++) {
+                WebElement e = r.get(i);
+                boolean s = e.isSelected();
+                WebElement e1 = r1.get(i);
+                String t = e1.getText();
+                if (t.equals(param.get(chooseValue)) && s == false) {
+                    click(param, e);
+                    sleep(200);
+                    LogFunction.logInfo("成功勾选：" + param.get(chooseValue));
+                    break;
+                }
+            }
+        } else {
+            throw new RuntimeException("未获取到：" + param.get(chooseValue));
+        }
+    }
+
+    //      通过指定名称，点击同一列参数
+    public void relevanceAnalyzeClickOfCondition(Map<String, String> param, String listValue,String name) {
+        sleep(2000);
+        List<WebElement> r = l.getElements(param.get("relecanceAnalyzeList3"));
+        List<WebElement> r1 = l.getElements(param.get("relecanceAnalyzeList2"));
+        if (r.size() > 0) {
+            for (int i = 0; i < r.size(); i++) {
+                WebElement e = r.get(i);
+                WebElement e1 = r1.get(i);
+                String t = e1.getText();
+                LogFunction.logInfo(t);
+                if (t.equals(param.get(listValue))) {
+                    click(param, e);
+                    sleep(200);
+                    LogFunction.logInfo("成功打开：" + param.get(listValue)+name);
+                    break;
+                }else {
+                    LogFunction.logInfo("未打开：" + param.get(listValue)+name+"!!!!!!!!!");
+                    break;
+                }
+            }
+        } else {
+            throw new RuntimeException("未获取到：" + param.get(listValue)+name);
+        }
+    }
+
+
+    //      勾选，筛选结果，通过指定名称勾选。。
+    public void chooseSelectResultOfConditionNumber(Map<String, String> param, String chooseValue,String numberElement) {
+        sleep(2000);
+        List<WebElement> r = l.getElements(param.get("commonSelectResultAll"));
+        List<WebElement> r1 = l.getElements(param.get(numberElement));
+//        LogFunction.logInfo("筛序结果的数量为：" + r.size());
+        if (r.size() > 0) {
+            for (int i = 0; i < r.size(); i++) {
+                WebElement e = r.get(i);
+                boolean s = e.isSelected();
+                WebElement e1 = r1.get(i);
+                String t = e1.getText();
+                if (t.equals(param.get(chooseValue)) && s == false) {
+                    click(param, e);
+                    sleep(200);
+                    LogFunction.logInfo("成功勾选：" + param.get(chooseValue));
+                }
+            }
+        } else {
+            throw new RuntimeException("未获取到：" + param.get(chooseValue));
+        }
+    }
 
     //      勾选，筛选结果
     public void chooseSelectResultAll(Map<String, String> param) {
@@ -537,6 +631,7 @@ public class CommonObject {
     //      模型,判断按钮区域是否展示,展示点击按钮
     public void modelAreaDisplayAndClick(Map<String, String> param, String areaElement, String buttonElement) {
         Boolean e = l.getElementIsDisplay(param.get(areaElement));
+        LogFunction.logInfo("区域状态为："+e);
         WebElement element = l.getElement(param.get(buttonElement));
         String text = element.getText();
         if (!e) {
@@ -549,6 +644,7 @@ public class CommonObject {
     //      模型,判断按钮区域是否展示,展示点击按钮
     public void modelAreaDisplayAndClick(Map<String, String> param, String areaElement, String buttonElement, String buttonName) {
         Boolean e = l.getElementIsDisplay(param.get(areaElement));
+        LogFunction.logInfo("区域状态为："+e);
         if (!e) {
             WebElement element = l.getElement(param.get(buttonElement));
             click(param, element);
@@ -642,18 +738,18 @@ public class CommonObject {
 //        校验，单选框是否勾选
         WebElement element = l.getElementIgnoreDisplay(param.get(RadioBoxElement));
         boolean text = element.isSelected();
-//        LogFunction.logInfo("勾选状态为；" + text);
+        LogFunction.logInfo("勾选状态为；" + text);
         if (text == false) {
             click(param, element);
-
-            boolean selected = element.isSelected();
-//            LogFunction.logInfo("勾选状态为；" + selected);
-
-            if (selected == true) {
-                LogFunction.logInfo("成功,勾选");
-            } else {
-                LogFunction.logInfo("勾选,失败");
-            }
+            LogFunction.logInfo("成功,勾选");
+//            boolean selected = element.isSelected();
+////            LogFunction.logInfo("勾选状态为；" + selected);
+//
+//            if (selected == true) {
+//                LogFunction.logInfo("成功,勾选");
+//            } else {
+//                LogFunction.logInfo("勾选,失败");
+//            }
         } else {
             LogFunction.logInfo("已被勾选");
         }
@@ -664,19 +760,20 @@ public class CommonObject {
 //        校验，单选框是否勾选
         WebElement element = l.getElementIgnoreDisplay(param.get(RadioBoxElement));
         boolean text = element.isSelected();
-//        LogFunction.logInfo("勾选状态为；" + text);
+        LogFunction.logInfo(RadioBoxElement+"勾选状态为；" + text);
         if (text == false) {
             click(param, element);
-
-            boolean selected = element.isSelected();
-//            LogFunction.logInfo("勾选状态为；" + selected);
-
-            if (selected == true) {
-                LogFunction.logInfo("成功,勾选," + RadioBoxName);
-            } else {
-                LogFunction.logInfo(RadioBoxName + ",勾选,失败");
-
-            }
+            LogFunction.logInfo("成功,勾选," + RadioBoxName);
+//            sleep(500);
+//            boolean selected = element.isSelected();
+////            LogFunction.logInfo("勾选状态为；" + selected);
+//
+//            if (selected == true) {
+//
+//            } else {
+//                LogFunction.logInfo(RadioBoxName + ",勾选,失败");
+//
+//            }
         } else {
             LogFunction.logInfo(RadioBoxName + ",已被勾选");
         }
@@ -778,6 +875,7 @@ public class CommonObject {
         click(param, e);
         LogFunction.logInfo("点击：" + buttonName);
         sleep(1000);
+
         WebElement e2 = l.getElement(param.get(elementValue));
         String text = e2.getText();
         click(param, e2);
@@ -789,6 +887,7 @@ public class CommonObject {
         WebElement e = l.getElement(param.get(elementButton));
         click(param, e);
         LogFunction.logInfo("点击：" + buttonName);
+        sleep(1000);
         modelClickButton(param, elementButton1);
         sleep(1000);
         WebElement e2 = l.getElement(param.get(elementValue));
@@ -1077,6 +1176,17 @@ public class CommonObject {
             }
         }
     }
+        public void doubleClick(Map<String, String> param, String element,String name){
+            try {
+                j.executeScript("arguments[0].dblclick();", l.getElement(param.get(element)));
+                LogFunction.logInfo("双击："+name);
+            } catch (Exception e) {
+                    Actions a=new Actions(driver);
+                    a.doubleClick(l.getElement(param.get(element)));
+                    LogFunction.logInfo("双击："+name);
+            }
+        }
+
 
     //    点击，拖拽，元素
     public void dragElement(Map<String, String> param, String elementName, int x, int y, String message) {
@@ -1109,6 +1219,12 @@ public class CommonObject {
     public void pushMergeAlarmInfo(Map<String, String> param, String body) {
         HttpFunction h = new HttpFunction();
         Object post = h.post(param.get("pushAlarmUrl"), param.get(body));
+    }
+
+    //    推送，KPI信息
+    public void pushKPIInfo(Map<String, String> param, String body) {
+        HttpFunction h = new HttpFunction();
+        Object post = h.post(param.get("pushKPIUrl"), param.get(body));
     }
 
     //        点击，右侧菜单展开按钮
@@ -1251,9 +1367,9 @@ public class CommonObject {
     public void resolvedClearMemory(Map<String, String> param) {
         //      勾选所有告警
         chooseSelectResultAll(param);
-//       解决告警信息
-//        点击，解决
+//       解决告警信息， 点击，解决
         modelClickButton(param, "alarmDisplayResolved");
+        sleep(500);
         //        处理意见，选择-清出内存
         modelRadioBox(param, "ClearMemoryButton", "清出内存");
         //        点击，备注，确定
@@ -1287,7 +1403,7 @@ public class CommonObject {
         modelClickButton(param, "commonDenoiseStrategy");
     }
 
-    //     截取（）内的值，用正则表达式
+    //      截取（）内的值，用正则表达式
     public String extractMessageByRegular(String msg) {
         List<String> list = new ArrayList<String>();
         Pattern p = Pattern.compile("(?<=\\()\\S+(?=\\))");
@@ -1298,4 +1414,24 @@ public class CommonObject {
         String s = list.get(0).toString();
         return s;
     }
+
+    public String getCurrentTimeAndOneMinute(Map<String, String> param,long addTimeMinute) {
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String f = df.format(new Date().getTime() + addTimeMinute * 60 * 1000);
+        LogFunction.logInfo("当前的时间是："+f);
+        return f;
+    }
+
+    //      去除多余的0
+    public static String getPrettyNumber(String number) {
+        return BigDecimal.valueOf(Double.parseDouble(number))
+                .stripTrailingZeros().toPlainString();
+    }
+
+//    执行JavaScript
+    public void executeJS(Map<String, String> param, String element,String js){
+            j.executeScript(js, l.getElementIgnoreDisplay(param.get(element)));
+            LogFunction.logInfo("执行脚本："+js);
+    }
+
 }

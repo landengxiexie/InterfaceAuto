@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <data>
     <!--<VicubeUrl>http://vicube.test.com:48080/h5</VicubeUrl>-->
-    <VicubeUrl>http://192.168.20.175:48080/h5</VicubeUrl>
+    <VicubeUrl>http://192.168.20.121:48080/h5</VicubeUrl>
     <!--<VicubeUrl>http://192.168.20.121:48080/h5</VicubeUrl>-->
     <!--<VicubeUrl>http://192.168.20.127:48080/h5</VicubeUrl>-->
 
+    <!--接口url-->
+    <pushAlarmUrl>http://192.168.20.121:48080/apirestcenter/rest/v1/collector/postArrayData/TestAlertDataV2</pushAlarmUrl>
+    <pushKPIUrl>http://192.168.20.121:48080/apirestcenter/rest/v1/collector/postArrayData/TestKpiDataV2</pushKPIUrl>
 
-    <!--接口url+params-->
-    <pushAlarmUrl>http://192.168.20.175:48080/apirestcenter/rest/v1/collector/postArrayData/TestAlertDataV2</pushAlarmUrl>
-
+    <!--params-->
     <pushAlarmParams123>[{
         "nodeKey":"AutoTest123",
         "severity":2,
@@ -186,6 +187,233 @@
         }]
     </pushRecoveryAlarmAele>
 
+    <!--告警升级规则，推送消息-->
+    <pushUpgradeAlarmSelenium>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":0,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmSelenium>
+    <pushUpgradeAlarmSelenium0>[{
+        "nodeKey":"StandardTest-Oracle1",
+        "severity":0,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmSelenium0>
+    <pushUpgradeAlarmAele>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":0,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmAele>
+    <pushUpgradeAlarmSelenium2>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":1,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmSelenium2>
+    <pushUpgradeAlarmAeleLinux>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":0,
+        "message":"Aele",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmAeleLinux>
+    <pushUpgradeAlarmSelenium4>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":3,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmSelenium4>
+    <pushUpgradeAlarmSelenium3>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":2,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmSelenium3>
+    <pushUpgradeAlarmSelenium5>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":4,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushUpgradeAlarmSelenium5>
+
+    <!--告警关联规则，推送消息-->
+    <pushRelevanceAlarmOracle>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":0,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushRelevanceAlarmOracle>
+    <pushRelevanceAlarmLinux>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":0,
+        "message":"Selenium",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushRelevanceAlarmLinux>
+
+    <pushAutoForwardShiftingAele>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":0,
+        "message":"Aele",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushAutoForwardShiftingAele>
+    <pushAutoForwardShiftingSelenium>[{
+        "nodeKey":"StandardTest-Oracle2",
+        "severity":0,
+        "message":"Selenium",
+        "alertKey":"Oracle_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushAutoForwardShiftingSelenium>
+    <pushAutoForwardShiftingAeleLinuxINFO>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":0,
+        "message":"Aele",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushAutoForwardShiftingAeleLinuxINFO>
+    <pushAutoForwardShiftingAeleLinuxWARNING>[{
+        "nodeKey":"StandardLinux_Test4",
+        "severity":1,
+        "message":"Aele",
+        "alertKey":"Linux_System_Alert",
+        "agentId":"wpl",
+        "instance":"1"
+        }]
+    </pushAutoForwardShiftingAeleLinuxWARNING>
+
+
+    <!--KPI-->
+    <pushKPISelenium8>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":8,
+        "instance":"Selenium",
+        "kpiKey":"Linux_P_Memory_UsedPct"
+        }]
+    </pushKPISelenium8>
+    <pushKPIAele9>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":9,
+        "instance":"Aele",
+        "kpiKey":"Linux_P_Memory_UsedPct"
+        }]
+    </pushKPIAele9>
+    <pushKPIAeleChar>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":"Linux h5urmp 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64",
+        "instance":"Aele",
+        "kpiKey":"Linux_P_OperatingSystem_Information"
+        }]
+    </pushKPIAeleChar>
+    <pushKPISeleniumChar>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":"Linux h5urmp 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64",
+        "instance":"Selenium",
+        "kpiKey":"Linux_P_OperatingSystem_Information"
+        }]
+    </pushKPISeleniumChar>
+
+    <pushKPISeleniumLess7>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":"7",
+        "instance":"Selenium",
+        "kpiKey":"Linux_P_OperatingSystem_Information"
+        }]
+    </pushKPISeleniumLess7>
+    <pushKPIAeleLess8>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":"8",
+        "instance":"Aele",
+        "kpiKey":"Linux_P_OperatingSystem_Information"
+        }]
+    </pushKPIAeleLess8>
+
+    <pushKPISeleniumGreater9>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":"9",
+        "instance":"Selenium",
+        "kpiKey":"Linux_P_OperatingSystem_Information"
+        }]
+    </pushKPISeleniumGreater9>
+    <pushKPIAeleGreater8>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":"8",
+        "instance":"Aele",
+        "kpiKey":"Linux_P_OperatingSystem_Information"
+        }]
+    </pushKPIAeleGreater8>
+
+    <pushKPISelenium8>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":8,
+        "instance":"Selenium",
+        "kpiKey":"Linux_P_Memory_UsedPct"
+        }]
+    </pushKPISelenium8>
+
+    <pushKPISelenium101>[{
+        "nodeKey":"OS_Linux_192.168.20.132",
+        "severity":0,
+        "alertKey":"Linux_System_Alert",
+        "value":101,
+        "instance":"Selenium",
+        "kpiKey":"Linux_P_Memory_UsedPct"
+        }]
+    </pushKPISelenium101>
 
 </data>
 

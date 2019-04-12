@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <suite name="全部规则" verbose="1" parallel="false">
-    <test name="合并规则" preserve-order="true">
+    <test name="合并规则1" preserve-order="true">
         <classes>
             <class name="com.testcases.VicubeSystem">
                 <methods>
@@ -16,6 +16,19 @@
                     <include name="mergeRulesVerifyAlarmLevel"/>
                     <include name="mergeRulesVerifyCollectorSystem"/>
                     <include name="mergeRulesVerifyAlarmContent"/>
+                    <!--<include name="mergeRulesVerifyAlarmContentAndAbsoluteTime"/>-->
+                    <!--<include name="mergeRulesVerifyDelete"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="合并规则2" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
                     <include name="mergeRulesVerifyAlarmContentAndAbsoluteTime"/>
                     <include name="mergeRulesVerifyDelete"/>
                 </methods>

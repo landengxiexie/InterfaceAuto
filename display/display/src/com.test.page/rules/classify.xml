@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <suite name="全部规则" verbose="1" parallel="false">
-    <test name="过滤规则" preserve-order="true">
+    <test name="分类规则" preserve-order="true">
         <classes>
             <class name="com.testcases.VicubeSystem">
                 <methods>
@@ -9,7 +9,7 @@
                     <include name="concentratedAlarm"/>
                     <include name="classifyRulesVerifyClassify"/>
                     <include name="classifyRulesVerifyClassifyAndRE"/>
-                    <include name="classifyRulesVerifyClassifyAndMerge"/>
+                    <!--<include name="classifyRulesVerifyClassifyAndMerge"/>-->
                     <include name="classifyRulesVerifyDelete"/>
                 </methods>
             </class>

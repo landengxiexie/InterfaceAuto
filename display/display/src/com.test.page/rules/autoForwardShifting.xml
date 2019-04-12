@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="集中告警" verbose="1" parallel="false" thread-count="1">
+    <test name="告警通知" preserve-order="true">
+        <classes>
+            <class name="com.testcases.VicubeSystem">
+                <methods>
+                    <include name="vicubeLogin"/>
+                    <include name="promptMessage"/>
+                    <include name="concentratedAlarm"/>
+                    <!--接收分组部分-->
+                    <include name="concentrateAlarmAlarmInform"/>
+                    <include name="concentrateAlarmAlarmInformReceiveGrouping"/>
+                    <include name="receiveGroupingNewGrouping"/>
+                    <include name="receiveGroupingQuery"/>
+                    <include name="receiveGroupingEdit"/>
+                    <!--告警筛选部分-->
+                    <include name="forwardShiftingVerifyRE"/>
+                    <include name="forwardShiftingVerifyStrategyException"/>
+                    <!--通知方式部分-->
+                    <include name="forwardShiftingVerifyRE"/>
+                    <include name="forwardShiftingVerifyStrategyException"/>
+                    <include name="informWayVerifyDXEmailWX"/>
+                    <include name="informWayVerifyEditWX"/>
+                    <!--删除，接收分组、告警筛选、通知方式-->
+                    <include name="alarmNotificationDelete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="utill.ExtentTestNGIReporterListener"/>
+        <!--<listener class-name="utill.TestngRetryListener"/>-->
+    </listeners>
+</suite>

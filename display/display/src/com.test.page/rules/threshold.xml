@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<suite name="全部规则" verbose="1" parallel="false">
-    <test name="恢复规则" preserve-order="true">
+<suite name="集中告警-告警配置" verbose="1" parallel="false">
+    <test name="阈值策略" preserve-order="true">
         <classes>
             <class name="com.testcases.VicubeSystem">
                 <methods>
                     <include name="vicubeLogin"/>
                     <include name="promptMessage"/>
                     <include name="concentratedAlarm"/>
-                    <include name="recoveryRulesVerifyRecoveryAndClearMemoryRE"/>
-                    <include name="recoveryRulesVerifyRecoveryAndIgnoreStrategyException"/>
-                    <include name="recoveryRulesVerifyRecoveryAndMerge"/>
-                    <!--<include name="recoveryRulesVerifyDelete"/>-->
+                    <include name="thresholdRulesVerifyEqualNumberValue"/>
+                    <include name="thresholdRulesVerifyEqualChar"/>
+                    <include name="thresholdRulesVerifyLessThanNumberValue"/>
+                    <include name="thresholdRulesVerifyGreaterThanNumberValue"/>
+                    <include name="thresholdRulesVerifyDynamicBaseline"/>
+                    <include name="thresholdRulesDelete"/>
                 </methods>
             </class>
         </classes>
